@@ -1,0 +1,31 @@
+{
+  "phase": "P3",
+  "purpose": "strong_baseline_B6_C2__loss30_normal",
+  "kind": "cached_backend",
+  "input": [
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/configs/B6_C2.json",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300/cache_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300/lio_cache.npz",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/configs/B6_C2.json",
+    "--gnss-ned",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "P3",
+  "purpose": "strong_baseline_figures_with_exact_point_and_run_SHA_bindings",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/plot_baselines.py",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/plot_baselines.py",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15"
+  ]
+}

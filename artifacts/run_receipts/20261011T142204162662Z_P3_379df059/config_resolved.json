@@ -1,0 +1,17 @@
+{
+  "phase": "P3",
+  "purpose": "all_fixed_event_diagnostics_versus_natural_windows",
+  "kind": "engineering",
+  "input": [
+    "scripts/diagnose_baseline_events.py",
+    "outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/diagnose_baseline_events.py",
+    "outputs/20261011T141054205503Z_P3_e03a0b15"
+  ]
+}

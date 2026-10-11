@@ -1,0 +1,24 @@
+{
+  "run_id": "20261011T142140834241Z_P3_a59554a6",
+  "phase": "P3",
+  "purpose": "strong_baseline_figures_with_exact_point_and_run_SHA_bindings",
+  "kind": "engineering",
+  "source_commit": "29ff54709e79e3a61b4da4faff15a8502983fe56",
+  "tracked_dirty_diff_sha256": "dedd2b4c39e865eaf34d4813c4eb43b953885bfb7ef4e36f3ebe2a51caa56b36",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/plot_baselines.py": "9418a73c427ef0124dbb39c8cf47fb9b2940ac7ee039fd98d39d983c904765b0",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json": "c64b7ec9c813244f87da7d4f81abfede61fd4edc04d7b380803e6400619f5666"
+  },
+  "config_sha256": "4259b26f8371c237cb2209f41fe84465c7a090c9cf6a73b115fea759ecdca25e",
+  "created_at": "2026-10-11T14:21:40.839934+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:21:43.063258+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

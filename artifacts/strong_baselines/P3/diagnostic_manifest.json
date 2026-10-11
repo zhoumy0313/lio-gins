@@ -1,0 +1,3986 @@
+{
+  "scope": "offline development diagnostics; not a new protocol or online fault input",
+  "fixed_example_case": "loss30_bias10",
+  "fixed_example_event_index": 0,
+  "example_selection": "first predeclared persistent-10m-recovery event, no performance-based event picking",
+  "all_event_comparisons": [
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "short_jump3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9216.0,
+        "recovery_start_sow": 9216.0,
+        "window_sow": [
+          9205.0,
+          9306.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 0.49802608447109625,
+      "matching_natural_window_RMSE_m": 0.49802608447109625,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141906703510Z_P3_4648debb",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141910090992Z_P3_8ee112cf"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "short_jump3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9516.0,
+        "recovery_start_sow": 9516.0,
+        "window_sow": [
+          9505.0,
+          9606.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 1.0180711901156074,
+      "matching_natural_window_RMSE_m": 1.0180711901156074,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141906703510Z_P3_4648debb",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141910090992Z_P3_8ee112cf"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "short_jump3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9816.0,
+        "recovery_start_sow": 9816.0,
+        "window_sow": [
+          9805.0,
+          9906.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 3.6519421531969507,
+      "matching_natural_window_RMSE_m": 3.6519421531969507,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141906703510Z_P3_4648debb",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141910090992Z_P3_8ee112cf"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "cluster_jump10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9218.0,
+        "recovery_start_sow": 9218.0,
+        "window_sow": [
+          9205.0,
+          9308.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 0.4958775851260811,
+      "matching_natural_window_RMSE_m": 0.4958775851260811,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141912126422Z_P3_ef60e3d5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141915506644Z_P3_93cfea64"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "cluster_jump10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9518.0,
+        "recovery_start_sow": 9518.0,
+        "window_sow": [
+          9505.0,
+          9608.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 1.0141598115673092,
+      "matching_natural_window_RMSE_m": 1.0141598115673092,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141912126422Z_P3_ef60e3d5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141915506644Z_P3_93cfea64"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "cluster_jump10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9818.0,
+        "recovery_start_sow": 9818.0,
+        "window_sow": [
+          9805.0,
+          9908.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 3.669787243324456,
+      "matching_natural_window_RMSE_m": 3.669787243324456,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141912126422Z_P3_ef60e3d5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141915506644Z_P3_93cfea64"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 0.4822585379863264,
+      "matching_natural_window_RMSE_m": 0.4822585379863264,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141917597410Z_P3_ae04cac7",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141921080404Z_P3_5a670c87"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 0.9373291320695504,
+      "matching_natural_window_RMSE_m": 0.9373291320695504,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141917597410Z_P3_ae04cac7",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141921080404Z_P3_5a670c87"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 3.7208000933240823,
+      "matching_natural_window_RMSE_m": 3.7208000933240823,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141917597410Z_P3_ae04cac7",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141921080404Z_P3_5a670c87"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss60_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 0.5574589802526672,
+      "matching_natural_window_RMSE_m": 0.5574589802526672,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141923117178Z_P3_a7c32026",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141926504457Z_P3_9c94bf0b"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss60_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 0.8509192349418047,
+      "matching_natural_window_RMSE_m": 0.8509192349418047,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141923117178Z_P3_a7c32026",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141926504457Z_P3_9c94bf0b"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss60_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 3.950290232131704,
+      "matching_natural_window_RMSE_m": 3.950290232131704,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141923117178Z_P3_a7c32026",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141926504457Z_P3_9c94bf0b"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_bias3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 0.4822585379863264,
+      "matching_natural_window_RMSE_m": 0.4822585379863264,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141928542997Z_P3_e7925157",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141931925327Z_P3_9c3dfaa9"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_bias3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 0.9373291320695504,
+      "matching_natural_window_RMSE_m": 0.9373291320695504,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141928542997Z_P3_e7925157",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141931925327Z_P3_9c3dfaa9"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_bias3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.7208000933240823,
+      "matching_natural_window_RMSE_m": 3.7208000933240823,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141928542997Z_P3_e7925157",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141931925327Z_P3_9c3dfaa9"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_bias10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 0.4822585379863264,
+      "matching_natural_window_RMSE_m": 0.4822585379863264,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141933963094Z_P3_333e9bf5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141937350160Z_P3_905ac29e"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_bias10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 0.9373291320695504,
+      "matching_natural_window_RMSE_m": 0.9373291320695504,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141933963094Z_P3_333e9bf5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141937350160Z_P3_905ac29e"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "loss30_bias10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.7208000933240823,
+      "matching_natural_window_RMSE_m": 3.7208000933240823,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141933963094Z_P3_333e9bf5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141937350160Z_P3_905ac29e"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "ramp10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 0.5574589802526672,
+      "matching_natural_window_RMSE_m": 0.5574589802526672,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141939387616Z_P3_7e15ad1e",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141942772016Z_P3_181a86c2"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "ramp10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 0.8509192349418047,
+      "matching_natural_window_RMSE_m": 0.8509192349418047,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141939387616Z_P3_7e15ad1e",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141942772016Z_P3_181a86c2"
+    },
+    {
+      "method": "B2",
+      "config": "B2",
+      "case": "ramp10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 3.950290232131704,
+      "matching_natural_window_RMSE_m": 3.950290232131704,
+      "change_from_natural_RMSE_m": 0.0,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.0,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141939387616Z_P3_7e15ad1e",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141942772016Z_P3_181a86c2"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "short_jump3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9216.0,
+        "recovery_start_sow": 9216.0,
+        "window_sow": [
+          9205.0,
+          9306.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.246168737560326,
+      "matching_natural_window_RMSE_m": 2.233169982808724,
+      "change_from_natural_RMSE_m": 0.01299875475160217,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177420022807345,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141950579774Z_P3_3f85e8e8",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141954312255Z_P3_61a621ce"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "short_jump3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9516.0,
+        "recovery_start_sow": 9516.0,
+        "window_sow": [
+          9505.0,
+          9606.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 1.3317387990945517,
+      "matching_natural_window_RMSE_m": 1.3093146685444834,
+      "change_from_natural_RMSE_m": 0.02242413055006831,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177420022807345,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141950579774Z_P3_3f85e8e8",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141954312255Z_P3_61a621ce"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "short_jump3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9816.0,
+        "recovery_start_sow": 9816.0,
+        "window_sow": [
+          9805.0,
+          9906.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.5492703335042264,
+      "matching_natural_window_RMSE_m": 2.5331429977607343,
+      "change_from_natural_RMSE_m": 0.01612733574349212,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177420022807345,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141950579774Z_P3_3f85e8e8",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141954312255Z_P3_61a621ce"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "cluster_jump10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9218.0,
+        "recovery_start_sow": 9218.0,
+        "window_sow": [
+          9205.0,
+          9308.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.375436674187039,
+      "matching_natural_window_RMSE_m": 2.2218221438599874,
+      "change_from_natural_RMSE_m": 0.15361453032705175,
+      "recovery_s": 6.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177424249236107,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141956401306Z_P3_062b4897",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142000133466Z_P3_7c0a0e6d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "cluster_jump10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9518.0,
+        "recovery_start_sow": 9518.0,
+        "window_sow": [
+          9505.0,
+          9608.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 1.5390307579060731,
+      "matching_natural_window_RMSE_m": 1.3046840055938118,
+      "change_from_natural_RMSE_m": 0.23434675231226132,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177424249236107,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141956401306Z_P3_062b4897",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142000133466Z_P3_7c0a0e6d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "cluster_jump10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9818.0,
+        "recovery_start_sow": 9818.0,
+        "window_sow": [
+          9805.0,
+          9908.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.7447642940908383,
+      "matching_natural_window_RMSE_m": 2.5608010747798753,
+      "change_from_natural_RMSE_m": 0.18396321931096304,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177424249236107,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141956401306Z_P3_062b4897",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142000133466Z_P3_7c0a0e6d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.3042010126841217,
+      "matching_natural_window_RMSE_m": 2.1042970455198575,
+      "change_from_natural_RMSE_m": 0.19990396716426417,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177392076879235,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142002225296Z_P3_4419fe77",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142005907464Z_P3_ebdac073"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.4531384275063814,
+      "matching_natural_window_RMSE_m": 1.2639406324342728,
+      "change_from_natural_RMSE_m": 0.18919779507210865,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177392076879235,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142002225296Z_P3_4419fe77",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142005907464Z_P3_ebdac073"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.8477105334668122,
+      "matching_natural_window_RMSE_m": 2.51863521250038,
+      "change_from_natural_RMSE_m": 0.3290753209664321,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177392076879235,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142002225296Z_P3_4419fe77",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142005907464Z_P3_ebdac073"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss60_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.5198249114277553,
+      "matching_natural_window_RMSE_m": 2.2764364593537127,
+      "change_from_natural_RMSE_m": 0.24338845207404258,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.528482313767666,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142007945721Z_P3_ec91546b",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142011628569Z_P3_8037f013"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss60_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.981771002910437,
+      "matching_natural_window_RMSE_m": 1.549891408580503,
+      "change_from_natural_RMSE_m": 0.43187959432993406,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.528482313767666,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142007945721Z_P3_ec91546b",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142011628569Z_P3_8037f013"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss60_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.417085336201687,
+      "matching_natural_window_RMSE_m": 2.3618309167333704,
+      "change_from_natural_RMSE_m": 0.05525441946831666,
+      "recovery_s": 37.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.528482313767666,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142007945721Z_P3_ec91546b",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142011628569Z_P3_8037f013"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_bias3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.3416381506544504,
+      "matching_natural_window_RMSE_m": 2.1042970455198575,
+      "change_from_natural_RMSE_m": 1.2373411051345928,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.5177548455844925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142013665615Z_P3_82723715",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142017402902Z_P3_1ec4266d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_bias3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 2.9057806756231566,
+      "matching_natural_window_RMSE_m": 1.2639406324342728,
+      "change_from_natural_RMSE_m": 1.6418400431888838,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177548455844925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142013665615Z_P3_82723715",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142017402902Z_P3_1ec4266d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_bias3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.343414580847482,
+      "matching_natural_window_RMSE_m": 2.51863521250038,
+      "change_from_natural_RMSE_m": 0.8247793683471021,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177548455844925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142013665615Z_P3_82723715",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142017402902Z_P3_1ec4266d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_bias10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 7.83439277982701,
+      "matching_natural_window_RMSE_m": 2.1042970455198575,
+      "change_from_natural_RMSE_m": 5.730095734307152,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.761040424173818,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142019440377Z_P3_185b14fd",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142023174436Z_P3_2f01e33f"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_bias10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 7.154684983210872,
+      "matching_natural_window_RMSE_m": 1.2639406324342728,
+      "change_from_natural_RMSE_m": 5.8907443507765995,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.761040424173818,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142019440377Z_P3_185b14fd",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142023174436Z_P3_2f01e33f"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "loss30_bias10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 6.221806290095442,
+      "matching_natural_window_RMSE_m": 2.51863521250038,
+      "change_from_natural_RMSE_m": 3.7031710775950617,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.761040424173818,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142019440377Z_P3_185b14fd",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142023174436Z_P3_2f01e33f"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "ramp10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 4.597304067441823,
+      "matching_natural_window_RMSE_m": 2.2764364593537127,
+      "change_from_natural_RMSE_m": 2.3208676080881103,
+      "recovery_s": 25.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177538388463456,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142025265546Z_P3_bd5c59e5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142029053772Z_P3_ce29e18d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "ramp10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 5.599154225464073,
+      "matching_natural_window_RMSE_m": 1.549891408580503,
+      "change_from_natural_RMSE_m": 4.049262816883569,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.5177538388463456,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142025265546Z_P3_bd5c59e5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142029053772Z_P3_ce29e18d"
+    },
+    {
+      "method": "B3",
+      "config": "B3",
+      "case": "ramp10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 4.931050400382458,
+      "matching_natural_window_RMSE_m": 2.3618309167333704,
+      "change_from_natural_RMSE_m": 2.5692194836490874,
+      "recovery_s": 54.399999999999636,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177538388463456,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142025265546Z_P3_bd5c59e5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142029053772Z_P3_ce29e18d"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "short_jump3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9216.0,
+        "recovery_start_sow": 9216.0,
+        "window_sow": [
+          9205.0,
+          9306.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.246168737560326,
+      "matching_natural_window_RMSE_m": 2.233169982808724,
+      "change_from_natural_RMSE_m": 0.01299875475160217,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177420022807345,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142031142990Z_P3_dc1242c2",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142034875681Z_P3_65d4f87a"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "short_jump3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9516.0,
+        "recovery_start_sow": 9516.0,
+        "window_sow": [
+          9505.0,
+          9606.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 1.3317387990945517,
+      "matching_natural_window_RMSE_m": 1.3093146685444834,
+      "change_from_natural_RMSE_m": 0.02242413055006831,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177420022807345,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142031142990Z_P3_dc1242c2",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142034875681Z_P3_65d4f87a"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "short_jump3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9816.0,
+        "recovery_start_sow": 9816.0,
+        "window_sow": [
+          9805.0,
+          9906.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.5492703335042264,
+      "matching_natural_window_RMSE_m": 2.5331429977607343,
+      "change_from_natural_RMSE_m": 0.01612733574349212,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177420022807345,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142031142990Z_P3_dc1242c2",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142034875681Z_P3_65d4f87a"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "cluster_jump10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9218.0,
+        "recovery_start_sow": 9218.0,
+        "window_sow": [
+          9205.0,
+          9308.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.375436674187039,
+      "matching_natural_window_RMSE_m": 2.2218221438599874,
+      "change_from_natural_RMSE_m": 0.15361453032705175,
+      "recovery_s": 6.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177424249236107,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141232757317Z_P3_c7694e39",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141236490409Z_P3_e2b5d5fc"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "cluster_jump10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9518.0,
+        "recovery_start_sow": 9518.0,
+        "window_sow": [
+          9505.0,
+          9608.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 1.5390307579060731,
+      "matching_natural_window_RMSE_m": 1.3046840055938118,
+      "change_from_natural_RMSE_m": 0.23434675231226132,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177424249236107,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141232757317Z_P3_c7694e39",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141236490409Z_P3_e2b5d5fc"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "cluster_jump10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9818.0,
+        "recovery_start_sow": 9818.0,
+        "window_sow": [
+          9805.0,
+          9908.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.7447642940908383,
+      "matching_natural_window_RMSE_m": 2.5608010747798753,
+      "change_from_natural_RMSE_m": 0.18396321931096304,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177424249236107,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141232757317Z_P3_c7694e39",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141236490409Z_P3_e2b5d5fc"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.3042010126841217,
+      "matching_natural_window_RMSE_m": 2.1042970455198575,
+      "change_from_natural_RMSE_m": 0.19990396716426417,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177392076879235,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141238527069Z_P3_161e78d4",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141242211454Z_P3_2f257541"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.4531384275063814,
+      "matching_natural_window_RMSE_m": 1.2639406324342728,
+      "change_from_natural_RMSE_m": 0.18919779507210865,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177392076879235,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141238527069Z_P3_161e78d4",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141242211454Z_P3_2f257541"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.8477105334668122,
+      "matching_natural_window_RMSE_m": 2.51863521250038,
+      "change_from_natural_RMSE_m": 0.3290753209664321,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177392076879235,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141238527069Z_P3_161e78d4",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141242211454Z_P3_2f257541"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss60_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.5198249114277553,
+      "matching_natural_window_RMSE_m": 2.2764364593537127,
+      "change_from_natural_RMSE_m": 0.24338845207404258,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.528482313767666,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142036912924Z_P3_885f6979",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142040597707Z_P3_c02bc684"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss60_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.981771002910437,
+      "matching_natural_window_RMSE_m": 1.549891408580503,
+      "change_from_natural_RMSE_m": 0.43187959432993406,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.528482313767666,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142036912924Z_P3_885f6979",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142040597707Z_P3_c02bc684"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss60_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.417085336201687,
+      "matching_natural_window_RMSE_m": 2.3618309167333704,
+      "change_from_natural_RMSE_m": 0.05525441946831666,
+      "recovery_s": 37.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.528482313767666,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142036912924Z_P3_885f6979",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142040597707Z_P3_c02bc684"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_bias3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.3416381506544504,
+      "matching_natural_window_RMSE_m": 2.1042970455198575,
+      "change_from_natural_RMSE_m": 1.2373411051345928,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.5177548455844925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142042689084Z_P3_362040d6",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142046426242Z_P3_4e9309ce"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_bias3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 2.9057806756231566,
+      "matching_natural_window_RMSE_m": 1.2639406324342728,
+      "change_from_natural_RMSE_m": 1.6418400431888838,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177548455844925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142042689084Z_P3_362040d6",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142046426242Z_P3_4e9309ce"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_bias3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.343414580847482,
+      "matching_natural_window_RMSE_m": 2.51863521250038,
+      "change_from_natural_RMSE_m": 0.8247793683471021,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177548455844925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142042689084Z_P3_362040d6",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142046426242Z_P3_4e9309ce"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_bias10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 7.83439277982701,
+      "matching_natural_window_RMSE_m": 2.1042970455198575,
+      "change_from_natural_RMSE_m": 5.730095734307152,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.761040424173818,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141244302048Z_P3_e17262a4",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141248036502Z_P3_83426ace"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_bias10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 7.154684983210872,
+      "matching_natural_window_RMSE_m": 1.2639406324342728,
+      "change_from_natural_RMSE_m": 5.8907443507765995,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.761040424173818,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141244302048Z_P3_e17262a4",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141248036502Z_P3_83426ace"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "loss30_bias10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 6.221806290095442,
+      "matching_natural_window_RMSE_m": 2.51863521250038,
+      "change_from_natural_RMSE_m": 3.7031710775950617,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.761040424173818,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141244302048Z_P3_e17262a4",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141248036502Z_P3_83426ace"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "ramp10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 4.597304067441823,
+      "matching_natural_window_RMSE_m": 2.2764364593537127,
+      "change_from_natural_RMSE_m": 2.3208676080881103,
+      "recovery_s": 25.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177538388463456,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142048514168Z_P3_4aa4aa27",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142052246729Z_P3_8104763d"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "ramp10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 5.599154225464073,
+      "matching_natural_window_RMSE_m": 1.549891408580503,
+      "change_from_natural_RMSE_m": 4.049262816883569,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.5177538388463456,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142048514168Z_P3_4aa4aa27",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142052246729Z_P3_8104763d"
+    },
+    {
+      "method": "B4",
+      "config": "B4_C3",
+      "case": "ramp10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 4.931050400382458,
+      "matching_natural_window_RMSE_m": 2.3618309167333704,
+      "change_from_natural_RMSE_m": 2.5692194836490874,
+      "recovery_s": 54.399999999999636,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5177538388463456,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142048514168Z_P3_4aa4aa27",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142052246729Z_P3_8104763d"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "short_jump3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9216.0,
+        "recovery_start_sow": 9216.0,
+        "window_sow": [
+          9205.0,
+          9306.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.245676440530704,
+      "matching_natural_window_RMSE_m": 2.232607973989689,
+      "change_from_natural_RMSE_m": 0.01306846654101479,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32321016785500406,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142054337343Z_P3_85988bfa",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142058069322Z_P3_4090ff79"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "short_jump3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9516.0,
+        "recovery_start_sow": 9516.0,
+        "window_sow": [
+          9505.0,
+          9606.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 1.3304437867093204,
+      "matching_natural_window_RMSE_m": 1.3079984371838982,
+      "change_from_natural_RMSE_m": 0.02244534952542221,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32321016785500406,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142054337343Z_P3_85988bfa",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142058069322Z_P3_4090ff79"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "short_jump3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9816.0,
+        "recovery_start_sow": 9816.0,
+        "window_sow": [
+          9805.0,
+          9906.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.4731699971735974,
+      "matching_natural_window_RMSE_m": 2.458918407881002,
+      "change_from_natural_RMSE_m": 0.014251589292595401,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32321016785500406,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142054337343Z_P3_85988bfa",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142058069322Z_P3_4090ff79"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "cluster_jump10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9218.0,
+        "recovery_start_sow": 9218.0,
+        "window_sow": [
+          9205.0,
+          9308.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.290891105212398,
+      "matching_natural_window_RMSE_m": 2.2212678503793724,
+      "change_from_natural_RMSE_m": 0.06962325483302578,
+      "recovery_s": 1.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32325753858192846,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141319041649Z_P3_c4f71ae8",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141322775625Z_P3_6e9fa313"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "cluster_jump10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9518.0,
+        "recovery_start_sow": 9518.0,
+        "window_sow": [
+          9505.0,
+          9608.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 1.4016985030417064,
+      "matching_natural_window_RMSE_m": 1.3030369039296168,
+      "change_from_natural_RMSE_m": 0.0986615991120896,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32325753858192846,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141319041649Z_P3_c4f71ae8",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141322775625Z_P3_6e9fa313"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "cluster_jump10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9818.0,
+        "recovery_start_sow": 9818.0,
+        "window_sow": [
+          9805.0,
+          9908.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.5391618154007314,
+      "matching_natural_window_RMSE_m": 2.4858261504547263,
+      "change_from_natural_RMSE_m": 0.05333566494600506,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32325753858192846,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141319041649Z_P3_c4f71ae8",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141322775625Z_P3_6e9fa313"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.302408170486417,
+      "matching_natural_window_RMSE_m": 2.101490835453585,
+      "change_from_natural_RMSE_m": 0.20091733503283216,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3247341451181341,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141324813385Z_P3_82dbc0fc",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141328549388Z_P3_381885c1"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.4484884567104404,
+      "matching_natural_window_RMSE_m": 1.2595292726001466,
+      "change_from_natural_RMSE_m": 0.18895918411029378,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3247341451181341,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141324813385Z_P3_82dbc0fc",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141328549388Z_P3_381885c1"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.762587992273085,
+      "matching_natural_window_RMSE_m": 2.4436659536123835,
+      "change_from_natural_RMSE_m": 0.31892203866070146,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3247341451181341,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141324813385Z_P3_82dbc0fc",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141328549388Z_P3_381885c1"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss60_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.479960180747754,
+      "matching_natural_window_RMSE_m": 2.229595329230456,
+      "change_from_natural_RMSE_m": 0.2503648515172978,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5207826418880849,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142100109179Z_P3_72d678d5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142103791853Z_P3_1128bdbe"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss60_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.8945300567090664,
+      "matching_natural_window_RMSE_m": 1.4441139787041648,
+      "change_from_natural_RMSE_m": 0.4504160780049016,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5207826418880849,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142100109179Z_P3_72d678d5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142103791853Z_P3_1128bdbe"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss60_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.4165214472569527,
+      "matching_natural_window_RMSE_m": 2.293100339520271,
+      "change_from_natural_RMSE_m": 0.1234211077366818,
+      "recovery_s": 37.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.5207826418880849,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142100109179Z_P3_72d678d5",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142103791853Z_P3_1128bdbe"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_bias3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.336977188828632,
+      "matching_natural_window_RMSE_m": 2.101490835453585,
+      "change_from_natural_RMSE_m": 1.2354863533750469,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.32256809292124383,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142105883177Z_P3_6ec12107",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142109617864Z_P3_a6b9ea92"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_bias3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 2.9023115784767914,
+      "matching_natural_window_RMSE_m": 1.2595292726001466,
+      "change_from_natural_RMSE_m": 1.6427823058766449,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32256809292124383,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142105883177Z_P3_6ec12107",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142109617864Z_P3_a6b9ea92"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_bias3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.315692315862573,
+      "matching_natural_window_RMSE_m": 2.4436659536123835,
+      "change_from_natural_RMSE_m": 0.8720263622501894,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.32256809292124383,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142105883177Z_P3_6ec12107",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142109617864Z_P3_a6b9ea92"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_bias10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 7.529369873726067,
+      "matching_natural_window_RMSE_m": 2.101490835453585,
+      "change_from_natural_RMSE_m": 5.427879038272481,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.3120835339976691,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141330587068Z_P3_24b7e460",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141334322605Z_P3_80e9c8dc"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_bias10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 6.394675492405868,
+      "matching_natural_window_RMSE_m": 1.2595292726001466,
+      "change_from_natural_RMSE_m": 5.135146219805722,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.3120835339976691,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141330587068Z_P3_24b7e460",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141334322605Z_P3_80e9c8dc"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "loss30_bias10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 5.498622760011746,
+      "matching_natural_window_RMSE_m": 2.4436659536123835,
+      "change_from_natural_RMSE_m": 3.0549568063993626,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3120835339976691,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141330587068Z_P3_24b7e460",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141334322605Z_P3_80e9c8dc"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "ramp10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 4.561619798563283,
+      "matching_natural_window_RMSE_m": 2.229595329230456,
+      "change_from_natural_RMSE_m": 2.3320244693328274,
+      "recovery_s": 32.79999999999927,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3238134246529994,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142111711837Z_P3_f209e371",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142115498038Z_P3_2a81a62c"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "ramp10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 5.226835433508199,
+      "matching_natural_window_RMSE_m": 1.4441139787041648,
+      "change_from_natural_RMSE_m": 3.782721454804034,
+      "recovery_s": null,
+      "recovery_timeout": true,
+      "correction_max_m": 0.3238134246529994,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142111711837Z_P3_f209e371",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142115498038Z_P3_2a81a62c"
+    },
+    {
+      "method": "B5",
+      "config": "B5_C1",
+      "case": "ramp10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 4.385722459545797,
+      "matching_natural_window_RMSE_m": 2.293100339520271,
+      "change_from_natural_RMSE_m": 2.0926221200255264,
+      "recovery_s": 50.899999999999636,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3238134246529994,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142111711837Z_P3_f209e371",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142115498038Z_P3_2a81a62c"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "short_jump3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9216.0,
+        "recovery_start_sow": 9216.0,
+        "window_sow": [
+          9205.0,
+          9306.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.245676440530704,
+      "matching_natural_window_RMSE_m": 2.232607973989689,
+      "change_from_natural_RMSE_m": 0.01306846654101479,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39112137006458975,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142117588205Z_P3_a2d5ae1a",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142121374272Z_P3_0cbab41a"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "short_jump3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9516.0,
+        "recovery_start_sow": 9516.0,
+        "window_sow": [
+          9505.0,
+          9606.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 1.330114716693863,
+      "matching_natural_window_RMSE_m": 1.3076662451359542,
+      "change_from_natural_RMSE_m": 0.022448471557908745,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39112137006458975,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142117588205Z_P3_a2d5ae1a",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142121374272Z_P3_0cbab41a"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "short_jump3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9816.0,
+        "recovery_start_sow": 9816.0,
+        "window_sow": [
+          9805.0,
+          9906.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "short_jump3",
+          "kind": "jump",
+          "amplitude_m": 3,
+          "epochs": 1
+        }
+      },
+      "event_RMSE_m": 2.377786975629723,
+      "matching_natural_window_RMSE_m": 2.361408769545688,
+      "change_from_natural_RMSE_m": 0.016378206084035174,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39112137006458975,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142117588205Z_P3_a2d5ae1a",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142121374272Z_P3_0cbab41a"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "cluster_jump10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9218.0,
+        "recovery_start_sow": 9218.0,
+        "window_sow": [
+          9205.0,
+          9308.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.330122839687152,
+      "matching_natural_window_RMSE_m": 2.2212678503793724,
+      "change_from_natural_RMSE_m": 0.1088549893077797,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39112133054198533,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141757567433Z_P3_55d4f424",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141801299692Z_P3_173f62cf"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "cluster_jump10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9518.0,
+        "recovery_start_sow": 9518.0,
+        "window_sow": [
+          9505.0,
+          9608.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 1.310208214986846,
+      "matching_natural_window_RMSE_m": 1.3027064057063034,
+      "change_from_natural_RMSE_m": 0.00750180928054256,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39112133054198533,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141757567433Z_P3_55d4f424",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141801299692Z_P3_173f62cf"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "cluster_jump10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9818.0,
+        "recovery_start_sow": 9818.0,
+        "window_sow": [
+          9805.0,
+          9908.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "cluster_jump10",
+          "kind": "jump",
+          "amplitude_m": 10,
+          "epochs": 3
+        }
+      },
+      "event_RMSE_m": 2.405852703119405,
+      "matching_natural_window_RMSE_m": 2.3867230454984685,
+      "change_from_natural_RMSE_m": 0.019129657620936324,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39112133054198533,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141757567433Z_P3_55d4f424",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141801299692Z_P3_173f62cf"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.323407144405074,
+      "matching_natural_window_RMSE_m": 2.1009712137058467,
+      "change_from_natural_RMSE_m": 0.2224359306992274,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39336816266188884,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141803338499Z_P3_a442ca87",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141807124975Z_P3_3775d8c6"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.6837866693441592,
+      "matching_natural_window_RMSE_m": 1.259228287094354,
+      "change_from_natural_RMSE_m": 0.42455838224980513,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39336816266188884,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141803338499Z_P3_a442ca87",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141807124975Z_P3_3775d8c6"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_normal",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.752435045077761,
+      "matching_natural_window_RMSE_m": 2.3423697223458424,
+      "change_from_natural_RMSE_m": 0.4100653227319184,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.39336816266188884,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141803338499Z_P3_a442ca87",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141807124975Z_P3_3775d8c6"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss60_normal",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.5327170265626355,
+      "matching_natural_window_RMSE_m": 2.10478048860418,
+      "change_from_natural_RMSE_m": 0.42793653795845543,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.41545429943940276,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142123411843Z_P3_51071e72",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142127093203Z_P3_02f2dc30"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss60_normal",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 1.7334484286190877,
+      "matching_natural_window_RMSE_m": 1.3345109409741711,
+      "change_from_natural_RMSE_m": 0.39893748764491654,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.41545429943940276,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142123411843Z_P3_51071e72",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142127093203Z_P3_02f2dc30"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss60_normal",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss60_normal",
+          "kind": "loss",
+          "duration_s": 60,
+          "recovery_bias_m": 0
+        }
+      },
+      "event_RMSE_m": 2.3897984822214435,
+      "matching_natural_window_RMSE_m": 2.199821599447188,
+      "change_from_natural_RMSE_m": 0.18997688277425562,
+      "recovery_s": 36.70000000000073,
+      "recovery_timeout": false,
+      "correction_max_m": 0.41545429943940276,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142123411843Z_P3_51071e72",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142127093203Z_P3_02f2dc30"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_bias3",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.2625969009757116,
+      "matching_natural_window_RMSE_m": 2.1009712137058467,
+      "change_from_natural_RMSE_m": 1.161625687269865,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3939341176889399,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142129185934Z_P3_9d1ef7ab",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142132922271Z_P3_0a8a7afe"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_bias3",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 2.8423106234334257,
+      "matching_natural_window_RMSE_m": 1.259228287094354,
+      "change_from_natural_RMSE_m": 1.5830823363390716,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3939341176889399,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142129185934Z_P3_9d1ef7ab",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142132922271Z_P3_0a8a7afe"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_bias3",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias3",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 3,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.2355922757226305,
+      "matching_natural_window_RMSE_m": 2.3423697223458424,
+      "change_from_natural_RMSE_m": 0.8932225533767881,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.3939341176889399,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142129185934Z_P3_9d1ef7ab",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142132922271Z_P3_0a8a7afe"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_bias10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9245.0,
+        "recovery_start_sow": 9245.0,
+        "window_sow": [
+          9205.0,
+          9335.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 6.076368547303294,
+      "matching_natural_window_RMSE_m": 2.1009712137058467,
+      "change_from_natural_RMSE_m": 3.975397333597447,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.42131636577901094,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141809163155Z_P3_bb6e7620",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141812898007Z_P3_5524030d"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_bias10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9545.0,
+        "recovery_start_sow": 9545.0,
+        "window_sow": [
+          9505.0,
+          9635.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 3.928949395224522,
+      "matching_natural_window_RMSE_m": 1.259228287094354,
+      "change_from_natural_RMSE_m": 2.669721108130168,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.42131636577901094,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141809163155Z_P3_bb6e7620",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141812898007Z_P3_5524030d"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "loss30_bias10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9845.0,
+        "recovery_start_sow": 9845.0,
+        "window_sow": [
+          9805.0,
+          9935.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "loss30_bias10",
+          "kind": "loss",
+          "duration_s": 30,
+          "recovery_bias_m": 10,
+          "bias_hold_s": 90
+        }
+      },
+      "event_RMSE_m": 4.863141899843066,
+      "matching_natural_window_RMSE_m": 2.3423697223458424,
+      "change_from_natural_RMSE_m": 2.520772177497224,
+      "recovery_s": 0.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.42131636577901094,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T141809163155Z_P3_bb6e7620",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T141812898007Z_P3_5524030d"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "ramp10",
+      "event_index": 0,
+      "event": {
+        "fault_start_sow": 9215.0,
+        "fault_end_sow": 9275.0,
+        "recovery_start_sow": 9275.0,
+        "window_sow": [
+          9205.0,
+          9365.0
+        ],
+        "direction_NED": [
+          1,
+          0,
+          0
+        ],
+        "original_start_row_id": 178,
+        "requested_offset_s": 150,
+        "actual_offset_s": 150.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 3.4923229272895835,
+      "matching_natural_window_RMSE_m": 2.10478048860418,
+      "change_from_natural_RMSE_m": 1.3875424386854034,
+      "recovery_s": 22.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.40084149073124925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142134960228Z_P3_c630ed14",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142138694930Z_P3_716b67ef"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "ramp10",
+      "event_index": 1,
+      "event": {
+        "fault_start_sow": 9515.0,
+        "fault_end_sow": 9575.0,
+        "recovery_start_sow": 9575.0,
+        "window_sow": [
+          9505.0,
+          9665.0
+        ],
+        "direction_NED": [
+          0,
+          1,
+          0
+        ],
+        "original_start_row_id": 478,
+        "requested_offset_s": 450,
+        "actual_offset_s": 450.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 3.4425016486499027,
+      "matching_natural_window_RMSE_m": 1.3345109409741711,
+      "change_from_natural_RMSE_m": 2.1079907076757314,
+      "recovery_s": 46.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.40084149073124925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142134960228Z_P3_c630ed14",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142138694930Z_P3_716b67ef"
+    },
+    {
+      "method": "B6",
+      "config": "B6_C9",
+      "case": "ramp10",
+      "event_index": 2,
+      "event": {
+        "fault_start_sow": 9815.0,
+        "fault_end_sow": 9875.0,
+        "recovery_start_sow": 9875.0,
+        "window_sow": [
+          9805.0,
+          9965.0
+        ],
+        "direction_NED": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0.0
+        ],
+        "original_start_row_id": 778,
+        "requested_offset_s": 750,
+        "actual_offset_s": 750.9955000000009,
+        "fault_parameters": {
+          "id": "ramp10",
+          "kind": "ramp",
+          "amplitude_m": 10,
+          "ramp_s": 30,
+          "hold_s": 30
+        }
+      },
+      "event_RMSE_m": 3.201285290973484,
+      "matching_natural_window_RMSE_m": 2.199821599447188,
+      "change_from_natural_RMSE_m": 1.001463691526296,
+      "recovery_s": 41.0,
+      "recovery_timeout": false,
+      "correction_max_m": 0.40084149073124925,
+      "backend_run": "/home/aaron/lio_gins/outputs/20261011T142134960228Z_P3_c630ed14",
+      "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T142138694930Z_P3_716b67ef"
+    }
+  ],
+  "limitations": "artificial perturbation may sometimes cancel real receiver error; compare every fixed direction/event, do not assume every added offset worsens absolute error",
+  "input_sha256": {
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json": "c64b7ec9c813244f87da7d4f81abfede61fd4edc04d7b380803e6400619f5666",
+    "/home/aaron/lio_gins/outputs/20261011T141904666300Z_P3_b0cb4ef0/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141910090992Z_P3_8ee112cf/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141915506644Z_P3_93cfea64/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141921080404Z_P3_5a670c87/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141926504457Z_P3_9c94bf0b/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141931925327Z_P3_9c3dfaa9/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141937350160Z_P3_905ac29e/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141942772016Z_P3_181a86c2/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141948541598Z_P3_b093f88b/per_epoch.csv": "87d03831f837482d604dc956deb57a47e5dd1f44890a71a787bc1a2c7b23540d",
+    "/home/aaron/lio_gins/outputs/20261011T141954312255Z_P3_61a621ce/per_epoch.csv": "d2bcc1a0a8f0e42615d826609531a1a169b307c9705e9584ff9acfdfec20e6d9",
+    "/home/aaron/lio_gins/outputs/20261011T142000133466Z_P3_7c0a0e6d/per_epoch.csv": "a01f5e2e0cbf634ae637f2517a43b0b0eb15b7690ba0c7d822d3c08eb468022f",
+    "/home/aaron/lio_gins/outputs/20261011T142005907464Z_P3_ebdac073/per_epoch.csv": "6f872210f13aa591ab79efca3c80eff4711c2b3f249f38d86c2883282c2212c4",
+    "/home/aaron/lio_gins/outputs/20261011T142011628569Z_P3_8037f013/per_epoch.csv": "e5db1a234bc6ad883c0d97cb5be44833ecede1132921553d020ba5724ae04679",
+    "/home/aaron/lio_gins/outputs/20261011T142017402902Z_P3_1ec4266d/per_epoch.csv": "dbfdc3b133228610df5425e30748e54c2a5b476fd16cd998a116ffd95e9b7e9e",
+    "/home/aaron/lio_gins/outputs/20261011T142023174436Z_P3_2f01e33f/per_epoch.csv": "997e20aa6e0f2ecb2ba5d341c0c140d6c7c33cc0ffaf4905017db9afc4ffdd16",
+    "/home/aaron/lio_gins/outputs/20261011T142029053772Z_P3_ce29e18d/per_epoch.csv": "4b0b316d2b50b617a2482da375e30d448aa493e457073c48e61d7b9d62da5ace",
+    "/home/aaron/lio_gins/outputs/20261011T141230720726Z_P3_68a432d5/per_epoch.csv": "87d03831f837482d604dc956deb57a47e5dd1f44890a71a787bc1a2c7b23540d",
+    "/home/aaron/lio_gins/outputs/20261011T142034875681Z_P3_65d4f87a/per_epoch.csv": "d2bcc1a0a8f0e42615d826609531a1a169b307c9705e9584ff9acfdfec20e6d9",
+    "/home/aaron/lio_gins/outputs/20261011T141236490409Z_P3_e2b5d5fc/per_epoch.csv": "a01f5e2e0cbf634ae637f2517a43b0b0eb15b7690ba0c7d822d3c08eb468022f",
+    "/home/aaron/lio_gins/outputs/20261011T141242211454Z_P3_2f257541/per_epoch.csv": "6f872210f13aa591ab79efca3c80eff4711c2b3f249f38d86c2883282c2212c4",
+    "/home/aaron/lio_gins/outputs/20261011T142040597707Z_P3_c02bc684/per_epoch.csv": "e5db1a234bc6ad883c0d97cb5be44833ecede1132921553d020ba5724ae04679",
+    "/home/aaron/lio_gins/outputs/20261011T142046426242Z_P3_4e9309ce/per_epoch.csv": "dbfdc3b133228610df5425e30748e54c2a5b476fd16cd998a116ffd95e9b7e9e",
+    "/home/aaron/lio_gins/outputs/20261011T141248036502Z_P3_83426ace/per_epoch.csv": "997e20aa6e0f2ecb2ba5d341c0c140d6c7c33cc0ffaf4905017db9afc4ffdd16",
+    "/home/aaron/lio_gins/outputs/20261011T142052246729Z_P3_8104763d/per_epoch.csv": "4b0b316d2b50b617a2482da375e30d448aa493e457073c48e61d7b9d62da5ace",
+    "/home/aaron/lio_gins/outputs/20261011T141317003257Z_P3_43199fdf/per_epoch.csv": "049b48ed67870e4652bfb93e0bb1815cbf320fc6a084dd160ce1845ba4b40606",
+    "/home/aaron/lio_gins/outputs/20261011T142058069322Z_P3_4090ff79/per_epoch.csv": "c3d3bd826c77e6ac397d99ff99dbe114f2f7f2fa53548f051fab47d94190a33a",
+    "/home/aaron/lio_gins/outputs/20261011T141322775625Z_P3_6e9fa313/per_epoch.csv": "01f20992540c0b7c9abfa111ef181f2102c720b61adbaa0d43ca2ffe24dda0c6",
+    "/home/aaron/lio_gins/outputs/20261011T141328549388Z_P3_381885c1/per_epoch.csv": "15b86618c42b374d0ab3648894bcdc430d1f0a49c6a8f8b4f657b93c27a56e9f",
+    "/home/aaron/lio_gins/outputs/20261011T142103791853Z_P3_1128bdbe/per_epoch.csv": "4b35e3f500b67feb13eb17d68ee32f0e7d62b12f6cfd686073a23fcaa00ad965",
+    "/home/aaron/lio_gins/outputs/20261011T142109617864Z_P3_a6b9ea92/per_epoch.csv": "12b6a82fcf4b3ed4fa9c192b8e9ee90b05d38d76782848159f400f8b1459e987",
+    "/home/aaron/lio_gins/outputs/20261011T141334322605Z_P3_80e9c8dc/per_epoch.csv": "6a0ca438ffe9844548b8d5951e1809fcfe04bedfc02b5637e5fb46bfe659eff3",
+    "/home/aaron/lio_gins/outputs/20261011T142115498038Z_P3_2a81a62c/per_epoch.csv": "99063d422de98b2d2574361869952fa69bfa2b25237bcdf82067066c4159278b",
+    "/home/aaron/lio_gins/outputs/20261011T141755529914Z_P3_3b23d326/per_epoch.csv": "66262c8a666258d23a26c818ab064c4c2157b35db38c806959145a63c4451cd5",
+    "/home/aaron/lio_gins/outputs/20261011T142121374272Z_P3_0cbab41a/per_epoch.csv": "2ddb7b524eb142741d0e2401af0a95d78123dad61ac34ac5b9e2a3f5cc68f6c6",
+    "/home/aaron/lio_gins/outputs/20261011T141801299692Z_P3_173f62cf/per_epoch.csv": "6435aa468d32e7e2e1da3a7025e65140811dec8b921e9eb81a68831244669348",
+    "/home/aaron/lio_gins/outputs/20261011T141807124975Z_P3_3775d8c6/per_epoch.csv": "fc3deaa7dd3ea449a8cf22eb7408160f27957417b8afbf8ac6d57a5800dc6f90",
+    "/home/aaron/lio_gins/outputs/20261011T142127093203Z_P3_02f2dc30/per_epoch.csv": "cbde1ed04f2a50b835e8d0c9cfb6c0bd08c7840c15044ee2c19341f35a1e7046",
+    "/home/aaron/lio_gins/outputs/20261011T142132922271Z_P3_0a8a7afe/per_epoch.csv": "bc78ea6081bf05de81fb2e1469c25b8f694cb4329b4e7a5d24338ba055dc472b",
+    "/home/aaron/lio_gins/outputs/20261011T141812898007Z_P3_5524030d/per_epoch.csv": "d74be49d4b515a9d463a5a9fe22e8360d8d9f645986e3cdb44972721c5b1a4ef",
+    "/home/aaron/lio_gins/outputs/20261011T142138694930Z_P3_716b67ef/per_epoch.csv": "21ac37ab44e8ea834d0ec6a2ad0dcab34118afb9d390a862481aede5394ab9bc",
+    "/home/aaron/lio_gins/outputs/20261011T142019440377Z_P3_185b14fd/per_update.jsonl": "229155f7ea8671ba6b3c7a6b49129a09ccefdf2fecb6e4d2d10d96b16f565a58",
+    "/home/aaron/lio_gins/outputs/20261011T141244302048Z_P3_e17262a4/per_update.jsonl": "788ca332890eac1e8b9f0e9e050dbbbcce435c4d3ba1e57b7fff87f9739bea95",
+    "/home/aaron/lio_gins/outputs/20261011T141330587068Z_P3_24b7e460/per_update.jsonl": "67b87f830c06b8805968b88b88e19e04daeba27635894bd63977f39c06258b0e",
+    "/home/aaron/lio_gins/outputs/20261011T141809163155Z_P3_bb6e7620/per_update.jsonl": "f45d6a45b453ef7883d164b4dd2de1c810e0059665cc3ad5e66e05fda7b1c238"
+  }
+}

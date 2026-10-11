@@ -1,0 +1,34 @@
+{
+  "run_id": "20261011T141509448446Z_P3_193e006a",
+  "phase": "P3",
+  "purpose": "strong_baseline_B6_C2__natural",
+  "kind": "cached_backend",
+  "source_commit": "35de523fc681a9f8a50347fc50d524b64d0bf92a",
+  "tracked_dirty_diff_sha256": "9ee9a593460021225d007988f5e69275654bbbe6e5453e26d7753e0da7682091",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py": "ae5a9cc3352d46f6a5d959081520409d9707869fc4e55c3ab23e26b9833895b8",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py": "be8aae915fe396286f3ba5cd278eb3d69acd8b602f1651a25110108efcbad0a5",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/configs/B6_C2.json": "6f3e9bf8b2d0a52965896c17a518a9fd5f2b3197fb162064caf318739eece3af",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/natural.identity.json": "7b21f6a0e07134009ac6795632355671fafffbafbcb1da63e681b86f69781f08",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300/cache_identity.json": "0eb9f9e5395e924b0cec790dcc49e89e745b89310a7316d4d2084ad2228c766a",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300/lio_cache.npz": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+  },
+  "config_sha256": "63e29ee33228a941732206ae80a6b94131d48c77e2ab8e611f61dce77e9ad768",
+  "created_at": "2026-10-11T14:15:09.458279+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:15:13.187885+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

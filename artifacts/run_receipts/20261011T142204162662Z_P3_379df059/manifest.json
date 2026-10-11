@@ -1,0 +1,24 @@
+{
+  "run_id": "20261011T142204162662Z_P3_379df059",
+  "phase": "P3",
+  "purpose": "all_fixed_event_diagnostics_versus_natural_windows",
+  "kind": "engineering",
+  "source_commit": "29ff54709e79e3a61b4da4faff15a8502983fe56",
+  "tracked_dirty_diff_sha256": "460398fc707746bdf7552fabcf373b25c26673d50ee99ce3f20026e19d8d04fa",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/diagnose_baseline_events.py": "ec26582eeefe3e66cc65ac81db9ebd09ba9d4bba7ec8b5711ee644e0f518a7fb",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json": "c64b7ec9c813244f87da7d4f81abfede61fd4edc04d7b380803e6400619f5666"
+  },
+  "config_sha256": "d410bb94808e2630d4564fbfa590a55c81d0699a6edf576285638e353cde1b5d",
+  "created_at": "2026-10-11T14:22:04.168480+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:22:11.197754+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

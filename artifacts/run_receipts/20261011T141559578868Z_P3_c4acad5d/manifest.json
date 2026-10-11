@@ -1,0 +1,32 @@
+{
+  "run_id": "20261011T141559578868Z_P3_c4acad5d",
+  "phase": "P3",
+  "purpose": "offline_evaluate_B6_C4__natural",
+  "kind": "engineering",
+  "source_commit": "35de523fc681a9f8a50347fc50d524b64d0bf92a",
+  "tracked_dirty_diff_sha256": "4a07bca91f07f8d6dd99cae0ae2c9bcdfef1cf921519539c57da467dce34350a",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py": "60517defa84f293d6e4128ef5a5c9462aced154cbfb9a605e5f8f755976e9c6a",
+    "/home/aaron/lio_gins/src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30",
+    "/home/aaron/lio_gins/outputs/20261011T141555845882Z_P3_13e3cc86/manifest.json": "73f8cfa56c32b4b7efcf1800f01bfef45279fb85e6d05d7b8984af3cb4aa92a4",
+    "/home/aaron/lio_gins/outputs/20261011T141555845882Z_P3_13e3cc86/trajectory.csv": "9e18f3119667c7a6a55c61c68647bb8bfe871f7f29ecd90165b86e81ed998df1",
+    "/home/aaron/lio_gins/outputs/20261011T141555845882Z_P3_13e3cc86/per_update.jsonl": "377118ad18990030588fec3d5515085dfbe770ead241e67936d85625f4e75f40",
+    "/home/aaron/lio_gins/outputs/20261011T141555845882Z_P3_13e3cc86/backend_identity.json": "e9609ad7407fda2423f167231716da14192e1baba85c6c6f96bfd60e6359089d",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+    "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+  },
+  "config_sha256": "f25022e92d49faeaf3cc0556ae9faf97bfed68c8244b66a2f5dfc275054255c9",
+  "created_at": "2026-10-11T14:15:59.600176+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:16:01.573045+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

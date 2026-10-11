@@ -1,0 +1,21 @@
+{
+  "sources": [
+    "outputs/20261011T141054205503Z_P3_e03a0b15",
+    "outputs/20261011T142140834241Z_P3_a59554a6",
+    "outputs/20261011T142204163628Z_P3_88953601",
+    "outputs/20261011T142204162662Z_P3_379df059"
+  ],
+  "source_files_SHA": {
+    "receiver_epoch_table.csv": "0358bd8258cd468d723e17c796abd5ef4d8e8546a41af35071aa742ef16e92a2",
+    "diagnostic_manifest.json": "2e9017c8adb07137d3ae3b24aa896211291c0792fdf969da18e5ca1fe31aae04",
+    "natural_errors.png": "a9ad2ee5af881f36e41b282d246012cd7514215518d42d966bf1f114f24365cd",
+    "all_event_comparisons.csv": "7c441eb5f34cf185c31e4d3c50e5cea78058b578912dda596ff0a312de9a0ff8",
+    "selected_table.csv": "0f7f7113150eff899775ec84125046507053106fcb19d11bbeb8b86d051c751c",
+    "baseline_overview.png": "9b834df6e2d246729bae2645862b48a5367a744ee1e3e2bd47249ebdfc7dbcaf",
+    "receiver_epoch_table.json": "3116fa23c9614a049c8d15836df2cdde81d54ec0c66ff7049918c0614d911fee",
+    "selected_baselines.json": "c64b7ec9c813244f87da7d4f81abfede61fd4edc04d7b380803e6400619f5666",
+    "fixed_recovery_event.png": "fbcc7f6c181a561ac0e5b4bd9f1c4d1453311c98882b53dcf44111ee3ebfac6a"
+  },
+  "role": "development",
+  "heldout_opened": false
+}

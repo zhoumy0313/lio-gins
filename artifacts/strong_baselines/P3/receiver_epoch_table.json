@@ -1,0 +1,124 @@
+{
+  "role": "development",
+  "sequence": "building00",
+  "experiment_kind": "natural",
+  "expected_receiver_epochs": 1200,
+  "time_range_sow": [
+    9065.0,
+    10264.0
+  ],
+  "records": [
+    {
+      "method": "B0",
+      "reference_point": "F9P_antenna",
+      "metrics": {
+        "samples_expected": 1200,
+        "samples_valid": 1200,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 3.3013768260501024,
+        "horizontal_p95_m": 5.952255074730755,
+        "horizontal_max_m": 18.029983769398623
+      },
+      "source": "/home/aaron/lio_gins/outputs/20261011T125417580287Z_P2_05b312fb",
+      "note": "offline reference translated to antenna using reference attitude; not an online oracle correction"
+    },
+    {
+      "method": "B1",
+      "reference_point": "ADIS_center",
+      "metrics": {
+        "samples_expected": 1200,
+        "samples_valid": 1200,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 3.686547558721031,
+        "horizontal_p95_m": 6.58609850201756,
+        "horizontal_max_m": 19.664002833052695
+      },
+      "source": "/home/aaron/lio_gins/outputs/20261011T125417580287Z_P2_05b312fb",
+      "note": "same 1200 observed epochs; match integer tick with <=10ns floating serialization allowance"
+    },
+    {
+      "method": "B2",
+      "reference_point": "ADIS_center",
+      "metrics": {
+        "samples_expected": 1200,
+        "samples_valid": 1200,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 3.445427601420002,
+        "horizontal_p95_m": 8.202182082661981,
+        "horizontal_max_m": 8.629440333482082
+      },
+      "source": "/home/aaron/lio_gins/outputs/20261011T141904666300Z_P3_b0cb4ef0",
+      "note": "same 1200 observed epochs; match integer tick with <=10ns floating serialization allowance"
+    },
+    {
+      "method": "B3",
+      "reference_point": "ADIS_center",
+      "metrics": {
+        "samples_expected": 1200,
+        "samples_valid": 1200,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 2.553491654203538,
+        "horizontal_p95_m": 4.776192919112665,
+        "horizontal_max_m": 5.775959435380858
+      },
+      "source": "/home/aaron/lio_gins/outputs/20261011T141948541598Z_P3_b093f88b",
+      "note": "same 1200 observed epochs; match integer tick with <=10ns floating serialization allowance"
+    },
+    {
+      "method": "B4",
+      "reference_point": "ADIS_center",
+      "metrics": {
+        "samples_expected": 1200,
+        "samples_valid": 1200,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 2.553491654203538,
+        "horizontal_p95_m": 4.776192919112665,
+        "horizontal_max_m": 5.775959435380858
+      },
+      "source": "/home/aaron/lio_gins/outputs/20261011T141230720726Z_P3_68a432d5",
+      "note": "same 1200 observed epochs; match integer tick with <=10ns floating serialization allowance"
+    },
+    {
+      "method": "B5",
+      "reference_point": "ADIS_center",
+      "metrics": {
+        "samples_expected": 1200,
+        "samples_valid": 1200,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 2.5299663855695775,
+        "horizontal_p95_m": 4.862912300823575,
+        "horizontal_max_m": 5.533992273715257
+      },
+      "source": "/home/aaron/lio_gins/outputs/20261011T141317003257Z_P3_43199fdf",
+      "note": "same 1200 observed epochs; match integer tick with <=10ns floating serialization allowance"
+    },
+    {
+      "method": "B6",
+      "reference_point": "ADIS_center",
+      "metrics": {
+        "samples_expected": 1200,
+        "samples_valid": 1200,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 2.577891607776598,
+        "horizontal_p95_m": 5.09641131919264,
+        "horizontal_max_m": 6.7412584976175935
+      },
+      "source": "/home/aaron/lio_gins/outputs/20261011T141755529914Z_P3_3b23d326",
+      "note": "same 1200 observed epochs; match integer tick with <=10ns floating serialization allowance"
+    }
+  ],
+  "reference_point_limit": "B0 receiver antenna; B1-B6 ADIS center. Do not treat point difference as method effect; contribution comparison uses same-input B3-B6.",
+  "timing_scope": "offline accuracy only",
+  "input_sha256": {
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json": "c64b7ec9c813244f87da7d4f81abfede61fd4edc04d7b380803e6400619f5666",
+    "/home/aaron/lio_gins/outputs/20261011T125417580287Z_P2_05b312fb/metrics.json": "06a7cce1fb644133f3468e7bc7d1632f7e6ab3268d64570992a057d30165d989",
+    "/home/aaron/lio_gins/outputs/20261011T125417580287Z_P2_05b312fb/raw_GNSS_epoch_errors.csv": "6dc50b34dcb6cea7ebda44a7b29318e7dbe0415efac8350af643cb1f282175bc",
+    "/home/aaron/lio_gins/outputs/20261011T125417580287Z_P2_05b312fb/per_epoch.csv": "bf888e417fb3aa9453c95ae420e8124cf98700239a20d762e25c81a1a5329c00",
+    "/home/aaron/lio_gins/outputs/20261011T141904666300Z_P3_b0cb4ef0/per_epoch.csv": "1d00d26fa1b2286ca1c5259d82c7ee272a671f4b6a9d57fea611878c18b3214c",
+    "/home/aaron/lio_gins/outputs/20261011T141948541598Z_P3_b093f88b/per_epoch.csv": "87d03831f837482d604dc956deb57a47e5dd1f44890a71a787bc1a2c7b23540d",
+    "/home/aaron/lio_gins/outputs/20261011T141230720726Z_P3_68a432d5/per_epoch.csv": "87d03831f837482d604dc956deb57a47e5dd1f44890a71a787bc1a2c7b23540d",
+    "/home/aaron/lio_gins/outputs/20261011T141317003257Z_P3_43199fdf/per_epoch.csv": "049b48ed67870e4652bfb93e0bb1815cbf320fc6a084dd160ce1845ba4b40606",
+    "/home/aaron/lio_gins/outputs/20261011T141755529914Z_P3_3b23d326/per_epoch.csv": "66262c8a666258d23a26c818ab064c4c2157b35db38c806959145a63c4451cd5"
+  },
+  "heldout_opened": false
+}

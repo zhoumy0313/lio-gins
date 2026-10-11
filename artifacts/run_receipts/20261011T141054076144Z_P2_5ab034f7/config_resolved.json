@@ -1,0 +1,16 @@
+{
+  "phase": "P2",
+  "purpose": "expected_missing_input_preflight_failure",
+  "kind": "synthetic",
+  "input": [
+    "/home/aaron/lio_gins/outputs/20261011T141045393982Z_P2_cc6927ed/must_not_exist.missing"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "-c",
+    "from pathlib import Path; Path('/home/aaron/lio_gins/outputs/20261011T141045393982Z_P2_cc6927ed/must_not_exist').touch()"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "phase": "P3",
+  "purpose": "B0_to_B6_same_observed_receiver_epoch_table",
+  "kind": "engineering",
+  "input": [
+    "scripts/receiver_epoch_table.py",
+    "src/evaluation/reference.py",
+    "outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json",
+    "outputs/20261011T125417580287Z_P2_05b312fb/metrics.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/receiver_epoch_table.py",
+    "outputs/20261011T141054205503Z_P3_e03a0b15",
+    "outputs/20261011T125417580287Z_P2_05b312fb"
+  ]
+}

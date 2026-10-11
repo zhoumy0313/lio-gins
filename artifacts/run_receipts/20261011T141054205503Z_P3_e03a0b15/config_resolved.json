@@ -1,0 +1,23 @@
+{
+  "phase": "P3",
+  "purpose": "finite_matched_Q_NIS_Huber_fixed_recovery_development_screen",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/screen_baselines.py",
+    "/home/aaron/lio_gins/configs/baseline_screen_protocol.json",
+    "/home/aaron/lio_gins/configs/development_experiment_protocol.json",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300/cache_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/screen_baselines.py",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4"
+  ]
+}

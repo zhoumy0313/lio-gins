@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T142204163628Z_P3_88953601",
+  "phase": "P3",
+  "purpose": "B0_to_B6_same_observed_receiver_epoch_table",
+  "kind": "engineering",
+  "source_commit": "29ff54709e79e3a61b4da4faff15a8502983fe56",
+  "tracked_dirty_diff_sha256": "460398fc707746bdf7552fabcf373b25c26673d50ee99ce3f20026e19d8d04fa",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/receiver_epoch_table.py": "d693ad405949d2798bd3fda5a7d1c22d46e75e077930f7ecab6f9fbb7ac34185",
+    "/home/aaron/lio_gins/src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json": "c64b7ec9c813244f87da7d4f81abfede61fd4edc04d7b380803e6400619f5666",
+    "/home/aaron/lio_gins/outputs/20261011T125417580287Z_P2_05b312fb/metrics.json": "06a7cce1fb644133f3468e7bc7d1632f7e6ab3268d64570992a057d30165d989"
+  },
+  "config_sha256": "a99c40ac2e6287b743fbd3499c57081238f3c7c69cbb4b01532c8127a5f89a38",
+  "created_at": "2026-10-11T14:22:04.169775+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:22:05.086001+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

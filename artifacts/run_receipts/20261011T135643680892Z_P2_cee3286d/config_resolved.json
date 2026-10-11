@@ -1,0 +1,22 @@
+{
+  "phase": "P2",
+  "purpose": "sequential_real_frontend_validation_then_preregistered_strong_controls",
+  "kind": "engineering",
+  "input": [
+    "scripts/complete_development_controls.py",
+    "scripts/screen_baselines.py",
+    "configs/baseline_screen_protocol.json",
+    "configs/development_experiment_protocol.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 3600.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/complete_development_controls.py",
+    "outputs/20261011T134909303110Z_P2_626b9771",
+    "outputs/20261011T131528442554Z_P2_9d0fac69",
+    "outputs/20261011T124056742603Z_P2_e310122b",
+    "outputs/20261011T132959853728Z_P3_7079c4e4"
+  ]
+}
