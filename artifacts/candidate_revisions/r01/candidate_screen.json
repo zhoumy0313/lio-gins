@@ -1,0 +1,2461 @@
+{
+  "revision": "r01",
+  "revision_plan": {
+    "revision": "r01",
+    "declared_before_candidate_performance": true,
+    "P3_selected_baselines": "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json",
+    "cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+    "initialization_run": "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b",
+    "stress_run": "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4",
+    "configs": [
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 4,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 9,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 9,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 4,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 9,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 9,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 9,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 9,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      }
+    ]
+  },
+  "screen_table": [
+    {
+      "name": "r01_C0",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 4,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.664571644121323,
+      "primary_macro_RMSE_m": 3.0779715263884184,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": -0.003052364278276709,
+      "relative_gain": -0.0009926648855971276
+    },
+    {
+      "name": "r01_C1",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.670349728706335,
+      "primary_macro_RMSE_m": 3.0661984588985036,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.008720703211638092,
+      "relative_gain": 0.0028360756013025012
+    },
+    {
+      "name": "r01_C2",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 9,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.664571644121323,
+      "primary_macro_RMSE_m": 3.0779715263884184,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": -0.003052364278276709,
+      "relative_gain": -0.0009926648855971276
+    },
+    {
+      "name": "r01_C3",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 1,
+          "score_limit": 9,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.670349728706335,
+      "primary_macro_RMSE_m": 3.0661984588985036,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.008720703211638092,
+      "relative_gain": 0.0028360756013025012
+    },
+    {
+      "name": "r01_C4",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 4,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.670349728706335,
+      "primary_macro_RMSE_m": 3.0661984588985036,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.008720703211638092,
+      "relative_gain": 0.0028360756013025012
+    },
+    {
+      "name": "r01_C5",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.6761691067191165,
+      "primary_macro_RMSE_m": 3.082442810172728,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": -0.007523648062586208,
+      "relative_gain": -0.00244677913985325
+    },
+    {
+      "name": "r01_C6",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 9,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.670349728706335,
+      "primary_macro_RMSE_m": 3.0661984588985036,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.008720703211638092,
+      "relative_gain": 0.0028360756013025012
+    },
+    {
+      "name": "r01_C7",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 2,
+          "score_limit": 9,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.6761691067191165,
+      "primary_macro_RMSE_m": 3.082442810172728,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": -0.007523648062586208,
+      "relative_gain": -0.00244677913985325
+    },
+    {
+      "name": "r01_C8",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.684485859769265,
+      "primary_macro_RMSE_m": 3.0024807309899875,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.07243843112015425,
+      "relative_gain": 0.023557832678256174
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.700022994128475,
+      "primary_macro_RMSE_m": 2.9872208901905406,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.08769827191960111,
+      "relative_gain": 0.028520512994370528
+    },
+    {
+      "name": "r01_C10",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 9,
+          "good_duration_s": 1,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.6865248330109286,
+      "primary_macro_RMSE_m": 3.061971045908708,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.012948116201433546,
+      "relative_gain": 0.004210880195155475
+    },
+    {
+      "name": "r01_C11",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 9,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "natural_RMSE_m": 2.7021606800271414,
+      "primary_macro_RMSE_m": 3.0419247804312826,
+      "valid": true,
+      "eligible": false,
+      "absolute_gain_m": 0.03299438167885915,
+      "relative_gain": 0.01073016230326429
+    }
+  ],
+  "control": {
+    "name": "B6_C9",
+    "config": {
+      "method": "B6",
+      "max_LIO_span_s": 0.15,
+      "max_LIO_availability_delay_s": 0.25,
+      "q_axis_scale": [
+        1.0,
+        1.0,
+        4.0
+      ],
+      "nis_limit": 16.266236,
+      "huber_limit": 2.5,
+      "recovery": {
+        "wait_s": 2,
+        "recovery_s": 15,
+        "protection": 15,
+        "onset_nis": 16.266236,
+        "gap_s": 2
+      },
+      "q_time_m2ps": 0.001,
+      "q_distance_m2pm": 0.001
+    },
+    "natural_RMSE_m": 2.5868898294801177,
+    "primary_macro_RMSE_m": 3.0749191621101417,
+    "valid": true,
+    "eligible": true
+  },
+  "shared_natural_cap_m": 2.5890273197669766,
+  "selected": {
+    "name": "r01_C9",
+    "config": {
+      "method": "P",
+      "max_LIO_span_s": 0.15,
+      "max_LIO_availability_delay_s": 0.25,
+      "q_axis_scale": [
+        1.0,
+        1.0,
+        4.0
+      ],
+      "nis_limit": 16.266236,
+      "huber_limit": 2.5,
+      "recovery": {
+        "wait_s": 2,
+        "recovery_s": 15,
+        "protection": 15,
+        "onset_nis": 16.266236,
+        "gap_s": 2
+      },
+      "q_time_m2ps": 0.001,
+      "q_distance_m2pm": 0.001,
+      "revision": "r01",
+      "motion": {
+        "window_s": 5,
+        "score_limit": 4,
+        "good_duration_s": 2,
+        "monitor_gap_s": 1.5,
+        "max_wait_s": 60
+      },
+      "health_min_points": 100,
+      "health_max_residual_m": 0.2
+    },
+    "natural_RMSE_m": 2.700022994128475,
+    "primary_macro_RMSE_m": 2.9872208901905406,
+    "valid": true,
+    "eligible": false,
+    "absolute_gain_m": 0.08769827191960111,
+    "relative_gain": 0.028520512994370528
+  },
+  "selected_is_eligible": false,
+  "complete_selected": [
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "natural",
+      "backend": {
+        "run_id": "20261011T143910619271Z_P4_9315271a",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T143910619271Z_P4_9315271a",
+        "wall_seconds": 5.6859752609998395
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T143916361738Z_P4_35615c97",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T143910619271Z_P4_9315271a",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "natural",
+        "case_data_sha256": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "natural",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.700022994128475,
+          "horizontal_p95_m": 5.947375808075269,
+          "horizontal_max_m": 6.952493975818094,
+          "vertical_rmse_m": 5.243018250526725
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.648298188020981,
+          "horizontal_p95_m": 6.524495144734292,
+          "horizontal_max_m": 6.952493975818094
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [],
+        "event_macro_RMSE_m": null,
+        "update_correction_max_m": 0.4122557189380703,
+        "update_correction_p95_m": 0.19842769761617315,
+        "GNSS_rejection_fraction": 0.04083333333333333,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T143910619271Z_P4_9315271a/trajectory.csv": "149ae4b23eb0cc74952f52b02968c7dfb5a288b8e092009124b94e21cc242708",
+          "/home/aaron/lio_gins/outputs/20261011T143910619271Z_P4_9315271a/per_update.jsonl": "bac57e07c487f50aa8ff41ba2be506792d9416cb8de9d6ff2583ad93b6ed13d3",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "short_jump3",
+      "backend": {
+        "run_id": "20261011T144043651963Z_P4_7f6ae929",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T144043651963Z_P4_7f6ae929",
+        "wall_seconds": 5.736455279999063
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T144049448269Z_P4_6f4fe4f9",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T144043651963Z_P4_7f6ae929",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "short_jump3",
+        "case_data_sha256": "be2b176bf2d8aef8f96b91449a46948f825083aa70ae48afd6d60f1da8fbae3c",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "artificial_GNSS_pressure_on_real_route",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.7034837005196137,
+          "horizontal_p95_m": 5.947384280264078,
+          "horizontal_max_m": 6.952502446621322,
+          "vertical_rmse_m": 5.243010246131351
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.6518201310838565,
+          "horizontal_p95_m": 6.524502602661991,
+          "horizontal_max_m": 6.952502446621322
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [
+          {
+            "event": {
+              "fault_start_sow": 9215.0,
+              "fault_end_sow": 9216.0,
+              "recovery_start_sow": 9216.0,
+              "window_sow": [
+                9205.0,
+                9306.0
+              ],
+              "direction_NED": [
+                1,
+                0,
+                0
+              ],
+              "original_start_row_id": 178,
+              "requested_offset_s": 150,
+              "actual_offset_s": 150.9955000000009,
+              "fault_parameters": {
+                "id": "short_jump3",
+                "kind": "jump",
+                "amplitude_m": 3,
+                "epochs": 1
+              }
+            },
+            "metrics": {
+              "samples_expected": 1011,
+              "samples_valid": 1011,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.2080096027866465,
+              "horizontal_p95_m": 2.944095323273789,
+              "horizontal_max_m": 3.2803373950152896,
+              "horizontal_MAE_integral_m_s": 219.6881713556736,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9515.0,
+              "fault_end_sow": 9516.0,
+              "recovery_start_sow": 9516.0,
+              "window_sow": [
+                9505.0,
+                9606.0
+              ],
+              "direction_NED": [
+                0,
+                1,
+                0
+              ],
+              "original_start_row_id": 478,
+              "requested_offset_s": 450,
+              "actual_offset_s": 450.9955000000009,
+              "fault_parameters": {
+                "id": "short_jump3",
+                "kind": "jump",
+                "amplitude_m": 3,
+                "epochs": 1
+              }
+            },
+            "metrics": {
+              "samples_expected": 1011,
+              "samples_valid": 1011,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 1.330109780843057,
+              "horizontal_p95_m": 2.0063524818218292,
+              "horizontal_max_m": 2.0413752665963396,
+              "horizontal_MAE_integral_m_s": 128.28278521061935,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9815.0,
+              "fault_end_sow": 9816.0,
+              "recovery_start_sow": 9816.0,
+              "window_sow": [
+                9805.0,
+                9906.0
+              ],
+              "direction_NED": [
+                0.7071067811865476,
+                0.7071067811865476,
+                0.0
+              ],
+              "original_start_row_id": 778,
+              "requested_offset_s": 750,
+              "actual_offset_s": 750.9955000000009,
+              "fault_parameters": {
+                "id": "short_jump3",
+                "kind": "jump",
+                "amplitude_m": 3,
+                "epochs": 1
+              }
+            },
+            "metrics": {
+              "samples_expected": 1011,
+              "samples_valid": 1011,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.3506706166510467,
+              "horizontal_p95_m": 3.431176702049626,
+              "horizontal_max_m": 3.500023392534795,
+              "horizontal_MAE_integral_m_s": 227.4746996219904,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          }
+        ],
+        "event_macro_RMSE_m": 1.9629300000935832,
+        "update_correction_max_m": 0.4122556589572533,
+        "update_correction_p95_m": 0.19842772596259795,
+        "GNSS_rejection_fraction": 0.04083333333333333,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T144043651963Z_P4_7f6ae929/trajectory.csv": "a5162a6f6a457e1637635bb004de2583557e98f9cf8a74cf57a058f671ce7e0b",
+          "/home/aaron/lio_gins/outputs/20261011T144043651963Z_P4_7f6ae929/per_update.jsonl": "57dcde82162e695d84a971104dec682af308c57314c6eb04f0893f19760c7c58",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "cluster_jump10",
+      "backend": {
+        "run_id": "20261011T143918454482Z_P4_cc47e706",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T143918454482Z_P4_cc47e706",
+        "wall_seconds": 5.687220901001638
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T143924199593Z_P4_fe3bb1c5",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T143918454482Z_P4_cc47e706",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "cluster_jump10",
+        "case_data_sha256": "213aa4a009920e4055feb584cfe1a32319a31cb9f068f4395d768714008fa88a",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "artificial_GNSS_pressure_on_real_route",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.724261627293652,
+          "horizontal_p95_m": 5.947291975458135,
+          "horizontal_max_m": 6.952425484433507,
+          "vertical_rmse_m": 5.190861628899041
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.6767775218824332,
+          "horizontal_p95_m": 6.524434181980306,
+          "horizontal_max_m": 6.952425484433507
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [
+          {
+            "event": {
+              "fault_start_sow": 9215.0,
+              "fault_end_sow": 9218.0,
+              "recovery_start_sow": 9218.0,
+              "window_sow": [
+                9205.0,
+                9308.0
+              ],
+              "direction_NED": [
+                1,
+                0,
+                0
+              ],
+              "original_start_row_id": 178,
+              "requested_offset_s": 150,
+              "actual_offset_s": 150.9955000000009,
+              "fault_parameters": {
+                "id": "cluster_jump10",
+                "kind": "jump",
+                "amplitude_m": 10,
+                "epochs": 3
+              }
+            },
+            "metrics": {
+              "samples_expected": 1031,
+              "samples_valid": 1031,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.3941237279105225,
+              "horizontal_p95_m": 2.9562072692780745,
+              "horizontal_max_m": 3.2803373950152896,
+              "horizontal_MAE_integral_m_s": 241.59077651923968,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9515.0,
+              "fault_end_sow": 9518.0,
+              "recovery_start_sow": 9518.0,
+              "window_sow": [
+                9505.0,
+                9608.0
+              ],
+              "direction_NED": [
+                0,
+                1,
+                0
+              ],
+              "original_start_row_id": 478,
+              "requested_offset_s": 450,
+              "actual_offset_s": 450.9955000000009,
+              "fault_parameters": {
+                "id": "cluster_jump10",
+                "kind": "jump",
+                "amplitude_m": 10,
+                "epochs": 3
+              }
+            },
+            "metrics": {
+              "samples_expected": 1031,
+              "samples_valid": 1031,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 1.3558080118878115,
+              "horizontal_p95_m": 1.8511074261399263,
+              "horizontal_max_m": 1.8806835239183097,
+              "horizontal_MAE_integral_m_s": 135.07513627903032,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9815.0,
+              "fault_end_sow": 9818.0,
+              "recovery_start_sow": 9818.0,
+              "window_sow": [
+                9805.0,
+                9908.0
+              ],
+              "direction_NED": [
+                0.7071067811865476,
+                0.7071067811865476,
+                0.0
+              ],
+              "original_start_row_id": 778,
+              "requested_offset_s": 750,
+              "actual_offset_s": 750.9955000000009,
+              "fault_parameters": {
+                "id": "cluster_jump10",
+                "kind": "jump",
+                "amplitude_m": 10,
+                "epochs": 3
+              }
+            },
+            "metrics": {
+              "samples_expected": 1031,
+              "samples_valid": 1031,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.4334128237329233,
+              "horizontal_p95_m": 3.5105386755017745,
+              "horizontal_max_m": 3.5777955919685103,
+              "horizontal_MAE_integral_m_s": 239.29500622071583,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          }
+        ],
+        "event_macro_RMSE_m": 2.061114854510419,
+        "update_correction_max_m": 0.412255502162566,
+        "update_correction_p95_m": 0.19830064755431662,
+        "GNSS_rejection_fraction": 0.06583333333333333,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T143918454482Z_P4_cc47e706/trajectory.csv": "d6817594a256bd687ba241d26f911a2f3cc44916592e3e8a836b2f50f0106491",
+          "/home/aaron/lio_gins/outputs/20261011T143918454482Z_P4_cc47e706/per_update.jsonl": "0133af69347171212238d4c90fbbab5ba73194c360803ae5edda7db27dd71cc2",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "loss30_normal",
+      "backend": {
+        "run_id": "20261011T143926239848Z_P4_7accecbf",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T143926239848Z_P4_7accecbf",
+        "wall_seconds": 5.586440557999595
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T143931886486Z_P4_73b031a6",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T143926239848Z_P4_7accecbf",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "loss30_normal",
+        "case_data_sha256": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "artificial_GNSS_pressure_on_real_route",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.781099659677328,
+          "horizontal_p95_m": 5.947165636373885,
+          "horizontal_max_m": 6.952282023105579,
+          "vertical_rmse_m": 5.133723467925417
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.7115072710468358,
+          "horizontal_p95_m": 6.524305877979329,
+          "horizontal_max_m": 6.952282023105579
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [
+          {
+            "event": {
+              "fault_start_sow": 9215.0,
+              "fault_end_sow": 9245.0,
+              "recovery_start_sow": 9245.0,
+              "window_sow": [
+                9205.0,
+                9335.0
+              ],
+              "direction_NED": [
+                1,
+                0,
+                0
+              ],
+              "original_start_row_id": 178,
+              "requested_offset_s": 150,
+              "actual_offset_s": 150.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_normal",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 0
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.34233475604532,
+              "horizontal_p95_m": 3.0749255410225547,
+              "horizontal_max_m": 3.2803373950152896,
+              "horizontal_MAE_integral_m_s": 294.2276235548427,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9515.0,
+              "fault_end_sow": 9545.0,
+              "recovery_start_sow": 9545.0,
+              "window_sow": [
+                9505.0,
+                9635.0
+              ],
+              "direction_NED": [
+                0,
+                1,
+                0
+              ],
+              "original_start_row_id": 478,
+              "requested_offset_s": 450,
+              "actual_offset_s": 450.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_normal",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 0
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 1.7554333321526854,
+              "horizontal_p95_m": 2.429270946099767,
+              "horizontal_max_m": 2.5308189145924715,
+              "horizontal_MAE_integral_m_s": 223.3067876830479,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9815.0,
+              "fault_end_sow": 9845.0,
+              "recovery_start_sow": 9845.0,
+              "window_sow": [
+                9805.0,
+                9935.0
+              ],
+              "direction_NED": [
+                0.7071067811865476,
+                0.7071067811865476,
+                0.0
+              ],
+              "original_start_row_id": 778,
+              "requested_offset_s": 750,
+              "actual_offset_s": 750.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_normal",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 0
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.594961113416855,
+              "horizontal_p95_m": 3.701743765280036,
+              "horizontal_max_m": 3.765946184206282,
+              "horizontal_MAE_integral_m_s": 320.91297244244237,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          }
+        ],
+        "event_macro_RMSE_m": 2.2309097338716204,
+        "update_correction_max_m": 0.41225547776406196,
+        "update_correction_p95_m": 0.20915206710379058,
+        "GNSS_rejection_fraction": 0.05675675675675676,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T143926239848Z_P4_7accecbf/trajectory.csv": "719b52cafa986dedeb1a1a34370a64e319ae26587755d80b826b8e46fd1de662",
+          "/home/aaron/lio_gins/outputs/20261011T143926239848Z_P4_7accecbf/per_update.jsonl": "40ee45c3c2c2c1d9a02c393ab18e9cc534084efc287631c2439317a339d6f0d5",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "loss60_normal",
+      "backend": {
+        "run_id": "20261011T144051541526Z_P4_96fa7efb",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T144051541526Z_P4_96fa7efb",
+        "wall_seconds": 5.335392295000929
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T144056932661Z_P4_1e32b668",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T144051541526Z_P4_96fa7efb",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "loss60_normal",
+        "case_data_sha256": "67aa4720299e9b4315e74b578f2f6f3090148d4c6c54e8b92600b5b56c65d714",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "artificial_GNSS_pressure_on_real_route",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.811792218781855,
+          "horizontal_p95_m": 5.9475450994784165,
+          "horizontal_max_m": 6.95259139002666,
+          "vertical_rmse_m": 4.9367849168244
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 2.765196549054242,
+          "horizontal_p95_m": 6.524597080948668,
+          "horizontal_max_m": 6.95259139002666
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [
+          {
+            "event": {
+              "fault_start_sow": 9215.0,
+              "fault_end_sow": 9275.0,
+              "recovery_start_sow": 9275.0,
+              "window_sow": [
+                9205.0,
+                9365.0
+              ],
+              "direction_NED": [
+                1,
+                0,
+                0
+              ],
+              "original_start_row_id": 178,
+              "requested_offset_s": 150,
+              "actual_offset_s": 150.9955000000009,
+              "fault_parameters": {
+                "id": "loss60_normal",
+                "kind": "loss",
+                "duration_s": 60,
+                "recovery_bias_m": 0
+              }
+            },
+            "metrics": {
+              "samples_expected": 1601,
+              "samples_valid": 1601,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.5611188542113252,
+              "horizontal_p95_m": 3.1374105992529766,
+              "horizontal_max_m": 3.2803373950152896,
+              "horizontal_MAE_integral_m_s": 400.88219134141264,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9515.0,
+              "fault_end_sow": 9575.0,
+              "recovery_start_sow": 9575.0,
+              "window_sow": [
+                9505.0,
+                9665.0
+              ],
+              "direction_NED": [
+                0,
+                1,
+                0
+              ],
+              "original_start_row_id": 478,
+              "requested_offset_s": 450,
+              "actual_offset_s": 450.9955000000009,
+              "fault_parameters": {
+                "id": "loss60_normal",
+                "kind": "loss",
+                "duration_s": 60,
+                "recovery_bias_m": 0
+              }
+            },
+            "metrics": {
+              "samples_expected": 1601,
+              "samples_valid": 1601,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 1.6973758208286152,
+              "horizontal_p95_m": 2.4253493021602157,
+              "horizontal_max_m": 2.5379451580385757,
+              "horizontal_MAE_integral_m_s": 263.3267551828427,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9815.0,
+              "fault_end_sow": 9875.0,
+              "recovery_start_sow": 9875.0,
+              "window_sow": [
+                9805.0,
+                9965.0
+              ],
+              "direction_NED": [
+                0.7071067811865476,
+                0.7071067811865476,
+                0.0
+              ],
+              "original_start_row_id": 778,
+              "requested_offset_s": 750,
+              "actual_offset_s": 750.9955000000009,
+              "fault_parameters": {
+                "id": "loss60_normal",
+                "kind": "loss",
+                "duration_s": 60,
+                "recovery_bias_m": 0
+              }
+            },
+            "metrics": {
+              "samples_expected": 1601,
+              "samples_valid": 1601,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.3857998199958868,
+              "horizontal_p95_m": 3.6770026686083592,
+              "horizontal_max_m": 3.7574827677899827,
+              "horizontal_MAE_integral_m_s": 357.67350174831756,
+              "recovery_time_s": 36.600000000000364,
+              "recovered_within_timeout": true
+            }
+          }
+        ],
+        "event_macro_RMSE_m": 2.214764831678609,
+        "update_correction_max_m": 0.42049827394935907,
+        "update_correction_p95_m": 0.25105051243992293,
+        "GNSS_rejection_fraction": 0.05392156862745098,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T144051541526Z_P4_96fa7efb/trajectory.csv": "59bd9f422d87219b91dd70102d10da5a623fcdbe248e7dd4778b2ab2bd7edcdb",
+          "/home/aaron/lio_gins/outputs/20261011T144051541526Z_P4_96fa7efb/per_update.jsonl": "364d959df6aef74b06adde2fe02776594cd77d041228ccffbf6a3c855947bd50",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "loss30_bias3",
+      "backend": {
+        "run_id": "20261011T144059021531Z_P4_dac03cfd",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T144059021531Z_P4_dac03cfd",
+        "wall_seconds": 5.586909128000116
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T144104667270Z_P4_bc693199",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T144059021531Z_P4_dac03cfd",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "loss30_bias3",
+        "case_data_sha256": "fac5633a5bc6576ee5672158103bc0324c78b45c156867751b2d39c2e2b9717f",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "artificial_GNSS_pressure_on_real_route",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 3.157338473815473,
+          "horizontal_p95_m": 5.950005750304736,
+          "horizontal_max_m": 6.9551301576879965,
+          "vertical_rmse_m": 5.130288602215939
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 3.0263150273873265,
+          "horizontal_p95_m": 6.526814537983825,
+          "horizontal_max_m": 6.9551301576879965
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [
+          {
+            "event": {
+              "fault_start_sow": 9215.0,
+              "fault_end_sow": 9245.0,
+              "recovery_start_sow": 9245.0,
+              "window_sow": [
+                9205.0,
+                9335.0
+              ],
+              "direction_NED": [
+                1,
+                0,
+                0
+              ],
+              "original_start_row_id": 178,
+              "requested_offset_s": 150,
+              "actual_offset_s": 150.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_bias3",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 3,
+                "bias_hold_s": 90
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 3.234481079797944,
+              "horizontal_p95_m": 3.8090447621288894,
+              "horizontal_max_m": 4.307543667061155,
+              "horizontal_MAE_integral_m_s": 418.65113845227825,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9515.0,
+              "fault_end_sow": 9545.0,
+              "recovery_start_sow": 9545.0,
+              "window_sow": [
+                9505.0,
+                9635.0
+              ],
+              "direction_NED": [
+                0,
+                1,
+                0
+              ],
+              "original_start_row_id": 478,
+              "requested_offset_s": 450,
+              "actual_offset_s": 450.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_bias3",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 3,
+                "bias_hold_s": 90
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.782434577819345,
+              "horizontal_p95_m": 3.682612530115727,
+              "horizontal_max_m": 3.837630272611849,
+              "horizontal_MAE_integral_m_s": 345.02861398808886,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9815.0,
+              "fault_end_sow": 9845.0,
+              "recovery_start_sow": 9845.0,
+              "window_sow": [
+                9805.0,
+                9935.0
+              ],
+              "direction_NED": [
+                0.7071067811865476,
+                0.7071067811865476,
+                0.0
+              ],
+              "original_start_row_id": 778,
+              "requested_offset_s": 750,
+              "actual_offset_s": 750.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_bias3",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 3,
+                "bias_hold_s": 90
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 2.8776488271473135,
+              "horizontal_p95_m": 4.010235909173033,
+              "horizontal_max_m": 4.090402317719757,
+              "horizontal_MAE_integral_m_s": 358.5982864651612,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          }
+        ],
+        "event_macro_RMSE_m": 2.9648548282548677,
+        "update_correction_max_m": 0.41223584529443646,
+        "update_correction_p95_m": 0.21104209929634915,
+        "GNSS_rejection_fraction": 0.05675675675675676,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T144059021531Z_P4_dac03cfd/trajectory.csv": "494114ba0482f04b2f7f361db1085105c053c17d7c183deb15c5a770db9239c5",
+          "/home/aaron/lio_gins/outputs/20261011T144059021531Z_P4_dac03cfd/per_update.jsonl": "f83c9027874d0dc35582deef97e52c9af8e55eea964ba65448f612eb203a4574",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "loss30_bias10",
+      "backend": {
+        "run_id": "20261011T143933979842Z_P4_44767ae5",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T143933979842Z_P4_44767ae5",
+        "wall_seconds": 5.5366928259991255
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T143939575679Z_P4_728bf47d",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T143933979842Z_P4_44767ae5",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "loss30_bias10",
+        "case_data_sha256": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "artificial_GNSS_pressure_on_real_route",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 4.453642007822281,
+          "horizontal_p95_m": 8.050729652197486,
+          "horizontal_max_m": 10.434284958823083,
+          "vertical_rmse_m": 5.017089348048551
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 4.187511860298209,
+          "horizontal_p95_m": 9.425926524342676,
+          "horizontal_max_m": 10.434284958823083
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [
+          {
+            "event": {
+              "fault_start_sow": 9215.0,
+              "fault_end_sow": 9245.0,
+              "recovery_start_sow": 9245.0,
+              "window_sow": [
+                9205.0,
+                9335.0
+              ],
+              "direction_NED": [
+                1,
+                0,
+                0
+              ],
+              "original_start_row_id": 178,
+              "requested_offset_s": 150,
+              "actual_offset_s": 150.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_bias10",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 10,
+                "bias_hold_s": 90
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 5.828799541428482,
+              "horizontal_p95_m": 10.051421303248656,
+              "horizontal_max_m": 10.433182638555763,
+              "horizontal_MAE_integral_m_s": 679.2554585508797,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9515.0,
+              "fault_end_sow": 9545.0,
+              "recovery_start_sow": 9545.0,
+              "window_sow": [
+                9505.0,
+                9635.0
+              ],
+              "direction_NED": [
+                0,
+                1,
+                0
+              ],
+              "original_start_row_id": 478,
+              "requested_offset_s": 450,
+              "actual_offset_s": 450.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_bias10",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 10,
+                "bias_hold_s": 90
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 3.804779963872941,
+              "horizontal_p95_m": 7.060434307396668,
+              "horizontal_max_m": 7.7618511598227276,
+              "horizontal_MAE_integral_m_s": 438.8609239929522,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9815.0,
+              "fault_end_sow": 9845.0,
+              "recovery_start_sow": 9845.0,
+              "window_sow": [
+                9805.0,
+                9935.0
+              ],
+              "direction_NED": [
+                0.7071067811865476,
+                0.7071067811865476,
+                0.0
+              ],
+              "original_start_row_id": 778,
+              "requested_offset_s": 750,
+              "actual_offset_s": 750.9955000000009,
+              "fault_parameters": {
+                "id": "loss30_bias10",
+                "kind": "loss",
+                "duration_s": 30,
+                "recovery_bias_m": 10,
+                "bias_hold_s": 90
+              }
+            },
+            "metrics": {
+              "samples_expected": 1301,
+              "samples_valid": 1301,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 4.375334741267324,
+              "horizontal_p95_m": 7.797029693842327,
+              "horizontal_max_m": 8.222826100441411,
+              "horizontal_MAE_integral_m_s": 496.42442353091974,
+              "recovery_time_s": 0.0,
+              "recovered_within_timeout": true
+            }
+          }
+        ],
+        "event_macro_RMSE_m": 4.669638082189582,
+        "update_correction_max_m": 0.4356066524699287,
+        "update_correction_p95_m": 0.26005985046666225,
+        "GNSS_rejection_fraction": 0.07927927927927927,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T143933979842Z_P4_44767ae5/trajectory.csv": "bec825de8bf3a1a0d19ee979050bfcdd8c3cb94744e2fc65a646f8f2bb3ce44d",
+          "/home/aaron/lio_gins/outputs/20261011T143933979842Z_P4_44767ae5/per_update.jsonl": "96a008ef33050390e84f073e13562245723eafe7ff2e8220518d8af8831fbfb3",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    },
+    {
+      "name": "r01_C9",
+      "config": {
+        "method": "P",
+        "max_LIO_span_s": 0.15,
+        "max_LIO_availability_delay_s": 0.25,
+        "q_axis_scale": [
+          1.0,
+          1.0,
+          4.0
+        ],
+        "nis_limit": 16.266236,
+        "huber_limit": 2.5,
+        "recovery": {
+          "wait_s": 2,
+          "recovery_s": 15,
+          "protection": 15,
+          "onset_nis": 16.266236,
+          "gap_s": 2
+        },
+        "q_time_m2ps": 0.001,
+        "q_distance_m2pm": 0.001,
+        "revision": "r01",
+        "motion": {
+          "window_s": 5,
+          "score_limit": 4,
+          "good_duration_s": 2,
+          "monitor_gap_s": 1.5,
+          "max_wait_s": 60
+        },
+        "health_min_points": 100,
+        "health_max_residual_m": 0.2
+      },
+      "case": "ramp10",
+      "backend": {
+        "run_id": "20261011T144106706358Z_P4_85932194",
+        "exit_code": 0,
+        "output": "/home/aaron/lio_gins/outputs/20261011T144106706358Z_P4_85932194",
+        "wall_seconds": 5.686991389000468
+      },
+      "evaluation": "/home/aaron/lio_gins/outputs/20261011T144112449823Z_P4_5cc3e6e5",
+      "metrics": {
+        "method": "P",
+        "source_backend_run": "/home/aaron/lio_gins/outputs/20261011T144106706358Z_P4_85932194",
+        "source_cache_run": "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+        "source_cache_sha256": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+        "case_id": "ramp10",
+        "case_data_sha256": "f865b2733234d52b34b0becc0fe94697df72b1384d57b31888dab560c12e443a",
+        "sequence": "building00",
+        "role": "development",
+        "experiment_kind": "artificial_GNSS_pressure_on_real_route",
+        "metrics": {
+          "samples_expected": 12009,
+          "samples_valid": 12009,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 3.274869099047819,
+          "horizontal_p95_m": 5.948150190350709,
+          "horizontal_max_m": 6.953239512643933,
+          "vertical_rmse_m": 5.322215414510538
+        },
+        "receiver_STD_defined_quality_subset": {
+          "samples_expected": 6319,
+          "samples_valid": 6319,
+          "coverage": 1.0,
+          "horizontal_rmse_m": 3.1357490725406554,
+          "horizontal_p95_m": 6.525151751371038,
+          "horizontal_max_m": 6.953239512643933
+        },
+        "quality_subset_note": "input quality only; not truth-defined GNSS correctness; normal-cost gate applies natural case only",
+        "events": [
+          {
+            "event": {
+              "fault_start_sow": 9215.0,
+              "fault_end_sow": 9275.0,
+              "recovery_start_sow": 9275.0,
+              "window_sow": [
+                9205.0,
+                9365.0
+              ],
+              "direction_NED": [
+                1,
+                0,
+                0
+              ],
+              "original_start_row_id": 178,
+              "requested_offset_s": 150,
+              "actual_offset_s": 150.9955000000009,
+              "fault_parameters": {
+                "id": "ramp10",
+                "kind": "ramp",
+                "amplitude_m": 10,
+                "ramp_s": 30,
+                "hold_s": 30
+              }
+            },
+            "metrics": {
+              "samples_expected": 1601,
+              "samples_valid": 1601,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 3.4091062099855973,
+              "horizontal_p95_m": 4.961760567469704,
+              "horizontal_max_m": 5.046955124923278,
+              "horizontal_MAE_integral_m_s": 520.9237675752756,
+              "recovery_time_s": 23.0,
+              "recovered_within_timeout": true
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9515.0,
+              "fault_end_sow": 9575.0,
+              "recovery_start_sow": 9575.0,
+              "window_sow": [
+                9505.0,
+                9665.0
+              ],
+              "direction_NED": [
+                0,
+                1,
+                0
+              ],
+              "original_start_row_id": 478,
+              "requested_offset_s": 450,
+              "actual_offset_s": 450.9955000000009,
+              "fault_parameters": {
+                "id": "ramp10",
+                "kind": "ramp",
+                "amplitude_m": 10,
+                "ramp_s": 30,
+                "hold_s": 30
+              }
+            },
+            "metrics": {
+              "samples_expected": 1601,
+              "samples_valid": 1601,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 3.747772958174584,
+              "horizontal_p95_m": 5.1312949797326155,
+              "horizontal_max_m": 5.318236240729287,
+              "horizontal_MAE_integral_m_s": 568.6987949609357,
+              "recovery_time_s": null,
+              "recovered_within_timeout": false
+            }
+          },
+          {
+            "event": {
+              "fault_start_sow": 9815.0,
+              "fault_end_sow": 9875.0,
+              "recovery_start_sow": 9875.0,
+              "window_sow": [
+                9805.0,
+                9965.0
+              ],
+              "direction_NED": [
+                0.7071067811865476,
+                0.7071067811865476,
+                0.0
+              ],
+              "original_start_row_id": 778,
+              "requested_offset_s": 750,
+              "actual_offset_s": 750.9955000000009,
+              "fault_parameters": {
+                "id": "ramp10",
+                "kind": "ramp",
+                "amplitude_m": 10,
+                "ramp_s": 30,
+                "hold_s": 30
+              }
+            },
+            "metrics": {
+              "samples_expected": 1601,
+              "samples_valid": 1601,
+              "coverage": 1.0,
+              "horizontal_rmse_m": 3.1096351342347437,
+              "horizontal_p95_m": 4.541057901683678,
+              "horizontal_max_m": 4.753158418951915,
+              "horizontal_MAE_integral_m_s": 462.80778623029875,
+              "recovery_time_s": 40.5,
+              "recovered_within_timeout": true
+            }
+          }
+        ],
+        "event_macro_RMSE_m": 3.4221714341316414,
+        "update_correction_max_m": 0.41225108341826633,
+        "update_correction_p95_m": 0.24969231094095973,
+        "GNSS_rejection_fraction": 0.059166666666666666,
+        "output_delay_max_s": 0.13896379470861575,
+        "output_delay_p95_s": 0.10561358451814158,
+        "reference_point": "ADIS16465_center",
+        "alignment": "one common predetermined initial translation/rotation; no full-trajectory fit",
+        "quantity": "initial_position_conditioned_error_not_absolute_WGS84",
+        "reference_dependency": "MM/INS uses AT128, not independent reference sensing",
+        "grid_source": "declared initial epoch and raw IMU/reference overlap, not successful output intersection",
+        "backend_status": "PASSED",
+        "holdout_performance_opened": false,
+        "input_sha256": {
+          "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+          "/home/aaron/lio_gins/outputs/20261011T144106706358Z_P4_85932194/trajectory.csv": "5f9d0ab7a8c77a4c48aac52e81b078f13f2873b20b07e9eddb3a95a2ed78083f",
+          "/home/aaron/lio_gins/outputs/20261011T144106706358Z_P4_85932194/per_update.jsonl": "d9a71b43b45498c6a1619851ff915c65d9b2957c531caa464bc046969984f00f",
+          "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+          "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+          "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+        }
+      }
+    }
+  ],
+  "development_gate_on_primary_cache": false,
+  "scientific_freeze_allowed": false,
+  "requires_ablations_and_second_cache": true,
+  "main_configs_used": 12,
+  "candidate_revisions_used": 1,
+  "heldout_opened": false
+}
