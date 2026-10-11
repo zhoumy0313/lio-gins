@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "building00_full_replay_with_private_mountpoint_root",
+  "kind": "real_frontend",
+  "input": [
+    "scripts/run_lio.py",
+    "configs/data_locations.json",
+    "containers/derived_rootfs.local.json",
+    "outputs/20261011T130509928405Z_P1_4c5d376c/derived_rootfs_identity.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 3600.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_lio.py",
+    "data/i2nav-dataset/building00/building00.bag"
+  ]
+}

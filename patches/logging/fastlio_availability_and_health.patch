@@ -1,0 +1,29 @@
+--- a/src/laserMapping.cpp
++++ b/src/laserMapping.cpp
+@@ -849,6 +849,9 @@
+ 
+     /*** debug record ***/
+     FILE *pose_fp, *cov_fp;
++    FILE *interface_fp = fopen((root_dir + "/interface_events.csv").c_str(), "w");
++    if (!interface_fp) { ROS_ERROR("interface log cannot be opened"); return 1; }
++    fprintf(interface_fp, "scan_begin_unix,scan_end_unix,availability_ros_clock_unix,logged_wall_unix,effective_points,mean_abs_plane_residual_m,velocity_x,velocity_y,velocity_z\n");
+     string pose_log_dir = root_dir + "/trajectory.csv";
+     pose_fp = fopen(pose_log_dir.c_str(), "w");
+     string cov_log_dir = root_dir + "/STD.bin";
+@@ -1034,6 +1037,8 @@
+                 fout_out << setw(20) << Measures.lidar_beg_time - first_lidar_time << " " << euler_cur.transpose() << " " << state_point.pos.transpose()<< " " << ext_euler.transpose() << " "<<state_point.offset_T_L_I.transpose()<<" "<< state_point.vel.transpose() \
+                 <<" "<<state_point.bg.transpose()<<" "<<state_point.ba.transpose()<<" "<<state_point.grav<<" "<<feats_undistort->points.size()<<endl;
+                 dump_lio_state_to_log(pose_fp, cov_fp);
++                fprintf(interface_fp, "%.9f,%.9f,%.9f,%.9f,%d,%.9f,%.9f,%.9f,%.9f\n", Measures.lidar_beg_time, Measures.lidar_end_time, ros::Time::now().toSec(), ros::WallTime::now().toSec(), effct_feat_num, res_mean_last, state_point.vel(0), state_point.vel(1), state_point.vel(2));
++                fflush(interface_fp);
+             }
+         }
+ 
+@@ -1053,6 +1058,7 @@
+         pcd_writer.writeBinary(all_points_dir, *pcl_wait_save);
+     }
+ 
++    fclose(interface_fp);
+     fout_out.close();
+     fout_pre.close();
+ 

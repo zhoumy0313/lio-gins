@@ -1,0 +1,63 @@
+{
+  "protocol": "configs/KF_noise_sensitivity.json",
+  "cases": [
+    {
+      "std_multiplier": 0.5,
+      "evaluation_run_id": "20261011T125347982865Z_P2_a790caec",
+      "baseline_run": "/home/aaron/lio_gins/outputs/20261011T124926215590Z_P2_cd074cac",
+      "metrics": {
+        "samples_expected": 12009,
+        "samples_valid": 12009,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 4.1024912092955335,
+        "horizontal_p95_m": 7.174958855965144,
+        "horizontal_max_m": 17.90967047889893,
+        "vertical_rmse_m": 8.088170784060306
+      }
+    },
+    {
+      "std_multiplier": 1.0,
+      "evaluation_run_id": "20261011T124632852515Z_P2_fa4e1b07",
+      "baseline_run": "/home/aaron/lio_gins/outputs/20261011T124229474286Z_P2_502acaa3",
+      "metrics": {
+        "samples_expected": 12009,
+        "samples_valid": 12009,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 3.8452262505933823,
+        "horizontal_p95_m": 6.959384487495513,
+        "horizontal_max_m": 19.117122640946086,
+        "vertical_rmse_m": 8.199716922936693
+      }
+    },
+    {
+      "std_multiplier": 2.0,
+      "evaluation_run_id": "20261011T125417580287Z_P2_05b312fb",
+      "baseline_run": "/home/aaron/lio_gins/outputs/20261011T125141177973Z_P2_c04aae55",
+      "metrics": {
+        "samples_expected": 12009,
+        "samples_valid": 12009,
+        "coverage": 1.0,
+        "horizontal_rmse_m": 3.7028688656380235,
+        "horizontal_p95_m": 6.613445520046233,
+        "horizontal_max_m": 20.069592031833775,
+        "vertical_rmse_m": 8.2169148255368
+      }
+    }
+  ],
+  "selected": {
+    "std_multiplier": 2.0,
+    "evaluation_run_id": "20261011T125417580287Z_P2_05b312fb",
+    "baseline_run": "/home/aaron/lio_gins/outputs/20261011T125141177973Z_P2_c04aae55",
+    "metrics": {
+      "samples_expected": 12009,
+      "samples_valid": 12009,
+      "coverage": 1.0,
+      "horizontal_rmse_m": 3.7028688656380235,
+      "horizontal_p95_m": 6.613445520046233,
+      "horizontal_max_m": 20.069592031833775,
+      "vertical_rmse_m": 8.2169148255368
+    }
+  },
+  "not_independent_result": true,
+  "not_proposed_method_gain": true
+}

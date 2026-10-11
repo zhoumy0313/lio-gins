@@ -1,0 +1,30 @@
+{
+  "run_id": "20261011T125417580287Z_P2_05b312fb",
+  "phase": "P2",
+  "purpose": "B1_double_noise_development_evaluation",
+  "kind": "engineering",
+  "source_commit": "dd74148491e003d2153f5fc182bffeecb3c919fb",
+  "tracked_dirty_diff_sha256": "9604b2d7e9464805335c374b8038f5a598f43e412a25cce103a0ac3a2f4ed300",
+  "runner_sha256": "1646273df4db0218d50c48436fe1c150d001997943a94aad6f07c4e7f482526d",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/evaluate_kf_robot.py": "a4ee93591769dc6cb74696dfb2af21d00b28d53c930365a5114bcf9e067559a6",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30",
+    "/home/aaron/lio_gins/configs/data_locations.json": "3d14989ee86b6025f86f278dfc0622da00b045706bcacacb9be3253975dccc59",
+    "/home/aaron/lio_gins/outputs/20261011T125141177973Z_P2_c04aae55/KF_GINS_Navresult.nav": "850896ebbea6c3837a8f9bd51755c874bd62c9d18faab86019e378d206f88359",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_F9P_GNSS.pos": "85c3fb290f8318b7b6cf1fdddfb73224d3e76754ddecfc0a97853a5fdb21eba7"
+  },
+  "config_sha256": "0ff0b696c8bb3277f0e35f5358d4af998f637af80695c34d03079474760dc7a5",
+  "created_at": "2026-10-11T12:54:17.634480+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T12:54:22.921373+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

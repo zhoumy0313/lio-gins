@@ -1,0 +1,23 @@
+{
+  "phase": "P2",
+  "purpose": "bounded_LIO_tests_with_discovery_entry",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_causal_lio.py",
+    "src/adapters/causal_lio.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_causal_lio.py",
+    "-v"
+  ]
+}

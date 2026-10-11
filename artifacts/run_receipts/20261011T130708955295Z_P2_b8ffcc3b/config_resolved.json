@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "bounded_LIO_availability_and_future_independence_tests",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_causal_lio.py",
+    "src/adapters/causal_lio.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "tests/test_causal_lio.py",
+    "-v"
+  ]
+}

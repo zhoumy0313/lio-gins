@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "prepare_availability_context_with_clean_environment_launcher",
+  "kind": "engineering",
+  "input": [
+    "scripts/prepare_availability_context.py",
+    "containers/run_inside.sh",
+    "scripts/context_integrity.py",
+    "outputs/20261011T052215556145Z_P1_a2b55b2f/context_sha256.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/prepare_availability_context.py",
+    "outputs/20261011T052215556145Z_P1_a2b55b2f"
+  ]
+}

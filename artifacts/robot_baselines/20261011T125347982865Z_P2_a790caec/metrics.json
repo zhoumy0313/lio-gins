@@ -1,0 +1,55 @@
+{
+  "sequence": "building00",
+  "role": "development",
+  "experiment_kind": "natural_data",
+  "method": "B1_KF_GINS_unmodified_initial_run",
+  "initialization_protocol_id": "known_initial_state_first_reference_epoch_v1",
+  "initialization_run": "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b",
+  "source_run": "/home/aaron/lio_gins/outputs/20261011T124926215590Z_P2_cd074cac",
+  "alignment": "one predetermined common initial translation; no fitted trajectory transform",
+  "quantity": "initial_position_conditioned_error_not_absolute_WGS84_accuracy",
+  "reference_point": "ADIS16465_center",
+  "metrics_10Hz": {
+    "samples_expected": 12009,
+    "samples_valid": 12009,
+    "coverage": 1.0,
+    "horizontal_rmse_m": 4.1024912092955335,
+    "horizontal_p95_m": 7.174958855965144,
+    "horizontal_max_m": 17.90967047889893,
+    "vertical_rmse_m": 8.088170784060306
+  },
+  "B0_raw_F9P_SPP_1Hz_antenna_errors": {
+    "samples_expected": 1200,
+    "samples_valid": 1200,
+    "coverage": 1.0,
+    "horizontal_rmse_m": 3.3013768260501024,
+    "horizontal_p95_m": 5.952255074730755,
+    "horizontal_max_m": 18.029983769398623
+  },
+  "B0_reference_point_note": "raw GNSS is antenna; offline reference is transformed to antenna using reference attitude, never supplied to an estimator",
+  "B1_same_GNSS_epochs_ADIS_errors": {
+    "samples_expected": 1200,
+    "samples_valid": 1200,
+    "coverage": 1.0,
+    "horizontal_rmse_m": 4.067119687372755,
+    "horizontal_p95_m": 7.128525741105329,
+    "horizontal_max_m": 17.4870980378285
+  },
+  "grid_sow_range": [
+    9064.1,
+    10264.900000004369
+  ],
+  "grid_source": "predeclared initialization and input IMU/reference overlap, not output coverage",
+  "reference_AT128_dependency": "MM/INS reference shares AT128 information; not independent truth sensor",
+  "nav_rows": 243372,
+  "week_field_zero_placeholder": true,
+  "strong_baseline_status": "pending full LIO interface and predeclared noise sensitivity",
+  "not_method_gain_evidence": true,
+  "holdout_performance_opened": false,
+  "input_sha256": {
+    "outputs/20261011T124926215590Z_P2_cd074cac/KF_GINS_Navresult.nav": "d558a4413626fab49817698ae7c66d1520837826b4dfd55b6e67f69b9603d868",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_F9P_GNSS.pos": "85c3fb290f8318b7b6cf1fdddfb73224d3e76754ddecfc0a97853a5fdb21eba7",
+    "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+  }
+}

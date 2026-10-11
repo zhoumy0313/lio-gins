@@ -1,0 +1,28 @@
+{
+  "phase": "P2",
+  "purpose": "common_geometry_filter_and_bounded_causality_tests",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_causal_lio.py",
+    "tests/test_common_interfaces.py",
+    "tests/test_context_integrity.py",
+    "src/adapters/causal_lio.py",
+    "src/adapters/geodesy.py",
+    "src/adapters/sensor_text.py",
+    "src/evaluation/reference.py",
+    "src/fusion/position_kf.py",
+    "scripts/context_integrity.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

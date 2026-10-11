@@ -1,0 +1,24 @@
+{
+  "phase": "P2",
+  "purpose": "B1_half_noise_development_evaluation",
+  "kind": "engineering",
+  "input": [
+    "scripts/evaluate_kf_robot.py",
+    "src/adapters/geodesy.py",
+    "src/evaluation/reference.py",
+    "configs/data_locations.json",
+    "outputs/20261011T124926215590Z_P2_cd074cac/KF_GINS_Navresult.nav",
+    "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json",
+    "data/i2nav-dataset/building00/building00_groundtruth.nav",
+    "data/i2nav-dataset/building00/building00_F9P_GNSS.pos"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/evaluate_kf_robot.py",
+    "outputs/20261011T124926215590Z_P2_cd074cac",
+    "outputs/20261011T124056742603Z_P2_e310122b"
+  ]
+}

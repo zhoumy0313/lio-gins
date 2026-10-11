@@ -81,7 +81,7 @@ add_message_files(FILES CustomMsg.msg CustomPoint.msg)
 generate_messages(DEPENDENCIES std_msgs)
 catkin_package(CATKIN_DEPENDS std_msgs message_runtime)
 ''')
-(msg.parent/'package.xml').write_text('''<package format="2"><name>livox_ros_driver</name><version>0.0.0</version><description>Project message-only compatibility adapter from pinned Livox definitions; no driver or SDK.</description><maintainer email="codex@localhost">Codex checkpoint</maintainer><license>MIT</license><buildtool_depend>catkin</buildtool_depend><build_depend>message_generation</build_depend><depend>std_msgs</depend><exec_depend>message_runtime</exec_depend></package>
+(msg.parent/'package.xml').write_text('''<package format="2"><name>livox_ros_driver</name><version>0.0.0</version><description>Project message-only compatibility adapter from pinned Livox definitions; no driver or SDK.</description><maintainer email="project-adapter@example.invalid">Project compatibility adapter</maintainer><license>MIT</license><buildtool_depend>catkin</buildtool_depend><build_depend>message_generation</build_depend><depend>std_msgs</depend><exec_depend>message_runtime</exec_depend></package>
 ''')
 shutil.copy2(root/'containers/Dockerfile.noetic',context/'Dockerfile')
 shutil.copy2(root/'containers/run_inside.sh',context/'run_inside.sh')

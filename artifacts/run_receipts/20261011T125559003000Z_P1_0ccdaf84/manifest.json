@@ -1,0 +1,29 @@
+{
+  "run_id": "20261011T125559003000Z_P1_0ccdaf84",
+  "phase": "P1",
+  "purpose": "rootless_build_with_single_ID_package_ownership_adaptation_and_time_logs",
+  "kind": "engineering",
+  "source_commit": "dd74148491e003d2153f5fc182bffeecb3c919fb",
+  "tracked_dirty_diff_sha256": "0a77b45fb0b3b8ad75277f97282226d575cc2b49ffba2b6fd50d3af199163560",
+  "runner_sha256": "1646273df4db0218d50c48436fe1c150d001997943a94aad6f07c4e7f482526d",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/build_noetic_rootless.py": "db58d738f520f1f560b8279cf47c129fbaf6a5a8cbc7cbce2df7735593298771",
+    "/home/aaron/lio_gins/containers/build_rootless_inside.sh": "db7f7cfda306d69821c9ef3227a0590da0bc6b4c59d8b1f42c789096a17f48ba",
+    "/home/aaron/lio_gins/scripts/context_integrity.py": "5d273e9b71409f53e24ddf454c21d1e801d7b86486cc6940e4f6a0e1e0af28b7",
+    "/home/aaron/lio_gins/outputs/20261011T125053239109Z_P1_cc063d42/manifest.json": "157dd583b625e5ccd907b83639721a19ca243560564f53d2df0e264b71f91fa4",
+    "/home/aaron/lio_gins/outputs/20261011T125053239109Z_P1_cc063d42/SHA256SUMS": "5872bb00078449f046a1dff72ba9031db217edc3596b03e341756318bd43bbb4",
+    "/home/aaron/lio_gins/outputs/20261011T123536145200Z_P1_aa57b6d1/pull_identity.json": "9a1783229ce806f46f10d1dc435b4c7dcac68c8fcf1a2705e902254bbababb83",
+    "/home/aaron/lio_gins/outputs/20261011T125347517499Z_P2_fedee5b0/context_sha256.json": "49c07b082c057f08962de347496340db627e1090096daf9fffcdf84ba8c28aa5"
+  },
+  "config_sha256": "8f7da0e8131cd8da5010560b42dedf925bb448e15e342644098778cf20500a56",
+  "created_at": "2026-10-11T12:55:59.014363+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "FAILED",
+  "exit_code": 1,
+  "ended_at": "2026-10-11T12:56:15.837770+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

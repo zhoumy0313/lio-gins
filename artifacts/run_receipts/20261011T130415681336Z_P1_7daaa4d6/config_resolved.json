@@ -1,0 +1,18 @@
+{
+  "phase": "P1",
+  "purpose": "prepare_catkin_valid_message_package_metadata",
+  "kind": "engineering",
+  "input": [
+    "scripts/prepare_noetic_context.py",
+    "containers/Dockerfile.noetic",
+    "containers/run_inside.sh",
+    "configs/dependencies.lock.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/prepare_noetic_context.py"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "phase": "P1",
+  "purpose": "compile_valid_catkin_AT128_baseline_rootless",
+  "kind": "engineering",
+  "input": [
+    "scripts/build_noetic_rootless.py",
+    "containers/build_rootless_inside.sh",
+    "scripts/context_integrity.py",
+    "outputs/20261011T125822447355Z_P1_6036ebab/manifest.json",
+    "outputs/20261011T125822447355Z_P1_6036ebab/SHA256SUMS",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1/pull_identity.json",
+    "outputs/20261011T130431070370Z_P2_5ed71f90/context_sha256.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 3600.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/build_noetic_rootless.py",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1",
+    "outputs/20261011T130431070370Z_P2_5ed71f90",
+    "--resume-from",
+    "outputs/20261011T125822447355Z_P1_6036ebab"
+  ]
+}

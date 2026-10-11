@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T130431070370Z_P2_5ed71f90",
+  "phase": "P2",
+  "purpose": "prepare_valid_catkin_context_with_time_health_logs",
+  "kind": "engineering",
+  "source_commit": "dd74148491e003d2153f5fc182bffeecb3c919fb",
+  "tracked_dirty_diff_sha256": "c59b1bfd06642d0dd2c3818db044366ae38da97296b706a5671e7638b77a1a75",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/prepare_availability_context.py": "8b7afe63c734369a8a4602b5355c7a234b60d044b5f99e368c99f6504d316d6e",
+    "/home/aaron/lio_gins/containers/run_inside.sh": "cf40406410f6b8a4b6b788cc2000f7aef1c15c5789b0b72ea1f8f51f25e2fff3",
+    "/home/aaron/lio_gins/scripts/context_integrity.py": "5d273e9b71409f53e24ddf454c21d1e801d7b86486cc6940e4f6a0e1e0af28b7",
+    "/home/aaron/lio_gins/outputs/20261011T130415681336Z_P1_7daaa4d6/context_sha256.json": "d27b0984b5195d07aff5988f349b0fa32f81ea2b58ba3cb59f466ea7ee86fe13"
+  },
+  "config_sha256": "888b55904bd6362085a9583fabc25a70ae7f0724f78179b554f71a9795976e84",
+  "created_at": "2026-10-11T13:04:31.079010+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:04:31.394727+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

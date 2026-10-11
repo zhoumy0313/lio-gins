@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "isolated_ROS_launch_and_bag_index_smoke",
+  "kind": "engineering",
+  "input": [
+    "scripts/probe_isolated_ros.py",
+    "outputs/20261011T131157939102Z_P2_f3a8c2f1/frontend_input_identity.json",
+    "outputs/20261011T131157939102Z_P2_f3a8c2f1/container_hosts",
+    "outputs/20261011T131157939102Z_P2_f3a8c2f1/container_hostname"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/probe_isolated_ros.py",
+    "outputs/20261011T131157939102Z_P2_f3a8c2f1"
+  ]
+}

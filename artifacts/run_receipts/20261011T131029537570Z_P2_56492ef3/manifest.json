@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T131029537570Z_P2_56492ef3",
+  "phase": "P2",
+  "purpose": "building00_full_replay_with_private_mountpoint_root",
+  "kind": "real_frontend",
+  "source_commit": "dd74148491e003d2153f5fc182bffeecb3c919fb",
+  "tracked_dirty_diff_sha256": "26dd3581b3c5ae9ff2273f5a12d3fc01bdcf4924d2288a891d690c5349e24d9d",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_lio.py": "bb3ccb5a62b17b2182aa0537c5c151ad6960673390de5124ac6b11ed29cca95a",
+    "/home/aaron/lio_gins/configs/data_locations.json": "3d14989ee86b6025f86f278dfc0622da00b045706bcacacb9be3253975dccc59",
+    "/home/aaron/lio_gins/containers/derived_rootfs.local.json": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+    "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/derived_rootfs_identity.json": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd"
+  },
+  "config_sha256": "0c5787b1543533bccb1dd42d44fa0cc7e6364f1bc54c2ceed7514cbfcacb4799",
+  "created_at": "2026-10-11T13:10:29.546233+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "FAILED",
+  "exit_code": 1,
+  "ended_at": "2026-10-11T13:11:02.494881+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "prepare_valid_catkin_context_with_time_health_logs",
+  "kind": "engineering",
+  "input": [
+    "scripts/prepare_availability_context.py",
+    "containers/run_inside.sh",
+    "scripts/context_integrity.py",
+    "outputs/20261011T130415681336Z_P1_7daaa4d6/context_sha256.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/prepare_availability_context.py",
+    "outputs/20261011T130415681336Z_P1_7daaa4d6"
+  ]
+}

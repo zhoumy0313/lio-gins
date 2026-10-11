@@ -3,6 +3,7 @@
 import csv
 import hashlib
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -21,11 +22,12 @@ for name,expected in initial['existing_files_sha256'].items():
 with (root/'docs/RUN_REGISTER.csv').open() as f:records=list(csv.DictReader(f))
 for run in records:
     folder=Path(run['manifest_path']).parent
+    manifest=json.loads((folder/'manifest.json').read_text())
     for line in (folder/'SHA256SUMS').read_text().splitlines():
         expected,name=line.split('  ',1);p=folder/name
-        if not p.exists() or sha(p)!=expected:failures.append('run checksum mismatch: '+str(p))
+        actual=hashlib.sha256(os.readlink(p).encode()).hexdigest() if p.is_symlink() and manifest.get('checksum_mode')=='regular_file_bytes_or_symlink_target_text_v1' else (sha(p) if p.exists() else None)
+        if actual!=expected:failures.append('run checksum mismatch: '+str(p))
         verified+=1
-    manifest=json.loads((folder/'manifest.json').read_text())
     if manifest['status']!=run['status']:failures.append('register status mismatch: '+run['run_id'])
     receipt=root/'artifacts/run_receipts'/run['run_id']
     for name in ['manifest.json','commands.jsonl','config_resolved.json','SHA256SUMS']:

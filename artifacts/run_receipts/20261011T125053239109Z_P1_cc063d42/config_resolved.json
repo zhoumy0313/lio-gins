@@ -1,0 +1,25 @@
+{
+  "phase": "P1",
+  "purpose": "rootless_noetic_build_reusing_verified_partial_package_cache",
+  "kind": "engineering",
+  "input": [
+    "scripts/build_noetic_rootless.py",
+    "containers/build_rootless_inside.sh",
+    "scripts/context_integrity.py",
+    "outputs/20261011T123931432247Z_P1_429eb8f5/manifest.json",
+    "outputs/20261011T123931432247Z_P1_429eb8f5/SHA256SUMS",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1/pull_identity.json",
+    "outputs/20261011T052215556145Z_P1_a2b55b2f/context_sha256.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 3600.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/build_noetic_rootless.py",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1",
+    "outputs/20261011T052215556145Z_P1_a2b55b2f",
+    "--resume-from",
+    "outputs/20261011T123931432247Z_P1_429eb8f5"
+  ]
+}

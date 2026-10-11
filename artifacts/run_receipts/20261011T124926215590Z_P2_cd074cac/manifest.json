@@ -1,0 +1,29 @@
+{
+  "run_id": "20261011T124926215590Z_P2_cd074cac",
+  "phase": "P2",
+  "purpose": "B1_building00_noise_std_half",
+  "kind": "real_gnss_ins",
+  "source_commit": "dd74148491e003d2153f5fc182bffeecb3c919fb",
+  "tracked_dirty_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runner_sha256": "5b65d346111c3aa82c430c9092294eb285a8475a5f50ccfcce772f1ae3d1ec1a",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_kf_robot.py": "dfe3362320c63a4ae0c59bed5857e2809f31a522940f885cf54e31751edcf2ac",
+    "/home/aaron/lio_gins/configs/KF_noise_sensitivity.json": "76fadb60da77b19a294729b2f447de097aafb6b87ae43c4ffe2d8d6eec8e8194",
+    "/home/aaron/lio_gins/configs/initialization_protocol.json": "a21f3478efd1e0cf237082fc87e2fdfecf92a1c7391d47fdea771edd4ed4edfc",
+    "/home/aaron/lio_gins/configs/data_locations.json": "3d14989ee86b6025f86f278dfc0622da00b045706bcacacb9be3253975dccc59",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_ADIS16465_IMU.txt": "55d950e145338f312e7f7be00118d7b5282dbd5f3199450dde5037b7417f9f16",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_F9P_GNSS.pos": "85c3fb290f8318b7b6cf1fdddfb73224d3e76754ddecfc0a97853a5fdb21eba7",
+    "/home/aaron/lio_gins/third_party/KF-GINS/bin/KF-GINS": "8885c5a987db080a04a6a12ba1509d16f860c90fa2299b36685408ead96ace8d"
+  },
+  "config_sha256": "144d634abdc697069024522064e796a6469d1e31969eae0c82f05cd875151d79",
+  "created_at": "2026-10-11T12:49:26.237204+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T12:49:32.076036+00:00"
+}

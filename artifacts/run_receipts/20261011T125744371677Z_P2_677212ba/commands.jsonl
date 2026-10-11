@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "scripts/prepare_availability_context.py", "outputs/20261011T052215556145Z_P1_a2b55b2f"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T12:57:44.381221+00:00", "ended_at": "2026-10-11T12:57:44.696474+00:00", "exit_code": 0, "wall_seconds": 0.3152637559996947}

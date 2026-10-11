@@ -1,0 +1,25 @@
+{
+  "phase": "P1",
+  "purpose": "rootless_build_with_single_ID_package_ownership_adaptation_and_time_logs",
+  "kind": "engineering",
+  "input": [
+    "scripts/build_noetic_rootless.py",
+    "containers/build_rootless_inside.sh",
+    "scripts/context_integrity.py",
+    "outputs/20261011T125053239109Z_P1_cc063d42/manifest.json",
+    "outputs/20261011T125053239109Z_P1_cc063d42/SHA256SUMS",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1/pull_identity.json",
+    "outputs/20261011T125347517499Z_P2_fedee5b0/context_sha256.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 3600.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/build_noetic_rootless.py",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1",
+    "outputs/20261011T125347517499Z_P2_fedee5b0",
+    "--resume-from",
+    "outputs/20261011T125053239109Z_P1_cc063d42"
+  ]
+}

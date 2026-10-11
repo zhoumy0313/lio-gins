@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "scripts/evaluate_kf_robot.py", "outputs/20261011T124926215590Z_P2_cd074cac", "outputs/20261011T124056742603Z_P2_e310122b"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T12:53:48.035111+00:00", "ended_at": "2026-10-11T12:53:53.220246+00:00", "exit_code": 0, "wall_seconds": 5.185145077000016}

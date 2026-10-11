@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T131414920017Z_P2_17e494e3",
+  "phase": "P2",
+  "purpose": "isolated_ROS_launch_and_bag_index_smoke",
+  "kind": "engineering",
+  "source_commit": "dd74148491e003d2153f5fc182bffeecb3c919fb",
+  "tracked_dirty_diff_sha256": "5a663a179d2008ae208581c1939cec12bea733c2e5a7b543f358f75d3424b363",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/probe_isolated_ros.py": "88d1b4b21df3a009d07c09af409dd7de0348060a24cd655cd519d46fbad17584",
+    "/home/aaron/lio_gins/outputs/20261011T131157939102Z_P2_f3a8c2f1/frontend_input_identity.json": "2c440b3c96313a189951e4b0f192feac99450d4cd233b6a2859d728a1479490c",
+    "/home/aaron/lio_gins/outputs/20261011T131157939102Z_P2_f3a8c2f1/container_hosts": "5a054dd7de678bbcc5f1f7f3dca1dd1d94f8a14404f1ba4a1843152289a8f110",
+    "/home/aaron/lio_gins/outputs/20261011T131157939102Z_P2_f3a8c2f1/container_hostname": "1bc8778784faf67cc734fca6e99523ad51cbedbef707960d3dd6ece5c07b824b"
+  },
+  "config_sha256": "93a52b600aefc6b3bbcf1903974cab0a3e9b0575950b167a640106284515e79c",
+  "created_at": "2026-10-11T13:14:14.927167+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:14:36.898478+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

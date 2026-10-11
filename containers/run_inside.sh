@@ -1,7 +1,8 @@
 #!/bin/bash
-set -euo pipefail
+set -eo pipefail
 source /opt/ros/noetic/setup.bash
 source /opt/catkin_ws/devel/setup.bash
+set -u
 export ROS_HOME=/output/ros
 export ROS_MASTER_URI=http://127.0.0.1:11311
 export ROS_IP=127.0.0.1

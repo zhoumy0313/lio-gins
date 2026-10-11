@@ -1,0 +1,25 @@
+{
+  "phase": "P1",
+  "purpose": "compile_noetic_fastlio_clean_namespace_with_validated_packages",
+  "kind": "engineering",
+  "input": [
+    "scripts/build_noetic_rootless.py",
+    "containers/build_rootless_inside.sh",
+    "scripts/context_integrity.py",
+    "outputs/20261011T125559003000Z_P1_0ccdaf84/manifest.json",
+    "outputs/20261011T125559003000Z_P1_0ccdaf84/SHA256SUMS",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1/pull_identity.json",
+    "outputs/20261011T125744371677Z_P2_677212ba/context_sha256.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 3600.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/build_noetic_rootless.py",
+    "outputs/20261011T123536145200Z_P1_aa57b6d1",
+    "outputs/20261011T125744371677Z_P2_677212ba",
+    "--resume-from",
+    "outputs/20261011T125559003000Z_P1_0ccdaf84"
+  ]
+}

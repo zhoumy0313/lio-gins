@@ -26,6 +26,11 @@ def utc():
     return dt.datetime.now(dt.timezone.utc).isoformat()
 
 
+def sealed_sha(path):
+    # Rootfs links may be absolute: hash link text without reading host targets.
+    return hashlib.sha256(os.readlink(path).encode()).hexdigest() if path.is_symlink() else sha(path)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--phase', required=True)
@@ -49,6 +54,16 @@ def main():
     head = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=ROOT, capture_output=True, text=True)
     diff = subprocess.run(['git', 'diff', '--binary', 'HEAD'], cwd=ROOT, capture_output=True).stdout
     inputs = {str(Path(x).resolve()): sha(x) for x in a.input}
+    # Retain exact small build/config/script inputs even when worktree changes
+    # during a long run. Raw sensor/reference files and large binaries stay by SHA.
+    snapshot = out / 'source_inputs'
+    snapshot.mkdir()
+    for x in a.input:
+        path=Path(x).resolve()
+        if path.is_relative_to(ROOT) and not path.is_relative_to(ROOT/'data') and path.stat().st_size<=2*1024*1024:
+            target=snapshot/path.relative_to(ROOT);target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(path.read_bytes())
+    (snapshot/'runner.py').write_bytes(Path(__file__).read_bytes())
+    (out/'tracked_source_diff.patch').write_bytes(diff)
     manifest = {'run_id': rid, 'phase': a.phase, 'purpose': a.purpose, 'kind': a.kind,
                 'source_commit': head.stdout.strip() if head.returncode == 0 else None,
                 'tracked_dirty_diff_sha256': hashlib.sha256(diff).hexdigest(),
@@ -81,9 +96,10 @@ def main():
                'exit_code': rc, 'wall_seconds': time.monotonic() - t}
     (out / 'commands.jsonl').write_text(json.dumps(command) + '\n')
     status = 'PASSED' if rc == 0 else ('BLOCKED' if rc == a.blocked_exit else 'FAILED')
-    manifest.update({'status': status, 'exit_code': rc, 'ended_at': utc()})
+    manifest.update({'status': status, 'exit_code': rc, 'ended_at': utc(),
+                     'checksum_mode': 'regular_file_bytes_or_symlink_target_text_v1'})
     (out / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
-    (out / 'SHA256SUMS').write_text(''.join(f'{sha(f)}  {f.relative_to(out)}\n' for f in sorted(out.rglob('*')) if f.is_file() and f.name != 'SHA256SUMS'))
+    (out / 'SHA256SUMS').write_text(''.join(f'{sealed_sha(f)}  {f.relative_to(out)}\n' for f in sorted(out.rglob('*')) if (f.is_file() or f.is_symlink()) and f.name != 'SHA256SUMS'))
     receipt = ROOT / 'artifacts' / 'run_receipts' / rid
     receipt.mkdir(parents=True, exist_ok=False)
     for name in ['manifest.json', 'commands.jsonl', 'config_resolved.json', 'SHA256SUMS']:
