@@ -1,0 +1,10 @@
+{
+  "pairs": 456,
+  "expected_pairs": 456,
+  "coverage_complete": true,
+  "all_windows_complete": true,
+  "inherited_RMSE_parity_max_m": 0,
+  "right_censor_retained": true,
+  "future_labels_online": false,
+  "new_route_accessed": false
+}

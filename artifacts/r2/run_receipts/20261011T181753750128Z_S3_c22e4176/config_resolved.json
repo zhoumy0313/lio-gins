@@ -1,0 +1,15 @@
+{
+  "stage": "S3",
+  "purpose": "offline_injected_bias_cancellation_diagnostic",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/injection_cancellation.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "python3",
+    "experiments/r2/injection_cancellation.py"
+  ]
+}

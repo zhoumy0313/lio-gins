@@ -1,0 +1,10 @@
+{
+  "stage": "S2",
+  "stage_commit": "08fb34d7e4f6065340a1ef107fe297eb7d14230a",
+  "explicit_retry_push_exit_code": 0,
+  "verified_remote_target_SHA": "08fb34d7e4f6065340a1ef107fe297eb7d14230a",
+  "R1_remote_SHA": "c12a42a3484458e1737e63201792e1122fc99c0d",
+  "transport": "existing local HTTP proxy CONNECT, SSH443 with project official key HostKeyAliasgithub.com",
+  "earlier_failed_attempt_preserved": "S2.json",
+  "retry_used_force": false
+}

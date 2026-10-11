@@ -1,0 +1,13 @@
+{
+  "stage": "S3",
+  "purpose": "bounded_readonly_frontend_repeatability_diagnosis",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/frontend_diagnosis.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/frontend_diagnosis.py"
+  ]
+}

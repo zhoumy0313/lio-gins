@@ -1,0 +1,6 @@
+{
+  "tracked_files": 6079,
+  "secret_pattern_findings": [],
+  "files_over100MB": [],
+  "scope": "all tracked paths on R2, actual filesystem reads"
+}

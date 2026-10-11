@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/frontend_diagnosis.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T18:13:22.680102+00:00", "ended_UTC": "2026-10-11T18:13:22.844673+00:00", "exit_code": 0, "wall_seconds": 0.16434673299954738, "CPU_user_s": 0.100489, "CPU_system_s": 0.027894, "max_RSS_KiB": 31404, "executed": true}

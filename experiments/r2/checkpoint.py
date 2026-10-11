@@ -1,5 +1,5 @@
 """Retained stage state, local checkpoint, authorized R2 branch push and readback."""
-import datetime,json,os,subprocess,sys
+import datetime,json,os,re,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];stage=sys.argv[1];next_stage=sys.argv[2]
 def git(*args,env=None):return subprocess.check_output(['git',*args],cwd=ROOT,text=True,env=env).strip()
@@ -13,9 +13,13 @@ paths=['.gitignore','AGENTS.md','docs/GOAL_LIO_GINS_R2_SUBMISSION.md','docs/USER
 subprocess.run(['git','add','--',*[p for p in paths if (ROOT/p).exists()]],cwd=ROOT,check=True)
 for path in git('diff','--cached','--name-only').splitlines():
     assert (ROOT/path).stat().st_size<10000000,path
-subprocess.run(['git','-c','user.name=Codex checkpoint','-c','user.email=codex@localhost','commit','-m',f'R2 {stage}: research evidence and manuscript checkpoint'],cwd=ROOT,check=True)
-env=os.environ.copy();env['GIT_SSH_COMMAND']='ssh -o UserKnownHostsFile=/home/aaron/lio_gins/cache/push_github/known_hosts -o StrictHostKeyChecking=yes -o HostKeyAlgorithms=ssh-ed25519 -o UpdateHostKeys=no -o BatchMode=yes -o ConnectTimeout=15'
+staged=git('diff','--cached','--binary')
+for pattern in [r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',r'gh[pousr]_[A-Za-z0-9]{30,}',r'github_pat_[A-Za-z0-9_]{40,}',r'AKIA[A-Z0-9]{16}']:
+    assert re.search(pattern,staged) is None,'sensitive content detected'
+subprocess.run(['git','-c','user.name=Codex checkpoint','-c','user.email=codex@localhost','commit','-q','-m',f'R2 {stage}: research evidence and manuscript checkpoint'],cwd=ROOT,check=True)
+head=git('rev-parse','HEAD')
+env=os.environ.copy();env['GIT_SSH_COMMAND']='ssh -o HostName=ssh.github.com -p 443 -o HostKeyAlias=github.com -o ProxyCommand="python3 /home/aaron/lio_gins/experiments/r2/proxy_tunnel.py ssh.github.com 443" -o UserKnownHostsFile=/home/aaron/lio_gins/cache/push_github/known_hosts -o StrictHostKeyChecking=yes -o HostKeyAlgorithms=ssh-ed25519 -o UpdateHostKeys=no -o BatchMode=yes -o ConnectTimeout=15 -o ServerAliveInterval=15 -o ServerAliveCountMax=2'
 push=subprocess.run(['git','push','-u','origin','research/lio-gins-r2-submission'],cwd=ROOT,env=env,check=False,capture_output=True,text=True)
-head=git('rev-parse','HEAD');remote=git('ls-remote','--heads','origin','research/lio-gins-r2-submission','research/lio-gins-r1',env=env) if push.returncode==0 else ''
-receipt={'stage':stage,'local_commit':head,'push_exit_code':push.returncode,'push_stdout':push.stdout,'push_stderr':push.stderr,'remote_advertisement':remote,'R1_preserved':True,'verified_R2_HEAD':head+'\trefs/heads/research/lio-gins-r2-submission' in remote}
+remote=git('ls-remote','--heads','origin','research/lio-gins-r2-submission','research/lio-gins-r1',env=env) if push.returncode==0 else ''
+receipt={'stage':stage,'local_commit':head,'push_exit_code':push.returncode,'push_stdout':push.stdout,'push_stderr':push.stderr,'remote_advertisement':remote,'R1_preserved':True,'staged_secret_scan_passed':True,'file_size_scan_passed':True,'verified_R2_HEAD':head+'\trefs/heads/research/lio-gins-r2-submission' in remote}
 dest=ROOT/'artifacts/r2/checkpoints';dest.mkdir(parents=True,exist_ok=True);(dest/(stage+'.json')).write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt));assert receipt['verified_R2_HEAD']

@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-R2-SUBMISSION",
-  "stage": "S3",
-  "execution_status": "S2_checkpoint_complete",
+  "stage": "S4",
+  "execution_status": "S3_checkpoint_complete",
   "execution_complete": false,
   "pipeline_ready_from_R1": true,
   "new_metric_protocol_documented": true,
@@ -20,7 +20,7 @@
   "remaining_human_actions": [],
   "R1_base_SHA": "c12a42a3484458e1737e63201792e1122fc99c0d",
   "branch": "research/lio-gins-r2-submission",
-  "updated_UTC": "2026-10-11T18:10:31.729644+00:00",
+  "updated_UTC": "2026-10-11T18:25:40.137730+00:00",
   "next_action": "S2 lock P unchanged and audit previously screened NIS controls",
   "method_revisions_used": 0,
   "candidate_configs_max": 8,
@@ -38,6 +38,7 @@
   "completed_stages": [
     "S0",
     "S1",
-    "S2"
+    "S2",
+    "S3"
   ]
 }

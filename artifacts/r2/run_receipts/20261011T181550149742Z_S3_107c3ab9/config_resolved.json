@@ -1,0 +1,17 @@
+{
+  "stage": "S3",
+  "purpose": "independent_complete_error_and_clock_recomputation",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/independent_check.py",
+    "outputs_r2/20261011T181349420151Z_S3_991cd0d6/event_results.json"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "python3",
+    "experiments/r2/independent_check.py",
+    "outputs_r2/20261011T181349420151Z_S3_991cd0d6"
+  ]
+}

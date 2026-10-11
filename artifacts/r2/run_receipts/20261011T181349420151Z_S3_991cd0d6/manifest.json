@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T181349420151Z_S3_991cd0d6",
+  "stage": "S3",
+  "purpose": "full_reanalysis_with_stricter_existing_NIS_controls",
+  "kind": "engineering",
+  "source_commit": "08fb34d7e4f6065340a1ef107fe297eb7d14230a",
+  "dirty_diff_SHA": "a2b7b75fa32109491c069756823e6048fc72875f2125e5f4d680872b1c493b6d",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/reanalyse.py": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+    "/home/aaron/lio_gins/configs/r2/protocol_v1.yaml": "747a9422cb614d9e093d0044050a8676f421de958b0d73251d4f8b7d1cfa39f6",
+    "/home/aaron/lio_gins/outputs_r2/20261011T181051808417Z_S3_274770dc/complete_index.json": "cde7f99f5e9d1007cc3859ee676cf1e3a54af1782015cc17467f6d96794cfef6"
+  },
+  "started_UTC": "2026-10-11T18:13:49.428157+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T18:15:16.327471+00:00"
+}

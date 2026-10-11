@@ -1,0 +1,25 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T181638564502Z_S3_ee8738ce",
+  "stage": "S3",
+  "purpose": "independent_complete_recomputation_legacy_schema_supported",
+  "kind": "engineering",
+  "source_commit": "08fb34d7e4f6065340a1ef107fe297eb7d14230a",
+  "dirty_diff_SHA": "221320a89e6b1dae0f172e7f0a385c79b771293cb5389abd0202692d482b9d95",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/independent_check.py": "17b47956de703228a1029ccf876d161c4468ebece9a6b6c6dd54a7eac1b7a2aa",
+    "/home/aaron/lio_gins/outputs_r2/20261011T181349420151Z_S3_991cd0d6/event_results.json": "f4b5a6f812dbf23cd8faa54808d851a02e2d94324266238abb458c2336456bc0"
+  },
+  "started_UTC": "2026-10-11T18:16:38.575087+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T18:18:16.046082+00:00"
+}

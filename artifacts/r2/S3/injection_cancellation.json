@@ -1,0 +1,96 @@
+{
+  "events": [
+    {
+      "route": "building00",
+      "event_index": 0,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 2.165476731308347,
+      "injected_receiver_horizontal_RMSE_m": 10.828235248665703,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 0,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+        "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+        "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+        "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684"
+      }
+    },
+    {
+      "route": "building00",
+      "event_index": 1,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 4.548067280107523,
+      "injected_receiver_horizontal_RMSE_m": 12.281696780122386,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 0,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+        "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+        "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+        "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684"
+      }
+    },
+    {
+      "route": "building00",
+      "event_index": 2,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 6.392720993899371,
+      "injected_receiver_horizontal_RMSE_m": 10.194355986721572,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 16,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+        "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+        "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+        "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684"
+      }
+    },
+    {
+      "route": "parking00",
+      "event_index": 0,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 41.75668370319907,
+      "injected_receiver_horizontal_RMSE_m": 44.49459405856192,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 22,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde",
+        "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+        "outputs/20261011T160559020499Z_P5_7a20a16d/natural.csv": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5"
+      }
+    },
+    {
+      "route": "parking00",
+      "event_index": 1,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 12.701783967042982,
+      "injected_receiver_horizontal_RMSE_m": 13.562457875713392,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 24,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde",
+        "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+        "outputs/20261011T160559020499Z_P5_7a20a16d/natural.csv": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5"
+      }
+    },
+    {
+      "route": "parking00",
+      "event_index": 2,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 1.552830693590202,
+      "injected_receiver_horizontal_RMSE_m": 10.459817895906909,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 0,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde",
+        "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+        "outputs/20261011T160559020499Z_P5_7a20a16d/natural.csv": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5"
+      }
+    }
+  ],
+  "truth_use": "offline only",
+  "risk_proxy_is_not_error_probability": true
+}

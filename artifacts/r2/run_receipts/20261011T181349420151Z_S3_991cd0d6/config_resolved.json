@@ -1,0 +1,18 @@
+{
+  "stage": "S3",
+  "purpose": "full_reanalysis_with_stricter_existing_NIS_controls",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/reanalyse.py",
+    "configs/r2/protocol_v1.yaml",
+    "outputs_r2/20261011T181051808417Z_S3_274770dc/complete_index.json"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "python3",
+    "experiments/r2/reanalyse.py",
+    "outputs_r2/20261011T181051808417Z_S3_274770dc/complete_index.json"
+  ]
+}

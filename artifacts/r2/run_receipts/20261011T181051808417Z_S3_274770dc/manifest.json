@@ -1,0 +1,25 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T181051808417Z_S3_274770dc",
+  "stage": "S3",
+  "purpose": "fixed_existing_NIS_fairness_diagnostics",
+  "kind": "engineering",
+  "source_commit": "08fb34d7e4f6065340a1ef107fe297eb7d14230a",
+  "dirty_diff_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/strict_nis_controls.py": "9e99e69f53f150f8445172efbc2e501617161e25928f314b86e1e4b3505e4772",
+    "/home/aaron/lio_gins/configs/r2/protocol_v1.yaml": "747a9422cb614d9e093d0044050a8676f421de958b0d73251d4f8b7d1cfa39f6"
+  },
+  "started_UTC": "2026-10-11T18:10:51.815149+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T18:11:46.742795+00:00"
+}

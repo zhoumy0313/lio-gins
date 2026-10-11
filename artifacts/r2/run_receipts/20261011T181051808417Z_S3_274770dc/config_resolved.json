@@ -1,0 +1,17 @@
+{
+  "stage": "S3",
+  "purpose": "fixed_existing_NIS_fairness_diagnostics",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/strict_nis_controls.py",
+    "configs/r2/protocol_v1.yaml"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "python3",
+    "experiments/r2/strict_nis_controls.py",
+    "outputs_r2/20261011T175603553677Z_S1_47827d7f/complete_index.json"
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "cache_runs": [
+    "20261011T141044340351Z_P2_9dd3f300",
+    "20261011T134125698776Z_P2_0de7714e"
+  ],
+  "common_identities": {
+    "bag": true,
+    "sha256": true,
+    "image": true,
+    "sensors": true
+  },
+  "same_pose_timestamps": true,
+  "rows": 12440,
+  "3D_position_RMS_difference_m": 3.6012884865443255,
+  "first_nonidentical_index": 800,
+  "first_nonidentical_sow": 9116.564666986465,
+  "first_nonidentical_elapsed_s": 79.99992489814758,
+  "maximum_position_difference_m": 9.787640046319542,
+  "timing_complete_each": [
+    true,
+    false
+  ],
+  "raw_frames_each": [
+    12443,
+    12443
+  ],
+  "output_rows_each": [
+    12440,
+    12440
+  ],
+  "logs": [
+    {
+      "frontend_run": "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771",
+      "files": {
+        "manifest.json": {
+          "SHA": "64e7fbf7a37535c0fcbe20c1f74980906a46621a17bd3187dcbef3cd16282fde",
+          "diagnostic_lines": [
+            "  \"purpose\": \"building00_full_1x_replay_EOF_clock_bootstrapped_from_bag_index\",",
+            "    \"/home/aaron/lio_gins/containers/shutdown_clock.py\": \"cf1235b80d1311f421d6d4bf80ac35793b9d7625723d52b3db4a4b1ba575e804\","
+          ]
+        },
+        "stderr.log": {
+          "SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "diagnostic_lines": []
+        },
+        "stdout.log": {
+          "SHA": "0dd627ed254495bfc3d8b408d665e5162e8a81e33126f0cd4121c7d2414fef83",
+          "diagnostic_lines": [
+            "{\"argv\": [\"bwrap\", \"--unshare-all\", \"--hostname\", \"lio-replay\", \"--uid\", \"0\", \"--gid\", \"0\", \"--die-with-parent\", \"--new-session\", \"--cap-drop\", \"ALL\", \"--clearenv\", \"--setenv\", \"PATH\", \"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\", \"--setenv\", \"LANG\", \"C.UTF-8\", \"--tmpfs\", \"/\", \"--symlink\", \"usr/bin\", \"/bin\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/boot\", \"/boot\", \"--dir\", \"/etc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/.pwd.lock\", \"/etc/.pwd.lock\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ODBCDataSources\", \"/etc/ODBCDataSources\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/X11\", \"/etc/X11\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/adduser.conf\", \"/etc/adduser.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/alternatives\", \"/etc/alternatives\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/apt\", \"/etc/apt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/bash.bashrc\", \"/etc/bash.bashrc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/bindresvport.blacklist\", \"/etc/bindresvport.blacklist\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ca-certificates\", \"/etc/ca-certificates\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ca-certificates.conf\", \"/etc/ca-certificates.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/cloud\", \"/etc/cloud\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/cron.d\", \"/etc/cron.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/cron.daily\", \"/etc/cron.daily\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/debconf.conf\", \"/etc/debconf.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/debian_version\", \"/etc/debian_version\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/default\", \"/etc/default\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/deluser.conf\", \"/etc/deluser.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/dpkg\", \"/etc/dpkg\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/e2scrub.conf\", \"/etc/e2scrub.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/emacs\", \"/etc/emacs\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/environment\", \"/etc/environment\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/fonts\", \"/etc/fonts\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/fstab\", \"/etc/fstab\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gai.conf\", \"/etc/gai.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/glvnd\", \"/etc/glvnd\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/group\", \"/etc/group\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/group-\", \"/etc/group-\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gshadow\", \"/etc/gshadow\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gshadow-\", \"/etc/gshadow-\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gss\", \"/etc/gss\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/host.conf\", \"/etc/host.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/init.d\", \"/etc/init.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/inputrc\", \"/etc/inputrc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/issue\", \"/etc/issue\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/issue.net\", \"/etc/issue.net\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/kernel\", \"/etc/kernel\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ld.so.cache\", \"/etc/ld.so.cache\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ld.so.conf\", \"/etc/ld.so.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ld.so.conf.d\", \"/etc/ld.so.conf.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ldap\", \"/etc/ldap\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/legal\", \"/etc/legal\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/libaudit.conf\", \"/etc/libaudit.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/libibverbs.d\", \"/etc/libibverbs.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/libnl-3\", \"/etc/libnl-3\", \"--symlink\", \"/usr/share/zoneinfo/Etc/UTC\", \"/etc/localtime\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/logcheck\", \"/etc/logcheck\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/login.defs\", \"/etc/login.defs\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/logrotate.d\", \"/etc/logrotate.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/lsb-release\", \"/etc/lsb-release\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/machine-id\", \"/etc/machine-id\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mailcap\", \"/etc/mailcap\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mailcap.order\", \"/etc/mailcap.order\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mime.types\", \"/etc/mime.types\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mke2fs.conf\", \"/etc/mke2fs.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mysql\", \"/etc/mysql\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/networks\", \"/etc/networks\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/nsswitch.conf\", \"/etc/nsswitch.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/odbc.ini\", \"/etc/odbc.ini\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/openmpi\", \"/etc/openmpi\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/openni\", \"/etc/openni\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/openni2\", \"/etc/openni2\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/opt\", \"/etc/opt\", \"--symlink\", \"../usr/lib/os-release\", \"/etc/os-release\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/pam.conf\", \"/etc/pam.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/pam.d\", \"/etc/pam.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/passwd\", \"/etc/passwd\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/perl\", \"/etc/perl\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/profile\", \"/etc/profile\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/profile.d\", \"/etc/profile.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/python3\", \"/etc/python3\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/python3.8\", \"/etc/python3.8\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc0.d\", \"/etc/rc0.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc1.d\", \"/etc/rc1.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc2.d\", \"/etc/rc2.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc3.d\", \"/etc/rc3.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc4.d\", \"/etc/rc4.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc5.d\", \"/etc/rc5.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc6.d\", \"/etc/rc6.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rcS.d\", \"/etc/rcS.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/resolv.conf\", \"/etc/resolv.conf\", \"--symlink\", \"/usr/sbin/rmt\", \"/etc/rmt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ros\", \"/etc/ros\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sbclrc\", \"/etc/sbclrc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/security\", \"/etc/security\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/selinux\", \"/etc/selinux\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sensors.d\", \"/etc/sensors.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sensors3.conf\", \"/etc/sensors3.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sgml\", \"/etc/sgml\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/shadow\", \"/etc/shadow\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/shells\", \"/etc/shells\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/skel\", \"/etc/skel\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ssh\", \"/etc/ssh\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ssl\", \"/etc/ssl\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/subgid\", \"/etc/subgid\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/subuid\", \"/etc/subuid\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sudoers\", \"/etc/sudoers\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sudoers.d\", \"/etc/sudoers.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sysctl.conf\", \"/etc/sysctl.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sysctl.d\", \"/etc/sysctl.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/systemd\", \"/etc/systemd\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/terminfo\", \"/etc/terminfo\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/timezone\", \"/etc/timezone\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ucf.conf\", \"/etc/ucf.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/update-motd.d\", \"/etc/update-motd.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/vdpau_wrapper.cfg\", \"/etc/vdpau_wrapper.cfg\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/vulkan\", \"/etc/vulkan\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/xattr.conf\", \"/etc/xattr.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/xml\", \"/etc/xml\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/container_hosts\", \"/etc/hosts\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/container_hostname\", \"/etc/hostname\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/home\", \"/home\", \"--symlink\", \"usr/lib\", \"/lib\", \"--symlink\", \"usr/lib32\", \"/lib32\", \"--symlink\", \"usr/lib64\", \"/lib64\", \"--symlink\", \"usr/libx32\", \"/libx32\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/media\", \"/media\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/mnt\", \"/mnt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/opt\", \"/opt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/root\", \"/root\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/ros_entrypoint.sh\", \"/ros_entrypoint.sh\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/run\", \"/run\", \"--symlink\", \"usr/sbin\", \"/sbin\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/srv\", \"/srv\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/sys\", \"/sys\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/usr\", \"/usr\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/var\", \"/var\", \"--ro-bind\", \"/home/aaron/lio_gins/containers/run_inside.sh\", \"/opt/run_inside.sh\", \"--proc\", \"/proc\", \"--dev\", \"/dev\", \"--tmpfs\", \"/tmp\", \"--dir\", \"/input\", \"--ro-bind\", \"/home/aaron/lio_gins/containers/shutdown_clock.py\", \"/tmp/shutdown_clock.py\", \"--ro-bind\", \"/home/aaron/lio_gins/data/i2nav-dataset/building00/building00.bag\", \"/input/building00.bag\", \"--bind\", \"/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771\", \"/output\", \"--remount-ro\", \"/\", \"--chdir\", \"/\", \"/bin/bash\", \"/opt/run_inside.sh\", \"/input/building00.bag\"]}"
+          ]
+        },
+        "shutdown_clock.log": {
+          "SHA": "84980fdb249204928d72597dcaba0da062159d4d3e8ee8f5cdae664445321c99",
+          "diagnostic_lines": [
+            "EOF-only administrative clock; no sensor input or performance samples 1745722262.54051"
+          ]
+        },
+        "bag_info.yaml": {
+          "SHA": "20531cae4d3eac1ad77db9c85b555707dbf4c7157b042568215ad86f80a443c8",
+          "diagnostic_lines": [
+            "    - type: sensor_msgs/PointCloud2",
+            "      type: sensor_msgs/PointCloud2",
+            "      type: sensor_msgs/PointCloud2",
+            "    - topic: /hesai/at128/points",
+            "      type: sensor_msgs/PointCloud2",
+            "    - topic: /livox/mid360/points"
+          ]
+        },
+        "frontend_input_identity.json": {
+          "SHA": "b638d08daf250eec6e845aff77c182ba17e72ad8c0d7e66dc0de3e1cbea7df89",
+          "diagnostic_lines": [
+            "  \"replay_rate\": 1.0,",
+            "    \"containers/shutdown_clock.py\": \"cf1235b80d1311f421d6d4bf80ac35793b9d7625723d52b3db4a4b1ba575e804\"",
+            "  \"shutdown_clock_policy\": \"advance clock only after EOF to wake Rate.sleep; no sensor messages\""
+          ]
+        },
+        "process.json": {
+          "SHA": "a7ad9ac5a008b851a709d74a030aee76735b540006e4e3588a8319d364284082",
+          "diagnostic_lines": []
+        },
+        "config_resolved.json": {
+          "SHA": "040799731a3aa48ed4223258dc857e53ea3d426ea47d38a3c8affc669cda75ed",
+          "diagnostic_lines": [
+            "  \"purpose\": \"building00_full_1x_replay_EOF_clock_bootstrapped_from_bag_index\",",
+            "    \"containers/shutdown_clock.py\","
+          ]
+        },
+        "roscore.log": {
+          "SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "diagnostic_lines": []
+        },
+        "ros/log/administrative_eof_clock_154_1791727834635.log": {
+          "SHA": "8d2ce6b9cbf4f99050d1b92f639cd4182359dc74268b64d0cda6418e7feb48e4",
+          "diagnostic_lines": [
+            "[rospy.client][INFO] 2026-10-11 14:10:34,644: init_node, name[/administrative_eof_clock_154_1791727834635], pid[154]",
+            "[rospy.rosout][INFO] 2026-10-11 14:10:34,745: initializing /rosout core topic",
+            "[rospy.simtime][INFO] 2026-10-11 14:10:34,751: initializing /clock core topic",
+            "[rospy.simtime][INFO] 2026-10-11 14:10:34,754: connected to core topic /clock",
+            "[rospy.internal][INFO] 2026-10-11 14:10:34,791: topic[/clock] adding connection to [http://127.0.0.1:39761/], count 0",
+            "[rospy.internal][INFO] 2026-10-11 14:10:34,793: topic[/clock] adding connection to [/administrative_eof_clock_154_1791727834635], count 0",
+            "[rospy.internal][INFO] 2026-10-11 14:10:34,988: topic[/clock] adding connection to [/world_to_map_broadcaster], count 1",
+            "[rospy.internal][INFO] 2026-10-11 14:10:34,989: topic[/clock] adding connection to [/laserMapping], count 2",
+            "[rospy.internal][INFO] 2026-10-11 14:10:35,595: topic[/clock] removing connection to /world_to_map_broadcaster",
+            "[rospy.internal][INFO] 2026-10-11 14:10:35,699: topic[/clock] removing connection to /laserMapping"
+          ]
+        },
+        "ros/log/99a7e186-c57a-11f1-8217-91d16144626c/roslaunch-lio-replay-41.log": {
+          "SHA": "744d2ff8324ffec1218417b94a21f739614ab24d12cd413037c3097f93253ed7",
+          "diagnostic_lines": [
+            "[roslaunch.pmon][INFO] 2026-10-11 13:49:38,099: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>",
+            "[roslaunch.server][INFO] 2026-10-11 13:49:38,100: waiting for roslaunch XML-RPC server to initialize"
+          ]
+        },
+        "ros/log/99a7e186-c57a-11f1-8217-91d16144626c/rosout.log": {
+          "SHA": "79f24afe19ea03aa26f36d80762c2265dc7cc772a507e816034986b2d37c836c",
+          "diagnostic_lines": [
+            "1745721018.373719300 INFO /laserMapping [/opt/catkin_ws/src/fast_lio/src/IMU_Processing.hpp:362(Process)] [topics: /rosout, /cloud_registered, /cloud_registered_body, /cloud_effected, /Laser_map, /Odometry, /path] IMU Initial Done",
+            "1745721018.373719300 WARN /laserMapping [/opt/catkin_ws/src/fast_lio/src/laserMapping.cpp:920(main)] [topics: /rosout, /cloud_registered, /cloud_registered_body, /cloud_effected, /Laser_map, /Odometry, /path] No point, skip this scan!"
+          ]
+        },
+        "ros/log/99a7e186-c57a-11f1-8217-91d16144626c/roslaunch-lio-replay-76.log": {
+          "SHA": "13a4f468fc564c99fbc15985359f158bfa49dcd3552f1d648c61e80c176146e3",
+          "diagnostic_lines": [
+            "[roslaunch.pmon][INFO] 2026-10-11 13:49:39,338: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>",
+            "[roslaunch.server][INFO] 2026-10-11 13:49:39,339: waiting for roslaunch XML-RPC server to initialize"
+          ]
+        },
+        "ros/log/99a7e186-c57a-11f1-8217-91d16144626c/world_to_map_broadcaster-2-stdout.log": {
+          "SHA": "9724d1cb0acd93115d38b38903d7ae7415018572606cf8fcfcc9f53e4e115369",
+          "diagnostic_lines": []
+        },
+        "ros/log/99a7e186-c57a-11f1-8217-91d16144626c/master.log": {
+          "SHA": "b8c05ba536dd713d56cd15969d4a41fc646889f2e07aecb03e6ac4e02fb27909",
+          "diagnostic_lines": [
+            "[rosmaster.main][INFO] 2026-10-11 13:49:38,295: initialization complete, waiting for shutdown",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:38,296: Master initialized: port[11311], uri[http://127.0.0.1:11311/]",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:39,360: +PARAM [/point_filter_num] by /roslaunch",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:39,400: +SUB [/clock] /world_to_map_broadcaster http://127.0.0.1:40447/",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:39,464: +SUB [/clock] /laserMapping http://127.0.0.1:42319/",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:39,475: +SUB [/hesai/at128/points] /laserMapping http://127.0.0.1:42319/",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:44,013: +SUB [/clock] /play_1791726584009859643 http://127.0.0.1:40993/",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:44,014: +PUB [/clock] /play_1791726584009859643 http://127.0.0.1:40993/",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:44,107: publisherUpdate[/clock] -> http://127.0.0.1:40447/ ['http://127.0.0.1:40993/']",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:44,107: publisherUpdate[/clock] -> http://127.0.0.1:42319/ ['http://127.0.0.1:40993/']",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:44,107: publisherUpdate[/clock] -> http://127.0.0.1:40993/ ['http://127.0.0.1:40993/']",
+            "[rosmaster.master][INFO] 2026-10-11 13:49:44,108: publisherUpdate[/clock] -> http://127.0.0.1:42319/ ['http://127.0.0.1:40993/']: sec=0.00, result=[1, '', 0]"
+          ]
+        },
+        "ros/log/99a7e186-c57a-11f1-8217-91d16144626c/rosout-1-stdout.log": {
+          "SHA": "6dbefac66bfbc567b9f8c6a73986a2fd6079639f85ec8d100e0b7c748b8b1349",
+          "diagnostic_lines": []
+        },
+        "source_inputs/containers/derived_rootfs.local.json": {
+          "SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+          "diagnostic_lines": []
+        }
+      }
+    },
+    {
+      "frontend_run": "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69",
+      "files": {
+        "manifest.json": {
+          "SHA": "96cbb629e0adc26737614ea7d643c5cf996c49f2e20a307959aa5244031b9668",
+          "diagnostic_lines": []
+        },
+        "stderr.log": {
+          "SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "diagnostic_lines": []
+        },
+        "stdout.log": {
+          "SHA": "b63c09b476edfa18d09cac7689e427a2dbaf988e552ca6099939cfc6d7778d1a",
+          "diagnostic_lines": [
+            "{\"argv\": [\"bwrap\", \"--unshare-all\", \"--hostname\", \"lio-replay\", \"--uid\", \"0\", \"--gid\", \"0\", \"--die-with-parent\", \"--new-session\", \"--cap-drop\", \"ALL\", \"--clearenv\", \"--setenv\", \"PATH\", \"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\", \"--setenv\", \"LANG\", \"C.UTF-8\", \"--tmpfs\", \"/\", \"--symlink\", \"usr/bin\", \"/bin\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/boot\", \"/boot\", \"--dir\", \"/etc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/.pwd.lock\", \"/etc/.pwd.lock\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ODBCDataSources\", \"/etc/ODBCDataSources\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/X11\", \"/etc/X11\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/adduser.conf\", \"/etc/adduser.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/alternatives\", \"/etc/alternatives\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/apt\", \"/etc/apt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/bash.bashrc\", \"/etc/bash.bashrc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/bindresvport.blacklist\", \"/etc/bindresvport.blacklist\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ca-certificates\", \"/etc/ca-certificates\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ca-certificates.conf\", \"/etc/ca-certificates.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/cloud\", \"/etc/cloud\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/cron.d\", \"/etc/cron.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/cron.daily\", \"/etc/cron.daily\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/debconf.conf\", \"/etc/debconf.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/debian_version\", \"/etc/debian_version\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/default\", \"/etc/default\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/deluser.conf\", \"/etc/deluser.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/dpkg\", \"/etc/dpkg\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/e2scrub.conf\", \"/etc/e2scrub.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/emacs\", \"/etc/emacs\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/environment\", \"/etc/environment\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/fonts\", \"/etc/fonts\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/fstab\", \"/etc/fstab\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gai.conf\", \"/etc/gai.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/glvnd\", \"/etc/glvnd\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/group\", \"/etc/group\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/group-\", \"/etc/group-\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gshadow\", \"/etc/gshadow\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gshadow-\", \"/etc/gshadow-\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/gss\", \"/etc/gss\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/host.conf\", \"/etc/host.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/init.d\", \"/etc/init.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/inputrc\", \"/etc/inputrc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/issue\", \"/etc/issue\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/issue.net\", \"/etc/issue.net\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/kernel\", \"/etc/kernel\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ld.so.cache\", \"/etc/ld.so.cache\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ld.so.conf\", \"/etc/ld.so.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ld.so.conf.d\", \"/etc/ld.so.conf.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ldap\", \"/etc/ldap\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/legal\", \"/etc/legal\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/libaudit.conf\", \"/etc/libaudit.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/libibverbs.d\", \"/etc/libibverbs.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/libnl-3\", \"/etc/libnl-3\", \"--symlink\", \"/usr/share/zoneinfo/Etc/UTC\", \"/etc/localtime\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/logcheck\", \"/etc/logcheck\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/login.defs\", \"/etc/login.defs\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/logrotate.d\", \"/etc/logrotate.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/lsb-release\", \"/etc/lsb-release\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/machine-id\", \"/etc/machine-id\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mailcap\", \"/etc/mailcap\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mailcap.order\", \"/etc/mailcap.order\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mime.types\", \"/etc/mime.types\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mke2fs.conf\", \"/etc/mke2fs.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/mysql\", \"/etc/mysql\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/networks\", \"/etc/networks\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/nsswitch.conf\", \"/etc/nsswitch.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/odbc.ini\", \"/etc/odbc.ini\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/openmpi\", \"/etc/openmpi\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/openni\", \"/etc/openni\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/openni2\", \"/etc/openni2\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/opt\", \"/etc/opt\", \"--symlink\", \"../usr/lib/os-release\", \"/etc/os-release\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/pam.conf\", \"/etc/pam.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/pam.d\", \"/etc/pam.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/passwd\", \"/etc/passwd\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/perl\", \"/etc/perl\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/profile\", \"/etc/profile\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/profile.d\", \"/etc/profile.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/python3\", \"/etc/python3\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/python3.8\", \"/etc/python3.8\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc0.d\", \"/etc/rc0.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc1.d\", \"/etc/rc1.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc2.d\", \"/etc/rc2.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc3.d\", \"/etc/rc3.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc4.d\", \"/etc/rc4.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc5.d\", \"/etc/rc5.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rc6.d\", \"/etc/rc6.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/rcS.d\", \"/etc/rcS.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/resolv.conf\", \"/etc/resolv.conf\", \"--symlink\", \"/usr/sbin/rmt\", \"/etc/rmt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ros\", \"/etc/ros\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sbclrc\", \"/etc/sbclrc\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/security\", \"/etc/security\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/selinux\", \"/etc/selinux\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sensors.d\", \"/etc/sensors.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sensors3.conf\", \"/etc/sensors3.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sgml\", \"/etc/sgml\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/shadow\", \"/etc/shadow\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/shells\", \"/etc/shells\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/skel\", \"/etc/skel\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ssh\", \"/etc/ssh\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ssl\", \"/etc/ssl\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/subgid\", \"/etc/subgid\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/subuid\", \"/etc/subuid\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sudoers\", \"/etc/sudoers\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sudoers.d\", \"/etc/sudoers.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sysctl.conf\", \"/etc/sysctl.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/sysctl.d\", \"/etc/sysctl.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/systemd\", \"/etc/systemd\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/terminfo\", \"/etc/terminfo\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/timezone\", \"/etc/timezone\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/ucf.conf\", \"/etc/ucf.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/update-motd.d\", \"/etc/update-motd.d\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/vdpau_wrapper.cfg\", \"/etc/vdpau_wrapper.cfg\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/vulkan\", \"/etc/vulkan\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/xattr.conf\", \"/etc/xattr.conf\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/etc/xml\", \"/etc/xml\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/container_hosts\", \"/etc/hosts\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/container_hostname\", \"/etc/hostname\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/home\", \"/home\", \"--symlink\", \"usr/lib\", \"/lib\", \"--symlink\", \"usr/lib32\", \"/lib32\", \"--symlink\", \"usr/lib64\", \"/lib64\", \"--symlink\", \"usr/libx32\", \"/libx32\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/media\", \"/media\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/mnt\", \"/mnt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/opt\", \"/opt\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/root\", \"/root\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/ros_entrypoint.sh\", \"/ros_entrypoint.sh\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/run\", \"/run\", \"--symlink\", \"usr/sbin\", \"/sbin\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/srv\", \"/srv\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/sys\", \"/sys\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/usr\", \"/usr\", \"--ro-bind\", \"/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/var\", \"/var\", \"--proc\", \"/proc\", \"--dev\", \"/dev\", \"--tmpfs\", \"/tmp\", \"--dir\", \"/input\", \"--ro-bind\", \"/home/aaron/lio_gins/data/i2nav-dataset/building00/building00.bag\", \"/input/building00.bag\", \"--bind\", \"/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69\", \"/output\", \"--remount-ro\", \"/\", \"--chdir\", \"/\", \"/bin/bash\", \"/opt/run_inside.sh\", \"/input/building00.bag\"]}"
+          ]
+        },
+        "bag_info.yaml": {
+          "SHA": "20531cae4d3eac1ad77db9c85b555707dbf4c7157b042568215ad86f80a443c8",
+          "diagnostic_lines": [
+            "    - type: sensor_msgs/PointCloud2",
+            "      type: sensor_msgs/PointCloud2",
+            "      type: sensor_msgs/PointCloud2",
+            "    - topic: /hesai/at128/points",
+            "      type: sensor_msgs/PointCloud2",
+            "    - topic: /livox/mid360/points"
+          ]
+        },
+        "frontend_input_identity.json": {
+          "SHA": "2c440b3c96313a189951e4b0f192feac99450d4cd233b6a2859d728a1479490c",
+          "diagnostic_lines": []
+        },
+        "process.json": {
+          "SHA": "ec74a7b87937d4bee051b5ed3113ff9765ad119e3307490ff91047ff262ef496",
+          "diagnostic_lines": []
+        },
+        "config_resolved.json": {
+          "SHA": "03c1a74dc267fc18bcd25087d210edd5d9cb6691f8a67c6b25040472913c0588",
+          "diagnostic_lines": []
+        },
+        "roscore.log": {
+          "SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "diagnostic_lines": []
+        },
+        "ros/log/e5449922-c575-11f1-aedd-0fc69a356af3/roslaunch-lio-replay-41.log": {
+          "SHA": "3853142f5496ae63f2a8d4bae681603c817e5dd563060f9f27634b156f620df1",
+          "diagnostic_lines": [
+            "[roslaunch.pmon][INFO] 2026-10-11 13:15:57,472: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>",
+            "[roslaunch.server][INFO] 2026-10-11 13:15:57,472: waiting for roslaunch XML-RPC server to initialize"
+          ]
+        },
+        "ros/log/e5449922-c575-11f1-aedd-0fc69a356af3/rosout.log": {
+          "SHA": "a54052d7ad51115071ce62b2da7905a4288256c62f669c511a002c25f6bf0396",
+          "diagnostic_lines": [
+            "1745721018.371609632 INFO /laserMapping [/opt/catkin_ws/src/fast_lio/src/IMU_Processing.hpp:362(Process)] [topics: /rosout, /cloud_registered, /cloud_registered_body, /cloud_effected, /Laser_map, /Odometry, /path] IMU Initial Done",
+            "1745721018.371609632 WARN /laserMapping [/opt/catkin_ws/src/fast_lio/src/laserMapping.cpp:920(main)] [topics: /rosout, /cloud_registered, /cloud_registered_body, /cloud_effected, /Laser_map, /Odometry, /path] No point, skip this scan!"
+          ]
+        },
+        "ros/log/e5449922-c575-11f1-aedd-0fc69a356af3/roslaunch-lio-replay-76.log": {
+          "SHA": "16ef4a2aae144ea62ab2112d5080d9478197284adc96433b5c03e71a36639d17",
+          "diagnostic_lines": [
+            "[roslaunch.pmon][INFO] 2026-10-11 13:15:58,708: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>",
+            "[roslaunch.server][INFO] 2026-10-11 13:15:58,709: waiting for roslaunch XML-RPC server to initialize"
+          ]
+        },
+        "ros/log/e5449922-c575-11f1-aedd-0fc69a356af3/world_to_map_broadcaster-2-stdout.log": {
+          "SHA": "73afaa329eec48e639968f2c473a6756b4c6cdf08e14eeb5da752acca6b5626f",
+          "diagnostic_lines": []
+        },
+        "ros/log/e5449922-c575-11f1-aedd-0fc69a356af3/master.log": {
+          "SHA": "389ca6a4ccef6f73c47599576d2ae1896070108ca8526ed77d855963f5470175",
+          "diagnostic_lines": [
+            "[rosmaster.main][INFO] 2026-10-11 13:15:57,669: initialization complete, waiting for shutdown",
+            "[rosmaster.master][INFO] 2026-10-11 13:15:57,671: Master initialized: port[11311], uri[http://127.0.0.1:11311/]",
+            "[rosmaster.master][INFO] 2026-10-11 13:15:58,730: +PARAM [/point_filter_num] by /roslaunch",
+            "[rosmaster.master][INFO] 2026-10-11 13:15:58,771: +SUB [/clock] /world_to_map_broadcaster http://127.0.0.1:40489/",
+            "[rosmaster.master][INFO] 2026-10-11 13:15:58,835: +SUB [/clock] /laserMapping http://127.0.0.1:45185/",
+            "[rosmaster.master][INFO] 2026-10-11 13:15:58,846: +SUB [/hesai/at128/points] /laserMapping http://127.0.0.1:45185/",
+            "[rosmaster.master][INFO] 2026-10-11 13:16:03,702: +SUB [/clock] /play_1791724563698751721 http://127.0.0.1:42079/",
+            "[rosmaster.master][INFO] 2026-10-11 13:16:03,703: +PUB [/clock] /play_1791724563698751721 http://127.0.0.1:42079/",
+            "[rosmaster.master][INFO] 2026-10-11 13:16:03,786: publisherUpdate[/clock] -> http://127.0.0.1:40489/ ['http://127.0.0.1:42079/']",
+            "[rosmaster.master][INFO] 2026-10-11 13:16:03,786: publisherUpdate[/clock] -> http://127.0.0.1:45185/ ['http://127.0.0.1:42079/']",
+            "[rosmaster.master][INFO] 2026-10-11 13:16:03,787: publisherUpdate[/clock] -> http://127.0.0.1:40489/ ['http://127.0.0.1:42079/']: sec=0.00, result=[1, '', 0]",
+            "[rosmaster.master][INFO] 2026-10-11 13:16:03,787: publisherUpdate[/clock] -> http://127.0.0.1:45185/ ['http://127.0.0.1:42079/']: sec=0.00, result=[1, '', 0]"
+          ]
+        },
+        "ros/log/e5449922-c575-11f1-aedd-0fc69a356af3/rosout-1-stdout.log": {
+          "SHA": "218ccd236fb98a76299db5ec16b2b7135d68aadab50cc8ee777cc1067d710989",
+          "diagnostic_lines": []
+        },
+        "source_inputs/containers/derived_rootfs.local.json": {
+          "SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+          "diagnostic_lines": []
+        },
+        "source_inputs/outputs/20261011T130509928405Z_P1_4c5d376c/derived_rootfs_identity.json": {
+          "SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+          "diagnostic_lines": []
+        },
+        "source_inputs/outputs/20261011T131414920017Z_P2_17e494e3/manifest.json": {
+          "SHA": "5e8d97448607a238b4490c315a0c3d4eddb62b5a064708ed9556e03d1c69349f",
+          "diagnostic_lines": []
+        },
+        "source_inputs/configs/data_locations.json": {
+          "SHA": "3d14989ee86b6025f86f278dfc0622da00b045706bcacacb9be3253975dccc59",
+          "diagnostic_lines": []
+        }
+      }
+    }
+  ],
+  "root_cause": "UNRESOLVED; source/inputs/timestamps agree but recorded clock availability and execution termination differ; no evidence proves concurrency as cause",
+  "new_frontend_runs": 0,
+  "selection": "keep both predetermined caches, pair every method within each; no choose-better-cache promotion",
+  "unflagged_reset_detection": "not implemented; old synthetic reset test preserves large incorrect propagated jump"
+}

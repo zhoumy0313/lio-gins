@@ -1,0 +1,10 @@
+{
+  "stage": "S2",
+  "local_commit": "08fb34d7e4f6065340a1ef107fe297eb7d14230a",
+  "push_exit_code": -15,
+  "push_stdout": "",
+  "push_stderr": "Terminated\n",
+  "remote_advertisement": "",
+  "R1_preserved": true,
+  "verified_R2_HEAD": false
+}

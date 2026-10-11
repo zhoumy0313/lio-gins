@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T181753750128Z_S3_c22e4176",
+  "stage": "S3",
+  "purpose": "offline_injected_bias_cancellation_diagnostic",
+  "kind": "engineering",
+  "source_commit": "08fb34d7e4f6065340a1ef107fe297eb7d14230a",
+  "dirty_diff_SHA": "380066c7ba84c9a956f4aebaeca14e1b3f7612d53379f0f60366ea880bff4f2d",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/injection_cancellation.py": "df400c6f24a8afba75e4bff1b2f2ae52502461b36b5845cd1e381cd960db7edd"
+  },
+  "started_UTC": "2026-10-11T18:17:53.756990+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T18:17:59.934729+00:00"
+}

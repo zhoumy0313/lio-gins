@@ -1,0 +1,39 @@
+{
+  "stage": "S1",
+  "purpose": "existing_NIS_parking_NIS2_loss60_normal",
+  "kind": "cached_backend",
+  "input": [
+    "/home/aaron/lio_gins/experiments/r2/run_seen_baseline.py",
+    "/home/aaron/lio_gins/outputs_r2/20261011T181051808417Z_S3_274770dc/configs/NIS2.json",
+    "/home/aaron/lio_gins/outputs/20261011T160558488156Z_P5_3b1dbc60/lio_cache.npz",
+    "/home/aaron/lio_gins/outputs/20261011T160558488156Z_P5_3b1dbc60/cache_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json",
+    "/home/aaron/lio_gins/outputs/20261011T160559020499Z_P5_7a20a16d/loss60_normal.csv",
+    "/home/aaron/lio_gins/outputs/20261011T160559020499Z_P5_7a20a16d/loss60_normal.identity.json",
+    "/home/aaron/lio_gins/src/__init__.py",
+    "/home/aaron/lio_gins/src/observation_manager/availability_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/motion_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/anchored_recovery.py",
+    "/home/aaron/lio_gins/src/evaluation/__init__.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py",
+    "/home/aaron/lio_gins/src/adapters/__init__.py",
+    "/home/aaron/lio_gins/src/adapters/research_access.py",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py",
+    "/home/aaron/lio_gins/src/adapters/rosbag_metadata.py",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py",
+    "/home/aaron/lio_gins/src/fusion/__init__.py",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py"
+  ],
+  "timeout": 1800,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/r2/run_seen_baseline.py",
+    "/home/aaron/lio_gins/outputs/20261011T160558488156Z_P5_3b1dbc60",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936",
+    "/home/aaron/lio_gins/outputs_r2/20261011T181051808417Z_S3_274770dc/configs/NIS2.json",
+    "--gnss-ned",
+    "/home/aaron/lio_gins/outputs/20261011T160559020499Z_P5_7a20a16d/loss60_normal.csv"
+  ]
+}
