@@ -1,0 +1,146 @@
+{
+  "protocol": {
+    "schema_version": 1,
+    "protocol_id": "known_initial_state_first_reference_epoch_v1",
+    "status": "preregistered_before_robot_performance",
+    "protocol": "controlled_known_initial_state",
+    "reference_epoch_rule": "first finite navigation row; read exactly one reference state",
+    "allowed_reference_state": [
+      "initial_local_NED_position",
+      "initial_NED_velocity",
+      "initial_roll_pitch_yaw"
+    ],
+    "position_source": "latest valid F9P at or before initial epoch, propagated with given initial velocity to epoch; subtract rotated antenna lever once",
+    "local_geographic_origin": "unknown",
+    "evaluation_alignment": "one shared fixed translation from the predetermined initial reference position; no method-specific or trajectory fitting",
+    "reported_quantity": "initial_position_conditioned_error; not absolute WGS84 accuracy",
+    "common_outer_start": "reference initial epoch; interpolate LIO at that epoch only after available scan endpoint, declare bounded delay",
+    "KF_GINS_initial_epoch": "first IMU epoch at or after reference epoch; record offset; advance given initial position by initial velocity times offset",
+    "heldout_rule": "same protocol, but export and performance remain prohibited until development evidence and freeze",
+    "online_reference_access": false,
+    "GNSS_std_floor_NED_m": [
+      1.0,
+      1.0,
+      2.0
+    ],
+    "GNSS_invalid_rule": "reject nonfinite or nonpositive receiver standard deviations; retain reason and original row ID",
+    "initial_velocity_std_mps": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "initial_attitude_std_deg": [
+      0.1,
+      0.1,
+      1.0
+    ],
+    "imu_noise_source": "fixed i2Nav-Robot-Baseline IC-GVINS gvins_i2nav.yaml 6c602f8d974fbe5be1183771541c90057e9e3bb6; transferred engineering priors, not fitted ADIS noise identification",
+    "imunoise": {
+      "arw": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "vrw": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "gbstd": [
+        50.0,
+        50.0,
+        50.0
+      ],
+      "abstd": [
+        50.0,
+        50.0,
+        50.0
+      ],
+      "gsstd": [
+        300.0,
+        300.0,
+        300.0
+      ],
+      "asstd": [
+        300.0,
+        300.0,
+        300.0
+      ],
+      "corrtime": 1.0
+    },
+    "scale_prior_note": "300ppm Gauss-Markov std is a declared project approximation for KF-GINS scale states, absent in upstream GVINS config; requires bounded sensitivity before strong-baseline status",
+    "imu_initial_bias_and_scale": "zero mean, no truth-derived calibration",
+    "evaluation_hz": 10,
+    "reference_max_interpolation_gap_s": 0.02,
+    "KF_output_max_interpolation_gap_s": 0.02
+  },
+  "sequence": "building00",
+  "role": "development",
+  "reference_state_rows_read": 1,
+  "reference_row_index": 0,
+  "reference_epoch_sow": 9064.0045,
+  "reference_initial_local_NED_m": [
+    0.0,
+    0.0,
+    -0.0
+  ],
+  "initvel_NED_mps": [
+    -0.0972,
+    0.9419,
+    -0.0039
+  ],
+  "initatt_rpy_deg": [
+    -0.2911,
+    0.4245,
+    94.5228
+  ],
+  "R_NED_body_initial": [
+    [
+      -0.07885363360206599,
+      -0.9968701986112475,
+      -0.005649034300043221
+    ],
+    [
+      0.9968586726998597,
+      -0.07889230456936391,
+      0.006985051381965094
+    ],
+    [
+      -0.007408854892971105,
+      -0.005080492152011987,
+      0.9999596479201889
+    ]
+  ],
+  "origin_ADIS_llh_deg_m": [
+    30.53007574801489,
+    114.34965481318784,
+    18.783387913368642
+  ],
+  "initial_F9P_row_id": 27,
+  "initial_F9P_sow": 9064.0,
+  "initial_F9P_std_NED_m": [
+    1.0,
+    1.0,
+    2.0
+  ],
+  "antenna_lever_FRD_m": [
+    0.0,
+    -0.07,
+    -0.365
+  ],
+  "KF_native_start_sow": 9064.006596,
+  "KF_epoch_offset_s": 0.002096000000165077,
+  "KF_initpos_llh_deg_m": [
+    30.53007574617718,
+    114.34965483375915,
+    18.78339608758688
+  ],
+  "input_sha256": {
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_F9P_GNSS.pos": "85c3fb290f8318b7b6cf1fdddfb73224d3e76754ddecfc0a97853a5fdb21eba7",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_ADIS16465_IMU.txt": "55d950e145338f312e7f7be00118d7b5282dbd5f3199450dde5037b7417f9f16",
+    "/home/aaron/lio_gins/configs/initialization_protocol.json": "a21f3478efd1e0cf237082fc87e2fdfecf92a1c7391d47fdea771edd4ed4edfc"
+  },
+  "read_future_reference_states": false,
+  "no_absolute_origin_claim": true
+}

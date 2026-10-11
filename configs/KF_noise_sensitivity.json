@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scope": "development_B1_only",
+  "status": "declared_before_sensitivity_runs",
+  "std_multipliers": [0.5, 1.0, 2.0],
+  "scaled_parameters": ["arw", "vrw", "gbstd", "abstd", "gsstd", "asstd"],
+  "unchanged": ["initialization", "GNSS_floor", "lever_arm", "corrtime", "source_algorithm"],
+  "selection": "lowest natural-route horizontal RMSE among runs with coverage >=0.99; all cases retained",
+  "limitation": "bounded engineering sensitivity, not global optimality or Allan noise identification",
+  "timing": "do not publish runtime from concurrent environment preparation"
+}

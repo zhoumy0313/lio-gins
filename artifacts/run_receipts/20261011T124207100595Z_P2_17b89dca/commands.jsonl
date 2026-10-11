@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "scripts/audit_bag_interfaces.py"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T12:42:07.106688+00:00", "ended_at": "2026-10-11T12:42:10.277440+00:00", "exit_code": 0, "wall_seconds": 3.170763048000481}

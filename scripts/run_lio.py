@@ -11,20 +11,35 @@ import sys
 p=argparse.ArgumentParser();p.add_argument('bag');a=p.parse_args()
 root=Path(__file__).resolve().parents[1];bag=Path(a.bag).resolve()
 if bag.name!='building00.bag':p.error('only development route allowed before verified freeze protocol')
-if not bag.is_relative_to(root/'data/raw'):p.error('raw bag must be in this workspace data/raw')
+locations=json.loads((root/'configs/data_locations.json').read_text())
+expected_bag=(root/locations['dataset_root']/'building00/building00.bag').resolve()
+if bag!=expected_bag:p.error('bag must be the registered development original')
 h=hashlib.sha256()
 with bag.open('rb') as f:
     for chunk in iter(lambda:f.read(1024*1024),b''):h.update(chunk)
 expected=json.loads((root/'third_party/i2Nav-Robot/sha256sum/sha256sum.json').read_text())[bag.name]
 if h.hexdigest()!=expected:raise ValueError('raw bag SHA mismatch')
-lock=root/'containers/derived_image.local.json'
-if not lock.exists():print('BLOCKED: no verified derived container image',file=sys.stderr);sys.exit(2)
-image=json.loads(lock.read_text())
 out=Path(os.environ['LIO_GINS_RUN_DIR'])
-argv=['docker','run','--rm','--network','none','--read-only','--cap-drop','ALL','--security-opt','no-new-privileges',
-      '--user',f'{os.getuid()}:{os.getgid()}','--tmpfs','/tmp:rw,nosuid,nodev,size=1g',
-      '--mount',f'type=bind,src={bag.parent},dst=/input,readonly',
-      '--mount',f'type=bind,src={out},dst=/output',image['image_id'],'/input/'+bag.name]
+rootless=root/'containers/derived_rootfs.local.json'
+lock=root/'containers/derived_image.local.json'
+if rootless.exists():
+    image=json.loads(rootless.read_text());rootfs=Path(image['rootfs'])
+    build_manifest=json.loads((Path(image['build_run'])/'manifest.json').read_text())
+    if build_manifest['status']!='PASSED':raise ValueError('rootless build not completed and sealed')
+    binary=rootfs/'opt/catkin_ws/devel/lib/fast_lio/fastlio_mapping'
+    if hashlib.sha256(binary.read_bytes()).hexdigest()!=image['binary_sha256']:raise ValueError('frontend binary changed')
+    argv=['bwrap','--unshare-all','--uid','0','--gid','0','--die-with-parent','--new-session','--cap-drop','ALL',
+          '--ro-bind',str(rootfs),'/', '--proc','/proc','--dev','/dev','--tmpfs','/tmp','--dir','/input',
+          '--ro-bind',str(bag),'/input/'+bag.name,'--bind',str(out),'/output','--chdir','/',
+          '/bin/bash','/opt/run_inside.sh','/input/'+bag.name]
+elif lock.exists():
+    image=json.loads(lock.read_text())
+    argv=['docker','run','--rm','--network','none','--read-only','--cap-drop','ALL','--security-opt','no-new-privileges',
+          '--user',f'{os.getuid()}:{os.getgid()}','--tmpfs','/tmp:rw,nosuid,nodev,size=1g',
+          '--mount',f'type=bind,src={bag},dst=/input/{bag.name},readonly',
+          '--mount',f'type=bind,src={out},dst=/output',image['image_id'],'/input/'+bag.name]
+else:
+    print('BLOCKED: no verified isolated frontend environment',file=sys.stderr);sys.exit(2)
 (out/'frontend_input_identity.json').write_text(json.dumps({'bag':str(bag),'sha256':h.hexdigest(),'image':image,'sensors':['AT128','ADIS16465'],'timing_kind':'rosbag_replay_wall_and_logged_frontend_processing'},indent=2)+'\n')
 print(json.dumps({'argv':argv}),flush=True)
 sys.exit(subprocess.run(argv).returncode)

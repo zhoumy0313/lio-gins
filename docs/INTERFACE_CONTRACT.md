@@ -4,11 +4,11 @@
 
 ADIS 文本为 rad/m/s 增量，原值进入 KF-GINS，不再次乘 dt。F9P 是 SPP，lat/lon 为度，std 为 m，只平方一次。零、负、非有限 std 拒绝，原行保留；任何以后采用的噪声下限须对所有方法共用并在 P3 记录。NavSatFix 方差不能套用 std 平方函数。
 
-时间必须给显式 GPS week+SOW；官方 GPS−UTC=18 s 仅对适用采集日期使用，并须与 bag header 核对。KF-GINS 输出 week 列实际恒为 0（源码 writeNavResult），不能当真实 GPS week；官方 demo 周号由 reference/输入元数据取 2017。机器人数据的周号仍待 bag 审计。
+时间必须给显式 GPS week+SOW；官方 GPS−UTC=18 s 仅对适用采集日期使用，并须与 bag header 核对。KF-GINS 输出 week 列实际恒为 0（源码 writeNavResult），不能当真实 GPS week；官方 demo 周号由 reference/输入元数据取 2017。building00周号由bag及自定义原始IMU确认2364（UTC2025-04-27）。
 
 `src/evaluation/reference.py` 将 KF-GINS LLH 11 列与 i2Nav local NED 10 列分开。在线 adapters/fusion 不加载 reference。评价保留缺失覆盖率，不跨真值空洞；机器人数据的重复时间处理须重新登记，不能套官方 demo 的规则。
 
-固定 calibration 核实 GNSS 杆臂 `[0,-0.07,-0.365]` m，FRD。AT128 外参按原注释 `P_i=R_i_l P_l+t_i_l` 解读，不能凭 `T_lidar_imu` 字段名反向使用。传感器原点、时序与初始化没有真实数据验证之前，pipeline_ready=false。
+固定 calibration 核实 GNSS 杆臂 `[0,-0.07,-0.365]` m，FRD。AT128 外参按原注释 `P_i=R_i_l P_l+t_i_l` 解读，不能凭 `T_lidar_imu` 字段名反向使用。真实开发IMU增量与文本256条交叉核对已通过；点云20帧时间字段/单调检查通过。初始化协议为configs/initialization_protocol.json中事先声明的单参考历元备用协议；地理原点仍未知。完整LIO与强基线未通过，pipeline_ready=false。
 
 P2 候选时间策略为最多一个扫描周期的有界缓冲插值，必须输出测量时间、可用时间和延迟；还未在实测数据上固定/验证，因此不能声称实时。LIO reset/倒序/失效不得静默拼接。没有实现或标定新的运动验证恢复机制；r01–r03 搜索预算尚未使用。
 

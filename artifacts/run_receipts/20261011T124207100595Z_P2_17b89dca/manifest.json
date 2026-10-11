@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T124207100595Z_P2_17b89dca",
+  "phase": "P2",
+  "purpose": "verify_custom_bag_IMU_increments_match_text",
+  "kind": "engineering",
+  "source_commit": "2f9667c5710a1c6e04179e96a07f8ea77aac7beb",
+  "tracked_dirty_diff_sha256": "4c74ebb3a39be2ebdd7d7ae0425429756ae8f8e5acc49db6ef9b49cac9b4e211",
+  "runner_sha256": "5b65d346111c3aa82c430c9092294eb285a8475a5f50ccfcce772f1ae3d1ec1a",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/audit_bag_interfaces.py": "4c955c03ad35d459692321ed92ffbaeed27287bbb4239be82d273a2687c28286",
+    "/home/aaron/lio_gins/src/adapters/rosbag_metadata.py": "d933198a020404c3f3e99f46cda1793fd478bdb491cbfe15251349edddb7b17e",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/configs/data_locations.json": "3d14989ee86b6025f86f278dfc0622da00b045706bcacacb9be3253975dccc59",
+    "/home/aaron/lio_gins/data/manifests/DATA_MANIFEST.json": "2dd9a92074067cc82331dfdfe88636f035d7b3274308a1afcdcb0d541e6ad8a7"
+  },
+  "config_sha256": "58f2fc1c87fa549bc9b3ccfeac95bd9740d332de4fcfed07f2647afe72d6e9ad",
+  "created_at": "2026-10-11T12:42:07.106607+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T12:42:10.277614+00:00"
+}

@@ -33,5 +33,5 @@ for run in records:
 for repo in ['KF-GINS','i2Nav-Robot','i2Nav-Robot-Baseline','FAST_LIO_original','livox_ros_driver']:
     r=subprocess.run(['git','-C',str(root/'third_party'/repo),'status','--porcelain'],capture_output=True,text=True)
     if r.returncode or r.stdout:failures.append('upstream dirty/missing: '+repo)
-print(json.dumps({'registered_runs':len(records),'verified_files':verified,'initial_files_checked':len(initial['existing_files_sha256']),'failures':failures,'backup_verification':'local integrity only; no remote backup or raw dataset present'},indent=2))
+print(json.dumps({'registered_runs':len(records),'verified_files':verified,'initial_files_checked':len(initial['existing_files_sha256']),'failures':failures,'backup_verification':'local integrity only; remote/raw backup unverified; raw dataset separately identified in data manifest'},indent=2))
 sys.exit(bool(failures))
