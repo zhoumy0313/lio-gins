@@ -1,0 +1,25 @@
+{
+  "phase": "P4",
+  "purpose": "final_r03_all_interface_filter_causality_and_wrapper_checks",
+  "kind": "synthetic",
+  "input": [
+    "tests",
+    "src",
+    "scripts/run_candidate.py",
+    "scripts/run_outer_baseline.py",
+    "scripts/evaluate_outer.py",
+    "scripts/record_run.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-v"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T15:15:50.719474+00:00", "ended_at": "2026-10-11T15:15:50.719547+00:00", "exit_code": 127, "wall_seconds": 7.271100002981257e-05, "executed": false, "preflight_error": "[Errno 21] Is a directory: '/home/aaron/lio_gins/tests'"}

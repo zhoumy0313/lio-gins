@@ -1,0 +1,25 @@
+{
+  "run_id": "20261011T151638940827Z_P4_7aeae508",
+  "phase": "P4",
+  "purpose": "r03_anchor_admission_and_all_seven_events_diagnosis",
+  "kind": "engineering",
+  "source_commit": "5f37c0fdeba8f1987c7c639929c00409a0fe8f48",
+  "tracked_dirty_diff_sha256": "e5ebc3f9c76eb1f31a8f7fa6d71b6af19db0da32b9df91c7b9ff0b1844e97f54",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/diagnose_candidate_revision.py": "42a6a56abda1d36a9d1bd6c9dcfbfd948cdb9c6f22ae54e4666d65b8c268615a",
+    "/home/aaron/lio_gins/outputs/20261011T150927930407Z_P4_1dace17d/candidate_screen.json": "a1db110775fe26c7b0c3affdb1872dd66edc512c35c32e6d45d22814a5924a7d",
+    "/home/aaron/lio_gins/outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json": "c64b7ec9c813244f87da7d4f81abfede61fd4edc04d7b380803e6400619f5666"
+  },
+  "config_sha256": "004424fbd779ff7bec68480047bd2d80defe14a30ad36afb2f1650c698dc9214",
+  "created_at": "2026-10-11T15:16:38.947754+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T15:16:39.112267+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

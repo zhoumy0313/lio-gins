@@ -1,0 +1,27 @@
+{
+  "phase": "P4",
+  "purpose": "evaluate_candidate_r03_C9__loss30_bias10",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/outputs/20261011T151432465386Z_P4_1b8fee4e/manifest.json",
+    "/home/aaron/lio_gins/outputs/20261011T151432465386Z_P4_1b8fee4e/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T151432465386Z_P4_1b8fee4e/per_update.jsonl",
+    "/home/aaron/lio_gins/outputs/20261011T151432465386Z_P4_1b8fee4e/backend_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json",
+    "/home/aaron/lio_gins/configs/development_experiment_protocol.json",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/outputs/20261011T151432465386Z_P4_1b8fee4e",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json",
+    "loss30_bias10"
+  ]
+}

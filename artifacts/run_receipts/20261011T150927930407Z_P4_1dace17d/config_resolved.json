@@ -1,0 +1,24 @@
+{
+  "phase": "P4",
+  "purpose": "r03_preregistered_12_retained_anchor_configs",
+  "kind": "engineering",
+  "input": [
+    "scripts/screen_candidate.py",
+    "scripts/replay_experiment_batch.py",
+    "scripts/run_candidate.py",
+    "src/observation_manager/motion_recovery.py",
+    "src/observation_manager/availability_recovery.py",
+    "src/observation_manager/anchored_recovery.py",
+    "configs/methods/r03_plan.json",
+    "configs/methods/r03_change.json",
+    "configs/method_search_protocol.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/screen_candidate.py",
+    "configs/methods/r03_plan.json"
+  ]
+}

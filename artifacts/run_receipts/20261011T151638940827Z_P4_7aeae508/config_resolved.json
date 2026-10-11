@@ -1,0 +1,19 @@
+{
+  "phase": "P4",
+  "purpose": "r03_anchor_admission_and_all_seven_events_diagnosis",
+  "kind": "engineering",
+  "input": [
+    "scripts/diagnose_candidate_revision.py",
+    "outputs/20261011T150927930407Z_P4_1dace17d/candidate_screen.json",
+    "outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/diagnose_candidate_revision.py",
+    "outputs/20261011T150927930407Z_P4_1dace17d",
+    "outputs/20261011T141054205503Z_P3_e03a0b15"
+  ]
+}

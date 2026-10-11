@@ -1,21 +1,17 @@
 # 断点恢复
 
-2026-10-11。当前P4 r01执行中，完整目标仍未完成。以 `git log -1`、`GOAL_STATE.json`、`RUN_REGISTER.csv` 和实际进程为准。
-
-单条恢复检查命令：
+当前P4最终验证运行中，完整目标尚未完成。先运行一条恢复检查：
 
 ```bash
 .venv/bin/python scripts/resume.py
 ```
 
-该命令读取状态、Git、实际项目进程及最后收据；有进程时exit3，禁止重复启动。不会重复读取75GiB原数据或开启性能。`--audit-data` 可显式重新校验数据。
+读取状态、Git、实际项目进程及收据；有项目进程时exit3，不重复实验，不自动打开留出或重新读取75GiB原数据。可选`--audit-data`才会重新数据校验。
 
-- 原始16个文件在data/i2nav-dataset，bag SHA与固定官方值匹配；只读保留。
-- 官方KF-GINS demo通过，真实B1有限噪声筛选通过，选择STD×2，水平RMSE3.702869m。两者不混为同一实验。
-- Noetic/FAST-LIO由现有Bubblewrap用户命名空间运行，派生环境run `20261011T130509928405Z_P1_4c5d376c`；无sudo或宿主ROS/Python/网络配置改动。
-- 首个全程1×frontend run `20261011T131528442554Z_P2_9d0fac69` launcher exit0、12440位姿；EOF时钟停住造成SIGTERM，最终原生计时缺失。完整位姿缓存run `20261011T134125698776Z_P2_0de7714e`明确timing_complete=false。
-- 新1×frontend `20261011T134909303110Z_P2_626b9771`已exit0、EOF正常关闭并输出完整native计时。顺序驱动已完成：34项检查和112组强基线/场景组合均exit0。相同输入前端3D RMS差异3.60m，来源未证实，最终候选需固定参数在两个保留缓存复核。r01 driver 20261011T143431646773Z_P4_01709632正在执行12主配置，读stdout/progress和进程，不重复启动。
-- 所有sealed outputs/rootfs不可改写，失败不得删除。当前候选修订1/3，parking00性能关闭，P4先等P3真实证据。
-- 当前无必需人工操作，见USER_ACTION_REQUIRED。没有项目remote授权，仅本地checkpoint；原始数据及数值未验证异地备份。
+当前driver：outputs/20261011T151637778113Z_P4_bc2078b6。主筛选r03 outputs/20261011T150927930407Z_P4_1dace17d已exit0，12组最终主配置完成；3轮共36，禁止继续调参。主缓存有22.7952%目标收益，但尚未通过同参数消融、第二缓存和文献定位门槛。等待真实final_verification.json及manifest；不能凭stdout部分结果freeze。
 
-后继动作：等r01封存读取candidate_screen.json及正常代价/逐事件结果，写决策卡；按实际失败原因只改一个机制执行r02/r03。开发增益、归因、文献及冻结门槛全部满足才开P5。无增益分支交内部方法/实验草稿和真实否定结论，留出关闭，不自动生产投稿稿。
+P0–P3真实命令/失败及版本见RUN_REGISTER.csv和阶段报告。Noetic已在rootless Bubblewrap构建，registry containers/derived_rootfs.local.json；Docker替代recipe未验证。完整前端EOF已正常关闭，相同输入前端变化未解决。所有sealed outputs/rootfs、原始数据和失败只读保留。
+
+最终验证不支持时：写决策、claims、DELIVERY、作者简报与10问答；只交内部方法/实验草稿，不写负结果投稿稿、不打开parking00、不另起无限项目。通过时：先明确应用范围/代码数据参数科学冻结，才开留出。
+
+当前无需人工数据/权限；用户提供文件全部匹配官方身份。未知地理原点用已声明共同初始平移，不作绝对WGS84主张。数据及数值只有本地保留，无已授权remote，不修改旧VPR、宿主ROS/Python/SSH/网络/驱动。

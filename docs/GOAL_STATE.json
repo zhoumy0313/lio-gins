@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-R1",
   "phase": "P4",
-  "execution_status": "r03_preregistered_final_12_config_screen_running",
+  "execution_status": "r03_primary_gain_pending_attribution_and_two_cache_gate",
   "execution_complete": false,
   "pipeline_ready": true,
   "development_effect_supported": false,
@@ -14,14 +14,14 @@
   "paper_ready_for_human_review": false,
   "formal_submission_ready": false,
   "selected_architecture": "A_lio_raw_gnss_outer_kf",
-  "latest_run_id": "20261011T142204162662Z_P3_379df059",
+  "latest_run_id": "20261011T150927930407Z_P4_1dace17d",
   "freeze_id": null,
   "blocked_on": [],
-  "next_action": "r03_12_config_search_then_no_new_revisions_only_ablations_and_two_cache_verification",
-  "updated_at": "2026-10-11T15:10:02.825249+00:00",
+  "next_action": "complete_fixed_parameter_ablations_and_two_cache_verification_no_more_mechanism_search",
+  "updated_at": "2026-10-11T15:17:04.138175+00:00",
   "completion_class": "PIPELINE_READY_RESEARCH_IN_PROGRESS",
   "candidate_mechanism_revisions_used": 3,
-  "main_candidate_configs_run": 24,
+  "main_candidate_configs_run": 36,
   "official_kf_demo_passed": true,
   "official_noetic_manifest_verified": true,
   "noetic_container_built": true,
@@ -31,7 +31,7 @@
     "P1": "complete_demo_data_and_isolated_Noetic_build",
     "P2": "two_real_frontends_native_timing_and_34_tests_passed_repeat_variation_unresolved",
     "P3": "complete_112_matched_controls_all_coverage_1",
-    "P4": "final_r03_anchor_revision_12_configs_preparing",
+    "P4": "36_main_configs_complete_final_verification_running",
     "P5": "not_started_heldout_closed",
     "P6": "not_started_evidence_gate",
     "P7": "partial_recovery_index_only"
@@ -64,5 +64,6 @@
   },
   "strongest_development_baseline": "B6_C9",
   "frontend_sensitivity_required_before_freeze": true,
-  "active_candidate_run": "outputs/20261011T150927930407Z_P4_1dace17d"
+  "active_candidate_run": "outputs/20261011T151637778113Z_P4_bc2078b6",
+  "candidate_primary_cache_gate": true
 }
