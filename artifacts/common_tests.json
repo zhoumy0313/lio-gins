@@ -1,0 +1,17 @@
+{
+  "run_id": "20261011T051219512804Z_P1_8272e056",
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "exit_code": 0,
+  "tests_run": 16,
+  "log_sha256": "e8630819cfbdd8282855b173db6e92acbd1f7b0d68b8e2ea4433dbeaaeecc898",
+  "type": "synthetic_common_interfaces",
+  "not_method_effect_evidence": true
+}

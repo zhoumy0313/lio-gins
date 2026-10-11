@@ -1,0 +1,14 @@
+{
+  "phase": "P1",
+  "purpose": "bounded_public_data_access",
+  "kind": "engineering",
+  "input": [
+    "scripts/probe_public_data.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "python3",
+    "scripts/probe_public_data.py"
+  ]
+}

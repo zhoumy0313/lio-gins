@@ -1,0 +1,23 @@
+{
+  "phase": "P1",
+  "purpose": "common_geometry_filter_tests",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_common_interfaces.py",
+    "src/fusion/position_kf.py",
+    "src/adapters/geodesy.py",
+    "src/adapters/sensor_text.py",
+    "src/evaluation/reference.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

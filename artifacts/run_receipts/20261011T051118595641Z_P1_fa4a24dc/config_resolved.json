@@ -1,0 +1,18 @@
+{
+  "phase": "P1",
+  "purpose": "fetch_livox_message_dependency",
+  "kind": "engineering",
+  "input": [],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "git",
+    "-c",
+    "http.proxy=http://127.0.0.1:7890",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/Livox-SDK/livox_ros_driver.git",
+    "third_party/livox_ros_driver"
+  ]
+}

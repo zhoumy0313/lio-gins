@@ -1,0 +1,22 @@
+{
+  "run_id": "20261011T051655943918Z_P1_96fde5a0",
+  "phase": "P1",
+  "purpose": "verify_sealed_evidence_and_upstream_integrity",
+  "kind": "engineering",
+  "source_commit": "7dd62922ca6a147e2d7c118db599ab99246f8080",
+  "tracked_dirty_diff_sha256": "09b48a9262d244d4146825433827e9d9a382f0e226b039caba05742308819d29",
+  "runner_sha256": "f1ee3e596e051de59040ffbf033c97e603a50931cbd7a61f9c45b8d2930a75a8",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/verify_evidence.py": "62cfe3acc7eb3a3c1763ecb2816954c1c84b26f9256b78432e619955771e927e"
+  },
+  "config_sha256": "12452ed6ffe1ab67c00caf793dc63e1f1d8fb0de09a2c88d2d352b5eef383161",
+  "created_at": "2026-10-11T05:16:55.947820+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T05:16:56.414973+00:00"
+}

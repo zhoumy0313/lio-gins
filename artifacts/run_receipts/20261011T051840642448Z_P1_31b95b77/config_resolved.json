@@ -1,0 +1,16 @@
+{
+  "phase": "P1",
+  "purpose": "pinned_dependency_restore_recheck",
+  "kind": "engineering",
+  "input": [
+    "scripts/fetch_dependencies.py",
+    "configs/dependencies.lock.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    "python3",
+    "scripts/fetch_dependencies.py"
+  ]
+}

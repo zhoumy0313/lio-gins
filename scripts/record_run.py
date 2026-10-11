@@ -34,6 +34,7 @@ def main():
     p.add_argument('--input', action='append', default=[])
     p.add_argument('--cwd', default=str(ROOT))
     p.add_argument('--timeout', type=float, default=1800)
+    p.add_argument('--blocked-exit', type=int, default=None)
     p.add_argument('command', nargs=argparse.REMAINDER)
     a = p.parse_args()
     argv = a.command[1:] if a.command[:1] == ['--'] else a.command
@@ -79,7 +80,8 @@ def main():
     command = {'argv': argv, 'cwd': a.cwd, 'started_at': started, 'ended_at': utc(),
                'exit_code': rc, 'wall_seconds': time.monotonic() - t}
     (out / 'commands.jsonl').write_text(json.dumps(command) + '\n')
-    manifest.update({'status': 'PASSED' if rc == 0 else 'FAILED', 'exit_code': rc, 'ended_at': utc()})
+    status = 'PASSED' if rc == 0 else ('BLOCKED' if rc == a.blocked_exit else 'FAILED')
+    manifest.update({'status': status, 'exit_code': rc, 'ended_at': utc()})
     (out / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     (out / 'SHA256SUMS').write_text(''.join(f'{sha(f)}  {f.relative_to(out)}\n' for f in sorted(out.rglob('*')) if f.is_file() and f.name != 'SHA256SUMS'))
     receipt = ROOT / 'artifacts' / 'run_receipts' / rid

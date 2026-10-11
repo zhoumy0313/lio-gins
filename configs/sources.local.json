@@ -1,0 +1,54 @@
+{
+  "sources": [
+    {
+      "name": "KF-GINS",
+      "url": "https://github.com/i2Nav-WHU/KF-GINS.git",
+      "commit": "8291a93e49de513fe9d21f819500d39082ded611",
+      "role": "GNSS_INS_baseline",
+      "actual_commit": "8291a93e49de513fe9d21f819500d39082ded611",
+      "submodules": "",
+      "license_files": [
+        "LICENSE",
+        "ThirdParty/abseil-cpp-20220623.1/LICENSE",
+        "ThirdParty/yaml-cpp-0.7.0/LICENSE",
+        "ThirdParty/yaml-cpp-0.7.0/test/gtest-1.10.0/LICENSE",
+        "ThirdParty/yaml-cpp-0.7.0/test/gtest-1.10.0/googletest/LICENSE",
+        "ThirdParty/yaml-cpp-0.7.0/test/gtest-1.10.0/googlemock/LICENSE",
+        "ThirdParty/yaml-cpp-0.7.0/test/gtest-1.10.0/googlemock/scripts/generator/LICENSE"
+      ],
+      "dirty": false
+    },
+    {
+      "name": "i2Nav-Robot",
+      "url": "https://github.com/i2Nav-WHU/i2Nav-Robot.git",
+      "commit": "2ffdca6d56e6432d4daf27c070e570171548f32d",
+      "role": "dataset_documentation_calibration_checksums",
+      "actual_commit": "2ffdca6d56e6432d4daf27c070e570171548f32d",
+      "submodules": "",
+      "license_files": [
+        "LICENSE"
+      ],
+      "dirty": false
+    },
+    {
+      "name": "i2Nav-Robot-Baseline",
+      "url": "https://github.com/i2Nav-WHU/i2Nav-Robot-Baseline.git",
+      "commit": "6c602f8d974fbe5be1183771541c90057e9e3bb6",
+      "subdirectory": "FAST_LIO",
+      "role": "AT128_ADIS16465_LIO_baseline",
+      "actual_commit": "6c602f8d974fbe5be1183771541c90057e9e3bb6",
+      "submodules": "",
+      "license_files": [
+        "LICENSE",
+        "FAST-LIVO/FAST-LIVO2/LICENSE",
+        "FAST_LIO/LICENSE",
+        "open_vins/LICENSE",
+        "open_vins/ov_core/src/plot/LICENSE",
+        "dm-vio/Pangolin/include/pangolin/utils/xml/license.txt",
+        "dm-vio/dm-vio/LICENSE",
+        "dm-vio/dm-vio-ros/src/LICENSE"
+      ],
+      "dirty": false
+    }
+  ]
+}

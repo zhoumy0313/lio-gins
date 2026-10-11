@@ -1,0 +1,17 @@
+{
+  "phase": "P1",
+  "purpose": "baseline_shallow_fetch_after_tls_failure",
+  "kind": "engineering",
+  "input": [],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "--no-checkout",
+    "https://github.com/i2Nav-WHU/i2Nav-Robot-Baseline.git",
+    "third_party/i2Nav-Robot-Baseline"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "dependencies": [
+    {
+      "name": "livox_ros_driver",
+      "url": "https://github.com/Livox-SDK/livox_ros_driver.git",
+      "commit": "3d240d5666129e1a3052e78ee8487a04b08fdda3",
+      "role": "message_definitions_only",
+      "submodules": "",
+      "built_as_original_system": false
+    },
+    {
+      "name": "FAST_LIO",
+      "url": "https://github.com/hku-mars/FAST_LIO.git",
+      "commit": "7cc4175de6f8ba2edf34bab02a42195b141027e9",
+      "role": "attribution_and_diff_reference_only",
+      "submodules": "-e2e3f4e9d3b95a9e66b1ba83dc98d4a05ed8a3c4 include/ikd-Tree",
+      "built_as_original_system": false
+    }
+  ]
+}

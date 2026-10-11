@@ -1,0 +1,16 @@
+# Pinned official linux/amd64 manifest verified from registry 2026-10-11.
+# Build remains UNVERIFIED until an authorized container runtime is available.
+FROM ros@sha256:4f01fa743be43da0e14ddf2ac29b5118d9c0eb4057c9761c13303b8a52fa9c4f
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential cmake libeigen3-dev libpcl-dev python3-dev python3-numpy \
+    ros-noetic-pcl-ros ros-noetic-eigen-conversions ros-noetic-tf \
+    ros-noetic-geometry-msgs ros-noetic-nav-msgs ros-noetic-sensor-msgs \
+    ros-noetic-message-generation ros-noetic-rosbag && \
+    dpkg-query -W > /opt/installed-packages.txt && rm -rf /var/lib/apt/lists/*
+WORKDIR /opt/catkin_ws
+COPY livox_ros_driver src/livox_ros_driver
+COPY fast_lio src/fast_lio
+RUN source /opt/ros/noetic/setup.bash && catkin_make -j4 -l4 -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3
+COPY run_inside.sh /opt/run_inside.sh
+ENTRYPOINT ["/bin/bash", "/opt/run_inside.sh"]

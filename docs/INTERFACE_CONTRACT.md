@@ -1,0 +1,15 @@
+# 传感器接口与实施边界
+
+内部坐标为 NED，m；`R_A_B` 将 B 向量变换到 A，四元数 xyzw。外层状态是 ADIS 中心 3D 位置，FAST-LIO2 姿态为外部输入。共用 KF 使用分解求解与 Joseph 更新，Q 只进入协方差。NIS 使用完整 3D 残差，Huber 使用一次名义创新归一化后放大 R；这些是已有强对照的准备实现，无真实调参证据。
+
+ADIS 文本为 rad/m/s 增量，原值进入 KF-GINS，不再次乘 dt。F9P 是 SPP，lat/lon 为度，std 为 m，只平方一次。零、负、非有限 std 拒绝，原行保留；任何以后采用的噪声下限须对所有方法共用并在 P3 记录。NavSatFix 方差不能套用 std 平方函数。
+
+时间必须给显式 GPS week+SOW；官方 GPS−UTC=18 s 仅对适用采集日期使用，并须与 bag header 核对。KF-GINS 输出 week 列实际恒为 0（源码 writeNavResult），不能当真实 GPS week；官方 demo 周号由 reference/输入元数据取 2017。机器人数据的周号仍待 bag 审计。
+
+`src/evaluation/reference.py` 将 KF-GINS LLH 11 列与 i2Nav local NED 10 列分开。在线 adapters/fusion 不加载 reference。评价保留缺失覆盖率，不跨真值空洞；机器人数据的重复时间处理须重新登记，不能套官方 demo 的规则。
+
+固定 calibration 核实 GNSS 杆臂 `[0,-0.07,-0.365]` m，FRD。AT128 外参按原注释 `P_i=R_i_l P_l+t_i_l` 解读，不能凭 `T_lidar_imu` 字段名反向使用。传感器原点、时序与初始化没有真实数据验证之前，pipeline_ready=false。
+
+P2 候选时间策略为最多一个扫描周期的有界缓冲插值，必须输出测量时间、可用时间和延迟；还未在实测数据上固定/验证，因此不能声称实时。LIO reset/倒序/失效不得静默拼接。没有实现或标定新的运动验证恢复机制；r01–r03 搜索预算尚未使用。
+
+初始化不读完整真值。优先官方/因果对准；若不可行，只按目标 §5.4 明确导出一个固定初始历元，算法侧不再读参考。若官方 local NED 地理原点缺失，按 §5.5 在查看误差前登记共用的一次初始平移，报告“初始位置条件化误差”。

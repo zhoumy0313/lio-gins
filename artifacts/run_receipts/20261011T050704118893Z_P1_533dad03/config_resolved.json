@@ -1,0 +1,15 @@
+{
+  "phase": "P1",
+  "purpose": "kf_gins_official_demo",
+  "kind": "engineering",
+  "input": [
+    "scripts/run_kf_demo.py",
+    "third_party/KF-GINS/dataset/kf-gins.yaml"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_kf_demo.py"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "samples_expected": 33619,
+  "samples_valid": 33619,
+  "coverage": 1.0,
+  "horizontal_rmse_m": 0.012209461329813223,
+  "horizontal_p95_m": 0.022968384830424286,
+  "horizontal_max_m": 0.03826267335896398,
+  "experiment_kind": "official_upstream_demo_health_only",
+  "source_demo_run": "/home/aaron/lio_gins/outputs/20261011T050704118893Z_P1_533dad03",
+  "nav_rows": 672923,
+  "nav_sow_range": [
+    456300.009412029,
+    459664.620611019
+  ],
+  "time_monotonic": true,
+  "output_all_finite": true,
+  "reference_schema": "KF-GINS_llh_11_columns",
+  "upstream_week_field_is_placeholder_zero": true,
+  "reference_gps_week": 2017,
+  "origin_llh_deg_m": [
+    30.4447873726,
+    114.4718631397,
+    20.913
+  ],
+  "reference_duplicate_time_pairs": 2799,
+  "duplicate_policy": "first row per SOW, official demo only, raw preserved",
+  "last_row_policy_sensitivity": {
+    "samples_expected": 33619,
+    "samples_valid": 33619,
+    "coverage": 1.0,
+    "horizontal_rmse_m": 0.012167655456358267,
+    "horizontal_p95_m": 0.022965860960035115,
+    "horizontal_max_m": 0.03826267335896398
+  },
+  "max_first_last_reference_horizontal_difference_m": 0.00710769185844308,
+  "alignment": "shared WGS84 ECEF-to-NED frame, no trajectory fit",
+  "evaluation_hz": 10,
+  "max_interpolation_gap_s": 0.02,
+  "vertical_rmse_m": 0.008924018321609108,
+  "input_sha256": {
+    "outputs/20261011T050704118893Z_P1_533dad03/KF_GINS_Navresult.nav": "465c551fcbe7817b6905c26b7c7dd23cd1c008343c40161194d0e18cfba84df9",
+    "/home/aaron/lio_gins/third_party/KF-GINS/dataset/truth.nav": "25582530dbeac47e014e350d53dae984fe53ffc47b2304d893a243c885c96012"
+  },
+  "not_i2nav_robot_evidence": true,
+  "not_method_gain_evidence": true
+}

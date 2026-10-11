@@ -1,0 +1,15 @@
+{
+  "phase": "P1",
+  "purpose": "finish_pinned_source_verification",
+  "kind": "engineering",
+  "input": [
+    "scripts/fetch_sources.py",
+    "configs/sources.lock.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "python3",
+    "scripts/fetch_sources.py"
+  ]
+}

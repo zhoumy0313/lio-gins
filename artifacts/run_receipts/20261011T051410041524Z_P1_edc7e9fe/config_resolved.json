@@ -1,0 +1,17 @@
+{
+  "phase": "P1",
+  "purpose": "prepared_pinned_noetic_context",
+  "kind": "engineering",
+  "input": [
+    "scripts/prepare_noetic_context.py",
+    "containers/Dockerfile.noetic",
+    "containers/run_inside.sh"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/prepare_noetic_context.py"
+  ]
+}

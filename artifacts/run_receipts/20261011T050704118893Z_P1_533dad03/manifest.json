@@ -1,0 +1,23 @@
+{
+  "run_id": "20261011T050704118893Z_P1_533dad03",
+  "phase": "P1",
+  "purpose": "kf_gins_official_demo",
+  "kind": "engineering",
+  "source_commit": "7dd62922ca6a147e2d7c118db599ab99246f8080",
+  "tracked_dirty_diff_sha256": "a949507488da11388a7bed533d0168de9dbc068f15c78d9a02485b7090a83a05",
+  "runner_sha256": "8151189b63c5cb815f0a6c73db9b4dc4c6bb608f202330da64017baed0be221a",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_kf_demo.py": "65b7f19c800b7b4be2859d0d0e81400ed2c8a4250e151ebfc08bcf8a59e281af",
+    "/home/aaron/lio_gins/third_party/KF-GINS/dataset/kf-gins.yaml": "47d2b7b888cf01e9f0e04f47901d7851cee1b92abe114b5b61eea8e66a47e1e0"
+  },
+  "config_sha256": "c72021cd46b0c9b24c5763641f3cbcbd465338e82529a05bbe45e126e09c8ebc",
+  "created_at": "2026-10-11T05:07:04.122677+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T05:07:19.492459+00:00"
+}

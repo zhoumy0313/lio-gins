@@ -1,0 +1,20 @@
+{
+  "run_id": "20261011T051119766120Z_P1_e95602ec",
+  "phase": "P1",
+  "purpose": "fetch_fastlio_original_for_attribution",
+  "kind": "engineering",
+  "source_commit": "7dd62922ca6a147e2d7c118db599ab99246f8080",
+  "tracked_dirty_diff_sha256": "d4f2f8b6d5ae2940fdbdff88d2f3d56bbe24ba99c2f30a78b9799c381b6faeda",
+  "runner_sha256": "8151189b63c5cb815f0a6c73db9b4dc4c6bb608f202330da64017baed0be221a",
+  "input_sha256": {},
+  "config_sha256": "d173254cc50d89e4a97a96f84139435e94149ab31c772d47a2d738db77dd3a38",
+  "created_at": "2026-10-11T05:11:19.769680+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T05:11:36.749981+00:00"
+}

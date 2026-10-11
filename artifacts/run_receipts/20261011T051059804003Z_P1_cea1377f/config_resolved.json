@@ -1,0 +1,16 @@
+{
+  "phase": "P1",
+  "purpose": "dataset_metadata_audit_no_performance",
+  "kind": "engineering",
+  "input": [
+    "scripts/audit_data.py",
+    "src/adapters/sensor_text.py",
+    "src/evaluation/reference.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_data.py"
+  ]
+}

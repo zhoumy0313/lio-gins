@@ -1,0 +1,16 @@
+{
+  "phase": "P1",
+  "purpose": "kf_gins_original_build",
+  "kind": "engineering",
+  "input": [
+    "third_party/KF-GINS/CMakeLists.txt"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "cmake",
+    "--build",
+    "build/kf-gins-original",
+    "-j4"
+  ]
+}

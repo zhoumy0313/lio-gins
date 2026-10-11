@@ -1,0 +1,152 @@
+{
+  "goal_id": "LIO-GINS-R1",
+  "source_commit": "2ffdca6d56e6432d4daf27c070e570171548f32d",
+  "files": [
+    {
+      "sequence": "building00",
+      "role": "development",
+      "filename": "building00.bag",
+      "path": "/home/aaron/lio_gins/data/raw/building00.bag",
+      "schema": "rosbag_v2",
+      "status": "MISSING",
+      "upstream_bag_sha256": "700ad92d3c856b7ac9c6b0a79d2553bba1144a6dd3b688ad35f3cd77f20e80cb",
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "building00",
+      "role": "development",
+      "filename": "building00_ADIS16465_IMU.txt",
+      "path": "/home/aaron/lio_gins/data/raw/building00_ADIS16465_IMU.txt",
+      "schema": "adis_increment",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "building00",
+      "role": "development",
+      "filename": "building00_F9P_GNSS.pos",
+      "path": "/home/aaron/lio_gins/data/raw/building00_F9P_GNSS.pos",
+      "schema": "f9p_spp",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "building00",
+      "role": "development",
+      "filename": "building00_groundtruth.nav",
+      "path": "/home/aaron/lio_gins/data/reference/building00_groundtruth.nav",
+      "schema": "i2nav_local_ned",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "building00",
+      "role": "development",
+      "filename": "building00_trajectory.csv",
+      "path": "/home/aaron/lio_gins/data/reference/building00_trajectory.csv",
+      "schema": "tum_xyzw",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "parking00",
+      "role": "heldout_closed",
+      "filename": "parking00.bag",
+      "path": "/home/aaron/lio_gins/data/raw/parking00.bag",
+      "schema": "rosbag_v2",
+      "status": "MISSING",
+      "upstream_bag_sha256": "83a2101058b3a3ff4400d4cfc2bd3d48ed97714738c0734aa6d65dc29a7ce6ea",
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "parking00",
+      "role": "heldout_closed",
+      "filename": "parking00_ADIS16465_IMU.txt",
+      "path": "/home/aaron/lio_gins/data/raw/parking00_ADIS16465_IMU.txt",
+      "schema": "adis_increment",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "parking00",
+      "role": "heldout_closed",
+      "filename": "parking00_F9P_GNSS.pos",
+      "path": "/home/aaron/lio_gins/data/raw/parking00_F9P_GNSS.pos",
+      "schema": "f9p_spp",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "parking00",
+      "role": "heldout_closed",
+      "filename": "parking00_groundtruth.nav",
+      "path": "/home/aaron/lio_gins/data/reference/parking00_groundtruth.nav",
+      "schema": "i2nav_local_ned",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    },
+    {
+      "sequence": "parking00",
+      "role": "heldout_closed",
+      "filename": "parking00_trajectory.csv",
+      "path": "/home/aaron/lio_gins/data/reference/parking00_trajectory.csv",
+      "schema": "tum_xyzw",
+      "status": "MISSING",
+      "upstream_bag_sha256": null,
+      "size_bytes": null,
+      "sha256": null,
+      "performance_opened": false
+    }
+  ],
+  "official_sequence_metadata": {
+    "building00": {
+      "duration": 1201,
+      "length": 1673,
+      "scene": "outdoor",
+      "challenge": "GNSS degenerated",
+      "ground truth": "MM/INS",
+      "GNSS available": true
+    },
+    "parking00": {
+      "duration": 1141,
+      "length": 1583,
+      "scene": "indoor/outdoor",
+      "challenge": "illumination",
+      "ground truth": "MM/INS",
+      "GNSS available": true
+    }
+  },
+  "license": "official README: GPLv3, academic use only",
+  "raw_read_only_policy": true,
+  "holdout_performance_opened": false,
+  "backups": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "phase": "P1",
+  "purpose": "fetch_fastlio_original_for_attribution",
+  "kind": "engineering",
+  "input": [],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "git",
+    "-c",
+    "http.proxy=http://127.0.0.1:7890",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/hku-mars/FAST_LIO.git",
+    "third_party/FAST_LIO_original"
+  ]
+}

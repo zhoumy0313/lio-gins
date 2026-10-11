@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T050934431008Z_P1_189d9ba5",
+  "phase": "P1",
+  "purpose": "common_geometry_filter_tests",
+  "kind": "synthetic",
+  "source_commit": "7dd62922ca6a147e2d7c118db599ab99246f8080",
+  "tracked_dirty_diff_sha256": "98f76041b6acda35cb37f314df6d0c9bec8d3dc1192a985e935fb233d204424e",
+  "runner_sha256": "8151189b63c5cb815f0a6c73db9b4dc4c6bb608f202330da64017baed0be221a",
+  "input_sha256": {
+    "/home/aaron/lio_gins/tests/test_common_interfaces.py": "5c923129b6fa9b5f389ce4a7a117125f7cd33a0a0a67624737cb48b7892a771c",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "a3d00d7746914234fae231aed2f42621b3d8fd0fd5b055ffb91434efd7b39b1c",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30"
+  },
+  "config_sha256": "e34d1e6436c1aa87c8d5ba72f71d96f78fa734fad335626ddbd385ad901a791d",
+  "created_at": "2026-10-11T05:09:34.434853+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T05:09:34.700064+00:00"
+}

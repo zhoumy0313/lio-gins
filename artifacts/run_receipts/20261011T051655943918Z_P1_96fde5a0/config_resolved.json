@@ -1,0 +1,15 @@
+{
+  "phase": "P1",
+  "purpose": "verify_sealed_evidence_and_upstream_integrity",
+  "kind": "engineering",
+  "input": [
+    "scripts/verify_evidence.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    "python3",
+    "scripts/verify_evidence.py"
+  ]
+}

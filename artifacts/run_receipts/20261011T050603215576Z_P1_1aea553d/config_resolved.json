@@ -1,0 +1,14 @@
+{
+  "phase": "P1",
+  "purpose": "official_noetic_registry_manifest",
+  "kind": "engineering",
+  "input": [
+    "scripts/probe_ros_image.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "python3",
+    "scripts/probe_ros_image.py"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "phase": "P1",
+  "purpose": "official_demo_health_explicit_duplicate_policy",
+  "kind": "engineering",
+  "input": [
+    "scripts/check_kf_demo.py",
+    "src/evaluation/reference.py",
+    "src/adapters/geodesy.py",
+    "outputs/20261011T050704118893Z_P1_533dad03/KF_GINS_Navresult.nav",
+    "third_party/KF-GINS/dataset/truth.nav"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    ".venv/bin/python",
+    "scripts/check_kf_demo.py",
+    "outputs/20261011T050704118893Z_P1_533dad03"
+  ]
+}

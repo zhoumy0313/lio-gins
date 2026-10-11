@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T051058642540Z_P1_5beed86d",
+  "phase": "P1",
+  "purpose": "independent_official_demo_health",
+  "kind": "engineering",
+  "source_commit": "7dd62922ca6a147e2d7c118db599ab99246f8080",
+  "tracked_dirty_diff_sha256": "c5cb1a0172701a8054f21d8e91d815644b707f290351d420e739bf55c277a6dd",
+  "runner_sha256": "8151189b63c5cb815f0a6c73db9b4dc4c6bb608f202330da64017baed0be221a",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/check_kf_demo.py": "142e6249c20dc9213f99b0bb4799f8e65cc477d67103cd05d28e69066f80c2f8",
+    "/home/aaron/lio_gins/src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/outputs/20261011T050704118893Z_P1_533dad03/KF_GINS_Navresult.nav": "465c551fcbe7817b6905c26b7c7dd23cd1c008343c40161194d0e18cfba84df9",
+    "/home/aaron/lio_gins/third_party/KF-GINS/dataset/truth.nav": "25582530dbeac47e014e350d53dae984fe53ffc47b2304d893a243c885c96012"
+  },
+  "config_sha256": "2b0d4e7742c81b857cccf4cbc0f89b36c8e1c55043e3babaa548b4e42af0e9e6",
+  "created_at": "2026-10-11T05:10:58.765634+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "FAILED",
+  "exit_code": 1,
+  "ended_at": "2026-10-11T05:11:08.671886+00:00"
+}

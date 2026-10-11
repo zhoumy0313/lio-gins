@@ -1,0 +1,45 @@
+--- a/src/laserMapping.cpp
++++ b/src/laserMapping.cpp
+@@ -160,7 +160,7 @@
+     // fprintf(fp, "%lf %lf %lf ", state_point.grav[0], state_point.grav[1], state_point.grav[2]); // Bias_a  
+ 
+     // IMU Pose
+-    fprintf(pose_fp, "%lf ", Measures.lidar_beg_time);
++    fprintf(pose_fp, "%.9f ", Measures.lidar_end_time); // logged state is scan-end
+     fprintf(pose_fp, "%lf %lf %lf ", state_point.pos(0), state_point.pos(1), state_point.pos(2)); // Pos
+     fprintf(pose_fp, "%lf %lf %lf %lf ", state_point.rot.coeffs()[0], state_point.rot.coeffs()[1], state_point.rot.coeffs()[2], state_point.rot.coeffs()[3]); // q
+ 
+@@ -169,7 +169,7 @@
+ 
+     auto covariance = kf.get_P();
+     double data[16]= {0};
+-    data[0] = Measures.lidar_beg_time;
++    data[0] = Measures.lidar_end_time;
+     data[1] = sqrt(covariance(0, 0));
+     data[2] = sqrt(covariance(1, 1));
+     data[3] = sqrt(covariance(2, 2));
+@@ -853,11 +853,12 @@
+     pose_fp = fopen(pose_log_dir.c_str(), "w");
+     string cov_log_dir = root_dir + "/STD.bin";
+     cov_fp = fopen(cov_log_dir.c_str(), "w");
++    if (!pose_fp || !cov_fp) { ROS_ERROR("LIO-GINS output directory must exist and be writable"); return 1; }
+ 
+     ofstream fout_pre, fout_out, fout_dbg;
+-    fout_pre.open(DEBUG_FILE_DIR("mat_pre.txt"),ios::out);
+-    fout_out.open(DEBUG_FILE_DIR("mat_out.txt"),ios::out);
+-    fout_dbg.open(DEBUG_FILE_DIR("dbg.txt"),ios::out);
++    fout_pre.open(root_dir + "/mat_pre.txt",ios::out);
++    fout_out.open(root_dir + "/mat_out.txt",ios::out);
++    fout_dbg.open(root_dir + "/dbg.txt",ios::out);
+     if (fout_pre && fout_out)
+         cout << "~~~~"<<ROOT_DIR<<" file opened" << endl;
+     else
+@@ -1016,7 +1017,7 @@
+                 aver_time_incre = aver_time_incre * (frame_num - 1)/frame_num + (kdtree_incremental_time)/frame_num;
+                 aver_time_solve = aver_time_solve * (frame_num - 1)/frame_num + (solve_time + solve_H_time)/frame_num;
+                 aver_time_const_H_time = aver_time_const_H_time * (frame_num - 1)/frame_num + solve_time / frame_num;
+-                T1[time_log_counter] = Measures.lidar_beg_time;
++                T1[time_log_counter] = Measures.lidar_end_time;
+                 s_plot[time_log_counter] = t5 - t0;
+                 s_plot2[time_log_counter] = feats_undistort->points.size();
+                 s_plot3[time_log_counter] = kdtree_incremental_time;
