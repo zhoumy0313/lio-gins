@@ -1,6 +1,1238 @@
 {
   "goal_id": "LIO-GINS-R2-SUBMISSION",
-  "claims": [],
-  "numeric_claims_unverified": true,
-  "R1_claim_scope_unchanged": "NO_ADDITIONAL_GAIN"
+  "paper_mode": "B",
+  "R1_negative_conclusion_preserved": "NO_ADDITIONAL_GAIN",
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "Primary seen building cache: P clean maximum actual-update delay7s; Clock10 15s, Clock90 95s.",
+      "status": "SUPPORTED_SEEN_ONLY",
+      "evidence": [
+        {
+          "cache": "primary",
+          "method": "P",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T150943786775Z_P4_3f1bf52d",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T150943786775Z_P4_3f1bf52d",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T150943786775Z_P4_3f1bf52d/trajectory.csv": "1b4c0dd1c9ee673191773d5d0e984bf47d2aa53e1419518752acb93c62d697e1",
+              "outputs/20261011T150943786775Z_P4_3f1bf52d/per_update.jsonl": "4739586f606a824c87fffef5bec167805b319dd58097db966765be8e3324368d",
+              "outputs/20261011T150943786775Z_P4_3f1bf52d/backend_identity.json": "beab22310be4982272baa9d8659ae4047d3a1fc4da7ce5d276ccbac06a853306",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "Clock10",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs_r2/20261011T175614636479Z_S1_14d00674",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs_r2/20261011T175614636479Z_S1_14d00674",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "678fdb254bdc87f6799aa8bc074f3966a97e2fa8d4c74f7634c04ab5649b723f",
+            "input_SHA": {
+              "outputs_r2/20261011T175614636479Z_S1_14d00674/trajectory.csv": "a59b37b700cc4c1c48bce9aa4b3d2fde9aa2ad035f0d577963212165f7f5a877",
+              "outputs_r2/20261011T175614636479Z_S1_14d00674/per_update.jsonl": "aa6147279e7ad12705196f02ed588dc45ca2088648daa565b2fa702d352cbe70",
+              "outputs_r2/20261011T175614636479Z_S1_14d00674/backend_identity.json": "4d192744079ac1b9cc63f8f02540cea2f148ed40a5876fd16908132c630a4319",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "Clock90",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161847086115Z_P4_c25dae8e",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161847086115Z_P4_c25dae8e",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "496d7fe90354044ed68e548dd80190d797020a29273e94a90069d42fd60e2dbf",
+            "input_SHA": {
+              "outputs/20261011T161847086115Z_P4_c25dae8e/trajectory.csv": "4ee3018a972b9ae591bea9f1239ecccb708fca4d04c9565ab7dc8f24283759b3",
+              "outputs/20261011T161847086115Z_P4_c25dae8e/per_update.jsonl": "6ac64cfaf9efbde5f45bc834c8b8d43ac725b03844f5e6095fc6f0352e3660c2",
+              "outputs/20261011T161847086115Z_P4_c25dae8e/backend_identity.json": "3b998d26c1e65d9cdaaf011ab7f27d1fc93770b8ffc65b2d923cdcd843671a15",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "numeric_source": "artifacts/r2/S3/summary_table.json",
+      "full_event_source": "artifacts/r2/S3/event_results.json.gz",
+      "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+    },
+    {
+      "id": "C2",
+      "claim": "Primary biased post90 macro RMSE P3.0222m versus Clock10 5.3611m, exposure68 versus219/270; no universal claim.",
+      "status": "SUPPORTED_SEEN_ONLY",
+      "evidence": [
+        {
+          "cache": "primary",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T150951461279Z_P4_a81e231f/trajectory.csv": "164239bdf379544d3aea7ca311c933cd1b7b2f07ead444dc6023c4deceaab83f",
+              "outputs/20261011T150951461279Z_P4_a81e231f/per_update.jsonl": "ff87749b30c888fd2f9030cea3c2f253441e144b93f68903885ca8863a469661",
+              "outputs/20261011T150951461279Z_P4_a81e231f/backend_identity.json": "603003cc8222f47796e4ed8828ce8e7a436eb5f1788413d0aa213ec36555b9e2",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "Clock10",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs_r2/20261011T175618752650Z_S1_7d19451c",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs_r2/20261011T175618752650Z_S1_7d19451c",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "678fdb254bdc87f6799aa8bc074f3966a97e2fa8d4c74f7634c04ab5649b723f",
+            "input_SHA": {
+              "outputs_r2/20261011T175618752650Z_S1_7d19451c/trajectory.csv": "d0ba4620419331c4e78ccfda1d0e0a91dd7ad99e6fc1a019ca6f5f9bea3d9a40",
+              "outputs_r2/20261011T175618752650Z_S1_7d19451c/per_update.jsonl": "46b63495493a29fa7dd6160416f0ef62b61d47a404efa2680bf8774bdc6c3f0c",
+              "outputs_r2/20261011T175618752650Z_S1_7d19451c/backend_identity.json": "7a681f867289aadc79100820b595ffdce1395643ef3313640edf958dad4748f0",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "numeric_source": "artifacts/r2/S3/summary_table.json",
+      "full_event_source": "artifacts/r2/S3/event_results.json.gz",
+      "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+    },
+    {
+      "id": "C3",
+      "claim": "Clock90 has lower biased90 and180 error thanP in both building caches, but fails15s clean service.",
+      "status": "SUPPORTED_SEEN_ONLY",
+      "evidence": [
+        {
+          "cache": "primary",
+          "method": "P",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T150943786775Z_P4_3f1bf52d",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T150943786775Z_P4_3f1bf52d",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T150943786775Z_P4_3f1bf52d/trajectory.csv": "1b4c0dd1c9ee673191773d5d0e984bf47d2aa53e1419518752acb93c62d697e1",
+              "outputs/20261011T150943786775Z_P4_3f1bf52d/per_update.jsonl": "4739586f606a824c87fffef5bec167805b319dd58097db966765be8e3324368d",
+              "outputs/20261011T150943786775Z_P4_3f1bf52d/backend_identity.json": "beab22310be4982272baa9d8659ae4047d3a1fc4da7ce5d276ccbac06a853306",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T150951461279Z_P4_a81e231f/trajectory.csv": "164239bdf379544d3aea7ca311c933cd1b7b2f07ead444dc6023c4deceaab83f",
+              "outputs/20261011T150951461279Z_P4_a81e231f/per_update.jsonl": "ff87749b30c888fd2f9030cea3c2f253441e144b93f68903885ca8863a469661",
+              "outputs/20261011T150951461279Z_P4_a81e231f/backend_identity.json": "603003cc8222f47796e4ed8828ce8e7a436eb5f1788413d0aa213ec36555b9e2",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "Clock90",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161847086115Z_P4_c25dae8e",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161847086115Z_P4_c25dae8e",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "496d7fe90354044ed68e548dd80190d797020a29273e94a90069d42fd60e2dbf",
+            "input_SHA": {
+              "outputs/20261011T161847086115Z_P4_c25dae8e/trajectory.csv": "4ee3018a972b9ae591bea9f1239ecccb708fca4d04c9565ab7dc8f24283759b3",
+              "outputs/20261011T161847086115Z_P4_c25dae8e/per_update.jsonl": "6ac64cfaf9efbde5f45bc834c8b8d43ac725b03844f5e6095fc6f0352e3660c2",
+              "outputs/20261011T161847086115Z_P4_c25dae8e/backend_identity.json": "3b998d26c1e65d9cdaaf011ab7f27d1fc93770b8ffc65b2d923cdcd843671a15",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "Clock90",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161909946356Z_P4_dba73687",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161909946356Z_P4_dba73687",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "496d7fe90354044ed68e548dd80190d797020a29273e94a90069d42fd60e2dbf",
+            "input_SHA": {
+              "outputs/20261011T161909946356Z_P4_dba73687/trajectory.csv": "872f64fcfca07ca98c95d6f73c2dc8ebaf187656da34749a8646122948d86b06",
+              "outputs/20261011T161909946356Z_P4_dba73687/per_update.jsonl": "e1f530f59e84157f7e6ef75ff5187d3f6961e8e57b8e85aa18d11e78a3d3eba6",
+              "outputs/20261011T161909946356Z_P4_dba73687/backend_identity.json": "8349056390e1890261ba2eea608bdbeaddfb173127c81fa53b919f72505d209d",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152404990806Z_P4_23a438fb",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152404990806Z_P4_23a438fb",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T152404990806Z_P4_23a438fb/trajectory.csv": "9b6374f2eaa1432ec929b31558d790d6ca57fa88b9d75be792ed33d437fa2e72",
+              "outputs/20261011T152404990806Z_P4_23a438fb/per_update.jsonl": "80e33af60825d6c3289c7a56feaa9acb5e24a3c8bdf37e5ce79ee66d10c827fc",
+              "outputs/20261011T152404990806Z_P4_23a438fb/backend_identity.json": "7a39f1bb07d3f59674718c9440783d08fa81cbd77e7e3bde5cc49343365a4d5d",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152428053470Z_P4_66b55b25",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152428053470Z_P4_66b55b25",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T152428053470Z_P4_66b55b25/trajectory.csv": "dff71b72a973e5a65820f71eb6a13a86cb91bcc52c47c632b57b7420d7478c54",
+              "outputs/20261011T152428053470Z_P4_66b55b25/per_update.jsonl": "cd3410eed6b5b176fce14d4fdf84411a9fb4b22142bde3640a68f308b7aca64a",
+              "outputs/20261011T152428053470Z_P4_66b55b25/backend_identity.json": "a2ba8fcd418a5d2bfb783c75c839a82415f95aadc79a35807567f0e1199b178c",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "Clock90",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T162255465441Z_P4_48da1600",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T162255465441Z_P4_48da1600",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "496d7fe90354044ed68e548dd80190d797020a29273e94a90069d42fd60e2dbf",
+            "input_SHA": {
+              "outputs/20261011T162255465441Z_P4_48da1600/trajectory.csv": "388fb353ccf494f3ee853af857ffc499d16c28b0edf81af6aefe0624bb273dff",
+              "outputs/20261011T162255465441Z_P4_48da1600/per_update.jsonl": "6fc4791d10590a7c3585253e5f795f237f87eb73401b2c2f8b72b97715862516",
+              "outputs/20261011T162255465441Z_P4_48da1600/backend_identity.json": "4e3e5715bab60dc0ffebe50b2b6050741d43ea2dbb5ebd2daef17c9dc9531393",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_normal.csv": "b691b41194e9e8ee775deaa8068f52537659651099a9a68581d470f5805c5789",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "Clock90",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T162318341853Z_P4_71a002f0",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T162318341853Z_P4_71a002f0",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "496d7fe90354044ed68e548dd80190d797020a29273e94a90069d42fd60e2dbf",
+            "input_SHA": {
+              "outputs/20261011T162318341853Z_P4_71a002f0/trajectory.csv": "55991bac6ffe651e926e13fbff13fbf8d124bbb00efc31dde6071cd612a6d824",
+              "outputs/20261011T162318341853Z_P4_71a002f0/per_update.jsonl": "0e626eec2cde3516cea0394cd58e9ab12ef9847ff3e80472e0b871ad350a5550",
+              "outputs/20261011T162318341853Z_P4_71a002f0/backend_identity.json": "560e922dc0642d6ad60972d3d0ed02383a4a3e03a3d001beb73925af462806f6",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "numeric_source": "artifacts/r2/S3/summary_table.json",
+      "full_event_source": "artifacts/r2/S3/event_results.json.gz",
+      "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+    },
+    {
+      "id": "C4",
+      "claim": "Seen parking NIS30 is faster and more accurate thanP, with119 versus108 injected accepts.",
+      "status": "SUPPORTED_SEEN_ONLY",
+      "evidence": [
+        {
+          "cache": "parking",
+          "method": "P",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161015773794Z_P5_4b2c979f",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161015773794Z_P5_4b2c979f",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T161015773794Z_P5_4b2c979f/trajectory.csv": "db4701d8d305d56f9d0437fb376e1c4413662821200375f7d227597309e9442a",
+              "outputs/20261011T161015773794Z_P5_4b2c979f/per_update.jsonl": "02419976758c6541651ae042748ee94a7c15ec3fac2f41ff86cf8a25f5aed4fb",
+              "outputs/20261011T161015773794Z_P5_4b2c979f/backend_identity.json": "3ecd28533b6969c018e3a24d17ada21e7bfc0a8f1a0cae496397d1d55677db87",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_normal.csv": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "parking",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161038004797Z_P5_806b7b91",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161038004797Z_P5_806b7b91",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T161038004797Z_P5_806b7b91/trajectory.csv": "5e07fccf3793bd3fe5a31d9cd937663b8e646a8fbea3b2efaf8538737ce1181a",
+              "outputs/20261011T161038004797Z_P5_806b7b91/per_update.jsonl": "07bdabaff84018492dae5c366de80ca5011528ac7a730c12d7b0ea9f11aa9803",
+              "outputs/20261011T161038004797Z_P5_806b7b91/backend_identity.json": "ca3adf1c2df37dd966560edce3528dc5ba6c9174e065208554727ae83677233c",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "parking",
+          "method": "NIS2",
+          "case": "loss30_normal",
+          "backend": "/home/aaron/lio_gins/outputs_r2/20261011T181139246979Z_S1_8bae7e56",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs_r2/20261011T181139246979Z_S1_8bae7e56",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "c6f9fca02b9af1905eb71e4e29fcd61e0c111d92c1891383979a9a77a72de2b5",
+            "input_SHA": {
+              "outputs_r2/20261011T181139246979Z_S1_8bae7e56/trajectory.csv": "e284bb71e3210e2a70c78af350f9087b8c4ad74503b9f213d8b6521fdfdc3b69",
+              "outputs_r2/20261011T181139246979Z_S1_8bae7e56/per_update.jsonl": "91b70208c89b4f3e2776e9c42193d78e8c973cafb09b867b06d6e65da337982f",
+              "outputs_r2/20261011T181139246979Z_S1_8bae7e56/backend_identity.json": "991f42f51018253fad7e591719fdb2a839624915d9cd2bcc5d5332d9cd5a8a21",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_normal.csv": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "parking",
+          "method": "NIS2",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs_r2/20261011T181141434617Z_S1_6f85dd44",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs_r2/20261011T181141434617Z_S1_6f85dd44",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "c6f9fca02b9af1905eb71e4e29fcd61e0c111d92c1891383979a9a77a72de2b5",
+            "input_SHA": {
+              "outputs_r2/20261011T181141434617Z_S1_6f85dd44/trajectory.csv": "8bf9c38dc890cae923b8245dc7cf063927a633e4c28b30e5a3b20eadb3401142",
+              "outputs_r2/20261011T181141434617Z_S1_6f85dd44/per_update.jsonl": "4333bfeec2e18ee2b9104cf850626c30fd1c047fc22569a376b6f4477bbdbf78",
+              "outputs_r2/20261011T181141434617Z_S1_6f85dd44/backend_identity.json": "5f1cd575e2c760ca540360dff6d9f827b97697c89a222f10e17f7187ab9514c8",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "numeric_source": "artifacts/r2/S3/summary_table.json",
+      "full_event_source": "artifacts/r2/S3/event_results.json.gz",
+      "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+    },
+    {
+      "id": "C5",
+      "claim": "Existing anchor ablation worsens building biased90 error; no-decay improves parking and fails second-cache normal cap.",
+      "status": "SUPPORTED_SEEN_ONLY",
+      "evidence": [
+        {
+          "cache": "primary",
+          "method": "P",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T150928065055Z_P4_f587bc1c",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T150928065055Z_P4_f587bc1c",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T150928065055Z_P4_f587bc1c/trajectory.csv": "802ed6add827e510d4565f899e1c24795532d5cf86bb0b0edb64f10cba2fb832",
+              "outputs/20261011T150928065055Z_P4_f587bc1c/per_update.jsonl": "8b2de374fdc070ac64e8f273e204413a91aeb3a62c85f33ee4a7d36f874feb29",
+              "outputs/20261011T150928065055Z_P4_f587bc1c/backend_identity.json": "60840ac56423b8e0c7be01d40c8d332f52610a16ac92b8a93e19692d5b3b279d",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "primary",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T150951461279Z_P4_a81e231f/trajectory.csv": "164239bdf379544d3aea7ca311c933cd1b7b2f07ead444dc6023c4deceaab83f",
+              "outputs/20261011T150951461279Z_P4_a81e231f/per_update.jsonl": "ff87749b30c888fd2f9030cea3c2f253441e144b93f68903885ca8863a469661",
+              "outputs/20261011T150951461279Z_P4_a81e231f/backend_identity.json": "603003cc8222f47796e4ed8828ce8e7a436eb5f1788413d0aa213ec36555b9e2",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "P_without_anchor",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T151930597371Z_P4_9b280a52",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T151930597371Z_P4_9b280a52",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+            "input_SHA": {
+              "outputs/20261011T151930597371Z_P4_9b280a52/trajectory.csv": "802ed6add827e510d4565f899e1c24795532d5cf86bb0b0edb64f10cba2fb832",
+              "outputs/20261011T151930597371Z_P4_9b280a52/per_update.jsonl": "867b68cb38f9ea971349d2fdf4eaa455f6af24a7d360e1a20c7858aaf1b2c5d7",
+              "outputs/20261011T151930597371Z_P4_9b280a52/backend_identity.json": "c3edddcd9104aae72fbf3db3c7b4e839edaa581a0d01177ca863286dd87a03c4",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "primary",
+          "method": "P_without_anchor",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152017281980Z_P4_23210e3a",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152017281980Z_P4_23210e3a",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+            "input_SHA": {
+              "outputs/20261011T152017281980Z_P4_23210e3a/trajectory.csv": "6d72470868f6d96beaae3daf6c57b028fcb964baca608ad8cc90bb0d07242f7c",
+              "outputs/20261011T152017281980Z_P4_23210e3a/per_update.jsonl": "46196de9bf2a8eeebdc2ba1c781207305e23641cbdcdadffac94688dafebfe2b",
+              "outputs/20261011T152017281980Z_P4_23210e3a/backend_identity.json": "043fb8822cc59f2ad122ec2dba44a82773814bec40b70ce525ed38870caf0ca0",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "P_without_motion",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T151637912410Z_P4_2af0f680",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T151637912410Z_P4_2af0f680",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+            "input_SHA": {
+              "outputs/20261011T151637912410Z_P4_2af0f680/trajectory.csv": "c2c4f51a5e67a66adfc5085b7bc9d0ffae06dc281f92000e4253a12637f8731f",
+              "outputs/20261011T151637912410Z_P4_2af0f680/per_update.jsonl": "93efc1058b5163a711178489a8da32f185e5d97453bc7ee1e62471f75ae9751e",
+              "outputs/20261011T151637912410Z_P4_2af0f680/backend_identity.json": "8ba73abaf3c72ece46de0a981dcc92fff8a12ec70097fc7fee4ac8a5297ea2e2",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "primary",
+          "method": "P_without_motion",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T151714007257Z_P4_64262f3b",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T151714007257Z_P4_64262f3b",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+            "input_SHA": {
+              "outputs/20261011T151714007257Z_P4_64262f3b/trajectory.csv": "66a1a3780738128e1324fd2bbbe931ad84828b03f9ea3c6e917842254ce148ec",
+              "outputs/20261011T151714007257Z_P4_64262f3b/per_update.jsonl": "f45d6a45b453ef7883d164b4dd2de1c810e0059665cc3ad5e66e05fda7b1c238",
+              "outputs/20261011T151714007257Z_P4_64262f3b/backend_identity.json": "fcf91dae298ce715cffe0c1896fc04aecc45ab75ef9dda24d22072dc4635c045",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "primary",
+          "method": "P_without_decay",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T151828393169Z_P4_4e0fafa6",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T151828393169Z_P4_4e0fafa6",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+            "input_SHA": {
+              "outputs/20261011T151828393169Z_P4_4e0fafa6/trajectory.csv": "0c1794d0c46a7065a4568e77663f5adc9a54e17f966e99f5261de2449142dff5",
+              "outputs/20261011T151828393169Z_P4_4e0fafa6/per_update.jsonl": "d5d9e0d87ae932e63aa0a64fad494e59bf228be55aba372b1c210214673e68ad",
+              "outputs/20261011T151828393169Z_P4_4e0fafa6/backend_identity.json": "895d88cf93c2ddc1031e5387d81c3b2481fc7c325f211ae6b2b3350c4616f18c",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "primary",
+          "method": "P_without_decay",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T151915073009Z_P4_8e31962b",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T151915073009Z_P4_8e31962b",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+            "input_SHA": {
+              "outputs/20261011T151915073009Z_P4_8e31962b/trajectory.csv": "9a183a6c9245381af9b464f62afe442bb160669f0e36dbc59715a7afe62c9f12",
+              "outputs/20261011T151915073009Z_P4_8e31962b/per_update.jsonl": "d30935a870ed3166e96aabb13ed9c081ab8e092f01de0ef21af841b75ea36f05",
+              "outputs/20261011T151915073009Z_P4_8e31962b/backend_identity.json": "c0f4dbeb029fd34b56cd3cb0015570c73bedd86990ef4561ccbeae773f0882b8",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152341279028Z_P4_981bef85",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152341279028Z_P4_981bef85",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T152341279028Z_P4_981bef85/trajectory.csv": "73faf9e8a984dd1198d5e97fea4efbeb4d17a27776e7108d3be4a5c49a8b25ba",
+              "outputs/20261011T152341279028Z_P4_981bef85/per_update.jsonl": "e33a2945263885eb2c7ddfa8d1fc241ca399d50739660def4d4fae015daf4a4a",
+              "outputs/20261011T152341279028Z_P4_981bef85/backend_identity.json": "c8a9e492542ff828de6fcd2a9830cd453530ae57892acc7c5c7da6209a5babb4",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152428053470Z_P4_66b55b25",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152428053470Z_P4_66b55b25",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T152428053470Z_P4_66b55b25/trajectory.csv": "dff71b72a973e5a65820f71eb6a13a86cb91bcc52c47c632b57b7420d7478c54",
+              "outputs/20261011T152428053470Z_P4_66b55b25/per_update.jsonl": "cd3410eed6b5b176fce14d4fdf84411a9fb4b22142bde3640a68f308b7aca64a",
+              "outputs/20261011T152428053470Z_P4_66b55b25/backend_identity.json": "a2ba8fcd418a5d2bfb783c75c839a82415f95aadc79a35807567f0e1199b178c",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P_without_anchor",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152736234866Z_P4_06766bf6",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152736234866Z_P4_06766bf6",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+            "input_SHA": {
+              "outputs/20261011T152736234866Z_P4_06766bf6/trajectory.csv": "73faf9e8a984dd1198d5e97fea4efbeb4d17a27776e7108d3be4a5c49a8b25ba",
+              "outputs/20261011T152736234866Z_P4_06766bf6/per_update.jsonl": "96577c7e9de771c019fdf79cc3a666ac814c1490b0ba0796a03dd39e76973572",
+              "outputs/20261011T152736234866Z_P4_06766bf6/backend_identity.json": "01e19c44b2f6f39a4c139aafab5295ba1316af977fcd502ca4fa6b3675417c87",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P_without_anchor",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152822950136Z_P4_259ea9cc",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152822950136Z_P4_259ea9cc",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+            "input_SHA": {
+              "outputs/20261011T152822950136Z_P4_259ea9cc/trajectory.csv": "b19dcd6a35a6f63ddac1f521c4f5a616b66452d195effde128d4173bc54f8028",
+              "outputs/20261011T152822950136Z_P4_259ea9cc/per_update.jsonl": "005e284844991a384188cbfddb5fde57fbc1ae5a13fd72d1f44b0b235f4a762d",
+              "outputs/20261011T152822950136Z_P4_259ea9cc/backend_identity.json": "cea9b9b6eb2194ca965fefcea30a20cc49071e9fa68f8c0e9577e86c211c2ca5",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P_without_motion",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152443676239Z_P4_bf7d2186",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152443676239Z_P4_bf7d2186",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+            "input_SHA": {
+              "outputs/20261011T152443676239Z_P4_bf7d2186/trajectory.csv": "f592514ddd504d8fd8ceb400be35ad8d80230695bb86fab324f672302cdcd032",
+              "outputs/20261011T152443676239Z_P4_bf7d2186/per_update.jsonl": "38e796a0009261b7a16b8a8cd0e6f2a6ef4ab7cae7d6f92c121173c7951191cb",
+              "outputs/20261011T152443676239Z_P4_bf7d2186/backend_identity.json": "70b847333e87c82f88be62421dc4b1edfae16badd64dd58fb22dbd707cdb9a4e",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P_without_motion",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152519561623Z_P4_ddb66c09",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152519561623Z_P4_ddb66c09",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+            "input_SHA": {
+              "outputs/20261011T152519561623Z_P4_ddb66c09/trajectory.csv": "4664a5f4f9c3ad8f8e118cd95cc3bc5a1bf7e3141498369388260518bc4329e8",
+              "outputs/20261011T152519561623Z_P4_ddb66c09/per_update.jsonl": "007bacb5d5a5c680d8f517e7698d90a68fc440dcaae9ea28f149e31111e5d19b",
+              "outputs/20261011T152519561623Z_P4_ddb66c09/backend_identity.json": "3497dfe9bbb0c817c5b9f9ad4b16e06c42e15215ac7634cd32eeede1558b76d8",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P_without_decay",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152633939919Z_P4_e20dfd1d",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152633939919Z_P4_e20dfd1d",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+            "input_SHA": {
+              "outputs/20261011T152633939919Z_P4_e20dfd1d/trajectory.csv": "1d77e487a206f97dd733cc2b62267d73f04ad1d9da6e008f59a8c6d7b335d375",
+              "outputs/20261011T152633939919Z_P4_e20dfd1d/per_update.jsonl": "6543f7a21ae94e2eceac465a12209513f164c5f09b74b2e88a7c37df2464c086",
+              "outputs/20261011T152633939919Z_P4_e20dfd1d/backend_identity.json": "08fca3a3ed8b80b88d9ba8ae1a28e63b21ef54ba28cd18824ec8e0b83948d5f7",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/natural.csv": "83eea3da12decb95680dc3c3644f2b9b82eeacbf8f0f322d32052f17aa32438f",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "sensitivity",
+          "method": "P_without_decay",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T152720607303Z_P4_58cd12d5",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T152720607303Z_P4_58cd12d5",
+            "cache_SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+            "config_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+            "input_SHA": {
+              "outputs/20261011T152720607303Z_P4_58cd12d5/trajectory.csv": "bf46daa087628edd198e3f627f3f0694762713b8602d98dfe5e24aa5fe5d012d",
+              "outputs/20261011T152720607303Z_P4_58cd12d5/per_update.jsonl": "d4ae070ea73cd65c85c194337afc8bc8130f0b9fc282cee4dafe630659314772",
+              "outputs/20261011T152720607303Z_P4_58cd12d5/backend_identity.json": "bf73584fe13b2a50d2c01686fdb7dacfec5769184dc34d3d25d9c0bfa6596624",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "parking",
+          "method": "P",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T160952789893Z_P5_1ddbb071",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T160952789893Z_P5_1ddbb071",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T160952789893Z_P5_1ddbb071/trajectory.csv": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+              "outputs/20261011T160952789893Z_P5_1ddbb071/per_update.jsonl": "b0541731684ee92c31c30c96b8e0637c6597d2d6ba91db3585ce93febe507715",
+              "outputs/20261011T160952789893Z_P5_1ddbb071/backend_identity.json": "bdd7a3b4a0613317faf14f2ce8daa2ddae377436b921f33a22f2608fab18fdc7",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/natural.csv": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "parking",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161038004797Z_P5_806b7b91",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161038004797Z_P5_806b7b91",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T161038004797Z_P5_806b7b91/trajectory.csv": "5e07fccf3793bd3fe5a31d9cd937663b8e646a8fbea3b2efaf8538737ce1181a",
+              "outputs/20261011T161038004797Z_P5_806b7b91/per_update.jsonl": "07bdabaff84018492dae5c366de80ca5011528ac7a730c12d7b0ea9f11aa9803",
+              "outputs/20261011T161038004797Z_P5_806b7b91/backend_identity.json": "ca3adf1c2df37dd966560edce3528dc5ba6c9174e065208554727ae83677233c",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "parking",
+          "method": "P_without_anchor",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161339866675Z_P5_88f00c14",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161339866675Z_P5_88f00c14",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+            "input_SHA": {
+              "outputs/20261011T161339866675Z_P5_88f00c14/trajectory.csv": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+              "outputs/20261011T161339866675Z_P5_88f00c14/per_update.jsonl": "d0b906e813185c83e172de37cca1a1f440c2d67442cf376e81d902046de6165c",
+              "outputs/20261011T161339866675Z_P5_88f00c14/backend_identity.json": "de12e723a65d6ea1742bd7ad6b56f33af3fc2ef3cc1684ab09c597f374f40dec",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/natural.csv": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "parking",
+          "method": "P_without_anchor",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161424816118Z_P5_ac2dd47c",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161424816118Z_P5_ac2dd47c",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+            "input_SHA": {
+              "outputs/20261011T161424816118Z_P5_ac2dd47c/trajectory.csv": "1ead3cba1f09f805223dc0fdd706189bdaae76c10a0cb3473d17ade209b0d303",
+              "outputs/20261011T161424816118Z_P5_ac2dd47c/per_update.jsonl": "1b08461da0c121f535fbc4f188e5d5435d62a7a4662dae00552ee0173df8f4d7",
+              "outputs/20261011T161424816118Z_P5_ac2dd47c/backend_identity.json": "a5f99e9e86ff5416a4b0c298ca84957697d5f1a402710f5d522d592354dfb0e9",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "parking",
+          "method": "P_without_motion",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161053091324Z_P5_91a3e4fa",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161053091324Z_P5_91a3e4fa",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+            "input_SHA": {
+              "outputs/20261011T161053091324Z_P5_91a3e4fa/trajectory.csv": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+              "outputs/20261011T161053091324Z_P5_91a3e4fa/per_update.jsonl": "d6fb0f7ab84ba156367159d571eeb9ee9f076ccd0db47e66f4227e396b4dec2c",
+              "outputs/20261011T161053091324Z_P5_91a3e4fa/backend_identity.json": "e752b210ca3adce708de0552d9910b97a000e98907ce69336092280f78f2ab21",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/natural.csv": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "parking",
+          "method": "P_without_motion",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161127846011Z_P5_6c8cb9b0",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161127846011Z_P5_6c8cb9b0",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+            "input_SHA": {
+              "outputs/20261011T161127846011Z_P5_6c8cb9b0/trajectory.csv": "8f6aa6b2c65613b66d8fe25c606bc9c70e38412a811412782c288c5e0fc180ff",
+              "outputs/20261011T161127846011Z_P5_6c8cb9b0/per_update.jsonl": "18dc811207f7fef8c98641bbad8afba99b9595b5b239530df93c5d03b7c5ad80",
+              "outputs/20261011T161127846011Z_P5_6c8cb9b0/backend_identity.json": "bd79d57dcd546a8e3e88a444a4011f4183be4c38fb432cee6f7f07eb139fe4dc",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "cache": "parking",
+          "method": "P_without_decay",
+          "case": "natural",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161239685545Z_P5_e63858b4",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161239685545Z_P5_e63858b4",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+            "input_SHA": {
+              "outputs/20261011T161239685545Z_P5_e63858b4/trajectory.csv": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+              "outputs/20261011T161239685545Z_P5_e63858b4/per_update.jsonl": "b0541731684ee92c31c30c96b8e0637c6597d2d6ba91db3585ce93febe507715",
+              "outputs/20261011T161239685545Z_P5_e63858b4/backend_identity.json": "43c96072760d373ce6125af15c4f3195b10872e97a0c503ec03e7f6045f3a626",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/natural.csv": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": []
+        },
+        {
+          "cache": "parking",
+          "method": "P_without_decay",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T161324779958Z_P5_097a78d9",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T161324779958Z_P5_097a78d9",
+            "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+            "config_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+            "input_SHA": {
+              "outputs/20261011T161324779958Z_P5_097a78d9/trajectory.csv": "7c214d4054c5e7f0a6ad30af2d414645859dd85d655df037dafcb1bda041a347",
+              "outputs/20261011T161324779958Z_P5_097a78d9/per_update.jsonl": "cd42504fa097281d4f9fff970916f08b3d2393853a00ec80a5feab9fd72e04db",
+              "outputs/20261011T161324779958Z_P5_097a78d9/backend_identity.json": "838242a5ba819dcfea57498b425c54e8d7dddeff72acf7262a96c06ff131377e",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/loss30_bias10.csv": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+              "outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json": "e24ae96c10827b588971f5114bce574278b394e46c69a8442bcd97b73153649d",
+              "outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+              "data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "numeric_source": "artifacts/r2/S3/summary_table.json",
+      "full_event_source": "artifacts/r2/S3/event_results.json.gz",
+      "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+    },
+    {
+      "id": "C6",
+      "claim": "PrimaryP biased event0 first update126s; event2 accepts65/90 injected rows.",
+      "status": "SUPPORTED_SEEN_ONLY",
+      "evidence": [
+        {
+          "cache": "primary",
+          "method": "P",
+          "case": "loss30_bias10",
+          "backend": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+          "provenance": {
+            "backend_run": "/home/aaron/lio_gins/outputs/20261011T150951461279Z_P4_a81e231f",
+            "cache_SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+            "config_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+            "input_SHA": {
+              "outputs/20261011T150951461279Z_P4_a81e231f/trajectory.csv": "164239bdf379544d3aea7ca311c933cd1b7b2f07ead444dc6023c4deceaab83f",
+              "outputs/20261011T150951461279Z_P4_a81e231f/per_update.jsonl": "ff87749b30c888fd2f9030cea3c2f253441e144b93f68903885ca8863a469661",
+              "outputs/20261011T150951461279Z_P4_a81e231f/backend_identity.json": "603003cc8222f47796e4ed8828ce8e7a436eb5f1788413d0aa213ec36555b9e2",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/loss30_bias10.csv": "929610b6c9bcad89cd46d44bd97c8826d82d5702efba586370aeebceef0a8684",
+              "outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json": "324e495988cc24af65fa5d72704ca3c017abadf1677f2eed63cb63b17dbbc33f",
+              "outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+              "data/i2nav-dataset/building00/building00_groundtruth.nav": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc"
+            },
+            "evaluator_SHA": "f04bef1b6c4ca3cc9c808cf6fa5d19c9873e82318282e200d812594f1a5bd356",
+            "R2_role": "seen_retrospective",
+            "initialization_conditioned": true
+          },
+          "event_indices": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "numeric_source": "artifacts/r2/S3/summary_table.json",
+      "full_event_source": "artifacts/r2/S3/event_results.json.gz",
+      "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+    },
+    {
+      "id": "C7",
+      "claim": "No independent new-route effect, new R2 mechanism increment or novelty established.",
+      "status": "NOT_SUPPORTED",
+      "evidence": [
+        "artifacts/r2/S4/new_data_audit.json",
+        "docs/research_r2/METHOD_SELECTION.md",
+        "docs/research_r2/STATE.json"
+      ]
+    },
+    {
+      "id": "C8",
+      "claim": "3D frontend cache RMS difference3.6012884865443m; cause unresolved.",
+      "status": "SUPPORTED_LIMITATION",
+      "evidence": [
+        "artifacts/r2/S3/frontend_diagnosis.json"
+      ]
+    },
+    {
+      "id": "C9",
+      "claim": "456/456 pairs,1197events,6441independent error checks,full coverage;64old+9new tests.",
+      "status": "SUPPORTED_ENGINEERING",
+      "evidence": [
+        "artifacts/r2/S3/analysis_audit.json",
+        "artifacts/r2/S3/independent_check.json",
+        "artifacts/r2/S3/regression_audit.json"
+      ]
+    },
+    {
+      "id": "C10",
+      "claim": "Artificial bias decreases initialized receiver horizontal error for16 building and46 parking rows; exposure is not field-fault probability.",
+      "status": "SUPPORTED_OFFLINE_DIAGNOSTIC",
+      "evidence": [
+        "artifacts/r2/S3/injection_cancellation.json"
+      ]
+    }
+  ],
+  "table_cells": "paper/versions/r2_r03/table_cell_bindings.json",
+  "figure_points": [
+    "artifacts/r2/S3/tradeoff_points.csv",
+    "artifacts/r2/S3/representative_event_points.csv"
+  ],
+  "deadline_points": "artifacts/r2/S5/deadline_sensitivity.csv",
+  "no_independent_or_general_claim": true
 }

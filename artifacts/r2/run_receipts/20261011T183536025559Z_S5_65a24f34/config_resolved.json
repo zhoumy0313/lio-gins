@@ -1,0 +1,18 @@
+{
+  "stage": "S5",
+  "purpose": "compile_author_review_r2_r03",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/build_paper.py",
+    "paper/versions/r2_r03/main.tex",
+    "paper/versions/r2_r03/references.bib",
+    "paper/versions/r2_r03/generated_tables.tex",
+    "paper/versions/r2_r03/figures/framework.tikz"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "python3",
+    "experiments/r2/build_paper.py",
+    "paper/versions/r2_r03"
+  ]
+}

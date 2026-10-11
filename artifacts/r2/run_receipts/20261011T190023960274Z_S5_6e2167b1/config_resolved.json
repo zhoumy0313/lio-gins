@@ -1,0 +1,15 @@
+{
+  "stage": "S5",
+  "purpose": "remove_tradeoff_axis_label_overlap",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/make_review_figures.py",
+    "artifacts/r2/S3/summary_table.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/r2/make_review_figures.py",
+    "outputs_r2/20261011T181349420151Z_S3_991cd0d6"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "S6",
+  "purpose": "final_bound_six_page_manuscript_numeric_and_font_audit",
+  "kind": "engineering",
+  "input": [
+    "paper/versions/r2_r03/main.pdf",
+    "paper/versions/r2_r03/main.tex",
+    "experiments/r2/audit_manuscript.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_manuscript.py",
+    "paper/versions/r2_r03"
+  ]
+}

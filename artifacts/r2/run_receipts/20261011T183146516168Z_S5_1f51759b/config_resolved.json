@@ -1,0 +1,17 @@
+{
+  "stage": "S5",
+  "purpose": "compile_full_numeric_r2_r02",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/build_paper.py",
+    "paper/versions/r2_r02/main.tex",
+    "paper/versions/r2_r02/references.bib",
+    "paper/versions/r2_r02/generated_tables.tex"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "python3",
+    "experiments/r2/build_paper.py",
+    "paper/versions/r2_r02"
+  ]
+}

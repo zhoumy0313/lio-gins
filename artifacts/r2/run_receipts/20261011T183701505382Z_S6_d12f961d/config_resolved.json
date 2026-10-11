@@ -1,0 +1,13 @@
+{
+  "stage": "S6",
+  "purpose": "bounded_official_venue_requirement_probes",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_venue.py"
+  ],
+  "timeout": 130.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_venue.py"
+  ]
+}

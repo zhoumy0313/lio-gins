@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/build_paper.py", "paper/versions/r2_r02"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T18:31:46.524011+00:00", "ended_UTC": "2026-10-11T18:31:51.265330+00:00", "exit_code": 0, "wall_seconds": 4.74111247899782, "CPU_user_s": 1.21039, "CPU_system_s": 0.289429, "max_RSS_KiB": 193264, "executed": true}

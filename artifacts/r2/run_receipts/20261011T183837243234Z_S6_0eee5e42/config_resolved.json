@@ -1,0 +1,17 @@
+{
+  "stage": "S6",
+  "purpose": "final_manuscript_precise_embedding_and_cell_audit",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_manuscript.py",
+    "paper/versions/r2_r03/main.tex",
+    "paper/versions/r2_r03/main.pdf",
+    "paper/versions/r2_r03/table_cell_bindings.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_manuscript.py",
+    "paper/versions/r2_r03"
+  ]
+}

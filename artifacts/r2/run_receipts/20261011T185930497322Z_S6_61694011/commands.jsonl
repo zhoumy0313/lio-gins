@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/audit_manuscript.py", "paper/versions/r2_r03"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T18:59:30.506120+00:00", "ended_UTC": "2026-10-11T18:59:30.620946+00:00", "exit_code": 0, "wall_seconds": 0.11453939100101707, "CPU_user_s": 2.672317, "CPU_system_s": 0.033025, "max_RSS_KiB": 20604, "executed": true}

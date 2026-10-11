@@ -1,0 +1,54 @@
+{
+  "official_page_probes": [
+    {
+      "URL": "https://upinlbs2026.com/",
+      "UTC": "2026-10-11T18:37:01.575978+00:00",
+      "status": 200,
+      "final_URL": "https://upinlbs2026.com/",
+      "bytes": 1172,
+      "SHA": "88c3f70656d36e6ec62c7aa369ea611a1ce50ccc8de94e2782c0c4d1948a2a30",
+      "links": [],
+      "matched_text": [
+        ".cmt-source-footer {\n        margin: 0;\n        padding: 0 24px 28px;\n        color: rgba(255, 255, 255, 0.7);\n        background: #153b5c;\n        text-align: center;\n      }\n\n      .cmt-source-footer p {\n        max-width: 980px;\n        margin: 0 auto;\n        font-size: 13px;\n        line-height: 1.6;\n      }",
+        "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+      ]
+    },
+    {
+      "URL": "https://upinlbs2026.com/submission",
+      "UTC": "2026-10-11T18:37:05.978394+00:00",
+      "status": 200,
+      "final_URL": "https://upinlbs2026.com/submission",
+      "bytes": 1172,
+      "SHA": "88c3f70656d36e6ec62c7aa369ea611a1ce50ccc8de94e2782c0c4d1948a2a30",
+      "links": [],
+      "matched_text": [
+        ".cmt-source-footer {\n        margin: 0;\n        padding: 0 24px 28px;\n        color: rgba(255, 255, 255, 0.7);\n        background: #153b5c;\n        text-align: center;\n      }\n\n      .cmt-source-footer p {\n        max-width: 980px;\n        margin: 0 auto;\n        font-size: 13px;\n        line-height: 1.6;\n      }",
+        "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+      ]
+    },
+    {
+      "URL": "https://upinlbs2026.com/submission/",
+      "UTC": "2026-10-11T18:37:06.452686+00:00",
+      "status": 200,
+      "final_URL": "https://upinlbs2026.com/submission/",
+      "bytes": 1172,
+      "SHA": "88c3f70656d36e6ec62c7aa369ea611a1ce50ccc8de94e2782c0c4d1948a2a30",
+      "links": [],
+      "matched_text": [
+        ".cmt-source-footer {\n        margin: 0;\n        padding: 0 24px 28px;\n        color: rgba(255, 255, 255, 0.7);\n        background: #153b5c;\n        text-align: center;\n      }\n\n      .cmt-source-footer p {\n        max-width: 980px;\n        margin: 0 auto;\n        font-size: 13px;\n        line-height: 1.6;\n      }",
+        "The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support."
+      ]
+    }
+  ],
+  "indexed_homepage_verified": {
+    "full_paper_deadline": "2026-10-15",
+    "maximum_full_paper_pages": 6
+  },
+  "template": "UNVERIFIED",
+  "anonymity": "UNVERIFIED",
+  "exact_timezone": "UNVERIFIED",
+  "specific_CMT_URL": "UNVERIFIED_unless_official_links_establish",
+  "IEEE_AI_policy": "If IEEE policy applies: identify AI tool, sections and extent in acknowledgments; actual venue applicability not established",
+  "no_account_login": true,
+  "no_submission": true
+}

@@ -1,0 +1,12 @@
+{
+  "analysis_run": "outputs_r2/20261011T181349420151Z_S3_991cd0d6",
+  "source_SHA": {
+    "outputs_r2/20261011T181349420151Z_S3_991cd0d6/summary_table.json": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d",
+    "outputs_r2/20261011T181349420151Z_S3_991cd0d6/event_results.json": "f4b5a6f812dbf23cd8faa54808d851a02e2d94324266238abb458c2336456bc0"
+  },
+  "figure_script_SHA": "fec850a0ac68087a444e9a2396735663e9066e17da3d98efe8b4284c7b6f8a11",
+  "event_selection": "primary cache, loss30_bias10, first registered event index 0, fixed order",
+  "all_controls_in_point_table": true,
+  "B2_censored": "excluded from finite x-axis; reported as CENSORED in complete tables",
+  "new_route_opened": false
+}

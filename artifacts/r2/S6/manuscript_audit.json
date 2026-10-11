@@ -1,0 +1,27 @@
+{
+  "pages": 6,
+  "table_cells_verified": 285,
+  "all_table_raw_values_and_summary_SHA_match": true,
+  "all_font_rows_embedded": true,
+  "overfull_boxes": 0,
+  "compile_errors": 0,
+  "undefined_references": 0,
+  "final_placeholders": false,
+  "NOT_SUBMISSION_READY_marker_present": true,
+  "abstract_comparison_contexts": {
+    "improv": [],
+    "reduc": [],
+    "faster": [
+      "wer error, 2.510 m. On a seen parking route, stricter innovation gating is both faster and more accurate than the manager, while accepting slightly more injected rows"
+    ],
+    "robust": [],
+    "novel": [],
+    "superior": [
+      "pting slightly more injected rows. These are conditional tradeoffs, not general superiority. An independent route was unavailable; neither a new method increment nor in"
+    ]
+  },
+  "PDF_SHA": "34e6850bd5b1e08c8fc169373ba5e5914d20e9b7ee831295920e132e24ea8d70",
+  "manuscript_SHA": "9e5b7ac8b4649b12d4c4872a68d29b24449673ffbdc903b16cb1f4115fbc97a0",
+  "rendered_page_visual_audit": "separately recorded by Codex; human author review pending",
+  "scientific_approval": "not asserted"
+}

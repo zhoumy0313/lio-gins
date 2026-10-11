@@ -1,0 +1,15 @@
+{
+  "stage": "S5",
+  "purpose": "generate_r2_r02_complete_tables_from_evidence",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/paper_tables.py",
+    "artifacts/r2/S3/summary_table.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/paper_tables.py",
+    "paper/versions/r2_r02"
+  ]
+}

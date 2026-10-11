@@ -1,0 +1,16 @@
+{
+  "stage": "S6",
+  "purpose": "final_PDF_all_numeric_cells_fonts_and_claim_contexts",
+  "kind": "engineering",
+  "input": [
+    "paper/versions/r2_r03/main.pdf",
+    "paper/versions/r2_r03/main.tex",
+    "experiments/r2/audit_manuscript.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_manuscript.py",
+    "paper/versions/r2_r03"
+  ]
+}

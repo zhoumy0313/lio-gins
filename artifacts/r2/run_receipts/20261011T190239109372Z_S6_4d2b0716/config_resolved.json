@@ -1,0 +1,13 @@
+{
+  "stage": "S6",
+  "purpose": "bounded_public_official_conference_app_requirement_audit",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_venue_bundle.py"
+  ],
+  "timeout": 240.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_venue_bundle.py"
+  ]
+}

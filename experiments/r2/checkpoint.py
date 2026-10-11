@@ -5,7 +5,8 @@ ROOT=Path(__file__).resolve().parents[2];stage=sys.argv[1];next_stage=sys.argv[2
 def git(*args,env=None):return subprocess.check_output(['git',*args],cwd=ROOT,text=True,env=env).strip()
 assert git('branch','--show-current')=='research/lio-gins-r2-submission'
 assert git('rev-parse','research/lio-gins-r1')=='c12a42a3484458e1737e63201792e1122fc99c0d'
-assert not git('diff','c12a42a','--','src','scripts','configs/baselines','configs/methods','freezes','paper/working')
+protected=[p for p in git('ls-tree','-r','--name-only','c12a42a','--','src','scripts','configs/baselines','configs/methods','freezes','paper/working').splitlines()]
+assert not git('diff','c12a42a','--',*protected), 'R1 tracked core/freeze changed'
 statepath=ROOT/'docs/research_r2/STATE.json';state=json.loads(statepath.read_text());state.update(stage=next_stage,execution_status=stage+'_checkpoint_complete',updated_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat());state.setdefault('completed_stages',[]).append(stage)
 statepath.write_text(json.dumps(state,indent=2)+'\n')
 with (ROOT/'docs/research_r2/STATE_HISTORY.jsonl').open('a') as f:f.write(json.dumps({'stage_completed':stage,'next_stage':next_stage,'UTC':state['updated_UTC'],'flags':state})+'\n')

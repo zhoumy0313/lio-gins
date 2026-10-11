@@ -1,0 +1,8 @@
+\begin{tikzpicture}[node distance=4mm,every node/.style={draw,rounded corners,font=\scriptsize,align=center,text width=34mm,minimum height=7mm},>=Stealth]
+\node (lio) {Fixed FAST-LIO2 frontend\\relative motion and diagnostics};
+\node[below=of lio] (prop) {Common NED position filter\\propagation and covariance};
+\node[right=5mm of prop] (gnss) {Current receiver position\\standard deviations and ID};
+\node[below=of gnss,draw=red!70!black] (manage) {Compared admission policies\\availability / motion / anchor};
+\node[below=of prop] (update) {One current-observation update\\or propagation without update};
+\draw[->] (lio)--(prop);\draw[->] (prop)--(update);\draw[->] (gnss)--(manage);\draw[->] (manage)--(update);
+\end{tikzpicture}

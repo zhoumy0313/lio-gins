@@ -1,0 +1,2852 @@
+[
+  {
+    "table": "primary",
+    "method": "B2",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 3.445734935501386,
+    "rendered": "3.446",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B2",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": null,
+    "rendered": "C180",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B2",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 1.7729614353000327,
+    "rendered": "1.773",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B2",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 1.7729614353000327,
+    "rendered": "1.773",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B2",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 2.5560732525499943,
+    "rendered": "2.556",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B2",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 0,
+    "rendered": "0/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B2",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B3",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.561421919177166,
+    "rendered": "2.561",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B3",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 0.0,
+    "rendered": "0.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B3",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.181695739835663,
+    "rendered": "2.182",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B3",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 8.371255401292814,
+    "rendered": "8.371",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B3",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 6.971170090895171,
+    "rendered": "6.971",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B3",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B3",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B4",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.561421919177166,
+    "rendered": "2.561",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B4",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 0.0,
+    "rendered": "0.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B4",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.181695739835663,
+    "rendered": "2.182",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B4",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 8.371255401292814,
+    "rendered": "8.371",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B4",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 6.971170090895171,
+    "rendered": "6.971",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B4",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B4",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B5",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5382620782029184,
+    "rendered": "2.538",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B5",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 0.0,
+    "rendered": "0.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B5",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.1419206555092,
+    "rendered": "2.142",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B5",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 7.644530200569768,
+    "rendered": "7.645",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B5",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 6.613375487587404,
+    "rendered": "6.613",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B5",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B5",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B6",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B6",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 2.0,
+    "rendered": "2.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B6",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.264709917113622,
+    "rendered": "2.265",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B6",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.7798476329322135,
+    "rendered": "5.780",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B6",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 5.567419614786402,
+    "rendered": "5.567",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B6",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 254,
+    "rendered": "254/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "B6",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS0",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 3.1854486843620373,
+    "rendered": "3.185",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS0",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 0.0,
+    "rendered": "0.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS0",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.0953716310320636,
+    "rendered": "2.095",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS0",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.652913486295153,
+    "rendered": "3.653",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS0",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 4.278639557902508,
+    "rendered": "4.279",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS0",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 115,
+    "rendered": "115/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS0",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS1",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 3.164287912197401,
+    "rendered": "3.164",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS1",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 0.0,
+    "rendered": "0.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS1",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.139824635575031,
+    "rendered": "2.140",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS1",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.700217087734368,
+    "rendered": "3.700",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS1",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 4.223991531960391,
+    "rendered": "4.224",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS1",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 121,
+    "rendered": "121/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS1",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS2",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.6212179578008707,
+    "rendered": "2.621",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS2",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 0.0,
+    "rendered": "0.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS2",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.181695739835663,
+    "rendered": "2.182",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS2",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.90822028223667,
+    "rendered": "3.908",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS2",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 3.897862473653207,
+    "rendered": "3.898",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS2",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 127,
+    "rendered": "127/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "NIS2",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock2",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock2",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 7.0,
+    "rendered": "7.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock2",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.3133209400561605,
+    "rendered": "2.313",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock2",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.5580496090516105,
+    "rendered": "5.558",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock2",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 5.429075272167314,
+    "rendered": "5.429",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock2",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 243,
+    "rendered": "243/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock2",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock5",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock5",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 10.0,
+    "rendered": "10.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock5",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.3162894232423645,
+    "rendered": "2.316",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock5",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.490210975153779,
+    "rendered": "5.490",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock5",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 5.386238161933135,
+    "rendered": "5.386",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock5",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 234,
+    "rendered": "234/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock5",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock10",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock10",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 15.0,
+    "rendered": "15.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock10",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.318898800467467,
+    "rendered": "2.319",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock10",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.361050095763672,
+    "rendered": "5.361",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock10",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 5.306061334506274,
+    "rendered": "5.306",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock10",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 219,
+    "rendered": "219/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock10",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock15",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock15",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 20.0,
+    "rendered": "20.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock15",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.321412456422706,
+    "rendered": "2.321",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock15",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.8985886826445215,
+    "rendered": "4.899",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock15",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 4.967369433779777,
+    "rendered": "4.967",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock15",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 202,
+    "rendered": "202/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock15",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock30",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock30",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 35.0,
+    "rendered": "35.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock30",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.3090916956854515,
+    "rendered": "2.309",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock30",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.426507226412213,
+    "rendered": "4.427",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock30",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 4.633948017609277,
+    "rendered": "4.634",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock30",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 161,
+    "rendered": "161/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock30",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock60",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock60",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 65.0,
+    "rendered": "65.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock60",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.4488063519412715,
+    "rendered": "2.449",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock60",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.8377174382443684,
+    "rendered": "2.838",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock60",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 3.04365750433885,
+    "rendered": "3.044",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock60",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 73,
+    "rendered": "73/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock60",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock90",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock90",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 95.0,
+    "rendered": "95.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock90",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.5094114132698695,
+    "rendered": "2.509",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock90",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.5097654905152442,
+    "rendered": "2.510",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock90",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 2.41105677122801,
+    "rendered": "2.411",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock90",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 0,
+    "rendered": "0/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "Clock90",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.584656605136434,
+    "rendered": "2.585",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 7.0,
+    "rendered": "7.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.2361069964566327,
+    "rendered": "2.236",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.022195061877307,
+    "rendered": "3.022",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 2.976003924525694,
+    "rendered": "2.976",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 68,
+    "rendered": "68/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_motion",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5868898294801177,
+    "rendered": "2.587",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_motion",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 2.0,
+    "rendered": "2.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_motion",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.264709917113622,
+    "rendered": "2.265",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_motion",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.7798476329322135,
+    "rendered": "5.780",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_motion",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 5.567419614786402,
+    "rendered": "5.567",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_motion",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 254,
+    "rendered": "254/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_motion",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_anchor",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.584656605136434,
+    "rendered": "2.585",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_anchor",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 7.0,
+    "rendered": "7.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_anchor",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.248165219340103,
+    "rendered": "2.248",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_anchor",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.489255088141548,
+    "rendered": "5.489",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_anchor",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 5.6110882789592615,
+    "rendered": "5.611",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_anchor",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 237,
+    "rendered": "237/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_anchor",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_decay",
+    "cache": "primary",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.5282953147817926,
+    "rendered": "2.528",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_decay",
+    "cache": "primary",
+    "field": "clean_latency_max_s",
+    "raw_value": 7.0,
+    "rendered": "7.000",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_decay",
+    "cache": "primary",
+    "field": "clean_RMSE_90_m",
+    "raw_value": 2.1623206424217476,
+    "rendered": "2.162",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_decay",
+    "cache": "primary",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.0588905898581835,
+    "rendered": "3.059",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_decay",
+    "cache": "primary",
+    "field": "bias_RMSE_180_m",
+    "raw_value": 2.9681657058303172,
+    "rendered": "2.968",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_decay",
+    "cache": "primary",
+    "field": "bias_accepted_rows",
+    "raw_value": 68,
+    "rendered": "68/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "primary",
+    "method": "P_without_decay",
+    "cache": "primary",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 1.238439466026878,
+    "rendered": "1.238",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 0.6960599135687228,
+    "rendered": "0.696",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 0,
+    "rendered": "0/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.35592799698686,
+    "rendered": "2.356",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.2264717502250826,
+    "rendered": "2.226",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 0,
+    "rendered": "0/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B2",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.227124391156548,
+    "rendered": "2.227",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 8.373721417389206,
+    "rendered": "8.374",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.3620218506043877,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 7.015232581255489,
+    "rendered": "7.015",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B3",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.227124391156548,
+    "rendered": "2.227",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 8.373721417389206,
+    "rendered": "8.374",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.3620218506043877,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.091310647413349,
+    "rendered": "3.091",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 162,
+    "rendered": "162/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B4",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.1540080388153218,
+    "rendered": "2.154",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 7.659985009816977,
+    "rendered": "7.660",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 6.425592200548756,
+    "rendered": "6.426",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 270,
+    "rendered": "270/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B5",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.653618041933863,
+    "rendered": "5.654",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 252,
+    "rendered": "252/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.477927038537571,
+    "rendered": "4.478",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 254,
+    "rendered": "254/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "B6",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.047613342696884,
+    "rendered": "2.048",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.5303610567695842,
+    "rendered": "3.530",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 114,
+    "rendered": "114/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.3620218506043877,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.1644120020321416,
+    "rendered": "2.164",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 116,
+    "rendered": "116/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS0",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.103500439897768,
+    "rendered": "2.104",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.5452296706008206,
+    "rendered": "3.545",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 120,
+    "rendered": "120/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.3620218506043877,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.127960304867227,
+    "rendered": "2.128",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 117,
+    "rendered": "117/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS1",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.1574790748964405,
+    "rendered": "2.157",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.8561741275809944,
+    "rendered": "3.856",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 129,
+    "rendered": "129/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.3620218506043877,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.023354155015085,
+    "rendered": "2.023",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 119,
+    "rendered": "119/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "NIS2",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.480420906070864,
+    "rendered": "5.480",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 243,
+    "rendered": "243/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.394895693584579,
+    "rendered": "4.395",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 243,
+    "rendered": "243/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock2",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.412488752988426,
+    "rendered": "5.412",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 234,
+    "rendered": "234/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.374106811698293,
+    "rendered": "4.374",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 234,
+    "rendered": "234/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock5",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.2883703068342705,
+    "rendered": "5.288",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 219,
+    "rendered": "219/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.115898686940242,
+    "rendered": "4.116",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 217,
+    "rendered": "217/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock10",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.827495113270202,
+    "rendered": "4.827",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 202,
+    "rendered": "202/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.7584061927109382,
+    "rendered": "3.758",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 202,
+    "rendered": "202/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock15",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.365169774505721,
+    "rendered": "4.365",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 161,
+    "rendered": "161/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 3.4029643777119674,
+    "rendered": "3.403",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 161,
+    "rendered": "161/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock30",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.542391267473172,
+    "rendered": "2.542",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 71,
+    "rendered": "71/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.521112229546705,
+    "rendered": "2.521",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 75,
+    "rendered": "75/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock60",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.085416901775352,
+    "rendered": "2.085",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 0,
+    "rendered": "0/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.2982598850568476,
+    "rendered": "2.298",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 0,
+    "rendered": "0/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "Clock90",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070368946943103,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.883714294265912,
+    "rendered": "2.884",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 66,
+    "rendered": "66/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.2901431080569647,
+    "rendered": "2.290",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 108,
+    "rendered": "108/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070218421938717,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.653618041933863,
+    "rendered": "5.654",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 252,
+    "rendered": "252/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.477927038537571,
+    "rendered": "4.478",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 254,
+    "rendered": "254/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_motion",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.070368946943103,
+    "rendered": "2.070",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 5.439232081261999,
+    "rendered": "5.439",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 237,
+    "rendered": "237/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 4.394895693584579,
+    "rendered": "4.395",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 243,
+    "rendered": "243/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_anchor",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "sensitivity",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.1385689892681374,
+    "rendered": "2.139",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "sensitivity",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.9081323280693625,
+    "rendered": "2.908",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "sensitivity",
+    "field": "bias_accepted_rows",
+    "raw_value": 66,
+    "rendered": "66/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "sensitivity",
+    "field": "service_qualified",
+    "raw_value": false,
+    "rendered": "no",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "parking",
+    "field": "natural_RMSE_m",
+    "raw_value": 2.362052061032842,
+    "rendered": "2.362",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "parking",
+    "field": "bias_RMSE_90_m",
+    "raw_value": 2.2587374423758475,
+    "rendered": "2.259",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "parking",
+    "field": "bias_accepted_rows",
+    "raw_value": 108,
+    "rendered": "108/270",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  {
+    "table": "other",
+    "method": "P_without_decay",
+    "cache": "parking",
+    "field": "service_qualified",
+    "raw_value": true,
+    "rendered": "yes",
+    "summary_source": "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json",
+    "summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  }
+]

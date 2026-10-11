@@ -1,0 +1,1 @@
+r2_r02: first full numeric manuscript, six pages including references/disclosure;19 complete policies,456 pairs,1197events, two all-policy tables and three figures. Retained equation-overflow issue is corrected in r03; this version remains preserved.

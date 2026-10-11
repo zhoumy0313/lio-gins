@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T190429267151Z_S6_2fe85c8c",
+  "stage": "S6",
+  "purpose": "final_PDF_all_numeric_cells_fonts_and_claim_contexts",
+  "kind": "engineering",
+  "source_commit": "2ad65cd7ff497803c47d74d9742a369e33d1e4f7",
+  "dirty_diff_SHA": "16b190fad7732da46a4b45ea3533dbac634fd9591704897a60822b7a2b2df144",
+  "input_SHA": {
+    "/home/aaron/lio_gins/paper/versions/r2_r03/main.pdf": "34e6850bd5b1e08c8fc169373ba5e5914d20e9b7ee831295920e132e24ea8d70",
+    "/home/aaron/lio_gins/paper/versions/r2_r03/main.tex": "9e5b7ac8b4649b12d4c4872a68d29b24449673ffbdc903b16cb1f4115fbc97a0",
+    "/home/aaron/lio_gins/experiments/r2/audit_manuscript.py": "622ab8801d11581f2762037c4241e683244fc68a5fa7e780fefd3c0c98e4cfae"
+  },
+  "started_UTC": "2026-10-11T19:04:29.276199+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T19:04:29.391049+00:00"
+}

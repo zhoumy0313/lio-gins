@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/audit_venue_bundle.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T19:02:39.117289+00:00", "ended_UTC": "2026-10-11T19:02:40.540337+00:00", "exit_code": 0, "wall_seconds": 1.4227644909988157, "CPU_user_s": 0.203795, "CPU_system_s": 0.038953, "max_RSS_KiB": 24800, "executed": true}

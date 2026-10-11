@@ -1,0 +1,15 @@
+{
+  "stage": "S5",
+  "purpose": "final_review_PDF_shared_axis_labels",
+  "kind": "engineering",
+  "input": [
+    "paper/versions/r2_r03/main.tex",
+    "experiments/r2/build_paper.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/r2/build_paper.py",
+    "paper/versions/r2_r03"
+  ]
+}

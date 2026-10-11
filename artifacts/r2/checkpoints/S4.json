@@ -1,0 +1,12 @@
+{
+  "stage": "S4",
+  "local_commit": "2ad65cd7ff497803c47d74d9742a369e33d1e4f7",
+  "push_exit_code": 0,
+  "push_stdout": "Branch 'research/lio-gins-r2-submission' set up to track remote branch 'research/lio-gins-r2-submission' from 'origin'.\n",
+  "push_stderr": "To github.com:zhoumy0313/lio-gins.git\n   5f28e07..2ad65cd  research/lio-gins-r2-submission -> research/lio-gins-r2-submission\n",
+  "remote_advertisement": "c12a42a3484458e1737e63201792e1122fc99c0d\trefs/heads/research/lio-gins-r1\n2ad65cd7ff497803c47d74d9742a369e33d1e4f7\trefs/heads/research/lio-gins-r2-submission",
+  "R1_preserved": true,
+  "staged_secret_scan_passed": true,
+  "file_size_scan_passed": true,
+  "verified_R2_HEAD": true
+}

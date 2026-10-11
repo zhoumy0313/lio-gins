@@ -1,0 +1,9 @@
+{
+  "plot_script": "experiments/r2/make_figures.py",
+  "source_point_files": [
+    "artifacts/r2/S3/tradeoff_points.csv",
+    "artifacts/r2/S3/representative_event_points.csv"
+  ],
+  "source_manifest": "artifacts/r2/S3/figure_manifest.json",
+  "full_summary_SHA": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+}

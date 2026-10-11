@@ -1,0 +1,27 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T183837243234Z_S6_0eee5e42",
+  "stage": "S6",
+  "purpose": "final_manuscript_precise_embedding_and_cell_audit",
+  "kind": "engineering",
+  "source_commit": "2ad65cd7ff497803c47d74d9742a369e33d1e4f7",
+  "dirty_diff_SHA": "8f9cbc31d6e0929d5c12e45cd424dc6414c67c24b5af71ec22c0013b1353f2e3",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/audit_manuscript.py": "622ab8801d11581f2762037c4241e683244fc68a5fa7e780fefd3c0c98e4cfae",
+    "/home/aaron/lio_gins/paper/versions/r2_r03/main.tex": "4029950d53de7d55f0748dc2dfed050fc33783eaa07faf4540bfffdce324302e",
+    "/home/aaron/lio_gins/paper/versions/r2_r03/main.pdf": "a3f36780bccd436c86ae35d0a876fbfd9a57fa2c2679464b6fcdf04243c0d175",
+    "/home/aaron/lio_gins/paper/versions/r2_r03/table_cell_bindings.json": "9d7c5254610fb53f16d6caba0224a1c23cadfd338156233f5bbc127a5b571bf1"
+  },
+  "started_UTC": "2026-10-11T18:38:37.251832+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T18:38:37.366671+00:00"
+}

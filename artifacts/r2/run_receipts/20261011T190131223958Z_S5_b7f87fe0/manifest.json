@@ -1,0 +1,25 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T190131223958Z_S5_b7f87fe0",
+  "stage": "S5",
+  "purpose": "final_plot_separated_B6_qualification_label",
+  "kind": "engineering",
+  "source_commit": "2ad65cd7ff497803c47d74d9742a369e33d1e4f7",
+  "dirty_diff_SHA": "57225adb9e170bee90d8479a424a674bba9f3a8bc7bcbe300f1a78ba8e1efe71",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/make_review_figures.py": "a3c37c931cb267e7b19420ddf6a53d45ba35e4404874568e220bf2cb1e2b0a0b",
+    "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d"
+  },
+  "started_UTC": "2026-10-11T19:01:31.232484+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T19:01:33.401436+00:00"
+}

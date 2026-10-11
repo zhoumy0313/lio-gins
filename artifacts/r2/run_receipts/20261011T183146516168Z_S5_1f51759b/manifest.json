@@ -1,0 +1,27 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T183146516168Z_S5_1f51759b",
+  "stage": "S5",
+  "purpose": "compile_full_numeric_r2_r02",
+  "kind": "engineering",
+  "source_commit": "2ad65cd7ff497803c47d74d9742a369e33d1e4f7",
+  "dirty_diff_SHA": "28f5e0c5decfede58f12eca34fce3824673088c3dbb7cf5c3e8f7e82a8ff3733",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/build_paper.py": "27f7ce731dce638b63100a2da986c32badf4826efe50c981a0feaaf1b8f9989a",
+    "/home/aaron/lio_gins/paper/versions/r2_r02/main.tex": "f5bf300a56ca2dcb7036fc13ad0e504123697117c9bfeb503a63ebca364df4e5",
+    "/home/aaron/lio_gins/paper/versions/r2_r02/references.bib": "16e429d5739df17bbdd0c002efc357a12c8a8738dc37767399887dcc9dc59a10",
+    "/home/aaron/lio_gins/paper/versions/r2_r02/generated_tables.tex": "2fbcfd0f5b1770e112ac09eac261068460b1679033ec54a21b77cb7f14fec484"
+  },
+  "started_UTC": "2026-10-11T18:31:46.524011+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T18:31:51.265330+00:00"
+}
