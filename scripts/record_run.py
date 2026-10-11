@@ -53,15 +53,20 @@ def main():
     (out / 'config_resolved.json').write_text(json.dumps(config, indent=2) + '\n')
     head = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=ROOT, capture_output=True, text=True)
     diff = subprocess.run(['git', 'diff', '--binary', 'HEAD'], cwd=ROOT, capture_output=True).stdout
-    inputs = {str(Path(x).resolve()): sha(x) for x in a.input}
+    inputs = {}
+    preflight_error = None
     # Retain exact small build/config/script inputs even when worktree changes
     # during a long run. Raw sensor/reference files and large binaries stay by SHA.
     snapshot = out / 'source_inputs'
     snapshot.mkdir()
-    for x in a.input:
-        path=Path(x).resolve()
-        if path.is_relative_to(ROOT) and not path.is_relative_to(ROOT/'data') and path.stat().st_size<=2*1024*1024:
-            target=snapshot/path.relative_to(ROOT);target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(path.read_bytes())
+    try:
+        for x in a.input:
+            path=Path(x).resolve()
+            inputs[str(path)] = sha(path)
+            if path.is_relative_to(ROOT) and not path.is_relative_to(ROOT/'data') and path.stat().st_size<=2*1024*1024:
+                target=snapshot/path.relative_to(ROOT);target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(path.read_bytes())
+    except OSError as e:
+        preflight_error = str(e)
     (snapshot/'runner.py').write_bytes(Path(__file__).read_bytes())
     (out/'tracked_source_diff.patch').write_bytes(diff)
     manifest = {'run_id': rid, 'phase': a.phase, 'purpose': a.purpose, 'kind': a.kind,
@@ -76,6 +81,8 @@ def main():
     t = time.monotonic()
     with (out / 'stdout.log').open('wb') as stdout, (out / 'stderr.log').open('wb') as stderr:
         try:
+            if preflight_error is not None:
+                raise OSError('input preflight failed: ' + preflight_error)
             proc = subprocess.Popen(argv, cwd=a.cwd, env=env, stdout=stdout, stderr=stderr, start_new_session=True)
             (out / 'process.json').write_text(json.dumps({'pid': proc.pid, 'runner_pid': os.getpid(), 'started_at': started}) + '\n')
             try:
@@ -93,7 +100,8 @@ def main():
             stderr.write(str(e).encode())
             rc = 127
     command = {'argv': argv, 'cwd': a.cwd, 'started_at': started, 'ended_at': utc(),
-               'exit_code': rc, 'wall_seconds': time.monotonic() - t}
+               'exit_code': rc, 'wall_seconds': time.monotonic() - t,
+               'executed': preflight_error is None, 'preflight_error': preflight_error}
     (out / 'commands.jsonl').write_text(json.dumps(command) + '\n')
     status = 'PASSED' if rc == 0 else ('BLOCKED' if rc == a.blocked_exit else 'FAILED')
     manifest.update({'status': status, 'exit_code': rc, 'ended_at': utc(),

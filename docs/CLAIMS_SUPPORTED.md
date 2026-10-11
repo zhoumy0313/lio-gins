@@ -2,13 +2,17 @@
 
 | 主张 | 状态 | 证据/边界 |
 |---|---|---|
-| 独立工作空间、原工作包保存、可恢复索引 | 支持 | P0 checkpoint、initial_workspace.json、完整性run exit0 |
-| KF-GINS固定源码可在当前主机原生编译、官方demo输出有物理意义 | 支持 | P1 build/demo/独立健康检查；仅该官方demo输入/初始化 |
-| 共同坐标、std、Joseph与一次GNSS更新等基础接口通过合成测试 | 支持于所测试条件 | 16项真实unittest，不能替代实测时间/标定/恢复验证 |
-| Noetic镜像固定manifest存在 | 支持 | 匿名registry实际manifest与hash比对；没有验证layers、apt或build |
-| 真实i2Nav定位管线已就绪 | 不支持/未执行 | 数据全部缺失、Docker不存在；P2未运行 |
-| 新恢复机制超过强基线 | 未测试 | B4/B5/B6真实比较、P4和消融未运行 |
-| 独立跨路线增益成立 | 未测试 | 未冻结、未打开parking00性能 |
-| 恢复/一致性/滑窗单独具有新颖性 | 不支持此笼统主张 | 最近邻已有相关机制；需要具体增量与开发证据 |
-| 完整目标完成/可投稿论文 | 不支持/未完成 | execution_complete=false；paper_ready=false；未生成稿件/作者名单 |
-| 原始数据/数值已异地备份 | 不支持 | 仅本地保存；没有项目remote，也没有原始机器人数据 |
+| 独立空间和原始工作包保留 | 支持 | P0 checkpoint、initial_workspace.json；仅本工作空间修改 |
+| 固定KF-GINS可编译，官方demo有物理意义 | 支持 | 官方demo原生运行及独立健康检查；不是building00实验 |
+| 两路线原始数据到位且bag身份正确 | 支持 | 全16文件P1审计exit0，两个bag SHA与固定官方值匹配；仅本地一份 |
+| Noetic隔离环境已真实构建并可启动 | 支持 | rootless build130509928405及ROS smoke131414920017 exit0；不是Docker build验证，单UID文件所有权有近似 |
+| building00原生GNSS/INS基线运行 | 支持于声明初始化 | B1噪声STD×0.5/1/2全部覆盖100%；选×2 RMSE3.702869m；共同初始平移，未声称绝对WGS84误差 |
+| building00完整AT128/ADIS轨迹缓存 | 支持于首轮位姿接口 | 131528442554输出12440/12443；cache134125698776 exit0，最大间隔0.125356s；最终原生计时缺失，重放验证进行中 |
+| 真实同输入强基线全部可靠 | 尚未完成 | P3预注册Q、NIS、Huber、12档固定恢复；未运行真实性能筛选；不得仅凭exit0登记PIPELINE_READY |
+| 新恢复机制超过匹配强基线 | 未测试 | 候选修订0/3；需要事件收益、正常代价、重复及消融 |
+| 独立跨路线增益 | 未测试 | parking00只做元数据与SHA，未冻结、性能关闭 |
+| 一致性/滑窗/恢复本身新颖 | 不支持笼统主张 | 最近邻已有相近机制；B6为局部适配，不冒称完整Dual-ACKF复现 |
+| 参考系统独立于LiDAR | 不支持 | MM/INS使用AT128，与当前LIO共享传感器；必须披露 |
+| 人工压力是现场多路径/真实失锁 | 不支持 | 派生自原始F9P，七类21事件是受控扰动，故障标签仅评价可读 |
+| 完整目标已完成或论文可投稿 | 不支持/未完成 | execution_complete、positive_effect_supported、novelty_supported、paper_ready分别false |
+| 数值/原始数据已异地备份 | 不支持 | 当前仅本地保存，SHA不是备份，无项目remote授权 |

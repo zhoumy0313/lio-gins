@@ -1,0 +1,21 @@
+{
+  "phase": "P2",
+  "purpose": "cache_complete_LIO_poses_with_explicit_shutdown_timing_limitation",
+  "kind": "engineering",
+  "input": [
+    "scripts/build_lio_cache.py",
+    "src/adapters/sensor_text.py",
+    "outputs/20261011T131528442554Z_P2_9d0fac69/manifest.json",
+    "outputs/20261011T131528442554Z_P2_9d0fac69/trajectory.csv",
+    "outputs/20261011T131528442554Z_P2_9d0fac69/interface_events.csv",
+    "outputs/20261011T131528442554Z_P2_9d0fac69/frontend_input_identity.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/build_lio_cache.py",
+    "outputs/20261011T131528442554Z_P2_9d0fac69"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "run_id": "20261011T134125698776Z_P2_0de7714e",
+  "phase": "P2",
+  "purpose": "cache_complete_LIO_poses_with_explicit_shutdown_timing_limitation",
+  "kind": "engineering",
+  "source_commit": "e56a9ab8c3a3e8a30dba7f7ccc4bc86f20b20208",
+  "tracked_dirty_diff_sha256": "28aa85b39f3ac15abca139cdaa95b55a16fe150c1e1f312148852f44bdfe503c",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/build_lio_cache.py": "57337d66b8f0b81abae1389c425c4aae1cd82eebd62fec25e33369bd8ad5c005",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/manifest.json": "96cbb629e0adc26737614ea7d643c5cf996c49f2e20a307959aa5244031b9668",
+    "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/trajectory.csv": "17da75103565e74eb89fdbbed6ec1c37e233d6464205f495f6847a7e85c54c6f",
+    "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/interface_events.csv": "60e0112a4039db6e4f1ec75e82b5eed4ad0f39b19748e8339b658dfe487f8486",
+    "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/frontend_input_identity.json": "2c440b3c96313a189951e4b0f192feac99450d4cd233b6a2859d728a1479490c"
+  },
+  "config_sha256": "b93abafd8024eba7eb0be19895736841e98112be7a34d8066b38efb8a780e24a",
+  "created_at": "2026-10-11T13:41:25.710917+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:41:26.025731+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

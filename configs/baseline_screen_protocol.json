@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "declared_before_first_real_outer_accuracy",
+  "scope": "building00 development only; no candidate mechanisms",
+  "LIO_availability_deadline_s": 0.25,
+  "LIO_deadline_basis": "150ms maximum two-endpoint span plus 100ms processing/clock budget; engine rejects endpoints received after measurement+250ms; records actual delays",
+  "Q_candidates_source": "configs/development_experiment_protocol.json",
+  "screen_cases": ["natural", "cluster_jump10", "loss30_normal", "loss30_bias10"],
+  "selected_configs_evaluate": "all eight preregistered natural/stress cases",
+  "B6_configs": [
+    {"huber_limit": 1.5, "wait_s": 0, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 2.5, "wait_s": 0, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 4, "wait_s": 0, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 6, "wait_s": 0, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 1.5, "wait_s": 2, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 2.5, "wait_s": 2, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 4, "wait_s": 2, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 6, "wait_s": 2, "recovery_s": 5, "protection": 15},
+    {"huber_limit": 2.5, "wait_s": 0, "recovery_s": 15, "protection": 15},
+    {"huber_limit": 2.5, "wait_s": 2, "recovery_s": 15, "protection": 15},
+    {"huber_limit": 2.5, "wait_s": 0, "recovery_s": 15, "protection": 50},
+    {"huber_limit": 2.5, "wait_s": 5, "recovery_s": 15, "protection": 50}
+  ],
+  "B6_onset_nis": 16.266236,
+  "B6_gap_s": 2,
+  "B6_scope": "local Huber plus fixed phased protection; not complete Dual-ACKF reproduction",
+  "selection": "same policy natural cost eligibility and primary event macro RMSE rule in development_experiment_protocol; strongest across eligible B4/B5/B6; preserve rejected configs and all metrics",
+  "candidate_revisions_consumed": 0
+}

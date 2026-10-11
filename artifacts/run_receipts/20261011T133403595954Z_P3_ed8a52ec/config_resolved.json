@@ -1,0 +1,28 @@
+{
+  "phase": "P3",
+  "purpose": "shared_outer_replay_zero_GNSS_and_causality_after_empty_input_fix",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_outer_replay.py",
+    "scripts/run_outer_baseline.py",
+    "src/adapters/causal_lio.py",
+    "src/adapters/geodesy.py",
+    "src/adapters/sensor_text.py",
+    "src/fusion/position_kf.py",
+    "src/fusion/fixed_recovery.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_outer_replay.py",
+    "-v"
+  ]
+}

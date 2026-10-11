@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-p", "test_outer_replay.py", "-v"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T13:34:03.602051+00:00", "ended_at": "2026-10-11T13:34:06.572337+00:00", "exit_code": 0, "wall_seconds": 2.9703012709996983}

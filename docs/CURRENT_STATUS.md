@@ -1,6 +1,6 @@
 # LIO-GINS-R1 — 当前状态
 
-2026-10-11。数据已取得并验证；完整目标尚未完成。P0 完成，P1 容器构建进行中，P2 真实接口检查已开始。
+2026-10-11。数据已取得并验证；完整目标尚未完成。P0 完成，P1 已完成隔离环境和数据检查，P2 完整位姿缓存已生成；正常退出计时导出正在修复验证。
 
 - `data/i2nav-dataset` 的16个原件只读保留；两个bag SHA与固定官方值完全一致。审计exit0：`20261011T112420385892Z_P1_ef2f5c4e`，无缺失/失败文件。
 - building00 IMU248928条、F9P1244条，全部有限、时间无重复/倒序，F9P标准差均有效。
@@ -12,3 +12,5 @@
 证据：[数据及接口审计](../artifacts/data_audit)、[状态JSON](GOAL_STATE.json)、[运行索引](RUN_REGISTER.csv)、[人工清单](USER_ACTION_REQUIRED.md)。旧数据缺失报告属于历史；以此页和状态JSON为当前索引。
 
 B1预登记噪声STD×0.5/1/2的水平RMSE分别4.102491/3.845226/3.702869m，均覆盖100%；按规则选择×2。仅开发基线校准，无候选收益。见artifacts/robot_baselines/KF_noise_screen.json。
+
+完整1×FAST-LIO回放 `20261011T131528442554Z_P2_9d0fac69` launcher exit0，wall1300.9774s，12440/12443帧输出；EOF后模拟时钟停止使节点升级SIGTERM，原生最终计时缺失。缓存 `20261011T134125698776Z_P2_0de7714e` exit0，最大间隔0.125356s，无>0.15s空洞，四元数仅修复六位小数序列化误差；timing_complete=false。新1×回放 `20261011T134909303110Z_P2_626b9771` 正在验证EOF后管理时钟关闭，估计器不变。强基线协议见 configs/baseline_screen_protocol.json，尚未打开外层真实性能。

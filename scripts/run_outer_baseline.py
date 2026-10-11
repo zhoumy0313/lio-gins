@@ -16,7 +16,9 @@ if hashlib.sha256(cache_path.read_bytes()).hexdigest()!=cache_id['cache_sha256']
 method=conf['method']
 if method not in ['B2','B3','B4','B5','B6']:raise ValueError('this entry runs established baselines only')
 c=np.load(cache_path);buffer=BufferedLIO(c['sow'],c['position'],c['quaternion_xyzw'],c['available_sow'],max_span_s=conf['max_LIO_span_s'])
-start=ic['reference_epoch_sow'];initial=buffer.query(start)
+deadline=conf.get('max_LIO_availability_delay_s',.25)
+if not np.isfinite(deadline) or deadline<=0:raise ValueError('finite positive availability deadline required')
+start=ic['reference_epoch_sow'];initial=buffer.query(start,available_until=start+deadline)
 if not initial['valid']:raise ValueError('initial LIO epoch unavailable')
 A=np.array(ic['R_NED_body_initial'])@initial['rotation'].T
 translation=np.array(ic['reference_initial_local_NED_m']);kf=PositionKF(translation,np.diag(np.array(ic['initial_F9P_std_NED_m'])**2),A)
@@ -26,6 +28,7 @@ if a.gnss_ned:
     if input_id['role']!='development' or input_id['sequence']!='building00' or input_id['fault_labels_included']:raise ValueError('closed heldout or labeled algorithm input')
     if hashlib.sha256(source.read_bytes()).hexdigest()!=input_id['derived_sha256'] or hashlib.sha256(ic_path.read_bytes()).hexdigest()!=input_id['initialization_sha256']:raise ValueError('derived input/initialization identity changed')
     g=np.loadtxt(source,delimiter=',',skiprows=1,ndmin=2)
+    if g.size==0:g=np.empty((0,8))
     # Explicit observed-data-only schema: rowID,SOW,N,E,D,stdN,stdE,stdD.
     if g.shape[1]!=8:raise ValueError('derived GNSS schema mismatch')
 else:
@@ -39,7 +42,7 @@ grid_set=set(grid.tolist())
 recovery=FixedRecovery(**conf['recovery']) if method=='B6' else None
 last_l=initial['position'];last_t=start;previous_output_available=initial['available_time'];gid=0;rows=[];updates=[];replay_start=time.monotonic();broken=False
 for t in events:
-    l=buffer.query(t)
+    l=buffer.query(t,available_until=t+deadline)
     if not l['valid'] or broken:
         broken=True
         if t in grid_set:rows.append([t,np.nan,np.nan,np.nan,np.nan,np.nan,0])

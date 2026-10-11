@@ -46,7 +46,9 @@ if rootless.exists():
             argv+=['--ro-bind',str(out/'container_hosts'),'/etc/hosts','--ro-bind',str(out/'container_hostname'),'/etc/hostname']
         elif entry.is_symlink():argv+=['--symlink',os.readlink(entry),'/'+entry.name]
         else:argv+=['--ro-bind',str(entry),'/'+entry.name]
-    argv+=['--proc','/proc','--dev','/dev','--tmpfs','/tmp','--dir','/input',
+    argv+=['--ro-bind',str(root/'containers/run_inside.sh'),'/opt/run_inside.sh',
+           '--proc','/proc','--dev','/dev','--tmpfs','/tmp','--dir','/input',
+           '--ro-bind',str(root/'containers/shutdown_clock.py'),'/tmp/shutdown_clock.py',
            '--ro-bind',str(bag),'/input/'+bag.name,'--bind',str(out),'/output','--remount-ro','/','--chdir','/',
            '/bin/bash','/opt/run_inside.sh','/input/'+bag.name]
 elif lock.exists():
@@ -57,6 +59,6 @@ elif lock.exists():
           '--mount',f'type=bind,src={out},dst=/output',image['image_id'],'/input/'+bag.name]
 else:
     print('BLOCKED: no verified isolated frontend environment',file=sys.stderr);sys.exit(2)
-(out/'frontend_input_identity.json').write_text(json.dumps({'bag':str(bag),'sha256':h.hexdigest(),'image':image,'sensors':['AT128','ADIS16465'],'timing_kind':'rosbag_replay_wall_and_logged_frontend_processing'},indent=2)+'\n')
+(out/'frontend_input_identity.json').write_text(json.dumps({'bag':str(bag),'sha256':h.hexdigest(),'image':image,'sensors':['AT128','ADIS16465'],'timing_kind':'rosbag_replay_wall_and_logged_frontend_processing','replay_rate':1.0,'runtime_overlay_sha256':{str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [root/'containers/run_inside.sh',root/'containers/shutdown_clock.py']},'shutdown_clock_policy':'advance clock only after EOF to wake Rate.sleep; no sensor messages'},indent=2)+'\n')
 print(json.dumps({'argv':argv}),flush=True)
 sys.exit(subprocess.run(argv).returncode)

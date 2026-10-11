@@ -16,6 +16,7 @@ roscore > /output/roscore.log 2>&1 &
 core_pid=$!
 cleanup() {
     [[ -z "${lio_pid:-}" ]] || kill -INT "$lio_pid" 2>/dev/null || true
+    [[ -z "${shutdown_clock_pid:-}" ]] || kill -TERM "$shutdown_clock_pid" 2>/dev/null || true
     kill -INT "$core_pid" 2>/dev/null || true
 }
 trap cleanup EXIT
@@ -34,7 +35,19 @@ kill -0 "$lio_pid"
 rosbag info --yaml "$1" > /output/bag_info.yaml
 rosbag play --clock --delay=2 --rate=1.0 "$1" --topics /hesai/at128/points /adi/adis16465/imu > /output/rosbag_play.log 2>&1
 sleep 3
+# ROS Rate.sleep waits on simulated time. Once bag EOF stops /clock, the
+# native SIGINT flag alone cannot wake that sleep. Advance administrative
+# clock only after the entire bag is consumed; publish no sensor messages.
+python3 /tmp/shutdown_clock.py > /output/shutdown_clock.log 2>&1 &
+shutdown_clock_pid=$!
+sleep 1
+kill -0 "$shutdown_clock_pid"
 kill -INT "$lio_pid"
 wait "$lio_pid"
 lio_pid=''
+kill -TERM "$shutdown_clock_pid"
+wait "$shutdown_clock_pid" || true
+shutdown_clock_pid=''
 [[ -s /output/trajectory.csv ]] || exit 4
+[[ -s /output/fast_lio_time_log.csv ]] || exit 5
+if grep -q 'escalating to SIGTERM' /output/fastlio.log; then exit 6; fi

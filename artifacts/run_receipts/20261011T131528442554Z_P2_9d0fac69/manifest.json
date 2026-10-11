@@ -1,0 +1,27 @@
+{
+  "run_id": "20261011T131528442554Z_P2_9d0fac69",
+  "phase": "P2",
+  "purpose": "building00_full_AT128_ADIS_replay_after_ROS_smoke",
+  "kind": "real_frontend",
+  "source_commit": "dd74148491e003d2153f5fc182bffeecb3c919fb",
+  "tracked_dirty_diff_sha256": "3f3510c02d447b01828266222625262e13a5d43d82a961f2574aed83e047a7a5",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_lio.py": "cd259fc9ee6c359c334cc58aca413b8e682cf8c3ba79e28f705c20d6edc82140",
+    "/home/aaron/lio_gins/configs/data_locations.json": "3d14989ee86b6025f86f278dfc0622da00b045706bcacacb9be3253975dccc59",
+    "/home/aaron/lio_gins/containers/derived_rootfs.local.json": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+    "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/derived_rootfs_identity.json": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+    "/home/aaron/lio_gins/outputs/20261011T131414920017Z_P2_17e494e3/manifest.json": "5e8d97448607a238b4490c315a0c3d4eddb62b5a064708ed9556e03d1c69349f"
+  },
+  "config_sha256": "03c1a74dc267fc18bcd25087d210edd5d9cb6691f8a67c6b25040472913c0588",
+  "created_at": "2026-10-11T13:15:28.450247+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:37:09.427919+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}
