@@ -1,0 +1,3 @@
+# S2 — fixed question and finite budget
+
+STATUS: selected unchanged P-r03, no new mechanism. REAL_COMMANDS: protocol_v1.yaml generated from registered draft using local PyYAML; no estimator source modification. NUMERIC_EVIDENCE: S1 complete tables and figures; clean P7s and Clock10 15s, stronger unrestricted Clock90 95s. FAILURES: building01 missing; original regression test assertions passed64/64, first combined harness failed new-test discovery; correction retained. NEXT: stricter existing NIS diagnostics, independent recomputation, causality/censor tests and bounded frontend-log diagnosis. GIT_SHA: `artifacts/r2/checkpoints/S2.json`.
