@@ -12,7 +12,7 @@ class ExperimentBatch:
         if self.events['sequence']!='building00' or self.events['role']!='development':raise ValueError('heldout batch prohibited')
         self.cases={c['id']:c for c in self.events['cases']};self.records={};self.history=[]
         self.config_dir=self.out/'configs';self.config_dir.mkdir()
-        self.backend_sources=[ROOT/p for p in ['scripts/run_candidate.py','src/observation_manager/motion_recovery.py','src/adapters/geodesy.py','src/adapters/sensor_text.py','src/adapters/causal_lio.py','src/fusion/position_kf.py','src/fusion/fixed_recovery.py']]
+        self.backend_sources=[ROOT/p for p in ['scripts/run_candidate.py','src/observation_manager/motion_recovery.py','src/observation_manager/availability_recovery.py','src/adapters/geodesy.py','src/adapters/sensor_text.py','src/adapters/causal_lio.py','src/fusion/position_kf.py','src/fusion/fixed_recovery.py']]
         self.eval_sources=[ROOT/p for p in ['scripts/evaluate_outer.py','src/evaluation/reference.py']]
         self.source_identity={str(p):digest(p) for p in self.backend_sources+self.eval_sources}
         (self.out/'source_identity.json').write_text(json.dumps(self.source_identity,indent=2)+'\n')

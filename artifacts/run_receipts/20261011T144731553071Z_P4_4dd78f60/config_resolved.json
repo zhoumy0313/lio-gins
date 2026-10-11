@@ -1,0 +1,25 @@
+{
+  "phase": "P4",
+  "purpose": "r02_availability_shadow_fallback_and_causal_qualification_tests",
+  "kind": "synthetic",
+  "input": [
+    "src/observation_manager/availability_recovery.py",
+    "src/observation_manager/motion_recovery.py",
+    "tests/test_availability_recovery.py",
+    "configs/methods/r02_change.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_availability_recovery.py",
+    "-v"
+  ]
+}

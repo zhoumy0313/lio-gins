@@ -10,6 +10,7 @@ from src.adapters.causal_lio import BufferedLIO
 from src.fusion.position_kf import PositionKF
 from src.fusion.fixed_recovery import FixedRecovery
 from src.observation_manager.motion_recovery import MotionRecovery
+from src.observation_manager.availability_recovery import AvailabilityRecovery
 p=argparse.ArgumentParser();p.add_argument('cache_run');p.add_argument('initialization_run');p.add_argument('config');p.add_argument('--gnss-ned');a=p.parse_args()
 root=Path(__file__).resolve().parents[1];out=Path(os.environ['LIO_GINS_RUN_DIR']);cache=Path(a.cache_run).resolve();ic_path=Path(a.initialization_run)/'initial_condition.json';ic=json.loads(ic_path.read_text());conf=json.loads(Path(a.config).read_text());cache_id=json.loads((cache/'cache_identity.json').read_text());cache_path=cache/'lio_cache.npz'
 if ic['sequence']!='building00' or cache_id['role']!='development':raise ValueError('heldout replay is closed')
@@ -40,7 +41,8 @@ end=float(c['sow'][-1]);grid=np.arange(int(np.ceil(start*10)),int(np.floor(end*1
 # All raw sensor-supported times stay in the output, even after reference ends.
 g=g[(g[:,1]>start)&(g[:,1]<=grid[-1])];events=np.unique(np.r_[grid,g[:,1]])
 grid_set=set(grid.tolist())
-recovery=FixedRecovery(**conf['recovery']) if method=='P_without_motion' else MotionRecovery(**conf['recovery'],**conf['motion'],q_time_m2ps=conf['q_time_m2ps'],q_distance_m2pm=conf['q_distance_m2pm'],check_motion=method!='P_time_only',decay=method!='P_without_decay')
+manager_type=AvailabilityRecovery if conf.get('revision')=='r02' else MotionRecovery
+recovery=FixedRecovery(**conf['recovery']) if method=='P_without_motion' else manager_type(**conf['recovery'],**conf['motion'],q_time_m2ps=conf['q_time_m2ps'],q_distance_m2pm=conf['q_distance_m2pm'],check_motion=method!='P_time_only',decay=method!='P_without_decay')
 last_l=initial['position'];last_t=start;previous_output_available=initial['available_time'];gid=0;rows=[];updates=[];replay_start=time.monotonic();broken=False;travel=0.;state_rows=[]
 for t in events:
     l=buffer.query(t,available_until=t+deadline)
