@@ -28,3 +28,5 @@
 |最终全归档完整性与恢复入口|checked|outputs/20261011T164941656901Z_P7_24971931/stdout.log; outputs/20261011T165419513326Z_P7_6280e88b/delivery_audit.json; artifacts/delivery_checks/resume_pre_checkpoint.json；全归档1334run/379359files/10初始件，无失败；resume0无活跃实验；交付一致性审计全通过。文档快照对应审计前版本，之后仅完成状态索引收束|
 
 交付审计run 20261011T165419513326Z_P7_6280e88b exit0；最终integrity 20261011T164941656901Z_P7_24971931 exit0；resume exit0。64项测试和80对原始重算不能替代上表明确的范围。README完整clean-clone链未独立重跑、前端数值变化、无标志reset及异地备份仍为公开限制，并未伪装为解决。
+
+关闭状态再次核验：20261011T165650509097Z_P7_b6ca698e exit0，明确检查最终状态旗标分离及无pending条件项；源码冻结仍不变。

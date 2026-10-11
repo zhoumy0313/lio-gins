@@ -14,11 +14,11 @@
   "paper_ready_for_human_review": false,
   "formal_submission_ready": false,
   "selected_architecture": "A_lio_raw_gnss_outer_kf",
-  "latest_run_id": "20261011T165419513326Z_P7_6280e88b",
+  "latest_run_id": "20261011T165650509097Z_P7_b6ca698e",
   "freeze_id": "LIO_GINS_R1_20261011T154403129394Z",
   "blocked_on": [],
   "next_action": "review_DELIVERY_no_automatic_new_research_or_submission",
-  "updated_at": "2026-10-11T16:55:43.971536+00:00",
+  "updated_at": "2026-10-11T16:57:38.907135+00:00",
   "completion_class": "NO_ADDITIONAL_GAIN",
   "candidate_mechanism_revisions_used": 3,
   "main_candidate_configs_run": 36,
@@ -84,5 +84,6 @@
     "same-input frontend numerical variation unresolved",
     "unflagged numeric LIO reset not identified",
     "off-site backup absent"
-  ]
+  ],
+  "final_closed_state_snapshot_run": "20261011T165650509097Z_P7_b6ca698e"
 }
