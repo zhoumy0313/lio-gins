@@ -17,3 +17,5 @@ P5 checkpoint8604050，P6 checkpointfbba11c；P7归档提交由 `git log -1 --on
 前端重复性、无标志reset、完整clean-clone重建未独立重跑及单份raw/无异地备份仍为工程限制。全部原始输出/失败/历史版本保留，禁止覆盖旧run、r04/调parking/改主指标/自动生成负结果投稿稿。
 
 最终已关闭状态文档快照核验：20261011T165650509097Z_P7_b6ca698e exit0（包含execution/scientific flags分离及全部条件要求关闭检查）。当前精确HEAD与干净状态由Git查询，不让提交SHA自引用。
+
+后续用户授权GitHub远程推送，origin/upstream已设，具体范围/首次SHA见REMOTE_STATUS及artifacts/remote_push。旧“无remote”冻结审计保留为历史事实。

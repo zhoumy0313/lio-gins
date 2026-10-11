@@ -20,7 +20,9 @@ checks['80_per_cell_claim_bindings']=sum(map(len,claim['frozen_heldout_80_pair_b
 state=json.loads((ROOT/'docs/GOAL_STATE.json').read_text());completion=json.loads((ROOT/'docs/COMPLETION_AUDIT.json').read_text())
 checks['final_separated_state_flags']=state['execution_complete'] is True and state['completion_class']=='NO_ADDITIONAL_GAIN' and all(state[k] is False for k in ['positive_effect_supported','development_effect_supported','independent_effect_supported','novelty_supported','paper_ready','formal_submission_ready']) and state['test_performance_opened'] is True
 checks['all_conditional_requirements_closed']=completion['execution_complete'] is True and all(r['status']!='pending' for r in completion['items'])
-checks['no_project_remote']=subprocess.check_output(['git','remote'],cwd=ROOT,text=True).strip()==''
+remote_names=subprocess.check_output(['git','remote'],cwd=ROOT,text=True).split()
+authorization=state.get('project_remote',{})
+checks['project_remote_scope']=not remote_names or (authorization.get('user_authorized') is True and remote_names==['origin'] and subprocess.check_output(['git','remote','get-url','origin'],cwd=ROOT,text=True).strip()==authorization.get('url')=='git@github.com:zhoumy0313/lio-gins.git')
 # Shell syntax validates documented argv construction, not fresh-machine replay.
 blocks=(ROOT/'README.md').read_text().split('```bash\n')[1:];syntax=out/'documented_commands.sh';syntax.write_text('\n'.join(b.split('```')[0] for b in blocks));r=subprocess.run(['bash','-n',str(syntax)],capture_output=True,text=True);checks['README_command_syntax']=r.returncode==0
 resume=json.loads((ROOT/'artifacts/delivery_checks/resume_pre_checkpoint.json').read_text());checks['resume_no_active_experiment_exit0']=resume['exit_code']==0

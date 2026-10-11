@@ -18,7 +18,7 @@
   "freeze_id": "LIO_GINS_R1_20261011T154403129394Z",
   "blocked_on": [],
   "next_action": "review_DELIVERY_no_automatic_new_research_or_submission",
-  "updated_at": "2026-10-11T16:57:38.907135+00:00",
+  "updated_at": "2026-10-11T17:11:01.865535+00:00",
   "completion_class": "NO_ADDITIONAL_GAIN",
   "candidate_mechanism_revisions_used": 3,
   "main_candidate_configs_run": 36,
@@ -39,7 +39,8 @@
   "backup": {
     "local_preserved": true,
     "remote_numeric_backed_up": false,
-    "raw_data_backed_up": false
+    "raw_data_backed_up": false,
+    "remote_lightweight_evidence_copy_verified": true
   },
   "blocking_audit_consecutive_goal_turns": 0,
   "previous_goal_turn_classification": "progress",
@@ -85,5 +86,13 @@
     "unflagged numeric LIO reset not identified",
     "off-site backup absent"
   ],
-  "final_closed_state_snapshot_run": "20261011T165650509097Z_P7_b6ca698e"
+  "final_closed_state_snapshot_run": "20261011T165650509097Z_P7_b6ca698e",
+  "project_remote": {
+    "url": "git@github.com:zhoumy0313/lio-gins.git",
+    "name": "origin",
+    "branch": "research/lio-gins-r1",
+    "user_authorized": true,
+    "verified_initial_push_SHA": "f06a3ed102a60a15f2bc6f78a629eae5f6c04b7d",
+    "receipt": "artifacts/remote_push/initial_checkpoint_push.json"
+  }
 }

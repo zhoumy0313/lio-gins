@@ -9,3 +9,5 @@
 execution_complete=true限已授权有界任务及条件交付；positive_effect/development_effect/independent_effect/novelty/paper_ready=false。原窄注册对照效果分别true。未解决限制：前端相同输入3.601m数值变化、无标志LIO reset错误跳变、完整clean-clone再构建未独立重跑、无异地备份。全部明确披露。
 
 入口： [DELIVERY](DELIVERY.md)、[逐项验收](COMPLETION_AUDIT.md)、[最终科学决定](reports/P4/late_control_decision.md)、[完整留出报告](reports/P5_frozen_heldout.md)、[恢复](RESUME.md)。没有必需人工输入，不自动新增候选/论文/投稿或外部发布。
+
+2026-10-12后续授权：源码及轻量证据已推送至zhoumy0313/lio-gins的research/lio-gins-r1，首个SHA核验一致。详见REMOTE_STATUS；完整outputs及raw并未备份，科研状态不变。

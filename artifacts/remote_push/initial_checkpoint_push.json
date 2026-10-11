@@ -1,0 +1,19 @@
+{
+  "UTC": "2026-10-11T17:11:01.865535+00:00",
+  "authorization": "user explicitly requested push to git@github.com:zhoumy0313/lio-gins.git",
+  "remote": "origin",
+  "url": "git@github.com:zhoumy0313/lio-gins.git",
+  "branch": "research/lio-gins-r1",
+  "local_HEAD": "f06a3ed102a60a15f2bc6f78a629eae5f6c04b7d",
+  "verified_remote_HEAD": "f06a3ed102a60a15f2bc6f78a629eae5f6c04b7d",
+  "verified_remote_branch_SHA": "f06a3ed102a60a15f2bc6f78a629eae5f6c04b7d",
+  "push_exit_code": 0,
+  "remote_verification_exit_code": 0,
+  "remote_was_empty": true,
+  "force": false,
+  "host_key_verification": "project-only known_hosts; GitHub official Ed25519 fingerprint matched; no host SSH changes",
+  "official_fingerprint_source": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints",
+  "scope": "Git-tracked source/configs/docs/lightweight evidence/versions and history only; raw data, full outputs, caches, builds and private reference documents excluded",
+  "backup": "partial lightweight evidence remote copy; not full numeric-run or raw-data backup",
+  "archive_note": "receipt records the initial checkpoint push; its later archive commit is verified separately, avoiding self-referential SHA"
+}
