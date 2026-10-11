@@ -1,0 +1,22 @@
+{
+  "goal_id": "LIO-GINS-R1",
+  "phase": "P1",
+  "execution_status": "running",
+  "execution_complete": false,
+  "pipeline_ready": false,
+  "development_effect_supported": false,
+  "positive_effect_supported": false,
+  "test_performance_opened": false,
+  "independent_effect_supported": false,
+  "novelty_status": "unverified",
+  "novelty_supported": false,
+  "paper_ready": false,
+  "paper_ready_for_human_review": false,
+  "formal_submission_ready": false,
+  "selected_architecture": "A_lio_raw_gnss_outer_kf",
+  "latest_run_id": null,
+  "freeze_id": null,
+  "blocked_on": [],
+  "next_action": "locked_sources_demo_data_container_audit",
+  "updated_at": "2026-10-11T05:05:15.971959+00:00"
+}

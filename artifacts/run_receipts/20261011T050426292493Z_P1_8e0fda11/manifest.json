@@ -1,0 +1,23 @@
+{
+  "run_id": "20261011T050426292493Z_P1_8e0fda11",
+  "phase": "P1",
+  "purpose": "fetch_locked_upstreams",
+  "kind": "engineering",
+  "source_commit": null,
+  "tracked_dirty_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runner_sha256": "8151189b63c5cb815f0a6c73db9b4dc4c6bb608f202330da64017baed0be221a",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/fetch_sources.py": "0188c19bd695498f976557be030066a40bd540385d9d50465b3aded5b1a9634d",
+    "/home/aaron/lio_gins/configs/sources.lock.json": "d7c80ae965b978650ce9595dae2554f122299f0d11238680595388d5fdafd7f0"
+  },
+  "config_sha256": "67cff4c6c8a60f3cb1359e70ad0eb3a3a2abc8becd3808420318506dffbb564e",
+  "created_at": "2026-10-11T05:04:26.295758+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "FAILED",
+  "exit_code": 1,
+  "ended_at": "2026-10-11T05:04:35.698271+00:00"
+}

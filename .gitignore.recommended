@@ -1,0 +1,20 @@
+# 由 Codex 与已有 .gitignore 合并，不覆盖用户规则。
+.venv*/
+__pycache__/
+.pytest_cache/
+*.pyc
+build/
+cache/
+outputs/
+third_party/
+data/raw/
+data/derived/
+data/reference/
+docs/reference/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+# 可复现数值/脚本/配置/图表经检查后保存 artifacts/ 并按许可提交。
+# 本规则不负责删除文件；本地实验与原件始终保留。

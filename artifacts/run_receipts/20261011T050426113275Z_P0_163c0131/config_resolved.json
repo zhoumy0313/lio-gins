@@ -1,0 +1,14 @@
+{
+  "phase": "P0",
+  "purpose": "environment_audit",
+  "kind": "engineering",
+  "input": [
+    "scripts/audit_environment.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "python3",
+    "scripts/audit_environment.py"
+  ]
+}

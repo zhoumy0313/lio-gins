@@ -1,0 +1,4 @@
+run_id,phase,purpose,status,manifest_path
+20261011T050426113275Z_P0_163c0131,P0,environment_audit,PASSED,/home/aaron/lio_gins/outputs/20261011T050426113275Z_P0_163c0131/manifest.json
+20261011T050426292493Z_P1_8e0fda11,P1,fetch_locked_upstreams,FAILED,/home/aaron/lio_gins/outputs/20261011T050426292493Z_P1_8e0fda11/manifest.json
+20261011T050515712271Z_P0_44317db5,P0,project_venv_without_global_install,PASSED,/home/aaron/lio_gins/outputs/20261011T050515712271Z_P0_44317db5/manifest.json

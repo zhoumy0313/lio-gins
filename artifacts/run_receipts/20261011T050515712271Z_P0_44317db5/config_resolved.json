@@ -1,0 +1,16 @@
+{
+  "phase": "P0",
+  "purpose": "project_venv_without_global_install",
+  "kind": "engineering",
+  "input": [],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "command": [
+    "python3",
+    "-m",
+    "venv",
+    "--without-pip",
+    "--system-site-packages",
+    ".venv"
+  ]
+}

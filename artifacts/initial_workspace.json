@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-10-11T05:03:36.914002+00:00",
+  "existing_files_sha256": {
+    "START_HERE.md": "8347134901f2c6361776901a173b9fde49e9f056d607586c819bd8e69bcb6af0",
+    ".gitignore.recommended": "9b9d6204874ae4e70f62e898018420fe472b1569e60ad022ec1112c2b4b39018",
+    "AGENTS.md": "fa209cb25123bbe492701aa3427d62e070ba1bf7804f2c70c0c8b052857a8dc9",
+    "SHA256SUMS": "42b435c08f636d88082e68583deaee5b42c7a1f64dc256edc5229e0a1ef9e3c0",
+    "docs/GOAL_LIO_GINS_R1.md": "eb527119a6a5366184e7c1767674e297f2a96f3b4ecf1fc958a7b4e824c5bf08",
+    "docs/templates/STAGE_REPORT_TEMPLATE.md": "6ace556c83ede4667228aa6e989a22b43c7062d8fce999846491a66ffe018034",
+    "docs/templates/CLAIM_EVIDENCE_TEMPLATE.md": "81d059a108e02fa42220c3d7e05a4f3a3988f89f18bc7f0aa939b585c860947a",
+    "docs/templates/USER_ACTION_REQUIRED_TEMPLATE.md": "393e2443fe6d9b1119e4d47d64d0a164d78916e565ba7dec1a10197cea8312c4",
+    "configs/sources.lock.json": "d7c80ae965b978650ce9595dae2554f122299f0d11238680595388d5fdafd7f0",
+    "configs/project_intent.yaml": "c2e6d64294bae19fb7a9bd4198d0ecad44133edef176b7c75547e54d608ca706"
+  },
+  "git_before": "absent",
+  "user_edits_preserved": true
+}

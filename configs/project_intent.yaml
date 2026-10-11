@@ -1,0 +1,55 @@
+# 研究意图，不是可直接运行的算法参数。
+goal_id: LIO-GINS-R1
+schema_version: 1
+document_date: '2026-10-11'
+timezone: Asia/Shanghai
+status: planned_not_executed
+primary_architecture: A_lio_raw_gnss_outer_kf
+method_scope: motion_verified_observation_recovery
+host:
+  os: Ubuntu22.04
+  reinstall: false
+  modify_drivers: false
+  use_existing_proxy: true
+implementation:
+  lio: i2Nav-Robot-Baseline/FAST_LIO
+  initial_lio_sensors: [AT128, ADIS16465]
+  gnss_input: F9P_SPP
+  gnss_ins_baseline: KF-GINS
+  outer_state: position_3d
+  ros_strategy: isolated_Noetic_container
+  gpu_required: false
+  core_posterior_fusion: false
+data_roles:
+  development: [building00]
+  optional_development_control: [street00]
+  heldout: [parking00]
+  optional_later_lio_challenge: [playground00]
+phases: [P0, P1, P2, P3, P4, P5, P6, P7]
+research_budget:
+  candidate_mechanism_revisions_max: 3
+  main_configs_per_revision_max: 12
+  candidate_main_configs_total_recommended_max: 36
+  test_open_requires_development_evidence: true
+  test_open_requires_freeze: true
+  retain_failed_runs: true
+  normal_condition_cost_required: true
+resources:
+  build_jobs_initial_max: 4
+  suggested_disk_reserve_gb: 80
+  download_full_dataset: false
+  raw_file_sizes: verify_before_download
+publication:
+  claimed_full_paper_deadline: '2026-10-15'
+  deadline_timezone: must_verify
+  draft_total_page_budget: 6
+  includes_references_conservatively: true
+  official_2026_template_status: must_verify
+  scientific_acceptance_guaranteed: false
+  automatic_submission: false
+permissions:
+  create_public_remote: false
+  push_existing_remote: only_if_authorized_for_this_project
+  sudo_changes: explicit_approval
+  account_or_paid_actions: explicit_approval
+  authorship: human_decision
