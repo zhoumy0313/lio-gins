@@ -8,6 +8,7 @@ import subprocess
 import sys
 import unittest
 import numpy as np
+from scipy.spatial.transform import Rotation
 from scripts.canonicalize_development_gnss import canonicalize
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -83,3 +84,20 @@ class FinalContracts(unittest.TestCase):
                     if isinstance(node,ast.Import):self.assertFalse(any(x.name.startswith('src.evaluation') for x in node.names),str(p))
         for f in ['scripts/run_outer_baseline.py','scripts/run_candidate.py']:
             text=(ROOT/f).read_text();self.assertNotIn('load_i2nav_local_ned',text);self.assertNotIn('groundtruth.nav',text)
+
+    def test_final_r03_stationary_turn_and_unflagged_pose_reset_do_not_crash(self):
+        t=np.arange(501)/10;lever=np.array([0,-.07,-.365])
+        for name in ['stationary','turn','unflagged_reset']:
+            cache=self.root/name;cache.mkdir();position=np.zeros((len(t),3));angles=t/50*180 if name=='turn' else t*0
+            quaternion=Rotation.from_euler('z',angles,degrees=True).as_quat()
+            if name=='unflagged_reset':position[t>=25,0]=1000
+            np.savez(cache/'lio_cache.npz',sow=t,position=position,quaternion_xyzw=quaternion,available_sow=t+.01,effective_points=t*0+1000,mean_abs_plane_residual_m=t*0)
+            identity={**self.cache_id,'cache_sha256':hashlib.sha256((cache/'lio_cache.npz').read_bytes()).hexdigest()};(cache/'cache_identity.json').write_text(json.dumps(identity))
+            times=np.arange(1,50);rotations=Rotation.from_euler('z',times/50*180 if name=='turn' else times*0,degrees=True)
+            antenna=rotations.apply(np.tile(lever,(len(times),1)));g=np.column_stack([np.arange(len(times)),times,antenna,np.tile([1,1,2],(len(times),1))])
+            nav,_=self.nav('P',rows=g,cache=cache);self.assertTrue(np.isfinite(nav).all());self.assertTrue((nav[:,6]==1).all())
+            if name!='unflagged_reset':np.testing.assert_allclose(nav[:,1:4],0,atol=1e-12)
+            else:
+                # A numerical reset without a flag is not detected by this
+                # interface. Preserve and disclose its wrong propagated jump.
+                self.assertGreater(np.max(abs(nav[:,1])),900)

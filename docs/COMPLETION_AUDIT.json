@@ -1,0 +1,159 @@
+{
+  "goal_id": "LIO-GINS-R1",
+  "assessment_UTC": "2026-10-11T16:55:43.971536+00:00",
+  "classification": "NO_ADDITIONAL_GAIN",
+  "conditional_scope": "all authorized bounded work plus required negative-branch handover; not positive research or submission success",
+  "items": [
+    {
+      "requirement": "P0/P1保护及环境/demo",
+      "status": "complete",
+      "evidence": "docs/reports/P0.md; docs/reports/P1.md; docs/reports/P1_rootless_environment.md",
+      "limit": "原10件身份及上游清洁由最终integrity审计；不等同算法精度"
+    },
+    {
+      "requirement": "最小数据与身份",
+      "status": "complete",
+      "evidence": "data/manifests/DATA_MANIFEST.json; docs/reports/P1_data_received.md",
+      "limit": "16原件全SHA，两个bag官方匹配，仅本地一份"
+    },
+    {
+      "requirement": "真实前端/原生基线与协议",
+      "status": "complete_with_limits",
+      "evidence": "docs/reports/P2_full_frontend.md; P2_initial_native_baseline.md",
+      "limit": "两条真实路线，明确单历元受控初始化；3.601m前端变化未解决"
+    },
+    {
+      "requirement": "P3匹配强控制/共同代价",
+      "status": "complete",
+      "evidence": "docs/reports/BASELINE_REPORT.md",
+      "limit": "112配置场景对、Q/R/前端/初态共用，B6非完整DualACKF"
+    },
+    {
+      "requirement": "P4有界机制/决策卡",
+      "status": "complete",
+      "evidence": "docs/reports/P4/r01.md; r02.md; r03.md; final_verification.md",
+      "limit": "最多3轮36主配置、淘汰/失败保留"
+    },
+    {
+      "requirement": "科学冻结先于第一次测试",
+      "status": "complete",
+      "evidence": "freezes/LIO_GINS_R1_20261011T154403129394Z; docs/TEST_OPENED.json",
+      "limit": "当时原注册门槛全通过；后补反证时序真实披露，不倒改历史"
+    },
+    {
+      "requirement": "P5完整矩阵及实际计时",
+      "status": "complete_with_limits",
+      "evidence": "docs/reports/P5_frozen_heldout.md",
+      "limit": "80对/210事件coverage1；native/frontend/backend分开；全部失败和消融保留"
+    },
+    {
+      "requirement": "长等待强控制充分挑战",
+      "status": "complete_negative",
+      "evidence": "docs/reports/P4/late_control_decision.md",
+      "limit": "一轮4时长64对，仅开发且在测试访问后，60/90s优于P；不再搜索"
+    },
+    {
+      "requirement": "P6论文条件分支",
+      "status": "complete_conditional_internal_only",
+      "evidence": "paper/versions/internal_results_r01; docs/reports/P6_internal_drafts.md",
+      "limit": "GOAL§17.3没证据交方法实验草稿，不交6页投稿全文/PDF"
+    },
+    {
+      "requirement": "作者简报及十问",
+      "status": "complete",
+      "evidence": "docs/AUTHOR_BRIEF_ZH.md; docs/DEFENSE_QA_ZH.md",
+      "limit": "事实对应公式/范围/失败，无作者或正式投稿"
+    },
+    {
+      "requirement": "干净checkout起点README",
+      "status": "documented_with_limits",
+      "evidence": "README.md",
+      "limit": "包含固定来源/项目umoci/新run路径捕获/全路线命令；完整clean-clone重建链未独立重跑，不宣称通过"
+    },
+    {
+      "requirement": "一键full与cached及归档恢复",
+      "status": "complete_with_limits",
+      "evidence": "scripts/run_development.py; scripts/run_heldout.py; scripts/replay_frozen_backend.py",
+      "limit": "building组件/parking全组合已执行，B6/P缓存natural精确；不是新盲测或异地备份"
+    },
+    {
+      "requirement": "13.1时间/IMU/坐标/杆臂/nav格式",
+      "status": "checked",
+      "evidence": "tests/test_common_interfaces.py; tests/test_candidate_rotation.py; tests/test_final_contracts.py; bag/text audit receipts",
+      "limit": "周边界/异常保留/单轴NED/quat/纯旋转，bag/text样本证据范围不夸全量"
+    },
+    {
+      "requirement": "13.1排序/ID/hash拒复用",
+      "status": "checked_with_explicit_contract",
+      "evidence": "tests/test_final_contracts.py",
+      "limit": "乱序原入口拒绝；新开发copy稳定排序后同输出；ID重排数值不变，ID日志及byteSHA应变；cache改动拒绝"
+    },
+    {
+      "requirement": "13.2零噪声/Joseph/R/disabled/一次更新",
+      "status": "checked",
+      "evidence": "tests/test_common_interfaces.py; test_final_contracts.py",
+      "limit": "闭式均值协方差及PSD、所有10种策略无GNSS传播一致、r03无管理精确B6"
+    },
+    {
+      "requirement": "13.2未来/真值/标签隔离",
+      "status": "checked",
+      "evidence": "tests/test_causal_lio.py; test_anchored_recovery.py; test_final_contracts.py",
+      "limit": "未来删除不改过去、endpoint可用时间、外置未来标签无影响、标签输入拒绝、在线import图无评价器"
+    },
+    {
+      "requirement": "13.2断点/健康/偏差/漂移/转弯/静止/reset",
+      "status": "checked_with_limits",
+      "evidence": "tests/test_motion_recovery.py; test_availability_recovery.py; test_anchored_recovery.py; test_final_contracts.py",
+      "limit": "断点/锚不洗白/UNRESOLVED/观测等价；r03纯转/静止；无标志数值reset不崩但错跳未解决，gap明确失败"
+    },
+    {
+      "requirement": "13.3指标/真值独立重算/覆盖/公平",
+      "status": "checked",
+      "evidence": "outputs/20261011T164106339470Z_P7_269b03f9/final_metric_audit.json; tests/test_outer_evaluation.py",
+      "limit": "80对直接原轨迹/参考重算，最大8.882e-16m；同cache/init/输入/冻结配置，gap保留NaN/failed非dropna"
+    },
+    {
+      "requirement": "13.3图表数字与SHA",
+      "status": "checked",
+      "evidence": "paper/working/claim_evidence_map.json; artifacts/final_figures/figure_identity.json",
+      "limit": "80对trajectory/update/config/gnss/cache/init binding，两图与所有点CSV SHA"
+    },
+    {
+      "requirement": "独立状态旗标",
+      "status": "complete",
+      "evidence": "docs/GOAL_STATE.json; docs/CLAIMS_SUPPORTED.md",
+      "limit": "宽科学效益false，原窄注册差异true；execution与novelty/paper分开"
+    },
+    {
+      "requirement": "原件/失败/版本保存与边界",
+      "status": "complete_with_limits",
+      "evidence": "docs/RUN_REGISTER.csv; docs/STATE_HISTORY.jsonl; artifacts/run_receipts; paper/versions",
+      "limit": "不覆盖/不删除/no remote/no旧VPR；SHA不是备份"
+    },
+    {
+      "requirement": "最终全归档完整性与恢复入口",
+      "status": "checked",
+      "evidence": "outputs/20261011T164941656901Z_P7_24971931/stdout.log; outputs/20261011T165419513326Z_P7_6280e88b/delivery_audit.json; artifacts/delivery_checks/resume_pre_checkpoint.json",
+      "limit": "全归档1334run/379359files/10初始件，无失败；resume0无活跃实验；交付一致性审计全通过。文档快照对应审计前版本，之后仅完成状态索引收束"
+    }
+  ],
+  "required_user_inputs": [],
+  "unverified_engineering_limits": [
+    "fresh clean-checkout complete rebuild not independently executed",
+    "same-input frontend numerical variation unresolved",
+    "unflagged numeric LIO reset not identified",
+    "off-site backup absent"
+  ],
+  "tests_run": "20261011T164802218803Z_P7_07de00da",
+  "tests_count": 64,
+  "execution_complete": true,
+  "conditional_delivery_audit_run": "20261011T165419513326Z_P7_6280e88b",
+  "final_integrity_run": "20261011T164941656901Z_P7_24971931",
+  "final_integrity_counts": {
+    "registered_runs": 1334,
+    "verified_files": 379359,
+    "initial_files_checked": 10,
+    "failures": 0
+  },
+  "resume_exit_code": 0
+}

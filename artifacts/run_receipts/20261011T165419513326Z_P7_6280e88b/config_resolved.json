@@ -1,0 +1,19 @@
+{
+  "phase": "P7",
+  "purpose": "final_conditional_delivery_audit",
+  "kind": "engineering",
+  "input": [
+    "scripts/audit_delivery.py",
+    "README.md",
+    "docs/DELIVERY.md",
+    "docs/COMPLETION_AUDIT.json",
+    "artifacts/delivery_checks/resume_pre_checkpoint.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_delivery.py"
+  ]
+}

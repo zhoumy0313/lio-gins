@@ -34,7 +34,10 @@ argv=[sys.executable,str(root/'scripts/record_run.py'),'--phase','P1','--purpose
       '--',sys.executable,str(root/'scripts/audit_data.py')]
 r=subprocess.run(argv,cwd=root)
 if r.returncode==0:
-    print('Development files present. Continue from GOAL_STATE and validated run receipts; heldout remains closed until scientific freeze.')
+    if state.get('test_performance_opened'):
+        print('Development files present. Heldout was already opened; inspect the archived freeze and final conclusion. A replay is not another blind test.')
+    else:
+        print('Development files present. Continue from GOAL_STATE and validated run receipts; heldout remains closed until scientific freeze.')
 else:
     print('See docs/USER_ACTION_REQUIRED.md. No performance evaluation or method search was started.')
 sys.exit(r.returncode)

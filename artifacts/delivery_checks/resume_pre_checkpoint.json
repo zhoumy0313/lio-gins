@@ -1,0 +1,10 @@
+{
+  "argv": [
+    ".venv/bin/python",
+    "scripts/resume.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "UTC": "2026-10-11T16:54:19.475790+00:00",
+  "exit_code": 0,
+  "scope": "after final archive integrity, before P7 commit; git dirty is expected and not an experiment process"
+}

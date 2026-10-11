@@ -1,52 +1,100 @@
 # LIO-GINS-R1
 
-Independent localization research in `/home/aaron/lio_gins`: the pinned i2Nav AT128/ADIS adaptation of FAST-LIO2 provides local motion; raw F9P SPP positions update a 3D position KF. KF-GINS is an independent GNSS/INS comparison. [Goal](docs/GOAL_LIO_GINS_R1.md), [status](docs/CURRENT_STATUS.md), [state](docs/GOAL_STATE.json) and [run register](docs/RUN_REGISTER.csv) are the recovery entry points.
+Independent localization research: pinned i2Nav AT128/ADIS FAST-LIO2 supplies local motion; raw F9P SPP updates a3D position KF. KF-GINS is an independent GNSS/INS comparator. **Final research conclusion: NO_ADDITIONAL_GAIN.** Original registered parking00 B4→P target macro RMSE2.122390→1.911108m (9.9549%) is preserved, but stronger fixed-duration controls beat P on both development caches at eligible natural cost. No efficacy/novelty/submission readiness is claimed. See [delivery](docs/DELIVERY.md), [final decision](docs/reports/P4/late_control_decision.md), [complete heldout report](docs/reports/P5_frozen_heldout.md), [state](docs/GOAL_STATE.json) and [claims](docs/CLAIMS_SUPPORTED.md).
 
-P0–P3 are complete. All three candidate revisions and 36 main configurations are retained. The final retained-anchor candidate passes fixed-parameter attribution and two-cache development verification: primary target event macro RMSE 3.074919→2.373985m (22.80%) and sensitivity cache 2.893789→2.198809m (24.02%), with full coverage and the common natural cost cap. This is development evidence. The same-input frontend poses still differ materially; the two caches are sensitivity checks, not independent route replications. Frozen-route plumbing is being checked against every retained development output before any parking00 performance access. No novelty, independent gain or paper readiness is claimed.
+## Existing archive: one-command backend replay
 
-## Existing-workspace replay
-
-Run from the project root:
+From the project root:
 
 ```bash
 .venv/bin/python scripts/resume.py
-.venv/bin/python scripts/run_development.py --mode cached --method B6 --case natural
-.venv/bin/python scripts/run_development.py --mode cached --method P --case all
+.venv/bin/python scripts/run_development.py --sequence building00 --mode cached --method B6 --case natural
+.venv/bin/python scripts/run_development.py --sequence building00 --mode cached --method P --case all
+.venv/bin/python scripts/replay_frozen_backend.py --method B6 --case natural
+.venv/bin/python scripts/replay_frozen_backend.py --method P --case natural
 ```
 
-The B6 natural one-command entry actually passed in run `20261011T152315911135Z_P7_d04c590f`. Each entry creates an exclusive recorder directory and separately records backend and offline evaluator commands, configs and input identities. Cached mode reuses immutable LIO; its timing excludes the frontend. `--cache-run` can select the other preserved development cache without changing scientific parameters.
+Development B6 one-command replay actually passed in20261011T152315911135Z_P7_d04c590f. Frozen parking B6/P archive recovery passed in20261011T163106760681Z_P7_804d7747 and20261011T163820527256Z_P7_a26caac5: trajectory and update-log bytes exact, numeric metrics equal. `--case all` includes all eight original conditions. These commands need the retained original outputs/cache/initialization and are archive reproductions, never new blind tests. Each new invocation gets an exclusive recorded directory; no run is overwritten. Cached timing excludes the frontend.
 
-A complete sensor replay entry is also provided:
+The original entry rejects unordered/duplicate GNSS times. For a **new, unlabeled development-only** observed CSV, `scripts/canonicalize_development_gnss.py SOURCE NEW_COPY` can establish chronological order without changing values or original IDs. It verifies source/initialization identity and refuses labeled/heldout input. Numerical results survive unique ID renumbering; ID-bearing logs and input-byte SHA necessarily change, and old cached input identity must not be reused. This helper is outside the scientific freeze and never changed an original experiment.
 
-```bash
-.venv/bin/python scripts/run_development.py --mode full --method B6 --case all
-```
+## Clean checkout with already downloaded data: environment and full development replay
 
-Full mode runs the controlled first-reference-epoch initializer, real 1× FAST-LIO, cache validation, fixed GNSS stress copies, native KF-GINS at preselected noise STD scale2, and the chosen backend/evaluator. Its component commands were actually executed earlier; the assembled full-mode command has not yet been executed as one new run. Running it consumes approximately another full route and can yield frontend numerical variation. It is reproduction, not a new parameter search.
+There is no authorized remote. A local Git clone or local source bundle can supply this checkout. Git excludes raw data, outputs, caches, builds and the venv; they are not magically present in a source clone. Point `data/i2nav-dataset` at the retained read-only building00/parking00 source directory, or retain the downloaded originals at that path. Do not copy75GiB unnecessarily. Source-only reproduction can regenerate **building00** components; exact archived parking results additionally require the original archive and frozen runtime registry, including their original path bindings.
 
-The original 16 data files are read-only under `data/i2nav-dataset/{building00,parking00}`. Both bags match fixed official SHA. Never mount the entire dataset into an estimator: it contains reference files. FAST-LIO mounts only the bag. Online backends receive sensor/cache/initialization files; labels and reference trajectories are read only by the separate evaluator. Initializer reads exactly one reference state under `configs/initialization_protocol.json`, explicitly a controlled known-initial-state experiment. Unknown geographic origin means common initial-position-conditioned errors, not absolute WGS84 accuracy or operational no-prior startup.
+Supported recorded host: Ubuntu22.04 x86_64, GCC11.4, CMake3.22, Python3.10.12. Existing host prerequisites: Git/CMake/C++ compiler, Bubblewrap with usable user namespaces, dpkg/apt download, NumPy1.21.5, SciPy1.8.0, PyYAML5.4.1, Matplotlib3.5.1 and lz4. No host packages were installed by this project. A different host missing these prerequisites is not silently repaired with sudo. Keep>=80GiB free, build<=4 jobs. The per-process public proxy used here is127.0.0.1:7890; rootless pull/build scripts use that existing proxy, never reconfigure host networking. If it is unavailable, restore the existing project network prerequisite or record a local adaptation before a development rebuild.
 
-## Environment and source reproduction
-
-The current `.venv` uses Ubuntu22.04 system NumPy/SciPy/PyYAML/Matplotlib/lz4 through `--system-site-packages`; no host packages were installed. The source lock is `configs/sources.lock.json`; `scripts/fetch_sources.py` obtains pinned clean upstreams and checks submodules. Native KF-GINS builds with:
+Run from a clean checkout root:
 
 ```bash
+python3 -m venv --without-pip --system-site-packages .venv
+.venv/bin/python -c 'import numpy,scipy,yaml,matplotlib,lz4; print(numpy.__version__, scipy.__version__)'
+.venv/bin/python scripts/fetch_sources.py --proxy http://127.0.0.1:7890
+.venv/bin/python scripts/fetch_dependencies.py --proxy http://127.0.0.1:7890
 cmake -S third_party/KF-GINS -B build/kf-gins-original -DCMAKE_BUILD_TYPE=Release
 cmake --build build/kf-gins-original -j4
 .venv/bin/python scripts/record_run.py --phase P1 --purpose official_demo --input scripts/run_kf_demo.py --input third_party/KF-GINS/dataset/kf-gins.yaml -- .venv/bin/python scripts/run_kf_demo.py
+.venv/bin/python scripts/record_run.py --phase P1 --purpose raw_data_identity --input scripts/audit_data.py -- .venv/bin/python scripts/audit_data.py
 ```
 
-Noetic runs with existing Bubblewrap user namespaces and project-local umoci, without Docker daemon or sudo. The official OCI digest is locked in `containers/base_image.lock.json`; the verified derived rootfs and binary identity are registered in `containers/derived_rootfs.local.json`. `pull_noetic_oci.py`, `prepare_noetic_context.py`, `prepare_availability_context.py` and `build_noetic_rootless.py` are the recorded build stages. Exact successful argv, dependency recovery chain and preserved build failures are in [environment report](docs/reports/P1_rootless_environment.md) and each recorded manifest/commands file. The Docker recipe remains an untested alternative; package ownership has an explicit single-UID approximation. A fresh checkout-to-full-route build has not been independently revalidated. Do not infer that it was from the available recipe.
+`sources.lock.json`/`dependencies.lock.json` fix upstream commits; their initial status strings are historical, not current execution state. Fetch checks commit, dirty source and submodules. Original FAST-LIO2 is attribution/diff reference; the i2Nav adaptation is the actual AT128 implementation. No upstream algorithm is silently upgraded.
 
-Full frontend validation and timing are in [P2](docs/reports/P2_full_frontend.md). All matched controls are in [P3](docs/reports/BASELINE_REPORT.md); candidate decision cards and [final development verification](docs/reports/P4/final_verification.md) retain all cases. Common Q/R, lever, initialization, exact GNSS IDs and evaluation clocks are preserved. Raw receiver differences and retained anchors are monitors, never additional KF observations. Paper method/setup versions are internal drafts, with no authorship or submission.
-
-## Heldout boundary and integrity
-
-Parking00 can be processed only with an archived, SHA-verified scientific freeze supported by sealed gain/attribution/two-cache proof, unchanged mechanism and full development transition parity. Source/config mismatches reject access. Environment variables cannot bypass this boundary. The heldout matrix is preregistered in `configs/heldout_protocol.json`; its entry is `scripts/run_heldout.py FREEZE_DIRECTORY` under `record_run.py` only after freeze. No retuning or promoting a winning ablation after test access.
+For isolated Noetic, first obtain the project-local unpacker; `apt download` fetches a package without host installation:
 
 ```bash
-.venv/bin/python scripts/resume.py
-.venv/bin/python scripts/record_run.py --phase P7 --purpose local_integrity --input scripts/verify_evidence.py -- .venv/bin/python scripts/verify_evidence.py
+mkdir -p cache/local-tools
+(cd cache/local-tools && apt download umoci=0.4.7+ds-2ubuntu0.1)
+dpkg-deb -x cache/local-tools/umoci_0.4.7+ds-2ubuntu0.1_amd64.deb cache/local-tools/umoci
 ```
 
-`resume.py` reads state, Git, active processes and receipts; active runs return exit3 to prevent duplicates. `--audit-data` explicitly repeats raw identity/metadata auditing. The recorder accepts individual files as `--input`, not directories. SHA seals regular bytes or symlink target text; historical semantics remain unchanged. All outputs, failures, source snapshots and paper versions are retained. SHA is local integrity, not backup: raw data currently have one local copy and off-site backup is unverified. No project remote is authorized, so checkpoints remain local. Old VPR, SSH, FlClash, host drivers/ROS/Python and global networking are untouched; no sudo, account, paid service, academic authorship or formal submission.
+Record each stage and capture its actual output path, rather than copying this machine's historic run names into a new checkout:
+
+```bash
+project_record() {
+    local project_purpose=$1; shift
+    local project_script=$1; shift
+    local project_receipt
+    if project_receipt=$(.venv/bin/python scripts/record_run.py --phase P1 --purpose "$project_purpose" --timeout 7200 --input "$project_script" -- .venv/bin/python "$project_script" "$@"); then
+        printf '%s\n' "$project_receipt" >&2
+        .venv/bin/python -c 'import json,sys; print(json.loads(sys.stdin.read().splitlines()[-1])["output"])' <<< "$project_receipt"
+    else
+        local project_code=$?
+        printf '%s\n' "$project_receipt" >&2
+        return "$project_code"
+    fi
+}
+project_base=$(project_record locked_noetic_pull scripts/pull_noetic_oci.py) || exit $?
+project_context=$(project_record pinned_at128_context scripts/prepare_noetic_context.py) || exit $?
+project_availability=$(project_record time_health_logging_context scripts/prepare_availability_context.py "$project_context") || exit $?
+project_build=$(project_record isolated_noetic_build scripts/build_noetic_rootless.py "$project_base" "$project_availability") || exit $?
+.venv/bin/python scripts/run_development.py --sequence building00 --mode full --method B6 --case all
+```
+
+Base OCI digest is locked in `containers/base_image.lock.json`. Build uses a copied project rootfs, signed package downloads, unchanged pinned sources, separate build/logging patches, cleared host ROS environment and `catkin_make -j4 -l4`; derived identity is registered automatically. Single-UID ownership is a declared approximation. The Dockerfile is an untested alternative. Build failures remain sealed; `--resume-from FAILED_BUILD_RUN` verifies a retained failed rootfs before reusing its dependency cache. Do not reset/delete a failed directory or treat exit0 from context preparation as a compiled runtime.
+
+Full mode exports exactly one reference initialization state, performs real1×FAST-LIO, validates cache/time/health, derives fixed stress copies, runs native KF-GINS at development-selected STD scale2 and independently evaluates chosen backend. The individual building00 components and the entire assembled parking matrix were actually executed. **This documented clean-checkout→environment→building00 full command has not been independently executed as a new clean-clone test.** Archive recovery is separately verified and does not remove that portability limitation. [Environment report](docs/reports/P1_rootless_environment.md) preserves exact successful argv, package versions and failure/recovery chain.
+
+For archived parking full reproduction, after verifying the unchanged scientific freeze and its original environment bindings:
+
+```bash
+.venv/bin/python scripts/record_run.py --phase P5 --purpose archived_full_parking_reproduction --kind engineering --timeout 5400 --input scripts/run_heldout.py --input freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json -- .venv/bin/python scripts/run_heldout.py freezes/LIO_GINS_R1_20261011T154403129394Z
+```
+
+That entry was run as20261011T154446522435Z_P5_ae13844a and completed all ten methods/eight conditions. Any new run is post-opening reproduction, not another independent test. It costs a full replay and can yield frontend numerical variation. It must not change P, Q/R, initialization, events or metrics. Source/config mismatches reject access; rebuilding the frozen runtime registry changes a frozen input and must not be passed off as unchanged blind evaluation.
+
+## Interpretation, checks and preservation
+
+Online estimators see only sensor/cache/initialization inputs; fault labels and reference trajectories are excluded. The separate initializer reads one reference epoch under the declared known-initial-state protocol. The MM/INS reference shares AT128; reported localNED errors are initial-position-conditioned, not absoluteWGS84/no-prior startup. Each original GNSS is updated at most once; differences and anchors are monitors, and KF-GINS posterior is never reinjected.
+
+Original files are read-only; the frontend mounts only a single bag, never the dataset/reference directory, host home or Docker socket. Native frontend processing excludes preprocessing/callback/publication/wait, and cached-backend timing excludes the frontend. Same-bag frontend poses differed materially (3.601m local3D RMS) for an unresolved reason. Unflagged numerical LIO reset jumps can be propagated; the interface does not guarantee reset identification. Missing LIO spans produce failed output with visible coverage rather than hidden interpolation/reset.
+
+```bash
+.venv/bin/python scripts/record_run.py --phase P7 --purpose contract_tests --kind synthetic --input tests/test_final_contracts.py -- .venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python scripts/record_run.py --phase P7 --purpose independent_metric_audit --input scripts/audit_final_metrics.py -- .venv/bin/python scripts/audit_final_metrics.py
+.venv/bin/python scripts/record_run.py --phase P7 --purpose local_integrity --input scripts/verify_evidence.py -- .venv/bin/python scripts/verify_evidence.py
+.venv/bin/python scripts/resume.py
+```
+
+The metric audit directly rereads raw trajectories/reference for all80 frozen pairs, independently of evaluator code. Resume reads state/Git/processes/receipts; live project jobs yield exit3 to prevent duplicates. `--audit-data` explicitly repeats raw-data auditing. Recorder `--input` accepts individual files, not directories. All experiments, failures, historical freezes and paper versions remain retained; immutable runs are never edited. Internal drafts and author materials are complete, with no submission manuscript/PDF because the incremental-evidence gate failed.
+
+SHA is integrity, not backup: raw data have one local copy; off-site raw/numeric backup is unverified. No project remote or push. Old VPR, SSH, FlClash, drivers, global ROS/Python/networking are untouched. No sudo, account, paid service, academic authorship or formal submission was performed.

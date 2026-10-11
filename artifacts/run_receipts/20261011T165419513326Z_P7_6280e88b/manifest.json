@@ -1,0 +1,27 @@
+{
+  "run_id": "20261011T165419513326Z_P7_6280e88b",
+  "phase": "P7",
+  "purpose": "final_conditional_delivery_audit",
+  "kind": "engineering",
+  "source_commit": "fbba11c9679ce1c0d8656986e1a35e215fcd9ed4",
+  "tracked_dirty_diff_sha256": "9b3b3fd473632e725f51e037d08c3476660004d4e98ff5e41c43d5de3d6c95ea",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/audit_delivery.py": "6fb3de4651c1029b50e626fa29d6d3fa18c1676bf3d816c7b2712eb107dfdfd6",
+    "/home/aaron/lio_gins/README.md": "98ead9b2c1902334ae1047b57aa47b3650d558f2051c5574ab5d7ead6f3fe651",
+    "/home/aaron/lio_gins/docs/DELIVERY.md": "03609b422ea5b13fa5ddf87d46c238778c7973a46e3209a8f0829cd0ffb3517e",
+    "/home/aaron/lio_gins/docs/COMPLETION_AUDIT.json": "0712630435a42b1b6e309633444eb7f1bee71e42e53f03a8bccb8fbe96f11548",
+    "/home/aaron/lio_gins/artifacts/delivery_checks/resume_pre_checkpoint.json": "7242e34ea800d4895e16b0c86272206865bf86b6a447ce9cfd0c15b2dc523aeb"
+  },
+  "config_sha256": "7c94b623e1ae73767f7fcc312a8a80c7625035bb86336a825735beefa13d38e9",
+  "created_at": "2026-10-11T16:54:19.525385+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T16:54:19.589830+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}
