@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-R2-SUBMISSION",
-  "stage": "S6",
-  "execution_status": "S5_checkpoint_complete",
+  "stage": "S7",
+  "execution_status": "S6_checkpoint_complete",
   "execution_complete": false,
   "pipeline_ready_from_R1": true,
   "new_metric_protocol_documented": true,
@@ -15,7 +15,7 @@
   "paper_mode": "B",
   "paper_full_source_ready": true,
   "paper_pdf_audited": true,
-  "paper_ready_for_author_review": false,
+  "paper_ready_for_author_review": true,
   "formal_submission_ready": false,
   "remaining_human_actions": [
     "building01 original files for future independent evaluation",
@@ -23,8 +23,8 @@
   ],
   "R1_base_SHA": "c12a42a3484458e1737e63201792e1122fc99c0d",
   "branch": "research/lio-gins-r2-submission",
-  "updated_UTC": "2026-10-11T19:05:08.711895+00:00",
-  "next_action": "S6 critical scientific review and human decision package",
+  "updated_UTC": "2026-10-11T19:08:48.116043+00:00",
+  "next_action": "S7 archive and conditional final delivery; building01 independently remains unavailable",
   "method_revisions_used": 0,
   "candidate_configs_max": 8,
   "data_roles": {
@@ -44,6 +44,7 @@
     "S2",
     "S3",
     "S4",
-    "S5"
+    "S5",
+    "S6"
   ]
 }
