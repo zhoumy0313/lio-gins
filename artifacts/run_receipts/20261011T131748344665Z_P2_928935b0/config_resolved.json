@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "bounded_F9P_bag_text_identity_and_covariance_check",
+  "kind": "engineering",
+  "input": [
+    "scripts/audit_F9P_bag_text.py",
+    "src/adapters/rosbag_metadata.py",
+    "src/adapters/sensor_text.py",
+    "data/i2nav-dataset/building00/building00_F9P_GNSS.pos",
+    "data/manifests/DATA_MANIFEST.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_F9P_bag_text.py"
+  ]
+}

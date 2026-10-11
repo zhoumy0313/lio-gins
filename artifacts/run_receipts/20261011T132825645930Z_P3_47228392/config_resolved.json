@@ -1,0 +1,25 @@
+{
+  "phase": "P3",
+  "purpose": "matched_Huber_nominal_score_and_fixed_recovery_tests",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_fixed_recovery.py",
+    "src/fusion/fixed_recovery.py",
+    "src/fusion/position_kf.py",
+    "src/adapters/geodesy.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_fixed_recovery.py",
+    "-v"
+  ]
+}

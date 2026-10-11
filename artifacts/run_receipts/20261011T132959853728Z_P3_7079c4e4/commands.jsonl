@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "scripts/prepare_development_stress.py", "outputs/20261011T124056742603Z_P2_e310122b"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T13:29:59.860567+00:00", "ended_at": "2026-10-11T13:30:00.024859+00:00", "exit_code": 0, "wall_seconds": 0.1643050829998174}

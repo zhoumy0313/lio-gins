@@ -1,0 +1,28 @@
+{
+  "run_id": "20261011T132959853728Z_P3_7079c4e4",
+  "phase": "P3",
+  "purpose": "generate_preregistered_development_GNSS_stress_observations",
+  "kind": "engineering",
+  "source_commit": "76e321c1cf307e6203997439bf5ec7029642ac2c",
+  "tracked_dirty_diff_sha256": "0901396bad560431b87a854c09f48240c834465e2f2490e653d4f941d0179b3b",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/prepare_development_stress.py": "0dd94cc3c44aea840fcbce579b685048c3d6718763b78605755a859dcc404b49",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+    "/home/aaron/lio_gins/data/manifests/DATA_MANIFEST.json": "2dd9a92074067cc82331dfdfe88636f035d7b3274308a1afcdcb0d541e6ad8a7",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_F9P_GNSS.pos": "85c3fb290f8318b7b6cf1fdddfb73224d3e76754ddecfc0a97853a5fdb21eba7"
+  },
+  "config_sha256": "575de494a2f9c9d72d9d6c21ebb3405fc8da3101ef67ba072665701a1ed65fee",
+  "created_at": "2026-10-11T13:29:59.860486+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:30:00.025039+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

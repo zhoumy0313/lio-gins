@@ -117,6 +117,12 @@ def decode_insprobe_imu(data):
     return {**h,'week':week,'sow':sow,'angular_velocity':a[:3],'linear_acceleration':a[3:6],'incremental_angles':a[6:9],'incremental_velocity':a[9:12]}
 
 
+def decode_navsatfix(data):
+    h,i=message_header(data);status,service=struct.unpack_from('<bH',data,i);i+=3
+    a=struct.unpack_from('<12dB',data,i)
+    return {**h,'status':status,'service':service,'llh_deg_m':a[:3],'covariance_ENU':a[3:12],'covariance_type':a[12]}
+
+
 def decode_pointcloud_layout(data):
     h,i=message_header(data);height,width,count=struct.unpack_from('<III',data,i);i+=12;fs=[]
     for _ in range(count):

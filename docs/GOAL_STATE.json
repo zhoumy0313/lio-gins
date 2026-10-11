@@ -14,11 +14,11 @@
   "paper_ready_for_human_review": false,
   "formal_submission_ready": false,
   "selected_architecture": "A_lio_raw_gnss_outer_kf",
-  "latest_run_id": "20261011T124632852515Z_P2_fa4e1b07",
+  "latest_run_id": "20261011T131414920017Z_P2_17e494e3",
   "freeze_id": null,
   "blocked_on": [],
   "next_action": "monitor_frontend_then_validate_cache_time_coverage_and_B2",
-  "updated_at": "2026-10-11T13:09:03.186401+00:00",
+  "updated_at": "2026-10-11T13:19:04.155594+00:00",
   "completion_class": "IN_PROGRESS",
   "candidate_mechanism_revisions_used": 0,
   "main_candidate_configs_run": 0,
@@ -51,5 +51,10 @@
   "rootless_runtime_probe_passed": true,
   "isolated_runtime": "bubblewrap_user_namespace",
   "latest_verified_environment_run": "20261011T130509928405Z_P1_4c5d376c",
-  "active_frontend_run": "20261011T130731395147Z_P2_43d7b70e"
+  "active_frontend_run": "20261011T131528442554Z_P2_9d0fac69",
+  "active_frontend_process": {
+    "pid": 13536,
+    "runner_pid": 13532,
+    "started_at": "2026-10-11T13:15:28.450330+00:00"
+  }
 }

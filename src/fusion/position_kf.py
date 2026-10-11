@@ -31,11 +31,13 @@ class PositionKF:
         self.p = self.p + self.A @ d
         self.P = covariance(self.P+q)
 
-    def update(self, gnss_id, z_antenna_n, r, r_n_b, lever_frd, policy='disabled', nis_limit=11.3448667301, huber_limit=2.5):
+    def update(self, gnss_id, z_antenna_n, r, r_n_b, lever_frd, policy='disabled', nis_limit=11.3448667301, huber_limit=2.5, external_r_multiplier=1.0):
         if policy not in {'disabled','nis','huber'}:
             raise ValueError('unknown baseline policy')
         if not np.isfinite([nis_limit,huber_limit]).all() or nis_limit<=0 or huber_limit<=0:
             raise ValueError('positive finite baseline thresholds required')
+        if not np.isfinite(external_r_multiplier) or external_r_multiplier<1:
+            raise ValueError('external covariance multiplier must be finite and >=1')
         lever = np.asarray(lever_frd,float)
         if lever.shape != (3,) or not np.isfinite(lever).all():
             raise ValueError('finite FRD lever arm required')
@@ -55,6 +57,9 @@ class PositionKF:
         if policy == 'nis' and nis>nis_limit:
             return {'accepted':False,'reason':'nis_gate','nis':nis,'r_multiplier':1.0,'correction_norm_m':0.0}
         gamma = max(1.0,np.sqrt(nis)/huber_limit) if policy=='huber' else 1.0
+        # Recovery protection multiplies the same nominal Huber covariance;
+        # it must not make the baseline's outlier score smaller first.
+        gamma *= external_r_multiplier
         r_eff = r*gamma
         k = np.linalg.solve((self.P+r_eff).T,self.P.T).T
         correction = k @ residual

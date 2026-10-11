@@ -1,0 +1,24 @@
+{
+  "run_id": "20261011T131748822706Z_P3_f94707cc",
+  "phase": "P3",
+  "purpose": "fixed_recovery_baseline_causal_tests",
+  "kind": "synthetic",
+  "source_commit": "76e321c1cf307e6203997439bf5ec7029642ac2c",
+  "tracked_dirty_diff_sha256": "3440f757d471e2c9603a0f78e9c3ccabce8b4564f8b67b8ffc6ee078a5e45475",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/tests/test_fixed_recovery.py": "f14adcc66dc1cacffae8a77401c8a008cf716587e307eacb30435852bfe1ff01",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758"
+  },
+  "config_sha256": "9ef2bc21318c88b2f408ab3785d1451f88ba374402b4eb0419a1900c502fd6a5",
+  "created_at": "2026-10-11T13:17:48.828018+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:17:48.942469+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

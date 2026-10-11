@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-p", "test_fixed_recovery.py", "-v"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T13:28:25.653055+00:00", "ended_at": "2026-10-11T13:28:25.767273+00:00", "exit_code": 0, "wall_seconds": 0.11422912499983795}

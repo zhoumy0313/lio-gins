@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T132825645930Z_P3_47228392",
+  "phase": "P3",
+  "purpose": "matched_Huber_nominal_score_and_fixed_recovery_tests",
+  "kind": "synthetic",
+  "source_commit": "76e321c1cf307e6203997439bf5ec7029642ac2c",
+  "tracked_dirty_diff_sha256": "37054f71142458ebd5ec6f053d30199a5fabd11c4996582371f6d9fae8471b5a",
+  "runner_sha256": "0505fe4cd4a67b90ab0ac59bc7f989ecfad1a19d7417873c3233d2eba2abdeed",
+  "input_sha256": {
+    "/home/aaron/lio_gins/tests/test_fixed_recovery.py": "fb9462275527bb0981190cf2abcd4eebd0f1ccd2235ef6a2453eae072b0b0ea7",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2"
+  },
+  "config_sha256": "fbd84a80e5300b3263a57fa770794f2165ebfbdad93850fce0654b4c27bee456",
+  "created_at": "2026-10-11T13:28:25.652974+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:28:25.767440+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}
