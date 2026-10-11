@@ -1,0 +1,13 @@
+{
+  "stage": "S7",
+  "purpose": "archive_all_completed_real_R2_stdout_stderr_without_truncation",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/archive_review_logs.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/archive_review_logs.py"
+  ]
+}

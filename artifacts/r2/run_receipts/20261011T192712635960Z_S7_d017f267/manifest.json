@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T192712635960Z_S7_d017f267",
+  "stage": "S7",
+  "purpose": "archive_all_completed_real_R2_stdout_stderr_without_truncation",
+  "kind": "engineering",
+  "source_commit": "817dabac517ad8ea37d629a5d30c3cbcb41d35b4",
+  "dirty_diff_SHA": "298f821f804391123f973c5de712d33baf4ea20ed2b18305996a7389e998a867",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/archive_review_logs.py": "328ab077bdacdebd04b08631c0451502a05c043bc680163048a1dac79ac7f6a9"
+  },
+  "started_UTC": "2026-10-11T19:27:12.644396+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T19:27:12.759320+00:00"
+}

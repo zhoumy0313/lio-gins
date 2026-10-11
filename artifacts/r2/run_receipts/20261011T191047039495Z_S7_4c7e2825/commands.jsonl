@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/audit_delivery.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T19:10:47.046970+00:00", "ended_UTC": "2026-10-11T19:11:49.718745+00:00", "exit_code": 1, "wall_seconds": 62.67152190299748, "CPU_user_s": 36.67086, "CPU_system_s": 25.880292, "max_RSS_KiB": 36248, "executed": true}

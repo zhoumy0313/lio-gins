@@ -1,0 +1,49 @@
+\begin{table*}[t]\centering\small
+\caption{Complete primary building00 comparison, all 19 policies. RMSE is horizontal, meters; clean delay is maximum actual-update delay across three events, seconds. Exposure is accepted injected rows out of270. Q indicates both the declared natural-cost and inclusive15-s clean service gates. C180 is right-censored admission, not zero latency. All windows have complete expected-grid coverage.}\label{tab:primary}
+\begin{tabular}{lrrrrrrc}\toprule
+Policy & Natural & Clean delay & Clean90 & Bias90 & Bias180 & Exposure & Q\\\midrule
+LIO only & 3.446 & C180 & 1.773 & 1.773 & 2.556 & 0/270 & no \\
+Direct fusion & 2.561 & 0.000 & 2.182 & 8.371 & 6.971 & 270/270 & yes \\
+NIS100 & 2.561 & 0.000 & 2.182 & 8.371 & 6.971 & 270/270 & yes \\
+Huber2.5 & 2.538 & 0.000 & 2.142 & 7.645 & 6.613 & 270/270 & yes \\
+Availability B6 & 2.587 & 2.000 & 2.265 & 5.780 & 5.567 & 254/270 & yes \\
+NIS11.3449 & 3.185 & 0.000 & 2.095 & 3.653 & 4.279 & 115/270 & no \\
+NIS16.2662 & 3.164 & 0.000 & 2.140 & 3.700 & 4.224 & 121/270 & no \\
+NIS30 & 2.621 & 0.000 & 2.182 & 3.908 & 3.898 & 127/270 & no \\
+Clock2 & 2.587 & 7.000 & 2.313 & 5.558 & 5.429 & 243/270 & yes \\
+Clock5 & 2.587 & 10.000 & 2.316 & 5.490 & 5.386 & 234/270 & yes \\
+Clock10 & 2.587 & 15.000 & 2.319 & 5.361 & 5.306 & 219/270 & yes \\
+Clock15 & 2.587 & 20.000 & 2.321 & 4.899 & 4.967 & 202/270 & no \\
+Clock30 & 2.587 & 35.000 & 2.309 & 4.427 & 4.634 & 161/270 & no \\
+Clock60 & 2.587 & 65.000 & 2.449 & 2.838 & 3.044 & 73/270 & no \\
+Clock90 & 2.587 & 95.000 & 2.509 & 2.510 & 2.411 & 0/270 & no \\
+P-r03 & 2.585 & 7.000 & 2.236 & 3.022 & 2.976 & 68/270 & yes \\
+P-no-motion & 2.587 & 2.000 & 2.265 & 5.780 & 5.567 & 254/270 & yes \\
+P-no-anchor & 2.585 & 7.000 & 2.248 & 5.489 & 5.611 & 237/270 & yes \\
+P-no-decay & 2.528 & 7.000 & 2.162 & 3.059 & 2.968 & 68/270 & yes \\
+\bottomrule\end{tabular}\end{table*}
+\begin{table*}[t]\centering\small
+\caption{All controls and ablations on the second building cache and already-seen parking00. Both use the same19 policies and complete coverage. Latencies match Table~\ref{tab:primary}; Q is independently calculated against each cache/route natural cap. Neither column is a new independent R2 test.}\label{tab:other}
+\begin{tabular}{lrrrrrrrr}\toprule
+ & \multicolumn{4}{c}{Building00 sensitivity cache} & \multicolumn{4}{c}{Parking00 seen historical route}\\
+Policy & Natural & Bias90 & Exposure & Q & Natural & Bias90 & Exposure & Q\\\midrule
+LIO only & 1.238 & 0.696 & 0/270 & no & 2.356 & 2.226 & 0/270 & no \\
+Direct fusion & 2.227 & 8.374 & 270/270 & no & 2.362 & 7.015 & 270/270 & yes \\
+NIS100 & 2.227 & 8.374 & 270/270 & no & 2.362 & 3.091 & 162/270 & yes \\
+Huber2.5 & 2.154 & 7.660 & 270/270 & no & 2.362 & 6.426 & 270/270 & yes \\
+Availability B6 & 2.070 & 5.654 & 252/270 & yes & 2.362 & 4.478 & 254/270 & yes \\
+NIS11.3449 & 2.048 & 3.530 & 114/270 & yes & 2.362 & 2.164 & 116/270 & yes \\
+NIS16.2662 & 2.104 & 3.545 & 120/270 & yes & 2.362 & 2.128 & 117/270 & yes \\
+NIS30 & 2.157 & 3.856 & 129/270 & no & 2.362 & 2.023 & 119/270 & yes \\
+Clock2 & 2.070 & 5.480 & 243/270 & yes & 2.362 & 4.395 & 243/270 & yes \\
+Clock5 & 2.070 & 5.412 & 234/270 & yes & 2.362 & 4.374 & 234/270 & yes \\
+Clock10 & 2.070 & 5.288 & 219/270 & yes & 2.362 & 4.116 & 217/270 & yes \\
+Clock15 & 2.070 & 4.827 & 202/270 & no & 2.362 & 3.758 & 202/270 & no \\
+Clock30 & 2.070 & 4.365 & 161/270 & no & 2.362 & 3.403 & 161/270 & no \\
+Clock60 & 2.070 & 2.542 & 71/270 & no & 2.362 & 2.521 & 75/270 & no \\
+Clock90 & 2.070 & 2.085 & 0/270 & no & 2.362 & 2.298 & 0/270 & no \\
+P-r03 & 2.070 & 2.884 & 66/270 & yes & 2.362 & 2.290 & 108/270 & yes \\
+P-no-motion & 2.070 & 5.654 & 252/270 & yes & 2.362 & 4.478 & 254/270 & yes \\
+P-no-anchor & 2.070 & 5.439 & 237/270 & yes & 2.362 & 4.395 & 243/270 & yes \\
+P-no-decay & 2.139 & 2.908 & 66/270 & no & 2.362 & 2.259 & 108/270 & yes \\
+\bottomrule\end{tabular}\end{table*}

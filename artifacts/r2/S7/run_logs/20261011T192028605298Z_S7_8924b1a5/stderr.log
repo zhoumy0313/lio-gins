@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/experiments/r2/audit_delivery.py", line 81, in <module>
+    freeze=ROOT/'freezes/r2/analysis_20261011T182648484931Z/analysis_freeze.json';result['analysis_freeze_SHA']=sha(freeze);assert result['analysis_freeze_SHA']==freeze.with_suffix('.sha256').read_text().strip()
+AssertionError

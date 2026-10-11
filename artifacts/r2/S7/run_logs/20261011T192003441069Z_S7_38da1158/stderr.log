@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/experiments/r2/audit_delivery.py", line 33, in <module>
+    result['raw_hash_evidence_reused_from']=str(previous.relative_to(ROOT));result['reuse_reason']='successful sealed raw/cache phase; all current ctime/mtime predate its start, no later writes; later legacy-link audit failure remains retained'
+  File "/usr/lib/python3.10/pathlib.py", line 818, in relative_to
+    raise ValueError("{!r} is not in the subpath of {!r}"
+ValueError: 'outputs_r2/20261011T191634226740Z_S7_5abffa9d' is not in the subpath of '/home/aaron/lio_gins' OR one path is relative and the other is absolute.

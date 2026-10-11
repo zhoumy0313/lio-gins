@@ -1,0 +1,15 @@
+{
+  "stage": "S7",
+  "purpose": "final_raw_R1_history_numeric_provenance_and_delivery_integrity",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_delivery.py",
+    "artifacts/r2/S0/inheritance_audit.json",
+    "paper/versions/r2_r03/build_audit.json"
+  ],
+  "timeout": 900.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_delivery.py"
+  ]
+}

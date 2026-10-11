@@ -1,0 +1,17 @@
+raw verified building00.bag
+raw verified building00_ADIS16465_IMU.txt
+raw verified building00_F9P_GNSS.pos
+raw verified building00_groundtruth.nav
+raw verified building00_trajectory.csv
+raw verified building00_MID360_IMU.txt
+raw verified building00_OEM7_GNSS.pos
+raw verified building00_RANGER_ODO.txt
+raw verified parking00.bag
+raw verified parking00_ADIS16465_IMU.txt
+raw verified parking00_F9P_GNSS.pos
+raw verified parking00_groundtruth.nav
+raw verified parking00_trajectory.csv
+raw verified parking00_MID360_IMU.txt
+raw verified parking00_OEM7_GNSS.pos
+raw verified parking00_RANGER_ODO.txt
+{"all_passed": true, "raw_count": 16, "caches": 3}

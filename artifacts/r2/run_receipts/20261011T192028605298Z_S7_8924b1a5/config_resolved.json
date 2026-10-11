@@ -1,0 +1,17 @@
+{
+  "stage": "S7",
+  "purpose": "final_archive_audit_resolved_retained_raw_phase_path",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_delivery.py",
+    "outputs_r2/20261011T191634226740Z_S7_5abffa9d/raw_cache_recheck.json",
+    "paper/versions/r2_r03/build_audit.json"
+  ],
+  "timeout": 900.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_delivery.py",
+    "--reuse-raw-phase",
+    "outputs_r2/20261011T191634226740Z_S7_5abffa9d"
+  ]
+}

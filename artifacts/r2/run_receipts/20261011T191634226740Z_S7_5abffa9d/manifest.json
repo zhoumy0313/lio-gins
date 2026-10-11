@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T191634226740Z_S7_5abffa9d",
+  "stage": "S7",
+  "purpose": "corrected_final_raw_scientific_history_and_review_delivery_audit",
+  "kind": "engineering",
+  "source_commit": "817dabac517ad8ea37d629a5d30c3cbcb41d35b4",
+  "dirty_diff_SHA": "eab16bcf2d66ea0564985653dec1162577483246576eec67578447670c41f366",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/audit_delivery.py": "f7f0b9ae6dac904a3b35b31090f8c647e664173763116e77053751ebab164fbd",
+    "/home/aaron/lio_gins/artifacts/r2/S0/inheritance_audit.json": "b17ccefba0a0be5ccef54c04481cb7e1419937a85e98ab6f55b2746b7dfc502b",
+    "/home/aaron/lio_gins/paper/versions/r2_r03/build_audit.json": "e9cffab25a198e65f501853a90710af01819ac0237cef5ee6b5c70c35b4494e4"
+  },
+  "started_UTC": "2026-10-11T19:16:34.235840+00:00",
+  "status": "FAILED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 1,
+  "ended_UTC": "2026-10-11T19:17:47.428056+00:00"
+}

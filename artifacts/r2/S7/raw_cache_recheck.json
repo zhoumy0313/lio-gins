@@ -1,0 +1,117 @@
+{
+  "raw_files": [
+    {
+      "path": "data/i2nav-dataset/building00/building00.bag",
+      "bytes": 38025394101,
+      "SHA": "700ad92d3c856b7ac9c6b0a79d2553bba1144a6dd3b688ad35f3cd77f20e80cb",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/building00/building00_ADIS16465_IMU.txt",
+      "bytes": 27879936,
+      "SHA": "55d950e145338f312e7f7be00118d7b5282dbd5f3199450dde5037b7417f9f16",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/building00/building00_F9P_GNSS.pos",
+      "bytes": 114448,
+      "SHA": "85c3fb290f8318b7b6cf1fdddfb73224d3e76754ddecfc0a97853a5fdb21eba7",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/building00/building00_groundtruth.nav",
+      "bytes": 19772608,
+      "SHA": "69283dfa1f98c90afeb1e950d37b05c4034f57157f0e4150f9ad15e1fc988cbc",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/building00/building00_trajectory.csv",
+      "bytes": 19531467,
+      "SHA": "5d4dbc77ba6e74c25b02382cf309ba56e11b31cb0d19d808a43fc3b5fdc87395",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/building00/building00_MID360_IMU.txt",
+      "bytes": 27872096,
+      "SHA": "95b82222e72fe7198a082cf13b24806af2cc9ec31c445d88774a6daa055ed49b",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/building00/building00_OEM7_GNSS.pos",
+      "bytes": 114448,
+      "SHA": "af18617249404c0d05b6a6d695b4f044e8e130d45c51e8509d158b0044a5b70d",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/building00/building00_RANGER_ODO.txt",
+      "bytes": 5972544,
+      "SHA": "df33621c9c909b8af6e13722be51117dbe39bb0c71f3c4e1f5b7a63cefdae77c",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00.bag",
+      "bytes": 41296010207,
+      "SHA": "83a2101058b3a3ff4400d4cfc2bd3d48ed97714738c0734aa6d65dc29a7ce6ea",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00_ADIS16465_IMU.txt",
+      "bytes": 27432272,
+      "SHA": "4f460b6cbe4ec0080c9d66348244953ce5afe4952f728d6848fd9cc8d40e7a6e",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00_F9P_GNSS.pos",
+      "bytes": 112608,
+      "SHA": "409e0959ed001f75fd53a957d0c86f78be84f660c09599f8a0ded325ff40609d",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00_groundtruth.nav",
+      "bytes": 18981641,
+      "SHA": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00_trajectory.csv",
+      "bytes": 18685660,
+      "SHA": "ff9d03dba8eedef006546fe9594d2be14e6075009ca5d063505115d9569aec70",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00_MID360_IMU.txt",
+      "bytes": 27420064,
+      "SHA": "439f8ba357bc0836c336b49383d838b0da0ae29e4cf88d2fd625737adb8ad03d",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00_OEM7_GNSS.pos",
+      "bytes": 112608,
+      "SHA": "a7e16be18d4e2d648878bb875eecf76fb38bef26d90703289cb8adfe40ea8fb7",
+      "matches_S0_R1_SHA": true
+    },
+    {
+      "path": "data/i2nav-dataset/parking00/parking00_RANGER_ODO.txt",
+      "bytes": 5875776,
+      "SHA": "350f35e01594d4578af06120821ad5ae129d950eb2be1e1f34cc8c76b69ed766",
+      "matches_S0_R1_SHA": true
+    }
+  ],
+  "cache_checks": [
+    {
+      "path": "outputs/20261011T141044340351Z_P2_9dd3f300/lio_cache.npz",
+      "SHA": "6d4e13c08e06e2d5662278c5cd419b863ca3d6b34bad5c04f597aa88c12f256f",
+      "passed": true
+    },
+    {
+      "path": "outputs/20261011T134125698776Z_P2_0de7714e/lio_cache.npz",
+      "SHA": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+      "passed": true
+    },
+    {
+      "path": "outputs/20261011T160558488156Z_P5_3b1dbc60/lio_cache.npz",
+      "SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+      "passed": true
+    }
+  ]
+}

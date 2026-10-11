@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/archive_review_logs.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T19:27:12.644396+00:00", "ended_UTC": "2026-10-11T19:27:12.759320+00:00", "exit_code": 0, "wall_seconds": 0.11460705799981952, "CPU_user_s": 0.075847, "CPU_system_s": 0.046305, "max_RSS_KiB": 16000, "executed": true}
