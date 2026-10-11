@@ -1,0 +1,19 @@
+{
+  "phase": "P4",
+  "purpose": "exact_full_development_matrix_parity_after_route_access_plumbing",
+  "kind": "engineering",
+  "input": [
+    "scripts/verify_route_transition.py",
+    "scripts/replay_experiment_batch.py",
+    "configs/final_evaluation_methods.json",
+    "outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/verify_route_transition.py",
+    "outputs/20261011T151637778113Z_P4_bc2078b6"
+  ]
+}

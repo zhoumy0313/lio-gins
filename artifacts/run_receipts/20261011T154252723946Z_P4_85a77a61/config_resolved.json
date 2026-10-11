@@ -1,0 +1,22 @@
+{
+  "phase": "P4",
+  "purpose": "transition_bag_count_cache_validation",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/build_lio_cache.py",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/manifest.json",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/interface_events.csv",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/frontend_input_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/bag_info.yaml",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/fast_lio_time_log.csv"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/build_lio_cache.py",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771"
+  ]
+}

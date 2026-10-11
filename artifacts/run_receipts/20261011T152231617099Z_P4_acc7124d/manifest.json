@@ -1,0 +1,34 @@
+{
+  "run_id": "20261011T152231617099Z_P4_acc7124d",
+  "phase": "P4",
+  "purpose": "fixed_frontend_sensitivity_B5__loss60_normal",
+  "kind": "cached_backend",
+  "source_commit": "f5b63dd01d6cbaabcafc338ff561ea3311df8025",
+  "tracked_dirty_diff_sha256": "00a49c81f76e7595c3f31869065391de9be38d06f4afe0e8750c61ed274fc1c0",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py": "ae5a9cc3352d46f6a5d959081520409d9707869fc4e55c3ab23e26b9833895b8",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py": "be8aae915fe396286f3ba5cd278eb3d69acd8b602f1651a25110108efcbad0a5",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758",
+    "/home/aaron/lio_gins/outputs/20261011T151637778113Z_P4_bc2078b6/sensitivity/configs/B5.json": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss60_normal.csv": "67aa4720299e9b4315e74b578f2f6f3090148d4c6c54e8b92600b5b56c65d714",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss60_normal.identity.json": "6e0ab74a3314df1041e48dab2c96b71ec55f746f02b57f3356749422d5e862a5",
+    "/home/aaron/lio_gins/outputs/20261011T134125698776Z_P2_0de7714e/lio_cache.npz": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+    "/home/aaron/lio_gins/outputs/20261011T134125698776Z_P2_0de7714e/cache_identity.json": "e30c2964669218edce6314e14e6141c38cbb459a99f7e6cd133a0454b8425e5e",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+  },
+  "config_sha256": "5486a92e3451e13e4b4b797409fbc890790dacd4bc14df329a0d1ae3f1c9049b",
+  "created_at": "2026-10-11T15:22:31.628701+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T15:22:35.257666+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

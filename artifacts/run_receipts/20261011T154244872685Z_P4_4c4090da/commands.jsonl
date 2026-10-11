@@ -1,0 +1,1 @@
+{"argv": ["/home/aaron/lio_gins/.venv/bin/python", "/home/aaron/lio_gins/scripts/export_initial_condition.py"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T15:42:44.911525+00:00", "ended_at": "2026-10-11T15:42:46.582422+00:00", "exit_code": 0, "wall_seconds": 1.6709082159995887, "executed": true, "preflight_error": null}

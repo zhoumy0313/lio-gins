@@ -7,18 +7,21 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from src.adapters.research_access import verify_access,record_opening,check_raw_identity
 
-p=argparse.ArgumentParser();p.add_argument('bag');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('bag');p.add_argument('--freeze');a=p.parse_args()
 root=Path(__file__).resolve().parents[1];bag=Path(a.bag).resolve()
-if bag.name!='building00.bag':p.error('only development route allowed before verified freeze protocol')
+seq=bag.stem;role='development' if seq=='building00' else 'heldout';access=verify_access(seq,role,a.freeze);record_opening(access,'native_1x_FRONTEND')
 locations=json.loads((root/'configs/data_locations.json').read_text())
-expected_bag=(root/locations['dataset_root']/'building00/building00.bag').resolve()
+expected_bag=(root/locations['dataset_root']/seq/bag.name).resolve()
 if bag!=expected_bag:p.error('bag must be the registered development original')
 h=hashlib.sha256()
 with bag.open('rb') as f:
     for chunk in iter(lambda:f.read(1024*1024),b''):h.update(chunk)
 expected=json.loads((root/'third_party/i2Nav-Robot/sha256sum/sha256sum.json').read_text())[bag.name]
 if h.hexdigest()!=expected:raise ValueError('raw bag SHA mismatch')
+if access is not None and h.hexdigest()!=access['raw_inputs'][str(bag)]['sha256']:raise ValueError('raw bag differs from freeze')
 out=Path(os.environ['LIO_GINS_RUN_DIR'])
 rootless=root/'containers/derived_rootfs.local.json'
 lock=root/'containers/derived_image.local.json'
@@ -59,6 +62,6 @@ elif lock.exists():
           '--mount',f'type=bind,src={out},dst=/output',image['image_id'],'/input/'+bag.name]
 else:
     print('BLOCKED: no verified isolated frontend environment',file=sys.stderr);sys.exit(2)
-(out/'frontend_input_identity.json').write_text(json.dumps({'bag':str(bag),'sha256':h.hexdigest(),'image':image,'sensors':['AT128','ADIS16465'],'timing_kind':'rosbag_replay_wall_and_logged_frontend_processing','replay_rate':1.0,'runtime_overlay_sha256':{str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [root/'containers/run_inside.sh',root/'containers/shutdown_clock.py']},'shutdown_clock_policy':'advance clock only after EOF to wake Rate.sleep; no sensor messages'},indent=2)+'\n')
+(out/'frontend_input_identity.json').write_text(json.dumps({'bag':str(bag),'sequence':seq,'role':role,'freeze_id':access['freeze_id'] if access else None,'sha256':h.hexdigest(),'image':image,'sensors':['AT128','ADIS16465'],'timing_kind':'rosbag_replay_wall_and_logged_frontend_processing','replay_rate':1.0,'runtime_overlay_sha256':{str(p.relative_to(root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in [root/'containers/run_inside.sh',root/'containers/shutdown_clock.py']},'shutdown_clock_policy':'advance clock only after EOF to wake Rate.sleep; no sensor messages'},indent=2)+'\n')
 print(json.dumps({'argv':argv}),flush=True)
 sys.exit(subprocess.run(argv).returncode)

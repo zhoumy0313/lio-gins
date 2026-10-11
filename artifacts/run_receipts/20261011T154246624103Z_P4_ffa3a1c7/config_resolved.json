@@ -1,0 +1,20 @@
+{
+  "phase": "P4",
+  "purpose": "transition_native_KF_GINS_fixed_noise2",
+  "kind": "real_gnss_ins",
+  "input": [
+    "/home/aaron/lio_gins/scripts/run_kf_robot.py",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json",
+    "/home/aaron/lio_gins/third_party/KF-GINS/bin/KF-GINS"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/run_kf_robot.py",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b",
+    "--noise-scale",
+    "2"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "20261011T154246624103Z_P4_ffa3a1c7",
+  "phase": "P4",
+  "purpose": "transition_native_KF_GINS_fixed_noise2",
+  "kind": "real_gnss_ins",
+  "source_commit": "f5b63dd01d6cbaabcafc338ff561ea3311df8025",
+  "tracked_dirty_diff_sha256": "9ddd0459756cb3271a965927e482a0e857cd1ba5516672f70be3ca020ac365ae",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_kf_robot.py": "09ba1fb42a7ab42a02b839a5fd3043517a4ef490e2417dd4fad52a3a89118a22",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed",
+    "/home/aaron/lio_gins/third_party/KF-GINS/bin/KF-GINS": "8885c5a987db080a04a6a12ba1509d16f860c90fa2299b36685408ead96ace8d"
+  },
+  "config_sha256": "515fe77875a3547395eb63aac2e48ba1551ba9b76efb26d1225e0cf07c593a8e",
+  "created_at": "2026-10-11T15:42:46.638361+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T15:42:52.525257+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

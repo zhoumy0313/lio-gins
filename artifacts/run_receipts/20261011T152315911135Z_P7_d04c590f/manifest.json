@@ -1,0 +1,24 @@
+{
+  "run_id": "20261011T152315911135Z_P7_d04c590f",
+  "phase": "P7",
+  "purpose": "development_delivery_cached_B6",
+  "kind": "engineering",
+  "source_commit": "f5b63dd01d6cbaabcafc338ff561ea3311df8025",
+  "tracked_dirty_diff_sha256": "1012a2b8a69329b4a3507a02120f27a37925b64c664eb95232f460479263c4bd",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_development.py": "2d253cd9fca1162e6bb33c33bab505365e39ee9755ca215712e5851ac03f0a00",
+    "/home/aaron/lio_gins/configs/baselines/final_B6.json": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf"
+  },
+  "config_sha256": "ea687a801b1efc631e735a65f07d9936a5ca5c8cf1b776afe413a979ca5df002",
+  "created_at": "2026-10-11T15:23:15.918005+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T15:23:21.844588+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

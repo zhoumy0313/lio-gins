@@ -1,0 +1,21 @@
+{
+  "phase": "P4",
+  "purpose": "complete_development_attribution_figures_bound_to_run_and_point_SHA",
+  "kind": "engineering",
+  "input": [
+    "scripts/plot_development_verification.py",
+    "outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json",
+    "outputs/20261011T150927930407Z_P4_1dace17d/candidate_screen.json",
+    "outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/plot_development_verification.py",
+    "outputs/20261011T141054205503Z_P3_e03a0b15",
+    "outputs/20261011T150927930407Z_P4_1dace17d",
+    "outputs/20261011T151637778113Z_P4_bc2078b6"
+  ]
+}

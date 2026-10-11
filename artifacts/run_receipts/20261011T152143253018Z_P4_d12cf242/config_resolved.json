@@ -1,0 +1,27 @@
+{
+  "phase": "P4",
+  "purpose": "evaluate_fixed_frontend_sensitivity_B4__loss30_normal",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/outputs/20261011T152139568125Z_P4_661b3cee/manifest.json",
+    "/home/aaron/lio_gins/outputs/20261011T152139568125Z_P4_661b3cee/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T152139568125Z_P4_661b3cee/per_update.jsonl",
+    "/home/aaron/lio_gins/outputs/20261011T152139568125Z_P4_661b3cee/backend_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json",
+    "/home/aaron/lio_gins/configs/development_experiment_protocol.json",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/outputs/20261011T152139568125Z_P4_661b3cee",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json",
+    "loss30_normal"
+  ]
+}

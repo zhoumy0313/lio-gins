@@ -1,0 +1,19 @@
+{
+  "phase": "P4",
+  "purpose": "transition_initializer_identity",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/export_initial_condition.py",
+    "/home/aaron/lio_gins/configs/initialization_protocol.json",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_F9P_GNSS.pos",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_ADIS16465_IMU.txt"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/export_initial_condition.py"
+  ]
+}

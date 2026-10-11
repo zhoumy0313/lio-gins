@@ -1,0 +1,36 @@
+{
+  "phase": "P4",
+  "purpose": "candidate_B2__loss60_normal",
+  "kind": "cached_backend",
+  "input": [
+    "/home/aaron/lio_gins/scripts/run_candidate.py",
+    "/home/aaron/lio_gins/src/observation_manager/motion_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/availability_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/anchored_recovery.py",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py",
+    "/home/aaron/lio_gins/src/adapters/research_access.py",
+    "/home/aaron/lio_gins/outputs/20261011T153200969046Z_P4_c2bf00d7/matrix/configs/B2.json",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss60_normal.csv",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss60_normal.identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300/lio_cache.npz",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300/cache_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py",
+    "/home/aaron/lio_gins/outputs/20261011T141044340351Z_P2_9dd3f300",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b",
+    "/home/aaron/lio_gins/outputs/20261011T153200969046Z_P4_c2bf00d7/matrix/configs/B2.json",
+    "--gnss-ned",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/loss60_normal.csv"
+  ]
+}

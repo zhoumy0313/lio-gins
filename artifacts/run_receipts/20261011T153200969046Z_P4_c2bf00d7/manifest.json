@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T153200969046Z_P4_c2bf00d7",
+  "phase": "P4",
+  "purpose": "exact_full_development_matrix_parity_after_route_access_plumbing",
+  "kind": "engineering",
+  "source_commit": "f5b63dd01d6cbaabcafc338ff561ea3311df8025",
+  "tracked_dirty_diff_sha256": "679259f6717def59755b225191fb9b806bea0a1de4ba602ab9304a18e04d4280",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/verify_route_transition.py": "e22e4e0fc48ed9239730d56844af848ceb07560f48979526404c633424e5c8b1",
+    "/home/aaron/lio_gins/scripts/replay_experiment_batch.py": "98e9187af1f90766783e02cd58bc3adbd0ba11ff7b19634d1cd48202e0fdcd7f",
+    "/home/aaron/lio_gins/configs/final_evaluation_methods.json": "ad8c091976801e7de6089a963f22c54b6ca948e403a0a44a29fae603ec9ef44d",
+    "/home/aaron/lio_gins/outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json": "d6d637a6bbed1455c3b6eb89885eae698320f83ca512a588408cc31e01f467ae"
+  },
+  "config_sha256": "cb1396d0f9a8e7952533d14e5944126daee43d9b874db7a81cfd8a071cb8fa18",
+  "created_at": "2026-10-11T15:32:00.980381+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "FAILED",
+  "exit_code": 1,
+  "ended_at": "2026-10-11T15:40:48.957675+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

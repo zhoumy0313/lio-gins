@@ -47,7 +47,7 @@ if a.mode=='full':
     stress=recorded('delivery_fixed_stress_inputs','engineering',
         [ROOT/'scripts/prepare_development_stress.py',ROOT/'configs/development_experiment_protocol.json',initial/'initial_condition.json',data/'building00_F9P_GNSS.pos'],
         [PY,str(ROOT/'scripts/prepare_development_stress.py'),str(initial)])
-    native=recorded('delivery_native_KF_GINS_fixed_noise2','native_baseline',
+    native=recorded('delivery_native_KF_GINS_fixed_noise2','real_gnss_ins',
         [ROOT/'scripts/run_kf_robot.py',initial/'initial_condition.json',data/'building00_F9P_GNSS.pos',data/'building00_ADIS16465_IMU.txt',ROOT/'third_party/KF-GINS/bin/KF-GINS'],
         [PY,str(ROOT/'scripts/run_kf_robot.py'),str(initial),'--noise-scale','2'])
     native_eval=recorded('delivery_native_B0_B1_evaluation','engineering',

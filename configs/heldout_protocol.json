@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "sequence": "parking00",
+  "role": "heldout",
+  "status": "declared_before_any_performance_access",
+  "requires_sealed_scientific_freeze": true,
+  "method_configs": "configs/final_evaluation_methods.json",
+  "B0": "same raw F9P; antenna reference-point GNSS-epoch table and separate declared quantity",
+  "B1": "unmodified pinned KF-GINS; same first-reference-epoch initialization, IMU noise STD scale2, no retuning",
+  "outer_methods": [
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "P",
+    "P_without_motion",
+    "P_time_only",
+    "P_without_decay",
+    "P_without_anchor"
+  ],
+  "initialization": "same protocol; exactly first reference state; no fitted full trajectory alignment",
+  "gnss_receiver": "F9P_SPP",
+  "frontend_sensors": [
+    "AT128",
+    "ADIS16465"
+  ],
+  "frontend_configuration": "same official i2nav.yaml/binary, no radar or parameter change",
+  "gps_week": 2364,
+  "cases": "natural plus same seven categories, offsets150/450/750, directions N/E/NE, identical durations/amplitudes/recovery windows",
+  "event_protocol": "configs/development_experiment_protocol.json",
+  "evaluation": "same sensor/reference-supported 10Hz grid, missing outputs count; same 3 primary categories macro RMSE and all events/cases",
+  "parameter_tuning_after_open": false,
+  "native_timing": "frontend alone at 1x with no competing heavy job; cached backend wall separate, no field latency claim",
+  "heldout_success": "positive paired target gain versus fixed strongest B4/B5/B6, >=99% coverage and normal cost <= best fixed robust normal+max(2%,0.05m); all failure cases reported",
+  "second_frontend": "not required as additional blind trial; previously observed frontend variability disclosed; no selecting a frontend for accuracy",
+  "publication": "no automatic submission; frozen method result may be negative; do not promote a winning ablation after seeing test",
+  "budget": "one frozen evaluation matrix; plumbing errors retain failures and rerun all affected methods"
+}

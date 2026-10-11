@@ -1,0 +1,32 @@
+{
+  "phase": "P4",
+  "purpose": "route_plumbing_static_compile_before_freeze",
+  "kind": "engineering",
+  "input": [
+    "scripts/run_candidate.py",
+    "scripts/run_outer_baseline.py",
+    "scripts/run_heldout.py",
+    "scripts/replay_experiment_batch.py",
+    "src/adapters/research_access.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "py_compile",
+    "scripts/export_initial_condition.py",
+    "scripts/prepare_development_stress.py",
+    "scripts/run_candidate.py",
+    "scripts/run_outer_baseline.py",
+    "scripts/evaluate_outer.py",
+    "scripts/run_lio.py",
+    "scripts/build_lio_cache.py",
+    "scripts/run_kf_robot.py",
+    "scripts/evaluate_kf_robot.py",
+    "scripts/replay_experiment_batch.py",
+    "scripts/run_heldout.py",
+    "scripts/freeze_development.py"
+  ]
+}

@@ -1,0 +1,7 @@
+# 冻结前路线适配：数值与接入行为不变
+
+80个组合(10固定方法×8场景)的building00轨迹、接入日志、完整numeric metrics和事件全部精确一致。共同初始化JSON逐字节一致，原生KF-GINS STD×2 nav逐字节一致，缓存所有数组一致；核心观测管理/位置KF/几何/因果/评价模块SHA未变。改变仅为路线角色、原文件路径及科学冻结访问检查。57项全检查153331485038 exit0；访问边界检查152440544506 exit0。
+
+最初driver153200969046 exit1/527.976674s：80组实际backend/evaluation及initializer已经完成，但native recorder类型native_baseline不在枚举中，子命令解析exit2、原生算法未运行。保留全部记录。修正为real_gnss_ins后driver154244545675 exit0/8.697112s；验证既有80组source/config和sealed PASSED后复用，不重跑也不改旧目录，再运行initializer/native/cache全部剩余复核。结果transition_parity.json：all_trajectories_exact=true，unchanged_mechanism_sources=true。不是新机制或新的科学参数搜索。
+
+完整性审计153710738907 exit0：954已登记run、368728封存文件和10初始用户文件无校验失败；仅本地完整性，不是异地备份。Science freeze可以在所有实际通过的development proof、transition proof、tests与明确应用范围上建立。此时parking00性能尚未开启。

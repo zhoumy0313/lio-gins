@@ -1,0 +1,31 @@
+{
+  "review_status": "completed_local_source_and_primary_literature_scope_review_not_peer_review",
+  "small_application_system_scope_accepted": true,
+  "novelty_supported": false,
+  "accepted_claim": "specific rule-qualified raw-GNSS anchor retained across isolation supports motion-verified SPP position admission in a fixed-rotation LIO position backend, within declared uncertainty and data limits",
+  "not_claimed": [
+    "first consistency monitor",
+    "first window",
+    "first recovery management",
+    "new Kalman filter",
+    "global integrity",
+    "sensor fault identifiability",
+    "field online latency",
+    "numerically repeatable frontend",
+    "independent reference sensing",
+    "full WinTA-GIL or Dual-ACKF reproduction"
+  ],
+  "nearest_work": {
+    "WinTA_GIL": "window alignment and heading refinement; here no yaw estimation or heading pseudomeasurement",
+    "Dual_ACKF": "bias-augmented INS/GNSS and adaptive CKF; here unchanged 3D position KF and raw observation admission only"
+  },
+  "evidence": "outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json",
+  "evidence_limits": [
+    "two same-route caches are numerical sensitivity, not two independent routes",
+    "primary gain mainly persistent post-outage bias; some other categories worsen",
+    "without R decay is slightly better, decay contribution is not supported",
+    "original anchor can be biased and local drift observationally equivalent to GNSS bias",
+    "MM/INS reference shares AT128; controlled initial truth epoch; unknown geographic origin"
+  ],
+  "publication": "application evidence only; no readiness or acceptance claim"
+}

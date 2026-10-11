@@ -1,0 +1,34 @@
+{
+  "run_id": "20261011T152047259532Z_P4_aeb092b8",
+  "phase": "P4",
+  "purpose": "fixed_frontend_sensitivity_B3__cluster_jump10",
+  "kind": "cached_backend",
+  "source_commit": "5f37c0fdeba8f1987c7c639929c00409a0fe8f48",
+  "tracked_dirty_diff_sha256": "02939a386d9ae22284aa73573b917b56df692b7ae6b9452babce7471c48ddd17",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py": "ae5a9cc3352d46f6a5d959081520409d9707869fc4e55c3ab23e26b9833895b8",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py": "be8aae915fe396286f3ba5cd278eb3d69acd8b602f1651a25110108efcbad0a5",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758",
+    "/home/aaron/lio_gins/outputs/20261011T151637778113Z_P4_bc2078b6/sensitivity/configs/B3.json": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/cluster_jump10.csv": "213aa4a009920e4055feb584cfe1a32319a31cb9f068f4395d768714008fa88a",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/cluster_jump10.identity.json": "60d432073f5f146715653a187e084f347cc4adabf48b823cd292208aa3ce0366",
+    "/home/aaron/lio_gins/outputs/20261011T134125698776Z_P2_0de7714e/lio_cache.npz": "20ca88debaf74334ce461e88b2e0d92757a6da75067748ad9bee00a6d2ccae55",
+    "/home/aaron/lio_gins/outputs/20261011T134125698776Z_P2_0de7714e/cache_identity.json": "e30c2964669218edce6314e14e6141c38cbb459a99f7e6cd133a0454b8425e5e",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json": "8a21ffd656a63564a01b65bce18cab94dce9001f056811dbee84c677a9a6fbed"
+  },
+  "config_sha256": "090f82597d62cf17a55487537c3c16e69aed196a02615d3c1fa6281b8d360fba",
+  "created_at": "2026-10-11T15:20:47.271390+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T15:20:51.000123+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

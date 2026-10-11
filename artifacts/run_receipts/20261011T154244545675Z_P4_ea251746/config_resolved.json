@@ -1,0 +1,22 @@
+{
+  "phase": "P4",
+  "purpose": "finish_exact_transition_reusing_80_sealed_children_after_driver_kind_fix",
+  "kind": "engineering",
+  "input": [
+    "scripts/verify_route_transition.py",
+    "scripts/run_heldout.py",
+    "outputs/20261011T153200969046Z_P4_c2bf00d7/manifest.json",
+    "outputs/20261011T153200969046Z_P4_c2bf00d7/matrix/source_identity.json",
+    "outputs/20261011T153200969046Z_P4_c2bf00d7/matrix/progress.jsonl"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/verify_route_transition.py",
+    "outputs/20261011T151637778113Z_P4_bc2078b6",
+    "--resume-matrix",
+    "outputs/20261011T153200969046Z_P4_c2bf00d7"
+  ]
+}

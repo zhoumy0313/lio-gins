@@ -1,0 +1,16 @@
+{
+  "phase": "P4",
+  "purpose": "local_integrity_before_scientific_freeze",
+  "kind": "engineering",
+  "input": [
+    "scripts/verify_evidence.py",
+    "artifacts/initial_workspace.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/verify_evidence.py"
+  ]
+}

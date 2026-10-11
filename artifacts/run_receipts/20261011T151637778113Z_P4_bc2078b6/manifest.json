@@ -1,0 +1,29 @@
+{
+  "run_id": "20261011T151637778113Z_P4_bc2078b6",
+  "phase": "P4",
+  "purpose": "final_r03_fixed_parameter_ablations_and_two_frontend_cache_verification",
+  "kind": "engineering",
+  "source_commit": "5f37c0fdeba8f1987c7c639929c00409a0fe8f48",
+  "tracked_dirty_diff_sha256": "e5ebc3f9c76eb1f31a8f7fa6d71b6af19db0da32b9df91c7b9ff0b1844e97f54",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/verify_final_candidate.py": "7bb3bf2eb4e1b0f7accfbb0bb0c9ea232d753f45fa3f41217fce3f17a719b209",
+    "/home/aaron/lio_gins/scripts/replay_experiment_batch.py": "85758ad44066bb10ee636c42a60d593593de31c2fb84f2651ca81813fcb3cf71",
+    "/home/aaron/lio_gins/scripts/run_candidate.py": "3b7654d6cb8fb598e99534f80a3000b345abc4b41a911c5c14aef52fc4ef1f5c",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py": "ae5a9cc3352d46f6a5d959081520409d9707869fc4e55c3ab23e26b9833895b8",
+    "/home/aaron/lio_gins/configs/frontend_sensitivity_protocol.json": "1d2a9c93ec9a3cf4bc21f69b757eb7d1a5687655a6850cc1a23c0b3b72f67eb5",
+    "/home/aaron/lio_gins/configs/method_search_protocol.json": "56f59a9a8588dafc155a4799c9097143273b9d7b2f936eba37a39f03c3741d5f",
+    "/home/aaron/lio_gins/outputs/20261011T150927930407Z_P4_1dace17d/candidate_screen.json": "a1db110775fe26c7b0c3affdb1872dd66edc512c35c32e6d45d22814a5924a7d"
+  },
+  "config_sha256": "7f433344f4c10db56ea20404612bb2e8eeeb012df40b69f464b813eb113762bf",
+  "created_at": "2026-10-11T15:16:37.785647+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T15:28:40.070394+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

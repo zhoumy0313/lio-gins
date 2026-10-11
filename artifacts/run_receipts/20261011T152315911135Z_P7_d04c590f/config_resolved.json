@@ -1,0 +1,22 @@
+{
+  "phase": "P7",
+  "purpose": "development_delivery_cached_B6",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/run_development.py",
+    "/home/aaron/lio_gins/configs/baselines/final_B6.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 5400.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/run_development.py",
+    "--mode",
+    "cached",
+    "--method",
+    "B6",
+    "--case",
+    "natural"
+  ]
+}

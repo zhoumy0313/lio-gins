@@ -1,0 +1,21 @@
+{
+  "run_id": "20261011T153341319236Z_P2_64970453",
+  "phase": "P2",
+  "purpose": "expected_missing_input_preflight_failure",
+  "kind": "synthetic",
+  "source_commit": "f5b63dd01d6cbaabcafc338ff561ea3311df8025",
+  "tracked_dirty_diff_sha256": "e46b71d7ead0476a77754eeb5f95ad11c511ff6f514797f268e618005f70d588",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {},
+  "config_sha256": "e3c233440b6a8c8580dc374d1cb00d4b1b734c2d2d8e03f0bee54d7da5da2263",
+  "created_at": "2026-10-11T15:33:41.327599+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "FAILED",
+  "exit_code": 127,
+  "ended_at": "2026-10-11T15:33:41.327849+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

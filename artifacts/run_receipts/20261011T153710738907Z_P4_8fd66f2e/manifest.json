@@ -1,0 +1,24 @@
+{
+  "run_id": "20261011T153710738907Z_P4_8fd66f2e",
+  "phase": "P4",
+  "purpose": "local_integrity_before_scientific_freeze",
+  "kind": "engineering",
+  "source_commit": "f5b63dd01d6cbaabcafc338ff561ea3311df8025",
+  "tracked_dirty_diff_sha256": "909bec1bfc99b343b7cca3c3920d2342d009f7b2554c76876ede2a869380fc95",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/verify_evidence.py": "15b59ad36e4beb9dcbea763a461e4c617be3659192407a5c364616cfb3f738dd",
+    "/home/aaron/lio_gins/artifacts/initial_workspace.json": "76a4648175bfe1a8661ab6bd77d58bddd5225e32096ff17b528ae8820402b65e"
+  },
+  "config_sha256": "33ed1a4454a552bf6da00ea558614a1f43d442f8a57eca1f305f096593af04f3",
+  "created_at": "2026-10-11T15:37:10.748266+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T15:38:00.927763+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

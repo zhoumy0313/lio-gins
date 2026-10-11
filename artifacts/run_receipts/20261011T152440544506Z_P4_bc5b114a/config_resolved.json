@@ -1,0 +1,23 @@
+{
+  "phase": "P4",
+  "purpose": "preregistered_heldout_access_guard_without_performance_access",
+  "kind": "synthetic",
+  "input": [
+    "src/adapters/research_access.py",
+    "tests/test_research_access.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_research_access.py",
+    "-v"
+  ]
+}

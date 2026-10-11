@@ -11,3 +11,5 @@ P1 16原件与两个官方bag SHA通过，官方KF-GINS demo/隔离Noetic构建�
 共同初始化读首参考历元并平移到共同局部原点，结果不是无先验启动或绝对WGS84准确度。参考MM/INS共享AT128。缓存后端计时不含前端。原始数据只有本地一份；SHA不是异地备份。仅本地checkpoint，无新remote、署名或投稿。
 
 证据入口：docs/reports/P2_full_frontend.md、docs/reports/BASELINE_REPORT.md、docs/reports/P4/r01.md/r02.md/r03.md、GOAL_STATE.json、RUN_REGISTER.csv。方法与实验草稿为内部版本，不是投稿稿。最终验证全部门槛通过才考虑P5，否则留出继续关闭并交付真实受限结论。
+
+15:38 UTC后继：最终验证151637778113 exit0，104个新增组合全部覆盖100%；双缓存增益22.7952%/24.0163%，24项精确消融轨迹比较全部true。development_effect_supported=true，positive_effect_supported=true仅指开发范围，independent_effect_supported=false、novelty_supported=false、paper_ready=false。57项技术适配检查exit0，全部10方法×8场景逐点比较153200969046运行中；留出仍关闭。完整结论见P4/final_verification.md。本地完整性153710738907 exit0，无校验失败。
