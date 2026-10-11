@@ -1,0 +1,28 @@
+{
+  "run_id": "20261011T160559238000Z_P5_87488958",
+  "phase": "P5",
+  "purpose": "frozen_parking00_native_KF_GINS_noise2",
+  "kind": "real_gnss_ins",
+  "source_commit": "2274156de70664faafc81b8920b580b882b357ee",
+  "tracked_dirty_diff_sha256": "e327c8be3522fb64e691e6a369a6de6ca28ea21cf0d4dc57450a5bd2625ee95c",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_kf_robot.py": "09ba1fb42a7ab42a02b839a5fd3043517a4ef490e2417dd4fad52a3a89118a22",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00_F9P_GNSS.pos": "409e0959ed001f75fd53a957d0c86f78be84f660c09599f8a0ded325ff40609d",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00_ADIS16465_IMU.txt": "4f460b6cbe4ec0080c9d66348244953ce5afe4952f728d6848fd9cc8d40e7a6e",
+    "/home/aaron/lio_gins/third_party/KF-GINS/bin/KF-GINS": "8885c5a987db080a04a6a12ba1509d16f860c90fa2299b36685408ead96ace8d",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json": "0d1dc71014de2c81f2d640e73f7e6f78c50306b56a2613a1ce30c5551f9f8127"
+  },
+  "config_sha256": "be95b01fae5636e69e852cc10faa5491f4546c42e14c955603623fa876137bbc",
+  "created_at": "2026-10-11T16:05:59.267649+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T16:06:04.955946+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

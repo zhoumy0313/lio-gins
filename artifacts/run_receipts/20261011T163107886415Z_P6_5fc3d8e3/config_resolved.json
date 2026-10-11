@@ -1,0 +1,21 @@
+{
+  "phase": "P6",
+  "purpose": "internal_complete_heldout_and_late_control_figures_not_submission",
+  "kind": "engineering",
+  "input": [
+    "scripts/plot_final_reports.py",
+    "outputs/20261011T161516209601Z_P5_f78efe7e/heldout_summary.json",
+    "outputs/20261011T161516459969Z_P4_caf05023/long_wait_audit.json",
+    "outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/plot_final_reports.py",
+    "outputs/20261011T161516209601Z_P5_f78efe7e",
+    "outputs/20261011T161516459969Z_P4_caf05023",
+    "outputs/20261011T151637778113Z_P4_bc2078b6"
+  ]
+}

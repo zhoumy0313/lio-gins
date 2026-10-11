@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "scripts/audit_long_wait_control.py"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T16:15:16.468933+00:00", "ended_at": "2026-10-11T16:23:33.876684+00:00", "exit_code": 0, "wall_seconds": 497.40776214700236, "executed": true, "preflight_error": null}

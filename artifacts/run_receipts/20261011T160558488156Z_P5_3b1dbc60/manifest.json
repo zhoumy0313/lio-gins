@@ -1,0 +1,30 @@
+{
+  "run_id": "20261011T160558488156Z_P5_3b1dbc60",
+  "phase": "P5",
+  "purpose": "frozen_parking00_complete_frontend_cache",
+  "kind": "engineering",
+  "source_commit": "2274156de70664faafc81b8920b580b882b357ee",
+  "tracked_dirty_diff_sha256": "58a1fa5b76ffcae68844088a7a766c01e28f7d113b5a8a2b8df9607fc4080624",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/build_lio_cache.py": "2f418519852defaea1da99b816480116e0e325ab349e947fd4a2062f2bd1493f",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json": "0d1dc71014de2c81f2d640e73f7e6f78c50306b56a2613a1ce30c5551f9f8127",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/manifest.json": "67badd0551a336e86c026e70c07d823f3762f2629e846f1fb041c4432611e219",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/trajectory.csv": "476cdbc216576b7452450c47486cddcda47d7c875b9f4f1cc750b99b63be77ad",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/interface_events.csv": "a8ddcdb1a50a3169803c945f3540937327f6c88fd58003a8b8cf24382ce54f4b",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/frontend_input_identity.json": "36933794610a81586b9673a932c55d525245723f5f63cfe075ba4b5d81986945",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/bag_info.yaml": "e5054afe556dd60ef48b6f86af84d02beff62e1d72c7eebf5a9b6a6fba0c831a",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/fast_lio_time_log.csv": "3f4fc172a9be9871de3312a6b21431cd5872d80b8eb69f7ede5744dfe3cff33a"
+  },
+  "config_sha256": "1ced65861a408593b06878f6e9fb35316afcbf0512f2b8e1044bc68f59355e4f",
+  "created_at": "2026-10-11T16:05:58.505569+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T16:05:58.972987+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

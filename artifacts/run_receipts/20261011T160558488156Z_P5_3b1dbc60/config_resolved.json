@@ -1,0 +1,25 @@
+{
+  "phase": "P5",
+  "purpose": "frozen_parking00_complete_frontend_cache",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/build_lio_cache.py",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/manifest.json",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/interface_events.csv",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/frontend_input_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/bag_info.yaml",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4/fast_lio_time_log.csv"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/build_lio_cache.py",
+    "/home/aaron/lio_gins/outputs/20261011T154448421191Z_P5_cf163fe4",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z"
+  ]
+}

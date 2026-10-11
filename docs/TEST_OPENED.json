@@ -1,0 +1,15 @@
+{
+  "freeze_id": "LIO_GINS_R1_20261011T154403129394Z",
+  "sequence": "parking00",
+  "opened_at_UTC": "2026-10-11T15:44:46.793235+00:00",
+  "operation": "controlled_first_reference_epoch_initialization",
+  "argv": [
+    "/home/aaron/lio_gins/scripts/export_initial_condition.py",
+    "--sequence",
+    "parking00",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z"
+  ],
+  "run_directory": "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936",
+  "note": "first authorized heldout performance-stage access; no retuning after this point"
+}

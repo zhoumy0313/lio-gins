@@ -1,0 +1,21 @@
+{
+  "phase": "P7",
+  "purpose": "final_complete_contract_suite",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_final_contracts.py",
+    "scripts/canonicalize_development_gnss.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

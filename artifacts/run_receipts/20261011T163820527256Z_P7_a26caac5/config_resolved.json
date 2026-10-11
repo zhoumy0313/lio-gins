@@ -1,0 +1,20 @@
+{
+  "phase": "P7",
+  "purpose": "archive_recovery_P_natural",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/replay_frozen_backend.py",
+    "/home/aaron/lio_gins/outputs/20261011T154446522435Z_P5_ae13844a/heldout_matrix.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1200.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/replay_frozen_backend.py",
+    "--method",
+    "P",
+    "--case",
+    "natural"
+  ]
+}

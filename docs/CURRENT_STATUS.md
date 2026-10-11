@@ -1,15 +1,7 @@
 # LIO-GINS-R1 当前状态
 
-2026-10-11 15:20 UTC。P0–P3完成；P4已完成r01–r03共36个主配置，正在最后的固定参数消融和双缓存复核。当前无必需人工操作，parking00性能仍关闭。
+P0–P5真实执行完成，正在归档P6内部草稿与P7交付审计。最终科学结论 **NO_ADDITIONAL_GAIN**：90s固定资格控制在两个开发缓存均优于冻结P，正常代价合格。原注册parking00 9.9549%改善保留为窄集合事实，不支持超越更强合理时间控制的增量结论。
 
-r01因正常代价被全部淘汰；r02恢复正常代价但收益0.067067m/2.1811%未过门槛。r03单缓存目标宏RMSE2.373985m，相对B6 3.074919m改善22.7952%，自然2.584657m在统一cap内，coverage100%。该结果尚未验证重复或归因，科学状态false。全七类事件、自然路线和接入失败保留，不增加新机制/调参。
+科学冻结 `LIO_GINS_R1_20261011T154403129394Z`（源码b6259cf，归档2274156）；第一次测试访问记录 `TEST_OPENED.json`，完整矩阵run `20261011T154446522435Z_P5_ae13844a` exit0。已用独立脚本重算80对；B6/P归档后端natural逐字节恢复；63项完整合成检查通过。冻结源码/参数未改。所有失败、原数据、输出与论文版本保留。
 
-当前真实进程：最终验证driver `outputs/20261011T151637778113Z_P4_bc2078b6`，读stdout/progress和实际进程，不重复启动。55项完整检查exit0；前一个目录输入预检exit127保留。
-
-P1 16原件与两个官方bag SHA通过，官方KF-GINS demo/隔离Noetic构建通过；无sudo或全局改动。P2完整building00 1×前端exit0、12440/12443位姿和原生计时，均值17.3215ms/P95 22.7675ms；两次相同输入局部轨迹差异RMS3.60m未解决，不宣称数值重复。P3 112个匹配基线/场景组合全exit0/100%覆盖，B1原生STD×2 RMSE3.702869m。
-
-共同初始化读首参考历元并平移到共同局部原点，结果不是无先验启动或绝对WGS84准确度。参考MM/INS共享AT128。缓存后端计时不含前端。原始数据只有本地一份；SHA不是异地备份。仅本地checkpoint，无新remote、署名或投稿。
-
-证据入口：docs/reports/P2_full_frontend.md、docs/reports/BASELINE_REPORT.md、docs/reports/P4/r01.md/r02.md/r03.md、GOAL_STATE.json、RUN_REGISTER.csv。方法与实验草稿为内部版本，不是投稿稿。最终验证全部门槛通过才考虑P5，否则留出继续关闭并交付真实受限结论。
-
-15:38 UTC后继：最终验证151637778113 exit0，104个新增组合全部覆盖100%；双缓存增益22.7952%/24.0163%，24项精确消融轨迹比较全部true。development_effect_supported=true，positive_effect_supported=true仅指开发范围，independent_effect_supported=false、novelty_supported=false、paper_ready=false。57项技术适配检查exit0，全部10方法×8场景逐点比较153200969046运行中；留出仍关闭。完整结论见P4/final_verification.md。本地完整性153710738907 exit0，无校验失败。
+下一步：内部稿版本/主张绑定 → DELIVERY与要求逐项核验 → 全归档完整性检查 → P6/P7本地checkpoint。当前execution_complete=false，positive_effect/novelty/paper_ready=false，无必需用户输入。详情见 `reports/P5_frozen_heldout.md`、`reports/P4/late_control_decision.md`。

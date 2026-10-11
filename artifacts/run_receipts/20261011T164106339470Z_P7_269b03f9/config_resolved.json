@@ -1,0 +1,15 @@
+{
+  "phase": "P7",
+  "purpose": "independent_raw_trajectory_metric_and_binding_audit",
+  "kind": "engineering",
+  "input": [
+    "scripts/audit_final_metrics.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_final_metrics.py"
+  ]
+}

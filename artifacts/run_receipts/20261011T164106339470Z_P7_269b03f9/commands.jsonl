@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "scripts/audit_final_metrics.py"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T16:41:06.348200+00:00", "ended_at": "2026-10-11T16:41:14.997492+00:00", "exit_code": 0, "wall_seconds": 8.649302816000272, "executed": true, "preflight_error": null}

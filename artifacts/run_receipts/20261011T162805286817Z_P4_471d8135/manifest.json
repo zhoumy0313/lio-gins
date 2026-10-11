@@ -1,0 +1,25 @@
+{
+  "run_id": "20261011T162805286817Z_P4_471d8135",
+  "phase": "P4",
+  "purpose": "supplemental_time_control_counterevidence_and_admission_tradeoff_not_new_success_metric",
+  "kind": "engineering",
+  "source_commit": "2274156de70664faafc81b8920b580b882b357ee",
+  "tracked_dirty_diff_sha256": "a1f38857acf5a9ac9fd1e9ae1915f208d25170af60fc0f5134d0eb732a94b3a8",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/interpret_long_wait_audit.py": "e8675637e46347cc5a99fe618594d5b9d96a5a9f89b27530bace605d3ce2c390",
+    "/home/aaron/lio_gins/outputs/20261011T161516459969Z_P4_caf05023/long_wait_audit.json": "cf5e19efc24ed19c55da3d4ea8cfa058f718b7fc80600cdd2454933123fd005a",
+    "/home/aaron/lio_gins/outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json": "d6d637a6bbed1455c3b6eb89885eae698320f83ca512a588408cc31e01f467ae"
+  },
+  "config_sha256": "f9a7160b244ad55238d2cc7e51597a252235ca8dac8194db117e71288568fd18",
+  "created_at": "2026-10-11T16:28:05.298554+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T16:28:05.463728+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

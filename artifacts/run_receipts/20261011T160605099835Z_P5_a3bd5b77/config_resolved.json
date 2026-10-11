@@ -1,0 +1,23 @@
+{
+  "phase": "P5",
+  "purpose": "frozen_parking00_B0_B1_evaluation",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/evaluate_kf_robot.py",
+    "/home/aaron/lio_gins/outputs/20261011T160559238000Z_P5_87488958/KF_GINS_Navresult.nav",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00_groundtruth.nav",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/evaluate_kf_robot.py",
+    "/home/aaron/lio_gins/outputs/20261011T160559238000Z_P5_87488958",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z"
+  ]
+}

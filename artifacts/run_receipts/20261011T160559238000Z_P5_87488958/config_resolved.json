@@ -1,0 +1,25 @@
+{
+  "phase": "P5",
+  "purpose": "frozen_parking00_native_KF_GINS_noise2",
+  "kind": "real_gnss_ins",
+  "input": [
+    "/home/aaron/lio_gins/scripts/run_kf_robot.py",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00_F9P_GNSS.pos",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00_ADIS16465_IMU.txt",
+    "/home/aaron/lio_gins/third_party/KF-GINS/bin/KF-GINS",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/run_kf_robot.py",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936",
+    "--noise-scale",
+    "2",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z"
+  ]
+}

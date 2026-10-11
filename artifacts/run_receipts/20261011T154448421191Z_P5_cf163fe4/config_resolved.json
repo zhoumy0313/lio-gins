@@ -1,0 +1,22 @@
+{
+  "phase": "P5",
+  "purpose": "frozen_parking00_full_1x_frontend_native_timing",
+  "kind": "real_frontend",
+  "input": [
+    "/home/aaron/lio_gins/scripts/run_lio.py",
+    "/home/aaron/lio_gins/containers/run_inside.sh",
+    "/home/aaron/lio_gins/containers/shutdown_clock.py",
+    "/home/aaron/lio_gins/containers/derived_rootfs.local.json",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 3600.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/run_lio.py",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00.bag",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z"
+  ]
+}

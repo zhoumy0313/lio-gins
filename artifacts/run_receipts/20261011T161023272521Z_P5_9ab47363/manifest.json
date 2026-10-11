@@ -1,0 +1,39 @@
+{
+  "run_id": "20261011T161023272521Z_P5_9ab47363",
+  "phase": "P5",
+  "purpose": "candidate_P__loss60_normal",
+  "kind": "cached_backend",
+  "source_commit": "2274156de70664faafc81b8920b580b882b357ee",
+  "tracked_dirty_diff_sha256": "18f882d15c7ac9df026d8ba83397069d52722938bafea94000709ae10e413dd0",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/run_candidate.py": "6cc55c48611e0452f4826fc2d885d6aff1659353d6b094a828793a3d0eb46948",
+    "/home/aaron/lio_gins/src/observation_manager/motion_recovery.py": "515374a41c68ad54c07dd6a59ca293f7acf00d62c9178f4360aab0f593bcc39e",
+    "/home/aaron/lio_gins/src/observation_manager/availability_recovery.py": "453a75cc59fd0a33604f40e66e64c8d0f09ab0d51754d6da10cbc995a71c264c",
+    "/home/aaron/lio_gins/src/observation_manager/anchored_recovery.py": "f749943aa6b69c9850e72f7e8fccfcdb6ffbc5db4cf5c19eb0acee7b0525a037",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py": "be8aae915fe396286f3ba5cd278eb3d69acd8b602f1651a25110108efcbad0a5",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py": "525851aa5445c74f54f9b8a86536cd4a1e44bdefdd1e2be75b5e54d76ecc79ef",
+    "/home/aaron/lio_gins/src/adapters/research_access.py": "c1795ec1e5d0e2ddeac243ae942029fb56b2708b37e3f4f7cc21dd5b9dff7cf2",
+    "/home/aaron/lio_gins/outputs/20261011T154446522435Z_P5_ae13844a/outer/configs/P.json": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+    "/home/aaron/lio_gins/outputs/20261011T160559020499Z_P5_7a20a16d/loss60_normal.csv": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+    "/home/aaron/lio_gins/outputs/20261011T160559020499Z_P5_7a20a16d/loss60_normal.identity.json": "edf1716c9a35b4820e6613b5b432522f70db6df10fc10aef74632d8283fe8ee5",
+    "/home/aaron/lio_gins/outputs/20261011T160558488156Z_P5_3b1dbc60/lio_cache.npz": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+    "/home/aaron/lio_gins/outputs/20261011T160558488156Z_P5_3b1dbc60/cache_identity.json": "bc7acaf8b3a017099b095ff882696dcc12bda49ac74cd982dbb524aeb57353c1",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+  },
+  "config_sha256": "96538f4938e8b31dcc858f2403ce8bc3e9aca85f7abcd6b39804b8088df80f1c",
+  "created_at": "2026-10-11T16:10:23.286425+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T16:10:28.522018+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

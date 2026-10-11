@@ -1,0 +1,29 @@
+{
+  "phase": "P5",
+  "purpose": "evaluate_candidate_B6__short_jump3",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/outputs/20261011T160913454768Z_P5_932affe0/manifest.json",
+    "/home/aaron/lio_gins/outputs/20261011T160913454768Z_P5_932affe0/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T160913454768Z_P5_932affe0/per_update.jsonl",
+    "/home/aaron/lio_gins/outputs/20261011T160913454768Z_P5_932affe0/backend_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json",
+    "/home/aaron/lio_gins/configs/development_experiment_protocol.json",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00_groundtruth.nav"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/outputs/20261011T160913454768Z_P5_932affe0",
+    "/home/aaron/lio_gins/outputs/20261011T160559020499Z_P5_7a20a16d/event_manifest.json",
+    "short_jump3",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z"
+  ]
+}

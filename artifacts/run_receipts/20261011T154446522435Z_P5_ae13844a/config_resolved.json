@@ -1,0 +1,20 @@
+{
+  "phase": "P5",
+  "purpose": "first_frozen_parking00_complete_native_and_outer_evaluation_matrix",
+  "kind": "engineering",
+  "input": [
+    "scripts/run_heldout.py",
+    "scripts/replay_experiment_batch.py",
+    "configs/heldout_protocol.json",
+    "configs/final_evaluation_methods.json",
+    "freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 5400.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_heldout.py",
+    "freezes/LIO_GINS_R1_20261011T154403129394Z"
+  ]
+}

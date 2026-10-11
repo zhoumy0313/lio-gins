@@ -1,0 +1,27 @@
+{
+  "run_id": "20261011T160605099835Z_P5_a3bd5b77",
+  "phase": "P5",
+  "purpose": "frozen_parking00_B0_B1_evaluation",
+  "kind": "engineering",
+  "source_commit": "2274156de70664faafc81b8920b580b882b357ee",
+  "tracked_dirty_diff_sha256": "f7c59bb4f139ab1833341206a55b2bd4d9996e245c2986e225d46f8dd26c17d4",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/evaluate_kf_robot.py": "a7ea50d2c5bb7efd943fd4beb8edcdfb7045b69f65bd5211fca6cddc03dff0c4",
+    "/home/aaron/lio_gins/outputs/20261011T160559238000Z_P5_87488958/KF_GINS_Navresult.nav": "c601078f5a077a029add50218ed2723f08018304a3801af388d8e283a016bc79",
+    "/home/aaron/lio_gins/outputs/20261011T154446605564Z_P5_ce2e5936/initial_condition.json": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e",
+    "/home/aaron/lio_gins/data/i2nav-dataset/parking00/parking00_groundtruth.nav": "e0c8ab0d2aeb848566452e9a19fd03c7a8c61d1331ea5d368a167c90f4027fde",
+    "/home/aaron/lio_gins/freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json": "0d1dc71014de2c81f2d640e73f7e6f78c50306b56a2613a1ce30c5551f9f8127"
+  },
+  "config_sha256": "bfa4934fa64d585dde7269cdadc4c779cbbecfdbc2fa288050960960c3f7a3cc",
+  "created_at": "2026-10-11T16:06:05.147773+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T16:06:10.233508+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "P5",
+  "purpose": "frozen_native_B1_large_error_physical_and_quality_diagnosis_no_retuning",
+  "kind": "engineering",
+  "input": [
+    "scripts/diagnose_native_heldout.py",
+    "outputs/20261011T154446522435Z_P5_ae13844a/heldout_matrix.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/diagnose_native_heldout.py",
+    "outputs/20261011T154446522435Z_P5_ae13844a/heldout_matrix.json"
+  ]
+}

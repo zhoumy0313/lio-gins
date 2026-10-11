@@ -1,0 +1,27 @@
+{
+  "purpose": "supplemental_development_only_long_wait_control_audit",
+  "registration_UTC": "2026-10-11T16:12:33.144856+00:00",
+  "registered_after_first_heldout_access": true,
+  "partial_heldout_stdout_was_visible": true,
+  "never_a_blind_heldout_control": "no parking evaluation or candidate changes authorized by this plan",
+  "justification": "pure LIO has lower primary event error but greater natural cost; retained-anchor isolation can exceed short time-only qualification, so test whether fixed longer post-gap qualification explains the benefit",
+  "fixed_good_duration_s": [
+    15,
+    30,
+    60,
+    90
+  ],
+  "method": "P_time_only",
+  "foundation": "unchanged final P params, score checking and anchor veto disabled; no Q/R/health/window/recovery/candidate tuning",
+  "cache_runs": [
+    "outputs/20261011T141044340351Z_P2_9dd3f300",
+    "outputs/20261011T134125698776Z_P2_0de7714e"
+  ],
+  "initializer": "outputs/20261011T124056742603Z_P2_e310122b",
+  "stress": "outputs/20261011T132959853728Z_P3_7079c4e4",
+  "all_cases": true,
+  "candidate_main_budget_changes": false,
+  "audit_rounds_max": 1,
+  "no_further_formula_or_parameter_search": true,
+  "baseline_cost_cap_m": 2.5890273197669766
+}
