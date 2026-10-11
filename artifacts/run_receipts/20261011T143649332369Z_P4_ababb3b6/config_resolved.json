@@ -1,0 +1,27 @@
+{
+  "phase": "P4",
+  "purpose": "evaluate_candidate_r01_C4__cluster_jump10",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/outputs/20261011T143643589067Z_P4_337216a7/manifest.json",
+    "/home/aaron/lio_gins/outputs/20261011T143643589067Z_P4_337216a7/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T143643589067Z_P4_337216a7/per_update.jsonl",
+    "/home/aaron/lio_gins/outputs/20261011T143643589067Z_P4_337216a7/backend_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json",
+    "/home/aaron/lio_gins/configs/development_experiment_protocol.json",
+    "/home/aaron/lio_gins/outputs/20261011T124056742603Z_P2_e310122b/initial_condition.json",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building00/building00_groundtruth.nav"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/outputs/20261011T143643589067Z_P4_337216a7",
+    "/home/aaron/lio_gins/outputs/20261011T132959853728Z_P3_7079c4e4/event_manifest.json",
+    "cluster_jump10"
+  ]
+}

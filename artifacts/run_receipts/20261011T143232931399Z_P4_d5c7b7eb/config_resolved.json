@@ -1,0 +1,26 @@
+{
+  "phase": "P4",
+  "purpose": "candidate_wrapper_exact_B6_ablation_parity_and_future_GNSS_causality",
+  "kind": "synthetic",
+  "input": [
+    "src/observation_manager/motion_recovery.py",
+    "scripts/run_candidate.py",
+    "scripts/run_outer_baseline.py",
+    "tests/test_candidate_parity.py",
+    "src/fusion/position_kf.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_candidate_parity.py",
+    "-v"
+  ]
+}

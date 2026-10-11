@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-R1",
   "phase": "P4",
-  "execution_status": "preparing_bounded_motion_verification_revision_1",
+  "execution_status": "r01_causality_passed_finite_search_starting",
   "execution_complete": false,
   "pipeline_ready": true,
   "development_effect_supported": false,
@@ -17,10 +17,10 @@
   "latest_run_id": "20261011T142204162662Z_P3_379df059",
   "freeze_id": null,
   "blocked_on": [],
-  "next_action": "preregister_r01_then_test_causal_motion_manager_and_finite_search",
-  "updated_at": "2026-10-11T14:24:43.769938+00:00",
-  "completion_class": "IN_PROGRESS",
-  "candidate_mechanism_revisions_used": 0,
+  "next_action": "complete_r01_12_configs_then_diagnose_same_problem",
+  "updated_at": "2026-10-11T14:39:29.121396+00:00",
+  "completion_class": "PIPELINE_READY_RESEARCH_IN_PROGRESS",
+  "candidate_mechanism_revisions_used": 1,
   "main_candidate_configs_run": 0,
   "official_kf_demo_passed": true,
   "official_noetic_manifest_verified": true,
@@ -31,7 +31,7 @@
     "P1": "complete_demo_data_and_isolated_Noetic_build",
     "P2": "two_real_frontends_native_timing_and_34_tests_passed_repeat_variation_unresolved",
     "P3": "complete_112_matched_controls_all_coverage_1",
-    "P4": "preparing_r01_not_implemented",
+    "P4": "r01_12_config_finite_screen_running",
     "P5": "not_started_heldout_closed",
     "P6": "not_started_evidence_gate",
     "P7": "partial_recovery_index_only"
@@ -63,5 +63,6 @@
     "q_distance_m2pm": 0.001
   },
   "strongest_development_baseline": "B6_C9",
-  "frontend_sensitivity_required_before_freeze": true
+  "frontend_sensitivity_required_before_freeze": true,
+  "active_candidate_run": "20261011T143431646773Z_P4_01709632"
 }

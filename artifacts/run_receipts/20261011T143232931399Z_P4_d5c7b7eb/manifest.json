@@ -1,0 +1,27 @@
+{
+  "run_id": "20261011T143232931399Z_P4_d5c7b7eb",
+  "phase": "P4",
+  "purpose": "candidate_wrapper_exact_B6_ablation_parity_and_future_GNSS_causality",
+  "kind": "synthetic",
+  "source_commit": "9fea6bbdfd809107de09e21f0858b2f3039307ad",
+  "tracked_dirty_diff_sha256": "7843b9aef900155a0455234dca025c47f6d102d2b31b6e8ef8ecdf4693b4e901",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/src/observation_manager/motion_recovery.py": "515374a41c68ad54c07dd6a59ca293f7acf00d62c9178f4360aab0f593bcc39e",
+    "/home/aaron/lio_gins/scripts/run_candidate.py": "e0de10f61292428e6267cf3906aed848901469372f3d32f9b7ae5427ea15be1a",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py": "ae5a9cc3352d46f6a5d959081520409d9707869fc4e55c3ab23e26b9833895b8",
+    "/home/aaron/lio_gins/tests/test_candidate_parity.py": "b0c3e40a704ec07bdf20bc174a73662fe3f8ea8ef8905cc26e064413bc4def9d",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c"
+  },
+  "config_sha256": "d0f0d671ea44acaefbbfe2acc9f9a95fe2b47d364631cb6e066df5239b7cc5d7",
+  "created_at": "2026-10-11T14:32:32.938067+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:32:33.805379+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

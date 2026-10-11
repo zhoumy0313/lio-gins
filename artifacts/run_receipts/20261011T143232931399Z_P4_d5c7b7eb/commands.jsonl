@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "-m", "unittest", "discover", "-s", "tests", "-p", "test_candidate_parity.py", "-v"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T14:32:32.938148+00:00", "ended_at": "2026-10-11T14:32:33.805125+00:00", "exit_code": 0, "wall_seconds": 0.8669922040007805, "executed": true, "preflight_error": null}

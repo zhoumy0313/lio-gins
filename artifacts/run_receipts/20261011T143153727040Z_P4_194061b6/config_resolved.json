@@ -1,0 +1,27 @@
+{
+  "phase": "P4",
+  "purpose": "r01_motion_manager_causality_blind_spot_and_B6_foundation_parity",
+  "kind": "synthetic",
+  "input": [
+    "src/observation_manager/motion_recovery.py",
+    "scripts/run_candidate.py",
+    "scripts/run_outer_baseline.py",
+    "tests/test_motion_recovery.py",
+    "tests/test_candidate_parity.py",
+    "configs/method_search_protocol.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*recovery.py",
+    "-v"
+  ]
+}
