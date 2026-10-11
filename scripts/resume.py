@@ -26,7 +26,7 @@ if active:
 records=(root/'docs/RUN_REGISTER.csv').read_text().splitlines()
 print('Latest registered run:',records[-1] if len(records)>1 else 'none',flush=True)
 argv=[sys.executable,str(root/'scripts/record_run.py'),'--phase','P1','--purpose','resume_readonly_dataset_audit','--blocked-exit','2',
-      '--input',str(root/'scripts/audit_data.py'),'--input',str(root/'src/adapters/sensor_text.py'),'--input',str(root/'src/evaluation/reference.py'),
+      '--input',str(root/'scripts/audit_data.py'),'--input',str(root/'configs/data_locations.json'),'--input',str(root/'src/adapters/sensor_text.py'),'--input',str(root/'src/evaluation/reference.py'),
       '--',sys.executable,str(root/'scripts/audit_data.py')]
 r=subprocess.run(argv,cwd=root)
 if r.returncode==0:

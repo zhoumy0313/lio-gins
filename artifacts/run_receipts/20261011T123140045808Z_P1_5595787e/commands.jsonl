@@ -1,0 +1,1 @@
+{"argv": ["apt", "download", "umoci=0.4.7+ds-2ubuntu0.1"], "cwd": "/home/aaron/lio_gins/cache/local-tools", "started_at": "2026-10-11T12:31:40.051943+00:00", "ended_at": "2026-10-11T12:31:40.869599+00:00", "exit_code": 0, "wall_seconds": 0.8176851670004908}

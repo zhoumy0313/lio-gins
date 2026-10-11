@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "scripts/pull_noetic_oci.py"], "cwd": "/home/aaron/lio_gins", "started_at": "2026-10-11T12:32:22.559879+00:00", "ended_at": "2026-10-11T12:32:48.237780+00:00", "exit_code": 1, "wall_seconds": 25.677928709000298}

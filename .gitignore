@@ -10,6 +10,7 @@ third_party/
 data/raw/
 data/derived/
 data/reference/
+data/i2nav-dataset/
 docs/reference/
 .env
 .env.*

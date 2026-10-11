@@ -1,0 +1,22 @@
+{
+  "run_id": "20261011T123222397676Z_P1_49edb4b8",
+  "phase": "P1",
+  "purpose": "extract_project_local_umoci",
+  "kind": "engineering",
+  "source_commit": "cd7343feb261faa61178228b5b9b966a0691620d",
+  "tracked_dirty_diff_sha256": "cf6ba9696f10e23e6292647f01d9359cc40a527a3dace2dd6a2b6275fde84fa2",
+  "runner_sha256": "47bd6d5336b42b1eaf689060f365d038c3ed1b24bcf43fa349170556ead0d54e",
+  "input_sha256": {
+    "/home/aaron/lio_gins/cache/local-tools/umoci_0.4.7+ds-2ubuntu0.1_amd64.deb": "fbb7fd5d79c63aea0a3d9645e484da54156fb8f1ee27792b766a2c8dae0b6e4e"
+  },
+  "config_sha256": "565a4bf8ac3cbe414d8e4e003271fe4ecd9aa19063bc3e07c4def327f3a519fe",
+  "created_at": "2026-10-11T12:32:22.404099+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T12:32:22.444107+00:00"
+}

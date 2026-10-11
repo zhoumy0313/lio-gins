@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "dataset_root": "data/i2nav-dataset",
+  "layout": "sequence_subdirectories",
+  "development": ["building00"],
+  "heldout_closed": ["parking00"],
+  "original_data_read_only": true
+}

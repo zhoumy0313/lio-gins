@@ -1,0 +1,14 @@
+{
+  "phase": "P1",
+  "purpose": "download_project_local_umoci_no_host_install",
+  "kind": "engineering",
+  "input": [],
+  "cwd": "/home/aaron/lio_gins/cache/local-tools",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "apt",
+    "download",
+    "umoci=0.4.7+ds-2ubuntu0.1"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "P1",
+  "purpose": "extract_project_local_umoci",
+  "kind": "engineering",
+  "input": [
+    "cache/local-tools/umoci_0.4.7+ds-2ubuntu0.1_amd64.deb"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    "dpkg-deb",
+    "-x",
+    "cache/local-tools/umoci_0.4.7+ds-2ubuntu0.1_amd64.deb",
+    "cache/local-tools/umoci"
+  ]
+}

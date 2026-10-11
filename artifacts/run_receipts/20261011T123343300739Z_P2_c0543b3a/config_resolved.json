@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "real_bag_metadata_and_development_sensor_crosscheck",
+  "kind": "engineering",
+  "input": [
+    "scripts/audit_bag_interfaces.py",
+    "src/adapters/rosbag_metadata.py",
+    "src/adapters/sensor_text.py",
+    "configs/data_locations.json",
+    "data/manifests/DATA_MANIFEST.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_bag_interfaces.py"
+  ]
+}
