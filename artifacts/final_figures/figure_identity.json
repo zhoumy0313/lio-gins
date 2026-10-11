@@ -1,0 +1,16 @@
+{
+  "input_SHA256": {
+    "/home/aaron/lio_gins/outputs/20261011T161516209601Z_P5_f78efe7e/heldout_summary.json": "a3612291767c067b9a6e006997b3f24ca30e5ae74489b93cfd5875554a11adaa",
+    "/home/aaron/lio_gins/outputs/20261011T161516459969Z_P4_caf05023/long_wait_audit.json": "cf5e19efc24ed19c55da3d4ea8cfa058f718b7fc80600cdd2454933123fd005a",
+    "/home/aaron/lio_gins/outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json": "d6d637a6bbed1455c3b6eb89885eae698320f83ca512a588408cc31e01f467ae"
+  },
+  "output_SHA256": {
+    "original_frozen_parking_all_case_points.csv": "66ecf9cd2e986e22c359870fa37e08d1f9c749f26c734b75e0ceb40de25fecc2",
+    "original_frozen_parking_all_cases.png": "8d295f4a4e96eb4b130b3fb0646f4b0174977d3fef5a3633a24af84f5234b367",
+    "supplemental_long_wait_points.csv": "ef004b17e3b1aac06bff375d763e33d624f24c6636e279686fbdc42afcc3f64f",
+    "original_frozen_parking_summary_points.csv": "84a66d46aa8acc458b34a936be25a22b53b9fe4fd85f495453db3d95afe54566",
+    "supplemental_long_wait_counterevidence.png": "158617d43382742cf4ab6976dbb5b8b8ac3985d8f1acfbb92160ecc71ad3be8e"
+  },
+  "interpretation": "original frozen heldout comparison is retained; supplementary controls are not retroactively blind tests; no success-metric change",
+  "no_new_parameters": true
+}

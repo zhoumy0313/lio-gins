@@ -1,10 +1,10 @@
 # Internal experimental setup draft
 
-Status: factual setup only; P2/P3 validation is in progress. There is no proposed-method result, novelty conclusion, abstract, or submission manuscript. No authors or affiliations are supplied.
+Status: final internal setup note after the bounded study. The broad incremental-benefit claim failed the supplemental development control audit. This is not a submission manuscript; no authors or affiliations are supplied.
 
 The experiment uses the public i2Nav-Robot wheeled-platform data. AT128 point clouds and ADIS16465 measurements drive the official i2Nav adaptation of FAST-LIO2. Receiver F9P SPP positions are the global observations. Unmodified KF-GINS is an independent GNSS/INS control; its posterior is never reused as a high-rate measurement. Fixed upstream identities and separate build/logging patches are listed in configs/sources.lock.json and patches/.
 
-building00 is the development route. parking00 is reserved for a scientifically frozen evaluation and has not been opened for positioning performance. Both original bag files match the official fixed SHA. Text inputs have locally recorded SHA, without a published upstream text checksum. Raw observations are retained in one local copy; checksums do not constitute backup.
+building00 is the development route. parking00 was first opened after scientific freeze at 2026-10-11T15:44:46.793235 UTC and its full original frozen matrix was completed without retuning. Both original bag files match the official fixed SHA. Text inputs have locally recorded SHA, without a published upstream text checksum. Raw observations are retained in one local copy; checksums do not constitute backup.
 
 The benchmark uses a preregistered known-initial-state protocol. A separate exporter reads exactly the first reference navigation state. That single epoch supplies initial local position, velocity and attitude. The most recent causal F9P observation, velocity propagation and one antenna-lever correction define a common geographic seed. The official geographic origin of the local reference is unavailable, so errors are initial-position-conditioned rather than independently established absolute WGS84 positioning errors. No whole-trajectory fitting is performed. Reference data are accessible to the initializer and offline evaluator only.
 
@@ -18,4 +18,4 @@ Seven artificial GNSS pressure categories are generated from real F9P measuremen
 
 Accuracy uses a predetermined 10 Hz evaluation grid and a maximum 20 ms reference interpolation gap. Horizontal RMSE is sqrt(mean(e_N^2+e_E^2)); vertical error, P95, maximum, coverage, update correction norm and recovery time are retained. Missing method outputs remain missing on the full declared grid. The reference is MM/INS with AT128 input, which shares LiDAR information with the evaluated frontend and limits sensor independence. Events on one route and repeated runs are not independent route replications.
 
-Results and the final method description will be added only after their corresponding evidence is generated and audited. A lack of incremental benefit will be recorded as an internal conclusion, without opening heldout performance or generating a negative-result submission manuscript automatically.
+The initial development gates passed within the registered control set. A subsequent, explicitly late-registered development-only audit of fixed qualification durations 15/30/60/90 s overturned the broader incremental-benefit conclusion. No additional candidate, heldout parameters or primary metric were changed. Original frozen results remain archived. See results_limitations_note.md and the claim map; no negative-result submission manuscript was generated.

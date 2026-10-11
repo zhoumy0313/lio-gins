@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-R1",
-  "phase": "P6",
-  "execution_status": "P5_complete_late_development_counterevidence_internal_drafts_only",
+  "phase": "P7",
+  "execution_status": "P6_internal_drafts_complete_P7_delivery_integrity_pending",
   "execution_complete": false,
   "pipeline_ready": true,
   "development_effect_supported": false,
@@ -17,8 +17,8 @@
   "latest_run_id": "20261011T164153829973Z_P7_53afdedd",
   "freeze_id": "LIO_GINS_R1_20261011T154403129394Z",
   "blocked_on": [],
-  "next_action": "archive_internal_method_experiment_drafts_then_final_delivery_audit",
-  "updated_at": "2026-10-11T16:44:38.469092+00:00",
+  "next_action": "final_integrity_and_requirements_audit",
+  "updated_at": "2026-10-11T16:47:26.535344+00:00",
   "completion_class": "NO_ADDITIONAL_GAIN",
   "candidate_mechanism_revisions_used": 3,
   "main_candidate_configs_run": 36,
@@ -33,7 +33,7 @@
     "P3": "complete_112_matched_controls_all_coverage_1",
     "P4": "three_revisions_36_main_configs_complete_original_gate_passed_late_strong_control_counterevidence",
     "P5": "complete_original_frozen_80_pairs_no_retuning_coverage_1",
-    "P6": "internal_drafts_and_claim_map_in_preparation_full_submission_manuscript_gate_failed",
+    "P6": "complete_internal_method_experiment_results_claim_map_version_no_submission_manuscript",
     "P7": "restore_B6_and_P_exact_63_tests_raw_metrics_80_pairs_passed_final_delivery_pending"
   },
   "backup": {

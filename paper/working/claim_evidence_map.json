@@ -1,0 +1,942 @@
+{
+  "classification": "NO_ADDITIONAL_GAIN",
+  "working_version": "internal_results_r01",
+  "submission_manuscript": false,
+  "registered_heldout_result_scope": "original frozen controls only, not supplemental duration controls",
+  "support": {
+    "registered_development_comparison": true,
+    "registered_heldout_comparison": true,
+    "new_motion_increment_over_reasonable_long_wait_control": false,
+    "novelty": false,
+    "paper_ready": false
+  },
+  "source_files_SHA": {
+    "/home/aaron/lio_gins/outputs/20261011T161516209601Z_P5_f78efe7e/heldout_summary.json": "a3612291767c067b9a6e006997b3f24ca30e5ae74489b93cfd5875554a11adaa",
+    "/home/aaron/lio_gins/outputs/20261011T161516459969Z_P4_caf05023/long_wait_audit.json": "cf5e19efc24ed19c55da3d4ea8cfa058f718b7fc80600cdd2454933123fd005a",
+    "/home/aaron/lio_gins/outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json": "d6d637a6bbed1455c3b6eb89885eae698320f83ca512a588408cc31e01f467ae"
+  },
+  "figure_identity": {
+    "input_SHA256": {
+      "/home/aaron/lio_gins/outputs/20261011T161516209601Z_P5_f78efe7e/heldout_summary.json": "a3612291767c067b9a6e006997b3f24ca30e5ae74489b93cfd5875554a11adaa",
+      "/home/aaron/lio_gins/outputs/20261011T161516459969Z_P4_caf05023/long_wait_audit.json": "cf5e19efc24ed19c55da3d4ea8cfa058f718b7fc80600cdd2454933123fd005a",
+      "/home/aaron/lio_gins/outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json": "d6d637a6bbed1455c3b6eb89885eae698320f83ca512a588408cc31e01f467ae"
+    },
+    "output_SHA256": {
+      "original_frozen_parking_all_case_points.csv": "66ecf9cd2e986e22c359870fa37e08d1f9c749f26c734b75e0ceb40de25fecc2",
+      "original_frozen_parking_all_cases.png": "8d295f4a4e96eb4b130b3fb0646f4b0174977d3fef5a3633a24af84f5234b367",
+      "supplemental_long_wait_points.csv": "ef004b17e3b1aac06bff375d763e33d624f24c6636e279686fbdc42afcc3f64f",
+      "original_frozen_parking_summary_points.csv": "84a66d46aa8acc458b34a936be25a22b53b9fe4fd85f495453db3d95afe54566",
+      "supplemental_long_wait_counterevidence.png": "158617d43382742cf4ab6976dbb5b8b8ac3985d8f1acfbb92160ecc71ad3be8e"
+    },
+    "interpretation": "original frozen heldout comparison is retained; supplementary controls are not retroactively blind tests; no success-metric change",
+    "no_new_parameters": true
+  },
+  "frozen_heldout_80_pair_bindings": {
+    "B2": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160610289531Z_P5_d6047d80",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160613629032Z_P5_d5a72850",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "cb4c3db02682de053db1feb2c8ad5aefb9b4a78f8b13ceff031e5d83374842b4",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160615625512Z_P5_2dff0008",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160618910521Z_P5_508d504d",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "cb4c3db02682de053db1feb2c8ad5aefb9b4a78f8b13ceff031e5d83374842b4",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160620853672Z_P5_5e38fc71",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160624138874Z_P5_5c7b8dd4",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "cb4c3db02682de053db1feb2c8ad5aefb9b4a78f8b13ceff031e5d83374842b4",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160626131608Z_P5_4db54c5c",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160629417576Z_P5_b0d7c2d4",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "af9b93db7b53cca3ba39cfc8e7a430922f8f002a69e00126cfc8e9eea6143f80",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160631413550Z_P5_c7112c42",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160634751492Z_P5_cbcaaf77",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "b13fd95c59d6b8f8a0bfb4a47fcc545be97626f45f42d0084725ac434713a979",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160636747874Z_P5_408a62c0",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160640033715Z_P5_deee5b86",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "af9b93db7b53cca3ba39cfc8e7a430922f8f002a69e00126cfc8e9eea6143f80",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160642029755Z_P5_80e48354",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160645318979Z_P5_aa031b84",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "af9b93db7b53cca3ba39cfc8e7a430922f8f002a69e00126cfc8e9eea6143f80",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160647315030Z_P5_eb1a1f5a",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160650600242Z_P5_7bc1c24e",
+        "trajectory_SHA": "e30c1248f1b9ec8b7917855ddbb804f9a98b7ebab5256d880326ce70f8a53c2c",
+        "update_SHA": "cb4c3db02682de053db1feb2c8ad5aefb9b4a78f8b13ceff031e5d83374842b4",
+        "configuration_SHA": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "B3": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160652596673Z_P5_f08b4bd2",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160656234368Z_P5_50655422",
+        "trajectory_SHA": "f9ec92a193be86af1b37a772589104028c3a0e04b53a7897a8a1fcedfa0209be",
+        "update_SHA": "be3938de700fd2a1e1867fb754d2f35e59b18272e73a3c073f88367539a4b6ec",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160658230738Z_P5_e6265403",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160701868266Z_P5_1c773e8a",
+        "trajectory_SHA": "8400b564d36325cf06fe51ddbe4f2d8d7e79605b1c825fb3991cb5aeb9d179bc",
+        "update_SHA": "56f12dad368476d140db5e2debd11a1bcfea12df6e2a7ca704dc5f7df6a967ad",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160703860946Z_P5_508d47c1",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160707552306Z_P5_8abd2cf0",
+        "trajectory_SHA": "1206cb6e22ccbc889c8ff0d7e023baa1b80038decdb88dd9ed80f447140206ee",
+        "update_SHA": "37bb6219f57ff2ef9697875f0ff17e5ae8ba8724b1fad2043057e50527100b35",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160709494857Z_P5_28696054",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160713132872Z_P5_eb32fdec",
+        "trajectory_SHA": "e284bb71e3210e2a70c78af350f9087b8c4ad74503b9f213d8b6521fdfdc3b69",
+        "update_SHA": "d63ca459af2879dab0fc5927292d788d2e5e9ab52d6e84824dd4a19177a69d59",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160715128540Z_P5_b9e68478",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160718714487Z_P5_67210ca8",
+        "trajectory_SHA": "94d57e47a65098713aab5101a2acf86a14e3067b83d18b1b8a41a0567b9e1567",
+        "update_SHA": "747724d647bfd31054473ab97bb3f24b3b34357678e87256a195810db2c6b8f3",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160720710726Z_P5_f3aec50d",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160724349170Z_P5_244d9769",
+        "trajectory_SHA": "0ffba7aa2965a28b3a0692f1f67e663e97597d062fb15fc814c124c0a5e03db4",
+        "update_SHA": "3e566ca319b2a2bda794e0528cb8403c94efd53859bf6f68a4919d51eb0c6f4c",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160726342465Z_P5_f2828f0d",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160729979667Z_P5_740a7faf",
+        "trajectory_SHA": "66fc3a8e393b1b8dd257b12b52ca13fa7ccaa92c285aa86f3e8755977ba8ed72",
+        "update_SHA": "bc35e363d920b9d70fc823528aa294a8a3c13d7b3ea92964c6ca3f883f0b5386",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160731976444Z_P5_1c40a6f5",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160735612575Z_P5_70a7319a",
+        "trajectory_SHA": "4c7b49a0c53f3d8205c4be4235df0f9fe2d6a91fb881b5877f2fa831d8684597",
+        "update_SHA": "5562bfbb8f3ee4ec8860eda29468656b108fcd937df3d3ebd1429470ef247bea",
+        "configuration_SHA": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "B4": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160737606250Z_P5_0d865e1e",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160741296764Z_P5_bb2131d5",
+        "trajectory_SHA": "f9ec92a193be86af1b37a772589104028c3a0e04b53a7897a8a1fcedfa0209be",
+        "update_SHA": "c51c20fb7d2b881cf766bc6176565bf0d4a2ca81c68d67b00de1e24c2ce3d352",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160743293462Z_P5_66f3886e",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160746933588Z_P5_ac4b403a",
+        "trajectory_SHA": "8400b564d36325cf06fe51ddbe4f2d8d7e79605b1c825fb3991cb5aeb9d179bc",
+        "update_SHA": "c14bd00fee4a30b42b1c1a851ca6173332fb5a3f4633cae52a41973d349e7258",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160748930175Z_P5_6eae0fdd",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160752566850Z_P5_bba1b4a5",
+        "trajectory_SHA": "1206cb6e22ccbc889c8ff0d7e023baa1b80038decdb88dd9ed80f447140206ee",
+        "update_SHA": "1115c60c27cd6304094fd0b05e24788683cde7fb8c7fa53a82f0066cede84a19",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160754563718Z_P5_be0d7d8c",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160758204107Z_P5_21503a85",
+        "trajectory_SHA": "e284bb71e3210e2a70c78af350f9087b8c4ad74503b9f213d8b6521fdfdc3b69",
+        "update_SHA": "91b70208c89b4f3e2776e9c42193d78e8c973cafb09b867b06d6e65da337982f",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160800201470Z_P5_092aed2f",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160803788704Z_P5_25036ae4",
+        "trajectory_SHA": "94d57e47a65098713aab5101a2acf86a14e3067b83d18b1b8a41a0567b9e1567",
+        "update_SHA": "6bbbca214bec32a33c21f1fd6caa964a4f8f5e3ae9ac1a88718b84c7f377f4df",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160805785215Z_P5_755974c8",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160809371174Z_P5_fb28d09e",
+        "trajectory_SHA": "0ffba7aa2965a28b3a0692f1f67e663e97597d062fb15fc814c124c0a5e03db4",
+        "update_SHA": "a79ff7f594dc44c4afded48cfac3f171046b104f6b0ec12a6f9c89cdef22c92b",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160811367155Z_P5_c2788193",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160814953225Z_P5_d7b7669e",
+        "trajectory_SHA": "f886b4bf28484d4e7d63efb0b19ee63a394499f0fc1364d6e7d0e76726b13d5f",
+        "update_SHA": "a5f2851aa277c9c209c8bc27e75fc832e787903978678495d94c3d1ee9f580bd",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160816948999Z_P5_9993e87c",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160820586254Z_P5_99c31136",
+        "trajectory_SHA": "4c7b49a0c53f3d8205c4be4235df0f9fe2d6a91fb881b5877f2fa831d8684597",
+        "update_SHA": "6e3486437c2d8771d065884c41be944db4538d57094dea307de2897e36c44506",
+        "configuration_SHA": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "B5": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160822581949Z_P5_663d94a8",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160826272333Z_P5_f5965626",
+        "trajectory_SHA": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+        "update_SHA": "d6fb0f7ab84ba156367159d571eeb9ee9f076ccd0db47e66f4227e396b4dec2c",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160828267881Z_P5_7b84a77a",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160831958419Z_P5_ae9e773e",
+        "trajectory_SHA": "c910e587bbdc009e3682e348e7ac21dd8026a8f23ac1c1e1687ba721d85a279e",
+        "update_SHA": "62db6105c14d3846b21ba73388a76435d8b08263965b08345b485e67b7c8ed40",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160833901007Z_P5_d00110fc",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160837537620Z_P5_71a13a46",
+        "trajectory_SHA": "883d7eb19a1563bdaff84e5fde3fc743df88bddc3a5542aa0f360548e8dd988c",
+        "update_SHA": "1937e591c0cf69e455ea88649ade51c98fbc72db874b9a6464beca0688196624",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160839480059Z_P5_78534227",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160843121155Z_P5_b8df277d",
+        "trajectory_SHA": "d09b71c3858b19a87276ebbf01663c5ff5248dc0d2cd604a08a22eedc194ba66",
+        "update_SHA": "5f9d4d1660efaf5d98957c357605f61e433b7d02f8612ef7d6a90393a3cb900a",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160845117323Z_P5_6615d1dc",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160848758309Z_P5_1f9892da",
+        "trajectory_SHA": "570586a905bec78c5650e147742d4ec58f5478fa193a84e32dfd7ceb20a00704",
+        "update_SHA": "fa0bb53406b075b768b7019e01286fa43c686fd57816e9f3a3e91cc5baac606f",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160850754909Z_P5_f4fc4c64",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160854395873Z_P5_13c4f1aa",
+        "trajectory_SHA": "b663ca0aa666bb4976a77ddcfd64336ffb30da71bff43dc701a3aa6f7d7b2498",
+        "update_SHA": "4cc6d095b55db4046928ad7092be66ad0aeb32a93f3a92785090870e078fe886",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160856391945Z_P5_1ecfb9f8",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160900032764Z_P5_d9beee57",
+        "trajectory_SHA": "f3506f887ea52ae0ffcea4e50c7aa3e5908f68320adef45253a3b0bd4ff69795",
+        "update_SHA": "d5a25e3c58b47c3ac03e1ff79725f1c4517626944fb9c2368508b5a1658d852f",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160902028750Z_P5_3016a08f",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160905719837Z_P5_061042cc",
+        "trajectory_SHA": "c28c80976fc0ca8e5cd9a3a68590430130285f98afc43406d5b286a1d20eddfa",
+        "update_SHA": "c35a7aa8450869e90c6909b0e4c29b556f66b1dddde55bc89f553e68cde0cf7c",
+        "configuration_SHA": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "B6": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160907716056Z_P5_7c6a2c04",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160911457844Z_P5_cb6426ea",
+        "trajectory_SHA": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+        "update_SHA": "d6fb0f7ab84ba156367159d571eeb9ee9f076ccd0db47e66f4227e396b4dec2c",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160913454768Z_P5_932affe0",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160917143709Z_P5_7ee29693",
+        "trajectory_SHA": "c910e587bbdc009e3682e348e7ac21dd8026a8f23ac1c1e1687ba721d85a279e",
+        "update_SHA": "62db6105c14d3846b21ba73388a76435d8b08263965b08345b485e67b7c8ed40",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160919139841Z_P5_9b830052",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160922777213Z_P5_76f0ebac",
+        "trajectory_SHA": "4322f166172a160d80f4b6d1685ad9c4ee8f047a1060b5bcd50afc0761d12330",
+        "update_SHA": "454b696bb11a3646a7560904bd72be72dffa56f5f169cf5cec6b2a66744bd39c",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160924719675Z_P5_186a2680",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160928360133Z_P5_6a15b727",
+        "trajectory_SHA": "7e592f1f602e24bdb7ea73e3c697ad79798380343501d8ed182e7f4fe90df749",
+        "update_SHA": "d8d054f38b4e87c78d504d128a7451be4e68bdacc35918ab4b467cde2f7cc1de",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160930356780Z_P5_e881b738",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160933943972Z_P5_7ee24d2b",
+        "trajectory_SHA": "dfb91715968eef74d091868f36c454aae0fefb277ef176eea01aec2a94d5d738",
+        "update_SHA": "8ffdec7878c00a61179011ed7f3ce9f0327c3df4900cf4709befee6621634b96",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160935885774Z_P5_a2a9b0ac",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160939522926Z_P5_6d1f3e9c",
+        "trajectory_SHA": "5f612e201efff830e32bf93951a52b005f4bbbadd3ef1900094cce95f91659f8",
+        "update_SHA": "0d9e4f8d558d7fa409f19df3ddfd35cf7904bb53f1f671984d741ed67c0ceda9",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160941519758Z_P5_8c7656ff",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160945161069Z_P5_84e04fb2",
+        "trajectory_SHA": "8f6aa6b2c65613b66d8fe25c606bc9c70e38412a811412782c288c5e0fc180ff",
+        "update_SHA": "18dc811207f7fef8c98641bbad8afba99b9595b5b239530df93c5d03b7c5ad80",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160947102980Z_P5_ee6738ad",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160950793499Z_P5_fb7cca57",
+        "trajectory_SHA": "c97d915e2de6e8c4ae553581141fc0c9d4e45fbce43ec92e77e7d412da10a390",
+        "update_SHA": "f882cb60388fff0696e7efe5b1defe20b821e22aa87993fd3b246bb4a3f3ac7b",
+        "configuration_SHA": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "P": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T160952789893Z_P5_1ddbb071",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T160958438207Z_P5_29512002",
+        "trajectory_SHA": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+        "update_SHA": "b0541731684ee92c31c30c96b8e0637c6597d2d6ba91db3585ce93febe507715",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161000435928Z_P5_e7064616",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161006082996Z_P5_904db9df",
+        "trajectory_SHA": "135ab8807ef7a786d4a8e23b45cb2bd8429c67c1bbe34f6d829ba5a5170da082",
+        "update_SHA": "e7888a44d82724985d4e36fecd5bfa2a173d13330fd7e220f11546cee338f01b",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161008081152Z_P5_cda3987a",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161013776633Z_P5_2292c413",
+        "trajectory_SHA": "21dc12d3e53a578ddf13332bc3c0c2677a5aa0ec68ca58bddc825c704117f3fc",
+        "update_SHA": "338b101af78389769b4ddcce3018bb8ac6f37df62cea5a63b2c77fc9a7dc4139",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161015773794Z_P5_4b2c979f",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161021275060Z_P5_6fcd6827",
+        "trajectory_SHA": "db4701d8d305d56f9d0437fb376e1c4413662821200375f7d227597309e9442a",
+        "update_SHA": "02419976758c6541651ae042748ee94a7c15ec3fac2f41ff86cf8a25f5aed4fb",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161023272521Z_P5_9ab47363",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161028567255Z_P5_606517d5",
+        "trajectory_SHA": "2d73bb6deb42be383c66b635938b6ef48daedd8886a5c783898bbea70f8b6d96",
+        "update_SHA": "53cfec4fa437e1c7ffddd2955b4f87e4f0976a464888eeb9988b7797d1f7828c",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161030562540Z_P5_42ee220d",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161036061628Z_P5_22586724",
+        "trajectory_SHA": "103c955dcdcff0aae3c0c3759696fe1a5dc5f9642120b2a69a5a27a23c7aadcc",
+        "update_SHA": "66fff2e39a7febf84e1e4377b4694ff5051b3e3f43dc9dcbf113aed598db891f",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161038004797Z_P5_806b7b91",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161043450508Z_P5_559cf4ba",
+        "trajectory_SHA": "5e07fccf3793bd3fe5a31d9cd937663b8e646a8fbea3b2efaf8538737ce1181a",
+        "update_SHA": "07bdabaff84018492dae5c366de80ca5011528ac7a730c12d7b0ea9f11aa9803",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161045448020Z_P5_caa754e8",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161051094043Z_P5_1c7f593a",
+        "trajectory_SHA": "630893954d29c1a1a6085e7525ec179b30bf67723cbda8c78ec0f969403930ff",
+        "update_SHA": "eb52ca96805c42dbb8a29709bc02254095d3f6a0883906ab589f0121be2dd19e",
+        "configuration_SHA": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "P_without_motion": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161053091324Z_P5_91a3e4fa",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161056930399Z_P5_5efb861f",
+        "trajectory_SHA": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+        "update_SHA": "d6fb0f7ab84ba156367159d571eeb9ee9f076ccd0db47e66f4227e396b4dec2c",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161058873500Z_P5_8ef28e0b",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161102711683Z_P5_a85d0c30",
+        "trajectory_SHA": "c910e587bbdc009e3682e348e7ac21dd8026a8f23ac1c1e1687ba721d85a279e",
+        "update_SHA": "62db6105c14d3846b21ba73388a76435d8b08263965b08345b485e67b7c8ed40",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161104707729Z_P5_e8dc4dd0",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161108550086Z_P5_fd84b7a8",
+        "trajectory_SHA": "4322f166172a160d80f4b6d1685ad9c4ee8f047a1060b5bcd50afc0761d12330",
+        "update_SHA": "454b696bb11a3646a7560904bd72be72dffa56f5f169cf5cec6b2a66744bd39c",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161110492589Z_P5_00645989",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161114281210Z_P5_315c7683",
+        "trajectory_SHA": "7e592f1f602e24bdb7ea73e3c697ad79798380343501d8ed182e7f4fe90df749",
+        "update_SHA": "d8d054f38b4e87c78d504d128a7451be4e68bdacc35918ab4b467cde2f7cc1de",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161116277259Z_P5_e62a7215",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161120067667Z_P5_f9ba5bb1",
+        "trajectory_SHA": "dfb91715968eef74d091868f36c454aae0fefb277ef176eea01aec2a94d5d738",
+        "update_SHA": "8ffdec7878c00a61179011ed7f3ce9f0327c3df4900cf4709befee6621634b96",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161122009956Z_P5_f0acd0c1",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161125848716Z_P5_2e2256b5",
+        "trajectory_SHA": "5f612e201efff830e32bf93951a52b005f4bbbadd3ef1900094cce95f91659f8",
+        "update_SHA": "0d9e4f8d558d7fa409f19df3ddfd35cf7904bb53f1f671984d741ed67c0ceda9",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161127846011Z_P5_6c8cb9b0",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161131680657Z_P5_6e132ed7",
+        "trajectory_SHA": "8f6aa6b2c65613b66d8fe25c606bc9c70e38412a811412782c288c5e0fc180ff",
+        "update_SHA": "18dc811207f7fef8c98641bbad8afba99b9595b5b239530df93c5d03b7c5ad80",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161133676996Z_P5_74fa1007",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161137518812Z_P5_d1c68558",
+        "trajectory_SHA": "c97d915e2de6e8c4ae553581141fc0c9d4e45fbce43ec92e77e7d412da10a390",
+        "update_SHA": "f882cb60388fff0696e7efe5b1defe20b821e22aa87993fd3b246bb4a3f3ac7b",
+        "configuration_SHA": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "P_time_only": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161139513652Z_P5_cd9d4fbd",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161145160536Z_P5_572c8057",
+        "trajectory_SHA": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+        "update_SHA": "b0541731684ee92c31c30c96b8e0637c6597d2d6ba91db3585ce93febe507715",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161147157364Z_P5_ab6c5b8d",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161152803127Z_P5_c66bdcca",
+        "trajectory_SHA": "c910e587bbdc009e3682e348e7ac21dd8026a8f23ac1c1e1687ba721d85a279e",
+        "update_SHA": "e5a7da17a34e40503e00eea9755907e5d65b66cd41ed4ecc7b838b4a617a4eb3",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161154800136Z_P5_95f1f825",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161200446812Z_P5_36685d9a",
+        "trajectory_SHA": "4322f166172a160d80f4b6d1685ad9c4ee8f047a1060b5bcd50afc0761d12330",
+        "update_SHA": "5ccd9d59dfc998d1bc011050cf1234a72fe694f80d8a361557193b613a6ca29e",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161202440412Z_P5_ef2f0741",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161207934886Z_P5_e2ab59ee",
+        "trajectory_SHA": "2a576d2f8a9398345a366abf38a06fd8b5e8aa03afee21a2243203c8e1ee3db6",
+        "update_SHA": "966fe5626c33b94b2d9290ba35f29696ed12e785287ed334c0130efb2df48294",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161209932496Z_P5_426b1bc8",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161215227457Z_P5_e486e6d2",
+        "trajectory_SHA": "596af12947d8a3acef04845a5237db380fb54ee8a97b64a1f1e461cd0123abf3",
+        "update_SHA": "47d1779e9cb4baa14854cfbc6ce45ba79ad7689ea19d48913055609d68a58742",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161217170942Z_P5_67fbeb15",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161222616451Z_P5_1caab526",
+        "trajectory_SHA": "3109c4ef123660ad68aa4ec03aa9222ceca577dc51ad742c553a0cc8b3402b7a",
+        "update_SHA": "68b62eef7d02bec972f84b6f5da4568f6d7e6971589e03f815e015ec73805728",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161224613212Z_P5_872bde0e",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161230099085Z_P5_471421cc",
+        "trajectory_SHA": "a9370377d3b2713f9ca4faa3e6a1b2c9a7db737004e15a868df546a2d082e2f9",
+        "update_SHA": "04514ba3133436c8e04e1a69ae6a001ccbb553b1c54568e010546dfe7a472516",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161232042049Z_P5_ee2438d7",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161237692034Z_P5_89656485",
+        "trajectory_SHA": "c97d915e2de6e8c4ae553581141fc0c9d4e45fbce43ec92e77e7d412da10a390",
+        "update_SHA": "2293df762c7ab9540b1666305c66ef41c33529338e46751a4c02546b648adbd2",
+        "configuration_SHA": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "P_without_decay": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161239685545Z_P5_e63858b4",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161245325150Z_P5_1db96d9c",
+        "trajectory_SHA": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+        "update_SHA": "b0541731684ee92c31c30c96b8e0637c6597d2d6ba91db3585ce93febe507715",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161247317366Z_P5_d05f87b0",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161252967284Z_P5_54cacf0c",
+        "trajectory_SHA": "13f4b8d55e5259e46c357b77dae099443d98e9c3018a8adf9711cfac3d04c4f4",
+        "update_SHA": "06d5f5924304a4448a8344541862e2c9df79f233165cdfab1749f00fa95a94b3",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161254910502Z_P5_162a4b2b",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161300558729Z_P5_734a03ed",
+        "trajectory_SHA": "e419d592c62f4f794497d6337837fe935c7159110feee79328df2a4c70690d53",
+        "update_SHA": "d5c9aec747ebf112c784416ac6763d6d0c17015cb31750e2682e3d045072f995",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161302555238Z_P5_1683527e",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161308052638Z_P5_8c7bc0b5",
+        "trajectory_SHA": "e9c9daa526acc90eb5203543e366994c6620c3333d5a7d18c02626414413f4df",
+        "update_SHA": "824ef12703d43065fe9d55c56a615f2b6cc53fe8af6425362f24bb5dd0116aab",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161309996170Z_P5_4473fff8",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161315343756Z_P5_14ff1bf2",
+        "trajectory_SHA": "4ecf499957583efa6d024cff3fe52f9b0f9a9f0de4c4162af4eb3d0ec8ec52da",
+        "update_SHA": "1b0aad22b14c40613e8df30de3bb484715e96ba5c3d4efc7d48e978e33003ae6",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161317339154Z_P5_4cc46cdd",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161322783907Z_P5_23f5213e",
+        "trajectory_SHA": "2bc49336b6161bbcd18564882325e35842e17f77434f037cda3e987f660dee0f",
+        "update_SHA": "7aae4fea93bf2d16b2d916d9151d1cc6f1069b963c23ed5ca424b7c1cd385e42",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161324779958Z_P5_097a78d9",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161330228397Z_P5_4f17ff84",
+        "trajectory_SHA": "7c214d4054c5e7f0a6ad30af2d414645859dd85d655df037dafcb1bda041a347",
+        "update_SHA": "cd42504fa097281d4f9fff970916f08b3d2393853a00ec80a5feab9fd72e04db",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161332224291Z_P5_b9b98609",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161337872818Z_P5_70e886e4",
+        "trajectory_SHA": "79e2e9d1653c91f0fbb90db04558b0c63e902aecbba194968247d5a2573a0f02",
+        "update_SHA": "ab26e28055fcb08fb88a66326aef2e9d8182e10425f7c391294640434cd336a7",
+        "configuration_SHA": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ],
+    "P_without_anchor": [
+      {
+        "case": "natural",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161339866675Z_P5_88f00c14",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161345462147Z_P5_19b289bf",
+        "trajectory_SHA": "2e39fb4ddaa65a25d663d56b3d052bebdf3ba26f95d5587e4c3223af2adbf84a",
+        "update_SHA": "d0b906e813185c83e172de37cca1a1f440c2d67442cf376e81d902046de6165c",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "faf4ae0b7a8281eb566796e8da94d97ec99c55522c2475de78b064016187f964",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "short_jump3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161347459631Z_P5_8ceb964c",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161353105658Z_P5_3db7a0e5",
+        "trajectory_SHA": "135ab8807ef7a786d4a8e23b45cb2bd8429c67c1bbe34f6d829ba5a5170da082",
+        "update_SHA": "52c4edaeba586c42346d568658ea6c0a62610049e55583a966f34c3f922865f6",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "0fcc38b5cf10d29568c18d33eb47223a037a91da0db95b210d0b819afc84e79f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "cluster_jump10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161355102710Z_P5_761e84f7",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161400751745Z_P5_5d499d36",
+        "trajectory_SHA": "21dc12d3e53a578ddf13332bc3c0c2677a5aa0ec68ca58bddc825c704117f3fc",
+        "update_SHA": "7f41d635e32f95d7e3837821e609184fbcbbe37e3711402b4cb1e748405d7a87",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "982f3e1ce0bed7fbd9b3dd510784b4280ebbd7c46119584f5389ed7710c3a0b4",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161402694814Z_P5_ace3be36",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161408139443Z_P5_d72c7b89",
+        "trajectory_SHA": "2a576d2f8a9398345a366abf38a06fd8b5e8aa03afee21a2243203c8e1ee3db6",
+        "update_SHA": "9275ab7fcfeb2fd05ac88a3f743a8e53acc128b2e447b623c37ebdd25d7a0aff",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "caf7ad4fcfb6151e8d07d7e4aed87330b1d86dffcef9db8eb0e1539f0ef33df2",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss60_normal",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161410082331Z_P5_0a095e51",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161415430652Z_P5_fea65590",
+        "trajectory_SHA": "596af12947d8a3acef04845a5237db380fb54ee8a97b64a1f1e461cd0123abf3",
+        "update_SHA": "bc5a3c06835bd537a772aad9a57f1c564853d8c7b1b4bcb90008da2b87687d7b",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "eafb2642be153e373c974edcd2292df8ca15624db67577e43a13a8b16ac3dd3f",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias3",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161417428346Z_P5_449517bb",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161422873009Z_P5_57fde893",
+        "trajectory_SHA": "65f1a177f84bcea001b3764f29c2e7360ffc0f0a7ee16c5f8521e02f773eab11",
+        "update_SHA": "a9620cd3d3c6a746954b5d30cea14efab6556f50f8e88b2818835402a204162d",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "a5dce79a74a754bebf17431109a453e21604b856cc245970ae5f0db401b16d5b",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "loss30_bias10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161424816118Z_P5_ac2dd47c",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161430260743Z_P5_4c95ab15",
+        "trajectory_SHA": "1ead3cba1f09f805223dc0fdd706189bdaae76c10a0cb3473d17ade209b0d303",
+        "update_SHA": "1b08461da0c121f535fbc4f188e5d5435d62a7a4662dae00552ee0173df8f4d7",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "400dda24e39494847e02c5a12e79396661e136387e582d02480cccae617930d5",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      },
+      {
+        "case": "ramp10",
+        "backend_run": "/home/aaron/lio_gins/outputs/20261011T161432258326Z_P5_b5b9d1cf",
+        "evaluation_run": "/home/aaron/lio_gins/outputs/20261011T161437903957Z_P5_510537d5",
+        "trajectory_SHA": "630893954d29c1a1a6085e7525ec179b30bf67723cbda8c78ec0f969403930ff",
+        "update_SHA": "f88f2616bba30a72f06222ec1b92a539da626ea312c157eb00255e610e660732",
+        "configuration_SHA": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+        "input_SHA": "eb303a08641c0843f0c458b07f6eacd3ba7c3d7ced5b44a68f524365cb378692",
+        "cache_SHA": "770aaac928948e7014fa4c558909e99860b4597d8499c0bb2e1a7b1e9cd22591",
+        "initialization_SHA": "99328eebeaae2c210c755e5c3ec6db84295211ce8dad8978a3a6ff469b98892e"
+      }
+    ]
+  },
+  "independent_recompute_run": "20261011T164106339470Z_P7_269b03f9",
+  "late_control_run": "20261011T161516459969Z_P4_caf05023",
+  "late_registration_UTC": "2026-10-11T16:12:33.144856+00:00",
+  "late_registered_after_first_test_access": true,
+  "freeze_id": "LIO_GINS_R1_20261011T154403129394Z",
+  "first_open_record": "docs/TEST_OPENED.json"
+}
