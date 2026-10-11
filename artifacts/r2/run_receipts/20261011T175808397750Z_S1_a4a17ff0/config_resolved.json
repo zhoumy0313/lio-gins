@@ -1,0 +1,18 @@
+{
+  "stage": "S1",
+  "purpose": "full_latency_exposure_error_reanalysis",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/reanalyse.py",
+    "configs/r2/protocol_draft.json",
+    "outputs_r2/20261011T175603553677Z_S1_47827d7f/complete_index.json"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "python3",
+    "experiments/r2/reanalyse.py",
+    "outputs_r2/20261011T175603553677Z_S1_47827d7f/complete_index.json"
+  ]
+}

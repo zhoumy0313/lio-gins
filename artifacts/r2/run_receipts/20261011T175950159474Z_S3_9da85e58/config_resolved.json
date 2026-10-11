@@ -1,0 +1,17 @@
+{
+  "stage": "S3",
+  "purpose": "original64_and_R2_metric_contracts",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/run_regression.py",
+    "experiments/r2/test_reacquisition_metrics.py"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "OMP_NUM_THREADS=1",
+    "python3",
+    "experiments/r2/run_regression.py"
+  ]
+}

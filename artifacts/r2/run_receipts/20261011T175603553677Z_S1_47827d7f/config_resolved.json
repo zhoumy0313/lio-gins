@@ -1,0 +1,18 @@
+{
+  "stage": "S1",
+  "purpose": "complete_fixed_qualification_controls",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/complete_clocks.py",
+    "experiments/r2/collect_index.py",
+    "configs/r2/protocol_draft.json"
+  ],
+  "timeout": 900.0,
+  "command": [
+    "env",
+    "OPENBLAS_NUM_THREADS=1",
+    "OMP_NUM_THREADS=1",
+    "python3",
+    "experiments/r2/complete_clocks.py"
+  ]
+}

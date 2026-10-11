@@ -1,0 +1,16 @@
+{
+  "stage": "S1",
+  "purpose": "complete_tradeoff_and_first_event_figures",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/make_figures.py",
+    "outputs_r2/20261011T175808397750Z_S1_a4a17ff0/summary_table.json",
+    "outputs_r2/20261011T175808397750Z_S1_a4a17ff0/event_results.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/r2/make_figures.py",
+    "outputs_r2/20261011T175808397750Z_S1_a4a17ff0"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "method": "P",
+      "artifact": "trajectory.csv",
+      "byte_identical": true,
+      "old_run": "/home/aaron/lio_gins/outputs/20261011T161038004797Z_P5_806b7b91",
+      "new_run": "/home/aaron/lio_gins/outputs_r2/20261011T175536431895Z_S1_140d2c05",
+      "SHA": "5e07fccf3793bd3fe5a31d9cd937663b8e646a8fbea3b2efaf8538737ce1181a"
+    },
+    {
+      "method": "P",
+      "artifact": "per_update.jsonl",
+      "byte_identical": true,
+      "old_run": "/home/aaron/lio_gins/outputs/20261011T161038004797Z_P5_806b7b91",
+      "new_run": "/home/aaron/lio_gins/outputs_r2/20261011T175536431895Z_S1_140d2c05",
+      "SHA": "07bdabaff84018492dae5c366de80ca5011528ac7a730c12d7b0ea9f11aa9803"
+    },
+    {
+      "method": "B6",
+      "artifact": "trajectory.csv",
+      "byte_identical": true,
+      "old_run": "/home/aaron/lio_gins/outputs/20261011T160941519758Z_P5_8c7656ff",
+      "new_run": "/home/aaron/lio_gins/outputs_r2/20261011T175541947773Z_S1_219d89cc",
+      "SHA": "8f6aa6b2c65613b66d8fe25c606bc9c70e38412a811412782c288c5e0fc180ff"
+    },
+    {
+      "method": "B6",
+      "artifact": "per_update.jsonl",
+      "byte_identical": true,
+      "old_run": "/home/aaron/lio_gins/outputs/20261011T160941519758Z_P5_8c7656ff",
+      "new_run": "/home/aaron/lio_gins/outputs_r2/20261011T175541947773Z_S1_219d89cc",
+      "SHA": "18dc811207f7fef8c98641bbad8afba99b9595b5b239530df93c5d03b7c5ad80"
+    }
+  ],
+  "all_passed": true,
+  "R1_source_unchanged": true
+}
