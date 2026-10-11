@@ -1,0 +1,33 @@
+{
+  "phase": "P2",
+  "purpose": "full_interface_causality_filter_and_offline_evaluation_checks",
+  "kind": "synthetic",
+  "input": [
+    "/home/aaron/lio_gins/tests/test_causal_lio.py",
+    "/home/aaron/lio_gins/tests/test_common_interfaces.py",
+    "/home/aaron/lio_gins/tests/test_context_integrity.py",
+    "/home/aaron/lio_gins/tests/test_fixed_recovery.py",
+    "/home/aaron/lio_gins/tests/test_outer_evaluation.py",
+    "/home/aaron/lio_gins/tests/test_outer_replay.py",
+    "/home/aaron/lio_gins/tests/test_run_recorder.py",
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py",
+    "/home/aaron/lio_gins/scripts/record_run.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

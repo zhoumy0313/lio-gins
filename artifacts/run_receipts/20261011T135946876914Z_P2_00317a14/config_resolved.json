@@ -1,0 +1,16 @@
+{
+  "phase": "P2",
+  "purpose": "readonly_accounting_of_preflight_orphan_and_active_runs",
+  "kind": "engineering",
+  "input": [
+    "scripts/audit_unsealed_runs.py",
+    "outputs/20261011T133756615798Z_P2_813a276b/config_resolved.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/audit_unsealed_runs.py"
+  ]
+}

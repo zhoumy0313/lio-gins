@@ -1,0 +1,36 @@
+{
+  "run_id": "20261011T141045393982Z_P2_cc6927ed",
+  "phase": "P2",
+  "purpose": "full_interface_causality_filter_and_offline_evaluation_checks",
+  "kind": "synthetic",
+  "source_commit": "35de523fc681a9f8a50347fc50d524b64d0bf92a",
+  "tracked_dirty_diff_sha256": "1c05d26392ad3ce530d84e9886f529b3e6c53da0dc87803349f0bb892a25010a",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/tests/test_causal_lio.py": "07eb920fd154ce5f252134154be56cc12db493be330bf32f62e93bd4f1adfcdd",
+    "/home/aaron/lio_gins/tests/test_common_interfaces.py": "f848eee758a0fd0b72271d6cc79eea69d8ca1d2527b11adb5ec77d37928bc5a2",
+    "/home/aaron/lio_gins/tests/test_context_integrity.py": "1e094f08853afad0b8d7f6742e2bfe197e91889ee51ea5b1355cff4f8ff168f3",
+    "/home/aaron/lio_gins/tests/test_fixed_recovery.py": "fb9462275527bb0981190cf2abcd4eebd0f1ccd2235ef6a2453eae072b0b0ea7",
+    "/home/aaron/lio_gins/tests/test_outer_evaluation.py": "05c10aa548c5d735b0c705a3b4812fd8fe4b7ca2126e7ee3cfc90c22f6fa608d",
+    "/home/aaron/lio_gins/tests/test_outer_replay.py": "fecde313fa0a4f15a52ee8665cae9de8295495df5e11cf38641abb643ffca795",
+    "/home/aaron/lio_gins/tests/test_run_recorder.py": "e2d4455f1bf92871178cb7a766dab44048f098d9c224f0b4999b7793537d21ba",
+    "/home/aaron/lio_gins/scripts/evaluate_outer.py": "60517defa84f293d6e4128ef5a5c9462aced154cbfb9a605e5f8f755976e9c6a",
+    "/home/aaron/lio_gins/scripts/run_outer_baseline.py": "ae5a9cc3352d46f6a5d959081520409d9707869fc4e55c3ab23e26b9833895b8",
+    "/home/aaron/lio_gins/scripts/record_run.py": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+    "/home/aaron/lio_gins/src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py": "be8aae915fe396286f3ba5cd278eb3d69acd8b602f1651a25110108efcbad0a5",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758"
+  },
+  "config_sha256": "65f0c618b7fa3d5247d90607cc2dd69576fde0625584dc0120e4afb0246351a2",
+  "created_at": "2026-10-11T14:10:45.401966+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:10:54.139825+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "internal_setup_only_not_submission",
+  "created_at": "2026-10-11T14:03:34.722081+00:00",
+  "source_commit": "35de523",
+  "draft_sha256": "12dca7b0abe73b25c0d9e51c9ab0942894834463e293cc50038a1a15c6892bbb",
+  "protocol_sha256": {
+    "configs/initialization_protocol.json": "a21f3478efd1e0cf237082fc87e2fdfecf92a1c7391d47fdea771edd4ed4edfc",
+    "configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+    "configs/baseline_screen_protocol.json": "0b7119b2b7845547041fc7fb522a1c3da63dec6c4d02d4b375b2363424f46c28"
+  },
+  "no_proposed_performance": true,
+  "no_authorship": true,
+  "heldout_opened": false
+}

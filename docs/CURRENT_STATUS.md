@@ -1,16 +1,13 @@
-# LIO-GINS-R1 — 当前状态
+# LIO-GINS-R1 当前状态
 
-2026-10-11。数据已取得并验证；完整目标尚未完成。P0 完成，P1 已完成隔离环境和数据检查，P2 完整位姿缓存已生成；正常退出计时导出正在修复验证。
+2026-10-11。完整目标未完成，当前P3强基线筛选中。当前无必需人工操作。
 
-- `data/i2nav-dataset` 的16个原件只读保留；两个bag SHA与固定官方值完全一致。审计exit0：`20261011T112420385892Z_P1_ef2f5c4e`，无缺失/失败文件。
-- building00 IMU248928条、F9P1244条，全部有限、时间无重复/倒序，F9P标准差均有效。
-- 两个bag索引各12个连接；building00 AT12812443帧。256条开发IMU样本确认GPS周2364，UTC2025-04-27，18秒转换与文本时间最大偏差0.590微秒。20帧点云字段和逐点时间单调检查通过；不是全程时间/轴向审计。
-- 原生KF-GINS官方demo先前通过；真实building00首轮KF-GINS通过：10Hz覆盖100%，水平RMSE3.845226m；初始化协议事先登记，仅首参考历元。还未达到完整强基线状态，无候选收益。
-- Docker/Podman仍缺，但现有Bubblewrap用户命名空间与无网络隔离测试exit0。锁定Noetic OCI rootless构建已通过，run 20261011T130509928405Z_P1_4c5d376c exit0；隔离ROS启动/原bag索引冒烟检查20261011T131414920017Z_P2_17e494e3 exit0。回放早期挂载点/localhost元数据失败保留；修复后全程回放已启动，尚未完成。无sudo/宿主软件及网络配置变更。
-- P3强基线仍未齐备，候选修订0/3，parking00性能仍关闭，所有科学成功字段false。
+- P0保护独立空间完成；原用户工作包及旧VPR不变，仅本地checkpoint。
+- P1官方KF-GINS demo通过，16原始文件齐备、两个bag SHA匹配；Noetic/FAST-LIO在已有Bubblewrap用户命名空间中编译运行，无sudo/宿主ROS/Python/网络变更。
+- P2 building00 B1原生噪声STD×0.5/1/2均100%覆盖；预登记选择×2水平RMSE3.702869m。共同首参考历元初始化，未知地理原点，结果称初始位置条件化误差。
+- P2完整1×FAST-LIO回放正常关闭exit0，1286.7126s，12440/12443位姿与12440原生计时；均值17.3215ms、P95 22.7675ms，不含输入回调/发布/等待。缓存、时间/位姿行对应和34项接口/因果/离线评价检查exit0。
+- **前端数值敏感性尚未解决**：相同输入/二进制两轨迹局部3D差异RMS3.60m、最大9.79m，去掉初始坐标差异后仍存在。脚本执行成功不是数值稳定。最终候选及选中强基线必须在两缓存固定参数复核；当前不得科学冻结。
+- P3 run `20261011T141054205503Z_P3_e03a0b15`执行预登记Q四档、NIS/Huber各四档、固定恢复十二档；完整结果待封存。原生前端已结束，没有并行重前端。
+- 候选修订0/3，parking00性能仍关闭；execution_complete、positive_effect_supported、novelty_supported、paper_ready分别false。setup_r01是内部实验设置草稿，无投稿结论。
 
-证据：[数据及接口审计](../artifacts/data_audit)、[状态JSON](GOAL_STATE.json)、[运行索引](RUN_REGISTER.csv)、[人工清单](USER_ACTION_REQUIRED.md)。旧数据缺失报告属于历史；以此页和状态JSON为当前索引。
-
-B1预登记噪声STD×0.5/1/2的水平RMSE分别4.102491/3.845226/3.702869m，均覆盖100%；按规则选择×2。仅开发基线校准，无候选收益。见artifacts/robot_baselines/KF_noise_screen.json。
-
-完整1×FAST-LIO回放 `20261011T131528442554Z_P2_9d0fac69` launcher exit0，wall1300.9774s，12440/12443帧输出；EOF后模拟时钟停止使节点升级SIGTERM，原生最终计时缺失。缓存 `20261011T134125698776Z_P2_0de7714e` exit0，最大间隔0.125356s，无>0.15s空洞，四元数仅修复六位小数序列化误差；timing_complete=false。新1×回放 `20261011T134909303110Z_P2_626b9771` 正在验证EOF后管理时钟关闭，估计器不变。强基线协议见 configs/baseline_screen_protocol.json，尚未打开外层真实性能。
+证据：docs/reports/P2_full_frontend.md、GOAL_STATE.json、RUN_REGISTER.csv、USER_ACTION_REQUIRED.md。旧缺数据/环境阻塞报告是历史，按此页和真实进程恢复；不重复启动。

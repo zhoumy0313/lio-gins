@@ -1,0 +1,19 @@
+{
+  "phase": "P2",
+  "purpose": "building00_full_1x_replay_EOF_clock_bootstrapped_from_bag_index",
+  "kind": "real_frontend",
+  "input": [
+    "scripts/run_lio.py",
+    "containers/run_inside.sh",
+    "containers/shutdown_clock.py",
+    "containers/derived_rootfs.local.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_lio.py",
+    "data/i2nav-dataset/building00/building00.bag"
+  ]
+}

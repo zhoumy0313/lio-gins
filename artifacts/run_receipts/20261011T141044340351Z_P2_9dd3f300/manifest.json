@@ -1,0 +1,29 @@
+{
+  "run_id": "20261011T141044340351Z_P2_9dd3f300",
+  "phase": "P2",
+  "purpose": "validate_graceful_full_frontend_cache_and_native_timing",
+  "kind": "engineering",
+  "source_commit": "35de523fc681a9f8a50347fc50d524b64d0bf92a",
+  "tracked_dirty_diff_sha256": "529caf01defe629c9e3c8d6486a2eb6025df243bc3056e08c5d2d86a675c34d0",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/build_lio_cache.py": "7d824a8d49da289b7f20decfb84bfff4c1768076ce17ada7ce607983ddb74f1e",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/manifest.json": "64e7fbf7a37535c0fcbe20c1f74980906a46621a17bd3187dcbef3cd16282fde",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/trajectory.csv": "946cd84749c69234015ff2a624251a15f8807098696cd7e2ec91882a6673057e",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/interface_events.csv": "37cce7297d620550d3ae38d52f414f472a11f07c6cdf31ef218f0a908ffca6c6",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/fast_lio_time_log.csv": "f8a10e2b4d613e7f2d37c9d5a24d86610fbbf0aba52f67f0c50d5770765dd7cb",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/frontend_input_identity.json": "b638d08daf250eec6e845aff77c182ba17e72ad8c0d7e66dc0de3e1cbea7df89"
+  },
+  "config_sha256": "097d91daf45cc4a098f7fbbeda4c09c8c9ddf508b86a1e90ff8fdc4f2d792cb9",
+  "created_at": "2026-10-11T14:10:44.353881+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T14:10:44.770271+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

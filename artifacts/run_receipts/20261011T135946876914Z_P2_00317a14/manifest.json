@@ -1,0 +1,24 @@
+{
+  "run_id": "20261011T135946876914Z_P2_00317a14",
+  "phase": "P2",
+  "purpose": "readonly_accounting_of_preflight_orphan_and_active_runs",
+  "kind": "engineering",
+  "source_commit": "35de523fc681a9f8a50347fc50d524b64d0bf92a",
+  "tracked_dirty_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "runner_sha256": "e71ea417f1d10794a95ab846ad6069b21a803c7d081c86347d0f0513e2d483bd",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/audit_unsealed_runs.py": "1dabe4fed89ebb2ba7e531b0b776b9f5b0e7ec57837fe84a161582f2518c64b5",
+    "/home/aaron/lio_gins/outputs/20261011T133756615798Z_P2_813a276b/config_resolved.json": "028fccae13b8de470a3819119b564a9013b0174acfbf44761fb59ee20a2e7cbc"
+  },
+  "config_sha256": "10d684a2fda6f0db4dd069131ce755a5784730c906f80f5c0b6383874fc38bc7",
+  "created_at": "2026-10-11T13:59:46.881774+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "PASSED",
+  "exit_code": 0,
+  "ended_at": "2026-10-11T13:59:46.946192+00:00",
+  "checksum_mode": "regular_file_bytes_or_symlink_target_text_v1"
+}

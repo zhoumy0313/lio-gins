@@ -1,0 +1,22 @@
+{
+  "phase": "P2",
+  "purpose": "same_bag_binary_frontend_repeat_consistency",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/compare_frontend_repeats.py",
+    "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69/frontend_input_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/trajectory.csv",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/frontend_input_identity.json",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771/fast_lio_time_log.csv"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 180.0,
+  "blocked_exit": null,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/compare_frontend_repeats.py",
+    "/home/aaron/lio_gins/outputs/20261011T131528442554Z_P2_9d0fac69",
+    "/home/aaron/lio_gins/outputs/20261011T134909303110Z_P2_626b9771"
+  ]
+}

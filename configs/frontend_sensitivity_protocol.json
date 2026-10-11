@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "declared_after_P2_repeat_variation_before_any_candidate_implementation_or_gain",
+  "development_sequence": "building00",
+  "primary_cache_run": "20261011T141044340351Z_P2_9dd3f300",
+  "primary_cache_reason": "scheduled before outer accuracy because this replay has complete native timing and graceful shutdown; not selected for performance",
+  "sensitivity_cache_run": "20261011T134125698776Z_P2_0de7714e",
+  "sensitivity_cache_limit": "complete poses but missing final timing export; accuracy sensitivity only",
+  "observation": "same bag and binary, paired 12440 frames; raw local 3D pose RMS difference 3.6012884865m and maximum 9.7876400463m; common-initial-gauge removal does not eliminate it",
+  "root_cause_status": "unresolved; identical scan times and initial states, first rounded position difference at 80.199s; asynchronous map/rebuild scheduling is a hypothesis, not proven",
+  "freeze_rule": "no freeze based on only one LIO cache; replay selected B3/B4/B5/B6 and final candidate with identical Q/R and policy parameters on both caches, no retuning on sensitivity cache",
+  "continuation_rule": "apply original >=3% and >=0.1m primary improvement and normal/coverage constraints on both caches",
+  "numerical_effect_rule": "minimum paired primary absolute improvement across caches must exceed the absolute difference between the two improvements; disclose the two-cache range rather than infer independent statistical confidence",
+  "candidate_budget_effect": "replay numerical robustness does not add mechanism or tune configurations; all variants remain in the original <=3 revisions and <=12 main configurations per revision",
+  "heldout_performance_opened": false
+}
