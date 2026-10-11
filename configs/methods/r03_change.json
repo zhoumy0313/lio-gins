@@ -1,0 +1,19 @@
+{
+  "status": "declared_after_r02_insufficient_gain_before_r03_implementation_and_performance",
+  "parent_run": "20261011T144816244929Z_P4_498eb8d9",
+  "diagnostic_run": "20261011T150005869746Z_P4_28de8d9d",
+  "single_change": "rule-qualified anchor retained across GNSS outage/reacquisition",
+  "fixed_r02_parameters": "selected C9: W5s, short score4, good2s; same Q/R, Huber, wait2s/recovery15s/protection15, health and availability",
+  "anchor_score_limits": [4, 9, 16],
+  "anchor_qualification_duration_s": [5, 15],
+  "anchor_Q_growth_multipliers": [1, 4],
+  "main_configs_max": 12,
+  "anchor_qualification": "only previously admitted NORMAL observations with available healthy local evidence, passing short score and nominal NIS<=16.266236 continuously for declared duration; retain latest such raw GNSS observation with its full receiver covariance, no independent-sample averaging",
+  "anchor_scope": "activate held anchor at a true GNSS gap; do not refresh during outage, isolation or recovery; anchor veto adds to same short-window qualification, never replaces a position measurement or updates from an old GNSS twice",
+  "normalization": "R_current_xy+R_anchor_xy+common_Q_time_distance_growth*declared_multiplier; engineering uncertainty, no calibrated integrity probability",
+  "unavailable_rule": "same r02 mature fallback when local health is unavailable; missing rule-qualified anchor leaves short-window behavior with an explicit missing-anchor diagnostic",
+  "identifiability_limit": "sufficient local-motion drift and a stable GNSS bias can generate identical observations; never claim guaranteed identification or elimination of arbitrary persistent offsets",
+  "mandatory_ablations": ["without_anchor (r02 parity)", "without_motion (B6 parity)", "time_only_qualification (all motion/anchor veto disabled)", "without_recovery_decay"],
+  "stop_after_revision": true,
+  "heldout_performance_opened": false
+}
