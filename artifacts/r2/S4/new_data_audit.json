@@ -1,0 +1,56 @@
+{
+  "sequence": "building01",
+  "role": "prospective_new_heldout_metadata_only",
+  "official_documentation_commit": "2ffdca6d56e6432d4daf27c070e570171548f32d",
+  "official_details": {
+    "duration": 1369,
+    "length": 1730,
+    "scene": "indoor/outdoor",
+    "challenge": "illumination",
+    "ground truth": "MM/INS",
+    "GNSS available": true
+  },
+  "metadata_SHA": "74875cc85d069ecc81b170322ec083d62f4ce47e95ed270f243272ac924cba7b",
+  "checksum_document_SHA": "69fccaeaa245b6288006a9accd5e3ab35f06e0591c0a023cb8668c195d576223",
+  "official_bag_SHA": "60931a01bbc0eb05154e895349be24212cb43b6c795c4c91cbb801c7db73b257",
+  "required_files": [
+    {
+      "filename": "building01.bag",
+      "present": false,
+      "bytes": null
+    },
+    {
+      "filename": "building01_ADIS16465_IMU.txt",
+      "present": false,
+      "bytes": null
+    },
+    {
+      "filename": "building01_F9P_GNSS.pos",
+      "present": false,
+      "bytes": null
+    },
+    {
+      "filename": "building01_groundtruth.nav",
+      "present": false,
+      "bytes": null
+    },
+    {
+      "filename": "building01_trajectory.csv",
+      "present": false,
+      "bytes": null
+    }
+  ],
+  "available": false,
+  "sensor_payload_read": false,
+  "reference_payload_read": false,
+  "performance_opened": false,
+  "access_evidence": "artifacts/r2/S0/access_attempts.json",
+  "freeze_complete_for_new_route": false,
+  "GPS_week_policy": "derive explicitly from actual new bag UTC/text mapping before initializer; do not reuse hardcoded2364 without verification",
+  "new_test_preconditions": [
+    "all raw files and official bag digest verified",
+    "actual clock/GNSS coverage/calibration audit",
+    "prospective full input/source/config/scenario/metric freeze Git push",
+    "full matched matrix, no data-dependent tuning"
+  ]
+}

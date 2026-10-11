@@ -1,0 +1,9 @@
+{
+  "runtime": "bubblewrap_user_namespace",
+  "build_run": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c",
+  "rootfs": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs",
+  "binary_sha256": "b57bb87e42e0dfc99214670ba38c839b6bddcb64e81813b047cdb0c8a430afd4",
+  "base_oci_digest": "sha256:4f01fa743be43da0e14ddf2ac29b5118d9c0eb4057c9761c13303b8a52fa9c4f",
+  "prepared_run": "/home/aaron/lio_gins/outputs/20261011T130431070370Z_P2_5ed71f90",
+  "built": true
+}

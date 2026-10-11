@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T182541337525Z_S4_88179de9",
+  "stage": "S4",
+  "purpose": "building01_metadata_and_missing_file_audit",
+  "kind": "engineering",
+  "source_commit": "5f28e07afa007dbacd068cc57d655baca5432ff8",
+  "dirty_diff_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/audit_new_data.py": "18f3c3fb53d1564d51c2d67ba7dfeaa66ee3b54a639e9bb625f05f264aa1fac7",
+    "/home/aaron/lio_gins/third_party/i2Nav-Robot/sequence_detail/i2nav_robot.json": "74875cc85d069ecc81b170322ec083d62f4ce47e95ed270f243272ac924cba7b",
+    "/home/aaron/lio_gins/third_party/i2Nav-Robot/sha256sum/sha256sum.json": "69fccaeaa245b6288006a9accd5e3ab35f06e0591c0a023cb8668c195d576223"
+  },
+  "started_UTC": "2026-10-11T18:25:41.344453+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T18:25:41.376663+00:00"
+}

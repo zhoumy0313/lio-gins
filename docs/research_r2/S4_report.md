@@ -1,0 +1,3 @@
+# S4 — missing independent route; conditional branch
+
+STATUS: metadata/access audit completed, independent execution blocked_external_input. REAL_COMMANDS: audit_new_data.py exit0/0.032s; freeze_analysis.py exit0/0.064s. NUMERIC_EVIDENCE: official bag SHA and documentation only, all5 required files absent. No new-route truth/performance read. Seen-analysis source/config/input/environment identities archived with SHA; new_heldout_opening_authorized=false. FAILURES: same recorded public-share access failures, no login bypass or new account. NEXT: full ModeB six-page-or-less review manuscript with real456-pair results and missing-data limitation. GIT_SHA: `artifacts/r2/checkpoints/S4.json`.

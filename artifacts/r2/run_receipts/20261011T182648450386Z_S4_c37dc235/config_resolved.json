@@ -1,0 +1,15 @@
+{
+  "stage": "S4",
+  "purpose": "seal_seen_analysis_without_new_test_authorization",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/freeze_analysis.py",
+    "configs/r2/protocol_v1.yaml",
+    "artifacts/r2/S4/new_data_audit.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/freeze_analysis.py"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-R2-SUBMISSION",
-  "stage": "S4",
-  "execution_status": "S3_checkpoint_complete",
+  "stage": "S5",
+  "execution_status": "S4_checkpoint_complete",
   "execution_complete": false,
   "pipeline_ready_from_R1": true,
   "new_metric_protocol_documented": true,
@@ -12,16 +12,19 @@
   "independent_case_specific_effect_supported": false,
   "method_increment_supported": false,
   "novelty_supported": false,
-  "paper_mode": "E",
+  "paper_mode": "B",
   "paper_full_source_ready": false,
   "paper_pdf_audited": false,
   "paper_ready_for_author_review": false,
   "formal_submission_ready": false,
-  "remaining_human_actions": [],
+  "remaining_human_actions": [
+    "building01 original files for future independent evaluation",
+    "human authors/affiliations and venue submission decisions"
+  ],
   "R1_base_SHA": "c12a42a3484458e1737e63201792e1122fc99c0d",
   "branch": "research/lio-gins-r2-submission",
-  "updated_UTC": "2026-10-11T18:25:40.137730+00:00",
-  "next_action": "S2 lock P unchanged and audit previously screened NIS controls",
+  "updated_UTC": "2026-10-11T18:27:56.506179+00:00",
+  "next_action": "S5 full numeric manuscript then S6 critical review",
   "method_revisions_used": 0,
   "candidate_configs_max": 8,
   "data_roles": {
@@ -39,6 +42,7 @@
     "S0",
     "S1",
     "S2",
-    "S3"
+    "S3",
+    "S4"
   ]
 }

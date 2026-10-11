@@ -1,0 +1,15 @@
+{
+  "stage": "S4",
+  "purpose": "building01_metadata_and_missing_file_audit",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_new_data.py",
+    "third_party/i2Nav-Robot/sequence_detail/i2nav_robot.json",
+    "third_party/i2Nav-Robot/sha256sum/sha256sum.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_new_data.py"
+  ]
+}
