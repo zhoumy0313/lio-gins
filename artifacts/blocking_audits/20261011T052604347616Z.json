@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-10-11T05:26:04.347616+00:00",
+  "goal_turn": 3,
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "no_progress",
+  "raw_reference_files": {},
+  "docker": null,
+  "podman": null,
+  "derived_image_lock_exists": false,
+  "live_project_tasks": [],
+  "same_external_blocker": true,
+  "data_access_retries_stopped_per_goal": true,
+  "permission_to_install_system_runtime_received": false,
+  "unblocked_scientific_next_action": null,
+  "heldout_opened": false
+}

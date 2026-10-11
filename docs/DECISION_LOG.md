@@ -9,3 +9,5 @@
 - Public data access exhausted bounded probes. New Docker/system service requires user authorization under AGENTS/goal; all user actions consolidated once.
 
 - P1 continuation 02: Verify original FAST-LIO CMake consumes generated Livox and Pose6D headers; add explicit exported-message target dependencies in a separate build patch. Reject changed prepared inputs before container build. No algorithm change, no new data/permissions, no heldout results. Same external blocker revalidated for the second consecutive goal turn.
+
+- Third consecutive goal-turn blocking audit: actual raw/reference directories are empty, no runtime/derived image and no live project job. User action unchanged. Mark blocked rather than repeating automatic continuations or claiming P2–P7 completion; preserve full LIO-GINS-R1 scope and evidence gates.
