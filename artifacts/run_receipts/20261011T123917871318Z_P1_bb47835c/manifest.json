@@ -1,0 +1,26 @@
+{
+  "run_id": "20261011T123917871318Z_P1_bb47835c",
+  "phase": "P1",
+  "purpose": "build_noetic_fastlio_in_project_rootless_namespace",
+  "kind": "engineering",
+  "source_commit": "2f9667c5710a1c6e04179e96a07f8ea77aac7beb",
+  "tracked_dirty_diff_sha256": "854170f117a244d313166a013a96683214c9b24af8ec4ffd94a221dabbc2d254",
+  "runner_sha256": "47bd6d5336b42b1eaf689060f365d038c3ed1b24bcf43fa349170556ead0d54e",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/build_noetic_rootless.py": "8827ad14783ae1c6072daadf26f060018361dd66ad0d1338ce785d0cd65aacf1",
+    "/home/aaron/lio_gins/containers/build_rootless_inside.sh": "96f65b1a5db197cac28b51e028e01e10950ade45881e0e0a98cff95c39692cec",
+    "/home/aaron/lio_gins/scripts/context_integrity.py": "5d273e9b71409f53e24ddf454c21d1e801d7b86486cc6940e4f6a0e1e0af28b7",
+    "/home/aaron/lio_gins/outputs/20261011T123536145200Z_P1_aa57b6d1/pull_identity.json": "9a1783229ce806f46f10d1dc435b4c7dcac68c8fcf1a2705e902254bbababb83",
+    "/home/aaron/lio_gins/outputs/20261011T052215556145Z_P1_a2b55b2f/context_sha256.json": "5e4e233e6951b4358a6f2338a3b80abf9823a40f7b96024fbde5e8cff00be636"
+  },
+  "config_sha256": "c4e96d8dae7490bca7b7de7e09db5216f6caa1bc31b1080f42e7f06d7757425b",
+  "created_at": "2026-10-11T12:39:17.876465+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "FAILED",
+  "exit_code": 1,
+  "ended_at": "2026-10-11T12:39:17.991144+00:00"
+}

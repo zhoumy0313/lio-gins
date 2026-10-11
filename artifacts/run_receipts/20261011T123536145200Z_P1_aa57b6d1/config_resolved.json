@@ -1,0 +1,17 @@
+{
+  "phase": "P1",
+  "purpose": "pull_noetic_rootless_with_verified_range_resume",
+  "kind": "engineering",
+  "input": [
+    "scripts/pull_noetic_oci.py",
+    "containers/base_image.lock.json",
+    "cache/local-tools/umoci/usr/bin/umoci"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/pull_noetic_oci.py"
+  ]
+}

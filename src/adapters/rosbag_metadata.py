@@ -110,6 +110,13 @@ def decode_imu(data):
     return {**h,'orientation_xyzw':orientation,'angular_velocity':angular,'linear_acceleration':linear}
 
 
+def decode_insprobe_imu(data):
+    h,i=message_header(data)
+    week,sow=struct.unpack_from('<Hd',data,i);i+=10
+    a=struct.unpack_from('<12d',data,i)
+    return {**h,'week':week,'sow':sow,'angular_velocity':a[:3],'linear_acceleration':a[3:6],'incremental_angles':a[6:9],'incremental_velocity':a[9:12]}
+
+
 def decode_pointcloud_layout(data):
     h,i=message_header(data);height,width,count=struct.unpack_from('<III',data,i);i+=12;fs=[]
     for _ in range(count):

@@ -30,7 +30,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--phase', required=True)
     p.add_argument('--purpose', required=True)
-    p.add_argument('--kind', default='engineering', choices=['engineering', 'synthetic', 'real_frontend', 'cached_backend'])
+    p.add_argument('--kind', default='engineering', choices=['engineering', 'synthetic', 'real_frontend', 'real_gnss_ins', 'cached_backend'])
     p.add_argument('--input', action='append', default=[])
     p.add_argument('--cwd', default=str(ROOT))
     p.add_argument('--timeout', type=float, default=1800)

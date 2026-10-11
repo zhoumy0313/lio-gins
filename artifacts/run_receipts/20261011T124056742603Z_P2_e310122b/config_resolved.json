@@ -1,0 +1,21 @@
+{
+  "phase": "P2",
+  "purpose": "export_preregistered_single_epoch_development_initial_state",
+  "kind": "engineering",
+  "input": [
+    "scripts/export_initial_condition.py",
+    "configs/initialization_protocol.json",
+    "configs/data_locations.json",
+    "src/adapters/geodesy.py",
+    "data/i2nav-dataset/building00/building00_groundtruth.nav",
+    "data/i2nav-dataset/building00/building00_F9P_GNSS.pos",
+    "data/i2nav-dataset/building00/building00_ADIS16465_IMU.txt"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/export_initial_condition.py"
+  ]
+}
