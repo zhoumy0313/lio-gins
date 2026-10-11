@@ -1,0 +1,13 @@
+{
+  "status": "declared_after_r01_rejection_before_r02_implementation_and_performance",
+  "parent_run": "20261011T143431646773Z_P4_01709632",
+  "diagnostic_run": "20261011T144459710262Z_P4_978b9bc6",
+  "single_change": "evidence availability and fallback hysteresis",
+  "problem": "temporary local-health failure created a latched GNSS quarantine after health returned; six such epochs explain the first natural difference, despite no short-score violation in most configurations",
+  "rule": "maintain same fixed-recovery policy continuously as a shadow decision; extra motion qualification overrides it only after an observed outage or available motion-score violation; nominal NIS protection alone stays in mature shadow policy",
+  "health_rule": "when local evidence is unavailable, use shadow policy and label UNRESOLVED; clear untrusted monitor history and do not manufacture a new GNSS fault; after health returns and before sufficient window exists use shadow policy rather than extra quarantine unless a real motion/outage episode remains",
+  "measurement_use": "shadow policies do not update state; each GNSS still produces at most one actual KF update",
+  "unchanged": ["Q/R", "initialization", "frontend cache", "Huber2.5", "fixed wait2s/recovery15s/protection15", "12 window/score/duration configs", "all event IDs", "normal cap", "metrics"],
+  "anchor_added": false,
+  "r03_requires_new_actual_r02_diagnosis": true
+}
