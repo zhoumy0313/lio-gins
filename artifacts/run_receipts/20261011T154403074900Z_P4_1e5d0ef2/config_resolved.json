@@ -1,0 +1,23 @@
+{
+  "phase": "P4",
+  "purpose": "scientific_freeze_after_sealed_gain_attribution_two_cache_and_exact_transition",
+  "kind": "engineering",
+  "input": [
+    "scripts/freeze_development.py",
+    "outputs/20261011T151637778113Z_P4_bc2078b6/final_verification.json",
+    "outputs/20261011T154244545675Z_P4_ea251746/transition_parity.json",
+    "outputs/20261011T153331485038Z_P4_b784f03b/manifest.json",
+    "configs/contribution_scope.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/freeze_development.py",
+    "outputs/20261011T151637778113Z_P4_bc2078b6",
+    "outputs/20261011T154244545675Z_P4_ea251746",
+    "outputs/20261011T153331485038Z_P4_b784f03b",
+    "configs/contribution_scope.json"
+  ]
+}

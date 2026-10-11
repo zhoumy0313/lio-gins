@@ -1,0 +1,17 @@
+{
+  "phase": "P4",
+  "purpose": "frozen_boundary_identity_check_before_access",
+  "kind": "engineering",
+  "input": [
+    "src/adapters/research_access.py",
+    "freezes/LIO_GINS_R1_20261011T154403129394Z/scientific_freeze.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-c",
+    "from pathlib import Path; from src.adapters.research_access import verify_access; r=verify_access(\"parking00\",\"heldout\",\"freezes/LIO_GINS_R1_20261011T154403129394Z\"); assert not Path(\"docs/TEST_OPENED.json\").exists(); print(r[\"freeze_id\"])"
+  ]
+}

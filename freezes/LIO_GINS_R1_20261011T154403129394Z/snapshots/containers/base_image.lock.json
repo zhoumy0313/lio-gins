@@ -1,0 +1,9 @@
+{
+  "image": "docker.io/library/ros:noetic-ros-base-focal",
+  "index_digest": "sha256:72b8bc59035dc0a5b8e07aae28c16caa84192971d72d207c72ed734fb1d5e97d",
+  "linux_amd64_digest": "sha256:4f01fa743be43da0e14ddf2ac29b5118d9c0eb4057c9761c13303b8a52fa9c4f",
+  "checked_utc": "2026-10-11T05:07:16.479675+00:00",
+  "registry_manifest_verified": true,
+  "image_layers_pulled": false,
+  "container_build_verified": false
+}
