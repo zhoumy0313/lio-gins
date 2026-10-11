@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T175536337399Z_S1_43135aea",
+  "stage": "S1",
+  "purpose": "seen_wrapper_estimator_parity",
+  "kind": "engineering",
+  "source_commit": "c12a42a3484458e1737e63201792e1122fc99c0d",
+  "dirty_diff_SHA": "4978e4914858fff52447716c746b554d1c3ab8eae2cbb04744f853e222ba4be1",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/check_wrapper_parity.py": "c8ac6201ab592e7e86b7fbe0d8feaedeb33bd29431a9584befc2c8298a4f70b8",
+    "/home/aaron/lio_gins/experiments/r2/run_seen_candidate.py": "695aba44985e8f7784cb692d3154c955ff4d87a7b0ca5849f0541b2ba0eae002",
+    "/home/aaron/lio_gins/experiments/r2/run_seen_baseline.py": "a4f851afbbab8d741d36ce52b8ab238f3cefe7234d166b57b4d0c616edb3575d"
+  },
+  "started_UTC": "2026-10-11T17:55:36.344455+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T17:55:45.584887+00:00"
+}

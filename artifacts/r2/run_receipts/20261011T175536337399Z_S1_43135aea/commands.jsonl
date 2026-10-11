@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/check_wrapper_parity.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T17:55:36.344455+00:00", "ended_UTC": "2026-10-11T17:55:45.584887+00:00", "exit_code": 0, "wall_seconds": 9.240202554999996, "CPU_user_s": 8.941362, "CPU_system_s": 0.18839399999999998, "max_RSS_KiB": 62516, "executed": true}

@@ -1,0 +1,13 @@
+{
+  "stage": "S0",
+  "purpose": "project_local_verified_Tectonic",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/bootstrap_tex.py"
+  ],
+  "timeout": 240.0,
+  "command": [
+    "python3",
+    "experiments/r2/bootstrap_tex.py"
+  ]
+}

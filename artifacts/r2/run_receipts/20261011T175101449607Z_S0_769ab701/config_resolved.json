@@ -1,0 +1,16 @@
+{
+  "stage": "S0",
+  "purpose": "building01_anonymous_metadata_access_only",
+  "kind": "engineering",
+  "input": [
+    "scripts/probe_public_data.py"
+  ],
+  "timeout": 130.0,
+  "command": [
+    "env",
+    "HTTPS_PROXY=http://127.0.0.1:7890",
+    "HTTP_PROXY=http://127.0.0.1:7890",
+    "python3",
+    "scripts/probe_public_data.py"
+  ]
+}

@@ -1,0 +1,1 @@
+Both pages rendered with pdftoppm and visually inspected. No clipped diagram, overlap, blank page, or unrendered math. Two pages including references. This is a retained structure draft, not final results.

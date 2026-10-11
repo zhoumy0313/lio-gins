@@ -1,0 +1,24 @@
+[
+  {
+    "original": "scripts/run_candidate.py",
+    "original_SHA": "6cc55c48611e0452f4826fc2d885d6aff1659353d6b094a828793a3d0eb46948",
+    "R2_copy": "experiments/r2/run_seen_candidate.py",
+    "changes": [
+      "project root depth",
+      "seen-route gate instead of R1 historical heldout gate",
+      "R2 metadata tag"
+    ],
+    "estimator_changes": false
+  },
+  {
+    "original": "scripts/run_outer_baseline.py",
+    "original_SHA": "525851aa5445c74f54f9b8a86536cd4a1e44bdefdd1e2be75b5e54d76ecc79ef",
+    "R2_copy": "experiments/r2/run_seen_baseline.py",
+    "changes": [
+      "project root depth",
+      "seen-route gate instead of R1 historical heldout gate",
+      "R2 metadata tag"
+    ],
+    "estimator_changes": false
+  }
+]

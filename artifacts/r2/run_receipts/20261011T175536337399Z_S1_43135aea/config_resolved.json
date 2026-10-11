@@ -1,0 +1,15 @@
+{
+  "stage": "S1",
+  "purpose": "seen_wrapper_estimator_parity",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/check_wrapper_parity.py",
+    "experiments/r2/run_seen_candidate.py",
+    "experiments/r2/run_seen_baseline.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/r2/check_wrapper_parity.py"
+  ]
+}

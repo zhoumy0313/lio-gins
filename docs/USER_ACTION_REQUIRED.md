@@ -1,9 +1,7 @@
-# 一次性人工行动清单 — LIO-GINS-R1
+# One-time action list — LIO-GINS-R2-SUBMISSION
 
-2026-10-12最终更新：**无阻塞本轮条件性交付的必需人工操作**。
+The only missing research input is **building01**, for a genuinely new independent route. Place the official original files under `data/i2nav-dataset/building01/`: `building01.bag`, `building01_ADIS16465_IMU.txt`, `building01_F9P_GNSS.pos`, `building01_groundtruth.nav`, and `building01_trajectory.csv`. Keep any original auxiliary files. Do not rename another route.
 
-用户提供的16个原件已全审计，两个bag SHA匹配官方；现有Bubblewrap/项目umoci及隔离Noetic已解决运行时，无sudo或宿主修改。building00开发和冻结parking00矩阵均已执行；后补强控制反证使新增机制优势不成立，不要求新数据继续搜索。
+Anonymous official OneDrive probes failed with TLS unexpected EOF twice; the Baidu alternate returned a password/share-init HTML page, not sensor data. Evidence: `artifacts/r2/S0/access_attempts.json`. No account login, captcha, or paid action has been performed. Existing data, cached comparisons, writing, PDF compilation, and audits continue without this input. New-route performance stays closed until an actual scientific freeze and Git checkpoint. If data remains unavailable, the manuscript will explicitly report seen-route evidence only, and independent validation will remain false.
 
-可选未来补充仅为官方local NED地理原点（如已有），可扩展绝对地理参考解释；当前结果明确为受控共同初态下的位置误差，本轮不等待。任何新场景研究需另定协议，parking00不能再次当未见过的留出。
-
-无需账号、付费、署名或投稿权限；本轮不进行这些操作。原始数据只有本地一份，异地备份未验证，SHA不是备份。没有项目remote，仅本地checkpoint。
+Authorship, affiliations, venue/account decisions, and formal submission are excluded from autonomous execution and belong to the later human submission checklist; no such permissions are requested to finish the research deliverables. Raw-data remote backup is not verified. The former R1 list is retained in `docs/research_r2/R1_USER_ACTION_REQUIRED_ARCHIVE.md`.

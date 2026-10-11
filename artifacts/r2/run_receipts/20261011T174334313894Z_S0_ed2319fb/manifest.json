@@ -1,0 +1,25 @@
+{
+  "goal_id": "LIO-GINS-R2-SUBMISSION",
+  "run_id": "20261011T174334313894Z_S0_ed2319fb",
+  "stage": "S0",
+  "purpose": "exact_R1_data_cache_source_inheritance",
+  "kind": "engineering",
+  "source_commit": "c12a42a3484458e1737e63201792e1122fc99c0d",
+  "dirty_diff_SHA": "7f53789c1abedd660f07f72d828d19b6874c212f42bcb769133e48bd76468b78",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/audit_inheritance.py": "fdd53ca302597fa972cc05888b3aa45662d51105fda0867a3ef736c0c6b9f9b2",
+    "/home/aaron/lio_gins/docs/GOAL_LIO_GINS_R2_SUBMISSION.md": "5a76158ad457946f23256e94b164a314df527202c6eb74010570d2cd5117ea06"
+  },
+  "started_UTC": "2026-10-11T17:43:34.320707+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "seen_analysis_unless_explicitly_frozen_new_heldout",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-11T17:44:35.485614+00:00"
+}

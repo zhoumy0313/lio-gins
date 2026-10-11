@@ -2,13 +2,13 @@
 
 ## 当前目标
 
-先读 `docs/GOAL_LIO_GINS_R1.md` 和 `configs/project_intent.yaml`。
-本目标是 `LIO-GINS-R1`；当前项目是独立定位研究，不是旧 VPR 项目的新版本。
+先读 `docs/GOAL_LIO_GINS_R2_SUBMISSION.md`、`docs/research_r2/STATE.json` 和 `configs/r2/protocol_draft.json`。
+当前完整目标是 `LIO-GINS-R2-SUBMISSION`，按S0→S7执行；R1固定于c12a42a，全部旧源码/实验/草稿和NO_ADDITIONAL_GAIN保持不变。当前项目不是旧VPR的新版本。
 主线：LIO 相对运动传播 + 接收机 GNSS 位置更新 + 运动验证的观测恢复管理；KF-GINS 为独立 GNSS/INS 对照。
 
 ## 自动执行
 
-按目标文档 P0→P7 自主推进；创建真实状态文件并保留历史。遇到缺少数据、权限或账号，执行其余不受阻任务，集中写入一次性 `docs/USER_ACTION_REQUIRED.md`。
+按R2目标文档 S0→S7 自主推进；创建真实状态文件并保留历史。遇到缺少数据、权限或账号，执行其余不受阻任务，集中写入一次性 `docs/research_r2/USER_ACTION_REQUIRED.md`（根清单仅作R2入口）。
 不要虚构 Goal 注册命令。当前客户端可以读文档并执行任务即可；上下文中断后读状态、Git、进程与日志恢复。
 
 ## 修改边界
@@ -21,8 +21,10 @@
 
 ## 研究与输出
 
-- P3 先做匹配强基线，再在开发数据上最多三轮有界机制修订。
-- 开发证据不支持时不打开留出性能，不自动生产一篇“失败研究”投稿稿，也不无限搜索。
+- 先完整固定等待2/5/10/15/30/60/90和NIS/Huber强对照，R2最多一次有证据的局部修订、最多8配置。
+- building00/parking00均已见；新路线优先building01，方法/服务/评价/输入冻结提交后才开独立测试；不无限搜索。
+- 无论结论如何都交完整≤6页英文源稿/可审阅PDF/图表/证据映射/投稿检查单；没有增量则实证案例稿，不虚构正向贡献。论文自S0与实验同步推进。
+- 用户已授权zhoumy0313/lio-gins的R2分支，每阶段checkpoint并推送，先检查敏感内容与体积，禁止force/push旧R1分支。
 - 真值仅用于明确的初始化协议/离线评价；不进入在线可信度或更新权重。
 - 每条 GNSS 只更新一次；差分作监测，不重复当独立量测；不高频注入 KF-GINS 后验。
 - 论文可以按机制组织为框架，但实现必须注明 FAST-LIO2/KF-GINS；小幅改进不保证录用。

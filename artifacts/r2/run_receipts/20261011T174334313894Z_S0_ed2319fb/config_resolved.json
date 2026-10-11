@@ -1,0 +1,14 @@
+{
+  "stage": "S0",
+  "purpose": "exact_R1_data_cache_source_inheritance",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_inheritance.py",
+    "docs/GOAL_LIO_GINS_R2_SUBMISSION.md"
+  ],
+  "timeout": 600.0,
+  "command": [
+    ".venv/bin/python",
+    "experiments/r2/audit_inheritance.py"
+  ]
+}

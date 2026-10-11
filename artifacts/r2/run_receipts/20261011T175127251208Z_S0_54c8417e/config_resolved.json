@@ -1,0 +1,15 @@
+{
+  "stage": "S0",
+  "purpose": "compile_full_English_r2_r01",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/build_paper.py",
+    "paper/versions/r2_r01/main.tex"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "python3",
+    "experiments/r2/build_paper.py",
+    "paper/versions/r2_r01"
+  ]
+}

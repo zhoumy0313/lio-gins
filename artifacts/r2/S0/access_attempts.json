@@ -1,0 +1,24 @@
+[
+  {
+    "attempt": "onedrive_attempt1",
+    "url": "https://1drv.ms/f/c/7da41598f6f07e02/EgJ-8PaYFaQggH3CBQAAAAABlmP45s_NHaBuLd3xXk04AA?e=sMNBhd",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)>",
+    "data_downloaded": false
+  },
+  {
+    "attempt": "onedrive_attempt2",
+    "url": "https://1drv.ms/f/c/7da41598f6f07e02/EgJ-8PaYFaQggH3CBQAAAAABlmP45s_NHaBuLd3xXk04AA?e=sMNBhd",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)>",
+    "data_downloaded": false
+  },
+  {
+    "attempt": "baidu_alternate",
+    "url": "https://pan.baidu.com/s/1UGZI-LvoTKxH6GN6JbzMZw?pwd=hs6p",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes_read": 16040,
+    "final_url": "https://pan.baidu.com/share/init?surl=UGZI-LvoTKxH6GN6JbzMZw&pwd=hs6p",
+    "data_downloaded": false,
+    "response_is_dataset": false
+  }
+]

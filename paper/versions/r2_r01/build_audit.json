@@ -1,0 +1,9 @@
+{
+  "pages": 2,
+  "within_six_pages": true,
+  "PDF_SHA256": "ad71a79207434b8a046ccfef4bc8f5e07a9b69bbb8a19e0a336314a7f4ac62ce",
+  "compiler_SHA256": "a98aa59ad5c1df39a6c9e56cbfc5088f2b11d6c179c0130b97998e4bd46a46da",
+  "sources": {
+    "main.tex": "fb76b3c655cb7efe078d09149d4ec405de3161728e83eb78f16e869f2b138083"
+  }
+}

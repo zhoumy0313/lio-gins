@@ -19,3 +19,6 @@ docs/reference/
 *.pem
 # 可复现数值/脚本/配置/图表经检查后保存 artifacts/ 并按许可提交。
 # 本规则不负责删除文件；本地实验与原件始终保留。
+
+# R2 retained full outputs stay local; lightweight evidence and PDF versions tracked.
+outputs_r2/

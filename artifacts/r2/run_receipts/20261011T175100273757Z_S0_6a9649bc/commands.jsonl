@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/bootstrap_tex.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T17:51:00.289553+00:00", "ended_UTC": "2026-10-11T17:51:03.422344+00:00", "exit_code": 0, "wall_seconds": 3.1325240270016366, "CPU_user_s": 0.359948, "CPU_system_s": 0.11262699999999999, "max_RSS_KiB": 56000, "executed": true}

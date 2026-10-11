@@ -1,0 +1,1 @@
+{"argv": [".venv/bin/python", "experiments/r2/audit_inheritance.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-11T17:43:34.320707+00:00", "ended_UTC": "2026-10-11T17:44:35.485614+00:00", "exit_code": 0, "wall_seconds": 61.16468714999792, "CPU_user_s": 36.240425, "CPU_system_s": 24.874673, "max_RSS_KiB": 16756, "executed": true}
