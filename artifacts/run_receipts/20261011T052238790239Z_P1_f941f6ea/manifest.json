@@ -1,0 +1,24 @@
+{
+  "run_id": "20261011T052238790239Z_P1_f941f6ea",
+  "phase": "P1",
+  "purpose": "resume_readonly_dataset_audit",
+  "kind": "engineering",
+  "source_commit": "8ce68fbcb1d0370f5c20511dc4f0ec6eb1a3b991",
+  "tracked_dirty_diff_sha256": "6eea2dc2b37e39de23a83cb7d343cf0d94155db5d555f9e2c13748341116b67c",
+  "runner_sha256": "f1ee3e596e051de59040ffbf033c97e603a50931cbd7a61f9c45b8d2930a75a8",
+  "input_sha256": {
+    "/home/aaron/lio_gins/scripts/audit_data.py": "e67731d6db6d1f9d21623b1aab6c716214fed8b5cadf7a443ab75b400ee12b87",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "/home/aaron/lio_gins/src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30"
+  },
+  "config_sha256": "c3743e5f0c3ec2bc36030e433aad313e7753fdf8bf8f9df91ef4c94043444e0a",
+  "created_at": "2026-10-11T05:22:38.794615+00:00",
+  "backup": {
+    "local_preserved": true,
+    "remote_numeric_backed_up": false,
+    "raw_data_backed_up": false
+  },
+  "status": "BLOCKED",
+  "exit_code": 2,
+  "ended_at": "2026-10-11T05:22:38.909465+00:00"
+}

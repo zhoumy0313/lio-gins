@@ -1,0 +1,23 @@
+{
+  "phase": "P1",
+  "purpose": "context_integrity_tamper_tests",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_context_integrity.py",
+    "scripts/context_integrity.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_context_integrity.py",
+    "-v"
+  ]
+}

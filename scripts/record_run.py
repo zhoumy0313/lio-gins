@@ -89,7 +89,7 @@ def main():
     for name in ['manifest.json', 'commands.jsonl', 'config_resolved.json', 'SHA256SUMS']:
         (receipt / name).write_bytes((out / name).read_bytes())
     with (ROOT / 'docs/RUN_REGISTER.csv').open('a') as f:
-        csv.writer(f).writerow([rid, a.phase, a.purpose, manifest['status'], str(out / 'manifest.json')])
+        csv.writer(f, lineterminator='\n').writerow([rid, a.phase, a.purpose, manifest['status'], str(out / 'manifest.json')])
     print(json.dumps({'run_id': rid, 'exit_code': rc, 'output': str(out), 'wall_seconds': command['wall_seconds']}), flush=True)
     return rc if rc >= 0 else 128 - rc
 

@@ -3,7 +3,7 @@
 __pycache__/
 .pytest_cache/
 *.pyc
-build/
+/build/
 cache/
 outputs/
 third_party/

@@ -11,3 +11,5 @@
 详情：[P1报告](reports/P1.md)、[统一人工清单](USER_ACTION_REQUIRED.md)、[运行索引](RUN_REGISTER.csv)、[状态JSON](GOAL_STATE.json)。
 
 数据/运行时具备后执行：`.venv/bin/python scripts/resume.py`，然后按目标P2完成时间、标定、初始化和两条真实基线。旧VPR与系统设置未改；仅本地checkpoint，无remote和异地备份。没有后台运行中的实验。
+
+P1续检：消息生成依赖构建补丁与构建上下文SHA拒绝机制已验证应用；另3项完整性测试通过。最新上下文位于 `outputs/20261011T052215556145Z_P1_a2b55b2f/container_context`。运行时仍缺（exit127），数据仍缺（exit2），无新科研性能结果。见 `reports/P1_continuation_02.md`。

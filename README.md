@@ -28,10 +28,10 @@ With an already usable Docker daemon, prepare/build the isolated ROS environment
 
 ```bash
 python3 scripts/record_run.py --phase P1 --purpose noetic_context --input scripts/prepare_noetic_context.py --input containers/Dockerfile.noetic --input containers/run_inside.sh -- .venv/bin/python scripts/prepare_noetic_context.py
-python3 scripts/record_run.py --phase P1 --purpose noetic_build --blocked-exit 127 --input scripts/build_noetic.py -- python3 scripts/build_noetic.py outputs/CONTEXT_RUN_ID
+python3 scripts/record_run.py --phase P1 --purpose noetic_build --blocked-exit 127 --input scripts/build_noetic.py --input scripts/context_integrity.py -- python3 scripts/build_noetic.py outputs/CONTEXT_RUN_ID
 ```
 
-The Dockerfile pins a verified official base manifest. The derived image, apt package versions, build and replay are currently **unverified** because Docker is absent. The build context preserves original FAST-LIO algorithm parameters, applies only a separate logging patch, and includes a pinned Livox message-only compatibility package for the otherwise unused Livox header dependency. It is for AT128, not a complete Livox driver. See [source audit](docs/FASTLIO_SOURCE_AUDIT.md).
+The build entry verifies every prepared context file against its SHA manifest before invoking Docker. The Dockerfile pins a verified official base manifest. The derived image, apt package versions, build and replay are currently **unverified** because Docker is absent. The build context preserves original FAST-LIO algorithm parameters, applies separate logging and message-generation build-dependency patches, and includes a pinned Livox message-only compatibility package for the otherwise unused Livox header dependency. It is for AT128, not a complete Livox driver. See [source audit](docs/FASTLIO_SOURCE_AUDIT.md).
 
 After a verified container build and bag SHA, the P2 development frontend entry is:
 

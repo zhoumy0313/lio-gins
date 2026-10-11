@@ -7,3 +7,5 @@
 - AT128 logging timestamp differs from scan-end state: keep a separate instrumentation patch, applied only in copied build context. Compilation/replay pending.
 - B6 must include an explicitly labeled local adaptation of known recovery covariance protection. Novelty unverified; no manuscript claims or author list.
 - Public data access exhausted bounded probes. New Docker/system service requires user authorization under AGENTS/goal; all user actions consolidated once.
+
+- P1 continuation 02: Verify original FAST-LIO CMake consumes generated Livox and Pose6D headers; add explicit exported-message target dependencies in a separate build patch. Reject changed prepared inputs before container build. No algorithm change, no new data/permissions, no heldout results. Same external blocker revalidated for the second consecutive goal turn.

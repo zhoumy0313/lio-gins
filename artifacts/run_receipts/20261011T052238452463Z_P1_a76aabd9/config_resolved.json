@@ -1,0 +1,18 @@
+{
+  "phase": "P1",
+  "purpose": "verified_noetic_context_runtime_gate",
+  "kind": "engineering",
+  "input": [
+    "scripts/build_noetic.py",
+    "scripts/context_integrity.py",
+    "outputs/20261011T052215556145Z_P1_a2b55b2f/context_sha256.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": 127,
+  "command": [
+    "python3",
+    "scripts/build_noetic.py",
+    "outputs/20261011T052215556145Z_P1_a2b55b2f"
+  ]
+}

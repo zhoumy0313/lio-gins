@@ -13,3 +13,5 @@ AT128 不需运行 Livox 硬件驱动，但 CMake/头文件依赖 `livox_ros_dri
 Noetic 官方 linux/amd64 registry manifest 已核实 digest，见 `containers/base_image.lock.json`。容器 recipe 使用该 digest、记录容器 apt 包清单、最多 -j4；原 bag 只读、独立输出可写、无 host network/privileged/home/socket 挂载。运行脚本仍未实测，bag播放结束后的前端排空及覆盖率必须核查；不能把 rate=1 的回放 wall time 直接当算法计算时延。
 
 构建尝试 `python3 scripts/build_noetic.py <prepared-run>` 实际退出127：Docker不存在。没有拉取 layer、没有 build，也没有 ROS 前端轨迹。此阻塞需要用户提供已可用的容器运行时或明确授权系统服务安装。
+
+续检补充：共同源同时包含 `livox_ros_driver/CustomMsg.h` 与 `fast_lio/Pose6D.h`，但可执行目标原先没有依赖相应生成目标。`patches/build/fastlio_generated_message_dependencies.patch` 单独增加 catkin exported-message dependencies，保留算法实现与参数。新上下文为 `outputs/20261011T052215556145Z_P1_a2b55b2f/container_context`，构建入口实际核验83个文件后才检查运行时；修改/缺失/额外文件或符号链接拒绝构建。新增3项完整性测试通过，实际ROS编译仍未验证。旧上下文及日志补丁保留。

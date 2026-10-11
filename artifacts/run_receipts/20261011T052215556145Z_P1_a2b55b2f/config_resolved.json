@@ -1,0 +1,19 @@
+{
+  "phase": "P1",
+  "purpose": "noetic_context_with_message_build_dependencies",
+  "kind": "engineering",
+  "input": [
+    "scripts/prepare_noetic_context.py",
+    "configs/sources.lock.json",
+    "configs/dependencies.lock.json",
+    "containers/Dockerfile.noetic",
+    "containers/run_inside.sh"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/prepare_noetic_context.py"
+  ]
+}

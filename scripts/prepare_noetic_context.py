@@ -28,6 +28,11 @@ if lockpath.exists():
 else:
     lockpath.write_text(json.dumps({'dependencies':deps},indent=2)+'\n')
 up=root/'third_party/i2Nav-Robot-Baseline/FAST_LIO'
+baseline_expected=next(x['commit'] for x in json.loads((root/'configs/sources.lock.json').read_text())['sources'] if x['name']=='i2Nav-Robot-Baseline')
+baseline_actual=subprocess.check_output(['git','-C',str(up.parent),'rev-parse','HEAD'],text=True).strip()
+baseline_dirty=subprocess.check_output(['git','-C',str(up.parent),'status','--porcelain'],text=True).strip()
+if baseline_actual!=baseline_expected or baseline_dirty:
+    raise RuntimeError('baseline differs from clean frozen source')
 shutil.copytree(up,context/'fast_lio')
 configpath=context/'fast_lio/config/i2nav.yaml'
 text=configpath.read_text()
@@ -54,6 +59,17 @@ patchpath.write_text(patch)
 shutil.copy2(patchpath,context/'logging.patch')
 r=subprocess.run(['patch','--batch','-p1','-i',str(context/'logging.patch')],cwd=context/'fast_lio')
 r.check_returncode()
+cmake_original=(up/'CMakeLists.txt').read_text()
+line='add_executable(fastlio_mapping src/laserMapping.cpp include/ikd-Tree/ikd_Tree.cpp src/preprocess.cpp)'
+if cmake_original.count(line)!=1:raise RuntimeError('upstream target declaration changed')
+cmake_modified=cmake_original.replace(line,line+'\nadd_dependencies(fastlio_mapping ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})')
+build_patch=''.join(difflib.unified_diff(cmake_original.splitlines(True),cmake_modified.splitlines(True),fromfile='a/CMakeLists.txt',tofile='b/CMakeLists.txt'))
+build_patchpath=root/'patches/build/fastlio_generated_message_dependencies.patch'
+if build_patchpath.exists() and build_patchpath.read_text()!=build_patch:
+    raise RuntimeError('refuse changing existing build patch')
+build_patchpath.write_text(build_patch)
+shutil.copy2(build_patchpath,context/'build.patch')
+subprocess.run(['patch','--batch','-p1','-i',str(context/'build.patch')],cwd=context/'fast_lio',check=True)
 msg=context/'livox_ros_driver/msg';msg.mkdir(parents=True)
 for name in ['CustomMsg.msg','CustomPoint.msg']:
     shutil.copy2(root/'third_party/livox_ros_driver/livox_ros_driver/msg'/name,msg/name)

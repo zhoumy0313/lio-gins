@@ -1,0 +1,17 @@
+{
+  "phase": "P1",
+  "purpose": "resume_readonly_dataset_audit",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/scripts/audit_data.py",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": 2,
+  "command": [
+    "/home/aaron/lio_gins/.venv/bin/python",
+    "/home/aaron/lio_gins/scripts/audit_data.py"
+  ]
+}
