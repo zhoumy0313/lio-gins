@@ -1,0 +1,26 @@
+{
+  "phase": "P4",
+  "purpose": "pure_rotation_nonzero_lever_has_no_false_translation_or_motion_veto",
+  "kind": "synthetic",
+  "input": [
+    "tests/test_candidate_rotation.py",
+    "scripts/run_candidate.py",
+    "src/observation_manager/availability_recovery.py",
+    "src/observation_manager/motion_recovery.py",
+    "src/adapters/geodesy.py"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_candidate_rotation.py",
+    "-v"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-R1",
   "phase": "P4",
-  "execution_status": "r02_availability_tests_passed_finite_search_starting",
+  "execution_status": "r02_no_sufficient_gain_preparing_final_anchor_revision",
   "execution_complete": false,
   "pipeline_ready": true,
   "development_effect_supported": false,
@@ -17,11 +17,11 @@
   "latest_run_id": "20261011T142204162662Z_P3_379df059",
   "freeze_id": null,
   "blocked_on": [],
-  "next_action": "complete_r02_then_compare_normal_cost_and_constant_bias_before_any_r03",
-  "updated_at": "2026-10-11T14:48:16.208483+00:00",
+  "next_action": "preregister_r03_anchor_only_test_then_12_configs_stop_new_search",
+  "updated_at": "2026-10-11T15:00:06.096546+00:00",
   "completion_class": "PIPELINE_READY_RESEARCH_IN_PROGRESS",
   "candidate_mechanism_revisions_used": 2,
-  "main_candidate_configs_run": 12,
+  "main_candidate_configs_run": 24,
   "official_kf_demo_passed": true,
   "official_noetic_manifest_verified": true,
   "noetic_container_built": true,
@@ -31,7 +31,7 @@
     "P1": "complete_demo_data_and_isolated_Noetic_build",
     "P2": "two_real_frontends_native_timing_and_34_tests_passed_repeat_variation_unresolved",
     "P3": "complete_112_matched_controls_all_coverage_1",
-    "P4": "r02_availability_hysteresis_revision_12_configs_starting",
+    "P4": "r02_normal_cost_restored_insufficient_gain_r03_anchor_justified",
     "P5": "not_started_heldout_closed",
     "P6": "not_started_evidence_gate",
     "P7": "partial_recovery_index_only"
@@ -64,5 +64,5 @@
   },
   "strongest_development_baseline": "B6_C9",
   "frontend_sensitivity_required_before_freeze": true,
-  "active_candidate_run": "20261011T144816244929Z_P4_498eb8d9"
+  "active_candidate_run": null
 }

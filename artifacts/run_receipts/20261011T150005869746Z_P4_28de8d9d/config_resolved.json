@@ -1,0 +1,19 @@
+{
+  "phase": "P4",
+  "purpose": "r02_remaining_persistent_bias_and_normal_cost_diagnosis",
+  "kind": "engineering",
+  "input": [
+    "scripts/diagnose_candidate_revision.py",
+    "outputs/20261011T144816244929Z_P4_498eb8d9/candidate_screen.json",
+    "outputs/20261011T141054205503Z_P3_e03a0b15/selected_baselines.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/diagnose_candidate_revision.py",
+    "outputs/20261011T144816244929Z_P4_498eb8d9",
+    "outputs/20261011T141054205503Z_P3_e03a0b15"
+  ]
+}

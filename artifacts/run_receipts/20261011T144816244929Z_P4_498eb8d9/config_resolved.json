@@ -1,0 +1,23 @@
+{
+  "phase": "P4",
+  "purpose": "r02_preregistered_12_evidence_availability_configs",
+  "kind": "engineering",
+  "input": [
+    "scripts/screen_candidate.py",
+    "scripts/replay_experiment_batch.py",
+    "scripts/run_candidate.py",
+    "src/observation_manager/motion_recovery.py",
+    "src/observation_manager/availability_recovery.py",
+    "configs/methods/r02_plan.json",
+    "configs/methods/r02_change.json",
+    "configs/method_search_protocol.json"
+  ],
+  "cwd": "/home/aaron/lio_gins",
+  "timeout": 1800.0,
+  "blocked_exit": null,
+  "command": [
+    ".venv/bin/python",
+    "scripts/screen_candidate.py",
+    "configs/methods/r02_plan.json"
+  ]
+}
