@@ -11,12 +11,13 @@ from src.fusion.position_kf import PositionKF
 from src.fusion.fixed_recovery import FixedRecovery
 from src.observation_manager.motion_recovery import MotionRecovery
 from src.observation_manager.availability_recovery import AvailabilityRecovery
+from src.observation_manager.anchored_recovery import AnchoredRecovery
 p=argparse.ArgumentParser();p.add_argument('cache_run');p.add_argument('initialization_run');p.add_argument('config');p.add_argument('--gnss-ned');a=p.parse_args()
 root=Path(__file__).resolve().parents[1];out=Path(os.environ['LIO_GINS_RUN_DIR']);cache=Path(a.cache_run).resolve();ic_path=Path(a.initialization_run)/'initial_condition.json';ic=json.loads(ic_path.read_text());conf=json.loads(Path(a.config).read_text());cache_id=json.loads((cache/'cache_identity.json').read_text());cache_path=cache/'lio_cache.npz'
 if ic['sequence']!='building00' or cache_id['role']!='development':raise ValueError('heldout replay is closed')
 if hashlib.sha256(cache_path.read_bytes()).hexdigest()!=cache_id['cache_sha256']:raise ValueError('cache identity changed')
 method=conf['method']
-if method not in ['P','P_without_motion','P_time_only','P_without_decay']:raise ValueError('candidate or declared ablation required')
+if method not in ['P','P_without_motion','P_time_only','P_without_decay','P_without_anchor']:raise ValueError('candidate or declared ablation required')
 c=np.load(cache_path);buffer=BufferedLIO(c['sow'],c['position'],c['quaternion_xyzw'],c['available_sow'],max_span_s=conf['max_LIO_span_s'])
 deadline=conf.get('max_LIO_availability_delay_s',.25)
 if not np.isfinite(deadline) or deadline<=0:raise ValueError('finite positive availability deadline required')
@@ -41,8 +42,9 @@ end=float(c['sow'][-1]);grid=np.arange(int(np.ceil(start*10)),int(np.floor(end*1
 # All raw sensor-supported times stay in the output, even after reference ends.
 g=g[(g[:,1]>start)&(g[:,1]<=grid[-1])];events=np.unique(np.r_[grid,g[:,1]])
 grid_set=set(grid.tolist())
-manager_type=AvailabilityRecovery if conf.get('revision')=='r02' else MotionRecovery
-recovery=FixedRecovery(**conf['recovery']) if method=='P_without_motion' else manager_type(**conf['recovery'],**conf['motion'],q_time_m2ps=conf['q_time_m2ps'],q_distance_m2pm=conf['q_distance_m2pm'],check_motion=method!='P_time_only',decay=method!='P_without_decay')
+manager_type={'r01':MotionRecovery,'r02':AvailabilityRecovery,'r03':AnchoredRecovery}[conf.get('revision','r01')]
+extra_manager={**conf['anchor'],'use_anchor':method!='P_without_anchor'} if conf.get('revision')=='r03' else {}
+recovery=FixedRecovery(**conf['recovery']) if method=='P_without_motion' else manager_type(**conf['recovery'],**conf['motion'],**extra_manager,q_time_m2ps=conf['q_time_m2ps'],q_distance_m2pm=conf['q_distance_m2pm'],check_motion=method!='P_time_only',decay=method!='P_without_decay')
 last_l=initial['position'];last_t=start;previous_output_available=initial['available_time'];gid=0;rows=[];updates=[];replay_start=time.monotonic();broken=False;travel=0.;state_rows=[]
 for t in events:
     l=buffer.query(t,available_until=t+deadline)
@@ -67,8 +69,10 @@ for t in events:
                 else:
                     healthy=min(c['effective_points'][l['left']],c['effective_points'][l['right']])>=conf['health_min_points'] and max(c['mean_abs_plane_residual_m'][l['left']],c['mean_abs_plane_residual_m'][l['right']])<=conf['health_max_residual_m']
                     local_antenna=A@(l['position']-initial['position'])+translation+R_nb@lever
-                    decision=recovery.decide(float(t),row[2:5],local_antenna,r,nominal_nis,healthy=healthy,travel_m=travel)
+                    extra_observation={'observation_id':obs_id} if conf.get('revision')=='r03' else {}
+                    decision=recovery.decide(float(t),row[2:5],local_antenna,r,nominal_nis,healthy=healthy,travel_m=travel,**extra_observation)
                     log.update(motion_score=decision['motion_score'],qualification_elapsed_s=decision['qualification_elapsed_s'],motion_reason=decision['reason'],local_health_verified=bool(healthy))
+                    log.update({k:v for k,v in decision.items() if k.startswith('anchor_')})
                 log['state']=decision['state'];protection=decision['r_multiplier']
                 if decision['admit']:
                     policy='huber'
@@ -80,6 +84,8 @@ for t in events:
     if t in grid_set:
         rows.append([t,*kf.p,available,available-t,1])
         phase=recovery.output_state(t) if method!='P_without_motion' else recovery.state
+        valid_gnss_time=recovery.last_t if recovery.last_t is not None else start
+        if t-valid_gnss_time>conf['recovery']['gap_s']:phase='OUTAGE'
         state_rows.append({'sow':float(t),'state':phase,'covariance_trace_m2':float(np.trace(kf.P))})
 np.savetxt(out/'trajectory.csv',np.array(rows),delimiter=',',header='sow,N,E,D,available_sow,delay_s,valid',comments='')
 (out/'per_state.jsonl').write_text(''.join(json.dumps(v)+'\n' for v in state_rows))
