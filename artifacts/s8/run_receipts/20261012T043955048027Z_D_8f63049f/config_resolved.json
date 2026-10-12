@@ -1,0 +1,16 @@
+{
+  "stage": "D",
+  "purpose": "prospective_author_review_draft_pre_precision",
+  "kind": "engineering",
+  "input": [
+    "paper/versions/s8_r02/main.tex",
+    "paper/versions/s8_r02/references.bib",
+    "experiments/s8/build_paper.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/build_paper.py",
+    "paper/versions/s8_r02"
+  ]
+}

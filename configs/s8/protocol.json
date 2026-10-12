@@ -1,0 +1,116 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "registration_UTC": "2026-10-11T17:43:34.271991+00:00",
+  "status": "pre_performance_new_route_protocol",
+  "history": "R2 metrics and service budget formulated after R1 outcomes were known",
+  "seen_routes": [
+    "building00",
+    "parking00"
+  ],
+  "prospective_new_heldout": "building01",
+  "primary_cases": [
+    "loss30_normal",
+    "loss30_bias10"
+  ],
+  "all_cases_required": true,
+  "event_source": "unchanged_R1_21_events_7_categories",
+  "clean_service_deadline_s": 15,
+  "latency_sensitivity_s": [
+    5,
+    10,
+    15,
+    30,
+    60,
+    90
+  ],
+  "Clock_qualification_durations_s": [
+    2,
+    5,
+    10,
+    15,
+    30,
+    60,
+    90
+  ],
+  "common_foundation": "exact R1 final configs/source/cache/Q/R/initialization",
+  "normal_cost": "best robust natural RMSE + max(2%,0.05m), all controls included in unqualified tables",
+  "post_return_windows_s": [
+    10,
+    30,
+    60,
+    90
+  ],
+  "extended_post_return_window_s": 180,
+  "extended_rule": "evaluate every method on same full expected grid; retain missing/partial status; no successful intersection",
+  "t_return": "first actually present sensor observation after deletion end",
+  "t_admit": "first accepted KF update after t_return; right censor at fixed 180s observation window",
+  "truth_not_used_online": true,
+  "bias_risk": "injected-row acceptance is a stress risk proxy, never field wrong-GNSS probability",
+  "primary_bias_hold_s": 90,
+  "error_recovery": {
+    "threshold_m": 3,
+    "sustained_s": 5,
+    "timeout_s": 90
+  },
+  "mechanism_revision_max": 1,
+  "candidate_parameter_configs_max": 8,
+  "data_performance_freeze_required": true,
+  "paper_all_outcomes_required": true,
+  "new_method_selected": false,
+  "latency_clock": "primary: measurement_sow of accepted update; separately report available_sow conservative bound; neither is measured wall-clock arrival",
+  "deadline_boundary_rule": "inclusive on measurement-clock latency, 1e-8s tolerance; availability-bound eligibility reported separately",
+  "pareto_dimensions": [
+    "clean_max_admission_latency_s",
+    "biased_post90_RMSE_m",
+    "injected_acceptance_fraction",
+    "clean_post90_RMSE_m"
+  ],
+  "event_aggregation": "equal-weight per-event RMSE macro; no successful-only removal",
+  "clock_alias": "P_time_only at good_duration_s=2 is exactly Clock2",
+  "natural_cap_reference_methods": [
+    "B4",
+    "B5",
+    "B6"
+  ],
+  "hypothesis_gate": "H2 requires risk reduction and error reduction versus every fast normal-cost-qualified baseline; H3 requires independent new route and attribution",
+  "new_parameter_selection_using_parking": false,
+  "method_revisions_used": 0,
+  "method_revisions_allowed": 0,
+  "methods": [
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "P",
+    "P_without_motion",
+    "Clock2",
+    "P_without_decay",
+    "P_without_anchor",
+    "B2",
+    "Clock15",
+    "Clock30",
+    "Clock60",
+    "Clock90",
+    "Clock5",
+    "Clock10",
+    "NIS0",
+    "NIS1",
+    "NIS2"
+  ],
+  "matrix_pairs": 152,
+  "frontend_primary_runs": 1,
+  "frontend_sensitivity_runs": 0,
+  "reference_role": "time/schema only and unique first initialization row before freeze, remaining states offline only after exact remote freeze receipt",
+  "unsupported_event_rule": "block complete primary matrix; do not advance/reselect by method error",
+  "coverage_gate": "complete expected whole route and all five windows; no successful intersection",
+  "normal_cap_reference_methods": [
+    "B4",
+    "B5",
+    "B6"
+  ],
+  "scientific_effect_requirement": "P clean <=15s all three, natural cap and full coverage; bias90 materially below every qualified fixed strong control plus fixed event/ablation attribution; no universal/novelty inference",
+  "event_support": "all 21 fixed events validated from time support before precision",
+  "measurement_maximum": "whole horizontal max and every full window max are descriptive extras; primary unchanged",
+  "time_basis": "independently audited bag custom GPS week and raw-text SOW; no assumed week",
+  "external_performance_scope": "official public dataset literature may contain route tables; no local method performance or tuning before full freeze"
+}

@@ -1,0 +1,1 @@
+{"argv":["python3","experiments/s8/checkpoint.py","B_ENGINEERING","A"],"exit_code":1,"failure":"checkpoint adapter accidentally checked S8 head against R2 base; corrected protected branch name to R2; occurred before any state/commit/push, no precision access"}

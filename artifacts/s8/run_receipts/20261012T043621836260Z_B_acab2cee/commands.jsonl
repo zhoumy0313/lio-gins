@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/r2/run_regression.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T04:36:21.843703+00:00", "ended_UTC": "2026-10-12T04:36:41.858771+00:00", "exit_code": 0, "wall_seconds": 20.014802149999014, "CPU_user_s": 18.266681, "CPU_system_s": 1.715009, "max_RSS_KiB": 114244, "executed": true}

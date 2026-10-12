@@ -42,3 +42,8 @@ def verify_access(seq,role,freeze,config):
 def record_opening(access,kind):
  if access is None:raise ValueError('S8 performance access without freeze')
  out=Path(os.environ['LIO_GINS_RUN_DIR']);(out/'S8_ACCESS_RECEIPT.json').write_text(json.dumps({'UTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'kind':kind,'freeze_id':access['freeze_id'],'freeze_SHA':sha(ROOT/access['freeze_relative_path']),'remote_receipt_SHA':sha(ROOT/'docs/research_s8/FREEZE_PUSH_RECEIPT.json'),'new_route':'building01','role':'prospective_heldout','reference_online':False},indent=2)+'\n')
+
+def verify_native_access(seq,role,freeze):
+ f=verify_access(seq,role,freeze,ROOT/'configs/s8/P.json')
+ if f['native_KF_protocol']['noise_std_multiplier']!=2:raise ValueError('native configuration transfer changed')
+ return f

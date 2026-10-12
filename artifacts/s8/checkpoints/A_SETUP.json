@@ -1,0 +1,12 @@
+{
+  "stage": "A_SETUP",
+  "local_commit": "2f010ade3bd3c86c6fa0a0f9146f5a7183b02899",
+  "push_exit_code": 0,
+  "push_stdout": "Branch 'research/lio-gins-s8-building01' set up to track remote branch 'research/lio-gins-s8-building01' from 'origin'.\n",
+  "push_stderr": "remote: \nremote: Create a pull request for 'research/lio-gins-s8-building01' on GitHub by visiting:        \nremote:      https://github.com/zhoumy0313/lio-gins/pull/new/research/lio-gins-s8-building01        \nremote: \nTo github.com:zhoumy0313/lio-gins.git\n * [new branch]      research/lio-gins-s8-building01 -> research/lio-gins-s8-building01\n",
+  "remote_advertisement": "c12a42a3484458e1737e63201792e1122fc99c0d\trefs/heads/research/lio-gins-r1\n2f010ade3bd3c86c6fa0a0f9146f5a7183b02899\trefs/heads/research/lio-gins-s8-building01",
+  "R1_preserved": true,
+  "staged_secret_scan_passed": true,
+  "file_size_scan_passed": true,
+  "verified_S8_HEAD": true
+}

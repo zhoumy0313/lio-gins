@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/s8/initial_condition.py", "--sequence", "building01"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T04:36:23.007002+00:00", "ended_UTC": "2026-10-12T04:36:24.774767+00:00", "exit_code": 0, "wall_seconds": 1.7675147330010077, "CPU_user_s": 1.6402359999999998, "CPU_system_s": 0.128337, "max_RSS_KiB": 129544, "executed": true}

@@ -1,14 +1,15 @@
 {
   "goal_id": "LIO-GINS-S8-BUILDING01",
   "stage": "A",
-  "execution_status": "A_SETUP_checkpoint_complete",
+  "execution_status": "B_ENGINEERING_checkpoint_complete",
   "base_R2_commit": "8ef95ce597433a8b45c90ec1d13eb57ec4355555",
   "branch": "research/lio-gins-s8-building01",
   "completed_stages": [
-    "A_SETUP"
+    "A_SETUP",
+    "B_ENGINEERING"
   ],
   "flags": {
-    "data_verified": false,
+    "data_verified": true,
     "science_freeze_pushed_before_test": false,
     "new_route_test_executed": false,
     "independent_case_specific_effect_supported": false,
@@ -27,5 +28,8 @@
     "known_R2_repeat_discrepancy_RMS_m": 3.60128849
   },
   "reference_policy": "metadata/time and unique first initialization row before freeze; remaining state payload only offline after verified remote freeze",
-  "updated_UTC": "2026-10-12T04:33:41.714419+00:00"
+  "updated_UTC": "2026-10-12T04:46:19.125960+00:00",
+  "data_audit_run": "outputs_s8/20261012T043425810224Z_A_008eb0d3",
+  "frontend_run": "outputs_s8/20261012T043619503401Z_A_ed9799fe",
+  "pre_freeze_precision_accessed": false
 }

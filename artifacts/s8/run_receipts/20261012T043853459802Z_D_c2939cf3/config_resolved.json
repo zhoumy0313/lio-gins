@@ -1,0 +1,13 @@
+{
+  "stage": "D",
+  "purpose": "official_venue_public_asset_recheck",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/audit_venue_bundle.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/r2/audit_venue_bundle.py"
+  ]
+}

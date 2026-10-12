@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T043812103004Z_A_3b5d2336",
+  "stage": "A",
+  "purpose": "bounded_F9P_text_and_trajectory_schema",
+  "kind": "engineering",
+  "source_commit": "2f010ade3bd3c86c6fa0a0f9146f5a7183b02899",
+  "dirty_diff_SHA": "7d6ddfbf7bfa65c82a5898c16bcbceeb2877151d2709117f4ac710e827860d54",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/extra_interfaces.py": "5cd5deca30385405ad88d3e690ffe38ee0e18f068edf805e1bdbd3978d7a93c9"
+  },
+  "started_UTC": "2026-10-12T04:38:12.110521+00:00",
+  "status": "FAILED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 1,
+  "ended_UTC": "2026-10-12T04:38:12.625957+00:00"
+}

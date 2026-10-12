@@ -1,0 +1,142 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,graphicx,booktabs,url,xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\title{An Empirical Study of Timeliness--Accuracy Tradeoffs in GNSS Re-entry with LiDAR--Inertial Odometry}
+\author{\IEEEauthorblockN{Internal author-review draft: authors and affiliations unassigned}}
+\newcommand{\reviewmark}{\textcolor{red}{\textbf{NOT\_SUBMISSION\_READY: prospective validation in progress; author and venue checks pending.}}}
+\begin{document}
+\maketitle
+\begin{center}\small\reviewmark\end{center}
+\begin{abstract}
+GNSS returning after an outage can be available before a position filter should use it. We examine actual update latency, acceptance of artificially biased observations, and position error in a common position filter propagated by FAST-LIO2 relative motion. The study compares an existing motion-and-anchor recovery manager with direct fusion, innovation gating, Huber weighting, availability recovery, seven fixed qualification durations, and ablations. All methods use identical inputs within each comparison; observations that are never admitted remain censored. Across three 30-second outage events on a seen building route, the manager admits unchanged returning GNSS after seven seconds. Its 90-second biased-return error is 3.022 m, compared with 5.361 m for a 15-second-admission clock control, while accepting 68 rather than 219 of 270 injected rows. A 95-second-admission control has lower error, 2.510 m. On a seen parking route, stricter innovation gating is both faster and more accurate than the manager, while accepting slightly more injected rows. These are conditional tradeoffs, not general superiority. A newly supplied building01 route is undergoing input and interface verification. Its complete prospective protocol must be frozen and verified remotely before the independent accuracy matrix is opened. These historical results establish neither independent generalization nor a new method increment.
+\end{abstract}
+\begin{IEEEkeywords}GNSS re-entry, LiDAR--inertial odometry, observation admission, latency, empirical evaluation\end{IEEEkeywords}
+
+\section{Introduction}
+A robot can continue navigating with LiDAR--inertial odometry (LIO) during a GNSS outage, but returning receiver positions pose a different problem: when should they resume correcting global position? An immediate update can propagate a biased observation. A long wait can avoid that observation while delaying useful correction and allowing local drift to grow. Reported position accuracy consequently depends on both observation selection and the evaluation horizon.
+
+This distinction matters under finite synthetic bias. A controller that rejects GNSS until the artificial bias disappears may obtain low error without providing timely correction when unmodified observations return. Conversely, admitting fewer injected rows need not reduce actual error: an injected displacement can cancel pre-existing receiver error. Neither RMSE nor an acceptance count alone measures recovery quality.
+
+We investigate this tension in a lightweight outer position filter. The research question is whether an existing motion-and-anchor policy offers a conditional latency--exposure--error tradeoff against matched simple policies under an explicit service deadline. The deadline and revised metrics were formulated \emph{after} the earlier R1 outcomes were known. building00 and parking00 were previously inspected; parking00 is not relabeled as an independent test. A third route, building01, is now registered for prospective validation with unchanged policy parameters and a pushed full scientific freeze before precision access.
+
+Our contributions are empirical: (i) an auditable protocol separating returned observations, actual updates, and offline error recovery, with censoring and complete waits; and (ii) a matched study exposing both a building-route tradeoff and stronger simple controls on parking00. The filter, motion-window checks, and recovery protection are existing components. We retained the R1 manager unchanged, used no new mechanism configurations, and do not claim a novel general fusion algorithm.
+
+\section{Related Work}
+FAST-LIO2 estimates local motion through direct LiDAR--inertial estimation~\cite{fastlio2}. We use the fixed i2Nav AT128/ADIS adaptation, rather than modifying its point-cloud estimator. KF-GINS implements a separate 21-dimensional GNSS/INS error-state filter~\cite{kfgins}; its posterior is not fed repeatedly into the three-dimensional filter studied here. Huber's robust estimation~\cite{huber} motivates a standard covariance-weighting comparator; innovation gating provides another simple selection rule.
+
+WinTA-GIL~\cite{winta} uses windowed trajectory matching and motion/quality-triggered heading refinement, feeding optimized heading into an EKF. Our implementation keeps its initial local-to-NED alignment fixed and manages receiver-position admission. This scope difference is not a novelty proof: motion windows and recovery-triggered consistency already have precedent.
+
+Dual-ACKF~\cite{dual} combines an explicit GNSS bias state, innovation-based covariance adaptation, robust updates, and recovery protection. Our availability-based control uses the same outer position KF as every other policy; it is not a reproduction of the full Dual-ACKF system. Neither Dual-ACKF nor WinTA-GIL was executed in this benchmark, and their published accuracy is not inserted into our comparison tables. Their mechanisms constrain what this study can claim as original.
+
+\section{Common Filter and Existing Recovery Policy}
+\subsection{Shared Estimator}
+\begin{figure}[t]
+\centering
+\input{figures/framework.tikz}
+\caption{Executed framework. Only the admission policy varies. Reference states initialize the declared common condition and support offline evaluation; they never enter the manager. KF-GINS remains an independent comparator.}
+\label{fig:framework}
+\end{figure}
+The state is position $p\in\mathbb{R}^{3}$ in NED, with a common initial alignment $A$. For LIO displacement $\Delta\ell_k$,
+\begin{align}
+ p_k^-&=p_{k-1}^++A\Delta\ell_k,\\
+ P_k^-&=P_{k-1}^++\operatorname{diag}(1,1,4)q_k,\\
+ q_k&=0.001\Delta t+0.001\|\Delta\ell_k\|.
+\end{align}
+The coefficients have units $\mathrm{m^2/s}$ and $\mathrm{m^2/m}$. The antenna observation is $z_k=p_k+R_{NB,k}b+v_k$, with FRD lever arm $b=[0,-0.07,-0.365]^\top$ m. Receiver NED standard deviations are floored at $[1,1,2]$ m before squaring to form covariance $R_k$. For an admitted observation,
+\begin{align}
+ r_k&=z_k-p_k^--R_{NB,k}b,\\
+ K_k&=P_k^-(P_k^-+\bar R_k)^{-1},\\
+ p_k^+&=p_k^-+K_kr_k,
+\end{align}
+with Joseph covariance update and policy-inflated $\bar R_k$. Every original receiver ID is consumed once, including rejected observations. Monitoring differences and historical anchors are not independent position measurements.
+
+\subsection{Motion and Historical Anchor}
+With receiver position $z$ and independent LIO antenna position $a$, a five-second window checks
+\begin{align}
+ d_{ik}&=(z_k-z_i)-(a_k-a_i),\\
+ s_{ik}&=d_{ik,xy}^{\top}(R_{k,xy}+R_{i,xy}+q_{ik}I)^{-1}d_{ik,xy}.
+\end{align}
+The existing P-r03 policy requires an engineering score at most four for two seconds when a motion qualification applies. This score is not a calibrated chi-square test. Gaps greater than 1.5 s clear the monitoring window. An availability shadow policy isolates an anomaly or a GNSS gap greater than two seconds, with a two-second minimum wait and a covariance multiplier initially 15, relaxing over 15 s.
+
+A historical anchor stores the latest raw GNSS observation that was admitted in NORMAL state with valid local diagnostics, acceptable motion score and nominal innovation, continuously qualified for five seconds. During outage recovery it compares
+\begin{equation}
+ e_k=z_k-\{z_a+(a_k-a_a)\}
+\end{equation}
+against receiver covariance plus accumulated process covariance. Its horizontal score limit is four. Only an actual GNSS gap activates this anchor check; isolation freezes anchor promotion. Invalid local evidence falls back to the mature availability policy and is logged as unresolved, not as proof of sensor correctness. The two cached interpolation endpoints must have at least 100 effective points and mean absolute plane residual at most 0.2 m for local health eligibility.
+
+This policy cannot distinguish all LIO drift from GNSS bias. A stale or biased anchor can veto useful GNSS; fallback can admit injected observations. There is no bias-state estimation, optimized heading update, or integrity guarantee. The fixed implementation is inherited from R1 rather than revised to fit the R2 results.
+
+\section{Data, Controls, and Evaluation}
+\subsection{Inputs and Seen-Data Roles}
+The public i2Nav-Robot dataset~\cite{i2nav} supplies AT128 LiDAR, ADIS16465 increments, F9P receiver positions, and an MM/INS reference for building00 and parking00. We verified all 16 supplied raw files against their R1 digests and both bag digests against the official listing. Upstream commits are fixed: i2Nav-Robot at \texttt{2ffdca6d}, its baseline adaptation at \texttt{6c602f8d}, and KF-GINS at \texttt{8291a93e}. Exact hashes, compatibility/logging patches and the reused rootless Noetic runtime are archived.
+
+All policies share the same initialization, cache, covariance, lever arm and observed GNSS timeline within a comparison. The common initial condition reads one explicitly declared reference state and a receiver observation. Later reference values are used only offline. The local NED geodetic origin was not available; errors are initialization-conditioned, not a no-prior absolute WGS84 result. The reference shares AT128 sensing through MM/INS and is not independent of all frontend sensing.
+
+The two building00 frontend caches have identical pose times and verified bag/binary identities, yet their local positions differ by 3.6013 m in 3D RMS. We use the predetermined primary cache and retain the second as a paired sensitivity analysis. They are not independent repeated-route samples. building01 was selected prospectively using documentation only. Its five required originals are now present; the official bag digest has been verified and time/schema checks are underway. No independent precision has been opened. One primary frontend replay without reference comparison is registered; no performance-based cache selection is allowed. The new-route protocol retains all nineteen policies, seven event categories, three fixed event offsets and complete expected-grid evaluation. The old analysis archive is not used to authorize this opening.
+
+\subsection{Fixed Matched Controls}
+B2 is LIO propagation without GNSS; B3 is direct position fusion; B4 is the R1-selected NIS gate at 100; B5 is Huber weighting at 2.5; B6 adds the matched availability wait and recovery covariance protection. Clock2/5/10/15/30/60/90 disable the motion and anchor veto while retaining the same availability foundation and covariance policy. The number is qualification duration, not total latency: the five-second monitoring window adds time, producing clean admission delays of 7/10/15/20/35/65/95 s. Clock2 exactly equals the time-only ablation and is counted once.
+
+We also expose the three stricter NIS thresholds already screened in R1: 11.3449, 16.2662 and 30. They were registered as fixed fairness diagnostics before their R2 replays, with no parking-based selection. P-no-motion equals B6; P-no-anchor removes the historical anchor; P-no-decay removes recovery covariance decay. These give 19 distinct named policies. There was no additional mechanism revision or broad parameter search.
+
+\subsection{Events, Clocks, and Coverage}
+At fixed offsets 150/450/750 s, with north/east/northeast injection directions, we retain seven event categories and a natural case. Categories are a single 3-m jump, clustered 10-m jumps, 30-s and 60-s observation deletions followed by unmodified data, 30-s deletions followed by 3-m or 10-m biases held for 90 s, and a 10-m ramp. Each category has three fixed events. The primary pair is the 30-s deletion with unmodified return versus the 10-m biased return. ``Unmodified'' does not mean error-free GNSS.
+
+$t_{return}$ is the measurement time of the first actually present observation after deletion; $t_{admit}$ is the first logged \texttt{accepted=true} update. State transitions are insufficient. Admission is censored at a fixed 180-s horizon. We report its measurement-time delay and separately the conservative cache-availability bound; neither is measured live receiver-arrival latency. Offline error recovery is error below 3 m sustained for 5 s within 90 s. Error can already satisfy this condition before any returned GNSS update.
+
+The primary clean service budget is 15 s, inclusive in measurement time. Sensitivity budgets are 5/10/30/60/90 s. Normal cost is natural-case horizontal RMSE no greater than the best frozen B4/B5/B6 value plus $\max(2\%,0.05\,\mathrm{m})$. Every policy appears in full tables regardless of eligibility. Clock10 lies exactly on the measurement-time boundary; its conservative availability bound can exceed 15 s and is separately retained.
+
+Every event is evaluated on the same full 10-Hz expected grid over 10/30/60/90/180 s after return. Event RMSE is averaged equally across the three events, rather than pooling successful samples. A partial window retains its expected count and cannot silently yield a complete RMSE. Injected-row acceptance is counted over the exact artificial bias interval with the denominator retained. This is exposure to injected data, not a probability of a real GNSS fault or a calibrated harm metric.
+
+\section{Results}
+\input{generated_tables.tex}
+\begin{figure*}[t]\centering
+\includegraphics[width=\textwidth]{figures/latency_error_tradeoff.pdf}
+\caption{Policy latency--error tradeoff on all three seen caches. Numbers on the connected Clock curve are qualification durations. The dotted line is the 15-s clean measurement-time budget. Gray crosses are ablations; black triangles are stricter NIS controls (hollow if outside the natural-cost cap). Full point files and Tables~\ref{tab:primary}--\ref{tab:other} retain all policies and censored B2 outcomes; lower error outside the budget remains evidence.}
+\label{fig:tradeoff}\end{figure*}
+
+\subsection{Completeness and Building-Route Tradeoff}
+The matrix contains 456 matched policy--cache--case pairs and 1,197 fixed event records. Of these, 296 pairs are inherited and 160 are additional cached controls; there is no old-route frontend redeployment. All whole-route and event windows have full coverage. Recomputed inherited whole-route RMSE equals its archived value exactly. A separate checker, which does not import the main evaluator, verifies 6,441 error values, all 1,197 admission clocks and exposure counts, with maximum absolute error difference $4.44\times10^{-16}$ m. Original 64 regression tests and nine added metric tests pass. Failed checker/harness attempts are retained alongside their corrected executions.
+
+On the primary building cache, P admits unmodified returned GNSS in 7 s for all three events and has natural RMSE 2.5847 m, within the 2.5890-m cap. Its biased post90 RMSE is 3.0222 m, versus Clock10's 5.3611 m, and its accepted injected count is 68/270 versus 219/270. However, Huber has lower clean post90 error, 2.1419 versus 2.2361 m. Stricter NIS30 obtains biased error 3.9082 m and natural error 2.6212 m, exceeding the stated cap by about 0.0322 m; this result is retained. A 5\% natural-cost allowance would include it, while P still has lower biased error on this cache. This sensitivity does not replace the registered gate.
+
+The second building cache preserves the conditional biased-return trend: P has 2.8837-m post90 error and 66/270 accepted injected rows. The strictest NIS control has 3.5304 m and 114/270 and satisfies its natural-cost cap. Yet P's clean error, 1.8854 m, exceeds B6's 1.8601 m. Thus the result is an explicit tradeoff rather than improvement in every dimension.
+
+\subsection{Stronger Long Waits and Parking Counterexample}
+Clock90 admits clean data after 95 s and accepts no biased rows during the 90-s injection. It obtains lower biased post90 error than P on both building caches: 2.5098 versus 3.0222 m and 2.0854 versus 2.8837 m. The extended 180-s results also favor Clock90 on those caches. Across the registered service-budget sensitivity, Clock60 qualifies at 90 s and has lower biased error than P on both building caches (2.8377/2.5424 m versus 3.0222/2.8837 m). Thus the constrained accuracy advantage depends on the deadline; it is not retained simply by relaxing timeliness. The earlier R1 conclusion that P does not establish added gain under unrestricted aggregate error therefore remains valid.
+
+The parking route provides a stronger counterexample to a universal method claim. NIS30 has zero clean-admission delay and 2.0234-m biased post90 error, compared with P's 7 s and 2.2901 m. P accepts eleven fewer injected rows, 108 versus 119, but that count does not establish lower actual harm. We report the stricter NIS result directly rather than limiting the parking comparison to the weaker selected NIS100 baseline.
+
+An offline antenna-error check further finds that injected bias reduces the declared initialization-conditioned receiver error for 16 of 270 building rows and 46 of 270 parking rows. Consequently exposure counts must be interpreted alongside actual trajectory error, receiver covariance and the artificial scenario. They cannot be converted into field fault-detection accuracy.
+
+\subsection{Ablations and Event-Level Failures}
+Removing the anchor raises primary building biased post90 error from 3.0222 to 5.4893 m; removing motion yields B6's 5.7798 m. This supports a conditional role of the already-existing anchor on this route. It does not establish a new R2 method increment. Removing covariance decay gives slightly higher building post90 error, but lower parking error, 2.2587 versus 2.2901 m, and fails the second-cache natural-cost gate. Decay is not a uniformly necessary contribution.
+
+\begin{figure}[t]\centering
+\includegraphics[width=\columnwidth]{figures/first_registered_bias_event.pdf}
+\caption{First registered primary biased-return event, selected by order. Shading covers the 90-s injection. Error, actually accepted observation rows, and update corrections are distinct. P's first admitted update is at 126 s; its clean seven-second latency does not describe this biased event.}
+\label{fig:event}\end{figure}
+Event-level results expose failure that a macro statistic hides. P admits no injected rows in the first primary biased event and first updates at 126 s, 36 s after bias removal. In the third event it first updates at 25 s and accepts 65 of 90 injected rows. The second cache similarly has a 124-s first-event admission and 63 injected acceptances in the third. In parking event zero, P admits 82/90 injected rows. These records are not censored away or replaced by favorable examples. The first-event time series in Fig.~\ref{fig:event} follows the fixed event order rather than the largest winning margin.
+
+\section{Discussion and Scientific Judgment}
+The data support an empirical latency--error tension and a constrained building-route tradeoff. They do not support superiority over every simple control, a calibrated probability of erroneous GNSS admission, an independent R2 effect, or novelty of motion-based recovery. The unchanged policy uses current and historical sensor information causally, but its anchor shares correlated GNSS/LIO evidence and its score lacks a rigorous independence model. The classifier cannot resolve observation-equivalent local drift and GNSS bias.
+
+The five-second Clock window makes the comparison foundation explicit; a different fixed-wait implementation could expose a different curve. Our benchmark covers the declared existing controls rather than all possible thresholds or adaptive waiting rules. The normal-cost constraint is a stated application gate and excludes some strong strict-NIS outcomes on the primary cache; those outcomes remain fully visible. Within-route events are few, fixed and correlated, so we present descriptive paired results without an IID significance claim.
+
+The frontend repeatability issue remains unresolved. Identical verified bag/binary identities, pose timestamps and 12,440 output rows do not guarantee identical estimates; the first difference above $10^{-8}$ m begins near 80 s, and the maximum difference reaches 9.7876 m. The two runs also differ in clock availability and EOF handling. The available logs do not prove a concurrency root cause. Unflagged numerical LIO reset is not detected by the current interface; a retained synthetic test demonstrates that a large jump can be propagated. Fixed alignment, common known initialization, shared reference sensing and synthetic bias all restrict transferability.
+
+Timing scopes remain separate. The previously measured primary frontend processing mean/P95 are 17.32/22.77 ms per scan; these exclude GNSS backend and deployed transport. Python cached replay times are not end-to-end online timing. The transferred native KF-GINS parking configuration produced 76.56-m horizontal RMSE in R1; this is a configuration-transfer failure, not KF-GINS's best accuracy and is not used as a main improvement denominator.
+
+At this preparation checkpoint the building01 precision matrix has not been opened. Its independent outcome will replace this status statement only after the complete scientific freeze, exact remote SHA verification and full paired evaluation. The historical figures remain clearly identified as seen-data results. Its scientific status is narrower than a method paper; human authors should assess whether an empirical submission is suitable after independent validation and venue checks.
+
+\section{Conclusion}
+GNSS admission time, injected-observation exposure and trajectory error are distinct endpoints. Complete matched waits show why lower error can accompany delayed clean correction. The retained motion-and-anchor policy offers a building-route tradeoff under the declared service budget, while stricter NIS gating is faster and more accurate on seen parking data. No new mechanism was promoted and no independent generalization was established. These boundaries, stronger controls and failure records are part of the result.
+
+\section*{Reproducibility and Review Disclosure}
+Exact sources, configurations, hashes, event tables, vector plots and independent checks are retained on the authorized research repository (R2 archive and separate S8 branch). Large sensor files and full trajectory logs remain local; the Git remote is a partial evidence backup. Raw data are not verified as remotely backed up. The i2Nav dataset is used for academic analysis under its stated terms. No authorship, affiliation, funding, copyright agreement or formal submission is asserted. The venue links IEEE conference templates; the exact template variant, anonymity and deadline timezone remain unverified.
+
+OpenAI Codex (GPT-6) assisted executable orchestration, evaluation-script development, evidence organization, manuscript text and plot code throughout this study. Numeric plots are generated from retained data, not synthetic artwork. This assistance is disclosed in Methods through the recorded verification procedure and here for all manuscript sections. Human authors have not yet approved the scientific interpretation or submission; they must verify code, references and wording before adoption.
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

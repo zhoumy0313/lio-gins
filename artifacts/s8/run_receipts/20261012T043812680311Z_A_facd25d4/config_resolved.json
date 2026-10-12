@@ -1,0 +1,15 @@
+{
+  "stage": "A",
+  "purpose": "unchanged_fixed_events_observed_input_preparation",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/prepare_stress.py",
+    "configs/development_experiment_protocol.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/prepare_stress.py",
+    "outputs_s8/20261012T043622997953Z_A_a36aee85"
+  ]
+}

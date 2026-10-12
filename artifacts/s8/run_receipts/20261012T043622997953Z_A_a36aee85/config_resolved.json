@@ -1,0 +1,17 @@
+{
+  "stage": "A",
+  "purpose": "unique_first_reference_initialization",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/initial_condition.py",
+    "artifacts/s8/data_manifest.json",
+    "configs/initialization_protocol.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/initial_condition.py",
+    "--sequence",
+    "building01"
+  ]
+}

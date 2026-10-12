@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T043621836260Z_B_acab2cee",
+  "stage": "B",
+  "purpose": "existing64_plus9_tests_unchanged",
+  "kind": "engineering",
+  "source_commit": "2f010ade3bd3c86c6fa0a0f9146f5a7183b02899",
+  "dirty_diff_SHA": "42451346e3531dfc95a1030629e323d5f9b9e6a66deec9585431819aa67d6e75",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/r2/run_regression.py": "2644c3c84408c6c5b9380137fdf391b81eff5c26c4778856bfffb71f04d68079"
+  },
+  "started_UTC": "2026-10-12T04:36:21.843703+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T04:36:41.858771+00:00"
+}

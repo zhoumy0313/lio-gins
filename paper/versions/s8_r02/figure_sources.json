@@ -1,0 +1,16 @@
+{
+  "review_figure_run": "outputs_r2/20261011T190131223958Z_S5_b7f87fe0",
+  "manifest": {
+    "analysis_run": "outputs_r2/20261011T181349420151Z_S3_991cd0d6",
+    "source_SHA": {
+      "outputs_r2/20261011T181349420151Z_S3_991cd0d6/summary_table.json": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d",
+      "outputs_r2/20261011T181349420151Z_S3_991cd0d6/event_results.json": "f4b5a6f812dbf23cd8faa54808d851a02e2d94324266238abb458c2336456bc0"
+    },
+    "figure_script_SHA": "a3c37c931cb267e7b19420ddf6a53d45ba35e4404874568e220bf2cb1e2b0a0b",
+    "event_selection": "primary cache, loss30_bias10, first registered event index 0, fixed order",
+    "all_controls_in_point_table": true,
+    "B2_censored": "excluded from finite x-axis; reported as CENSORED in complete tables",
+    "new_route_opened": false
+  },
+  "framework_source": "figures/framework.tikz"
+}

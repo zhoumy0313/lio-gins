@@ -1,0 +1,13 @@
+{
+  "stage": "A",
+  "purpose": "bounded_F9P_text_at_declared_serialization_precision",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/extra_interfaces.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/extra_interfaces.py"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "B",
+  "purpose": "existing64_plus9_tests_unchanged",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/run_regression.py"
+  ],
+  "timeout": 240.0,
+  "command": [
+    "python3",
+    "experiments/r2/run_regression.py"
+  ]
+}

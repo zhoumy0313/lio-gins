@@ -1,0 +1,22 @@
+{
+  "bounded_F9P_rows": 16,
+  "GPS_week": 2364,
+  "max_stamp_text_residual_s": 8.821487426757812e-06,
+  "text_SOW_serialization_bound_s": 0.0005,
+  "timestamp_policy": "F9P text SOW has 3 decimals; bag header retains sub-millisecond precision; backend uses unchanged text, no adjustment",
+  "max_llh_bag_text_by_axis": [
+    3.552713678800501e-15,
+    0.0,
+    3.552713678800501e-15
+  ],
+  "max_STD_NED_bag_text_by_axis": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "covariance_order": "NavSatFix ENU diagonal reordered NED then sqrt; not fitted",
+  "trajectory_text_rows": 278144,
+  "trajectory_schema": "whitespace SOW,N,E,D,qx,qy,qz,qw; reference only, no position comparisons",
+  "max_serialized_quaternion_norm_error": 7.114137279273791e-09,
+  "position_error_computed": false
+}

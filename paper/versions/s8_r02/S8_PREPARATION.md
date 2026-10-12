@@ -1,0 +1,1 @@
+Prospective preparation draft written before any building01 precision access. Historical R2 results retained and labeled; one native frontend replay in progress. No independent conclusion asserted. Final S8 version will be separate.

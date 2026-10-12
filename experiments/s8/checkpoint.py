@@ -7,7 +7,7 @@ assert git('branch','--show-current')=='research/lio-gins-s8-building01'
 assert git('rev-parse','research/lio-gins-r1')=='c12a42a3484458e1737e63201792e1122fc99c0d'
 protected=[p for p in git('ls-tree','-r','--name-only','8ef95ce').splitlines() if p not in ['AGENTS.md','.gitignore','docs/USER_ACTION_REQUIRED.md']]
 assert not git('diff','8ef95ce','--',*protected), 'R1/R2 tracked evidence changed'
-assert git('rev-parse','research/lio-gins-s8-building01')=='8ef95ce597433a8b45c90ec1d13eb57ec4355555'
+assert git('rev-parse','research/lio-gins-r2-submission')=='8ef95ce597433a8b45c90ec1d13eb57ec4355555'
 statepath=ROOT/'docs/research_s8/STATE.json';state=json.loads(statepath.read_text());state.update(stage=next_stage,execution_status=stage+'_checkpoint_complete',updated_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat());state.setdefault('completed_stages',[]).append(stage)
 statepath.write_text(json.dumps(state,indent=2)+'\n')
 with (ROOT/'docs/research_s8/STATE_HISTORY.jsonl').open('a') as f:f.write(json.dumps({'stage_completed':stage,'next_stage':next_stage,'UTC':state['updated_UTC'],'flags':state})+'\n')

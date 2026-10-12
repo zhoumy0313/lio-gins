@@ -1,0 +1,46 @@
+{
+  "checked_UTC": "2026-10-12T04:38:53.511091+00:00",
+  "source_URL": "https://upinlbs2026.com/assets/index-DYUnbZvC.js",
+  "source_SHA": "d38e591f913398268c6bf50e5b2bd1f60122fbfea44d29bfaa518dfb9600de0c",
+  "official_page_URL": "https://upinlbs2026.com/submission",
+  "full_paper_deadline": {
+    "value": "2026-10-15",
+    "status": "VERIFIED_OFFICIAL_CONTENT"
+  },
+  "full_paper_maximum_pages": {
+    "value": 6,
+    "status": "VERIFIED_OFFICIAL_CONTENT"
+  },
+  "format": {
+    "value": "PDF, IEEE conference format linked by conference",
+    "status": "VERIFIED_OFFICIAL_CONTENT"
+  },
+  "template_link": {
+    "value": "https://template-selector.ieee.org/secure/templateSelector/articleType?publicationTypeId=3&titleId=1",
+    "status": "VERIFIED_OFFICIAL_LINK; exact downloaded variant not audited"
+  },
+  "CMT_entry": {
+    "value": "https://cmt3.research.microsoft.com/UPINLBS2026",
+    "status": "VERIFIED_OFFICIAL_LINK; not opened or logged in"
+  },
+  "submission_types": {
+    "value": [
+      "Full Paper",
+      "Abstract-only"
+    ],
+    "status": "VERIFIED_OFFICIAL_CONTENT; human decision required"
+  },
+  "abstract_pages": {
+    "value": "1\u20132",
+    "status": "VERIFIED_OFFICIAL_CONTENT"
+  },
+  "anonymity": "UNVERIFIED; anonymous crossOrigin values in Javascript are network attributes, not review rules",
+  "exact_deadline_timezone": "UNVERIFIED; general Javascript timezone functions are not conference instructions",
+  "AI_policy": "UNVERIFIED conference applicability; conditional IEEE author policy reviewed separately",
+  "publisher": "UNVERIFIED; EI-eligibility statement does not establish IEEE publication contract",
+  "account_login": false,
+  "formal_submission": false,
+  "rechecked_S8": true,
+  "AI_policy_primary_source": "https://open.ieee.org/author-guidelines-for-artificial-intelligence-ai-generated-text/",
+  "AI_requirement_if_IEEE_applies": "Acknowledgments: identify AI system, affected sections and level of assistance; author remains responsible"
+}

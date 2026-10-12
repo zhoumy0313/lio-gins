@@ -1,0 +1,14 @@
+{
+  "stage": "B",
+  "purpose": "prospective_interfaces_repeat_after_native_gate",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/test_interfaces.py",
+    "experiments/s8/gate.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/test_interfaces.py"
+  ]
+}

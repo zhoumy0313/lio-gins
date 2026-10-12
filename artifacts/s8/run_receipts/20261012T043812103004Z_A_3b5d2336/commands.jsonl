@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/s8/extra_interfaces.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T04:38:12.110521+00:00", "ended_UTC": "2026-10-12T04:38:12.625957+00:00", "exit_code": 1, "wall_seconds": 0.5151615639988449, "CPU_user_s": 0.43927499999999997, "CPU_system_s": 0.079982, "max_RSS_KiB": 81544, "executed": true}

@@ -1,0 +1,15 @@
+{
+  "stage": "A",
+  "purpose": "isolated_noetic_bag_info",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/rosbag_info.py",
+    "artifacts/s8/data_manifest.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/rosbag_info.py",
+    "data/i2nav-dataset/building01/building01.bag"
+  ]
+}
