@@ -54,8 +54,24 @@ Native KF-GINS natural fixed STD-scale2 transfer: C_0cb3f986 estimator exit0; C_
 
 ## Evidence and remaining delivery
 
-artifacts/s8/C summary/event/category tables, complete_index.json.gz and event_results.json.gz cover all methods/categories; per-windowP95/Max/coverage/censoring and run/config/input/cache/evaluator SHAs in full JSON. artifacts/s8/independent_check.json and native_KF_metrics.json. Full per-epoch/per-update logs stay in outputs_s8; raw/cache/runtime offsite backup unverified. Prior3.6013m frontend discrepancy/reference sharing/controlled initial state remain limitations. Paper D and final E audits continue; no formal submission or author action is performed.
+artifacts/s8/C summary/event/category tables, complete_index.json.gz and event_results.json.gz cover all methods/categories; per-windowP95/Max/coverage/censoring and run/config/input/cache/evaluator SHAs in full JSON. artifacts/s8/independent_check.json and native_KF_metrics.json. Full per-epoch/per-update logs stay in outputs_s8; raw/cache/runtime offsite backup unverified. Prior3.6013m frontend discrepancy/reference sharing/controlled initial state remain limitations. Paper D and final E audits are now complete; no formal submission or author action is performed.
 
 ## Cache-availability bound and budget sensitivity
 
 P clean actual measurement delays=[7.0, 7.0, 7.0]s; conservative cache-availability bounds=[7.094380140304565, 7.091545820236206, 7.09679913520813]s. Both are not field wall-clock latency. Clock10 measurement15s is inclusive, but its availability bounds [15.09761643409729, 15.08025574684143, 15.091221570968628]s exceed15s. P fails joint eligibility at every registered5/10/15/30/60/90s budget because the unchanged natural-cost cap fails; no post-test allowance relaxation. Full budget details are in artifacts/s8/C/scientific_judgment.json.
+
+## Final A–E delivery and acceptance
+
+A: Five official originals checked (official bag SHA matched), GPS week2364 and18s GPS–UTC independently confirmed, sensor interfaces reconciled, single unchanged FAST-LIO full replay completed exit0. The first schema/time pairing check and an overly strict GNSS timestamp tolerance failed exit1; both original runs remain, corrected engineering audits passed before freeze.
+
+B: All64 original,9 R2 metrics and9 S8 interface tests passed, nineteen estimator/config bodies preserved; full scientific freeze commit c9aa4c9a870eb1a7b1ab81685abad644debdb059 pushed/read back at2026-10-12T05:03:29.450848+00:00 before first C. One initial checkpoint protection assertion failed locally and is retained; no failed/partial freeze authorized precision access.
+
+C: One independent152-pair matrix, all backend exit0,399 events/1995 windows complete; independent recomputation and native KF transfer exit0. Joint positive claim fails the registered natural-cost condition, no new method revision, novelty unsupported.
+
+D: Complete six-page English author-review manuscript s8_r04 compiled and audited exit0;304 table cells checked, fonts embedded, no overfull boxes/undefined references, all six final pages inspected. Earlier s8_r01–r03, their PDFs, and all R1/R2 versions remain. Final PDF SHA25665023095573b427395b8867f8c676b4534c35ee3bec2fd0c0511b638cc61c11f. Full source, vector figures, numerical bindings, evidence map and Chinese author brief included.
+
+E actual command: `python3 experiments/s8/record_run.py --stage E --purpose final_S8_freeze_order_seals_inheritance_PDF_delivery_audit --input experiments/s8/audit_delivery.py --input docs/research_s8/STATE.json --input docs/research_s8/FREEZE_PUSH_RECEIPT.json --timeout 300 -- python3 experiments/s8/audit_delivery.py`. Run outputs_s8/20261012T053344721656Z_E_4253a7b2 exit0, wall1.819415056s. Audit checked30 frozen inputs,84 source/config identities,186 already sealed runs/6893 entries and111 R2 delivery files: zero mismatches. Raw immutable stat identities unchanged; initial full SHA evidence preserved, no redundant42GiB hash. Two earlier failed interface runs and manual checkpoint failure retained. The E audit stores the pre-terminal flags snapshot; final STATE.json records autonomous execution separately.
+
+Evidence: artifacts/s8/delivery_audit.json, artifacts/s8/DELIVERY_MANIFEST.json, docs/research_s8/DELIVERY.md and per-stage artifacts/s8/checkpoints. Git backup covers lightweight science/results/all paper versions, not raw originals/full runtime caches. Those remain locally retained; offsite raw/cache backup is not claimed. R1/R2 branches and all protected legacy contents unchanged.
+
+No autonomous research blocker remains. Authors decide empirical Full Paper versus Abstract-only, exact cutoff/timezone/template/anonymity/AI policy, attribution/permissions and final submission in the consolidated human checklist. `execution_complete=true` applies to the authorized author-review research delivery; positive_effect_supported/novelty_supported/paper_ready/formal_submission_ready/formal_submission_performed remain false. Do not reopen building01 for tuning.

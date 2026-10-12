@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-S8-BUILDING01",
-  "stage": "E",
-  "execution_status": "D_checkpoint_complete",
+  "stage": "COMPLETE",
+  "execution_status": "E_checkpoint_complete",
   "base_R2_commit": "8ef95ce597433a8b45c90ec1d13eb57ec4355555",
   "branch": "research/lio-gins-s8-building01",
   "completed_stages": [
@@ -11,7 +11,8 @@
     "A",
     "B",
     "C",
-    "D"
+    "D",
+    "E"
   ],
   "flags": {
     "data_verified": true,
@@ -22,7 +23,7 @@
     "full_review_pdf_ready": true,
     "formal_submission_ready": false,
     "formal_submission_performed": false,
-    "execution_complete": false,
+    "execution_complete": true,
     "positive_effect_supported": false,
     "paper_ready": false
   },
@@ -33,7 +34,7 @@
     "known_R2_repeat_discrepancy_RMS_m": 3.60128849
   },
   "reference_policy": "metadata/time and unique first initialization row before freeze; remaining state payload only offline after verified remote freeze",
-  "updated_UTC": "2026-10-12T05:30:01.192092+00:00",
+  "updated_UTC": "2026-10-12T05:35:42.505898+00:00",
   "data_audit_run": "outputs_s8/20261012T043425810224Z_A_008eb0d3",
   "frontend_run": "outputs_s8/20261012T043619503401Z_A_ed9799fe",
   "pre_freeze_precision_accessed": false,
@@ -67,5 +68,9 @@
   "paper_version": "s8_r04",
   "review_PDF": "paper/submission_candidate/s8/main.pdf",
   "review_PDF_SHA": "65023095573b427395b8867f8c676b4534c35ee3bec2fd0c0511b638cc61c11f",
-  "paper_pages": 6
+  "paper_pages": 6,
+  "new_method_increment": false,
+  "delivery_audit_run": "outputs_s8/20261012T053344721656Z_E_4253a7b2",
+  "delivery_audit_exit_code": 0,
+  "completion_scope": "All autonomous S8 research and author-review deliverables; human approval and formal submission excluded."
 }

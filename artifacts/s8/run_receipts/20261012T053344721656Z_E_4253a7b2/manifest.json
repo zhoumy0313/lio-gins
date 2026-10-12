@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T053344721656Z_E_4253a7b2",
+  "stage": "E",
+  "purpose": "final_S8_freeze_order_seals_inheritance_PDF_delivery_audit",
+  "kind": "engineering",
+  "source_commit": "3affb32e48369a79343874a4a8b86d2f1521a86c",
+  "dirty_diff_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/audit_delivery.py": "65c6617e304e4cacb2164ea248ea3cc93777f1425452bba6ecd8dd3d89a6fc06",
+    "/home/aaron/lio_gins/docs/research_s8/STATE.json": "c4ac6e2c42478690c5e851c961127298364563580b36027cc5cdb59e386b1653",
+    "/home/aaron/lio_gins/docs/research_s8/FREEZE_PUSH_RECEIPT.json": "40f3ab997a17cdabca477cafffb8bb3f15f1542633dc266725e8cfaacb669de3"
+  },
+  "started_UTC": "2026-10-12T05:33:44.728979+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:33:46.548669+00:00"
+}

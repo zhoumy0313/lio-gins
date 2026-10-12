@@ -1,0 +1,54 @@
+{
+  "frozen_inputs_checked": 30,
+  "frozen_source_config_checks": 84,
+  "frozen_input_mismatches": [],
+  "raw_full_SHA_before_freeze": "five originals, official bag match, no raw changes detected since; final audit uses size/mtime/ctime rather than another42GiB read",
+  "sealed_runs_checked": 186,
+  "sealed_file_entries_checked": 6893,
+  "seal_mismatches": [],
+  "retained_failed_runs": [
+    {
+      "run": "/home/aaron/lio_gins/outputs_s8/20261012T043231934798Z_A_000a4ba9",
+      "purpose": "building01_identity_time_interfaces",
+      "exit_code": 1
+    },
+    {
+      "run": "/home/aaron/lio_gins/outputs_s8/20261012T043812103004Z_A_3b5d2336",
+      "purpose": "bounded_F9P_text_and_trajectory_schema",
+      "exit_code": 1
+    }
+  ],
+  "manual_checkpoint_failure_retained": "artifacts/s8/checkpoints/B_ENGINEERING_attempt1_failed.json",
+  "R2_delivery_files_checked": 111,
+  "R2_delivery_mismatches": [],
+  "all_legacy_tracked_source_evidence_unchanged": true,
+  "R1_R2_local_branch_heads_unchanged": true,
+  "remote_freeze_verified_UTC": "2026-10-12T05:03:29.450848+00:00",
+  "earliest_C_run_UTC": "2026-10-12T05:04:05.687194+00:00",
+  "freeze_verified_before_all_C_runs": true,
+  "matrix_pairs": 152,
+  "events": 399,
+  "independent_check_passed": true,
+  "review_PDF_pages": 6,
+  "PDF_SHA": "65023095573b427395b8867f8c676b4534c35ee3bec2fd0c0511b638cc61c11f",
+  "human_author_approval": false,
+  "formal_submission_performed": false,
+  "backup": {
+    "Git_lightweight_science_PDF": true,
+    "full_numeric_runtime_cache": false,
+    "raw_originals_offsite": false
+  },
+  "science_flags": {
+    "data_verified": true,
+    "science_freeze_pushed_before_test": true,
+    "new_route_test_executed": true,
+    "independent_case_specific_effect_supported": false,
+    "novelty_supported": false,
+    "full_review_pdf_ready": true,
+    "formal_submission_ready": false,
+    "formal_submission_performed": false,
+    "execution_complete": false,
+    "positive_effect_supported": false,
+    "paper_ready": false
+  }
+}
