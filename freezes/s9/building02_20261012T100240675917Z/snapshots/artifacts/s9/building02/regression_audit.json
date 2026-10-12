@@ -1,0 +1,9 @@
+{
+  "original_tests": 64,
+  "original_passed": true,
+  "R2_tests": 9,
+  "R2_passed": true,
+  "R1_register_SHA_before_after": "eb48bb7dfd0efcdf88bc1e7f8373cbda47f57ad2fb46a016c9ae48fc0397335c",
+  "R1_register_unchanged": true,
+  "isolation": "Only test_run_recorder.ROOT redirected to retained project-local shadow; copied original recorder bytes identical; no test assertions modified"
+}

@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/street00/freeze_science.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T10:02:58.633246+00:00", "ended_UTC": "2026-10-12T10:02:58.748275+00:00", "exit_code": 0, "wall_seconds": 0.11467082500166725, "CPU_user_s": 0.082166, "CPU_system_s": 0.027195, "max_RSS_KiB": 21544, "executed": true}

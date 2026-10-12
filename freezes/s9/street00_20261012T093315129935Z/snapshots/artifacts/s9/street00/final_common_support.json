@@ -1,0 +1,274 @@
+{
+  "sequence": "street00",
+  "common_sow": [
+    96820.0086,
+    98193.76472091675
+  ],
+  "single_state_original_row": 0,
+  "state_rows_read": 1,
+  "timestamp_only_selection": true,
+  "earlier_reference_uncovered_not_evaluated": 0.0,
+  "duplicate_reference_policy": "stable first row by timestamp, all raw rows retained",
+  "events": [
+    {
+      "case": "short_jump3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 96971.0,
+      "t_return_lower_bound_sow": 96972.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 97271.0,
+      "t_return_lower_bound_sow": 97272.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 97571.0,
+      "t_return_lower_bound_sow": 97572.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 96971.0,
+      "t_return_lower_bound_sow": 96974.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 97271.0,
+      "t_return_lower_bound_sow": 97274.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 97571.0,
+      "t_return_lower_bound_sow": 97574.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 96971.0,
+      "t_return_lower_bound_sow": 97001.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 97271.0,
+      "t_return_lower_bound_sow": 97301.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 97571.0,
+      "t_return_lower_bound_sow": 97601.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 96971.0,
+      "t_return_lower_bound_sow": 97031.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 97271.0,
+      "t_return_lower_bound_sow": 97331.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 97571.0,
+      "t_return_lower_bound_sow": 97631.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 96971.0,
+      "t_return_lower_bound_sow": 97001.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 97271.0,
+      "t_return_lower_bound_sow": 97301.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 97571.0,
+      "t_return_lower_bound_sow": 97601.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 96971.0,
+      "t_return_lower_bound_sow": 97001.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 97271.0,
+      "t_return_lower_bound_sow": 97301.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 97571.0,
+      "t_return_lower_bound_sow": 97601.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 96971.0,
+      "t_return_lower_bound_sow": 97031.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 97271.0,
+      "t_return_lower_bound_sow": 97331.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 97571.0,
+      "t_return_lower_bound_sow": 97631.0,
+      "post180_supported": true
+    }
+  ],
+  "ADIS_end_minus_common_end_s": 0.09518208325607702,
+  "whole_grid_expected_samples": 13737,
+  "whole_common_output_and_GNSS_times_checked": 13737,
+  "invalid_interpolation_or_availability_timestamps": [],
+  "availability_deadline_s": 0.25,
+  "precision_opened": false,
+  "initialization_SHA": "9146f391507b7afccbf35b1e7079291465c3357761b4aba4f2d1326cbeaf0ab6",
+  "cache_SHA": "ff1b377f784a578dfc349c1cbf4ab6332fc505999599386f239827bc097f56ba"
+}

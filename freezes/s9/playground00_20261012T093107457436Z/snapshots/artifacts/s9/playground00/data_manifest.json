@@ -1,0 +1,1526 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "sequence": "playground00",
+  "role": "prospective_heldout_technical_audit",
+  "files": [
+    {
+      "filename": "playground00.bag",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00.bag",
+      "size_bytes": 42421986634,
+      "sha256": "d54909c1dc0dd3b63e74d8911b14dda9ef5ade9c9df0a48f396a4f27e3d40d45",
+      "mtime_ns": 1791791273000000000,
+      "ctime_ns": 1791793451402373608,
+      "schema": "rosbag_v2",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "official_sha256": "d54909c1dc0dd3b63e74d8911b14dda9ef5ade9c9df0a48f396a4f27e3d40d45"
+    },
+    {
+      "filename": "playground00_ADIS16465_IMU.txt",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_ADIS16465_IMU.txt",
+      "size_bytes": 29716960,
+      "sha256": "6d9bd055ffa8ea1bd200333a1071f93dd3ea192d422c19d0b16d1dd291ce9149",
+      "mtime_ns": 1791789628000000000,
+      "ctime_ns": 1791793452197396045,
+      "schema": "adis_increment",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "schema": "adis_increment",
+        "columns": [
+          "sow_s",
+          "dtheta_x_rad",
+          "dtheta_y_rad",
+          "dtheta_z_rad",
+          "dvel_x_mps",
+          "dvel_y_mps",
+          "dvel_z_mps"
+        ],
+        "rows": 265330,
+        "finite_rows": 265330,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "time_min": 198869.145107,
+        "time_max": 200195.673488,
+        "median_dt_s": 0.005000000004656613,
+        "max_gap_s": 0.005020000011427328
+      }
+    },
+    {
+      "filename": "playground00_F9P_GNSS.pos",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_F9P_GNSS.pos",
+      "size_bytes": 121992,
+      "sha256": "b533d344afd51b314afb6faac6f30dcb368a4ae6150b14b4106dafcf79a1ef88",
+      "mtime_ns": 1791789597000000000,
+      "ctime_ns": 1791793452198396073,
+      "schema": "f9p_spp",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "schema": "f9p_spp",
+        "columns": [
+          "sow_s",
+          "latitude_deg",
+          "longitude_deg",
+          "altitude_m",
+          "std_n_m",
+          "std_e_m",
+          "std_d_m"
+        ],
+        "rows": 1326,
+        "finite_rows": 1326,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "time_min": 198870.0,
+        "time_max": 200195.0,
+        "median_dt_s": 1.0,
+        "max_gap_s": 1.0,
+        "valid_receiver_rows": 1326,
+        "invalid_std_rows": 0
+      }
+    },
+    {
+      "filename": "playground00_groundtruth.nav",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_groundtruth.nav",
+      "size_bytes": 29565157,
+      "sha256": "266b977e968dc3969bbd82daa168664ccbf0bdae23f88af8a186ad636659de3a",
+      "mtime_ns": 1791789637000000000,
+      "ctime_ns": 1791793454864471123,
+      "schema": "reference_time_only",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "rows": 357201,
+        "columns": 10,
+        "time_min": 198501.0,
+        "time_max": 200287.0,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "max_gap_s": 0.005000000004656613,
+        "nonfinite_rows": 0,
+        "state_payload_used": false
+      }
+    },
+    {
+      "filename": "playground00_trajectory.csv",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_trajectory.csv",
+      "size_bytes": 28934492,
+      "sha256": "e7993fb2f3b6fa9423782d138a325cb8638d3491121f293da9b6dc31ef074a3e",
+      "mtime_ns": 1791789661000000000,
+      "ctime_ns": 1791793455618492295,
+      "schema": "tum_time_schema_only",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "rows": 357201,
+        "columns": 8,
+        "time_min": 198501.0,
+        "time_max": 200287.0,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "max_gap_s": 0.005000000004656613,
+        "nonfinite_rows": 0,
+        "state_payload_used": false,
+        "time_basis": "GPS_seconds_of_week"
+      }
+    }
+  ],
+  "bag_metadata": {
+    "index_position": 42417479383,
+    "connection_count": 12,
+    "chunk_count": 26531,
+    "start_unix": 1745306051.1003768,
+    "end_unix": 1745307377.679389,
+    "connections": {
+      "0": {
+        "topic": "/insprobe/adis16465/imu",
+        "type": "insprobe_msgs/Imu",
+        "md5sum": "a8fd9f35cbfaaa5701efe259d884c153",
+        "count": 265330
+      },
+      "1": {
+        "topic": "/adi/adis16465/imu",
+        "type": "sensor_msgs/Imu",
+        "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+        "count": 265330
+      },
+      "2": {
+        "topic": "/livox/mid360/imu",
+        "type": "sensor_msgs/Imu",
+        "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+        "count": 265298
+      },
+      "3": {
+        "topic": "/livox/mid360/points",
+        "type": "livox_ros_driver/CustomMsg",
+        "md5sum": "e4d6829bdfe657cb6c21a746c86b21a6",
+        "count": 13265
+      },
+      "4": {
+        "topic": "/avt_camera/left/image/compressed",
+        "type": "sensor_msgs/CompressedImage",
+        "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+        "count": 13265
+      },
+      "5": {
+        "topic": "/avt_camera/right/image/compressed",
+        "type": "sensor_msgs/CompressedImage",
+        "md5sum": "8f7a12909da2c9d3332d540a0977563f",
+        "count": 13265
+      },
+      "6": {
+        "topic": "/hesai/at128/points",
+        "type": "sensor_msgs/PointCloud2",
+        "md5sum": "1158d486dd51d683ce2f1be655c3c181",
+        "count": 13265
+      },
+      "7": {
+        "topic": "/continental/ars548/detection",
+        "type": "sensor_msgs/PointCloud2",
+        "md5sum": "1158d486dd51d683ce2f1be655c3c181",
+        "count": 26528
+      },
+      "8": {
+        "topic": "/insprobe/ranger/odometer",
+        "type": "insprobe_msgs/RangerOdometer",
+        "md5sum": "e661bb739a55d1297955b137b4eef03f",
+        "count": 66319
+      },
+      "9": {
+        "topic": "/continental/ars548/object",
+        "type": "sensor_msgs/PointCloud2",
+        "md5sum": "1158d486dd51d683ce2f1be655c3c181",
+        "count": 26527
+      },
+      "10": {
+        "topic": "/novatel/oem7/fix",
+        "type": "sensor_msgs/NavSatFix",
+        "md5sum": "2d3a8cd499b9b4a0249fb98fd05cfa48",
+        "count": 1326
+      },
+      "11": {
+        "topic": "/ublox/f9p/fix",
+        "type": "sensor_msgs/NavSatFix",
+        "md5sum": "2d3a8cd499b9b4a0249fb98fd05cfa48",
+        "count": 1326
+      }
+    }
+  },
+  "sensor_crosscheck": {
+    "gps_week": 2363,
+    "gps_minus_utc_s": 18,
+    "first_sow": 198869.1451075077,
+    "first_unix_utc": "2025-04-22T07:14:11.145108+00:00",
+    "custom_IMU_week": 2363,
+    "matching_policy": "match by exact standard header timestamp within 1e-6s; custom stream begins 21 rows earlier, no index pairing",
+    "samples": 256,
+    "max_custom_increment_minus_text": 4.999482268469189e-10,
+    "max_text_stamp_residual_s": 5.941546987742186e-07,
+    "max_rate_times_actual_dt_error_by_axis": [
+      5.081797468813357e-09,
+      5.6266822899821655e-09,
+      5.082962092766189e-09,
+      4.8782981985733e-07,
+      1.0805211562392946e-07,
+      2.3523650940805718e-05
+    ],
+    "max_rate_times_nominal_dt_error_by_axis": [
+      1.8006446808594128e-09,
+      1.8006446808594128e-09,
+      2.045932635666366e-09,
+      1.3399502372740072e-07,
+      2.601790118216701e-08,
+      7.038598510741845e-06
+    ],
+    "pointcloud_samples": [
+      {
+        "seq": 7484,
+        "stamp": 1745306051.213251,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.213251,
+        "last_point_time": 1745306051.26529,
+        "min_point_time": 1745306051.213251,
+        "max_point_time": 1745306051.26529,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7485,
+        "stamp": 1745306051.31295,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.31295,
+        "last_point_time": 1745306051.36507,
+        "min_point_time": 1745306051.31295,
+        "max_point_time": 1745306051.36507,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7486,
+        "stamp": 1745306051.412732,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.412732,
+        "last_point_time": 1745306051.464768,
+        "min_point_time": 1745306051.412732,
+        "max_point_time": 1745306051.464768,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7487,
+        "stamp": 1745306051.51326,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.51326,
+        "last_point_time": 1745306051.565299,
+        "min_point_time": 1745306051.51326,
+        "max_point_time": 1745306051.565299,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7488,
+        "stamp": 1745306051.612959,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.612959,
+        "last_point_time": 1745306051.664995,
+        "min_point_time": 1745306051.612959,
+        "max_point_time": 1745306051.664995,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7489,
+        "stamp": 1745306051.712742,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.712742,
+        "last_point_time": 1745306051.764781,
+        "min_point_time": 1745306051.712742,
+        "max_point_time": 1745306051.764781,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7490,
+        "stamp": 1745306051.813316,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.813316,
+        "last_point_time": 1745306051.865352,
+        "min_point_time": 1745306051.813316,
+        "max_point_time": 1745306051.865352,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7491,
+        "stamp": 1745306051.913012,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.913012,
+        "last_point_time": 1745306051.965048,
+        "min_point_time": 1745306051.913012,
+        "max_point_time": 1745306051.965048,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7492,
+        "stamp": 1745306052.01271,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.01271,
+        "last_point_time": 1745306052.06483,
+        "min_point_time": 1745306052.01271,
+        "max_point_time": 1745306052.06483,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7493,
+        "stamp": 1745306052.113331,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 159744,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.113331,
+        "last_point_time": 1745306052.165284,
+        "min_point_time": 1745306052.113331,
+        "max_point_time": 1745306052.165284,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7494,
+        "stamp": 1745306052.212986,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.212986,
+        "last_point_time": 1745306052.265106,
+        "min_point_time": 1745306052.212986,
+        "max_point_time": 1745306052.265106,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7495,
+        "stamp": 1745306052.312766,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.312766,
+        "last_point_time": 1745306052.364804,
+        "min_point_time": 1745306052.312766,
+        "max_point_time": 1745306052.364804,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7496,
+        "stamp": 1745306052.413297,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.413297,
+        "last_point_time": 1745306052.465335,
+        "min_point_time": 1745306052.413297,
+        "max_point_time": 1745306052.465335,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7497,
+        "stamp": 1745306052.513035,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.513035,
+        "last_point_time": 1745306052.565072,
+        "min_point_time": 1745306052.513035,
+        "max_point_time": 1745306052.565072,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7498,
+        "stamp": 1745306052.612733,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.612733,
+        "last_point_time": 1745306052.664771,
+        "min_point_time": 1745306052.612733,
+        "max_point_time": 1745306052.664771,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7499,
+        "stamp": 1745306052.713265,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.713265,
+        "last_point_time": 1745306052.765302,
+        "min_point_time": 1745306052.713265,
+        "max_point_time": 1745306052.765302,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7500,
+        "stamp": 1745306052.812962,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.812962,
+        "last_point_time": 1745306052.864998,
+        "min_point_time": 1745306052.812962,
+        "max_point_time": 1745306052.864998,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7501,
+        "stamp": 1745306052.912741,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.912741,
+        "last_point_time": 1745306052.964779,
+        "min_point_time": 1745306052.912741,
+        "max_point_time": 1745306052.964779,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7502,
+        "stamp": 1745306053.013273,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306053.013273,
+        "last_point_time": 1745306053.065313,
+        "min_point_time": 1745306053.013273,
+        "max_point_time": 1745306053.065313,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7503,
+        "stamp": 1745306053.112972,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306053.112972,
+        "last_point_time": 1745306053.165093,
+        "min_point_time": 1745306053.112972,
+        "max_point_time": 1745306053.165093,
+        "point_time_backward_count": 0
+      }
+    ],
+    "record_minus_header_imu_s": 0.0
+  },
+  "common_reference_sensor_range_sow": [
+    198501.0,
+    200195.673488
+  ],
+  "fixed_event_support": [
+    {
+      "case": "short_jump3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 198870.0,
+      "t_return_sow": 198871.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 198951.0,
+      "t_return_sow": 198952.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "fault_start_sow": 199251.0,
+      "t_return_sow": 199252.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 198870.0,
+      "t_return_sow": 198873.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 198951.0,
+      "t_return_sow": 198954.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "fault_start_sow": 199251.0,
+      "t_return_sow": 199254.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 198870.0,
+      "t_return_sow": 198900.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 198951.0,
+      "t_return_sow": 198981.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "fault_start_sow": 199251.0,
+      "t_return_sow": 199281.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 198870.0,
+      "t_return_sow": 198930.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 198951.0,
+      "t_return_sow": 199011.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "fault_start_sow": 199251.0,
+      "t_return_sow": 199311.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 198870.0,
+      "t_return_sow": 198900.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 198951.0,
+      "t_return_sow": 198981.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "fault_start_sow": 199251.0,
+      "t_return_sow": 199281.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 198870.0,
+      "t_return_sow": 198900.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 198951.0,
+      "t_return_sow": 198981.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "fault_start_sow": 199251.0,
+      "t_return_sow": 199281.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 198870.0,
+      "t_return_sow": 198930.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 198951.0,
+      "t_return_sow": 199011.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0
+      ],
+      "fault_start_sow": 199251.0,
+      "t_return_sow": 199311.0,
+      "post180_supported": true
+    }
+  ],
+  "performance_opened": false,
+  "reference_state_payload_used": false,
+  "raw_read_only": true,
+  "official_text_checksums_available": false,
+  "extra_files_preserved": [
+    "playground00_MID360_IMU.txt",
+    "playground00_OEM7_GNSS.pos",
+    "playground00_RANGER_ODO.txt"
+  ]
+}

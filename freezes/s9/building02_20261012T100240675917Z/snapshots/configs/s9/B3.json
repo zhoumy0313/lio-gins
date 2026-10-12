@@ -1,0 +1,21 @@
+{
+  "method": "B3",
+  "max_LIO_span_s": 0.15,
+  "max_LIO_availability_delay_s": 0.25,
+  "q_axis_scale": [
+    1.0,
+    1.0,
+    4.0
+  ],
+  "nis_limit": 16.266236,
+  "huber_limit": 2.5,
+  "recovery": {
+    "wait_s": 2,
+    "recovery_s": 5,
+    "protection": 15,
+    "onset_nis": 16.266236,
+    "gap_s": 2
+  },
+  "q_time_m2ps": 0.001,
+  "q_distance_m2pm": 0.001
+}

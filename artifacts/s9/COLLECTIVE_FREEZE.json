@@ -1,0 +1,34 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "type": "COLLECTIVE_PROSPECTIVE_ROUTE_REGISTRATION",
+  "UTC": "2026-10-12T10:02:59.093664+00:00",
+  "fixed_order": [
+    "street00",
+    "playground00",
+    "building02"
+  ],
+  "included_routes": [
+    {
+      "sequence": "street00",
+      "freeze_relative_path": "freezes/s9/street00_20261012T093315129935Z/scientific_freeze.json",
+      "freeze_SHA": "db3077f5cacf69f689d4cba856618ea597ce0e29bd0a995310478b4f664d25f9",
+      "receipt_relative_path": "docs/research_s9/street00/FREEZE_PUSH_RECEIPT.json"
+    },
+    {
+      "sequence": "playground00",
+      "freeze_relative_path": "freezes/s9/playground00_20261012T093107457436Z/scientific_freeze.json",
+      "freeze_SHA": "d2bec5b314e5ef4821facbbc29aa4acccd7a495c898195da5b3f812eed3eb1c3",
+      "receipt_relative_path": "docs/research_s9/playground00/FREEZE_PUSH_RECEIPT.json"
+    },
+    {
+      "sequence": "building02",
+      "freeze_relative_path": "freezes/s9/building02_20261012T100240675917Z/scientific_freeze.json",
+      "freeze_SHA": "c7567246e9a66f52501b241826f9833df2985271ceaa32f5d39f7deb50cbb6e7",
+      "receipt_relative_path": "docs/research_s9/building02/FREEZE_PUSH_RECEIPT.json"
+    }
+  ],
+  "technical_exclusions": [],
+  "any_precision_opened": false,
+  "source_freeze_required_all_routes_before_first_precision": true,
+  "no_parameter_or_metric_changes": true
+}

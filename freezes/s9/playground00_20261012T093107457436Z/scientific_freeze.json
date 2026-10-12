@@ -1,0 +1,1988 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "freeze_id": "playground00_20261012T093107457436Z",
+  "freeze_relative_path": "freezes/s9/playground00_20261012T093107457436Z/scientific_freeze.json",
+  "type": "S9_FULL_SCIENTIFIC_FREEZE",
+  "UTC": "2026-10-12T10:02:58.860101+00:00",
+  "base_R2_commit": "8ef95ce597433a8b45c90ec1d13eb57ec4355555",
+  "base_S8_commit": "ca6bf095426a5c1e06387f156a15178921276358",
+  "source_commit_before_freeze": "8e0ee80498137c189f88a59517d21cfa2c589b3f",
+  "source_config_SHA": {
+    "src/__init__.py": "ee01328f5870ed1bef7e050f1be84c42eb456e02b3b4db01fa0218712d6ed245",
+    "src/observation_manager/availability_recovery.py": "453a75cc59fd0a33604f40e66e64c8d0f09ab0d51754d6da10cbc995a71c264c",
+    "src/observation_manager/motion_recovery.py": "515374a41c68ad54c07dd6a59ca293f7acf00d62c9178f4360aab0f593bcc39e",
+    "src/observation_manager/anchored_recovery.py": "f749943aa6b69c9850e72f7e8fccfcdb6ffbc5db4cf5c19eb0acee7b0525a037",
+    "src/evaluation/__init__.py": "c962a73f29632fffd4d51d49aa32d0693cf8068ed9d096a0f7871d78ff3787db",
+    "src/evaluation/reference.py": "64ff268c301a7c0a25815b3ea1663600f98bf2f22fe218e32f5117e23c45fe30",
+    "src/adapters/sensor_text.py": "be031187324bb54b20130e857bc241f652ecf73509f25a206ffe4b7fb82e0072",
+    "src/adapters/causal_lio.py": "be8aae915fe396286f3ba5cd278eb3d69acd8b602f1651a25110108efcbad0a5",
+    "src/adapters/__init__.py": "ae6b779916dc32dcdd166372c5a3b996c4836af961161949365d645d0f6b17ab",
+    "src/adapters/research_access.py": "c1795ec1e5d0e2ddeac243ae942029fb56b2708b37e3f4f7cc21dd5b9dff7cf2",
+    "src/adapters/geodesy.py": "1c3d07106f6c9eb20524d38a6b9dcaff1ed928f0ff8680fd829ebbb9f6d250e2",
+    "src/adapters/rosbag_metadata.py": "63a3bd45e7181302bdaebcd49887701fc84466c0ad2f19e8e7288bdbf44ce35c",
+    "src/fusion/fixed_recovery.py": "823e5540ef909428d2be564ddb7d3f0378f31698beb7a04ca82690e9d5dfe758",
+    "src/fusion/__init__.py": "8cabd5b92383298f47bc1e6bb08a759c427a4b0dba31dc3853ce7f8d088249bb",
+    "src/fusion/position_kf.py": "bc8eb096711f842a0d36505dbaeda7513ff2959df171ff58cae5bdd0a448cb8c",
+    "tests/test_fixed_recovery.py": "fb9462275527bb0981190cf2abcd4eebd0f1ccd2235ef6a2453eae072b0b0ea7",
+    "tests/test_context_integrity.py": "1e094f08853afad0b8d7f6742e2bfe197e91889ee51ea5b1355cff4f8ff168f3",
+    "tests/test_final_contracts.py": "7d204ce697b1af328ad4eaa73bcd488d2bf039bd2cea1fb9d146bb38c739ec85",
+    "tests/test_research_access.py": "66b2d5117591e9c3a1c285bf77aa9ad51cb142e526056a8d8717675cf1291ac6",
+    "tests/test_outer_replay.py": "fecde313fa0a4f15a52ee8665cae9de8295495df5e11cf38641abb643ffca795",
+    "tests/test_candidate_rotation.py": "0451811099e3cdd7dd65d3edb8d124a20b7b1f3c2ff008f22015373af9b5d44c",
+    "tests/test_outer_evaluation.py": "05c10aa548c5d735b0c705a3b4812fd8fe4b7ca2126e7ee3cfc90c22f6fa608d",
+    "tests/test_run_recorder.py": "e2d4455f1bf92871178cb7a766dab44048f098d9c224f0b4999b7793537d21ba",
+    "tests/test_common_interfaces.py": "f848eee758a0fd0b72271d6cc79eea69d8ca1d2527b11adb5ec77d37928bc5a2",
+    "tests/test_causal_lio.py": "07eb920fd154ce5f252134154be56cc12db493be330bf32f62e93bd4f1adfcdd",
+    "tests/test_motion_recovery.py": "1daa7e90932edf677bf5be8bae02a6455abf7064e7507467b274e2cc025834d3",
+    "tests/test_availability_recovery.py": "ae2d1a0b49be5bb55ae9a1c11938e6d9112e5ee9581c7bc439749b6255aff249",
+    "tests/test_anchored_recovery.py": "686fddef9e69b500bc3c3c92b85b344ca9e16b8ab026f1d7552f5f608224bfc5",
+    "tests/test_candidate_parity.py": "b0c3e40a704ec07bdf20bc174a73662fe3f8ea8ef8905cc26e064413bc4def9d",
+    "configs/s9/Clock5.json": "11ae67f7b576ed989c4cda89902d5639033c67afec07ef726fa1785b86142a1e",
+    "configs/s9/P_without_anchor.json": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+    "configs/s9/B4.json": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+    "configs/s9/Clock90.json": "496d7fe90354044ed68e548dd80190d797020a29273e94a90069d42fd60e2dbf",
+    "configs/s9/protocol.json": "1ca461a8ac7932d5d41247e3e60e17f41c378afe143d15709263a63a0cfc7ca2",
+    "configs/s9/B6.json": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+    "configs/s9/P_without_motion.json": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+    "configs/s9/B5.json": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+    "configs/s9/NIS2.json": "c6f9fca02b9af1905eb71e4e29fcd61e0c111d92c1891383979a9a77a72de2b5",
+    "configs/s9/Clock2.json": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+    "configs/s9/P_without_decay.json": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+    "configs/s9/Clock60.json": "d877fa8d20945d2e67e82d4e3d915e5ab83c96dd101873c9b0eb7f7b0e879571",
+    "configs/s9/B2.json": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+    "configs/s9/B3.json": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+    "configs/s9/NIS0.json": "bd579ae693e29244e76447701c049cb4d097b2c94bc355932f00170a4a19e790",
+    "configs/s9/Clock15.json": "ad15067a4a7454e3202b0ed6f629f93f2384e6c917ebfaeb39fc2f8e62bd8e40",
+    "configs/s9/P.json": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+    "configs/s9/Clock10.json": "678fdb254bdc87f6799aa8bc074f3966a97e2fa8d4c74f7634c04ab5649b723f",
+    "configs/s9/NIS1.json": "248a83c252427019d808e3e7450b18eeb877f4fbf56a2d061054a27cb1da66a4",
+    "configs/s9/Clock30.json": "facea134afa47a9641c31e52b4fffab1e16a4b5b9f541e8301b151376c9ed966",
+    "configs/initialization_protocol.json": "a21f3478efd1e0cf237082fc87e2fdfecf92a1c7391d47fdea771edd4ed4edfc",
+    "configs/s9_initialization_protocol.json": "bbb9b19daa72fd89326acc4354025d6a9a34eb3afc0cafaaa4e10c34a97df65b",
+    "configs/development_experiment_protocol.json": "8045bcc48f29323322b5ef44dc9d3c7f6c9d524898b565c7946ee2de2a01a6b1",
+    "configs/sources.lock.json": "d7c80ae965b978650ce9595dae2554f122299f0d11238680595388d5fdafd7f0",
+    "configs/KF_noise_sensitivity.json": "76fadb60da77b19a294729b2f447de097aafb6b87ae43c4ffe2d8d6eec8e8194",
+    "containers/run_inside.sh": "69a35894fdfdda976049d5eb027d94a1f9d37a0770b370edad79fba07218784e",
+    "containers/shutdown_clock.py": "cf1235b80d1311f421d6d4bf80ac35793b9d7625723d52b3db4a4b1ba575e804",
+    "containers/derived_rootfs.local.json": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+    "containers/base_image.lock.json": "c229db774d5a858c9e76b0f0ce037dd845180dfa4e0d6012c7cd2e9def014a68",
+    "artifacts/s9/playground00/data_manifest.json": "3a9886d847f62a61ce3eab91c40ec59d851b90ac194003ed6a5a02d09e0cb976",
+    "artifacts/s9/playground00/technical_context.json": "03a5ef4a8df33adaaca80a5e76d5673e2569b5956f03f5d8322fc4fdc6f07843",
+    "artifacts/s9/playground00/extra_interfaces.json": "47d62ab9c8c75ef33aca2e38ac2323b43b6b67a6d598d6ea9c1219ba19ab1a2d",
+    "artifacts/s9/playground00/regression_audit.json": "a05f9899bc55c9dc8f9c9bddf9b95b440bf8ca280f320e50bd83fee3b6823a19",
+    "artifacts/s9/playground00/role_gate_test_report.txt": "5ebe17f34ea7ca3248e42fd65d8d258d34176cd04fd04e19502e74b705cf6811",
+    "artifacts/s9/playground00/final_common_support.json": "bbae399bf6ce157dd314269c812fcfb9e8386bf4908661074ba2b1e12059ba3e",
+    "experiments/s9/playground00/gate.py": "d9fffd3f3ce89f1178fa8e524bb722b83732cd9d65fc791e3a095661e055b46c",
+    "experiments/s9/playground00/record_run.py": "024acc57e9037a9a35614ad10d5d5d4d9c62a2a6b5fb45da4d92d479118da795",
+    "experiments/s9/playground00/run_baseline.py": "bd4fc64d66632835ef5c24edcc776a3eec9ef4e2eaf70d1d46face4e4e8ceb8e",
+    "experiments/s9/playground00/run_candidate.py": "2b15e62968aa3ca4768025832b677054e356373a65ddad73f65ce799776c507e",
+    "experiments/s9/playground00/run_matrix.py": "020d437aaa2e3b46187018392ebb541d8cea8da736b1fcdccadac5307ae61cc6",
+    "experiments/s9/playground00/reanalyse.py": "82c23d3218d78b9f912a8b8d969e68c66baa8e1ba167c36face23963a173af1b",
+    "experiments/s9/playground00/independent_check.py": "458a39edab4629dc6c7f68c47457e3215eff7ad1b85fd0f9be434ba6bf57c1af",
+    "experiments/s9/playground00/test_interfaces.py": "0233e557928bd0ab7ff90fcac92d915fa7b9124ecad920f30f85b534630db4ee",
+    "experiments/s9/playground00/initial_condition.py": "c37f10560323ecd7899a03a43324891014272eab4db8900a942ac5c7fedbe78c",
+    "experiments/s9/playground00/prepare_stress.py": "ed5f7179891f3f7282f5884a5aff5272378a3a663d261e6df915c5d2c4b8dcd0",
+    "experiments/s9/playground00/build_cache.py": "e01fdcca0fca2563eb0bc228711907f9cd9412ae2b50e90d82351539e73485aa",
+    "experiments/s9/playground00/run_frontend.py": "7f238790e54822088b555494ec248625458edc0a39703319fcffa11a4e5d46f3",
+    "experiments/s9/playground00/audit_data.py": "6083d5422206559fd00e1c2b3a9abcd855d68c2ebabace7b19625e9348604ec6",
+    "experiments/s9/playground00/extra_interfaces.py": "4cd132fc386f731081689d235be4b5fbe86c398506939bf9b2d4ee4ce3da7ebe",
+    "experiments/s9/playground00/freeze_science.py": "cd26f2232d120401fc16ba2f5d811e9ee001aeaec05a7a18a511ec298bc7a201",
+    "experiments/s9/playground00/run_native_kf.py": "2131baabf2a5c1f0c844ae07be8c9907f0a4fb63cf03ab08e29d89634f4b015f",
+    "experiments/s9/playground00/evaluate_native_kf.py": "8860b1421f362854756c0695585fab2584e3efd4bf4785450dbccbf780774548",
+    "experiments/s9/playground00/judge_results.py": "cf672a75fcca7ccdb8141a7249468865c388813caf293f8aaca924370b1b08f9",
+    "experiments/s9/playground00/make_figures.py": "7b6181c6596c737d40c643d5a92928a8f67326681a7006efc670de704e6620ff",
+    "experiments/s9/playground00/paper_tables.py": "3d3cb29d6ef8fe077190c04c8407286a022a219d9eeed50f311c8d77dcde8f52",
+    "experiments/s9/playground00/injection_cancellation.py": "ed80a93b0c90afe0e0f2fa844fde548b5dc5cbec17dcc22c058d2686e8e737b7",
+    "experiments/s9/playground00/verify_remote_freeze.py": "37d85d685cdf3c80b352324bc382581df34b786ef603b1b30a0f82f05f6ee878",
+    "experiments/s9/aggregate.py": "5f112e98aedf93557d5b2bd4d8e37ee4bc28dc311bbe5c9ccafb061e1478ad71",
+    "experiments/s9/finalize_engineering.py": "305e244f9482a56a0910db1646cf59f177987168cba20d2dae32a64aba2edbe7",
+    "experiments/s9/run_study.py": "8045770504b64d7b1e2168237732b4ad398c5413dc5de360eca372df642f292d",
+    "experiments/s9/make_figures.py": "14f72d69b48dd8da552e0131aa42f7b5b227642659a7d90e1d8041490fd28552",
+    "experiments/s9/paper_tables.py": "4010b1d934cc9c4648c221191e76688187a745aa6e4787b374e0a903cf6df4bf",
+    "experiments/s9/engineering.py": "7d5fa21e70dfb766796a3a4dce4226092f499979c9c8591c18753ac40aa7170d"
+  },
+  "method_config_file_SHA": {
+    "Clock5": "11ae67f7b576ed989c4cda89902d5639033c67afec07ef726fa1785b86142a1e",
+    "P_without_anchor": "2c91400db56d59be4ab0a89200995129f664f5c78f7df3a55514e32c4c500545",
+    "B4": "15cfeadd6881fd09baa36760c7874a10bd37f2fb00182dbccad981e3e186cd8f",
+    "Clock90": "496d7fe90354044ed68e548dd80190d797020a29273e94a90069d42fd60e2dbf",
+    "B6": "f726aac10f3ae16573115bfcb8aa434a7e299d4b6bdb6a67245a3e1018563fdf",
+    "P_without_motion": "2ab0593b88320cc1f6eb66228d983299bddeef18463abe6b6641d2d359c00df8",
+    "B5": "37e4ded6a0d1c4a8237f8bdf22c29cbaa361cf0a62e3346e8c18452540393e51",
+    "NIS2": "c6f9fca02b9af1905eb71e4e29fcd61e0c111d92c1891383979a9a77a72de2b5",
+    "Clock2": "fa2776f1b861fc12f8022aa6acffd9d6eebd6e071f7066d59214066a5a6ae100",
+    "P_without_decay": "6842d0f5f6615d8139976263646f0624197b9881afa641edcf246570588f619b",
+    "Clock60": "d877fa8d20945d2e67e82d4e3d915e5ab83c96dd101873c9b0eb7f7b0e879571",
+    "B2": "6af0ce1bea1d7c2f5fb6b1304f2073471ca450e55a103d426717e44cfcd4d4ad",
+    "B3": "99a6537c1ba363def587319952e3356b440e4987c9b7f062ddd29f9e5d171c86",
+    "NIS0": "bd579ae693e29244e76447701c049cb4d097b2c94bc355932f00170a4a19e790",
+    "Clock15": "ad15067a4a7454e3202b0ed6f629f93f2384e6c917ebfaeb39fc2f8e62bd8e40",
+    "P": "5f56b74b8d81b2659d43497190575f9370351bf961a3240fa8d202a217a1402b",
+    "Clock10": "678fdb254bdc87f6799aa8bc074f3966a97e2fa8d4c74f7634c04ab5649b723f",
+    "NIS1": "248a83c252427019d808e3e7450b18eeb877f4fbf56a2d061054a27cb1da66a4",
+    "Clock30": "facea134afa47a9641c31e52b4fffab1e16a4b5b9f541e8301b151376c9ed966"
+  },
+  "input_SHA": {
+    "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf/lio_cache.npz": "094f82ce60cfd7a777444f8b2ceb86638c7854c23bc6cdfa8b2c82600b64d6e3",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf/cache_identity.json": "fb3821a562667c1e1de9f6ff9b2e552cd1701847d490915722adef6b3b8a47f8",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093104406717Z_A_6d6e496e/initial_condition.json": "a53b6a39b06215bd2f8a81e6bbd36705988febc326733a9f93206072fb2c8c6c",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/event_manifest.json": "a40df81fbf9ae881fbd53c74e26122fdb889a66e365014ad9a45c40cf6640df6",
+    "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da/frontend_input_identity.json": "56a64d9e195b9823869782123b6e118867dfc5d71fd7642b2fc437fa9d21815f",
+    "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da/trajectory.csv": "24858c6ead9db7649e0f22926ff231254ecd87eb66dd69042fc224329937a1b5",
+    "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da/interface_events.csv": "77206cbb2270417748e2e507733cde935179c0b03b092dad6bbd485db1c5fa1f",
+    "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da/fast_lio_time_log.csv": "2953f3ae555e6cbffc6f7cc6b8424c6c427b4e3b4e1a80855bac1ca77b4112a6",
+    "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da/installed-packages.txt": "e66738c8b3d34ce64ac89542fcba73aa5ad6fc815f92282f85414621bd417d03",
+    "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/opt/catkin_ws/devel/lib/fast_lio/fastlio_mapping": "b57bb87e42e0dfc99214670ba38c839b6bddcb64e81813b047cdb0c8a430afd4",
+    "/home/aaron/lio_gins/third_party/KF-GINS/bin/KF-GINS": "8885c5a987db080a04a6a12ba1509d16f860c90fa2299b36685408ead96ace8d",
+    "/home/aaron/lio_gins/outputs_r2/20261011T181051808417Z_S3_274770dc/complete_index.json": "cde7f99f5e9d1007cc3859ee676cf1e3a54af1782015cc17467f6d96794cfef6",
+    "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/opt/catkin_ws/src/fast_lio/config/i2nav.yaml": "d6315a5f2305f827fa9a85affd430612793a0b993104c5c307268810aff79771",
+    "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs/opt/catkin_ws/src/fast_lio/launch/mapping_i2nav.launch": "fff27399ffdfd57c73752a56d5b06384afc25264f80764581d3b4139d6199ea5",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss60_normal.csv": "65a6e4587053a5dae59c6a42b0454d62394f7638f250c1dae48db6f86b5c3bbd",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/natural.csv": "82fcf78f62f3e20b7e611c2dbd6f82fe5679092f8ac7f830aabdc9e60ac50c8a",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss30_normal.csv": "666a13a5c68525a8bef8cb784c3453de544864e5984799ade3de55b9ade51f00",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss30_bias3.csv": "7685ae1b943ae584ac4569be808c4b644626ba1b9e079bd4b0d02681412ac6f0",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/cluster_jump10.csv": "cfb58cf7a62ba968619b30cfc874b89598b5bfc3a34390b334f4a90f5f077eb2",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/short_jump3.csv": "abdc671c7d3c8b1135f32a57212f3a6f278a09dfa0fa848e9a5247026c3b5069",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/ramp10.csv": "a4704ba560dc34e418bf8dc9c18872be68de1a81c33376bb22a18e89a8639e0a",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss30_bias10.csv": "01a5689045f4d6e5d4ab8d8954388a71c2a92e037809b6b233124fae02699469",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/short_jump3.identity.json": "bf0ef6c71e36a85edc0b1c8bfef442c74e2382dabdf60e5249fe4d7794c31a66",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss60_normal.identity.json": "977e46c4dacb3c701a746095d5ff2c26a54ca331335429ae7398766003a8dfd4",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/ramp10.identity.json": "bc473b06c0bea3d8a3cef003def4b90c47ecbac820933326a0a5d69b62ab7ba1",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss30_bias3.identity.json": "b739ebc6f49f7584d3a5a296c0b98ffbf3cd0763c405c3d97caf65546d0334a2",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss30_normal.identity.json": "bd449b98d9fce7601c098465b587cf381699280b4b421e9522e4677e11e42fcd",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/natural.identity.json": "f7249d9ce88b6c0adf3e2d552c739206095f9079a4900bf273796829c6ae2436",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/cluster_jump10.identity.json": "6c35d48a21c839f8b831380f61646faf9747e7ad67700320171d76505d1d82ba",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/loss30_bias10.identity.json": "20e91715f0f8b7fcc30f3d0da50209cb4eb8ff4c0351426b6b34910512b628ec"
+  },
+  "raw_inputs": [
+    {
+      "filename": "playground00.bag",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00.bag",
+      "size_bytes": 42421986634,
+      "sha256": "d54909c1dc0dd3b63e74d8911b14dda9ef5ade9c9df0a48f396a4f27e3d40d45",
+      "mtime_ns": 1791791273000000000,
+      "ctime_ns": 1791793451402373608,
+      "schema": "rosbag_v2",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "official_sha256": "d54909c1dc0dd3b63e74d8911b14dda9ef5ade9c9df0a48f396a4f27e3d40d45"
+    },
+    {
+      "filename": "playground00_ADIS16465_IMU.txt",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_ADIS16465_IMU.txt",
+      "size_bytes": 29716960,
+      "sha256": "6d9bd055ffa8ea1bd200333a1071f93dd3ea192d422c19d0b16d1dd291ce9149",
+      "mtime_ns": 1791789628000000000,
+      "ctime_ns": 1791793452197396045,
+      "schema": "adis_increment",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "schema": "adis_increment",
+        "columns": [
+          "sow_s",
+          "dtheta_x_rad",
+          "dtheta_y_rad",
+          "dtheta_z_rad",
+          "dvel_x_mps",
+          "dvel_y_mps",
+          "dvel_z_mps"
+        ],
+        "rows": 265330,
+        "finite_rows": 265330,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "time_min": 198869.145107,
+        "time_max": 200195.673488,
+        "median_dt_s": 0.005000000004656613,
+        "max_gap_s": 0.005020000011427328
+      }
+    },
+    {
+      "filename": "playground00_F9P_GNSS.pos",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_F9P_GNSS.pos",
+      "size_bytes": 121992,
+      "sha256": "b533d344afd51b314afb6faac6f30dcb368a4ae6150b14b4106dafcf79a1ef88",
+      "mtime_ns": 1791789597000000000,
+      "ctime_ns": 1791793452198396073,
+      "schema": "f9p_spp",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "schema": "f9p_spp",
+        "columns": [
+          "sow_s",
+          "latitude_deg",
+          "longitude_deg",
+          "altitude_m",
+          "std_n_m",
+          "std_e_m",
+          "std_d_m"
+        ],
+        "rows": 1326,
+        "finite_rows": 1326,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "time_min": 198870.0,
+        "time_max": 200195.0,
+        "median_dt_s": 1.0,
+        "max_gap_s": 1.0,
+        "valid_receiver_rows": 1326,
+        "invalid_std_rows": 0
+      }
+    },
+    {
+      "filename": "playground00_groundtruth.nav",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_groundtruth.nav",
+      "size_bytes": 29565157,
+      "sha256": "266b977e968dc3969bbd82daa168664ccbf0bdae23f88af8a186ad636659de3a",
+      "mtime_ns": 1791789637000000000,
+      "ctime_ns": 1791793454864471123,
+      "schema": "reference_time_only",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "rows": 357201,
+        "columns": 10,
+        "time_min": 198501.0,
+        "time_max": 200287.0,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "max_gap_s": 0.005000000004656613,
+        "nonfinite_rows": 0,
+        "state_payload_used": false
+      }
+    },
+    {
+      "filename": "playground00_trajectory.csv",
+      "path": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_trajectory.csv",
+      "size_bytes": 28934492,
+      "sha256": "e7993fb2f3b6fa9423782d138a325cb8638d3491121f293da9b6dc31ef074a3e",
+      "mtime_ns": 1791789661000000000,
+      "ctime_ns": 1791793455618492295,
+      "schema": "tum_time_schema_only",
+      "status": "PRESENT",
+      "performance_opened": false,
+      "metadata": {
+        "rows": 357201,
+        "columns": 8,
+        "time_min": 198501.0,
+        "time_max": 200287.0,
+        "duplicate_times": 0,
+        "backward_times": 0,
+        "max_gap_s": 0.005000000004656613,
+        "nonfinite_rows": 0,
+        "state_payload_used": false,
+        "time_basis": "GPS_seconds_of_week"
+      }
+    }
+  ],
+  "environment": {
+    "host_platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "host_Python": "3.10.12",
+    "Python_packages": {
+      "numpy": "1.21.5",
+      "scipy": "1.8.0",
+      "PyYAML": "5.4.1",
+      "matplotlib": "3.5.1"
+    },
+    "rootfs_registry": {
+      "runtime": "bubblewrap_user_namespace",
+      "build_run": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c",
+      "rootfs": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs",
+      "binary_sha256": "b57bb87e42e0dfc99214670ba38c839b6bddcb64e81813b047cdb0c8a430afd4",
+      "base_oci_digest": "sha256:4f01fa743be43da0e14ddf2ac29b5118d9c0eb4057c9761c13303b8a52fa9c4f",
+      "prepared_run": "/home/aaron/lio_gins/outputs/20261011T130431070370Z_P2_5ed71f90",
+      "built": true
+    },
+    "runtime": "existing rootless bubblewrap Noetic, isolated network/ROS, raw bag single-file readonly"
+  },
+  "clock": {
+    "gps_week": 2363,
+    "gps_minus_utc_s": 18,
+    "first_sow": 198869.1451075077,
+    "first_unix_utc": "2025-04-22T07:14:11.145108+00:00",
+    "custom_IMU_week": 2363,
+    "matching_policy": "match by exact standard header timestamp within 1e-6s; custom stream begins 21 rows earlier, no index pairing",
+    "samples": 256,
+    "max_custom_increment_minus_text": 4.999482268469189e-10,
+    "max_text_stamp_residual_s": 5.941546987742186e-07,
+    "max_rate_times_actual_dt_error_by_axis": [
+      5.081797468813357e-09,
+      5.6266822899821655e-09,
+      5.082962092766189e-09,
+      4.8782981985733e-07,
+      1.0805211562392946e-07,
+      2.3523650940805718e-05
+    ],
+    "max_rate_times_nominal_dt_error_by_axis": [
+      1.8006446808594128e-09,
+      1.8006446808594128e-09,
+      2.045932635666366e-09,
+      1.3399502372740072e-07,
+      2.601790118216701e-08,
+      7.038598510741845e-06
+    ],
+    "pointcloud_samples": [
+      {
+        "seq": 7484,
+        "stamp": 1745306051.213251,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.213251,
+        "last_point_time": 1745306051.26529,
+        "min_point_time": 1745306051.213251,
+        "max_point_time": 1745306051.26529,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7485,
+        "stamp": 1745306051.31295,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.31295,
+        "last_point_time": 1745306051.36507,
+        "min_point_time": 1745306051.31295,
+        "max_point_time": 1745306051.36507,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7486,
+        "stamp": 1745306051.412732,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.412732,
+        "last_point_time": 1745306051.464768,
+        "min_point_time": 1745306051.412732,
+        "max_point_time": 1745306051.464768,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7487,
+        "stamp": 1745306051.51326,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.51326,
+        "last_point_time": 1745306051.565299,
+        "min_point_time": 1745306051.51326,
+        "max_point_time": 1745306051.565299,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7488,
+        "stamp": 1745306051.612959,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.612959,
+        "last_point_time": 1745306051.664995,
+        "min_point_time": 1745306051.612959,
+        "max_point_time": 1745306051.664995,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7489,
+        "stamp": 1745306051.712742,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.712742,
+        "last_point_time": 1745306051.764781,
+        "min_point_time": 1745306051.712742,
+        "max_point_time": 1745306051.764781,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7490,
+        "stamp": 1745306051.813316,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.813316,
+        "last_point_time": 1745306051.865352,
+        "min_point_time": 1745306051.813316,
+        "max_point_time": 1745306051.865352,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7491,
+        "stamp": 1745306051.913012,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306051.913012,
+        "last_point_time": 1745306051.965048,
+        "min_point_time": 1745306051.913012,
+        "max_point_time": 1745306051.965048,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7492,
+        "stamp": 1745306052.01271,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.01271,
+        "last_point_time": 1745306052.06483,
+        "min_point_time": 1745306052.01271,
+        "max_point_time": 1745306052.06483,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7493,
+        "stamp": 1745306052.113331,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 159744,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.113331,
+        "last_point_time": 1745306052.165284,
+        "min_point_time": 1745306052.113331,
+        "max_point_time": 1745306052.165284,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7494,
+        "stamp": 1745306052.212986,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.212986,
+        "last_point_time": 1745306052.265106,
+        "min_point_time": 1745306052.212986,
+        "max_point_time": 1745306052.265106,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7495,
+        "stamp": 1745306052.312766,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.312766,
+        "last_point_time": 1745306052.364804,
+        "min_point_time": 1745306052.312766,
+        "max_point_time": 1745306052.364804,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7496,
+        "stamp": 1745306052.413297,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.413297,
+        "last_point_time": 1745306052.465335,
+        "min_point_time": 1745306052.413297,
+        "max_point_time": 1745306052.465335,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7497,
+        "stamp": 1745306052.513035,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.513035,
+        "last_point_time": 1745306052.565072,
+        "min_point_time": 1745306052.513035,
+        "max_point_time": 1745306052.565072,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7498,
+        "stamp": 1745306052.612733,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.612733,
+        "last_point_time": 1745306052.664771,
+        "min_point_time": 1745306052.612733,
+        "max_point_time": 1745306052.664771,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7499,
+        "stamp": 1745306052.713265,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.713265,
+        "last_point_time": 1745306052.765302,
+        "min_point_time": 1745306052.713265,
+        "max_point_time": 1745306052.765302,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7500,
+        "stamp": 1745306052.812962,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.812962,
+        "last_point_time": 1745306052.864998,
+        "min_point_time": 1745306052.812962,
+        "max_point_time": 1745306052.864998,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7501,
+        "stamp": 1745306052.912741,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306052.912741,
+        "last_point_time": 1745306052.964779,
+        "min_point_time": 1745306052.912741,
+        "max_point_time": 1745306052.964779,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7502,
+        "stamp": 1745306053.013273,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160000,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306053.013273,
+        "last_point_time": 1745306053.065313,
+        "min_point_time": 1745306053.013273,
+        "max_point_time": 1745306053.065313,
+        "point_time_backward_count": 0
+      },
+      {
+        "seq": 7503,
+        "stamp": 1745306053.112972,
+        "frame_id": "at128",
+        "height": 1,
+        "width": 160256,
+        "fields": [
+          {
+            "name": "x",
+            "offset": 0,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "y",
+            "offset": 4,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "z",
+            "offset": 8,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "intensity",
+            "offset": 12,
+            "datatype": 7,
+            "count": 1
+          },
+          {
+            "name": "ring",
+            "offset": 16,
+            "datatype": 4,
+            "count": 1
+          },
+          {
+            "name": "timestamp",
+            "offset": 18,
+            "datatype": 8,
+            "count": 1
+          }
+        ],
+        "point_step": 26,
+        "first_point_time": 1745306053.112972,
+        "last_point_time": 1745306053.165093,
+        "min_point_time": 1745306053.112972,
+        "max_point_time": 1745306053.165093,
+        "point_time_backward_count": 0
+      }
+    ],
+    "record_minus_header_imu_s": 0.0
+  },
+  "common_time_support": [
+    198870.0,
+    200195.66316103935
+  ],
+  "events_support": [
+    {
+      "case": "short_jump3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199021.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199321.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199621.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199023.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199323.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199623.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199050.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199350.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199650.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199080.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199380.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199680.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199050.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199350.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199650.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199050.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199350.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199650.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199080.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199380.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199680.0,
+      "post180_supported": true
+    }
+  ],
+  "protocol": {
+    "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+    "registration_UTC": "2026-10-12T09:02:32.219439+00:00",
+    "status": "pre_performance_new_route_protocol",
+    "history": "R2 metrics and service budget formulated after R1 outcomes were known",
+    "seen_routes": [
+      "building00",
+      "parking00",
+      "building01"
+    ],
+    "prospective_new_heldout": null,
+    "primary_cases": [
+      "loss30_normal",
+      "loss30_bias10"
+    ],
+    "all_cases_required": true,
+    "event_source": "unchanged_R1_21_events_7_categories",
+    "clean_service_deadline_s": 15,
+    "latency_sensitivity_s": [
+      5,
+      10,
+      15,
+      30,
+      60,
+      90
+    ],
+    "Clock_qualification_durations_s": [
+      2,
+      5,
+      10,
+      15,
+      30,
+      60,
+      90
+    ],
+    "common_foundation": "exact R1 final configs/source/cache/Q/R/initialization",
+    "normal_cost": "best robust natural RMSE + max(2%,0.05m), all controls included in unqualified tables",
+    "post_return_windows_s": [
+      10,
+      30,
+      60,
+      90
+    ],
+    "extended_post_return_window_s": 180,
+    "extended_rule": "evaluate every method on same full expected grid; retain missing/partial status; no successful intersection",
+    "t_return": "first actually present sensor observation after deletion end",
+    "t_admit": "first accepted KF update after t_return; right censor at fixed 180s observation window",
+    "truth_not_used_online": true,
+    "bias_risk": "injected-row acceptance is a stress risk proxy, never field wrong-GNSS probability",
+    "primary_bias_hold_s": 90,
+    "error_recovery": {
+      "threshold_m": 3,
+      "sustained_s": 5,
+      "timeout_s": 90
+    },
+    "mechanism_revision_max": 0,
+    "candidate_parameter_configs_max": 0,
+    "data_performance_freeze_required": true,
+    "paper_all_outcomes_required": true,
+    "new_method_selected": false,
+    "latency_clock": "primary: measurement_sow of accepted update; separately report available_sow conservative bound; neither is measured wall-clock arrival",
+    "deadline_boundary_rule": "inclusive on measurement-clock latency, 1e-8s tolerance; availability-bound eligibility reported separately",
+    "pareto_dimensions": [
+      "clean_max_admission_latency_s",
+      "biased_post90_RMSE_m",
+      "injected_acceptance_fraction",
+      "clean_post90_RMSE_m"
+    ],
+    "event_aggregation": "equal-weight per-event RMSE macro; no successful-only removal",
+    "clock_alias": "P_time_only at good_duration_s=2 is exactly Clock2",
+    "natural_cap_reference_methods": [
+      "B4",
+      "B5",
+      "B6"
+    ],
+    "hypothesis_gate": "H2 requires risk reduction and error reduction versus every fast normal-cost-qualified baseline; H3 requires independent new route and attribution",
+    "new_parameter_selection_using_parking": false,
+    "method_revisions_used": 0,
+    "method_revisions_allowed": 0,
+    "methods": [
+      "B3",
+      "B4",
+      "B5",
+      "B6",
+      "P",
+      "P_without_motion",
+      "Clock2",
+      "P_without_decay",
+      "P_without_anchor",
+      "B2",
+      "Clock15",
+      "Clock30",
+      "Clock60",
+      "Clock90",
+      "Clock5",
+      "Clock10",
+      "NIS0",
+      "NIS1",
+      "NIS2"
+    ],
+    "matrix_pairs": 456,
+    "frontend_primary_runs": 1,
+    "frontend_sensitivity_runs": 0,
+    "reference_role": "time/schema only plus one earliest common-covered reference state before freeze, remaining states only offline after exact remote verification",
+    "unsupported_event_rule": "block complete primary matrix; do not advance/reselect by method error",
+    "coverage_gate": "complete expected whole route and all five windows; no successful intersection",
+    "normal_cap_reference_methods": [
+      "B4",
+      "B5",
+      "B6"
+    ],
+    "scientific_effect_requirement": "same original15s/natural/coverage joint gates per route, plus descriptive P vs Clock2 and no-anchor; report all route/event signs and stronger baselines; no universal or novelty inference",
+    "event_support": "fixed offsets from common sensor-reference initialization, audit lower bound from first usable GNSS/IMU and validate again at actual cache-covered init before freeze",
+    "measurement_maximum": "whole horizontal max and every full window max are descriptive extras; primary unchanged",
+    "time_basis": "independently audited bag custom GPS week and raw-text SOW; no assumed week",
+    "external_performance_scope": "official public dataset literature may contain route tables; no local method performance or tuning before full freeze",
+    "inherits_R2_registration_UTC": "2026-10-11T17:43:34.271991+00:00",
+    "method_changes_allowed": false,
+    "figure_selection": "all routes in fixed list order; first fixed event by order for any event trace, never chosen by accuracy",
+    "prospective_routes": [
+      "street00",
+      "playground00",
+      "building02"
+    ],
+    "primary_routes": [
+      "street00",
+      "playground00"
+    ],
+    "optional_route": "building02",
+    "optional_rule": "include building02 if five immutable originals pass official/hash/time/support audit and reused frontend/cache before collective freeze; no result-based inclusion",
+    "route_aggregation": "equal-weight per-route event-macro RMSE, with all per-route values/negative evidence reported; never remove unfavorable routes",
+    "frontend_execution": "one predetermined1x frontend per route, maximum2 isolated frontend processes; no cache selection by accuracy",
+    "reference_initialization": "single earliest original reference row at/after max(reference first timestamp, first IMU, first valid causal GNSS, first primary LIO cache timestamp); selection uses timestamps/input validity only, never position error",
+    "reference_duplicate_policy": "nondecreasing times allowed, stable first original row per timestamp, no smoothing or alignment",
+    "Clock2_comparison": "same fixed good-duration2 qualification as P; show actual per-event clean and biased admission clocks, never assume equal observed delays",
+    "matrix_pairs_per_route": 152,
+    "excluded_route_rule": "if technical support fails before collective freeze, retain route and failure in report; no performance exclusion",
+    "paper_primary_table_selection": "P, Clock2, no-anchor, NIS30, Huber2.5, Clock90 plus strongest qualified non-P if absent; full19 biased values/all complete raw records remain visible",
+    "whole_route_expected_grid": "10Hz integer ticks over [earliest common reference initialization, min(reference end, ADIS text end, single primary LIO cache timestamp end)]; endpoint support decided from timestamps before precision, no internal/successful intersection or per-method crop",
+    "positive_effect_supported_scope": "registered joint service/natural/coverage superiority against every qualified fixed control plus material/attribution review; descriptive Clock2/no-anchor contrasts retained separately"
+  },
+  "initialization": {
+    "protocol": {
+      "schema_version": 1,
+      "protocol_id": "known_initial_state_first_common_supported_epoch_S9_v1",
+      "status": "preregistered_S9_before_new_route_precision",
+      "protocol": "controlled_known_initial_state",
+      "reference_epoch_rule": "single earliest original reference row at/after max(reference first timestamp, first IMU, first valid causal GNSS, first primary LIO cache timestamp); selection uses timestamps/input validity only, never position error",
+      "allowed_reference_state": [
+        "initial_local_NED_position",
+        "initial_NED_velocity",
+        "initial_roll_pitch_yaw"
+      ],
+      "position_source": "latest valid F9P at or before initial epoch, propagated with given initial velocity to epoch; subtract rotated antenna lever once",
+      "local_geographic_origin": "unknown",
+      "evaluation_alignment": "one shared fixed translation from the predetermined initial reference position; no method-specific or trajectory fitting",
+      "reported_quantity": "initial_position_conditioned_error; not absolute WGS84 accuracy",
+      "common_outer_start": "reference initial epoch; interpolate LIO at that epoch only after available scan endpoint, declare bounded delay",
+      "KF_GINS_initial_epoch": "first IMU epoch at or after reference epoch; record offset; advance given initial position by initial velocity times offset",
+      "heldout_rule": "unchanged numerical initialization/lever/STD; single predetermined common-covered state; performance prohibited until collective source/config/input freeze pushed and exact remote verification",
+      "online_reference_access": false,
+      "GNSS_std_floor_NED_m": [
+        1.0,
+        1.0,
+        2.0
+      ],
+      "GNSS_invalid_rule": "reject nonfinite or nonpositive receiver standard deviations; retain reason and original row ID",
+      "initial_velocity_std_mps": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "initial_attitude_std_deg": [
+        0.1,
+        0.1,
+        1.0
+      ],
+      "imu_noise_source": "fixed i2Nav-Robot-Baseline IC-GVINS gvins_i2nav.yaml 6c602f8d974fbe5be1183771541c90057e9e3bb6; transferred engineering priors, not fitted ADIS noise identification",
+      "imunoise": {
+        "arw": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "vrw": [
+          0.1,
+          0.1,
+          0.1
+        ],
+        "gbstd": [
+          50.0,
+          50.0,
+          50.0
+        ],
+        "abstd": [
+          50.0,
+          50.0,
+          50.0
+        ],
+        "gsstd": [
+          300.0,
+          300.0,
+          300.0
+        ],
+        "asstd": [
+          300.0,
+          300.0,
+          300.0
+        ],
+        "corrtime": 1.0
+      },
+      "scale_prior_note": "300ppm Gauss-Markov std is a declared project approximation for KF-GINS scale states, absent in upstream GVINS config; requires bounded sensitivity before strong-baseline status",
+      "imu_initial_bias_and_scale": "zero mean, no truth-derived calibration",
+      "evaluation_hz": 10,
+      "reference_max_interpolation_gap_s": 0.02,
+      "KF_output_max_interpolation_gap_s": 0.02,
+      "reference_row_selection": "single earliest original reference row at/after max(reference first timestamp, first IMU, first valid causal GNSS, first primary LIO cache timestamp); selection uses timestamps/input validity only, never position error",
+      "duplicate_reference_rule": "nondecreasing times allowed, stable first original row per timestamp, no smoothing or alignment"
+    },
+    "sequence": "playground00",
+    "role": "s9_prospective_heldout",
+    "reference_state_rows_read": 1,
+    "reference_row_index": 73800,
+    "reference_epoch_sow": 198870.0,
+    "reference_initial_local_NED_m": [
+      0.0028,
+      -0.001,
+      0.008
+    ],
+    "initvel_NED_mps": [
+      0.0023,
+      -0.0013,
+      -0.0022
+    ],
+    "initatt_rpy_deg": [
+      0.0949,
+      -0.955,
+      180.8653
+    ],
+    "R_NED_body_initial": [
+      [
+        -0.9997470716265114,
+        0.015129342103168611,
+        0.01664018574836801
+      ],
+      [
+        -0.015099662205649027,
+        -0.9998841734844083,
+        0.0019078303585398416
+      ],
+      [
+        0.016667122591803137,
+        0.001656086630270752,
+        0.9998597223618834
+      ]
+    ],
+    "origin_ADIS_llh_deg_m": [
+      30.530822364338928,
+      114.34941287793717,
+      13.182935276068747
+    ],
+    "initial_F9P_row_id": 0,
+    "initial_F9P_sow": 198870.0,
+    "initial_F9P_std_NED_m": [
+      1.0,
+      1.0,
+      2.0
+    ],
+    "antenna_lever_FRD_m": [
+      0.0,
+      -0.07,
+      -0.365
+    ],
+    "KF_native_start_sow": 198870.000048,
+    "KF_epoch_offset_s": 4.7999987145885825e-05,
+    "KF_initpos_llh_deg_m": [
+      30.530822364339926,
+      114.34941287793653,
+      13.18293538223952
+    ],
+    "input_sha256": {
+      "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_groundtruth.nav": "266b977e968dc3969bbd82daa168664ccbf0bdae23f88af8a186ad636659de3a",
+      "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_F9P_GNSS.pos": "b533d344afd51b314afb6faac6f30dcb368a4ae6150b14b4106dafcf79a1ef88",
+      "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00_ADIS16465_IMU.txt": "6d9bd055ffa8ea1bd200333a1071f93dd3ea192d422c19d0b16d1dd291ce9149",
+      "/home/aaron/lio_gins/configs/s9_initialization_protocol.json": "bbb9b19daa72fd89326acc4354025d6a9a34eb3afc0cafaaa4e10c34a97df65b"
+    },
+    "read_future_reference_states": false,
+    "initialization_selection_minimum_sow": 198870.0,
+    "reference_time_rows_scanned": 73801,
+    "no_absolute_origin_claim": true
+  },
+  "frontend": {
+    "role": "s9_prospective_heldout",
+    "sequence": "playground00",
+    "freeze_id": null,
+    "source_frontend_run": "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da",
+    "input_identity": {
+      "bag": "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00.bag",
+      "sequence": "playground00",
+      "role": "s9_prospective_heldout",
+      "performance_opened": false,
+      "reference_access": false,
+      "freeze_id": null,
+      "sha256": "d54909c1dc0dd3b63e74d8911b14dda9ef5ade9c9df0a48f396a4f27e3d40d45",
+      "image": {
+        "runtime": "bubblewrap_user_namespace",
+        "build_run": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c",
+        "rootfs": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs",
+        "binary_sha256": "b57bb87e42e0dfc99214670ba38c839b6bddcb64e81813b047cdb0c8a430afd4",
+        "base_oci_digest": "sha256:4f01fa743be43da0e14ddf2ac29b5118d9c0eb4057c9761c13303b8a52fa9c4f",
+        "prepared_run": "/home/aaron/lio_gins/outputs/20261011T130431070370Z_P2_5ed71f90",
+        "built": true
+      },
+      "sensors": [
+        "AT128",
+        "ADIS16465"
+      ],
+      "timing_kind": "rosbag_replay_wall_and_logged_frontend_processing",
+      "replay_rate": 1.0,
+      "runtime_overlay_sha256": {
+        "containers/run_inside.sh": "69a35894fdfdda976049d5eb027d94a1f9d37a0770b370edad79fba07218784e",
+        "containers/shutdown_clock.py": "cf1235b80d1311f421d6d4bf80ac35793b9d7625723d52b3db4a4b1ba575e804"
+      },
+      "shutdown_clock_policy": "advance clock only after EOF to wake Rate.sleep; no sensor messages"
+    },
+    "gps_week": 2363,
+    "time_sow_range": [
+      198869.56529903412,
+      200195.66316103935
+    ],
+    "output_rows": 13262,
+    "expected_raw_AT128_frames": 13265,
+    "raw_frame_output_ratio": 0.9997738409347908,
+    "max_scan_pose_gap_s": 0.10623598098754883,
+    "gaps_over_150ms": 0,
+    "maximum_quaternion_norm_serialization_error": 7.105077475255683e-07,
+    "quaternion_policy": "explicit normalization only for six-decimal serialization error <=2e-6",
+    "availability_policy": "max(scan_end, sampled_ROS_clock+one_10ms_clock_tick), cumulative maximum; replay clock resolution bound, not measured field latency",
+    "clock_precedes_scan_end_max_s": -0.005393028259277344,
+    "frontend_processing_time_source": "fast_lio_time_log.csv",
+    "timing_complete": true,
+    "timing_limitation": null,
+    "health_diagnostic": "effective point count and mean absolute plane residual, not increment covariance",
+    "source_sha256": {
+      "trajectory.csv": "24858c6ead9db7649e0f22926ff231254ecd87eb66dd69042fc224329937a1b5",
+      "interface_events.csv": "77206cbb2270417748e2e507733cde935179c0b03b092dad6bbd485db1c5fa1f",
+      "frontend_input_identity.json": "56a64d9e195b9823869782123b6e118867dfc5d71fd7642b2fc437fa9d21815f",
+      "fast_lio_time_log.csv": "2953f3ae555e6cbffc6f7cc6b8424c6c427b4e3b4e1a80855bac1ca77b4112a6"
+    },
+    "reference_access": false,
+    "holdout_performance_opened": false,
+    "cache_sha256": "094f82ce60cfd7a777444f8b2ceb86638c7854c23bc6cdfa8b2c82600b64d6e3",
+    "frontend_processing_ms": {
+      "mean": 21.076264488764895,
+      "p50": 20.82672,
+      "p95": 27.1266685,
+      "max": 40.67451,
+      "scope": "native t5-t0: IMU processing through incremental map; excludes input preprocessing/callback publication and wait; bag replay wall time reported separately"
+    }
+  },
+  "native_KF_protocol": {
+    "run_scope": "one natural run, independent GNSS/INS comparator only",
+    "noise_std_multiplier": 2,
+    "selected_on_R1_only": true,
+    "new_route_noise_search": false
+  },
+  "matrix": {
+    "policies": 19,
+    "cases": 8,
+    "pairs": 152,
+    "events": 399,
+    "frontend_primary_runs": 1,
+    "sensitivity_runs": 0
+  },
+  "method_changes_allowed": false,
+  "new_heldout_opening_authorized": true,
+  "remote_push_verification_still_required": true,
+  "reference_future_states_online": false,
+  "measurement_reuse_allowed": false,
+  "scientific_scope": "one new route under fixed artificial stress and natural receiver data; route event correlation/reference sharing/frontend repeat issue disclosed; no automatic novelty, universal gain or field fault probability"
+}

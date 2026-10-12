@@ -1,0 +1,13 @@
+{
+  "stage": "B",
+  "purpose": "building02_full_scientific_freeze",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/freeze_science.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/freeze_science.py"
+  ]
+}

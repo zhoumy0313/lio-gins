@@ -1,0 +1,274 @@
+{
+  "sequence": "building02",
+  "common_sow": [
+    181296.07,
+    183167.16497898102
+  ],
+  "single_state_original_row": 32614,
+  "state_rows_read": 1,
+  "timestamp_only_selection": true,
+  "earlier_reference_uncovered_not_evaluated": 163.07000000000698,
+  "duplicate_reference_policy": "stable first row by timestamp, all raw rows retained",
+  "events": [
+    {
+      "case": "short_jump3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 181447.0,
+      "t_return_lower_bound_sow": 181448.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 181747.0,
+      "t_return_lower_bound_sow": 181748.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 182047.0,
+      "t_return_lower_bound_sow": 182048.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 181447.0,
+      "t_return_lower_bound_sow": 181450.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 181747.0,
+      "t_return_lower_bound_sow": 181750.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 182047.0,
+      "t_return_lower_bound_sow": 182050.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 181447.0,
+      "t_return_lower_bound_sow": 181477.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 181747.0,
+      "t_return_lower_bound_sow": 181777.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 182047.0,
+      "t_return_lower_bound_sow": 182077.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 181447.0,
+      "t_return_lower_bound_sow": 181507.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 181747.0,
+      "t_return_lower_bound_sow": 181807.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 182047.0,
+      "t_return_lower_bound_sow": 182107.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 181447.0,
+      "t_return_lower_bound_sow": 181477.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 181747.0,
+      "t_return_lower_bound_sow": 181777.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 182047.0,
+      "t_return_lower_bound_sow": 182077.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 181447.0,
+      "t_return_lower_bound_sow": 181477.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 181747.0,
+      "t_return_lower_bound_sow": 181777.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 182047.0,
+      "t_return_lower_bound_sow": 182077.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 181447.0,
+      "t_return_lower_bound_sow": 181507.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 181747.0,
+      "t_return_lower_bound_sow": 181807.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 182047.0,
+      "t_return_lower_bound_sow": 182107.0,
+      "post180_supported": true
+    }
+  ],
+  "ADIS_end_minus_common_end_s": 0.006665018969215453,
+  "whole_grid_expected_samples": 18711,
+  "whole_common_output_and_GNSS_times_checked": 18711,
+  "invalid_interpolation_or_availability_timestamps": [],
+  "availability_deadline_s": 0.25,
+  "precision_opened": false,
+  "initialization_SHA": "6bcac42027af927d41d9813625727fdf5ac25fdb7110bfc31256db4e74fdad5a",
+  "cache_SHA": "1f6c7da29b8699647c332ef56aac5b2971fb94e95074e845452cf09ecb3f0d8c"
+}

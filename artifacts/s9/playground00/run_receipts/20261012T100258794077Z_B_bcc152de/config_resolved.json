@@ -1,0 +1,13 @@
+{
+  "stage": "B",
+  "purpose": "playground00_full_scientific_freeze",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/playground00/freeze_science.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/playground00/freeze_science.py"
+  ]
+}

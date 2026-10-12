@@ -1,0 +1,11 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "frontend": "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da",
+  "cache": "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf",
+  "initialization": "/home/aaron/lio_gins/outputs_s9/20261012T093104406717Z_A_6d6e496e",
+  "stress": "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2",
+  "freeze_relative_path": "freezes/s9/playground00_20261012T093107457436Z/scientific_freeze.json",
+  "role": "s9_prospective_heldout",
+  "cache_selection": "one fixed full technical replay; no precision-based selection",
+  "performance_opened_at_context_creation": false
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-10-11",
+  "status": "remote_sources_checked_local_clone_and_build_not_executed",
+  "sources": [
+    {
+      "name": "KF-GINS",
+      "url": "https://github.com/i2Nav-WHU/KF-GINS.git",
+      "commit": "8291a93e49de513fe9d21f819500d39082ded611",
+      "role": "GNSS_INS_baseline"
+    },
+    {
+      "name": "i2Nav-Robot",
+      "url": "https://github.com/i2Nav-WHU/i2Nav-Robot.git",
+      "commit": "2ffdca6d56e6432d4daf27c070e570171548f32d",
+      "role": "dataset_documentation_calibration_checksums"
+    },
+    {
+      "name": "i2Nav-Robot-Baseline",
+      "url": "https://github.com/i2Nav-WHU/i2Nav-Robot-Baseline.git",
+      "commit": "6c602f8d974fbe5be1183771541c90057e9e3bb6",
+      "subdirectory": "FAST_LIO",
+      "role": "AT128_ADIS16465_LIO_baseline"
+    }
+  ],
+  "execution_requirements": [
+    "Verify each commit and record the actual clone state before build.",
+    "Record external dependencies, recursive submodule commits and container digest separately.",
+    "Keep license files and distinguish upstream, instrumentation and research modifications."
+  ]
+}

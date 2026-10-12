@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T100258794077Z_B_bcc152de",
+  "stage": "B",
+  "purpose": "playground00_full_scientific_freeze",
+  "kind": "engineering",
+  "source_commit": "8e0ee80498137c189f88a59517d21cfa2c589b3f",
+  "dirty_diff_SHA": "20c3d40d3345f4dd41913fd6312c7f388072ac93f96818990d6b0552da6d0057",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/playground00/freeze_science.py": "cd26f2232d120401fc16ba2f5d811e9ee001aeaec05a7a18a511ec298bc7a201"
+  },
+  "started_UTC": "2026-10-12T10:02:58.801737+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:02:58.916537+00:00"
+}

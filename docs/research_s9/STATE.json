@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-S9-MULTISCENARIO",
-  "stage": "B",
-  "status": "A_CHECKPOINT_COMPLETE",
+  "stage": "C",
+  "status": "B_CHECKPOINT_COMPLETE",
   "base_S8_commit": "ca6bf095426a5c1e06387f156a15178921276358",
   "branch": "research/lio-gins-s9-multiscenario",
   "routes": {
@@ -82,7 +82,14 @@
     "PRE_FREEZE_INTERFACES",
     "PRE_FREEZE_ANALYSIS",
     "PREFREEZE_COMMON_SUPPORT",
-    "A"
+    "A",
+    "B"
   ],
-  "updated_UTC": "2026-10-12T10:02:49.021110+00:00"
+  "updated_UTC": "2026-10-12T10:02:59.803196+00:00",
+  "included_routes": [
+    "street00",
+    "playground00",
+    "building02"
+  ],
+  "technical_exclusions": []
 }

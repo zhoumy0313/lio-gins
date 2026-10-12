@@ -1,0 +1,14 @@
+test_all19_configs_equal_old (__main__.Interfaces) ... ok
+test_analysis_freeze_rejected (__main__.Interfaces) ... ok
+test_changed_source_rejected (__main__.Interfaces) ... ok
+test_estimator_numeric_body_identical (__main__.Interfaces) ... ok
+test_inherited_metric_functions_equal (__main__.Interfaces) ... ok
+test_no_remote_receipt_rejected (__main__.Interfaces) ... ok
+test_old_roles_rejected (__main__.Interfaces) ... ok
+test_remote_sha_mismatch_rejected (__main__.Interfaces) ... ok
+test_role_required (__main__.Interfaces) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.015s
+
+OK
