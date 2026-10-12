@@ -1,0 +1,7 @@
+{"route": "building00", "event_rows": 171, "largest_RMSE_discrepancy_m": 0.0}
+{"route": "building00_repeat", "event_rows": 342, "largest_RMSE_discrepancy_m": 0.0}
+{"route": "parking00", "event_rows": 513, "largest_RMSE_discrepancy_m": 0.0}
+{"route": "building01", "event_rows": 684, "largest_RMSE_discrepancy_m": 0.0}
+{"route": "street00", "event_rows": 855, "largest_RMSE_discrepancy_m": 0.0}
+{"route": "playground00", "event_rows": 1026, "largest_RMSE_discrepancy_m": 0.0}
+{"route": "building02", "event_rows": 1197, "largest_RMSE_discrepancy_m": 0.0}

@@ -1,0 +1,31 @@
+{
+  "goal": "LIO-GINS-S10-MODERATE-BIAS-PAPER",
+  "stage": "B",
+  "base_S9_commit": "4f7a4b4c5b87040d7d7307f25a06cd785b1ff7b9",
+  "branch": "research/lio-gins-s10-moderate-bias-paper",
+  "remote_push_authorized": false,
+  "completed_stages": [
+    "A"
+  ],
+  "runs": {
+    "A": "/home/aaron/lio_gins/cache/s10/runs/20261012T131039820840Z_A_6bc8bdfa"
+  },
+  "flags": {
+    "execution_complete": false,
+    "source_data_traced": true,
+    "bias3_cancellation_audited": false,
+    "event_mechanism_explained": false,
+    "P_vs_no_anchor_local_gain_supported": true,
+    "P_vs_strong_controls_in_declared_scope_supported": false,
+    "observed_descriptive_gain": true,
+    "mechanism_evidence_supported": false,
+    "independent_confirmatory_gain_supported": false,
+    "novelty_supported": false,
+    "full_six_page_review_draft_ready": false,
+    "human_author_review_complete": false,
+    "formal_submission_ready": false
+  },
+  "scope": "Post-hoc exploratory3m focus from already opened six routes; no r04, no retuning, no old algorithm/output modification",
+  "task_spec_SHA": "9ffff476c6d5178db845f0242a01fe8f34e138b9028ed5a548ee3742c4a2b1c5",
+  "updated_UTC": "2026-10-12T13:10:03.263373+00:00"
+}

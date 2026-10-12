@@ -1,0 +1,28 @@
+{
+  "run_id": "20261012T131003340213Z_A_2c0974b0",
+  "stage": "A",
+  "purpose": "S10_statistics_unit_checks",
+  "argv": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "experiments/s10/tests",
+    "-v"
+  ],
+  "started_UTC": "2026-10-12T13:10:03.341522+00:00",
+  "source_commit": "4f7a4b4c5b87040d7d7307f25a06cd785b1ff7b9",
+  "source_SHA": {
+    "experiments/s10/record_run.py": "110e25e41ded188e3a7c0cf990f8bef6056e411ff69ed935424867da4996f6db",
+    "experiments/s10/checkpoint.py": "972b034b597f412661be7021d0932b35535300dec307dfd7fcab185793a85b5d",
+    "experiments/s10/build_evidence_matrix.py": "552b7117bce5ec1a1d7168545df8cf17e87fc9f056682108ea3977681a728ab3",
+    "experiments/s10/common.py": "176abba1fad02fe6fef66f581f1e94c4112a78c26d7bd14d30bb5c09fc053748",
+    "experiments/s10/tests/test_metrics.py": "347bdd49be09ca6ef57c3b567cbcc922025c3838f54c92e50eed3de81cf19eec"
+  },
+  "status": "COMPLETED",
+  "analysis_role": "post-hoc read-only, no independent confirmation",
+  "exit_code": 0,
+  "wall_seconds": 0.1646360369923059,
+  "finished_UTC": "2026-10-12T13:10:03.507822+00:00"
+}
