@@ -1,0 +1,13 @@
+{
+  "stage": "A",
+  "purpose": "direct_custom_GPS_UTC_offset_and_F9P_crosscheck",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/extra_interfaces.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/extra_interfaces.py"
+  ]
+}

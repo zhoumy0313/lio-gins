@@ -1,0 +1,12 @@
+{
+  "data_audit": "outputs_s8/20261012T043425810224Z_A_008eb0d3",
+  "isolated_rosbag_info": "outputs_s8/20261012T043620672073Z_A_05c52768",
+  "extra_interfaces": "outputs_s8/20261012T045055990084Z_A_4d673b04",
+  "frontend": "outputs_s8/20261012T043619503401Z_A_ed9799fe",
+  "initialization": "outputs_s8/20261012T043622997953Z_A_a36aee85",
+  "stress": "outputs_s8/20261012T043812680311Z_A_facd25d4",
+  "original_regression": "outputs_s8/20261012T043621836260Z_B_acab2cee",
+  "S8_gate_regression": "outputs_s8/20261012T045057130121Z_B_dc9b6435",
+  "pre_precision_review_draft": "paper/versions/s8_r02/main.pdf",
+  "goal_user_file_SHA": "ea0ce91c25a9b5578a4d022b256246b328a57ef50254fb94322f65dba49aa2fe"
+}

@@ -1,4 +1,9 @@
 {
+  "observed_GPS_minus_UTC_s": {
+    "min": 18.0,
+    "max": 18.0,
+    "basis": "custom week/SOW minus ROS UNIX header, independently calculated"
+  },
   "bounded_F9P_rows": 16,
   "GPS_week": 2364,
   "max_stamp_text_residual_s": 8.821487426757812e-06,

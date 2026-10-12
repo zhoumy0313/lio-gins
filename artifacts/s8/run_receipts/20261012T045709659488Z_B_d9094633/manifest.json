@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T045709659488Z_B_d9094633",
+  "stage": "B",
+  "purpose": "final_source_metric_config_parity_before_freeze",
+  "kind": "engineering",
+  "source_commit": "4d9b8916fc484e0eebd91a59f3dc585fb6520d91",
+  "dirty_diff_SHA": "0cd985ba8fda0e300c85bb6ea33be0af8b6efeafe1a78c7dc8fdce2aa084b2aa",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/test_interfaces.py": "26efdba18e09d6bf4a5e92f6be52f7401d206738dde6d3de4d364e791460fb88",
+    "/home/aaron/lio_gins/experiments/s8/gate.py": "8fbeabc7b44f84332f0cc59facf9bbdeb4c5b314092eebe4f2878c939dde6514",
+    "/home/aaron/lio_gins/experiments/s8/reanalyse.py": "3d6c47e7aa1d474d246c01842976187ae716fd94c47eb61842424851d9d207a5"
+  },
+  "started_UTC": "2026-10-12T04:57:09.668524+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T04:57:09.783215+00:00"
+}

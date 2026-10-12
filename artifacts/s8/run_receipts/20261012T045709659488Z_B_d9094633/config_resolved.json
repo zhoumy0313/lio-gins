@@ -1,0 +1,15 @@
+{
+  "stage": "B",
+  "purpose": "final_source_metric_config_parity_before_freeze",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/test_interfaces.py",
+    "experiments/s8/gate.py",
+    "experiments/s8/reanalyse.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/test_interfaces.py"
+  ]
+}

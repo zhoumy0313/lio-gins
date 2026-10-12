@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T045055990084Z_A_4d673b04",
+  "stage": "A",
+  "purpose": "direct_custom_GPS_UTC_offset_and_F9P_crosscheck",
+  "kind": "engineering",
+  "source_commit": "4d9b8916fc484e0eebd91a59f3dc585fb6520d91",
+  "dirty_diff_SHA": "07a0092b71916cb97bee7d96c357c67d6ea915a3ced723c85ae771a5a8825487",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/extra_interfaces.py": "5debcc86099a5958d0fcb414f64e99f53ab32e6cf2cf22edba11e84d7b935a2c"
+  },
+  "started_UTC": "2026-10-12T04:50:55.997595+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T04:50:58.920350+00:00"
+}

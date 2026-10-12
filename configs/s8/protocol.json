@@ -1,6 +1,6 @@
 {
   "goal_id": "LIO-GINS-S8-BUILDING01",
-  "registration_UTC": "2026-10-11T17:43:34.271991+00:00",
+  "registration_UTC": "2026-10-12T04:56:28.030504+00:00",
   "status": "pre_performance_new_route_protocol",
   "history": "R2 metrics and service budget formulated after R1 outcomes were known",
   "seen_routes": [
@@ -52,8 +52,8 @@
     "sustained_s": 5,
     "timeout_s": 90
   },
-  "mechanism_revision_max": 1,
-  "candidate_parameter_configs_max": 8,
+  "mechanism_revision_max": 0,
+  "candidate_parameter_configs_max": 0,
   "data_performance_freeze_required": true,
   "paper_all_outcomes_required": true,
   "new_method_selected": false,
@@ -112,5 +112,8 @@
   "event_support": "all 21 fixed events validated from time support before precision",
   "measurement_maximum": "whole horizontal max and every full window max are descriptive extras; primary unchanged",
   "time_basis": "independently audited bag custom GPS week and raw-text SOW; no assumed week",
-  "external_performance_scope": "official public dataset literature may contain route tables; no local method performance or tuning before full freeze"
+  "external_performance_scope": "official public dataset literature may contain route tables; no local method performance or tuning before full freeze",
+  "inherits_R2_registration_UTC": "2026-10-11T17:43:34.271991+00:00",
+  "method_changes_allowed": false,
+  "figure_selection": "building01 loss30_bias10 first fixed event; NIS30/B6/Clock10/Clock90/P predetermined, all fixed points retained"
 }

@@ -37,7 +37,10 @@ def verify_access(seq,role,freeze,config):
  for item in f['raw_inputs']:
   st=Path(item['path']).stat()
   if (st.st_size,st.st_mtime_ns,st.st_ctime_ns)!=(item['size_bytes'],item['mtime_ns'],item['ctime_ns']):raise ValueError('raw original changed since audited full SHA')
- subprocess.run(['git','merge-base','--is-ancestor',json.loads((ROOT/'docs/research_s8/FREEZE_PUSH_RECEIPT.json').read_text())['local_commit'],'HEAD'],cwd=ROOT,check=True,capture_output=True)
+ receipt=json.loads((ROOT/'docs/research_s8/FREEZE_PUSH_RECEIPT.json').read_text())
+ subprocess.run(['git','merge-base','--is-ancestor',receipt['local_commit'],'HEAD'],cwd=ROOT,check=True,capture_output=True)
+ committed=subprocess.check_output(['git','show',receipt['local_commit']+':'+f['freeze_relative_path']],cwd=ROOT)
+ if hashlib.sha256(committed).hexdigest()!=receipt['freeze_SHA']:raise ValueError('remote-verified commit does not contain this exact scientific freeze')
  return f
 def record_opening(access,kind):
  if access is None:raise ValueError('S8 performance access without freeze')
