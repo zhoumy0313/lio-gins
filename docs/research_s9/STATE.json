@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-S9-MULTISCENARIO",
   "stage": "A",
-  "status": "PRE_FREEZE_INTERFACES_CHECKPOINT_COMPLETE",
+  "status": "PRE_FREEZE_ANALYSIS_CHECKPOINT_COMPLETE",
   "base_S8_commit": "ca6bf095426a5c1e06387f156a15178921276358",
   "branch": "research/lio-gins-s9-multiscenario",
   "routes": {
@@ -31,7 +31,8 @@
   },
   "completed_stages": [
     "REGISTER",
-    "PRE_FREEZE_INTERFACES"
+    "PRE_FREEZE_INTERFACES",
+    "PRE_FREEZE_ANALYSIS"
   ],
-  "updated_UTC": "2026-10-12T09:11:25.177615+00:00"
+  "updated_UTC": "2026-10-12T09:24:26.776437+00:00"
 }

@@ -9,7 +9,7 @@ protected=[p for p in git('ls-tree','-r','--name-only',BASE).splitlines() if p n
 assert not git('diff',BASE,'--',*protected),'inherited science modified'
 p=ROOT/'docs/research_s9/STATE.json';s=json.loads(p.read_text());s.update(stage=next_stage,status=stage+'_CHECKPOINT_COMPLETE',updated_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat());s['completed_stages'].append(stage);p.write_text(json.dumps(s,indent=2)+'\n')
 with (ROOT/'docs/research_s9/STATE_HISTORY.jsonl').open('a') as f:f.write(json.dumps(s)+'\n')
-paths=['AGENTS.md','.gitignore','docs/USER_ACTION_REQUIRED.md','docs/GOAL_LIO_GINS_S9_MULTISCENARIO.md','docs/research_s9','configs/s9','experiments/s9','artifacts/s9','freezes/s9','paper/versions/s9_r01','paper/versions/s9_r02','paper/versions/s9_r03','paper/submission_candidate/s9']
+paths=['AGENTS.md','.gitignore','docs/USER_ACTION_REQUIRED.md','docs/GOAL_LIO_GINS_S9_MULTISCENARIO.md','docs/research_s9','configs/s9','configs/s9_initialization_protocol.json','experiments/s9','artifacts/s9','freezes/s9','paper/versions/s9_r01','paper/versions/s9_r02','paper/versions/s9_r03','paper/submission_candidate/s9']
 subprocess.run(['git','add','--',*[p for p in paths if (ROOT/p).exists()]],check=True)
 for p in git('diff','--cached','--name-only').splitlines():assert (ROOT/p).stat().st_size<10000000,p
 staged=git('diff','--cached','--binary')

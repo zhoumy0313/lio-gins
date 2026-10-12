@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "protocol_id": "known_initial_state_first_reference_epoch_v1",
+  "status": "preregistered_before_robot_performance",
+  "protocol": "controlled_known_initial_state",
+  "reference_epoch_rule": "first finite navigation row; read exactly one reference state",
+  "allowed_reference_state": [
+    "initial_local_NED_position",
+    "initial_NED_velocity",
+    "initial_roll_pitch_yaw"
+  ],
+  "position_source": "latest valid F9P at or before initial epoch, propagated with given initial velocity to epoch; subtract rotated antenna lever once",
+  "local_geographic_origin": "unknown",
+  "evaluation_alignment": "one shared fixed translation from the predetermined initial reference position; no method-specific or trajectory fitting",
+  "reported_quantity": "initial_position_conditioned_error; not absolute WGS84 accuracy",
+  "common_outer_start": "reference initial epoch; interpolate LIO at that epoch only after available scan endpoint, declare bounded delay",
+  "KF_GINS_initial_epoch": "first IMU epoch at or after reference epoch; record offset; advance given initial position by initial velocity times offset",
+  "heldout_rule": "same protocol, but export and performance remain prohibited until development evidence and freeze",
+  "online_reference_access": false,
+  "GNSS_std_floor_NED_m": [
+    1.0,
+    1.0,
+    2.0
+  ],
+  "GNSS_invalid_rule": "reject nonfinite or nonpositive receiver standard deviations; retain reason and original row ID",
+  "initial_velocity_std_mps": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "initial_attitude_std_deg": [
+    0.1,
+    0.1,
+    1.0
+  ],
+  "imu_noise_source": "fixed i2Nav-Robot-Baseline IC-GVINS gvins_i2nav.yaml 6c602f8d974fbe5be1183771541c90057e9e3bb6; transferred engineering priors, not fitted ADIS noise identification",
+  "imunoise": {
+    "arw": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "vrw": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "gbstd": [
+      50.0,
+      50.0,
+      50.0
+    ],
+    "abstd": [
+      50.0,
+      50.0,
+      50.0
+    ],
+    "gsstd": [
+      300.0,
+      300.0,
+      300.0
+    ],
+    "asstd": [
+      300.0,
+      300.0,
+      300.0
+    ],
+    "corrtime": 1.0
+  },
+  "scale_prior_note": "300ppm Gauss-Markov std is a declared project approximation for KF-GINS scale states, absent in upstream GVINS config; requires bounded sensitivity before strong-baseline status",
+  "imu_initial_bias_and_scale": "zero mean, no truth-derived calibration",
+  "evaluation_hz": 10,
+  "reference_max_interpolation_gap_s": 0.02,
+  "KF_output_max_interpolation_gap_s": 0.02,
+  "reference_row_selection": "single earliest original reference row at/after max(reference first timestamp, first IMU, first valid causal GNSS, first primary LIO cache timestamp); selection uses timestamps/input validity only, never position error",
+  "duplicate_reference_rule": "nondecreasing times allowed, stable first original row per timestamp, no smoothing or alignment"
+}
