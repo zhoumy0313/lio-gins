@@ -6,4 +6,4 @@
 - D: df10d0788c450db8b78c2eeb8ff8a12c2cb08ee1
 - F: 2ede2117455092234f17e8cbbc948e3c31c17994
 
-Final local delivery commit is added here after successful commit; this mutable commit index is excluded from the delivery content seal. No S10 remote branch has been pushed.
+FINAL: 85281b5fb2f449ac83acd4df7c211d5f39669bb0. This final content checkpoint seals394 delivered files; the subsequent INDEX commit only records this identity. This mutable commit index is excluded from the content seal. No S10 remote branch has been pushed.
