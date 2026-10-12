@@ -1,6 +1,6 @@
 {
   "goal": "LIO-GINS-S10-MODERATE-BIAS-PAPER",
-  "stage": "FINAL_DELIVERY",
+  "stage": "COMPLETE_TUTOR_REVIEW_LOCAL",
   "base_S9_commit": "4f7a4b4c5b87040d7d7307f25a06cd785b1ff7b9",
   "branch": "research/lio-gins-s10-moderate-bias-paper",
   "remote_push_authorized": false,
@@ -10,7 +10,8 @@
     "C",
     "D",
     "E1",
-    "F"
+    "F",
+    "FINAL"
   ],
   "runs": {
     "A": "/home/aaron/lio_gins/cache/s10/runs/20261012T131039820840Z_A_6bc8bdfa",
@@ -24,7 +25,7 @@
     "final_audit": "/home/aaron/lio_gins/cache/s10/runs/20261012T140101450033Z_FINAL_cfb5e857"
   },
   "flags": {
-    "execution_complete": false,
+    "execution_complete": true,
     "source_data_traced": true,
     "bias3_cancellation_audited": true,
     "event_mechanism_explained": true,
@@ -42,7 +43,7 @@
   },
   "scope": "Post-hoc exploratory3m focus from already opened six routes; no r04, no retuning, no old algorithm/output modification",
   "task_spec_SHA": "9ffff476c6d5178db845f0242a01fe8f34e138b9028ed5a548ee3742c4a2b1c5",
-  "updated_UTC": "2026-10-12T14:04:13.920809+00:00",
+  "updated_UTC": "2026-10-12T14:06:47.819561+00:00",
   "mechanism_scope": "street003m Event0 direct single-factor/exact prior parity; Event1 supporting but dependent; Event2 neutral history; adverse clean controls/offline drift decomposition; no validated online applicability classifier",
   "strong_control_scope": "street00 fixed3m post90 macro below all19 standard controls, including unqualified long waits; no-decay ablation is better; no universal/independent confirmatory claim",
   "E_decision": {
@@ -54,5 +55,13 @@
   "scientific_level": "Level B exploratory event-level case study; no validated online applicability classifier or independent confirmation",
   "positive_effect_scope": "street00 fixed3m post90 macro below all19 standard controls, including unqualified long waits; no-decay ablation is better; no universal/independent confirmatory claim",
   "PDF_SHA": "e5990738828fadd1e37f9dcd97b7407aecddb10c11f63c86047e35cbfeaf571b",
-  "selected_paper_version": "s10_r08"
+  "selected_paper_version": "s10_r08",
+  "local_checkpoints": {
+    "A": "650f14ecaca723b3734a99f94e10d1a8bc89e073",
+    "B": "5da0c7b328872190340e332f9e4b045bd6f5f958",
+    "C": "94ef05033729d7d4eb6c77787f3fb452f679425a",
+    "D": "df10d0788c450db8b78c2eeb8ff8a12c2cb08ee1",
+    "F": "2ede2117455092234f17e8cbbc948e3c31c17994"
+  },
+  "completion_scope": "autonomous A-D/E1/F evidence-reviewed tutor manuscript and local delivery; E2/E3 deferred, no S10 remote push authorized, no human author review or formal submission"
 }

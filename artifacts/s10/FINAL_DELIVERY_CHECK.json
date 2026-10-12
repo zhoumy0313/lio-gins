@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s10/seal_delivery.py"
+  ],
+  "started_UTC": "2026-10-12T14:06:47.950692+00:00",
+  "finished_UTC": "2026-10-12T14:06:49.181796+00:00",
+  "exit_code": 0,
+  "file_count": 394,
+  "sealed_delivery_manifest_SHA": "d99795c69f28ca46696a2f9b3e1ed6124b49495f26d20d3139ee6cec8e99e15b",
+  "own_final_audit_seal_checked_files": 20,
+  "all_current_paper_and_input_audits_valid": true,
+  "inherited_files_unchanged": true,
+  "retained_versions": [
+    "s10_r01",
+    "s10_r02",
+    "s10_r03",
+    "s10_r04",
+    "s10_r05",
+    "s10_r06",
+    "s10_r07",
+    "s10_r08"
+  ],
+  "max_file_bytes": 5656758,
+  "review_PDF_SHA": "e5990738828fadd1e37f9dcd97b7407aecddb10c11f63c86047e35cbfeaf571b",
+  "no_remote_push_or_submission": true
+}

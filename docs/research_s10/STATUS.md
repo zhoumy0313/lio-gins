@@ -167,3 +167,27 @@ human_author_review_complete: false
 formal_submission_ready: false
 ```
 
+
+## Final autonomous delivery
+
+F actual local checkpoint2ede2117455092234f17e8cbbc948e3c31c17994; all previous checkpoints preserved. Final integrity command exit0,3.975570535s: R2 manifest111/S8 1030/S9 2693 files and all532 source pairs unchanged;9891 unique hashes verified. All previous recorder run seals valid;11 actual recorder failures retained, plus separate built-in compiler multi-file limitation. The audit recorder own seal is independently checked by seal_delivery.py after completion. Final source/PDF6 pages with real197 used/199 validated keys and complete point/source provenance. Human author review remains pending. No new data/permission needed to complete the local tutor package.
+
+```text
+execution_complete: true
+source_data_traced: true
+bias3_cancellation_audited: true
+event_mechanism_explained: true
+P_vs_no_anchor_local_gain_supported: true
+P_vs_strong_controls_in_declared_scope_supported: true
+observed_descriptive_gain: true
+mechanism_evidence_supported: true
+independent_confirmatory_gain_supported: false
+novelty_supported: false
+full_six_page_review_draft_ready: true
+human_author_review_complete: false
+formal_submission_ready: false
+paper_ready: false
+positive_effect_supported: true
+```
+
+Final packaging command `python3 experiments/s10/seal_delivery.py` seals current source/docs/figures/results/all8 paper versions, verifies own completed audit seal and protected inherited tree, then `python3 experiments/s10/checkpoint.py FINAL` creates the local final checkpoint. Actual results in artifacts/s10/FINAL_DELIVERY_CHECK.json; local commit index docs/research_s10/CHECKPOINTS.md is excluded from recursive seal. Full scientific meaning: supported post-hoc street00 fixed3m local accuracy/admission-memory evidence; no-decay stronger, other neutral/adverse routes, no online eligibility classifier or independent confirmation. Execution completion does not authorize new remote push or imply paper/formal readiness.
