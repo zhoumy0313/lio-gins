@@ -1,3 +1,3 @@
-# Current action entry
+# Current research action list
 
-See [S8 checklist](research_s8/USER_ACTION_REQUIRED.md). Historical R1/R2 checklists remain unchanged.
+S9: docs/research_s9/USER_ACTION_REQUIRED.md. Prior S8/R2 lists preserved in their own directories.

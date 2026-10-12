@@ -38,3 +38,7 @@
 ## S8 补充
 
 新分支 research/lio-gins-s8-building01 已获授权推送，每阶段 checkpoint；R1/R2 分支不推送。P-r03 和19个固定策略不得更改。完整科学冻结成功推送且 ls-remote SHA 精确相同后才打开 building01 方法与精度；不使用 R2 ANALYSIS_FREEZE_ONLY 替代。仅一次完整矩阵，完整保留负结果。
+
+## S9 当前任务（用户2026-10-12后续指令优先）
+
+当前继续 LIO-GINS-S9-MULTISCENARIO；先读 docs/GOAL_LIO_GINS_S9_MULTISCENARIO.md 和 docs/research_s9/STATE.json。仅推送 research/lio-gins-s9-multiscenario，保留全部R1/R2/S8含负结果和论文；street00/playground00优先、building02仅按技术可用性纳入。完整科学冻结并核验远端后才读取新路线精度；全部19策略/七扰动/自然/固定事件和指标保持不变。不得测试后调参、择路线或择事件。缺项集中 docs/research_s9/USER_ACTION_REQUIRED.md。完成多场景六页审阅稿和审计，不正式投稿。

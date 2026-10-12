@@ -1,0 +1,1 @@
+S8 r04: typography and annotation layout only; r03 PDF/source/figures retained. Add spaces around reported values/units and fix scientific notation. Original scientific source, parameters, expected grids and all table numbers remain unchanged. Figure derivation retains exact original plot point files and first-event selection; no new experiment or tuning.

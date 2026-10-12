@@ -25,3 +25,6 @@ outputs_r2/
 
 # S8 immutable full evidence retained locally.
 outputs_s8/
+
+# S9 complete immutable numeric outputs retained locally.
+outputs_s9/
