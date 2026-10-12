@@ -1,19 +1,21 @@
 {
   "goal": "LIO-GINS-S10-MODERATE-BIAS-PAPER",
-  "stage": "B",
+  "stage": "C",
   "base_S9_commit": "4f7a4b4c5b87040d7d7307f25a06cd785b1ff7b9",
   "branch": "research/lio-gins-s10-moderate-bias-paper",
   "remote_push_authorized": false,
   "completed_stages": [
-    "A"
+    "A",
+    "B"
   ],
   "runs": {
-    "A": "/home/aaron/lio_gins/cache/s10/runs/20261012T131039820840Z_A_6bc8bdfa"
+    "A": "/home/aaron/lio_gins/cache/s10/runs/20261012T131039820840Z_A_6bc8bdfa",
+    "B": "/home/aaron/lio_gins/cache/s10/runs/20261012T131523685506Z_B_55e41bdd"
   },
   "flags": {
     "execution_complete": false,
     "source_data_traced": true,
-    "bias3_cancellation_audited": false,
+    "bias3_cancellation_audited": true,
     "event_mechanism_explained": false,
     "P_vs_no_anchor_local_gain_supported": true,
     "P_vs_strong_controls_in_declared_scope_supported": false,

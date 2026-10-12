@@ -1,0 +1,11 @@
+{
+  "event_records": 42,
+  "policy_records": 798,
+  "labeled_rows": 3780,
+  "all6routes_and_repeat": true,
+  "bias3_cancellation_audited": true,
+  "offline_labels_only": true,
+  "independent_confirmatory_gain_supported": false,
+  "script_SHA": "c26aefcded07315304702eb8141c0d0a4793c54cb8c8ca45580a9084ea25f7c3",
+  "common_SHA": "176abba1fad02fe6fef66f581f1e94c4112a78c26d7bd14d30bb5c09fc053748"
+}

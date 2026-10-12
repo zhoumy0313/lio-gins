@@ -1,0 +1,24 @@
+{
+  "run_id": "20261012T131523685506Z_B_55e41bdd",
+  "stage": "B",
+  "purpose": "all3m10m_injected_original_ID_receiver_error_and_policy_acceptance_audit",
+  "argv": [
+    "python3",
+    "experiments/s10/audit_bias3_injection.py"
+  ],
+  "started_UTC": "2026-10-12T13:15:23.686923+00:00",
+  "source_commit": "650f14ecaca723b3734a99f94e10d1a8bc89e073",
+  "source_SHA": {
+    "experiments/s10/record_run.py": "110e25e41ded188e3a7c0cf990f8bef6056e411ff69ed935424867da4996f6db",
+    "experiments/s10/checkpoint.py": "972b034b597f412661be7021d0932b35535300dec307dfd7fcab185793a85b5d",
+    "experiments/s10/audit_bias3_injection.py": "c26aefcded07315304702eb8141c0d0a4793c54cb8c8ca45580a9084ea25f7c3",
+    "experiments/s10/build_evidence_matrix.py": "552b7117bce5ec1a1d7168545df8cf17e87fc9f056682108ea3977681a728ab3",
+    "experiments/s10/common.py": "176abba1fad02fe6fef66f581f1e94c4112a78c26d7bd14d30bb5c09fc053748",
+    "experiments/s10/tests/test_metrics.py": "347bdd49be09ca6ef57c3b567cbcc922025c3838f54c92e50eed3de81cf19eec"
+  },
+  "status": "COMPLETED",
+  "analysis_role": "post-hoc read-only, no independent confirmation",
+  "exit_code": 0,
+  "wall_seconds": 48.31319120198896,
+  "finished_UTC": "2026-10-12T13:16:12.001862+00:00"
+}
