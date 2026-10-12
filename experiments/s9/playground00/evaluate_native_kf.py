@@ -15,7 +15,7 @@ protocol=ic['protocol'];loc=json.loads((root/'configs/data_locations.json').read
 nav=load_kf_gins_llh(navpath);ref=load_i2nav_local_ned(refpath);ref=ref[np.r_[True,np.diff(ref[:,0])>0]];gnss=np.loadtxt(data/(seq+'_F9P_GNSS.pos'));imu_times=np.loadtxt(data/(seq+'_ADIS16465_IMU.txt'),usecols=0)
 if np.any(np.diff(nav[:,1])<=0) or np.any(np.diff(ref[:,0])<=0):raise ValueError('nonmonotonic trajectory; explicit policy required')
 origin=ic['origin_ADIS_llh_deg_m'];translation=np.array(ic['reference_initial_local_NED_m']);npos=llh_to_ned(nav[:,2:5],origin)+translation
-start=ic['reference_epoch_sow'];end=min(ref[-1,0],imu_times[-1]);grid=np.arange(int(np.ceil(start*10)),int(np.floor(end*10))+1)/10
+start=ic['reference_epoch_sow'];context=json.loads((root/'artifacts/s9/playground00/technical_context.json').read_text());end=min(ref[-1,0],imu_times[-1],json.loads((Path(context['cache'])/'cache_identity.json').read_text())['time_sow_range'][1]);grid=np.arange(int(np.ceil(start*10)),int(np.floor(end*10))+1)/10
 n,nvalid=interpolate_with_gaps(nav[:,1],npos,grid,protocol['KF_output_max_interpolation_gap_s']);r,rvalid=interpolate_with_gaps(ref[:,0],ref[:,1:4],grid,protocol['reference_max_interpolation_gap_s']);err=n-r
 m=horizontal_metrics(err,len(grid));m['vertical_rmse_m']=float(np.sqrt(np.nanmean(err[:,2]**2)))
 np.savetxt(out/'per_epoch.csv',np.column_stack([grid,n,r,err,nvalid,rvalid]),delimiter=',',header='sow,N,E,D,ref_N,ref_E,ref_D,error_N,error_E,error_D,output_available,reference_available',comments='')

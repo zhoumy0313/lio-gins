@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "protocol_id": "known_initial_state_first_reference_epoch_v1",
-  "status": "preregistered_before_robot_performance",
+  "protocol_id": "known_initial_state_first_common_supported_epoch_S9_v1",
+  "status": "preregistered_S9_before_new_route_precision",
   "protocol": "controlled_known_initial_state",
-  "reference_epoch_rule": "first finite navigation row; read exactly one reference state",
+  "reference_epoch_rule": "single earliest original reference row at/after max(reference first timestamp, first IMU, first valid causal GNSS, first primary LIO cache timestamp); selection uses timestamps/input validity only, never position error",
   "allowed_reference_state": [
     "initial_local_NED_position",
     "initial_NED_velocity",
@@ -15,7 +15,7 @@
   "reported_quantity": "initial_position_conditioned_error; not absolute WGS84 accuracy",
   "common_outer_start": "reference initial epoch; interpolate LIO at that epoch only after available scan endpoint, declare bounded delay",
   "KF_GINS_initial_epoch": "first IMU epoch at or after reference epoch; record offset; advance given initial position by initial velocity times offset",
-  "heldout_rule": "same protocol, but export and performance remain prohibited until development evidence and freeze",
+  "heldout_rule": "unchanged numerical initialization/lever/STD; single predetermined common-covered state; performance prohibited until collective source/config/input freeze pushed and exact remote verification",
   "online_reference_access": false,
   "GNSS_std_floor_NED_m": [
     1.0,

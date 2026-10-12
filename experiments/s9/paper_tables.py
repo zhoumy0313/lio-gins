@@ -11,9 +11,14 @@ def value(table,cache,m,field):
 tex=[r'\begin{table*}[t]\centering\small',r'\caption{All nineteen frozen policies: biased-return 90-s horizontal RMSE (m), equal-weight mean over all three fixed events. Building00/parking00 are seen; building01 was prospective in S8 and already seen before S9. The other columns are S9 prospective routes. No policy or unfavorable route is removed. Full natural, latency, exposure and extended-window records accompany the paper.}\label{tab:allroutes}',r'\begin{tabular}{l'+'r'*len(sources)+r'}\toprule','Policy & '+' & '.join({'primary':'Building00','parking':'Parking00','building01':'Building01'}.get(k,k.capitalize()) for k in sources)+r' \\\midrule']
 for m in order:tex.append(names.get(m,m)+' & '+' & '.join(value('cross_route_bias90',k,m,'bias_RMSE_90_m') for k in sources)+r' \\')
 tex+=[r'\bottomrule\end{tabular}\end{table*}']
-tex+=[r'\begin{table*}[t]\centering\small',r'\caption{Prespecified S9 mechanism contrasts and strong simple controls. Natural is whole-route horizontal RMSE; Clean is maximum actual clean GNSS measurement-time admission delay (s). Bias90/180 are matched macro RMSE (m). Exposure is accepted/exposed injected rows. Q requires clean delay at most15 s, frozen natural-cost cap and full coverage. Qualification durations are not unconditional waiting times; all nineteen complete results are retained.}\label{tab:primary}',r'\begin{tabular}{llrrrrrc}\toprule',r'Route & Policy & Natural & Clean & Bias90 & Bias180 & Exposure & Q\\\midrule']
+tex+=[r'\begin{table*}[t]\centering\small',r'\caption{Prespecified S9 mechanism contrasts, strong simple controls and strongest jointly qualified control per route. Natural is whole-route horizontal RMSE; Clean is maximum actual clean GNSS measurement-time admission delay (s). Bias90/180 are matched macro RMSE (m). Exposure is accepted/exposed injected rows. Q requires clean delay at most15 s, frozen natural-cost cap and full coverage. Qualification durations are not unconditional waiting times; all nineteen complete results are retained.}\label{tab:primary}',r'\begin{tabular}{llrrrrrc}\toprule',r'Route & Policy & Natural & Clean & Bias90 & Bias180 & Exposure & Q\\\midrule']
 for cache in state['included_routes']:
- for m in ['P','Clock2','P_without_anchor','NIS2','B5','Clock90']:
+ selected=['P','Clock2','P_without_anchor','NIS2','B5','Clock90']
+ eligible=[row for row in rows[cache] if row['method']!='P' and row['service_qualified']]
+ if eligible:
+  best=min(eligible,key=lambda row:row['bias_RMSE_90_m'])['method']
+  if best not in selected:selected.append(best)
+ for m in selected:
   vals=[value('S9_cost_clock_and_ablation',cache,m,f) for f in ['natural_RMSE_m','clean_latency_max_s','bias_RMSE_90_m','bias_RMSE_180_m','bias_accepted_rows','service_qualified']]
   tex.append(cache+' & '+names.get(m,m)+' & '+' & '.join(vals)+r' \\')
 tex+=[r'\bottomrule\end{tabular}\end{table*}'];(version/'generated_tables.tex').write_text('\n'.join(tex)+'\n');(version/'table_cell_bindings.json').write_text(json.dumps(cells,indent=2)+'\n');(OUT/'table_audit.json').write_text(json.dumps({'cells':len(cells),'all19_in_cross_route_table':True,'sources':{k:{'path':str(p),'SHA':hashlib.sha256(p.read_bytes()).hexdigest()} for k,p in sources.items()}},indent=2)+'\n');print(json.dumps({'cells':len(cells)}))

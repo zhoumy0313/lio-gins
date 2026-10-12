@@ -11,7 +11,7 @@ root=Path(__file__).resolve().parents[3];out=Path(os.environ['LIO_GINS_RUN_DIR']
 seq=ic['sequence'];role=ic.get('role','development');access=verify_access(seq,role,a.freeze);record_opening(access,'native_GNSS_INS_baseline')
 if ic['reference_state_rows_read']!=1:raise ValueError('wrong initialization')
 if access is not None and a.noise_scale!=2:raise ValueError('heldout native noise is frozen at STD scale2')
-protocol=json.loads((root/'configs/initialization_protocol.json').read_text())
+protocol=json.loads((root/'configs/s9_initialization_protocol.json').read_text())
 if ic['protocol']!=protocol:raise ValueError('initialization protocol changed')
 loc=json.loads((root/'configs/data_locations.json').read_text());data=root/loc['dataset_root']/seq
 repo=root/'third_party/KF-GINS';commit=subprocess.check_output(['git','-C',str(repo),'rev-parse','HEAD'],text=True).strip()

@@ -1,0 +1,14 @@
+{
+  "stage": "A",
+  "purpose": "playground00_no_reference_complete_LIO_cache",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/playground00/build_cache.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/playground00/build_cache.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da"
+  ]
+}

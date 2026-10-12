@@ -134,5 +134,7 @@
   "reference_duplicate_policy": "nondecreasing times allowed, stable first original row per timestamp, no smoothing or alignment",
   "Clock2_comparison": "same fixed good-duration2 qualification as P; show actual per-event clean and biased admission clocks, never assume equal observed delays",
   "matrix_pairs_per_route": 152,
-  "excluded_route_rule": "if technical support fails before collective freeze, retain route and failure in report; no performance exclusion"
+  "excluded_route_rule": "if technical support fails before collective freeze, retain route and failure in report; no performance exclusion",
+  "paper_primary_table_selection": "P, Clock2, no-anchor, NIS30, Huber2.5, Clock90 plus strongest qualified non-P if absent; full19 biased values/all complete raw records remain visible",
+  "whole_route_expected_grid": "10Hz integer ticks over [earliest common reference initialization, min(reference end, ADIS text end, single primary LIO cache timestamp end)]; endpoint support decided from timestamps before precision, no internal/successful intersection or per-method crop"
 }

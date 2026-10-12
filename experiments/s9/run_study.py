@@ -2,8 +2,8 @@
 import datetime,gzip,json,os,shutil,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];ROUTES=['street00','playground00','building02']
-def stage(route,phase,purpose,script,args=(),timeout=300,kind='engineering'):
- folder=ROOT/'experiments/s9'/route;argv=[sys.executable,str(folder/'record_run.py'),'--stage',phase,'--purpose',route+'_'+purpose,'--kind',kind,'--input',str(folder/script),'--timeout',str(timeout),'--',sys.executable,str(folder/script),*map(str,args)];p=subprocess.run(argv,cwd=ROOT,capture_output=True,text=True);print(json.dumps({'route':route,'stage':phase,'purpose':purpose,'exit_code':p.returncode,'receipt':p.stdout.strip(),'stderr':p.stderr[-500:]}),flush=True);assert p.returncode==0,p.stdout;return Path(json.loads(p.stdout.splitlines()[-1])['output'])
+def stage(route,phase,purpose,script,args=(),timeout=300,kind='engineering',allow_failure=False):
+ folder=ROOT/'experiments/s9'/route;argv=[sys.executable,str(folder/'record_run.py'),'--stage',phase,'--purpose',route+'_'+purpose,'--kind',kind,'--input',str(folder/script),'--timeout',str(timeout),'--',sys.executable,str(folder/script),*map(str,args)];p=subprocess.run(argv,cwd=ROOT,capture_output=True,text=True);print(json.dumps({'route':route,'stage':phase,'purpose':purpose,'exit_code':p.returncode,'receipt':p.stdout.strip(),'stderr':p.stderr[-500:]}),flush=True);assert allow_failure or p.returncode==0,p.stdout;return Path(json.loads(p.stdout.splitlines()[-1])['output'])
 def common_record(route,phase,purpose,script,args=(),timeout=300):
  folder=ROOT/'experiments/s9'/route;p=subprocess.run([sys.executable,str(folder/'record_run.py'),'--stage',phase,'--purpose',purpose,'--input',str(ROOT/'experiments/s9'/script),'--timeout',str(timeout),'--',sys.executable,str(ROOT/'experiments/s9'/script),*map(str,args)],cwd=ROOT,capture_output=True,text=True);print(p.stdout,flush=True);assert p.returncode==0;return Path(json.loads(p.stdout.splitlines()[-1])['output'])
 def state():return json.loads((ROOT/'docs/research_s9/STATE.json').read_text())
@@ -35,6 +35,15 @@ def main():
   with (matrix/'complete_index.json').open('rb') as src,gzip.open(art/'complete_index.json.gz','wb') as dst:shutil.copyfileobj(src,dst)
   for name in ['scientific_judgment.json','category_table.json','category_table.csv']:shutil.copy2(judgment/name,art/name)
   shutil.copy2(check/'independent_check.json',art/'independent_check.json');shutil.copy2(cancel/'injection_cancellation.json',art/'injection_cancellation.json')
+  context=json.loads((ROOT/'artifacts/s9'/route/'technical_context.json').read_text())
+  native=stage(route,'C','independent_fixed_KF_GINS_natural_transfer','run_native_kf.py',[context['initialization'],'--noise-scale','2','--freeze',ROOT/context['freeze_relative_path']],timeout=180,allow_failure=True)
+  native_evaluation=None
+  if json.loads((native/'manifest.json').read_text())['status']=='PASSED':
+   native_evaluation=stage(route,'C','offline_fixed_KF_GINS_transfer_evaluation','evaluate_native_kf.py',[native,context['initialization'],'--freeze',ROOT/context['freeze_relative_path']],timeout=240,allow_failure=True)
+   if (native_evaluation/'metrics.json').exists():shutil.copy2(native_evaluation/'metrics.json',art/'native_KF_metrics.json')
+  shutil.copy2(native/'manifest.json',art/'native_KF_run_manifest.json')
+  s=state();s['routes'][route].update(native_KF_run=str(native),native_KF_evaluation=str(native_evaluation) if native_evaluation else None);save(s)
+
   s=state();s['routes'][route].update(status='MATRIX_ANALYSIS_VERIFIED',independent_check_run=str(check),judgment_run=str(judgment),cancellation_run=str(cancel));save(s)
  aggregate=common_record(included[0],'C','all_registered_route_comparisons','aggregate.py');s=state();s['aggregate_run']=str(aggregate);save(s)
  art=ROOT/'artifacts/s9/C';art.mkdir()

@@ -1,0 +1,14 @@
+{
+  "stage": "A",
+  "purpose": "street00_no_reference_complete_LIO_cache",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/street00/build_cache.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/street00/build_cache.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T090936671832Z_A_e063fcd4"
+  ]
+}

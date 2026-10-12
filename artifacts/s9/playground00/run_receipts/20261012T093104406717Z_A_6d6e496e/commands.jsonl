@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/playground00/initial_condition.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T09:31:04.415742+00:00", "ended_UTC": "2026-10-12T09:31:07.235818+00:00", "exit_code": 0, "wall_seconds": 2.81980116100749, "CPU_user_s": 2.650465, "CPU_system_s": 0.148359, "max_RSS_KiB": 102624, "executed": true}

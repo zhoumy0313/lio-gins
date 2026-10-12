@@ -1,0 +1,14 @@
+{
+  "stage": "A",
+  "purpose": "street00_single1x_reused_FASTLIO_no_accuracy",
+  "kind": "real_frontend",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/street00/run_frontend.py"
+  ],
+  "timeout": 4000.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/street00/run_frontend.py",
+    "/home/aaron/lio_gins/data/i2nav-dataset/street00/street00.bag"
+  ]
+}

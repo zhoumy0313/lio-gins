@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T090936671832Z_A_e063fcd4",
+  "stage": "A",
+  "purpose": "street00_single1x_reused_FASTLIO_no_accuracy",
+  "kind": "real_frontend",
+  "source_commit": "5846e1b8e85a0e4c3dfbab158056d74fdced0ad5",
+  "dirty_diff_SHA": "954c95fe3ea8e328f2bb3ca0c3d31d1f6f3e80535bebe2191d519bdf7ccc170c",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/street00/run_frontend.py": "31119b673113889182511cdf38ca2482fbeefabcae7a922a3a83dd85f3ba1e8b"
+  },
+  "started_UTC": "2026-10-12T09:09:36.682797+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T09:33:11.454478+00:00"
+}

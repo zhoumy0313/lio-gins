@@ -1,0 +1,13 @@
+{
+  "stage": "A",
+  "purpose": "street00_single_earliest_common_reference_state",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/street00/initial_condition.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/street00/initial_condition.py"
+  ]
+}

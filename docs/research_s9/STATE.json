@@ -1,24 +1,44 @@
 {
   "goal_id": "LIO-GINS-S9-MULTISCENARIO",
   "stage": "A",
-  "status": "PRE_FREEZE_ANALYSIS_CHECKPOINT_COMPLETE",
+  "status": "PREFREEZE_COMMON_SUPPORT_CHECKPOINT_COMPLETE",
   "base_S8_commit": "ca6bf095426a5c1e06387f156a15178921276358",
   "branch": "research/lio-gins-s9-multiscenario",
   "routes": {
     "street00": {
       "priority": 0,
-      "status": "REGISTERED_NOT_OPENED",
-      "precision_opened": false
+      "status": "ENGINEERING_RUNNING",
+      "precision_opened": false,
+      "data_identity_verified": true,
+      "gps_week": 2364
     },
     "playground00": {
       "priority": 1,
-      "status": "REGISTERED_NOT_OPENED",
-      "precision_opened": false
+      "status": "TECHNICALLY_READY",
+      "precision_opened": false,
+      "data_identity_verified": true,
+      "gps_week": 2363,
+      "engineering_result": {
+        "route": "playground00",
+        "status": "TECHNICALLY_READY",
+        "steps": {
+          "data_audit": "/home/aaron/lio_gins/outputs_s9/20261012T090450431115Z_A_92763d57",
+          "extra_interfaces": "/home/aaron/lio_gins/outputs_s9/20261012T090535915830Z_A_ad3d7ee6",
+          "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090537634284Z_A_4ea53437",
+          "frontend": "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da",
+          "cache": "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf",
+          "initialization": "/home/aaron/lio_gins/outputs_s9/20261012T093104406717Z_A_6d6e496e",
+          "stress": "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2"
+        },
+        "precision_opened": false
+      }
     },
     "building02": {
       "priority": 2,
-      "status": "REGISTERED_NOT_OPENED",
-      "precision_opened": false
+      "status": "ENGINEERING_RUNNING",
+      "precision_opened": false,
+      "data_identity_verified": true,
+      "gps_week": 2364
     }
   },
   "flags": {
@@ -32,7 +52,8 @@
   "completed_stages": [
     "REGISTER",
     "PRE_FREEZE_INTERFACES",
-    "PRE_FREEZE_ANALYSIS"
+    "PRE_FREEZE_ANALYSIS",
+    "PREFREEZE_COMMON_SUPPORT"
   ],
-  "updated_UTC": "2026-10-12T09:24:26.776437+00:00"
+  "updated_UTC": "2026-10-12T09:35:49.119812+00:00"
 }
