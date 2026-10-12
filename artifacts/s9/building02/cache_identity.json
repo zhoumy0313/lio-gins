@@ -1,0 +1,69 @@
+{
+  "role": "s9_prospective_heldout",
+  "sequence": "building02",
+  "freeze_id": null,
+  "source_frontend_run": "/home/aaron/lio_gins/outputs_s9/20261012T093107491328Z_A_a201b6ab",
+  "input_identity": {
+    "bag": "/home/aaron/lio_gins/data/i2nav-dataset/building02/building02.bag",
+    "sequence": "building02",
+    "role": "s9_prospective_heldout",
+    "performance_opened": false,
+    "reference_access": false,
+    "freeze_id": null,
+    "sha256": "df23552043b08c121f3ec48eaa98efbba0aeba027c56e4436ea982a425eed48d",
+    "image": {
+      "runtime": "bubblewrap_user_namespace",
+      "build_run": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c",
+      "rootfs": "/home/aaron/lio_gins/outputs/20261011T130509928405Z_P1_4c5d376c/rootfs",
+      "binary_sha256": "b57bb87e42e0dfc99214670ba38c839b6bddcb64e81813b047cdb0c8a430afd4",
+      "base_oci_digest": "sha256:4f01fa743be43da0e14ddf2ac29b5118d9c0eb4057c9761c13303b8a52fa9c4f",
+      "prepared_run": "/home/aaron/lio_gins/outputs/20261011T130431070370Z_P2_5ed71f90",
+      "built": true
+    },
+    "sensors": [
+      "AT128",
+      "ADIS16465"
+    ],
+    "timing_kind": "rosbag_replay_wall_and_logged_frontend_processing",
+    "replay_rate": 1.0,
+    "runtime_overlay_sha256": {
+      "containers/run_inside.sh": "69a35894fdfdda976049d5eb027d94a1f9d37a0770b370edad79fba07218784e",
+      "containers/shutdown_clock.py": "cf1235b80d1311f421d6d4bf80ac35793b9d7625723d52b3db4a4b1ba575e804"
+    },
+    "shutdown_clock_policy": "advance clock only after EOF to wake Rate.sleep; no sensor messages"
+  },
+  "gps_week": 2364,
+  "time_sow_range": [
+    181296.06504392624,
+    183167.16497898102
+  ],
+  "output_rows": 18712,
+  "expected_raw_AT128_frames": 18715,
+  "raw_frame_output_ratio": 0.9998397007747796,
+  "max_scan_pose_gap_s": 0.1144568920135498,
+  "gaps_over_150ms": 0,
+  "maximum_quaternion_norm_serialization_error": 7.20719240288048e-07,
+  "quaternion_policy": "explicit normalization only for six-decimal serialization error <=2e-6",
+  "availability_policy": "max(scan_end, sampled_ROS_clock+one_10ms_clock_tick), cumulative maximum; replay clock resolution bound, not measured field latency",
+  "clock_precedes_scan_end_max_s": -0.0005495548248291016,
+  "frontend_processing_time_source": "fast_lio_time_log.csv",
+  "timing_complete": true,
+  "timing_limitation": null,
+  "health_diagnostic": "effective point count and mean absolute plane residual, not increment covariance",
+  "source_sha256": {
+    "trajectory.csv": "69586a1a69f58915a14d41981397bfd976cebe42f08c1e0170771ac1fe175273",
+    "interface_events.csv": "3399d350395e809f027b4b97af53cd2a6043b5cd148380e67bd515b10b02e400",
+    "frontend_input_identity.json": "3fa990c2dc2e97a92b5d56fd328aaa4c76ce7402b6ded588ac93f7a770b6082c",
+    "fast_lio_time_log.csv": "c6bda403e37527da78a6926513d80862756e323694f6c0de09f3150fe78cefc3"
+  },
+  "reference_access": false,
+  "holdout_performance_opened": false,
+  "cache_sha256": "1f6c7da29b8699647c332ef56aac5b2971fb94e95074e845452cf09ecb3f0d8c",
+  "frontend_processing_ms": {
+    "mean": 18.75617776079521,
+    "p50": 18.823895,
+    "p95": 24.894925,
+    "max": 52.1562,
+    "scope": "native t5-t0: IMU processing through incremental map; excludes input preprocessing/callback publication and wait; bag replay wall time reported separately"
+  }
+}

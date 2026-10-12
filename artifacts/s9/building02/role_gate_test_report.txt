@@ -9,6 +9,6 @@ test_remote_sha_mismatch_rejected (__main__.Interfaces) ... ok
 test_role_required (__main__.Interfaces) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.013s
+Ran 9 tests in 0.016s
 
 OK

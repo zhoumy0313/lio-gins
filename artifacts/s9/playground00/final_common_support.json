@@ -1,0 +1,274 @@
+{
+  "sequence": "playground00",
+  "common_sow": [
+    198870.0,
+    200195.66316103935
+  ],
+  "single_state_original_row": 73800,
+  "state_rows_read": 1,
+  "timestamp_only_selection": true,
+  "earlier_reference_uncovered_not_evaluated": 369.0,
+  "duplicate_reference_policy": "stable first row by timestamp, all raw rows retained",
+  "events": [
+    {
+      "case": "short_jump3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199021.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199321.0,
+      "post180_supported": true
+    },
+    {
+      "case": "short_jump3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199621.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199023.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199323.0,
+      "post180_supported": true
+    },
+    {
+      "case": "cluster_jump10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199623.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199050.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199350.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199650.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199080.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199380.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss60_normal",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199680.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199050.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199350.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias3",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199650.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199050.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199350.0,
+      "post180_supported": true
+    },
+    {
+      "case": "loss30_bias10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199650.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 150,
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "fault_start_sow": 199020.0,
+      "t_return_lower_bound_sow": 199080.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 450,
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "fault_start_sow": 199320.0,
+      "t_return_lower_bound_sow": 199380.0,
+      "post180_supported": true
+    },
+    {
+      "case": "ramp10",
+      "offset_s": 750,
+      "direction": [
+        0.7071067811865476,
+        0.7071067811865476,
+        0.0
+      ],
+      "fault_start_sow": 199620.0,
+      "t_return_lower_bound_sow": 199680.0,
+      "post180_supported": true
+    }
+  ],
+  "ADIS_end_minus_common_end_s": 0.010326960647944361,
+  "whole_grid_expected_samples": 13257,
+  "whole_common_output_and_GNSS_times_checked": 13257,
+  "invalid_interpolation_or_availability_timestamps": [],
+  "availability_deadline_s": 0.25,
+  "precision_opened": false,
+  "initialization_SHA": "a53b6a39b06215bd2f8a81e6bbd36705988febc326733a9f93206072fb2c8c6c",
+  "cache_SHA": "094f82ce60cfd7a777444f8b2ceb86638c7854c23bc6cdfa8b2c82600b64d6e3"
+}

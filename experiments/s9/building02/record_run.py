@@ -22,7 +22,7 @@ def main():
     except OSError as e:error=str(e)
     (snapshot/'s9_recorder.py').write_bytes(Path(__file__).read_bytes());diff=subprocess.check_output(['git','diff','--binary','HEAD'],cwd=ROOT);(out/'tracked_source_diff.patch').write_bytes(diff)
     manifest={'goal_id':'LIO-GINS-S9-MULTISCENARIO','run_id':rid,'stage':a.stage,'purpose':a.purpose,'kind':a.kind,'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'dirty_diff_SHA':hashlib.sha256(diff).hexdigest(),'input_SHA':inputs,'started_UTC':utc(),'status':'RUNNING','environment_registry_SHA':sha(ROOT/'containers/derived_rootfs.local.json'),'environment_python':sys.version,'raw_data_role':'S9_role_must_be_declared_by_entry','backup':{'local_preserved':True,'full_remote_numeric':False,'raw_backup':False}}
-    (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');env=os.environ.copy();env['LIO_GINS_RUN_DIR']=str(out);env['LIO_GINS_S9_RUN_DIR']=str(out);started=time.monotonic()
+    (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');env=os.environ.copy();env['LIO_GINS_RUN_DIR']=str(out);env['LIO_GINS_S9_RUN_DIR']=str(out);env['MPLCONFIGDIR']=str(ROOT/'cache/s9/matplotlib');started=time.monotonic()
     with (out/'stdout.log').open('wb') as stdout,(out/'stderr.log').open('wb') as stderr:
         try:
             if error:raise OSError(error)

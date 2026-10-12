@@ -1,31 +1,44 @@
 [
   {
-    "route": "street00",
-    "status": "TECHNICAL_BLOCK",
-    "steps": {},
-    "error": "{'route': 'street00', 'purpose': 'five_originals_identity_time_interfaces', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090450431465Z_A_4d4fcb0b\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090450431465Z_A_4d4fcb0b\", \"exit_code\": 1, \"wall_seconds\": 43.480707929993514}'}",
-    "precision_opened": false
-  },
-  {
     "route": "playground00",
-    "status": "TECHNICAL_BLOCK",
+    "status": "TECHNICALLY_READY",
     "steps": {
       "data_audit": "/home/aaron/lio_gins/outputs_s9/20261012T090450431115Z_A_92763d57",
       "extra_interfaces": "/home/aaron/lio_gins/outputs_s9/20261012T090535915830Z_A_ad3d7ee6",
-      "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090537634284Z_A_4ea53437"
+      "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090537634284Z_A_4ea53437",
+      "frontend": "/home/aaron/lio_gins/outputs_s9/20261012T090841365387Z_A_c3a084da",
+      "cache": "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf",
+      "initialization": "/home/aaron/lio_gins/outputs_s9/20261012T093104406717Z_A_6d6e496e",
+      "stress": "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2"
     },
-    "error": "{'route': 'playground00', 'purpose': 'unique_first_state_initialization', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090540906383Z_A_4927bcfe\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090540906383Z_A_4927bcfe\", \"exit_code\": 1, \"wall_seconds\": 0.21440848699421622}'}",
+    "precision_opened": false
+  },
+  {
+    "route": "street00",
+    "status": "TECHNICALLY_READY",
+    "steps": {
+      "data_audit": "/home/aaron/lio_gins/outputs_s9/20261012T090841364443Z_A_4d4fcb0b",
+      "extra_interfaces": "/home/aaron/lio_gins/outputs_s9/20261012T090930421818Z_A_10cceae4",
+      "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090933394430Z_A_99ebf69f",
+      "frontend": "/home/aaron/lio_gins/outputs_s9/20261012T090936671832Z_A_e063fcd4",
+      "cache": "/home/aaron/lio_gins/outputs_s9/20261012T093311558555Z_A_b97ce6be",
+      "initialization": "/home/aaron/lio_gins/outputs_s9/20261012T093312077824Z_A_fa1dae8a",
+      "stress": "/home/aaron/lio_gins/outputs_s9/20261012T093314947355Z_A_742fffef"
+    },
     "precision_opened": false
   },
   {
     "route": "building02",
-    "status": "TECHNICAL_BLOCK",
+    "status": "TECHNICALLY_READY",
     "steps": {
       "data_audit": "/home/aaron/lio_gins/outputs_s9/20261012T090533962573Z_A_f76b2874",
       "extra_interfaces": "/home/aaron/lio_gins/outputs_s9/20261012T090638629671Z_A_416ea7e4",
-      "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090642858963Z_A_50bf5ca4"
+      "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090642858963Z_A_50bf5ca4",
+      "frontend": "/home/aaron/lio_gins/outputs_s9/20261012T093107491328Z_A_a201b6ab",
+      "cache": "/home/aaron/lio_gins/outputs_s9/20261012T100236083499Z_A_0774093b",
+      "initialization": "/home/aaron/lio_gins/outputs_s9/20261012T100236704967Z_A_5140cd5c",
+      "stress": "/home/aaron/lio_gins/outputs_s9/20261012T100240439319Z_A_8e1c8776"
     },
-    "error": "{'route': 'building02', 'purpose': 'unique_first_state_initialization', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090647193713Z_A_01b89995\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090647193713Z_A_01b89995\", \"exit_code\": 1, \"wall_seconds\": 0.3155611130059697}'}",
     "precision_opened": false
   }
 ]

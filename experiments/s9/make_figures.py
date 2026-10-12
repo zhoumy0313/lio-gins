@@ -14,7 +14,7 @@ for ax,cache in zip(axes.flat,labels):
   color,marker=('#d02020','*') if m=='P' else ('#8a3a8a','x') if m=='P_without_anchor' else ('#888888','x') if m.startswith('P_without') else ('black','^') if m.startswith('NIS') else ('#208030','s')
   ax.scatter(r['clean_latency_max_s'],r['bias_RMSE_90_m'],s=48 if m=='P' else 10,color=color,marker=marker)
   if m=='P':ax.annotate('P',(r['clean_latency_max_s'],r['bias_RMSE_90_m']),xytext=(3,4),textcoords='offset points',fontsize=6)
- title={'primary':'building00: seen development','parking':'parking00: seen retrospective','building01':'building01: S8 test (now seen)'}.get(cache,cache+': S9 prospective');ax.set_title(title,fontsize=7);ax.axvline(15,color='gray',ls=':',lw=.8);ax.grid(alpha=.2);ax.tick_params(labelsize=6);ax.set_xlim(-5,102);ax.set_ylabel('Bias90 RMSE (m)',fontsize=7)
+ title={'primary':'building00: seen development','parking':'parking00: seen retrospective','building01':'building01: S8 test (now seen)'}.get(cache,cache+': S9 prospective');ax.set_title(title,fontsize=7);ax.axvline(15,color='gray',ls=':',lw=.8);ax.grid(alpha=.2);ax.tick_params(labelsize=6);ax.set_xlim(-5,max([95]+[r['clean_latency_max_s'] for r in data if r['clean_latency_max_s'] is not None])+7);ax.set_ylabel('Bias90 RMSE (m)',fontsize=7)
 for ax in axes.flat[n:]:ax.set_visible(False)
 fig.supxlabel('Maximum clean actual-update measurement delay (s)',fontsize=8);fig.tight_layout(pad=.6)
 for ext in ['pdf','svg','png']:fig.savefig(OUT/('multiroute_tradeoff.'+ext),dpi=180)

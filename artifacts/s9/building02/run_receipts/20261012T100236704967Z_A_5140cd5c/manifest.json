@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T100236704967Z_A_5140cd5c",
+  "stage": "A",
+  "purpose": "building02_single_earliest_common_reference_state",
+  "kind": "engineering",
+  "source_commit": "187850a60ceb086c4af9ada6c1e19731b8d44f80",
+  "dirty_diff_SHA": "afe110a898f0999c2300b3e4563138fc1ad2bb8d5182b789521b86731d4fde97",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/building02/initial_condition.py": "2ca782a0eda8ffe68d97d04b1c1c801a83c4c15ab2dcf583ef4533ff3b440f5c"
+  },
+  "started_UTC": "2026-10-12T10:02:36.714002+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:02:40.394286+00:00"
+}

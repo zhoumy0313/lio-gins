@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/finalize_engineering.py", "building02"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T10:02:45.487583+00:00", "ended_UTC": "2026-10-12T10:02:47.811523+00:00", "exit_code": 0, "wall_seconds": 2.323580733995186, "CPU_user_s": 2.300961, "CPU_system_s": 0.037625, "max_RSS_KiB": 51300, "executed": true}

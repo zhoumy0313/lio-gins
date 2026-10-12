@@ -1,0 +1,14 @@
+{
+  "stage": "A",
+  "purpose": "building02_unchanged_seven_GNSS_faults_plus_natural",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/prepare_stress.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/prepare_stress.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100236704967Z_A_5140cd5c"
+  ]
+}

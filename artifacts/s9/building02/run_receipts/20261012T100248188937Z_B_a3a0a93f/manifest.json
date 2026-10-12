@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T100248188937Z_B_a3a0a93f",
+  "stage": "B",
+  "purpose": "building02_final_role_core_and_metric_parity",
+  "kind": "engineering",
+  "source_commit": "187850a60ceb086c4af9ada6c1e19731b8d44f80",
+  "dirty_diff_SHA": "2c26b7071ba62131a74720097b972d96667edaa5e0b3e5504a61af73b2fbc08f",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/building02/test_interfaces.py": "f52cd7a783b7321c50f5596ffddda5ada85de2971714a2edaf04a758e07765bc"
+  },
+  "started_UTC": "2026-10-12T10:02:48.198323+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:02:48.313549+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "A",
+  "purpose": "street00_final_time_only_common_support",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/finalize_engineering.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/finalize_engineering.py",
+    "street00"
+  ]
+}
