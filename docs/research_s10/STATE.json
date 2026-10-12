@@ -1,26 +1,29 @@
 {
   "goal": "LIO-GINS-S10-MODERATE-BIAS-PAPER",
-  "stage": "C",
+  "stage": "D",
   "base_S9_commit": "4f7a4b4c5b87040d7d7307f25a06cd785b1ff7b9",
   "branch": "research/lio-gins-s10-moderate-bias-paper",
   "remote_push_authorized": false,
   "completed_stages": [
     "A",
-    "B"
+    "B",
+    "C"
   ],
   "runs": {
     "A": "/home/aaron/lio_gins/cache/s10/runs/20261012T131039820840Z_A_6bc8bdfa",
-    "B": "/home/aaron/lio_gins/cache/s10/runs/20261012T131523685506Z_B_55e41bdd"
+    "B": "/home/aaron/lio_gins/cache/s10/runs/20261012T131523685506Z_B_55e41bdd",
+    "C_diagnosis": "/home/aaron/lio_gins/cache/s10/runs/20261012T132113188752Z_C_bbe2387b",
+    "C_figures": "/home/aaron/lio_gins/cache/s10/runs/20261012T132709884560Z_C_455e0f5c"
   },
   "flags": {
     "execution_complete": false,
     "source_data_traced": true,
     "bias3_cancellation_audited": true,
-    "event_mechanism_explained": false,
+    "event_mechanism_explained": true,
     "P_vs_no_anchor_local_gain_supported": true,
     "P_vs_strong_controls_in_declared_scope_supported": false,
     "observed_descriptive_gain": true,
-    "mechanism_evidence_supported": false,
+    "mechanism_evidence_supported": true,
     "independent_confirmatory_gain_supported": false,
     "novelty_supported": false,
     "full_six_page_review_draft_ready": false,
@@ -29,5 +32,6 @@
   },
   "scope": "Post-hoc exploratory3m focus from already opened six routes; no r04, no retuning, no old algorithm/output modification",
   "task_spec_SHA": "9ffff476c6d5178db845f0242a01fe8f34e138b9028ed5a548ee3742c4a2b1c5",
-  "updated_UTC": "2026-10-12T13:10:03.263373+00:00"
+  "updated_UTC": "2026-10-12T13:10:03.263373+00:00",
+  "mechanism_scope": "street003m Event0 direct single-factor/exact prior parity; Event1 supporting but dependent; Event2 neutral history; adverse clean controls/offline drift decomposition; no validated online applicability classifier"
 }

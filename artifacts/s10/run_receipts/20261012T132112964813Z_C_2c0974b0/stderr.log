@@ -1,0 +1,13 @@
+test_censor_and_zero (test_metrics.Metrics) ... ok
+test_diagnostic_window_does_not_label_unsupported_route_tail (test_metrics.Metrics) ... ok
+test_event_macro_not_pooled (test_metrics.Metrics) ... ok
+test_full_grid_missing_not_removed (test_metrics.Metrics) ... ok
+test_missing_retained (test_metrics.Metrics) ... ok
+test_nis_alias (test_metrics.Metrics) ... ok
+test_percentage_direction (test_metrics.Metrics) ... ok
+test_service_cost (test_metrics.Metrics) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

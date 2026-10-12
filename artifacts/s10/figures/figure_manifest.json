@@ -1,0 +1,45 @@
+{
+  "figures": {
+    "A_anchor_concept.pdf": "a95989baaf17ed54335684a15db0bf52109a0bdc91d44eec334a1be84d9d266b",
+    "A_anchor_concept.svg": "a0b328ebd49273ba4cca2783bc044ef6be24387c1b0320358f7e7a53e191ed46",
+    "A_anchor_concept.png": "6abe446c2d72fc8ffe4fd67beeaa2b73ce1968bb01b0392430f642df378d24da",
+    "B_street_all_events.pdf": "9b4e60f296218359c57ee10930c851bd214f92b58e55faad38e7c5c115f1ec4b",
+    "B_street_all_events.svg": "efcd25c54c0fe72e55f2e9231f64dfb100901e10b060013a727c6a7d9194d8e4",
+    "B_street_all_events.png": "f55d24f977d3aa79d95a09a3d5f15f6a7d15501100385511b877dab8efd839c2",
+    "S_building02_all_events.pdf": "a0733b9eeb7910345efad057cefbb39069b2cd9515887845a370c15dc0a2e49e",
+    "S_building02_all_events.svg": "c755b35011a5fce59c2863e154644305010e5716cddcf5709a61522bc6b85784",
+    "S_building02_all_events.png": "8c50e4c028ac3a4fef4932a8e82c438d4e3d91dffed3cf9ce8c33ab6b9815747",
+    "C_fixed_mechanism_timelines.pdf": "af00f38a5456f40567cdc67e34cde077cd1a6fc130fa1e6ca3eb48318a961e63",
+    "C_fixed_mechanism_timelines.svg": "0a4a7620b8f3dddfb93a4b50f4a0a67aad38c1579be283d7dc888808e1eca365",
+    "C_fixed_mechanism_timelines.png": "ef47f37ef19fbf9be47bff1df0e334e4656b4eb5c80aade472d65af1d7314b11",
+    "D_all_six_route_contrasts.pdf": "a92e5f3536fe6becca14aad5d9fca3efc4fcbe41f9946debaa908dfba87a39ad",
+    "D_all_six_route_contrasts.svg": "95e9cdd1d222f284322cc90fb8691914fd61d6bbef7dc77350f630fc9bfd1a68",
+    "D_all_six_route_contrasts.png": "adf2ec237ef4272711a469b9b12a1a8d3759f34c6edefe10e0a59dc726bcf4cf"
+  },
+  "sources": {
+    "artifacts/s10/evidence_matrix.json": "cdaddee82a9fbd032a51012cbeb9f069e55825753f18f05234f8fc0db775723d",
+    "artifacts/s10/event_table.json": "eaf62036ce1c3b7c9925b2ad11edc64ca1224b2a64c34dc5fe062f47a930a4d8",
+    "artifacts/s10/event_attribution.json": "6f2bbcf443442ef7c7cf4cf663052c570e2063be9e23229a9a4f53a38b46bcff",
+    "docs/research_s10/ANALYSIS_REGISTRATION.md": "8344bb3ec608fb2970197c885dfa5d872f01a3514cf0d6a5397b7ac6805271c0",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100356383001Z_C_d2377477/trajectory.csv": "c51dc36db08f3cbc2ff0a73e4760300ed9f75f13a7b3da1f97d33dee9619f7f0",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100438400396Z_C_c9b5481f/trajectory.csv": "f3d2ee1f75545f8fc3c9da527658e666ea1836c4bc0b66994ead2c67bacb9b66",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100601567985Z_C_dabc2667/trajectory.csv": "e52c168672d10e7ba329173581ae2bf4502ddc70bb93a0bc8e254348b6e9639e",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100529250893Z_C_fc187bfe/trajectory.csv": "ddf669114a45bbd95384f8880ff746deb0b63ce53ece5741863ca1d4481209ff",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101251023002Z_C_2f7d1b47/trajectory.csv": "c10b5be7bcd0a3254bcd9dc48c330eab074e03778fed982d534872d2215f5d60",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101347388381Z_C_715b4ad1/trajectory.csv": "d4e9782ae2b63bb47037695802d9308fec508dacaa8bd237298f3840a73cbbc3",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101542354462Z_C_9094eae0/trajectory.csv": "73f6c37460c2dd63bdf32ef8abe98a7a621ceeda5f239a4edaee97c97f1b1f32",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101500686934Z_C_b437454b/trajectory.csv": "98889d90b0f4434907835a231dade5c9185904e1a6a98b545623b5741f85a2f8",
+    "artifacts/s10/street00_aligned_updates.json.gz": "8130b30f9750b3037bb59e0aa92f189444c0312739528c77ef36c156395a78da",
+    "artifacts/s10/building02_aligned_updates.json.gz": "1a90915c4d50f3475c2dd59d5b92b42315a0a1aaac67d18fd90dbba8c74a7380"
+  },
+  "selection": "all fixed street/negative-route events; representative street00 E0 and building02 E1 as declared before C; all6routes, repeat excluded only as separate sensitivity identity",
+  "points_files": {
+    "trajectory_points.csv": "9f2faf73deafa867899ca29089f9e41c2d8922fabc79d9d94c2aca714809dac2",
+    "mechanism_score_points.csv": "1c6487fa4511ed0ed218333eb41be25d4d4f1782027b957d629936b1670fd518",
+    "cross_route_points.csv": "3087ee0371677eb83e8b9dd5a463c39d271e1006b2fd9ebb264138a0f9a38a0d"
+  },
+  "script_SHA": "7c61af06778f974928a90bc043f817bd03b279441b7d3a5974f64603f5e4b39c",
+  "no_fabricated_missing_score": true,
+  "all_actual_position_points_full_grid": true,
+  "offline_reference_curves_only": true
+}

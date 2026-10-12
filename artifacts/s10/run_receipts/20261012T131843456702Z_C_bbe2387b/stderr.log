@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/experiments/s10/diagnose_admission.py", line 13, in <module>
+    local=local_antenna(c,p_times);truth=antenna_truth(c,p_times);loc={t:v for t,v in zip(p_times,local)};tr={t:v for t,v in zip(p_times,truth)}
+  File "/home/aaron/lio_gins/experiments/s10/common.py", line 92, in antenna_truth
+    ref=c['reference'];t=np.asarray(t,float);p,v=interpolate_with_gaps(ref[:,0],ref[:,1:4],t,c['ic']['protocol']['reference_max_interpolation_gap_s']);assert v.all(),'missing reference support retained as failure'
+AssertionError: missing reference support retained as failure

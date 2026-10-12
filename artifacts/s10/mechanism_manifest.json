@@ -1,0 +1,10 @@
+{
+  "diagnostic_rows": 1197,
+  "event_attributions": 63,
+  "aligned19_method_logs_retained": true,
+  "anchor_decomposition_offline_only": true,
+  "constant_bias_difference_invariance_verified": true,
+  "selection": "fixed street00 E0 and building02 E1; every street/negative-route event retained",
+  "script_SHA": "a56cd10984de20b839cb25e8a3891d5c2fb6976e73400e165c263243dbaa6a8e",
+  "common_SHA": "176abba1fad02fe6fef66f581f1e94c4112a78c26d7bd14d30bb5c09fc053748"
+}

@@ -2,8 +2,12 @@ import sys,unittest
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from common import macro,improvement,clocks,qualified,method_role,window
+from mechanism_support import event_window_updates
 import numpy as np
 class Metrics(unittest.TestCase):
+ def test_diagnostic_window_does_not_label_unsupported_route_tail(self):
+  rows=[{'measurement_sow':t} for t in [0,60,100,279,280,999]]
+  self.assertEqual(event_window_updates(rows,[{'recovery_start_sow':100}]),[{'measurement_sow':t} for t in [60,100,279]])
  def test_event_macro_not_pooled(self):self.assertEqual(macro([1.,2.,6.]),3.);self.assertNotEqual(macro([1.,2.,6.]),np.sqrt(41/3))
  def test_missing_retained(self):self.assertIsNone(macro([1.,None,3.]));self.assertRaises(ValueError,macro,[1.,2.])
  def test_percentage_direction(self):self.assertEqual(improvement(3.,4.),.25);self.assertEqual(improvement(5.,4.),-.25);self.assertIsNone(improvement(0.,0.))

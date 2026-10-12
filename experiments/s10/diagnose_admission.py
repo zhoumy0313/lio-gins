@@ -3,13 +3,15 @@ import gzip,json,os,collections
 from pathlib import Path
 import numpy as np
 from common import *
+from mechanism_support import event_window_updates
 OUT=Path(os.environ['LIO_GINS_S10_OUT']);summary=[];attribution=[];alltimes=[]
 registered=json.loads((ROOT/'artifacts/s10/event_table.json').read_text());offline_labels=list(csv.DictReader((ROOT/'artifacts/s10/injection_row_labels_offline.csv').open()));labelmap={(x['route'],x['case'],int(x['original_gnss_id'])):x for x in offline_labels}
 for route,item in catalog().items():
  c=route_context(route);nat=load_gnss(c['stress']/'natural.csv');nmap={int(g[0]):g for g in nat};ncache=np.load(c['cache']/'lio_cache.npz');route_points=[]
  for case in CASES:
   gnss=load_gnss(c['stress']/(case+'.csv'));gmap={int(g[0]):g for g in gnss};series={m:updates(str(resolve(item['rows'][(m,case)]['backend']))) for m in METHODS};by={m:{u['original_gnss_id']:u for u in series[m]} for m in METHODS}
-  p_times=sorted(set(u['measurement_sow'] for u in series['P'])|{u['anchor_measurement_sow_used'] for u in series['P'] if u.get('anchor_measurement_sow_used') is not None})
+  scoped=event_window_updates(series['P'],events(route,case))
+  p_times=sorted(set(u['measurement_sow'] for u in scoped)|{u['anchor_measurement_sow_used'] for u in scoped if u.get('anchor_measurement_sow_used') is not None})
   local=local_antenna(c,p_times);truth=antenna_truth(c,p_times);loc={t:v for t,v in zip(p_times,local)};tr={t:v for t,v in zip(p_times,truth)}
   # Logged local health is sensor/cache-computable, not ground truth quality.
   health={}

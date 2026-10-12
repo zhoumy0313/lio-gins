@@ -1,0 +1,25 @@
+{
+  "run_id": "20261012T131843456702Z_C_bbe2387b",
+  "stage": "C",
+  "purpose": "all_fixed_events_actual_decisions_and_offline_anchor_decomposition",
+  "argv": [
+    "python3",
+    "experiments/s10/diagnose_admission.py"
+  ],
+  "started_UTC": "2026-10-12T13:18:43.458345+00:00",
+  "source_commit": "5da0c7b328872190340e332f9e4b045bd6f5f958",
+  "source_SHA": {
+    "experiments/s10/record_run.py": "110e25e41ded188e3a7c0cf990f8bef6056e411ff69ed935424867da4996f6db",
+    "experiments/s10/checkpoint.py": "972b034b597f412661be7021d0932b35535300dec307dfd7fcab185793a85b5d",
+    "experiments/s10/audit_bias3_injection.py": "c26aefcded07315304702eb8141c0d0a4793c54cb8c8ca45580a9084ea25f7c3",
+    "experiments/s10/build_evidence_matrix.py": "552b7117bce5ec1a1d7168545df8cf17e87fc9f056682108ea3977681a728ab3",
+    "experiments/s10/diagnose_admission.py": "b61ee07fc368b83b2b5c6873589dcf1457faa59c8f7fb9b5966fe88106e33028",
+    "experiments/s10/common.py": "176abba1fad02fe6fef66f581f1e94c4112a78c26d7bd14d30bb5c09fc053748",
+    "experiments/s10/tests/test_metrics.py": "347bdd49be09ca6ef57c3b567cbcc922025c3838f54c92e50eed3de81cf19eec"
+  },
+  "status": "FAILED",
+  "analysis_role": "post-hoc read-only, no independent confirmation",
+  "exit_code": 1,
+  "wall_seconds": 2.221718015993247,
+  "finished_UTC": "2026-10-12T13:18:45.681731+00:00"
+}
