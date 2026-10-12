@@ -1,0 +1,1 @@
+Initial retained copy of R2 author-review paper. No building01 precision results have been opened. This historical draft will be retained; subsequent versions will incorporate the complete independent matrix.

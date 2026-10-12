@@ -22,3 +22,6 @@ docs/reference/
 
 # R2 retained full outputs stay local; lightweight evidence and PDF versions tracked.
 outputs_r2/
+
+# S8 immutable full evidence retained locally.
+outputs_s8/

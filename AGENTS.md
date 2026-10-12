@@ -2,13 +2,13 @@
 
 ## 当前目标
 
-先读 `docs/GOAL_LIO_GINS_R2_SUBMISSION.md`、`docs/research_r2/STATE.json` 和 `configs/r2/protocol_draft.json`。
-当前完整目标是 `LIO-GINS-R2-SUBMISSION`，按S0→S7执行；R1固定于c12a42a，全部旧源码/实验/草稿和NO_ADDITIONAL_GAIN保持不变。当前项目不是旧VPR的新版本。
+先读 `docs/GOAL_LIO_GINS_S8_BUILDING01_SUBMISSION.md`、`docs/research_s8/STATE.json`，并保留 R2 协议。
+当前完整目标是 `LIO-GINS-S8-BUILDING01`，按 A→E 执行；R1固定于c12a42a，全部旧源码/实验/草稿和NO_ADDITIONAL_GAIN保持不变。当前项目不是旧VPR的新版本。
 主线：LIO 相对运动传播 + 接收机 GNSS 位置更新 + 运动验证的观测恢复管理；KF-GINS 为独立 GNSS/INS 对照。
 
 ## 自动执行
 
-按R2目标文档 S0→S7 自主推进；创建真实状态文件并保留历史。遇到缺少数据、权限或账号，执行其余不受阻任务，集中写入一次性 `docs/research_r2/USER_ACTION_REQUIRED.md`（根清单仅作R2入口）。
+按 S8 目标文档 A→E 自主推进；创建真实状态文件并保留历史。遇到缺少数据、权限或账号，执行其余不受阻任务，集中写入一次性 `docs/research_s8/USER_ACTION_REQUIRED.md`（根清单仅作S8入口）。
 不要虚构 Goal 注册命令。当前客户端可以读文档并执行任务即可；上下文中断后读状态、Git、进程与日志恢复。
 
 ## 修改边界
@@ -34,3 +34,7 @@
 ## 每阶段回报
 
 给出完成项、真实命令/退出码、关键结果、失败或阻塞、证据路径和下一步。不要只回“已完成”。
+
+## S8 补充
+
+新分支 research/lio-gins-s8-building01 已获授权推送，每阶段 checkpoint；R1/R2 分支不推送。P-r03 和19个固定策略不得更改。完整科学冻结成功推送且 ls-remote SHA 精确相同后才打开 building01 方法与精度；不使用 R2 ANALYSIS_FREEZE_ONLY 替代。仅一次完整矩阵，完整保留负结果。

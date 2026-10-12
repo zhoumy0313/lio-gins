@@ -1,0 +1,13 @@
+{
+  "stage": "A",
+  "purpose": "building01_identity_time_interfaces",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/audit_data.py"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "python3",
+    "experiments/s8/audit_data.py"
+  ]
+}
