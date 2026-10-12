@@ -1,0 +1,108 @@
+{
+  "matrix_pairs": 456,
+  "events": 1197,
+  "windows": 5985,
+  "frozen_source_config_checks": 276,
+  "frozen_input_checks": 90,
+  "raw_immutable_stat_verified": true,
+  "official_bag_full_SHA_verified_before_freeze": true,
+  "legacy_delivery_checks": [
+    {
+      "manifest": "artifacts/s8/DELIVERY_MANIFEST.json",
+      "files": 1030,
+      "mismatches": []
+    },
+    {
+      "manifest": "artifacts/r2/S7/DELIVERY_MANIFEST.json",
+      "files": 111,
+      "mismatches": []
+    }
+  ],
+  "all_protected_R1_R2_S8_git_files_unchanged": true,
+  "sealed_runs_checked": 529,
+  "sealed_entries_checked": 18625,
+  "mismatches": [],
+  "retained_failed_runs": [
+    {
+      "run": "/home/aaron/lio_gins/outputs_s9/20261012T090450431465Z_A_4d4fcb0b",
+      "purpose": "street00_five_originals_identity_time_interfaces",
+      "exit_code": 1
+    },
+    {
+      "run": "/home/aaron/lio_gins/outputs_s9/20261012T090540906383Z_A_4927bcfe",
+      "purpose": "playground00_unique_first_state_initialization",
+      "exit_code": 1
+    },
+    {
+      "run": "/home/aaron/lio_gins/outputs_s9/20261012T090647193713Z_A_01b89995",
+      "purpose": "building02_unique_first_state_initialization",
+      "exit_code": 1
+    },
+    {
+      "run": "/home/aaron/lio_gins/outputs_s9/20261012T101838653567Z_D_4fcd8255",
+      "purpose": "all_table_narrative_event_bindings_fonts_and_pages",
+      "exit_code": 1
+    }
+  ],
+  "latest_remote_freeze_readback_UTC": "2026-10-12T10:03:23.989401+00:00",
+  "earliest_C_started_UTC": "2026-10-12T10:03:24.060488+00:00",
+  "collective_freeze_verified_before_every_precision_run": true,
+  "independent_checks": [
+    {
+      "route": "street00",
+      "pairs": 152,
+      "independent_error_values_checked": 2147,
+      "windows_checked": 1995,
+      "accepted_clocks_checked": 399,
+      "injection_exposure_checks": 399,
+      "max_absolute_error_difference_m": 0.0,
+      "passed": true,
+      "main_evaluator_imported": false,
+      "analysis_SHA": "ed8f812cecf5cd05c2f427e72defe80f0d9a44ae5d59bcbd8d4bca01b7bd921b"
+    },
+    {
+      "route": "playground00",
+      "pairs": 152,
+      "independent_error_values_checked": 2147,
+      "windows_checked": 1995,
+      "accepted_clocks_checked": 399,
+      "injection_exposure_checks": 399,
+      "max_absolute_error_difference_m": 0.0,
+      "passed": true,
+      "main_evaluator_imported": false,
+      "analysis_SHA": "1ef9ec43595cb32740a669beea5c20d501441f158a4f53e639497ba148514c50"
+    },
+    {
+      "route": "building02",
+      "pairs": 152,
+      "independent_error_values_checked": 2147,
+      "windows_checked": 1995,
+      "accepted_clocks_checked": 399,
+      "injection_exposure_checks": 399,
+      "max_absolute_error_difference_m": 0.0,
+      "passed": true,
+      "main_evaluator_imported": false,
+      "analysis_SHA": "25f80945029d8acb7bae87b0bc7718b8b4d76752306988df1833f4c4eaa061d6"
+    }
+  ],
+  "paper": {
+    "pages": 6,
+    "table_cells_verified": 240,
+    "new_narrative_cells_verified": 45,
+    "all_registered_event_cells_verified": 45,
+    "native_transfer_cells_verified": 6,
+    "all_rendered_values_and_source_SHA_match": true,
+    "all_fonts_embedded": true,
+    "overfull_boxes": 0,
+    "compile_errors": 0,
+    "undefined_references": 0,
+    "NOT_SUBMISSION_READY_retained": true,
+    "AI_disclosure": "Acknowledgments section and Methods verification; human approval pending",
+    "PDF_SHA": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf",
+    "source_SHA": "2400daee69d97997e2aef0e09338e047174a815dc768693270d9798163ab5393",
+    "human_author_review_complete": false
+  },
+  "formal_submission_performed": false,
+  "human_author_review_complete": false,
+  "backup": "Git lightweight source/freezes/results/plots/paper; full raw/runtime/cache remain local only"
+}

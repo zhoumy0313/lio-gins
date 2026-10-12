@@ -15,3 +15,14 @@ The official public homepage was rechecked on 2026-10-12: full-paper deadline is
 Sources: [official conference](https://upinlbs2026.com/), [submission](https://upinlbs2026.com/submission), [IEEE general AI guidance](https://open.ieee.org/author-guidelines-for-artificial-intelligence-ai-generated-text/). Machine-readable recheck: artifacts/s9/venue_requirements_recheck.json; earlier official submission asset: artifacts/s8/venue_requirements_interpretation.json.
 
 Scientific completion and the actual final PDF/audit counts are recorded separately in PAPER_REVIEW.md, EXPERIMENT_REPORT.md, STATE.json and artifacts/s9/delivery_audit.json. Preserve distinct execution_complete, positive_effect_supported, novelty_supported, full_review_pdf_ready and paper_ready flags; none substitutes for another.
+
+Completed autonomous checks:
+
+- [x] All three route identities and interfaces, common initialization/support, official bag hashes, same pipeline and all19 unchanged parameters.
+- [x] Full collective freeze exact remote verification before every local precision opening; all three routes included without accuracy selection.
+- [x] All456 configurations exit0,1197 events/5985 windows; independent6441 errors/1197 admission/availability/exposure checks, max difference0m.
+- [x] Complete six-page review PDF,240 table/45 narrative/45 event/6 native-transfer bound values; all fonts embedded, no overfull/error/undefined reference; all six pages visually inspected.
+- [x] Real stronger controls, two adverse routes, individual-event failures, all prior negative evidence and timing/reference/repeat limits disclosed.
+- [x] E audit exit0:276 frozen source/config and90 input checks,529 sealed runs/18625 entries,1030 S8 and111 R2 delivery file checks; zero mismatches; four actual failed runs retained.
+
+Final exact branch readback is retained locally in cache/s9/final_push_readback.json after the terminal checkpoint; all human-only boxes above remain pending. Built-in standalone compiler cannot load this multifile project; complete project compilation passed and its diagnostic is retained.

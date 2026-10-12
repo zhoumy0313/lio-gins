@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-S9-MULTISCENARIO",
-  "stage": "E",
-  "status": "D_CHECKPOINT_COMPLETE",
+  "stage": "COMPLETE",
+  "status": "E_CHECKPOINT_COMPLETE",
   "base_S8_commit": "ca6bf095426a5c1e06387f156a15178921276358",
   "branch": "research/lio-gins-s9-multiscenario",
   "routes": {
@@ -91,7 +91,7 @@
     }
   },
   "flags": {
-    "execution_complete": false,
+    "execution_complete": true,
     "positive_effect_supported": false,
     "novelty_supported": false,
     "paper_ready": false,
@@ -108,9 +108,10 @@
     "A",
     "B",
     "C",
-    "D"
+    "D",
+    "E"
   ],
-  "updated_UTC": "2026-10-12T10:23:16.862430+00:00",
+  "updated_UTC": "2026-10-12T10:25:54.110093+00:00",
   "included_routes": [
     "street00",
     "playground00",
@@ -130,5 +131,8 @@
     "building02": "bias90 macro higher than Clock2/no-anchor with2 of3 worse events;one clean event censored180s and natural cost fail"
   },
   "paper_visual_review": "paper/submission_candidate/s9/visual_audit.md",
-  "review_PDF_SHA": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf"
+  "review_PDF_SHA": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf",
+  "delivery_audit_run": "/home/aaron/lio_gins/outputs_s9/20261012T102331509900Z_E_54971297",
+  "delivery_manifest": "artifacts/s9/DELIVERY_MANIFEST.json",
+  "autonomous_scope": "completed frozen multiscenario study and complete author-review delivery; human approval/formal submission excluded"
 }

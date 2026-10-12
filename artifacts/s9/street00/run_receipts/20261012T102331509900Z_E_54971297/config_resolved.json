@@ -1,0 +1,15 @@
+{
+  "stage": "E",
+  "purpose": "complete_freeze_raw_seals_legacy_PDF_delivery_audit",
+  "kind": "engineering",
+  "input": [
+    "experiments/s9/audit_delivery.py",
+    "artifacts/s9/FINAL_SCIENTIFIC_JUDGMENT.json",
+    "paper/submission_candidate/s9/main.pdf"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "python3",
+    "experiments/s9/audit_delivery.py"
+  ]
+}

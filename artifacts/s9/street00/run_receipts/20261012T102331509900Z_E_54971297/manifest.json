@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T102331509900Z_E_54971297",
+  "stage": "E",
+  "purpose": "complete_freeze_raw_seals_legacy_PDF_delivery_audit",
+  "kind": "engineering",
+  "source_commit": "809b92e499661eaf5fbfc9cbb31b35aa07ccbbfa",
+  "dirty_diff_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/audit_delivery.py": "0d7fc5196934b7969dbd4e23c19b4a051593a1743e565a82dec48312b09da1f8",
+    "/home/aaron/lio_gins/artifacts/s9/FINAL_SCIENTIFIC_JUDGMENT.json": "099fdf25cc84795918f7676d77e92cb716be5a71fbff92a1bb273123db9ef511",
+    "/home/aaron/lio_gins/paper/submission_candidate/s9/main.pdf": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf"
+  },
+  "started_UTC": "2026-10-12T10:23:31.518598+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:23:35.544193+00:00"
+}

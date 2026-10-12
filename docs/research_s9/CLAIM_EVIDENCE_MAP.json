@@ -10551,5 +10551,19 @@
     "old_S8_negative_retained": true,
     "formal_submission_performed": false
   },
-  "old_S8_paper_SHA": "65023095573b427395b8867f8c676b4534c35ee3bec2fd0c0511b638cc61c11f"
+  "old_S8_paper_SHA": "65023095573b427395b8867f8c676b4534c35ee3bec2fd0c0511b638cc61c11f",
+  "publication": {
+    "review_PDF": "paper/submission_candidate/s9/main.pdf",
+    "PDF_SHA256": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf",
+    "source_SHA256": "2400daee69d97997e2aef0e09338e047174a815dc768693270d9798163ab5393",
+    "numeric_audit": "artifacts/s9/manuscript_audit.json",
+    "visual_audit": "paper/submission_candidate/s9/visual_audit.md",
+    "figure_manifest": "paper/submission_candidate/s9/figure_sources.json",
+    "table_bindings": "paper/submission_candidate/s9/table_cell_bindings.json",
+    "narrative_bindings": "paper/submission_candidate/s9/narrative_numeric_bindings.json",
+    "all_primary_event_bindings": "paper/submission_candidate/s9/event_numeric_bindings.json",
+    "native_transfer_bindings": "paper/submission_candidate/s9/native_numeric_bindings.json",
+    "final_scope": "artifacts/s9/FINAL_SCIENTIFIC_JUDGMENT.json",
+    "delivery_audit": "artifacts/s9/delivery_audit.json"
+  }
 }
