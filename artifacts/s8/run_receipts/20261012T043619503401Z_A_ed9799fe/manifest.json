@@ -1,0 +1,27 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T043619503401Z_A_ed9799fe",
+  "stage": "A",
+  "purpose": "building01_fixed_native_1x_frontend_no_reference",
+  "kind": "real_frontend",
+  "source_commit": "2f010ade3bd3c86c6fa0a0f9146f5a7183b02899",
+  "dirty_diff_SHA": "42451346e3531dfc95a1030629e323d5f9b9e6a66deec9585431819aa67d6e75",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/run_frontend.py": "f612f784da583fa6a1c59c91b04158b682dae8f3d836feddb4a3208f7281d35d",
+    "/home/aaron/lio_gins/artifacts/s8/data_manifest.json": "44b36cd740fb9aaf7ff3e0c2fddb8bd030de74a212a11affd6fa158f8529914f",
+    "/home/aaron/lio_gins/containers/run_inside.sh": "69a35894fdfdda976049d5eb027d94a1f9d37a0770b370edad79fba07218784e",
+    "/home/aaron/lio_gins/containers/shutdown_clock.py": "cf1235b80d1311f421d6d4bf80ac35793b9d7625723d52b3db4a4b1ba575e804"
+  },
+  "started_UTC": "2026-10-12T04:36:19.512206+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:01:57.935901+00:00"
+}

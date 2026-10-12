@@ -1,0 +1,17 @@
+{
+  "stage": "A",
+  "purpose": "building01_fixed_native_1x_frontend_no_reference",
+  "kind": "real_frontend",
+  "input": [
+    "experiments/s8/run_frontend.py",
+    "artifacts/s8/data_manifest.json",
+    "containers/run_inside.sh",
+    "containers/shutdown_clock.py"
+  ],
+  "timeout": 2400.0,
+  "command": [
+    "python3",
+    "experiments/s8/run_frontend.py",
+    "data/i2nav-dataset/building01/building01.bag"
+  ]
+}

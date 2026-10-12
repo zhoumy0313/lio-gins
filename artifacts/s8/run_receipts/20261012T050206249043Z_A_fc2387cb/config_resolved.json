@@ -1,0 +1,16 @@
+{
+  "stage": "A",
+  "purpose": "completed_native_cache_technical_validation",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/build_cache.py",
+    "artifacts/s8/data_manifest.json",
+    "outputs_s8/20261012T043619503401Z_A_ed9799fe/manifest.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/build_cache.py",
+    "outputs_s8/20261012T043619503401Z_A_ed9799fe"
+  ]
+}

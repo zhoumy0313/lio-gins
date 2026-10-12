@@ -21,3 +21,5 @@ Existing rootless Noetic rosbag info succeeded, exit0. Only one full native1x FA
 Retained technical failures: first audit incorrectly paired IMU streams by row index; corrected to exact time matching. First GNSS check used a1µs bound despite3-decimal text; corrected to serialization half-step with actual residual retained. Neither failure read positioning error or changed method parameters.
 
 Sources: outputs_s8/20261012T043425810224Z_A_008eb0d3, ...A_05c52768 (isolated rosbag info), ...A_30c981ed (F9P/schema), ...A_a36aee85 (unique initial state), ...A_facd25d4 (fixed observed perturbations). Full logs and failures retained in RUN_REGISTER.csv. Official source: https://github.com/i2Nav-WHU/i2Nav-Robot/blob/main/sha256sum/sha256sum.json.
+
+Completed native1× replay exit0, wall1538.423s,15245 poses of15249 raw AT128 frames (ratio0.9997376877172274), matching15245 per-frame processing rows, full timing export and no SIGTERM escalation. Maximum pose gap0.12367391586303711s; no reference comparison. Cache validation exit0. Cache SHA e4b173ec5f9b7fae34be44a0e7c741d314c77d33362577aacc894f03cca9ab0e. Unique registered cache retained, no second frontend.

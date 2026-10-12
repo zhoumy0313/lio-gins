@@ -1,13 +1,14 @@
 {
   "goal_id": "LIO-GINS-S8-BUILDING01",
-  "stage": "A",
-  "execution_status": "PRE_FREEZE_READY_checkpoint_complete",
+  "stage": "B",
+  "execution_status": "A_checkpoint_complete",
   "base_R2_commit": "8ef95ce597433a8b45c90ec1d13eb57ec4355555",
   "branch": "research/lio-gins-s8-building01",
   "completed_stages": [
     "A_SETUP",
     "B_ENGINEERING",
-    "PRE_FREEZE_READY"
+    "PRE_FREEZE_READY",
+    "A"
   ],
   "flags": {
     "data_verified": true,
@@ -29,7 +30,7 @@
     "known_R2_repeat_discrepancy_RMS_m": 3.60128849
   },
   "reference_policy": "metadata/time and unique first initialization row before freeze; remaining state payload only offline after verified remote freeze",
-  "updated_UTC": "2026-10-12T04:58:28.113879+00:00",
+  "updated_UTC": "2026-10-12T05:02:21.736111+00:00",
   "data_audit_run": "outputs_s8/20261012T043425810224Z_A_008eb0d3",
   "frontend_run": "outputs_s8/20261012T043619503401Z_A_ed9799fe",
   "pre_freeze_precision_accessed": false,
@@ -46,5 +47,7 @@
     "natural_runs": 1,
     "noise_STD_multiplier": 2,
     "new_route_tuning": false
-  }
+  },
+  "cache_run": "outputs_s8/20261012T050206249043Z_A_fc2387cb",
+  "technical_context": "artifacts/s8/technical_context.json"
 }

@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T050206249043Z_A_fc2387cb",
+  "stage": "A",
+  "purpose": "completed_native_cache_technical_validation",
+  "kind": "engineering",
+  "source_commit": "c7227ff112f5324a73947c20a9d1541d4b8deaa7",
+  "dirty_diff_SHA": "799f20a4be033be3e9ca68cdc12d2b71e16acddfa584d614af52b4ecfd6cd9d4",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/build_cache.py": "2172404a74217c135ab28661110dac1b8603d9e929032e299d28ed16ded65f59",
+    "/home/aaron/lio_gins/artifacts/s8/data_manifest.json": "44b36cd740fb9aaf7ff3e0c2fddb8bd030de74a212a11affd6fa158f8529914f",
+    "/home/aaron/lio_gins/outputs_s8/20261012T043619503401Z_A_ed9799fe/manifest.json": "ae8eab15f30735b002647fdad3c7c221678e6d5c5cbd0808326d8573915a585d"
+  },
+  "started_UTC": "2026-10-12T05:02:06.257068+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:02:06.723405+00:00"
+}
