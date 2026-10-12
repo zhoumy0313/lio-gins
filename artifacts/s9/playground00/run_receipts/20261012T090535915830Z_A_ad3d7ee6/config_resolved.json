@@ -1,0 +1,13 @@
+{
+  "stage": "A",
+  "purpose": "playground00_bounded_F9P_and_trajectory_schema",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/playground00/extra_interfaces.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/playground00/extra_interfaces.py"
+  ]
+}

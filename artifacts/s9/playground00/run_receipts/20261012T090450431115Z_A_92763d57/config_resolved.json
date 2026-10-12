@@ -1,0 +1,13 @@
+{
+  "stage": "A",
+  "purpose": "playground00_five_originals_identity_time_interfaces",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/playground00/audit_data.py"
+  ],
+  "timeout": 600.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/playground00/audit_data.py"
+  ]
+}

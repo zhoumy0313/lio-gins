@@ -1,0 +1,13 @@
+{
+  "stage": "B",
+  "purpose": "original64_and_R2_metric9_regression",
+  "kind": "engineering",
+  "input": [
+    "experiments/r2/run_regression.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "/usr/bin/python3",
+    "experiments/r2/run_regression.py"
+  ]
+}

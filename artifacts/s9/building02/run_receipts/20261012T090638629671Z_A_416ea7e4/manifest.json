@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T090638629671Z_A_416ea7e4",
+  "stage": "A",
+  "purpose": "building02_bounded_F9P_and_trajectory_schema",
+  "kind": "engineering",
+  "source_commit": "5846e1b8e85a0e4c3dfbab158056d74fdced0ad5",
+  "dirty_diff_SHA": "cda104a223ea672f3b1dbb6a7da480f1765451b7f9ec2fb2df66601acad1d27a",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/building02/extra_interfaces.py": "fbf01b26a019335503af0e3d5fa345a15de47caec6b0b533f230d345c6c85f00"
+  },
+  "started_UTC": "2026-10-12T09:06:38.636748+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T09:06:42.817672+00:00"
+}

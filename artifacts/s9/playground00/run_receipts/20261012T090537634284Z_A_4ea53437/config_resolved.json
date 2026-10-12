@@ -1,0 +1,14 @@
+{
+  "stage": "A",
+  "purpose": "playground00_isolated_rosbag_info",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/playground00/rosbag_info.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/playground00/rosbag_info.py",
+    "/home/aaron/lio_gins/data/i2nav-dataset/playground00/playground00.bag"
+  ]
+}

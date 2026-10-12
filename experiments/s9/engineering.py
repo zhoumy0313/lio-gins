@@ -9,16 +9,20 @@ def record(route,purpose,script,args=(),kind='engineering',timeout=300):
  return Path(json.loads(done.stdout.splitlines()[-1])['output'])
 def task(route):
  art=ROOT/'artifacts/s9'/route;steps={}
+ old=art/'engineering_result.json'
+ if old.exists():
+  previous=json.loads(old.read_text());steps=previous.get('steps',{});shutil.copy2(old,art/('engineering_result_prior_'+datetime.datetime.now(datetime.timezone.utc).strftime('%H%M%S')+'.json'))
  def save(p,filename):shutil.copy2(p/filename,art/filename)
  try:
-  audit=record(route,'five_originals_identity_time_interfaces','audit_data.py',timeout=600);steps['data_audit']=str(audit);save(audit,'data_manifest.json')
-  extra=record(route,'bounded_F9P_and_trajectory_schema','extra_interfaces.py');steps['extra_interfaces']=str(extra);save(extra,'extra_interfaces.json')
-  info=record(route,'isolated_rosbag_info','rosbag_info.py',[ROOT/'data/i2nav-dataset'/route/(route+'.bag')]);steps['rosbag_info']=str(info)
-  init=record(route,'unique_first_state_initialization','initial_condition.py');steps['initialization']=str(init)
-  stress=record(route,'unchanged_seven_GNSS_faults_plus_natural','prepare_stress.py',[init]);steps['stress']=str(stress)
+  audit=Path(steps['data_audit']) if 'data_audit' in steps else record(route,'five_originals_identity_time_interfaces','audit_data.py',timeout=600);steps['data_audit']=str(audit);save(audit,'data_manifest.json')
+  extra=Path(steps['extra_interfaces']) if 'extra_interfaces' in steps else record(route,'bounded_F9P_and_trajectory_schema','extra_interfaces.py');steps['extra_interfaces']=str(extra);save(extra,'extra_interfaces.json')
+  info=Path(steps['rosbag_info']) if 'rosbag_info' in steps else record(route,'isolated_rosbag_info','rosbag_info.py',[ROOT/'data/i2nav-dataset'/route/(route+'.bag')]);steps['rosbag_info']=str(info)
   (art/'engineering_progress.json').write_text(json.dumps(steps,indent=2)+'\n')
   frontend=record(route,'single1x_reused_FASTLIO_no_accuracy','run_frontend.py',[ROOT/'data/i2nav-dataset'/route/(route+'.bag')],kind='real_frontend',timeout=4000);steps['frontend']=str(frontend)
   cache=record(route,'no_reference_complete_LIO_cache','build_cache.py',[frontend]);steps['cache']=str(cache);save(cache,'cache_identity.json')
+  init=record(route,'single_earliest_common_reference_state','initial_condition.py');steps['initialization']=str(init)
+  stress=record(route,'unchanged_seven_GNSS_faults_plus_natural','prepare_stress.py',[init]);steps['stress']=str(stress)
+  (art/'engineering_progress.json').write_text(json.dumps(steps,indent=2)+'\n')
   (art/'technical_context.json').write_text(json.dumps({'goal_id':'LIO-GINS-S9-MULTISCENARIO',**{k:steps[k] for k in ['frontend','cache','initialization','stress']},'freeze_relative_path':'freezes/s9/'+route+'_'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')+'/scientific_freeze.json','role':'s9_prospective_heldout','cache_selection':'one fixed full technical replay; no precision-based selection','performance_opened_at_context_creation':False},indent=2)+'\n')
   result={'route':route,'status':'TECHNICALLY_READY','steps':steps,'precision_opened':False}
  except Exception as e:result={'route':route,'status':'TECHNICAL_BLOCK','steps':steps,'error':str(e),'precision_opened':False}

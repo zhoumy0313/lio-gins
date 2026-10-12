@@ -1,0 +1,11 @@
+{
+  "route": "playground00",
+  "status": "TECHNICAL_BLOCK",
+  "steps": {
+    "data_audit": "/home/aaron/lio_gins/outputs_s9/20261012T090450431115Z_A_92763d57",
+    "extra_interfaces": "/home/aaron/lio_gins/outputs_s9/20261012T090535915830Z_A_ad3d7ee6",
+    "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090537634284Z_A_4ea53437"
+  },
+  "error": "{'route': 'playground00', 'purpose': 'unique_first_state_initialization', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090540906383Z_A_4927bcfe\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090540906383Z_A_4927bcfe\", \"exit_code\": 1, \"wall_seconds\": 0.21440848699421622}'}",
+  "precision_opened": false
+}

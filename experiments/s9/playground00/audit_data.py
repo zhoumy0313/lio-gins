@@ -35,7 +35,8 @@ def main():
      nonfinite+=int(not np.isfinite(a).all());times.append(a[0])
    t=np.array(times);d=np.diff(t)
    item['metadata']={'rows':len(t),'columns':columns,'time_min':float(t[0]),'time_max':float(t[-1]),'duplicate_times':int((d==0).sum()),'backward_times':int((d<0).sum()),'max_gap_s':float(d.max()),'nonfinite_rows':nonfinite,'state_payload_used':False}
-   assert nonfinite==0 and (d>0).all()
+   assert nonfinite==0 and (d>=0).all()
+   item['metadata']['duplicate_rule']='stable first original row at each time; no performance-based selection'
   records.append(item)
  bag=DATA/'playground00.bag';meta=read_metadata(bag);samples=bounded_samples(bag,meta,{'/adi/adis16465/imu':256,'/insprobe/adis16465/imu':512,'/hesai/at128/points':20})
  imu=[decode_imu(d) for _,d in samples['/adi/adis16465/imu']];custom=[decode_insprobe_imu(d) for _,d in samples['/insprobe/adis16465/imu']];pc=[decode_pointcloud_layout(d) for _,d in samples['/hesai/at128/points']]
@@ -50,7 +51,7 @@ def main():
  for item in records:
   if item['schema']=='tum_time_schema_only':
    item['metadata']['time_basis']='GPS_seconds_of_week';assert 0<=item['metadata']['time_min']<=item['metadata']['time_max']<604800
- gnss=load_sensor(DATA/'playground00_F9P_GNSS.pos','f9p_spp');ref=next(r['metadata'] for r in records if r['schema']=='reference_time_only');common_end=min(ref['time_max'],text[-1,0]);start=ref['time_min'];support=[]
+ gnss=load_sensor(DATA/'playground00_F9P_GNSS.pos','f9p_spp');ref=next(r['metadata'] for r in records if r['schema']=='reference_time_only');common_end=min(ref['time_max'],text[-1,0]);start=max(ref['time_min'],float(text[0,0]),float(gnss[0,0]));support=[]
  protocol=json.loads((ROOT/'configs/development_experiment_protocol.json').read_text())
  for case in protocol['stress_cases']:
   for offset,direction in zip(protocol['event_starts_seconds_from_common_initial_epoch'],protocol['directions_NED']):

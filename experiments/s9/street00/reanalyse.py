@@ -30,7 +30,7 @@ def evaluate(row,reference_cache):
     data=Path(case['data_path']);assert sha(data)==case['sha256']==identity['gnss_sha256']
     assert sha(run/'backend_resolved.json')==hashlib.sha256((json.dumps(row['config'],indent=2)+'\n').encode()).hexdigest()
     if cache not in reference_cache:
-        ref=load_i2nav_local_ned(refpath);rawmanifest=json.loads((ROOT/'artifacts/s9/street00/data_manifest.json').read_text());end=min(next(f['metadata']['time_max'] for f in rawmanifest['files'] if f['filename']==seq+'_ADIS16465_IMU.txt'),ref[-1,0]);start=ic['reference_epoch_sow'];grid=np.arange(int(np.ceil(start*10)),int(np.floor(end*10))+1)/10
+        ref=load_i2nav_local_ned(refpath);ref=ref[np.r_[True,np.diff(ref[:,0])>0]];rawmanifest=json.loads((ROOT/'artifacts/s9/street00/data_manifest.json').read_text());end=min(next(f['metadata']['time_max'] for f in rawmanifest['files'] if f['filename']==seq+'_ADIS16465_IMU.txt'),ref[-1,0]);start=ic['reference_epoch_sow'];grid=np.arange(int(np.ceil(start*10)),int(np.floor(end*10))+1)/10
         truth,rv=interpolate_with_gaps(ref[:,0],ref[:,1:4],grid,ic['protocol']['reference_max_interpolation_gap_s']);reference_cache[cache]=(grid,truth,rv)
     grid,truth,rv=reference_cache[cache];nav=np.loadtxt(run/'trajectory.csv',delimiter=',',skiprows=1,ndmin=2);assert nav.shape[1]==7 and np.all(np.diff(nav[:,0])>0)
     j=np.searchsorted(nav[:,0],grid);idx=np.clip(j,0,len(nav)-1);matches=(j<len(nav))&(np.abs(nav[idx,0]-grid)<1e-8)&(nav[idx,6]==1);positions=nav[idx,1:4].copy();positions[~matches]=np.nan;errors=positions-truth

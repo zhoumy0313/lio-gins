@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T090933394430Z_A_99ebf69f",
+  "stage": "A",
+  "purpose": "street00_isolated_rosbag_info",
+  "kind": "engineering",
+  "source_commit": "5846e1b8e85a0e4c3dfbab158056d74fdced0ad5",
+  "dirty_diff_SHA": "6cb1f543c1c3220958106885066af8956c17505660ed6f0482cb9f45182e7b43",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/street00/rosbag_info.py": "6c8efce42631fdfecf2041e286ca2bbeace6c7b69e65662d4b897d309c9cd866"
+  },
+  "started_UTC": "2026-10-12T09:09:33.405636+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T09:09:36.628704+00:00"
+}

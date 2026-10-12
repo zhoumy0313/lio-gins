@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T090450431465Z_A_4d4fcb0b",
+  "stage": "A",
+  "purpose": "street00_five_originals_identity_time_interfaces",
+  "kind": "engineering",
+  "source_commit": "5846e1b8e85a0e4c3dfbab158056d74fdced0ad5",
+  "dirty_diff_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/street00/audit_data.py": "d0ecb928aedfa1068acc39c22bdc552d8634b3f3bc5970d70f4f036f36df9673"
+  },
+  "started_UTC": "2026-10-12T09:04:50.439007+00:00",
+  "status": "FAILED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 1,
+  "ended_UTC": "2026-10-12T09:05:33.919955+00:00"
+}

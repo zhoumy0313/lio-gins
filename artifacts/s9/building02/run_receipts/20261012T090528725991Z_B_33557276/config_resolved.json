@@ -1,0 +1,13 @@
+{
+  "stage": "B",
+  "purpose": "building02_role_gate_numeric_and_metric_parity",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/test_interfaces.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/test_interfaces.py"
+  ]
+}

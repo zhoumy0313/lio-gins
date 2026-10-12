@@ -1,0 +1,7 @@
+{
+  "route": "street00",
+  "status": "TECHNICAL_BLOCK",
+  "steps": {},
+  "error": "{'route': 'street00', 'purpose': 'five_originals_identity_time_interfaces', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090450431465Z_A_4d4fcb0b\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090450431465Z_A_4d4fcb0b\", \"exit_code\": 1, \"wall_seconds\": 43.480707929993514}'}",
+  "precision_opened": false
+}

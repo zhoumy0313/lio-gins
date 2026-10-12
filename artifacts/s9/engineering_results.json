@@ -1,0 +1,31 @@
+[
+  {
+    "route": "street00",
+    "status": "TECHNICAL_BLOCK",
+    "steps": {},
+    "error": "{'route': 'street00', 'purpose': 'five_originals_identity_time_interfaces', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090450431465Z_A_4d4fcb0b\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090450431465Z_A_4d4fcb0b\", \"exit_code\": 1, \"wall_seconds\": 43.480707929993514}'}",
+    "precision_opened": false
+  },
+  {
+    "route": "playground00",
+    "status": "TECHNICAL_BLOCK",
+    "steps": {
+      "data_audit": "/home/aaron/lio_gins/outputs_s9/20261012T090450431115Z_A_92763d57",
+      "extra_interfaces": "/home/aaron/lio_gins/outputs_s9/20261012T090535915830Z_A_ad3d7ee6",
+      "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090537634284Z_A_4ea53437"
+    },
+    "error": "{'route': 'playground00', 'purpose': 'unique_first_state_initialization', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090540906383Z_A_4927bcfe\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090540906383Z_A_4927bcfe\", \"exit_code\": 1, \"wall_seconds\": 0.21440848699421622}'}",
+    "precision_opened": false
+  },
+  {
+    "route": "building02",
+    "status": "TECHNICAL_BLOCK",
+    "steps": {
+      "data_audit": "/home/aaron/lio_gins/outputs_s9/20261012T090533962573Z_A_f76b2874",
+      "extra_interfaces": "/home/aaron/lio_gins/outputs_s9/20261012T090638629671Z_A_416ea7e4",
+      "rosbag_info": "/home/aaron/lio_gins/outputs_s9/20261012T090642858963Z_A_50bf5ca4"
+    },
+    "error": "{'route': 'building02', 'purpose': 'unique_first_state_initialization', 'exit': 1, 'receipt': '{\"run_id\": \"20261012T090647193713Z_A_01b89995\", \"output\": \"/home/aaron/lio_gins/outputs_s9/20261012T090647193713Z_A_01b89995\", \"exit_code\": 1, \"wall_seconds\": 0.3155611130059697}'}",
+    "precision_opened": false
+  }
+]

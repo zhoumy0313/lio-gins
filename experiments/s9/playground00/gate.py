@@ -31,6 +31,13 @@ def verify_access(seq,role,freeze,config):
  technical_access(seq,role)
  if not freeze:raise ValueError('S9 requires explicit full freeze path')
  f=verify_freeze(freeze,ROOT/'docs/research_s9/playground00/FREEZE_PUSH_RECEIPT.json')
+ collective=json.loads((ROOT/'artifacts/s9/COLLECTIVE_FREEZE.json').read_text())
+ receipt=json.loads((ROOT/'docs/research_s9/playground00/FREEZE_PUSH_RECEIPT.json').read_text())
+ blob=subprocess.check_output(['git','show',receipt['local_commit']+':artifacts/s9/COLLECTIVE_FREEZE.json'],cwd=ROOT)
+ if hashlib.sha256(blob).hexdigest()!=sha(ROOT/'artifacts/s9/COLLECTIVE_FREEZE.json'):raise ValueError('collective route registration changed since remote freeze')
+ for entry in collective['included_routes']:
+  if sha(ROOT/entry['freeze_relative_path'])!=entry['freeze_SHA']:raise ValueError('collective route freeze mismatch')
+  verify_freeze(ROOT/entry['freeze_relative_path'],ROOT/entry['receipt_relative_path'])
  if sha(config) not in f['method_config_file_SHA'].values():raise ValueError('unfrozen strategy parameters')
  # Full bag was streamed once and officially verified; immutable stat identity
  # checked here, avoiding 152 unnecessary 42 GiB full hashes. Text inputs sealed.

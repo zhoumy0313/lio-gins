@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/street00/audit_data.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T09:08:41.375657+00:00", "ended_UTC": "2026-10-12T09:09:30.381314+00:00", "exit_code": 0, "wall_seconds": 49.00537868500396, "CPU_user_s": 30.17846, "CPU_system_s": 18.829979, "max_RSS_KiB": 208956, "executed": true}

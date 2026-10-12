@@ -1,0 +1,13 @@
+{
+  "stage": "A",
+  "purpose": "building02_unique_first_state_initialization",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/initial_condition.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/initial_condition.py"
+  ]
+}

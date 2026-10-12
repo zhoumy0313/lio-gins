@@ -1,0 +1,13 @@
+{
+  "stage": "B",
+  "purpose": "final_S9_playground_role_numeric_metric_parity",
+  "kind": "engineering",
+  "input": [
+    "experiments/s9/playground00/test_interfaces.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s9/playground00/test_interfaces.py"
+  ]
+}
