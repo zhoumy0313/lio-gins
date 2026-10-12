@@ -1,0 +1,27 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T102104273990Z_D_46b938a7",
+  "stage": "D",
+  "purpose": "full_multiscenario_six_page_PDF_build",
+  "kind": "engineering",
+  "source_commit": "36c129a882a8826e4fc877a52bdab57b4139b98d",
+  "dirty_diff_SHA": "1c64a63ba42eed53df7d2102a767353cfe1deb8361089b25588f3e91adc25e59",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/build_paper.py": "c9fcbf9c38eca422915f3cfcfe790b37078c0da1ef6a628443bdc99e0a7b3887",
+    "/home/aaron/lio_gins/paper/versions/s9_r03/main.tex": "2400daee69d97997e2aef0e09338e047174a815dc768693270d9798163ab5393",
+    "/home/aaron/lio_gins/paper/versions/s9_r03/generated_tables.tex": "40a83672eca7fa863b3eb5b268a5747a313d70f51b09dbf13a3f6e999d24e154",
+    "/home/aaron/lio_gins/paper/versions/s9_r03/references.bib": "16e429d5739df17bbdd0c002efc357a12c8a8738dc37767399887dcc9dc59a10"
+  },
+  "started_UTC": "2026-10-12T10:21:04.283218+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:21:05.350062+00:00"
+}

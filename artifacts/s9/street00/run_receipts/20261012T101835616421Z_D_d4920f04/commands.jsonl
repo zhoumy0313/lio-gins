@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/make_figures.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T10:18:35.625071+00:00", "ended_UTC": "2026-10-12T10:18:37.145701+00:00", "exit_code": 0, "wall_seconds": 1.520310296997195, "CPU_user_s": 1.4628269999999999, "CPU_system_s": 0.06155, "max_RSS_KiB": 86144, "executed": true}

@@ -1,0 +1,13 @@
+{
+  "selection": "every fixed route in registration order, every policy; no event chosen",
+  "B2": "censored x coordinate, retained in table and exported points",
+  "sources": {
+    "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d",
+    "/home/aaron/lio_gins/artifacts/s8/C/summary_table.json": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100620389217Z_C_42a0290c/summary_table.json": "3d500f5a83fe029d74b21ac9b1e4dc118c219e409b2abe80efb9bc78a03b4da0",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101037221334Z_C_8d75213c/summary_table.json": "1c1f897e3f0db9ad90aa263e759cc96671490a04b763b6ad16a55029599e740b",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101609143921Z_C_7881fc7a/summary_table.json": "34aa626f0b8e6a8a15dbb46288cff8decd876fd39c9fd523b6ef360fdae5108d"
+  },
+  "script_SHA": "14f72d69b48dd8da552e0131aa42f7b5b227642659a7d90e1d8041490fd28552",
+  "each_panel_own_vertical_scale": true
+}

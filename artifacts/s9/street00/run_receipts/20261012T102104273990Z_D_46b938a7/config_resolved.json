@@ -1,0 +1,17 @@
+{
+  "stage": "D",
+  "purpose": "full_multiscenario_six_page_PDF_build",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/build_paper.py",
+    "/home/aaron/lio_gins/paper/versions/s9_r03/main.tex",
+    "/home/aaron/lio_gins/paper/versions/s9_r03/generated_tables.tex",
+    "/home/aaron/lio_gins/paper/versions/s9_r03/references.bib"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/build_paper.py",
+    "/home/aaron/lio_gins/paper/versions/s9_r03"
+  ]
+}

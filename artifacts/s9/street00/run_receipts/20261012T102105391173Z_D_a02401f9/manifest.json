@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T102105391173Z_D_a02401f9",
+  "stage": "D",
+  "purpose": "all_table_narrative_event_bindings_fonts_and_pages",
+  "kind": "engineering",
+  "source_commit": "36c129a882a8826e4fc877a52bdab57b4139b98d",
+  "dirty_diff_SHA": "00dfbb98c1fab1c39e9ab8fc9f59250cf2ee9a2ffb72b5d6a966c4a72dafe246",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/audit_manuscript.py": "01cb07bd87998f368a23eadac126bc6ed925dcd1a500d58e80547ef4533aaff0"
+  },
+  "started_UTC": "2026-10-12T10:21:05.399841+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:21:06.016660+00:00"
+}

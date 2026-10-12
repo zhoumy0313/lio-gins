@@ -1,0 +1,13 @@
+{
+  "stage": "D",
+  "purpose": "all_route_tradeoff_vector_figures",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/make_figures.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/make_figures.py"
+  ]
+}

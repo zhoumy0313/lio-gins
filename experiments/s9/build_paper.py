@@ -13,7 +13,7 @@ if rc:raise SystemExit(rc)
 pdf=OUT/'main.pdf';info=subprocess.check_output(['pdfinfo',str(pdf)],text=True)
 (OUT/'pdfinfo.txt').write_text(info)
 pages=int(next(line.split(':')[1] for line in info.splitlines() if line.startswith('Pages:')))
-source_files=[f for f in version.rglob('*') if f.is_file() and (f.suffix in {'.tex','.bib','.tikz'} or (f.parent.name=='figures' and f.suffix in {'.pdf','.svg'}) or f.name in {'table_cell_bindings.json','figure_sources.json','narrative_numeric_bindings.json'})]
+source_files=[f for f in version.rglob('*') if f.is_file() and (f.suffix in {'.tex','.bib','.tikz'} or (f.parent.name=='figures' and f.suffix in {'.pdf','.svg'}) or (f.name.endswith('_bindings.json') or f.name=='figure_sources.json'))]
 result={'pages':pages,'within_six_pages':pages<=6,'PDF_SHA256':hashlib.sha256(pdf.read_bytes()).hexdigest(),'compiler_SHA256':hashlib.sha256(binary.read_bytes()).hexdigest(),'source_selection':'TeX/BibTeX/TikZ, vector figure sources and numeric/figure bindings; excludes prior compiled outputs','sources':{str(f.relative_to(version)):hashlib.sha256(f.read_bytes()).hexdigest() for f in source_files}}
 (OUT/'build_audit.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result));raise SystemExit(0 if pages<=6 else 2)

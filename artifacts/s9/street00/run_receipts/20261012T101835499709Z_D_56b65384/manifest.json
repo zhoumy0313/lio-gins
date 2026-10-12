@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T101835499709Z_D_56b65384",
+  "stage": "D",
+  "purpose": "all19_all_route_tables_numeric_binding",
+  "kind": "engineering",
+  "source_commit": "36c129a882a8826e4fc877a52bdab57b4139b98d",
+  "dirty_diff_SHA": "c1be8602248dbfce81b5577129a2b22adb0a2d88163a973ad82c1cf1609a5d34",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/paper_tables.py": "4010b1d934cc9c4648c221191e76688187a745aa6e4787b374e0a903cf6df4bf"
+  },
+  "started_UTC": "2026-10-12T10:18:35.508192+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:18:35.573280+00:00"
+}

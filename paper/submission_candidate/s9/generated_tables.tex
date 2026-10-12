@@ -1,0 +1,50 @@
+\begin{table*}[t]\centering\small
+\caption{All nineteen frozen policies: biased-return 90-s horizontal RMSE (m), equal-weight mean over all three fixed events. Building00/parking00 are seen; building01 was prospective in S8 and already seen before S9. The other columns are S9 prospective routes. No policy or unfavorable route is removed. Full natural, latency, exposure and extended-window records accompany the paper.}\label{tab:allroutes}
+\begin{tabular}{lrrrrrr}\toprule
+Policy & Building00 & Parking00 & Building01 & Street00 & Playground00 & Building02 \\\midrule
+LIO only & 1.773 & 2.226 & 1.325 & 3.062 & 6.194 & 10.052 \\
+Direct fusion & 8.371 & 7.015 & 4.030 & 8.782 & 9.896 & 7.301 \\
+NIS100 & 8.371 & 3.091 & 4.030 & 8.665 & 11.646 & 6.175 \\
+Huber2.5 & 7.645 & 6.426 & 3.782 & 8.208 & 9.655 & 6.401 \\
+Availability B6 & 5.780 & 4.478 & 3.182 & 6.145 & 9.097 & 5.603 \\
+NIS11.3449 & 3.653 & 2.164 & 2.998 & 2.388 & 8.968 & 12.768 \\
+NIS16.2662 & 3.700 & 2.128 & 2.472 & 2.388 & 7.063 & 12.768 \\
+NIS30 & 3.908 & 2.023 & 3.170 & 2.388 & 7.293 & 12.768 \\
+Clock2 & 5.558 & 4.395 & 3.160 & 5.848 & 8.870 & 5.483 \\
+Clock5 & 5.490 & 4.374 & 3.157 & 5.812 & 8.836 & 5.508 \\
+Clock10 & 5.361 & 4.116 & 3.140 & 5.691 & 8.767 & 5.550 \\
+Clock15 & 4.899 & 3.758 & 2.902 & 5.145 & 8.701 & 5.579 \\
+Clock30 & 4.427 & 3.403 & 2.844 & 4.493 & 8.663 & 5.761 \\
+Clock60 & 2.838 & 2.521 & 2.368 & 2.762 & 9.008 & 6.356 \\
+Clock90 & 2.510 & 2.298 & 2.362 & 2.388 & 9.166 & 6.830 \\
+P-r03 & 3.022 & 2.290 & 2.378 & 2.388 & 7.782 & 8.292 \\
+P-no-motion & 5.780 & 4.478 & 3.182 & 6.145 & 9.097 & 5.603 \\
+P-no-anchor & 5.489 & 4.395 & 3.172 & 5.848 & 8.895 & 5.480 \\
+P-no-decay & 3.059 & 2.259 & 2.388 & 2.388 & 8.158 & 8.605 \\
+\bottomrule\end{tabular}\end{table*}
+\begin{table*}[t]\centering\small
+\caption{Prespecified S9 mechanism contrasts, strong simple controls and strongest jointly qualified control per route. Natural is whole-route horizontal RMSE; Clean is maximum actual clean GNSS measurement-time admission delay (s). Bias90/180 are matched macro RMSE (m). Exposure is accepted/exposed injected rows. Q requires clean delay at most15 s, frozen natural-cost cap and full coverage. Qualification durations are not unconditional waiting times; all nineteen complete results are retained.}\label{tab:primary}
+\begin{tabular}{llrrrrrc}\toprule
+Route & Policy & Natural & Clean & Bias90 & Bias180 & Exposure & Q\\\midrule
+street00 & P-r03 & 1.673 & 7.000 & 2.388 & 2.341 & 0/270 & yes \\
+street00 & Clock2 & 1.673 & 7.000 & 5.848 & 5.719 & 239/270 & yes \\
+street00 & P-no-anchor & 1.673 & 7.000 & 5.848 & 5.795 & 239/270 & yes \\
+street00 & NIS30 & 1.656 & 0.000 & 2.388 & 2.151 & 0/270 & yes \\
+street00 & Huber2.5 & 1.673 & 0.000 & 8.208 & 6.720 & 270/270 & yes \\
+street00 & Clock90 & 1.673 & 95.000 & 2.388 & 2.058 & 0/270 & no \\
+street00 & NIS11.3449 & 1.656 & 0.000 & 2.388 & 2.253 & 0/270 & yes \\
+playground00 & P-r03 & 5.935 & 142.000 & 7.782 & 8.210 & 26/270 & no \\
+playground00 & Clock2 & 5.935 & 7.000 & 8.870 & 8.965 & 239/270 & no \\
+playground00 & P-no-anchor & 5.935 & 7.000 & 8.895 & 9.074 & 239/270 & no \\
+playground00 & NIS30 & 3.142 & C180 & 7.293 & 7.872 & 85/270 & no \\
+playground00 & Huber2.5 & 4.112 & 0.000 & 9.655 & 8.426 & 270/270 & no \\
+playground00 & Clock90 & 5.935 & 95.000 & 9.166 & 7.952 & 0/270 & no \\
+playground00 & Direct fusion & 3.142 & 0.000 & 9.896 & 7.700 & 270/270 & yes \\
+building02 & P-r03 & 6.498 & C180 & 8.292 & 8.907 & 22/270 & no \\
+building02 & Clock2 & 6.498 & 7.000 & 5.483 & 5.416 & 231/270 & no \\
+building02 & P-no-anchor & 6.498 & 7.000 & 5.480 & 5.514 & 231/270 & no \\
+building02 & NIS30 & 3.384 & 65.000 & 12.768 & 13.382 & 0/270 & no \\
+building02 & Huber2.5 & 4.043 & 0.000 & 6.401 & 5.494 & 270/270 & no \\
+building02 & Clock90 & 6.498 & 95.000 & 6.830 & 6.535 & 0/270 & no \\
+building02 & NIS100 & 3.384 & 0.000 & 6.175 & 4.715 & 27/270 & yes \\
+\bottomrule\end{tabular}\end{table*}

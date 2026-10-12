@@ -1,0 +1,20 @@
+{
+  "pages": 6,
+  "within_six_pages": true,
+  "PDF_SHA256": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf",
+  "compiler_SHA256": "a98aa59ad5c1df39a6c9e56cbfc5088f2b11d6c179c0130b97998e4bd46a46da",
+  "source_selection": "TeX/BibTeX/TikZ, vector figure sources and numeric/figure bindings; excludes prior compiled outputs",
+  "sources": {
+    "table_cell_bindings.json": "5b672bf920faa2cd0f484083f839c1d9fd4b6bb5a1b5426197b2b350878a889d",
+    "event_numeric_bindings.json": "7962d60cd8bd3feeb0e412f171a0cdceeaead06fd3adffe2af7a810fee20b5bc",
+    "references.bib": "16e429d5739df17bbdd0c002efc357a12c8a8738dc37767399887dcc9dc59a10",
+    "narrative_numeric_bindings.json": "13da544e275a7be90e1099d5b436c52021e5d4c2d5d243954e1f38177c23d181",
+    "figure_sources.json": "9c8dd7f6c698b04f1c10b648a77fb65742c0620f973b31bf630530b1d2f8be0f",
+    "native_numeric_bindings.json": "004593ebd639379dcd75d0d0177c0f27583be8671da6d9b5e19cc4cbbd671749",
+    "main.tex": "2400daee69d97997e2aef0e09338e047174a815dc768693270d9798163ab5393",
+    "generated_tables.tex": "40a83672eca7fa863b3eb5b268a5747a313d70f51b09dbf13a3f6e999d24e154",
+    "figures/multiroute_tradeoff.svg": "3142d1c25279e817bd04dee31ad5a79ea051f1381968cfa4f52bd3bbf44c17f2",
+    "figures/framework.tikz": "6449321e6c15cff68b18526f4e640194e5bc8da6d2fcd3f2551c5c6b5c5295b7",
+    "figures/multiroute_tradeoff.pdf": "625e2be398e9e1722ec7769f48b4a7a20bf287554d51130ebb26f1c0dc2f5103"
+  }
+}

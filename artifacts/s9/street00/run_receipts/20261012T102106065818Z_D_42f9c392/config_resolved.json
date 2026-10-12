@@ -1,0 +1,13 @@
+{
+  "stage": "D",
+  "purpose": "complete_route_signs_failures_provenance_and_author_brief",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/report.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/report.py"
+  ]
+}

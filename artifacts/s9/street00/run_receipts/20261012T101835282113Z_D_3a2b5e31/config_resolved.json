@@ -1,0 +1,14 @@
+{
+  "stage": "D",
+  "purpose": "complete_multiscenario_review_manuscript",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/write_paper.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/write_paper.py",
+    "/home/aaron/lio_gins/paper/versions/s9_r02"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "goal_id": "LIO-GINS-S9-MULTISCENARIO",
-  "stage": "D",
-  "status": "C_CHECKPOINT_COMPLETE",
+  "stage": "E",
+  "status": "D_CHECKPOINT_COMPLETE",
   "base_S8_commit": "ca6bf095426a5c1e06387f156a15178921276358",
   "branch": "research/lio-gins-s9-multiscenario",
   "routes": {
@@ -95,8 +95,10 @@
     "positive_effect_supported": false,
     "novelty_supported": false,
     "paper_ready": false,
-    "full_review_pdf_ready": false,
-    "formal_submission_performed": false
+    "full_review_pdf_ready": true,
+    "formal_submission_performed": false,
+    "formal_submission_ready": false,
+    "human_author_review_complete": false
   },
   "completed_stages": [
     "REGISTER",
@@ -105,9 +107,10 @@
     "PREFREEZE_COMMON_SUPPORT",
     "A",
     "B",
-    "C"
+    "C",
+    "D"
   ],
-  "updated_UTC": "2026-10-12T10:18:12.641482+00:00",
+  "updated_UTC": "2026-10-12T10:23:16.862430+00:00",
   "included_routes": [
     "street00",
     "playground00",
@@ -115,5 +118,17 @@
   ],
   "technical_exclusions": [],
   "collective_freeze_push_verified": true,
-  "aggregate_run": "/home/aaron/lio_gins/outputs_s9/20261012T101811420095Z_C_ae7b0584"
+  "aggregate_run": "/home/aaron/lio_gins/outputs_s9/20261012T101811420095Z_C_ae7b0584",
+  "paper_version": "s9_r03",
+  "review_PDF": "paper/submission_candidate/s9/main.pdf",
+  "manuscript_audit_run": "/home/aaron/lio_gins/outputs_s9/20261012T102105391173Z_D_a02401f9",
+  "paper_report_run": "/home/aaron/lio_gins/outputs_s9/20261012T102106065818Z_D_42f9c392",
+  "positive_effect_scope": "registered joint service/cost/accuracy advantage against all qualified controls; no S9 route supports it",
+  "conditional_anchor_contrast": {
+    "street00": "bias90 lower than Clock2/no-anchor in all3 fixed events, passes service/cost; strict NIS nearly ties bias90, improves longer window and is faster",
+    "playground00": "bias90 macro lower than Clock2/no-anchor but third event worse;142s clean delay and natural cost fail",
+    "building02": "bias90 macro higher than Clock2/no-anchor with2 of3 worse events;one clean event censored180s and natural cost fail"
+  },
+  "paper_visual_review": "paper/submission_candidate/s9/visual_audit.md",
+  "review_PDF_SHA": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf"
 }

@@ -1,0 +1,14 @@
+{
+  "stage": "D",
+  "purpose": "all19_all_route_tables_numeric_binding",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/paper_tables.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/paper_tables.py",
+    "/home/aaron/lio_gins/paper/versions/s9_r02"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "pages": 6,
+  "table_cells_verified": 240,
+  "new_narrative_cells_verified": 45,
+  "all_registered_event_cells_verified": 45,
+  "native_transfer_cells_verified": 6,
+  "all_rendered_values_and_source_SHA_match": true,
+  "all_fonts_embedded": true,
+  "overfull_boxes": 0,
+  "compile_errors": 0,
+  "undefined_references": 0,
+  "NOT_SUBMISSION_READY_retained": true,
+  "AI_disclosure": "Acknowledgments section and Methods verification; human approval pending",
+  "PDF_SHA": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf",
+  "source_SHA": "2400daee69d97997e2aef0e09338e047174a815dc768693270d9798163ab5393",
+  "human_author_review_complete": false
+}

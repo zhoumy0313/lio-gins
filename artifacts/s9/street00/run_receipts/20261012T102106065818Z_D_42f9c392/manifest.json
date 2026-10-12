@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T102106065818Z_D_42f9c392",
+  "stage": "D",
+  "purpose": "complete_route_signs_failures_provenance_and_author_brief",
+  "kind": "engineering",
+  "source_commit": "36c129a882a8826e4fc877a52bdab57b4139b98d",
+  "dirty_diff_SHA": "5e550d2a303ccbc87a8acfa4333cda77993abb946e42a0e98da1fac08f62e88d",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/report.py": "11c2f9acac6cb59fb4e52c5f2e27cb8a582e453e6dac3d8fa420d2085a8be6d7"
+  },
+  "started_UTC": "2026-10-12T10:21:06.074312+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:21:06.340172+00:00"
+}

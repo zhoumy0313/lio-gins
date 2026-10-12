@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/report.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T10:21:06.074312+00:00", "ended_UTC": "2026-10-12T10:21:06.340172+00:00", "exit_code": 0, "wall_seconds": 0.2655959829862695, "CPU_user_s": 0.208969, "CPU_system_s": 0.035931, "max_RSS_KiB": 32840, "executed": true}

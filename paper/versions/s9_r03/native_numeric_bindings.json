@@ -1,0 +1,56 @@
+[
+  {
+    "route": "street00",
+    "field": "horizontal_rmse_m",
+    "raw_value": 1.0065519309601239,
+    "rendered": "1.007",
+    "precision": 3,
+    "source": "/home/aaron/lio_gins/artifacts/s9/street00/C/native_KF_metrics.json",
+    "SHA": "6a02518c4a04b3371de40339ea16dc50786166ebcce1a7c84937817a0b9b151c"
+  },
+  {
+    "route": "street00",
+    "field": "coverage",
+    "raw_value": 1.0,
+    "rendered": "1.000000",
+    "precision": 6,
+    "source": "/home/aaron/lio_gins/artifacts/s9/street00/C/native_KF_metrics.json",
+    "SHA": "6a02518c4a04b3371de40339ea16dc50786166ebcce1a7c84937817a0b9b151c"
+  },
+  {
+    "route": "playground00",
+    "field": "horizontal_rmse_m",
+    "raw_value": 1.1146267852338003,
+    "rendered": "1.115",
+    "precision": 3,
+    "source": "/home/aaron/lio_gins/artifacts/s9/playground00/C/native_KF_metrics.json",
+    "SHA": "787826345685b6641db8f697da6bc41aa6be3c06692e744c1c7e8ba563ee0c0d"
+  },
+  {
+    "route": "playground00",
+    "field": "coverage",
+    "raw_value": 0.999924568152674,
+    "rendered": "0.999925",
+    "precision": 6,
+    "source": "/home/aaron/lio_gins/artifacts/s9/playground00/C/native_KF_metrics.json",
+    "SHA": "787826345685b6641db8f697da6bc41aa6be3c06692e744c1c7e8ba563ee0c0d"
+  },
+  {
+    "route": "building02",
+    "field": "horizontal_rmse_m",
+    "raw_value": 1.6693045082853983,
+    "rendered": "1.669",
+    "precision": 3,
+    "source": "/home/aaron/lio_gins/artifacts/s9/building02/C/native_KF_metrics.json",
+    "SHA": "37854f737fba80e019fc6708f737b8aca5dddafde169fd3fe5055317ca5275d6"
+  },
+  {
+    "route": "building02",
+    "field": "coverage",
+    "raw_value": 1.0,
+    "rendered": "1.000000",
+    "precision": 6,
+    "source": "/home/aaron/lio_gins/artifacts/s9/building02/C/native_KF_metrics.json",
+    "SHA": "37854f737fba80e019fc6708f737b8aca5dddafde169fd3fe5055317ca5275d6"
+  }
+]

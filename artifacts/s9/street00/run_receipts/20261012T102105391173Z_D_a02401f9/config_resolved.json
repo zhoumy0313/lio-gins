@@ -1,0 +1,14 @@
+{
+  "stage": "D",
+  "purpose": "all_table_narrative_event_bindings_fonts_and_pages",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/audit_manuscript.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/audit_manuscript.py",
+    "/home/aaron/lio_gins/paper/versions/s9_r03"
+  ]
+}

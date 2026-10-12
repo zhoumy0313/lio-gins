@@ -1,0 +1,18 @@
+{
+  "scope": "registered S9 joint claim against all qualified strong controls",
+  "positive_effect_supported": false,
+  "novelty_supported": false,
+  "method_revision_used": 0,
+  "all_new_route_joint_directional_gain": false,
+  "conditional_anchor_contrast": {
+    "street00": "bias90 lower than Clock2/no-anchor in all3 fixed events, passes service/cost; strict NIS nearly ties bias90, improves longer window and is faster",
+    "playground00": "bias90 macro lower than Clock2/no-anchor but third event worse;142s clean delay and natural cost fail",
+    "building02": "bias90 macro higher than Clock2/no-anchor with2 of3 worse events;one clean event censored180s and natural cost fail"
+  },
+  "population_significance_claim": false,
+  "field_multipath_or_integrity_claim": false,
+  "all19_stronger_controls_retained": true,
+  "accepted_bias_exposure_distinct_from_accuracy": true,
+  "scientific_interpretation": "conditional empirical counterexamples; do not infer universal superiority from lower cross-route mean",
+  "review_PDF_SHA": "f45124d1e65eaddfde0e4d66cf00000a62e945761af9db1cb2bd69a5b89abfdf"
+}
