@@ -11,3 +11,23 @@ C first diagnostic attempt FAILED exit1 after2.222s: its read-only interpolation
 C COMPLETE: corrected diagnose_admission.py exit0,78.941s;1197 method/event summaries and63 paired event attributions, exact per-ID/time alignment and checked offline decomposition. Figure command exit0,14.501s; five vector figure sets plus actual point CSV/manifest. All street00 events and negative-route events retained; fixed representative street00E0/building02E1 match prior editorial registration. Street E0/E1 extra rejection71/76, actual NIS0 also accepted62/76, short-good veto71/76. Street E2 no extra rejection and near-zero error change. Local-health flags remain true in both benefits and harms; no validated truth-free applicability classifier. Prior-state carryover explicitly reported. Offline drift/anchor errors never entered a method. One diagnostic support failure retained; eight current tests pass.
 
 A–C evidence review allows a narrow post-hoc event-case manuscript, not independent confirmation or a general reliable-condition theorem. D reviews all strong controls and original service/natural gates before F drafting; E1 is completed read-only reconstruction; no E2/E3/E4 is initiated.
+
+## D / E decision
+
+Actual command: `python3 experiments/s10/record_run.py D python3 experiments/s10/strong_baseline_check.py`; exit0, wall0.315376s. Run /home/aaron/lio_gins/cache/s10/runs/20261012T132811367656Z_D_cad5bf93. All19 controls, six routes + separate same-bag sensitivity retained. Qualification exactly matches inherited records. Street P3m90 2.032243524m < all standard controls (best raw Clock60 2.325368272m) but no-decay 2.001474694m is stronger. No general dominance: parking NIS0, building00 long wait and all adverse routes retained. C local checkpoint94ef05033729d7d4eb6c77787f3fb452f679425a. E1 completes only read-only diagnostics; E2/E3 deferred by task default; no new policy or new data test. Next F narrow six-page tutor-review paper.
+
+```text
+execution_complete: false
+source_data_traced: true
+bias3_cancellation_audited: true
+event_mechanism_explained: true
+P_vs_no_anchor_local_gain_supported: true
+P_vs_strong_controls_in_declared_scope_supported: true
+observed_descriptive_gain: true
+mechanism_evidence_supported: true
+independent_confirmatory_gain_supported: false
+novelty_supported: false
+full_six_page_review_draft_ready: false
+human_author_review_complete: false
+formal_submission_ready: false
+```
