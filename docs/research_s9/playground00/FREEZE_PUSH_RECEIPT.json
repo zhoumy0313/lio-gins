@@ -1,0 +1,28 @@
+{
+  "UTC": "2026-10-12T10:03:19.372010+00:00",
+  "branch": "research/lio-gins-s9-multiscenario",
+  "local_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "remote_S9_SHA": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "freeze_relative_path": "freezes/s9/playground00_20261012T093107457436Z/scientific_freeze.json",
+  "freeze_SHA": "d2bec5b314e5ef4821facbbc29aa4acccd7a495c898195da5b3f812eed3eb1c3",
+  "push_exit_code": 0,
+  "push_evidence": "artifacts/s9/checkpoints/B.json",
+  "ls_remote_exit_code": 0,
+  "ls_remote_argv": [
+    "git",
+    "ls-remote",
+    "--heads",
+    "origin",
+    "research/lio-gins-s9-multiscenario",
+    "research/lio-gins-r1",
+    "research/lio-gins-r2-submission",
+    "research/lio-gins-s8-building01"
+  ],
+  "ls_remote_stdout": "c12a42a3484458e1737e63201792e1122fc99c0d\trefs/heads/research/lio-gins-r1\n8ef95ce597433a8b45c90ec1d13eb57ec4355555\trefs/heads/research/lio-gins-r2-submission\nca6bf095426a5c1e06387f156a15178921276358\trefs/heads/research/lio-gins-s8-building01\ndb54f777ee3214e7ff6220a6c7ced982b9f1fc7d\trefs/heads/research/lio-gins-s9-multiscenario\n",
+  "ls_remote_stderr": "",
+  "verified_S9_HEAD": true,
+  "committed_frozen_blob_exactly_matches": true,
+  "R1_R2_remote_heads_unchanged": true,
+  "performance_matrix_not_yet_opened": true,
+  "readback_run": "/home/aaron/lio_gins/outputs_s9/20261012T100314740543Z_B_924b075e"
+}

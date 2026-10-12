@@ -1,0 +1,385 @@
+{
+  "P": {
+    "cache": "playground00",
+    "method": "P",
+    "natural_RMSE_m": 5.935492603835343,
+    "natural_cap_m": 3.2047601724551145,
+    "normal_cost_eligible": false,
+    "clean_latency_max_s": 142.0,
+    "clean_censored_events": 0,
+    "clean_T_admit_each_s": [
+      7.0,
+      142.0,
+      7.0
+    ],
+    "clean_T_available_bound_each_s": [
+      7.102249383926392,
+      142.1029613018036,
+      7.099261999130249
+    ],
+    "clean_deadline15_pass_count": 2,
+    "coverage_eligible": true,
+    "service_qualified": false,
+    "availability_bound_deadline15_pass_count": 2,
+    "bias_accepted_rows": 26,
+    "bias_exposed_rows": 270,
+    "bias_censored_events": 2,
+    "clean_RMSE_10_m": 3.966173982521456,
+    "clean_RMSE_30_m": 4.594355064477321,
+    "clean_RMSE_60_m": 5.951796824922788,
+    "clean_RMSE_90_m": 7.438751756722655,
+    "clean_RMSE_180_m": 8.5389595502488,
+    "bias_RMSE_10_m": 4.786438599902007,
+    "bias_RMSE_30_m": 5.15182496746517,
+    "bias_RMSE_60_m": 6.320481385676739,
+    "bias_RMSE_90_m": 7.78215362639195,
+    "bias_RMSE_180_m": 8.209797074421724
+  },
+  "strongest_eligible_control_including_ablations": {
+    "cache": "playground00",
+    "method": "B3",
+    "natural_RMSE_m": 3.1419217377010926,
+    "natural_cap_m": 3.2047601724551145,
+    "normal_cost_eligible": true,
+    "clean_latency_max_s": 0.0,
+    "clean_censored_events": 0,
+    "clean_T_admit_each_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "clean_T_available_bound_each_s": [
+      0.09178519248962402,
+      0.10695266723632812,
+      0.10224127769470215
+    ],
+    "clean_deadline15_pass_count": 3,
+    "coverage_eligible": true,
+    "service_qualified": true,
+    "availability_bound_deadline15_pass_count": 3,
+    "bias_accepted_rows": 270,
+    "bias_exposed_rows": 270,
+    "bias_censored_events": 0,
+    "clean_RMSE_10_m": 3.31163470011205,
+    "clean_RMSE_30_m": 2.5957426201673357,
+    "clean_RMSE_60_m": 2.3136713416249743,
+    "clean_RMSE_90_m": 2.19135390819323,
+    "clean_RMSE_180_m": 2.3921169015106947,
+    "bias_RMSE_10_m": 5.968325185511525,
+    "bias_RMSE_30_m": 7.8807638969252425,
+    "bias_RMSE_60_m": 9.224378551004767,
+    "bias_RMSE_90_m": 9.89577205933104,
+    "bias_RMSE_180_m": 7.700175903398043
+  },
+  "all_eligible_controls": [
+    "B3",
+    "B4"
+  ],
+  "P_bias90_absolute_margin_m": 2.1136184329390906,
+  "numeric_direction_supported_at_fixed_gate": false,
+  "numerical_non_rounding_floor_m": 1e-06,
+  "material_and_attribution_review_required": true,
+  "independent_case_specific_effect_supported": false,
+  "novelty_supported": false,
+  "method_revision_used": 0,
+  "interpretation": "automatic comparison only; final evidence report must assess scale, ablations and all fixed events without retuning",
+  "per_event": [
+    {
+      "index": 0,
+      "P_bias90_m": 3.1179710523835045,
+      "P_T_admit_s": null,
+      "P_injected_accepted": 0,
+      "comparisons": [
+        {
+          "method": "B3",
+          "bias90_m": 9.200670979464402,
+          "P_minus_control_m": -6.082699927080897
+        },
+        {
+          "method": "B4",
+          "bias90_m": 9.200670979464402,
+          "P_minus_control_m": -6.082699927080897
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "P_bias90_m": 5.702591896194495,
+      "P_T_admit_s": 64.0,
+      "P_injected_accepted": 26,
+      "comparisons": [
+        {
+          "method": "B3",
+          "bias90_m": 10.262464563779398,
+          "P_minus_control_m": -4.559872667584903
+        },
+        {
+          "method": "B4",
+          "bias90_m": 9.971038276238312,
+          "P_minus_control_m": -4.268446380043818
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "P_bias90_m": 14.525897930597854,
+      "P_T_admit_s": null,
+      "P_injected_accepted": 0,
+      "comparisons": [
+        {
+          "method": "B3",
+          "bias90_m": 10.22418063474932,
+          "P_minus_control_m": 4.301717295848533
+        },
+        {
+          "method": "B4",
+          "bias90_m": 15.767764705997463,
+          "P_minus_control_m": -1.2418667753996093
+        }
+      ]
+    }
+  ],
+  "budget_sensitivity": [
+    {
+      "budget_s": 5,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "playground00",
+        "method": "B3",
+        "natural_RMSE_m": 3.1419217377010926,
+        "natural_cap_m": 3.2047601724551145,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.09178519248962402,
+          0.10695266723632812,
+          0.10224127769470215
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 270,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 3.31163470011205,
+        "clean_RMSE_30_m": 2.5957426201673357,
+        "clean_RMSE_60_m": 2.3136713416249743,
+        "clean_RMSE_90_m": 2.19135390819323,
+        "clean_RMSE_180_m": 2.3921169015106947,
+        "bias_RMSE_10_m": 5.968325185511525,
+        "bias_RMSE_30_m": 7.8807638969252425,
+        "bias_RMSE_60_m": 9.224378551004767,
+        "bias_RMSE_90_m": 9.89577205933104,
+        "bias_RMSE_180_m": 7.700175903398043
+      }
+    },
+    {
+      "budget_s": 10,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "playground00",
+        "method": "B3",
+        "natural_RMSE_m": 3.1419217377010926,
+        "natural_cap_m": 3.2047601724551145,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.09178519248962402,
+          0.10695266723632812,
+          0.10224127769470215
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 270,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 3.31163470011205,
+        "clean_RMSE_30_m": 2.5957426201673357,
+        "clean_RMSE_60_m": 2.3136713416249743,
+        "clean_RMSE_90_m": 2.19135390819323,
+        "clean_RMSE_180_m": 2.3921169015106947,
+        "bias_RMSE_10_m": 5.968325185511525,
+        "bias_RMSE_30_m": 7.8807638969252425,
+        "bias_RMSE_60_m": 9.224378551004767,
+        "bias_RMSE_90_m": 9.89577205933104,
+        "bias_RMSE_180_m": 7.700175903398043
+      }
+    },
+    {
+      "budget_s": 15,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "playground00",
+        "method": "B3",
+        "natural_RMSE_m": 3.1419217377010926,
+        "natural_cap_m": 3.2047601724551145,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.09178519248962402,
+          0.10695266723632812,
+          0.10224127769470215
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 270,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 3.31163470011205,
+        "clean_RMSE_30_m": 2.5957426201673357,
+        "clean_RMSE_60_m": 2.3136713416249743,
+        "clean_RMSE_90_m": 2.19135390819323,
+        "clean_RMSE_180_m": 2.3921169015106947,
+        "bias_RMSE_10_m": 5.968325185511525,
+        "bias_RMSE_30_m": 7.8807638969252425,
+        "bias_RMSE_60_m": 9.224378551004767,
+        "bias_RMSE_90_m": 9.89577205933104,
+        "bias_RMSE_180_m": 7.700175903398043
+      }
+    },
+    {
+      "budget_s": 30,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "playground00",
+        "method": "B3",
+        "natural_RMSE_m": 3.1419217377010926,
+        "natural_cap_m": 3.2047601724551145,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.09178519248962402,
+          0.10695266723632812,
+          0.10224127769470215
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 270,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 3.31163470011205,
+        "clean_RMSE_30_m": 2.5957426201673357,
+        "clean_RMSE_60_m": 2.3136713416249743,
+        "clean_RMSE_90_m": 2.19135390819323,
+        "clean_RMSE_180_m": 2.3921169015106947,
+        "bias_RMSE_10_m": 5.968325185511525,
+        "bias_RMSE_30_m": 7.8807638969252425,
+        "bias_RMSE_60_m": 9.224378551004767,
+        "bias_RMSE_90_m": 9.89577205933104,
+        "bias_RMSE_180_m": 7.700175903398043
+      }
+    },
+    {
+      "budget_s": 60,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "playground00",
+        "method": "B3",
+        "natural_RMSE_m": 3.1419217377010926,
+        "natural_cap_m": 3.2047601724551145,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.09178519248962402,
+          0.10695266723632812,
+          0.10224127769470215
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 270,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 3.31163470011205,
+        "clean_RMSE_30_m": 2.5957426201673357,
+        "clean_RMSE_60_m": 2.3136713416249743,
+        "clean_RMSE_90_m": 2.19135390819323,
+        "clean_RMSE_180_m": 2.3921169015106947,
+        "bias_RMSE_10_m": 5.968325185511525,
+        "bias_RMSE_30_m": 7.8807638969252425,
+        "bias_RMSE_60_m": 9.224378551004767,
+        "bias_RMSE_90_m": 9.89577205933104,
+        "bias_RMSE_180_m": 7.700175903398043
+      }
+    },
+    {
+      "budget_s": 90,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "playground00",
+        "method": "B3",
+        "natural_RMSE_m": 3.1419217377010926,
+        "natural_cap_m": 3.2047601724551145,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.09178519248962402,
+          0.10695266723632812,
+          0.10224127769470215
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 270,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 3.31163470011205,
+        "clean_RMSE_30_m": 2.5957426201673357,
+        "clean_RMSE_60_m": 2.3136713416249743,
+        "clean_RMSE_90_m": 2.19135390819323,
+        "clean_RMSE_180_m": 2.3921169015106947,
+        "bias_RMSE_10_m": 5.968325185511525,
+        "bias_RMSE_30_m": 7.8807638969252425,
+        "bias_RMSE_60_m": 9.224378551004767,
+        "bias_RMSE_90_m": 9.89577205933104,
+        "bias_RMSE_180_m": 7.700175903398043
+      }
+    }
+  ],
+  "analysis_SHA": "1ef9ec43595cb32740a669beea5c20d501441f158a4f53e639497ba148514c50"
+}

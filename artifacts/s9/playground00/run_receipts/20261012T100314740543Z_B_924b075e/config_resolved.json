@@ -1,0 +1,13 @@
+{
+  "stage": "B",
+  "purpose": "playground00_exact_remote_collective_freeze_readback",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/playground00/verify_remote_freeze.py"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/playground00/verify_remote_freeze.py"
+  ]
+}

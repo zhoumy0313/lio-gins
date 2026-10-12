@@ -1,0 +1,13 @@
+{
+  "stage": "C",
+  "purpose": "building02_offline_receiver_injection_cancellation",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/injection_cancellation.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/injection_cancellation.py"
+  ]
+}

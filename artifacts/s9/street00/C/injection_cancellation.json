@@ -1,0 +1,51 @@
+{
+  "events": [
+    {
+      "route": "street00",
+      "event_index": 0,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 0.6662103123217773,
+      "injected_receiver_horizontal_RMSE_m": 10.29129424020481,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 0,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/street00/street00_groundtruth.nav": "39f6981b67f82dff6db6f0a3bc5586817b7b79bbe6672319bd530a3f560e9f62",
+        "outputs_s9/20261012T093312077824Z_A_fa1dae8a/initial_condition.json": "9146f391507b7afccbf35b1e7079291465c3357761b4aba4f2d1326cbeaf0ab6",
+        "outputs_s9/20261012T093314947355Z_A_742fffef/natural.csv": "51c5a9e896770d643c2cf386d8b7e033a0d21c2e04b623e23ba9a3f96e53453a",
+        "outputs_s9/20261012T093314947355Z_A_742fffef/loss30_bias10.csv": "778adb2b2a18adaa3c3912103d53092731ee51356b6e712e6cae03c37cfd57fb"
+      }
+    },
+    {
+      "route": "street00",
+      "event_index": 1,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 0.9801096062368058,
+      "injected_receiver_horizontal_RMSE_m": 9.367235572888838,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 0,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/street00/street00_groundtruth.nav": "39f6981b67f82dff6db6f0a3bc5586817b7b79bbe6672319bd530a3f560e9f62",
+        "outputs_s9/20261012T093312077824Z_A_fa1dae8a/initial_condition.json": "9146f391507b7afccbf35b1e7079291465c3357761b4aba4f2d1326cbeaf0ab6",
+        "outputs_s9/20261012T093314947355Z_A_742fffef/natural.csv": "51c5a9e896770d643c2cf386d8b7e033a0d21c2e04b623e23ba9a3f96e53453a",
+        "outputs_s9/20261012T093314947355Z_A_742fffef/loss30_bias10.csv": "778adb2b2a18adaa3c3912103d53092731ee51356b6e712e6cae03c37cfd57fb"
+      }
+    },
+    {
+      "route": "street00",
+      "event_index": 2,
+      "rows": 90,
+      "natural_receiver_horizontal_RMSE_m": 1.046047403404674,
+      "injected_receiver_horizontal_RMSE_m": 10.520964230115032,
+      "injection_reduces_actual_receiver_horizontal_error_rows": 0,
+      "protocol": "common initialization-conditioned NED; reference lever arm via offline ZYX rotations and Slerp; not absolute geodetic origin",
+      "SHA": {
+        "data/i2nav-dataset/street00/street00_groundtruth.nav": "39f6981b67f82dff6db6f0a3bc5586817b7b79bbe6672319bd530a3f560e9f62",
+        "outputs_s9/20261012T093312077824Z_A_fa1dae8a/initial_condition.json": "9146f391507b7afccbf35b1e7079291465c3357761b4aba4f2d1326cbeaf0ab6",
+        "outputs_s9/20261012T093314947355Z_A_742fffef/natural.csv": "51c5a9e896770d643c2cf386d8b7e033a0d21c2e04b623e23ba9a3f96e53453a",
+        "outputs_s9/20261012T093314947355Z_A_742fffef/loss30_bias10.csv": "778adb2b2a18adaa3c3912103d53092731ee51356b6e712e6cae03c37cfd57fb"
+      }
+    }
+  ],
+  "truth_use": "offline only",
+  "risk_proxy_is_not_error_probability": true
+}

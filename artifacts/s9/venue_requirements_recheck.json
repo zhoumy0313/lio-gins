@@ -1,0 +1,19 @@
+{
+  "checked_UTC": "2026-10-12T10:13:50.682816+00:00",
+  "official_homepage": "https://upinlbs2026.com/",
+  "full_paper_deadline_public_date": "2026-10-15",
+  "full_paper_max_pages": 6,
+  "submission_url": "https://upinlbs2026.com/submission",
+  "submission_web_tool_open_status": "inaccessible; retained S8 verified official asset requirements remain available",
+  "prior_submission_asset_evidence": "artifacts/s8/venue_requirements_interpretation.json",
+  "ieee_AI_primary": "https://open.ieee.org/author-guidelines-for-artificial-intelligence-ai-generated-text/",
+  "ieee_AI_disclosure_scope": "system, affected sections and degree of assistance; exact conference applicability requires author confirmation",
+  "pending": [
+    "exact cutoff/timezone",
+    "exact template variant/anonymity",
+    "venue-specific AI applicability",
+    "author metadata and account/form confirmation"
+  ],
+  "account_operation_performed": false,
+  "formal_submission_performed": false
+}

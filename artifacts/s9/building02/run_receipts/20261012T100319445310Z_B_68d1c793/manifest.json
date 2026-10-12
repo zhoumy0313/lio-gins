@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T100319445310Z_B_68d1c793",
+  "stage": "B",
+  "purpose": "building02_exact_remote_collective_freeze_readback",
+  "kind": "engineering",
+  "source_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "dirty_diff_SHA": "f7e2ea456e69a83c7326218e07e516b8aade0362f45c5990ac25818172fba30b",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/building02/verify_remote_freeze.py": "bb0b46fd3753eb0797889b3625faed06d896a193a9b76c3fcd79b7a6bec8064f"
+  },
+  "started_UTC": "2026-10-12T10:03:19.455982+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:03:24.007057+00:00"
+}

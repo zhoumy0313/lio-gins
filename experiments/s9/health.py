@@ -13,6 +13,6 @@ for p in sorted((ROOT/'outputs_s9').glob('*/manifest.json')):
   result['output_rows']=count
   with t.open('rb') as f:
    f.seek(max(0,t.stat().st_size-1024));lines=f.read().splitlines()
-  result['last_output_timestamp']=float(lines[-1].split()[0]) if lines else None
+  result['last_output_timestamp']=float(lines[-1].replace(b',',b' ').split()[0]) if lines else None
  result['stderr_tail_bytes']=(p.parent/'stderr.log').stat().st_size
  print(json.dumps(result))

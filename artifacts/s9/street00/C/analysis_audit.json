@@ -1,0 +1,12 @@
+{
+  "pairs": 152,
+  "expected_pairs": 152,
+  "coverage_complete": true,
+  "all_windows_complete": true,
+  "inherited_RMSE_parity_max_m": 0,
+  "right_censor_retained": true,
+  "future_labels_online": false,
+  "new_route_accessed": true,
+  "role": "prospective_heldout",
+  "freeze_id": "street00_20261012T093315129935Z"
+}

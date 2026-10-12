@@ -1,0 +1,42 @@
+{
+  "stage": "C",
+  "purpose": "NIS0_ramp10",
+  "kind": "cached_backend",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/playground00/run_baseline.py",
+    "/home/aaron/lio_gins/experiments/s9/playground00/gate.py",
+    "/home/aaron/lio_gins/configs/s9/NIS0.json",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf/lio_cache.npz",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf/cache_identity.json",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093104406717Z_A_6d6e496e/initial_condition.json",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/ramp10.csv",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/ramp10.identity.json",
+    "/home/aaron/lio_gins/src/__init__.py",
+    "/home/aaron/lio_gins/src/observation_manager/availability_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/motion_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/anchored_recovery.py",
+    "/home/aaron/lio_gins/src/evaluation/__init__.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py",
+    "/home/aaron/lio_gins/src/adapters/__init__.py",
+    "/home/aaron/lio_gins/src/adapters/research_access.py",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py",
+    "/home/aaron/lio_gins/src/adapters/rosbag_metadata.py",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py",
+    "/home/aaron/lio_gins/src/fusion/__init__.py",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/playground00/run_baseline.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093103887869Z_A_9b40aeaf",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093104406717Z_A_6d6e496e",
+    "/home/aaron/lio_gins/configs/s9/NIS0.json",
+    "--gnss-ned",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093107276021Z_A_0b876ef2/ramp10.csv",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/s9/playground00_20261012T093107457436Z/scientific_freeze.json"
+  ]
+}

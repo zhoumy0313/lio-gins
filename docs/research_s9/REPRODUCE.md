@@ -1,6 +1,6 @@
 # S9 resume and reproduce
 
-Read AGENTS, GOAL_LIO_GINS_S9_MULTISCENARIO.md, STATE.json, Git and outputs_s9 manifests before work. `python3 experiments/s9/health.py` is read-only technical liveness. No new precision has been opened until all route full freezes are committed/pushed and exact remote SHA bound in each FREEZE_PUSH_RECEIPT.
+Read AGENTS, GOAL_LIO_GINS_S9_MULTISCENARIO.md, STATE.json, Git and outputs_s9 manifests before work. `python3 experiments/s9/health.py` is read-only technical liveness. No new precision was opened until all route full freezes are committed/pushed and exact remote SHA bound in each FREEZE_PUSH_RECEIPT.
 
 Per-route adapters in experiments/s9/<route> are deterministic role/path copies of S8; numeric estimator body and all19 configs equal old bytes. Common time-support corrections are explicit in INTERFACE_CORRECTIONS.md. R1/R2/S8 source/evidence/papers remain unchanged. Existing isolated Noetic/frontend binary/calibration reused; original five inputs readonly.
 
@@ -11,3 +11,5 @@ Collective freeze fixes all route inputs/cache/init/fault/evaluation IDs. Per-ro
 reanalyse.py uses same inherited metrics/coverage/gates; independent_check.py does not import it. judge_results.py retains full categories/service sensitivity/controls. aggregate.py (frozen pre-test) reports every registered route and paired P minus Clock2/no-anchor/NIS/Huber/long wait/all19, plus equal-weight new-route macro, all event signs and technical exclusions. It never selects cases/changes thresholds. A native KF transfer may be shown independently with unchanged noise-scale2; never feed its posterior into P or use it as a gain denominator.
 
 S9 paper uses new versions/candidate only; old S8 PDF/source preserved. Human author/template/AI/deadline/account/formal submission decisions remain outside autonomous completion. Raw/runtime/fullcache offsite backup not claimed.
+
+Diagnostic note: on 2026-10-12 a read-only health invocation exited1 when it encountered a comma-delimited backend trajectory timestamp. The non-scientific monitor now accepts whitespace and CSV. This did not affect any frontend, estimator, matrix, evaluator, freeze or result. The original monitor source remains in the B checkpoint; the traceback is retained in the task tool record.

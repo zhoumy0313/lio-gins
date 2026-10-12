@@ -1,0 +1,13 @@
+{
+  "stage": "C",
+  "purpose": "street00_single_complete19x8_independent_matrix",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/street00/run_matrix.py"
+  ],
+  "timeout": 900.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/street00/run_matrix.py"
+  ]
+}

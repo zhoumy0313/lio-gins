@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T101037221334Z_C_8d75213c",
+  "stage": "C",
+  "purpose": "playground00_all_grids_events_metrics",
+  "kind": "engineering",
+  "source_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "dirty_diff_SHA": "7adbb4a0b061f0a151d3212c5f339804d22c86ce603764b137bf2b852a4e15dd",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/playground00/reanalyse.py": "82c23d3218d78b9f912a8b8d969e68c66baa8e1ba167c36face23963a173af1b"
+  },
+  "started_UTC": "2026-10-12T10:10:37.231987+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:11:11.582143+00:00"
+}

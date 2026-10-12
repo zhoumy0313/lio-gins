@@ -1,0 +1,18 @@
+{
+  "stage": "C",
+  "purpose": "building02_independent_fixed_KF_GINS_natural_transfer",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/run_native_kf.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/run_native_kf.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100236704967Z_A_5140cd5c",
+    "--noise-scale",
+    "2",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/s9/building02_20261012T100240675917Z/scientific_freeze.json"
+  ]
+}

@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/building02/run_matrix.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T10:12:07.375200+00:00", "ended_UTC": "2026-10-12T10:16:09.098144+00:00", "exit_code": 0, "wall_seconds": 241.72264297900256, "CPU_user_s": 937.120467, "CPU_system_s": 19.649445, "max_RSS_KiB": 70656, "executed": true}

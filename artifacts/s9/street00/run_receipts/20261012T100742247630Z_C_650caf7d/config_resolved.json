@@ -1,0 +1,17 @@
+{
+  "stage": "C",
+  "purpose": "street00_offline_fixed_KF_GINS_transfer_evaluation",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/street00/evaluate_native_kf.py"
+  ],
+  "timeout": 240.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/street00/evaluate_native_kf.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100735436174Z_C_127b8f18",
+    "/home/aaron/lio_gins/outputs_s9/20261012T093312077824Z_A_fa1dae8a",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/s9/street00_20261012T093315129935Z/scientific_freeze.json"
+  ]
+}

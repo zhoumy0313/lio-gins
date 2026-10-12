@@ -1,0 +1,14 @@
+{
+  "stage": "C",
+  "purpose": "building02_all_controls_categories_fixed_gates",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/judge_results.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/judge_results.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101609143921Z_C_7881fc7a"
+  ]
+}

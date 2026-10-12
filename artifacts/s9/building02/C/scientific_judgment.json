@@ -1,0 +1,385 @@
+{
+  "P": {
+    "cache": "building02",
+    "method": "P",
+    "natural_RMSE_m": 6.498460468329611,
+    "natural_cap_m": 3.452104599025789,
+    "normal_cost_eligible": false,
+    "clean_latency_max_s": null,
+    "clean_censored_events": 1,
+    "clean_T_admit_each_s": [
+      7.0,
+      7.0,
+      null
+    ],
+    "clean_T_available_bound_each_s": [
+      7.097246885299683,
+      7.091305732727051,
+      null
+    ],
+    "clean_deadline15_pass_count": 2,
+    "coverage_eligible": true,
+    "service_qualified": false,
+    "availability_bound_deadline15_pass_count": 2,
+    "bias_accepted_rows": 22,
+    "bias_exposed_rows": 270,
+    "bias_censored_events": 2,
+    "clean_RMSE_10_m": 4.153419390427493,
+    "clean_RMSE_30_m": 4.568420448284627,
+    "clean_RMSE_60_m": 4.96740022093178,
+    "clean_RMSE_90_m": 5.371801899895215,
+    "clean_RMSE_180_m": 5.744455426249897,
+    "bias_RMSE_10_m": 6.903742995308754,
+    "bias_RMSE_30_m": 7.5987063162272515,
+    "bias_RMSE_60_m": 7.984868601586084,
+    "bias_RMSE_90_m": 8.29200165892067,
+    "bias_RMSE_180_m": 8.906726190208358
+  },
+  "strongest_eligible_control_including_ablations": {
+    "cache": "building02",
+    "method": "B4",
+    "natural_RMSE_m": 3.3844162735546948,
+    "natural_cap_m": 3.452104599025789,
+    "normal_cost_eligible": true,
+    "clean_latency_max_s": 0.0,
+    "clean_censored_events": 0,
+    "clean_T_admit_each_s": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "clean_T_available_bound_each_s": [
+      0.10378670692443848,
+      0.08738446235656738,
+      0.06212973594665527
+    ],
+    "clean_deadline15_pass_count": 3,
+    "coverage_eligible": true,
+    "service_qualified": true,
+    "availability_bound_deadline15_pass_count": 3,
+    "bias_accepted_rows": 27,
+    "bias_exposed_rows": 270,
+    "bias_censored_events": 0,
+    "clean_RMSE_10_m": 2.806883354924152,
+    "clean_RMSE_30_m": 2.307261225038799,
+    "clean_RMSE_60_m": 2.2267977687121525,
+    "clean_RMSE_90_m": 2.6784712912891013,
+    "clean_RMSE_180_m": 2.7233401027908957,
+    "bias_RMSE_10_m": 4.11515054042068,
+    "bias_RMSE_30_m": 4.827401427066051,
+    "bias_RMSE_60_m": 5.854000105012902,
+    "bias_RMSE_90_m": 6.174839978555167,
+    "bias_RMSE_180_m": 4.714526518618727
+  },
+  "all_eligible_controls": [
+    "B3",
+    "B4"
+  ],
+  "P_bias90_absolute_margin_m": -2.117161680365503,
+  "numeric_direction_supported_at_fixed_gate": false,
+  "numerical_non_rounding_floor_m": 1e-06,
+  "material_and_attribution_review_required": true,
+  "independent_case_specific_effect_supported": false,
+  "novelty_supported": false,
+  "method_revision_used": 0,
+  "interpretation": "automatic comparison only; final evidence report must assess scale, ablations and all fixed events without retuning",
+  "per_event": [
+    {
+      "index": 0,
+      "P_bias90_m": 3.1853089153060505,
+      "P_T_admit_s": null,
+      "P_injected_accepted": 0,
+      "comparisons": [
+        {
+          "method": "B3",
+          "bias90_m": 8.39867918036526,
+          "P_minus_control_m": -5.2133702650592095
+        },
+        {
+          "method": "B4",
+          "bias90_m": 3.1853089153060505,
+          "P_minus_control_m": 0.0
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "P_bias90_m": 9.827680366801678,
+      "P_T_admit_s": 68.0,
+      "P_injected_accepted": 22,
+      "comparisons": [
+        {
+          "method": "B3",
+          "bias90_m": 8.189172328869398,
+          "P_minus_control_m": 1.6385080379322794
+        },
+        {
+          "method": "B4",
+          "bias90_m": 5.072277009812952,
+          "P_minus_control_m": 4.755403356988726
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "P_bias90_m": 11.86301569465428,
+      "P_T_admit_s": null,
+      "P_injected_accepted": 0,
+      "comparisons": [
+        {
+          "method": "B3",
+          "bias90_m": 5.313698527522719,
+          "P_minus_control_m": 6.54931716713156
+        },
+        {
+          "method": "B4",
+          "bias90_m": 10.266934010546501,
+          "P_minus_control_m": 1.5960816841077783
+        }
+      ]
+    }
+  ],
+  "budget_sensitivity": [
+    {
+      "budget_s": 5,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "building02",
+        "method": "B4",
+        "natural_RMSE_m": 3.3844162735546948,
+        "natural_cap_m": 3.452104599025789,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.10378670692443848,
+          0.08738446235656738,
+          0.06212973594665527
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 27,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 2.806883354924152,
+        "clean_RMSE_30_m": 2.307261225038799,
+        "clean_RMSE_60_m": 2.2267977687121525,
+        "clean_RMSE_90_m": 2.6784712912891013,
+        "clean_RMSE_180_m": 2.7233401027908957,
+        "bias_RMSE_10_m": 4.11515054042068,
+        "bias_RMSE_30_m": 4.827401427066051,
+        "bias_RMSE_60_m": 5.854000105012902,
+        "bias_RMSE_90_m": 6.174839978555167,
+        "bias_RMSE_180_m": 4.714526518618727
+      }
+    },
+    {
+      "budget_s": 10,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "building02",
+        "method": "B4",
+        "natural_RMSE_m": 3.3844162735546948,
+        "natural_cap_m": 3.452104599025789,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.10378670692443848,
+          0.08738446235656738,
+          0.06212973594665527
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 27,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 2.806883354924152,
+        "clean_RMSE_30_m": 2.307261225038799,
+        "clean_RMSE_60_m": 2.2267977687121525,
+        "clean_RMSE_90_m": 2.6784712912891013,
+        "clean_RMSE_180_m": 2.7233401027908957,
+        "bias_RMSE_10_m": 4.11515054042068,
+        "bias_RMSE_30_m": 4.827401427066051,
+        "bias_RMSE_60_m": 5.854000105012902,
+        "bias_RMSE_90_m": 6.174839978555167,
+        "bias_RMSE_180_m": 4.714526518618727
+      }
+    },
+    {
+      "budget_s": 15,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "building02",
+        "method": "B4",
+        "natural_RMSE_m": 3.3844162735546948,
+        "natural_cap_m": 3.452104599025789,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.10378670692443848,
+          0.08738446235656738,
+          0.06212973594665527
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 27,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 2.806883354924152,
+        "clean_RMSE_30_m": 2.307261225038799,
+        "clean_RMSE_60_m": 2.2267977687121525,
+        "clean_RMSE_90_m": 2.6784712912891013,
+        "clean_RMSE_180_m": 2.7233401027908957,
+        "bias_RMSE_10_m": 4.11515054042068,
+        "bias_RMSE_30_m": 4.827401427066051,
+        "bias_RMSE_60_m": 5.854000105012902,
+        "bias_RMSE_90_m": 6.174839978555167,
+        "bias_RMSE_180_m": 4.714526518618727
+      }
+    },
+    {
+      "budget_s": 30,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "building02",
+        "method": "B4",
+        "natural_RMSE_m": 3.3844162735546948,
+        "natural_cap_m": 3.452104599025789,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.10378670692443848,
+          0.08738446235656738,
+          0.06212973594665527
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 27,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 2.806883354924152,
+        "clean_RMSE_30_m": 2.307261225038799,
+        "clean_RMSE_60_m": 2.2267977687121525,
+        "clean_RMSE_90_m": 2.6784712912891013,
+        "clean_RMSE_180_m": 2.7233401027908957,
+        "bias_RMSE_10_m": 4.11515054042068,
+        "bias_RMSE_30_m": 4.827401427066051,
+        "bias_RMSE_60_m": 5.854000105012902,
+        "bias_RMSE_90_m": 6.174839978555167,
+        "bias_RMSE_180_m": 4.714526518618727
+      }
+    },
+    {
+      "budget_s": 60,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "building02",
+        "method": "B4",
+        "natural_RMSE_m": 3.3844162735546948,
+        "natural_cap_m": 3.452104599025789,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.10378670692443848,
+          0.08738446235656738,
+          0.06212973594665527
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 27,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 2.806883354924152,
+        "clean_RMSE_30_m": 2.307261225038799,
+        "clean_RMSE_60_m": 2.2267977687121525,
+        "clean_RMSE_90_m": 2.6784712912891013,
+        "clean_RMSE_180_m": 2.7233401027908957,
+        "bias_RMSE_10_m": 4.11515054042068,
+        "bias_RMSE_30_m": 4.827401427066051,
+        "bias_RMSE_60_m": 5.854000105012902,
+        "bias_RMSE_90_m": 6.174839978555167,
+        "bias_RMSE_180_m": 4.714526518618727
+      }
+    },
+    {
+      "budget_s": 90,
+      "P_qualified": false,
+      "best_control": {
+        "cache": "building02",
+        "method": "B4",
+        "natural_RMSE_m": 3.3844162735546948,
+        "natural_cap_m": 3.452104599025789,
+        "normal_cost_eligible": true,
+        "clean_latency_max_s": 0.0,
+        "clean_censored_events": 0,
+        "clean_T_admit_each_s": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "clean_T_available_bound_each_s": [
+          0.10378670692443848,
+          0.08738446235656738,
+          0.06212973594665527
+        ],
+        "clean_deadline15_pass_count": 3,
+        "coverage_eligible": true,
+        "service_qualified": true,
+        "availability_bound_deadline15_pass_count": 3,
+        "bias_accepted_rows": 27,
+        "bias_exposed_rows": 270,
+        "bias_censored_events": 0,
+        "clean_RMSE_10_m": 2.806883354924152,
+        "clean_RMSE_30_m": 2.307261225038799,
+        "clean_RMSE_60_m": 2.2267977687121525,
+        "clean_RMSE_90_m": 2.6784712912891013,
+        "clean_RMSE_180_m": 2.7233401027908957,
+        "bias_RMSE_10_m": 4.11515054042068,
+        "bias_RMSE_30_m": 4.827401427066051,
+        "bias_RMSE_60_m": 5.854000105012902,
+        "bias_RMSE_90_m": 6.174839978555167,
+        "bias_RMSE_180_m": 4.714526518618727
+      }
+    }
+  ],
+  "analysis_SHA": "25f80945029d8acb7bae87b0bc7718b8b4d76752306988df1833f4c4eaa061d6"
+}

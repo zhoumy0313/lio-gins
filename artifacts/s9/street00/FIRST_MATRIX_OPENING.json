@@ -1,0 +1,8 @@
+{
+  "controller_run": "/home/aaron/lio_gins/outputs_s9/20261012T100324050198Z_C_fe873b91",
+  "freeze_SHA": "db3077f5cacf69f689d4cba856618ea597ce0e29bd0a995310478b4f664d25f9",
+  "remote_receipt_SHA": "e62893bdd31d1a99122a79b900abe80cb3e8ec8d6918d68c9633332842bd5aad",
+  "pairs": 152,
+  "source_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "no_parameter_revision": true
+}

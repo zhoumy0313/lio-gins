@@ -1,0 +1,13 @@
+{
+  "stage": "C",
+  "purpose": "all_registered_route_comparisons",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/aggregate.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/aggregate.py"
+  ]
+}

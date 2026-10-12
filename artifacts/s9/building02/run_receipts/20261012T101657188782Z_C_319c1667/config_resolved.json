@@ -1,0 +1,14 @@
+{
+  "stage": "C",
+  "purpose": "building02_independent_RMSE_admission_availability_exposure",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/building02/independent_check.py"
+  ],
+  "timeout": 240.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/building02/independent_check.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T101609143921Z_C_7881fc7a"
+  ]
+}

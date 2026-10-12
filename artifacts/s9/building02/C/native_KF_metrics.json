@@ -1,0 +1,56 @@
+{
+  "sequence": "building02",
+  "role": "s9_prospective_heldout",
+  "freeze_id": "building02_20261012T100240675917Z",
+  "experiment_kind": "natural_data",
+  "method": "B1_KF_GINS_unmodified_initial_run",
+  "initialization_protocol_id": "known_initial_state_first_common_supported_epoch_S9_v1",
+  "initialization_run": "/home/aaron/lio_gins/outputs_s9/20261012T100236704967Z_A_5140cd5c",
+  "source_run": "/home/aaron/lio_gins/outputs_s9/20261012T101754255984Z_C_e68ef44d",
+  "alignment": "one predetermined common initial translation; no fitted trajectory transform",
+  "quantity": "initial_position_conditioned_error_not_absolute_WGS94_accuracy",
+  "reference_point": "ADIS16465_center",
+  "metrics_10Hz": {
+    "samples_expected": 18711,
+    "samples_valid": 18711,
+    "coverage": 1.0,
+    "horizontal_rmse_m": 1.6693045082853983,
+    "horizontal_p95_m": 2.8816425647315294,
+    "horizontal_max_m": 10.19859803577617,
+    "vertical_rmse_m": 2.7455830122148317
+  },
+  "B0_raw_F9P_SPP_1Hz_antenna_errors": {
+    "samples_expected": 1871,
+    "samples_valid": 1871,
+    "coverage": 1.0,
+    "horizontal_rmse_m": 1.547740392745377,
+    "horizontal_p95_m": 2.6185274362557944,
+    "horizontal_max_m": 8.82355880176985
+  },
+  "B0_reference_point_note": "raw GNSS is antenna; offline reference is transformed to antenna using reference attitude, never supplied to an estimator",
+  "B1_same_GNSS_epochs_ADIS_errors": {
+    "samples_expected": 1871,
+    "samples_valid": 1871,
+    "coverage": 1.0,
+    "horizontal_rmse_m": 1.6613319515637262,
+    "horizontal_p95_m": 2.86922327087075,
+    "horizontal_max_m": 9.987740251903512
+  },
+  "grid_sow_range": [
+    181296.1,
+    183167.1
+  ],
+  "grid_source": "predeclared initialization and input IMU/reference overlap, not output coverage",
+  "reference_AT128_dependency": "S9 routes use OEM719/navigation-grade GNSS/INS reference; not AT128 MM/INS, GNSS error correlations still possible",
+  "nav_rows": 374338,
+  "week_field_zero_placeholder": true,
+  "strong_baseline_status": "fixed R1-selected STD multiplier2 transfer, independent natural GNSS/INS comparator, no new-route tuning",
+  "not_method_gain_evidence": true,
+  "holdout_performance_opened": true,
+  "input_sha256": {
+    "/home/aaron/lio_gins/outputs_s9/20261012T101754255984Z_C_e68ef44d/KF_GINS_Navresult.nav": "2cdd9afc1183bd9d0b96db1ae3178e5a77ff8df5d6f94b2f02778f2162aae23b",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building02/building02_groundtruth.nav": "33ce2b94a8d702aa8334953a17a298a6e342f8cc7f8bc84ef219152921010486",
+    "/home/aaron/lio_gins/data/i2nav-dataset/building02/building02_F9P_GNSS.pos": "157b84985b1a98a20d968ab8a8e106fb8681edb74fb68cd81cb79f0d53adae8a",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100236704967Z_A_5140cd5c/initial_condition.json": "6bcac42027af927d41d9813625727fdf5ac25fdb7110bfc31256db4e74fdad5a"
+  }
+}

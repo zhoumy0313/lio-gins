@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T100731424149Z_C_9f99ea95",
+  "stage": "C",
+  "purpose": "street00_all_controls_categories_fixed_gates",
+  "kind": "engineering",
+  "source_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "dirty_diff_SHA": "d6d012fe0f93ded172a38a8e904eca83e8728d900404852fb034827c049e9b2a",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/street00/judge_results.py": "cf672a75fcca7ccdb8141a7249468865c388813caf293f8aaca924370b1b08f9"
+  },
+  "started_UTC": "2026-10-12T10:07:31.434376+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:07:31.499206+00:00"
+}

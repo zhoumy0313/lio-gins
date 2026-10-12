@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/aggregate.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T10:18:11.430238+00:00", "ended_UTC": "2026-10-12T10:18:11.896917+00:00", "exit_code": 0, "wall_seconds": 0.4663927869987674, "CPU_user_s": 0.409917, "CPU_system_s": 0.03035, "max_RSS_KiB": 26096, "executed": true}

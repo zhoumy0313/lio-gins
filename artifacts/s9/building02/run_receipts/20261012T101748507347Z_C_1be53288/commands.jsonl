@@ -1,0 +1,1 @@
+{"argv": ["/usr/bin/python3", "/home/aaron/lio_gins/experiments/s9/building02/injection_cancellation.py"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T10:17:48.517361+00:00", "ended_UTC": "2026-10-12T10:17:54.155607+00:00", "exit_code": 0, "wall_seconds": 5.637936051003635, "CPU_user_s": 5.320021, "CPU_system_s": 0.326426, "max_RSS_KiB": 177828, "executed": true}

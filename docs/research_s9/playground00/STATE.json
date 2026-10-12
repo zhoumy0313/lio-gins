@@ -1,1 +1,13 @@
-{"sequence": "playground00", "flags": {"science_freeze_pushed_before_test": false, "execution_complete": false, "positive_effect_supported": false, "novelty_supported": false, "paper_ready": false}}
+{
+  "sequence": "playground00",
+  "flags": {
+    "science_freeze_pushed_before_test": true,
+    "execution_complete": false,
+    "positive_effect_supported": false,
+    "novelty_supported": false,
+    "paper_ready": false
+  },
+  "freeze_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "freeze_SHA": "d2bec5b314e5ef4821facbbc29aa4acccd7a495c898195da5b3f812eed3eb1c3",
+  "freeze_path": "freezes/s9/playground00_20261012T093107457436Z/scientific_freeze.json"
+}

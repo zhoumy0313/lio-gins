@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T101657188782Z_C_319c1667",
+  "stage": "C",
+  "purpose": "building02_independent_RMSE_admission_availability_exposure",
+  "kind": "engineering",
+  "source_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "dirty_diff_SHA": "59ed0cc736746f6d41ed827c288f1a5724435c093fe0f1aa1c6ebf122db46cf5",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/building02/independent_check.py": "03d43faf4b5577922c9e944437ad132ed6827404c001983fb1edc0b2d8825119"
+  },
+  "started_UTC": "2026-10-12T10:16:57.198059+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:17:48.348121+00:00"
+}

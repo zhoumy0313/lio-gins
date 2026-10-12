@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T101748507347Z_C_1be53288",
+  "stage": "C",
+  "purpose": "building02_offline_receiver_injection_cancellation",
+  "kind": "engineering",
+  "source_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "dirty_diff_SHA": "f208dd43d856523706d13df8ba3a1d5cb0e180b7ea8661dfb3f5a97563b00013",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/building02/injection_cancellation.py": "7394f524600e0c34bd1124edd56df041ab3eeffe3384b1f36e60356c3299d061"
+  },
+  "started_UTC": "2026-10-12T10:17:48.517361+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:17:54.155607+00:00"
+}

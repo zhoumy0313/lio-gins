@@ -1,0 +1,14 @@
+{
+  "stage": "C",
+  "purpose": "street00_all_controls_categories_fixed_gates",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/street00/judge_results.py"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/street00/judge_results.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100620389217Z_C_42a0290c"
+  ]
+}

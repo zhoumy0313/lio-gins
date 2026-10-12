@@ -1,0 +1,14 @@
+{
+  "stage": "C",
+  "purpose": "street00_all_grids_events_metrics",
+  "kind": "engineering",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s9/street00/reanalyse.py"
+  ],
+  "timeout": 240.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s9/street00/reanalyse.py",
+    "/home/aaron/lio_gins/outputs_s9/20261012T100324050198Z_C_fe873b91/complete_index.json"
+  ]
+}

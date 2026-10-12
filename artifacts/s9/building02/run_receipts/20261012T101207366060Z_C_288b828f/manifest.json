@@ -1,0 +1,24 @@
+{
+  "goal_id": "LIO-GINS-S9-MULTISCENARIO",
+  "run_id": "20261012T101207366060Z_C_288b828f",
+  "stage": "C",
+  "purpose": "building02_single_complete19x8_independent_matrix",
+  "kind": "engineering",
+  "source_commit": "db54f777ee3214e7ff6220a6c7ced982b9f1fc7d",
+  "dirty_diff_SHA": "81433d975c05c0d93b84d52bf6390d51f5b45b004846c5e721c59f80b1a83b03",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s9/building02/run_matrix.py": "cb9d611016d0a8258557e4a39dfe556f5480f708de317274c63b3f168fce5107"
+  },
+  "started_UTC": "2026-10-12T10:12:07.375200+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S9_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T10:16:09.098144+00:00"
+}
