@@ -1,0 +1,11 @@
+{
+  "pairs": 152,
+  "independent_error_values_checked": 2147,
+  "windows_checked": 1995,
+  "accepted_clocks_checked": 399,
+  "injection_exposure_checks": 399,
+  "max_absolute_error_difference_m": 2.220446049250313e-16,
+  "passed": true,
+  "main_evaluator_imported": false,
+  "analysis_SHA": "a63846bc66204be030ef0ddec26f8d73ab7bd25b25eda8c47b9b58692f05bfb7"
+}

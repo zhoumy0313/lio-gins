@@ -1,0 +1,27 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T050405679367Z_C_b139c048",
+  "stage": "C",
+  "purpose": "first_full_fixed19_by8_prospective_matrix",
+  "kind": "engineering",
+  "source_commit": "c9aa4c9a870eb1a7b1ab81685abad644debdb059",
+  "dirty_diff_SHA": "d375606fc1c87c821fb71953dbb8fd52568c712261353d55a2f70467bd0f1eac",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/run_matrix.py": "ee4d1f46776d65f73b6a3746e01b968d54aee41ac612add7d61906d35ffce26e",
+    "/home/aaron/lio_gins/experiments/s8/gate.py": "8fbeabc7b44f84332f0cc59facf9bbdeb4c5b314092eebe4f2878c939dde6514",
+    "/home/aaron/lio_gins/configs/s8/protocol.json": "42142aa5421269de1acda908fd03642d385a5d638e95af3047e78a80ae5522bf",
+    "/home/aaron/lio_gins/docs/research_s8/FREEZE_PUSH_RECEIPT.json": "40f3ab997a17cdabca477cafffb8bb3f15f1542633dc266725e8cfaacb669de3"
+  },
+  "started_UTC": "2026-10-12T05:04:05.687194+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:07:14.952275+00:00"
+}

@@ -1,0 +1,1 @@
+{"argv": ["python3", "experiments/s8/independent_check.py", "outputs_s8/20261012T050835414118Z_C_c55d6044"], "cwd": "/home/aaron/lio_gins", "started_UTC": "2026-10-12T05:09:43.521209+00:00", "ended_UTC": "2026-10-12T05:10:23.491207+00:00", "exit_code": 0, "wall_seconds": 39.96969720500056, "CPU_user_s": 39.773275, "CPU_system_s": 0.210438, "max_RSS_KiB": 98064, "executed": true}

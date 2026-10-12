@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T050406852229Z_C_0cb3f986",
+  "stage": "C",
+  "purpose": "native_KF_GINS_fixed_scale2_natural_transfer",
+  "kind": "native_GNSS_INS",
+  "source_commit": "c9aa4c9a870eb1a7b1ab81685abad644debdb059",
+  "dirty_diff_SHA": "d375606fc1c87c821fb71953dbb8fd52568c712261353d55a2f70467bd0f1eac",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/run_native_kf.py": "f278ca377f7ad290401d73fc57953448122710b540502403d55b47131c215696",
+    "/home/aaron/lio_gins/configs/initialization_protocol.json": "a21f3478efd1e0cf237082fc87e2fdfecf92a1c7391d47fdea771edd4ed4edfc",
+    "/home/aaron/lio_gins/outputs_s8/20261012T043622997953Z_A_a36aee85/initial_condition.json": "2c7680ea70cd0c4ea09d63b19e985e5c88125be9c81921326b0736dd3566de15"
+  },
+  "started_UTC": "2026-10-12T05:04:06.860827+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:04:14.139815+00:00"
+}

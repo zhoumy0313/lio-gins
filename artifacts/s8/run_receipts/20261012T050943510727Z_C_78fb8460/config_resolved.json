@@ -1,0 +1,15 @@
+{
+  "stage": "C",
+  "purpose": "independent_all_errors_clocks_availability_exposure_recompute",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/independent_check.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/event_results.json"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "python3",
+    "experiments/s8/independent_check.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044"
+  ]
+}

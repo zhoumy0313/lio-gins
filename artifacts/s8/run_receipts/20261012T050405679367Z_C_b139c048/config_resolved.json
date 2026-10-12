@@ -1,0 +1,16 @@
+{
+  "stage": "C",
+  "purpose": "first_full_fixed19_by8_prospective_matrix",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/run_matrix.py",
+    "experiments/s8/gate.py",
+    "configs/s8/protocol.json",
+    "docs/research_s8/FREEZE_PUSH_RECEIPT.json"
+  ],
+  "timeout": 1200.0,
+  "command": [
+    "python3",
+    "experiments/s8/run_matrix.py"
+  ]
+}

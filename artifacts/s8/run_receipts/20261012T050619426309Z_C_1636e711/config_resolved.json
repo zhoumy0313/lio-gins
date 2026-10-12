@@ -1,0 +1,42 @@
+{
+  "stage": "C",
+  "purpose": "Clock90_loss60_normal",
+  "kind": "cached_backend",
+  "input": [
+    "/home/aaron/lio_gins/experiments/s8/run_candidate.py",
+    "/home/aaron/lio_gins/experiments/s8/gate.py",
+    "/home/aaron/lio_gins/configs/s8/Clock90.json",
+    "/home/aaron/lio_gins/outputs_s8/20261012T050206249043Z_A_fc2387cb/lio_cache.npz",
+    "/home/aaron/lio_gins/outputs_s8/20261012T050206249043Z_A_fc2387cb/cache_identity.json",
+    "/home/aaron/lio_gins/outputs_s8/20261012T043622997953Z_A_a36aee85/initial_condition.json",
+    "/home/aaron/lio_gins/outputs_s8/20261012T043812680311Z_A_facd25d4/loss60_normal.csv",
+    "/home/aaron/lio_gins/outputs_s8/20261012T043812680311Z_A_facd25d4/loss60_normal.identity.json",
+    "/home/aaron/lio_gins/src/__init__.py",
+    "/home/aaron/lio_gins/src/observation_manager/availability_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/motion_recovery.py",
+    "/home/aaron/lio_gins/src/observation_manager/anchored_recovery.py",
+    "/home/aaron/lio_gins/src/evaluation/__init__.py",
+    "/home/aaron/lio_gins/src/evaluation/reference.py",
+    "/home/aaron/lio_gins/src/adapters/sensor_text.py",
+    "/home/aaron/lio_gins/src/adapters/causal_lio.py",
+    "/home/aaron/lio_gins/src/adapters/__init__.py",
+    "/home/aaron/lio_gins/src/adapters/research_access.py",
+    "/home/aaron/lio_gins/src/adapters/geodesy.py",
+    "/home/aaron/lio_gins/src/adapters/rosbag_metadata.py",
+    "/home/aaron/lio_gins/src/fusion/fixed_recovery.py",
+    "/home/aaron/lio_gins/src/fusion/__init__.py",
+    "/home/aaron/lio_gins/src/fusion/position_kf.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "/usr/bin/python3",
+    "/home/aaron/lio_gins/experiments/s8/run_candidate.py",
+    "/home/aaron/lio_gins/outputs_s8/20261012T050206249043Z_A_fc2387cb",
+    "/home/aaron/lio_gins/outputs_s8/20261012T043622997953Z_A_a36aee85",
+    "/home/aaron/lio_gins/configs/s8/Clock90.json",
+    "--gnss-ned",
+    "/home/aaron/lio_gins/outputs_s8/20261012T043812680311Z_A_facd25d4/loss60_normal.csv",
+    "--freeze",
+    "/home/aaron/lio_gins/freezes/s8/building01_20261012T050221174017Z/scientific_freeze.json"
+  ]
+}

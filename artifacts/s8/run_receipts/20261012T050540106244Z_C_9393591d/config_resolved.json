@@ -1,0 +1,19 @@
+{
+  "stage": "C",
+  "purpose": "offline_native_KF_GINS_transfer_evaluation",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/evaluate_native_kf.py",
+    "docs/research_s8/FREEZE_PUSH_RECEIPT.json",
+    "outputs_s8/20261012T050406852229Z_C_0cb3f986/baseline_identity.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/evaluate_native_kf.py",
+    "outputs_s8/20261012T050406852229Z_C_0cb3f986",
+    "outputs_s8/20261012T043622997953Z_A_a36aee85",
+    "--freeze",
+    "freezes/s8/building01_20261012T050221174017Z/scientific_freeze.json"
+  ]
+}

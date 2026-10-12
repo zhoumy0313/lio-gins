@@ -1,0 +1,14 @@
+{
+  "stage": "C",
+  "purpose": "offline_injected_bias_cancellation_full_fixed_events",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/injection_cancellation.py",
+    "docs/research_s8/FREEZE_PUSH_RECEIPT.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/injection_cancellation.py"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "C",
+  "purpose": "native_KF_GINS_fixed_scale2_natural_transfer",
+  "kind": "native_GNSS_INS",
+  "input": [
+    "experiments/s8/run_native_kf.py",
+    "configs/initialization_protocol.json",
+    "outputs_s8/20261012T043622997953Z_A_a36aee85/initial_condition.json"
+  ],
+  "timeout": 240.0,
+  "command": [
+    "python3",
+    "experiments/s8/run_native_kf.py",
+    "outputs_s8/20261012T043622997953Z_A_a36aee85",
+    "--noise-scale",
+    "2",
+    "--freeze",
+    "freezes/s8/building01_20261012T050221174017Z/scientific_freeze.json"
+  ]
+}

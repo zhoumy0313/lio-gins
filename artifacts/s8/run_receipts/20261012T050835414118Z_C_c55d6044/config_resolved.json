@@ -1,0 +1,16 @@
+{
+  "stage": "C",
+  "purpose": "full_expected_grid_all_windows_prospective_evaluation",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/reanalyse.py",
+    "outputs_s8/20261012T050405679367Z_C_b139c048/complete_index.json",
+    "docs/research_s8/FREEZE_PUSH_RECEIPT.json"
+  ],
+  "timeout": 300.0,
+  "command": [
+    "python3",
+    "experiments/s8/reanalyse.py",
+    "outputs_s8/20261012T050405679367Z_C_b139c048/complete_index.json"
+  ]
+}

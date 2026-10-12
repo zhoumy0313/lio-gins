@@ -1,0 +1,15 @@
+{
+  "stage": "B",
+  "purpose": "exact_remote_freeze_readback_before_first_precision",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/verify_remote_freeze.py",
+    "artifacts/s8/checkpoints/B.json",
+    "artifacts/s8/technical_context.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/verify_remote_freeze.py"
+  ]
+}
