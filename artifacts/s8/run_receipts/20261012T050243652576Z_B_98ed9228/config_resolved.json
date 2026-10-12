@@ -1,0 +1,15 @@
+{
+  "stage": "B",
+  "purpose": "complete_source_config_cache_data_scientific_freeze",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/freeze_science.py",
+    "artifacts/s8/technical_context.json",
+    "configs/s8/protocol.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/freeze_science.py"
+  ]
+}

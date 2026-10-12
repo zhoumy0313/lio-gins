@@ -1,0 +1,26 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T050243652576Z_B_98ed9228",
+  "stage": "B",
+  "purpose": "complete_source_config_cache_data_scientific_freeze",
+  "kind": "engineering",
+  "source_commit": "1bf547e2b0c4b1e0e2210a2d939a02c0cb0d3ee8",
+  "dirty_diff_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/freeze_science.py": "805249e321aff7dc382ffd444aeecfed9f7c905f9ba736ffd5ed3ed9913ae0d8",
+    "/home/aaron/lio_gins/artifacts/s8/technical_context.json": "7dd41d367d6a7f4eefb60642945830f5ad35b76ea3f594444f56bbdaaae421ad",
+    "/home/aaron/lio_gins/configs/s8/protocol.json": "42142aa5421269de1acda908fd03642d385a5d638e95af3047e78a80ae5522bf"
+  },
+  "started_UTC": "2026-10-12T05:02:43.660092+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:02:43.774758+00:00"
+}

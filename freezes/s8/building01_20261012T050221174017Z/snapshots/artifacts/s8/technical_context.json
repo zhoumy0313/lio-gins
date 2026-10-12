@@ -1,0 +1,11 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "frontend": "/home/aaron/lio_gins/outputs_s8/20261012T043619503401Z_A_ed9799fe",
+  "cache": "/home/aaron/lio_gins/outputs_s8/20261012T050206249043Z_A_fc2387cb",
+  "initialization": "/home/aaron/lio_gins/outputs_s8/20261012T043622997953Z_A_a36aee85",
+  "stress": "/home/aaron/lio_gins/outputs_s8/20261012T043812680311Z_A_facd25d4",
+  "freeze_relative_path": "freezes/s8/building01_20261012T050221174017Z/scientific_freeze.json",
+  "role": "s8_prospective_heldout",
+  "cache_selection": "one pre-registered complete technical replay, not selected by error",
+  "performance_opened_at_context_creation": false
+}
