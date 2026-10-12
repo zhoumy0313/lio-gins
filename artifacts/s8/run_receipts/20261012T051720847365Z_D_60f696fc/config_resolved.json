@@ -1,0 +1,16 @@
+{
+  "stage": "D",
+  "purpose": "full_pdf_all_rendered_cells_fonts_and_numeric_provenance_audit",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/audit_manuscript.py",
+    "paper/versions/s8_r03/main.pdf",
+    "paper/versions/s8_r03/table_cell_bindings.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/audit_manuscript.py",
+    "paper/versions/s8_r03"
+  ]
+}

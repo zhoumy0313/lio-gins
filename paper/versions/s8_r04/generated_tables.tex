@@ -1,0 +1,49 @@
+\begin{table*}[t]\centering\small
+\caption{Complete prospective building01 matrix: all 19 fixed named policies. Horizontal RMSE is meters; clean delay is the maximum of three actual-update measurement delays, seconds. Exposure is accepted/exposed artificial 10-m rows. Q requires the frozen 15-s clean deadline, natural-cost cap and complete coverage. C180 is right-censored admission, not zero delay. No new-route tuning.}\label{tab:primary}
+\begin{tabular}{lrrrrrrc}\toprule
+Policy & Natural & Clean delay & Clean90 & Bias90 & Bias180 & Exposure & Q\\\midrule
+LIO only & 8.405 & C180 & 1.325 & 1.325 & 1.742 & 0/270 & no \\
+Direct fusion & 4.909 & 0.000 & 2.319 & 4.030 & 3.585 & 270/270 & yes \\
+NIS100 & 4.956 & 0.000 & 2.319 & 4.030 & 3.585 & 270/270 & yes \\
+Huber2.5 & 5.149 & 0.000 & 2.302 & 3.782 & 3.498 & 270/270 & no \\
+Availability B6 & 5.252 & 2.000 & 2.338 & 3.182 & 3.333 & 262/270 & no \\
+NIS11.3449 & 5.398 & 0.000 & 2.229 & 2.998 & 3.658 & 180/270 & no \\
+NIS16.2662 & 5.300 & 0.000 & 2.287 & 2.472 & 2.454 & 180/270 & no \\
+NIS30 & 5.079 & 0.000 & 2.313 & 3.170 & 3.598 & 235/270 & no \\
+Clock2 & 5.252 & 7.000 & 2.355 & 3.160 & 3.319 & 249/270 & no \\
+Clock5 & 5.252 & 10.000 & 2.364 & 3.157 & 3.317 & 240/270 & no \\
+Clock10 & 5.252 & 15.000 & 2.376 & 3.140 & 3.306 & 225/270 & no \\
+Clock15 & 5.252 & 20.000 & 2.389 & 2.902 & 3.156 & 211/270 & no \\
+Clock30 & 5.252 & 35.000 & 2.334 & 2.844 & 3.113 & 183/270 & no \\
+Clock60 & 5.252 & 65.000 & 1.973 & 2.368 & 2.358 & 123/270 & no \\
+Clock90 & 5.252 & 95.000 & 1.902 & 2.362 & 2.425 & 73/270 & no \\
+P-r03 & 5.273 & 7.000 & 2.355 & 2.378 & 2.649 & 166/270 & no \\
+P-no-motion & 5.252 & 2.000 & 2.338 & 3.182 & 3.333 & 262/270 & no \\
+P-no-anchor & 5.273 & 7.000 & 2.355 & 3.172 & 3.576 & 249/270 & no \\
+P-no-decay & 5.177 & 7.000 & 2.342 & 2.388 & 2.532 & 166/270 & no \\
+\bottomrule\end{tabular}\end{table*}
+\begin{table*}[t]\centering\small
+\caption{Cross-route comparison with explicit data roles. All 19 policies remain visible. Columns give clean actual-update delay (s), biased post90 horizontal RMSE (m), and joint eligibility Q. building00 is seen development; parking00 is seen retrospective; building01 is the new prospective test. The second building cache is retained sensitivity, not another route.}\label{tab:other}
+\begin{tabular}{lrrrrrrrrr}\toprule
+ & \multicolumn{3}{c}{Building00: seen development} & \multicolumn{3}{c}{Parking00: seen retrospective} & \multicolumn{3}{c}{Building01: prospective test}\\
+Policy & Delay & Bias90 & Q & Delay & Bias90 & Q & Delay & Bias90 & Q\\\midrule
+LIO only & C180 & 1.773 & no & C180 & 2.226 & no & C180 & 1.325 & no \\
+Direct fusion & 0.000 & 8.371 & yes & 0.000 & 7.015 & yes & 0.000 & 4.030 & yes \\
+NIS100 & 0.000 & 8.371 & yes & 0.000 & 3.091 & yes & 0.000 & 4.030 & yes \\
+Huber2.5 & 0.000 & 7.645 & yes & 0.000 & 6.426 & yes & 0.000 & 3.782 & no \\
+Availability B6 & 2.000 & 5.780 & yes & 2.000 & 4.478 & yes & 2.000 & 3.182 & no \\
+NIS11.3449 & 0.000 & 3.653 & no & 0.000 & 2.164 & yes & 0.000 & 2.998 & no \\
+NIS16.2662 & 0.000 & 3.700 & no & 0.000 & 2.128 & yes & 0.000 & 2.472 & no \\
+NIS30 & 0.000 & 3.908 & no & 0.000 & 2.023 & yes & 0.000 & 3.170 & no \\
+Clock2 & 7.000 & 5.558 & yes & 7.000 & 4.395 & yes & 7.000 & 3.160 & no \\
+Clock5 & 10.000 & 5.490 & yes & 10.000 & 4.374 & yes & 10.000 & 3.157 & no \\
+Clock10 & 15.000 & 5.361 & yes & 15.000 & 4.116 & yes & 15.000 & 3.140 & no \\
+Clock15 & 20.000 & 4.899 & no & 20.000 & 3.758 & no & 20.000 & 2.902 & no \\
+Clock30 & 35.000 & 4.427 & no & 35.000 & 3.403 & no & 35.000 & 2.844 & no \\
+Clock60 & 65.000 & 2.838 & no & 65.000 & 2.521 & no & 65.000 & 2.368 & no \\
+Clock90 & 95.000 & 2.510 & no & 95.000 & 2.298 & no & 95.000 & 2.362 & no \\
+P-r03 & 7.000 & 3.022 & yes & 7.000 & 2.290 & yes & 7.000 & 2.378 & no \\
+P-no-motion & 2.000 & 5.780 & yes & 2.000 & 4.478 & yes & 2.000 & 3.182 & no \\
+P-no-anchor & 7.000 & 5.489 & yes & 7.000 & 4.395 & yes & 7.000 & 3.172 & no \\
+P-no-decay & 7.000 & 3.059 & yes & 7.000 & 2.259 & yes & 7.000 & 2.388 & no \\
+\bottomrule\end{tabular}\end{table*}

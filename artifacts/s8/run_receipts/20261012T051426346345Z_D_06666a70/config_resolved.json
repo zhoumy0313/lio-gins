@@ -1,0 +1,16 @@
+{
+  "stage": "D",
+  "purpose": "all_control_cross_route_vectors_and_fixed_first_event",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/make_figures.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/event_results.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/make_figures.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044"
+  ]
+}

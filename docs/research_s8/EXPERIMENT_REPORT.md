@@ -55,3 +55,7 @@ Native KF-GINS natural fixed STD-scale2 transfer: C_0cb3f986 estimator exit0; C_
 ## Evidence and remaining delivery
 
 artifacts/s8/C summary/event/category tables, complete_index.json.gz and event_results.json.gz cover all methods/categories; per-windowP95/Max/coverage/censoring and run/config/input/cache/evaluator SHAs in full JSON. artifacts/s8/independent_check.json and native_KF_metrics.json. Full per-epoch/per-update logs stay in outputs_s8; raw/cache/runtime offsite backup unverified. Prior3.6013m frontend discrepancy/reference sharing/controlled initial state remain limitations. Paper D and final E audits continue; no formal submission or author action is performed.
+
+## Cache-availability bound and budget sensitivity
+
+P clean actual measurement delays=[7.0, 7.0, 7.0]s; conservative cache-availability bounds=[7.094380140304565, 7.091545820236206, 7.09679913520813]s. Both are not field wall-clock latency. Clock10 measurement15s is inclusive, but its availability bounds [15.09761643409729, 15.08025574684143, 15.091221570968628]s exceed15s. P fails joint eligibility at every registered5/10/15/30/60/90s budget because the unchanged natural-cost cap fails; no post-test allowance relaxation. Full budget details are in artifacts/s8/C/scientific_judgment.json.

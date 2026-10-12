@@ -11,7 +11,7 @@ assert git('rev-parse','research/lio-gins-r2-submission')=='8ef95ce597433a8b45c9
 statepath=ROOT/'docs/research_s8/STATE.json';state=json.loads(statepath.read_text());state.update(stage=next_stage,execution_status=stage+'_checkpoint_complete',updated_UTC=datetime.datetime.now(datetime.timezone.utc).isoformat());state.setdefault('completed_stages',[]).append(stage)
 statepath.write_text(json.dumps(state,indent=2)+'\n')
 with (ROOT/'docs/research_s8/STATE_HISTORY.jsonl').open('a') as f:f.write(json.dumps({'stage_completed':stage,'next_stage':next_stage,'UTC':state['updated_UTC'],'flags':state})+'\n')
-paths=['.gitignore','AGENTS.md','docs/GOAL_LIO_GINS_S8_BUILDING01_SUBMISSION.md','docs/USER_ACTION_REQUIRED.md','docs/research_s8','configs/s8','experiments/s8','paper/versions/s8_r01','paper/versions/s8_r02','paper/versions/s8_r03','paper/submission_candidate/s8','artifacts/s8','freezes/s8']
+paths=['.gitignore','AGENTS.md','docs/GOAL_LIO_GINS_S8_BUILDING01_SUBMISSION.md','docs/USER_ACTION_REQUIRED.md','docs/research_s8','configs/s8','experiments/s8','paper/versions/s8_r01','paper/versions/s8_r02','paper/versions/s8_r03','paper/versions/s8_r04','paper/submission_candidate/s8','artifacts/s8','freezes/s8']
 subprocess.run(['git','add','--',*[p for p in paths if (ROOT/p).exists()]],cwd=ROOT,check=True)
 for path in git('diff','--cached','--name-only').splitlines():
     assert (ROOT/path).stat().st_size<10000000,path

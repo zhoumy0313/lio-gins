@@ -1,0 +1,28 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T051555306342Z_D_ba745160",
+  "stage": "D",
+  "purpose": "final_s8_r03_full_review_PDF_compile",
+  "kind": "engineering",
+  "source_commit": "774dc1036e0d4f47e9a2cb848cf30ee678fcb01c",
+  "dirty_diff_SHA": "9d28f65f2afa81a497d2e85a26e2847951fa4ca2404fea161b0c26d5a57790bc",
+  "input_SHA": {
+    "/home/aaron/lio_gins/paper/versions/s8_r03/main.tex": "c737477d46357e3b0c9d2b833b58c96963457f73e37f02db429e0142caa993ba",
+    "/home/aaron/lio_gins/paper/versions/s8_r03/references.bib": "16e429d5739df17bbdd0c002efc357a12c8a8738dc37767399887dcc9dc59a10",
+    "/home/aaron/lio_gins/paper/versions/s8_r03/generated_tables.tex": "4b0c7ca78196d9c1b78f1a199a65f8512cadd180b8d47852633300315211e596",
+    "/home/aaron/lio_gins/paper/versions/s8_r03/table_cell_bindings.json": "67b214f2a9b5ae6dd019da525f954cad820aed6becfc50238f505d1c1377799d",
+    "/home/aaron/lio_gins/experiments/s8/build_paper.py": "df0d7fc098447a931729bc50e16dc91f260992638abe749c2f65e310620c132b"
+  },
+  "started_UTC": "2026-10-12T05:15:55.315392+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:15:56.783284+00:00"
+}

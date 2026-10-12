@@ -1,0 +1,16 @@
+{
+  "stage": "D",
+  "purpose": "polished_r04_all_numeric_cells_fonts_and_source_audit",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/audit_manuscript.py",
+    "paper/versions/s8_r04/main.pdf",
+    "paper/versions/s8_r04/table_cell_bindings.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/audit_manuscript.py",
+    "paper/versions/s8_r04"
+  ]
+}

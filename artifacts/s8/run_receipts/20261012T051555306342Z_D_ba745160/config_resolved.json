@@ -1,0 +1,18 @@
+{
+  "stage": "D",
+  "purpose": "final_s8_r03_full_review_PDF_compile",
+  "kind": "engineering",
+  "input": [
+    "paper/versions/s8_r03/main.tex",
+    "paper/versions/s8_r03/references.bib",
+    "paper/versions/s8_r03/generated_tables.tex",
+    "paper/versions/s8_r03/table_cell_bindings.json",
+    "experiments/s8/build_paper.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/build_paper.py",
+    "paper/versions/s8_r03"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "analysis_run": "outputs_s8/20261012T050835414118Z_C_c55d6044",
+  "source_SHA": {
+    "/home/aaron/lio_gins/artifacts/r2/S3/summary_table.json": "275f2c56c618e25fb800393d22bfc3e60fc9f6430dc35c95c8840806c8a9258d",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/event_results.json": "a63846bc66204be030ef0ddec26f8d73ab7bd25b25eda8c47b9b58692f05bfb7"
+  },
+  "script_SHA": "18e6152de58b03e394405396e9ecdbf971a66fed9ed2fc4f90d393633918313c",
+  "representative_selection": "building01 loss30_bias10 first registered event0; predetermined methods NIS30/B6/Clock10/Clock90/P",
+  "all_controls_point_table": true,
+  "second_building_cache": "retained R2 sensitivity, not independent; full points included",
+  "B2_censored": "in complete tables, no finite x-axis position"
+}

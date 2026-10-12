@@ -1,0 +1,11 @@
+{
+  "new_run": "outputs_s8/20261012T052112732356Z_D_29f9311b",
+  "original_run": "outputs_s8/20261012T051426346345Z_D_06666a70",
+  "all_plot_points_byte_equal": true,
+  "point_SHA": {
+    "tradeoff_points.csv": "37d3db3aa94eda590d3109044cdd8f3db673bd6b0391a6178e2aaf9078ff303f",
+    "representative_event_points.csv": "3b04b6b8be084d8ab47a156bcef221e5a9f45c2955518c6aa96d3835564f64ca"
+  },
+  "only_annotation_marker_typography_changed": true,
+  "representative_event_selection_unchanged": true
+}

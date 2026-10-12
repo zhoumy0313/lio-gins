@@ -1,0 +1,25 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T051555119280Z_D_db46754c",
+  "stage": "D",
+  "purpose": "all19_heldout_and_all19_cross_route_exact_table_bindings",
+  "kind": "engineering",
+  "source_commit": "774dc1036e0d4f47e9a2cb848cf30ee678fcb01c",
+  "dirty_diff_SHA": "82009cd320cbf8c4d0c66eddb1698aaaad69ec48eb726a743534a5d6c5725015",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/paper_tables.py": "968bed621b35863b08aad311e289ad923af2fb08c42a6f142c80b8ff38df1a8e",
+    "/home/aaron/lio_gins/outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+  },
+  "started_UTC": "2026-10-12T05:15:55.127314+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:15:55.192307+00:00"
+}

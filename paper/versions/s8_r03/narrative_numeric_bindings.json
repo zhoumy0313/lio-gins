@@ -1,0 +1,141 @@
+{
+  "new_route_numeric_claims": [
+    {
+      "method": "B3",
+      "field": "bias_RMSE_90_m",
+      "value": 4.029944136273931,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "bias_RMSE_90_m",
+      "value": 2.3784504301550027,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "natural_RMSE_m",
+      "value": 5.273450322607507,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "natural_cap_m",
+      "value": 5.055153847514538,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "clean_latency_max_s",
+      "value": 7.0,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "clean_RMSE_90_m",
+      "value": 2.355072818582592,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "bias_RMSE_90_m",
+      "value": 2.3784504301550027,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "bias_RMSE_180_m",
+      "value": 2.6494732996253494,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "bias_accepted_rows",
+      "value": 166,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P",
+      "field": "bias_exposed_rows",
+      "value": 270,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "NIS2",
+      "field": "natural_RMSE_m",
+      "value": 5.078671016070101,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "NIS2",
+      "field": "clean_latency_max_s",
+      "value": 0.0,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "NIS2",
+      "field": "bias_RMSE_90_m",
+      "value": 3.170445858338224,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "Clock90",
+      "field": "clean_latency_max_s",
+      "value": 95.0,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "Clock90",
+      "field": "bias_RMSE_90_m",
+      "value": 2.361516487664004,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "Clock90",
+      "field": "bias_accepted_rows",
+      "value": 73,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P_without_decay",
+      "field": "bias_RMSE_90_m",
+      "value": 2.387578994007328,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P_without_anchor",
+      "field": "bias_RMSE_90_m",
+      "value": 3.171783903901329,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    },
+    {
+      "method": "P_without_motion",
+      "field": "bias_RMSE_90_m",
+      "value": 3.1815868310074626,
+      "source": "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+      "source_SHA": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+    }
+  ],
+  "event_source_SHA": "a63846bc66204be030ef0ddec26f8d73ab7bd25b25eda8c47b9b58692f05bfb7",
+  "independent_source_SHA": "41a4f98ca64c5fb26764f29111af88aae39fab520e360592710aa25e0450e6dc",
+  "historical_numeric_source": "artifacts/r2/S3/summary_table.json, artifacts/r2/S3/frontend_diagnosis.json and retained R2 report",
+  "scientific_support_flag": false
+}

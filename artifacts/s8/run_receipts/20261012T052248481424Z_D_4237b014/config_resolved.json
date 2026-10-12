@@ -1,0 +1,17 @@
+{
+  "stage": "D",
+  "purpose": "polished_s8_r04_six_page_author_review_PDF",
+  "kind": "engineering",
+  "input": [
+    "paper/versions/s8_r04/main.tex",
+    "paper/versions/s8_r04/generated_tables.tex",
+    "paper/versions/s8_r04/figure_typography_parity.json",
+    "experiments/s8/build_paper.py"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/build_paper.py",
+    "paper/versions/s8_r04"
+  ]
+}

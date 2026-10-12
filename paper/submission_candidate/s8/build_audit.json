@@ -1,0 +1,20 @@
+{
+  "pages": 6,
+  "within_six_pages": true,
+  "PDF_SHA256": "65023095573b427395b8867f8c676b4534c35ee3bec2fd0c0511b638cc61c11f",
+  "compiler_SHA256": "a98aa59ad5c1df39a6c9e56cbfc5088f2b11d6c179c0130b97998e4bd46a46da",
+  "source_selection": "TeX/BibTeX/TikZ, vector figure sources and numeric/figure bindings; excludes prior compiled outputs",
+  "sources": {
+    "table_cell_bindings.json": "67b214f2a9b5ae6dd019da525f954cad820aed6becfc50238f505d1c1377799d",
+    "references.bib": "16e429d5739df17bbdd0c002efc357a12c8a8738dc37767399887dcc9dc59a10",
+    "narrative_numeric_bindings.json": "4be882d4e8a173d78dbd1066c6c67a589729ddedf233790ac1c994181d16ede2",
+    "figure_sources.json": "32362e35812327085419391236bd981c44997f31a16852c996395042a4d99e36",
+    "main.tex": "bb1214fa4e486d3eed64d2cb676db7df680b59f678d306e40bd24c8c82321512",
+    "generated_tables.tex": "1128cbd0648e1d04cd8cf6909ec3e128600af70159d786310d52d527d97bc584",
+    "figures/framework.tikz": "6449321e6c15cff68b18526f4e640194e5bc8da6d2fcd3f2551c5c6b5c5295b7",
+    "figures/first_registered_bias_event.pdf": "74cb99362da03e644c22fc740477203a4818e354671b86298568a10c8f21d50f",
+    "figures/latency_error_tradeoff.pdf": "b8afb75194396496685362b5b36e1267a2f9d0c09cbcc164b54ad3b7b195c9a7",
+    "figures/latency_error_tradeoff.svg": "f4c01d3f6937e4df5faf0c9556146e5a2d143967e5077249ab129689050077be",
+    "figures/first_registered_bias_event.svg": "2a930c9b62ec849320af6b5b1f54438669ef1145d1547b6c222df696308ca2db"
+  }
+}

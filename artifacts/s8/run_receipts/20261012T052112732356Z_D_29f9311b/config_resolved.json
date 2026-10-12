@@ -1,0 +1,15 @@
+{
+  "stage": "D",
+  "purpose": "typography_only_vector_labels_same_points_same_events",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/make_publication_figures.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json"
+  ],
+  "timeout": 180.0,
+  "command": [
+    "python3",
+    "experiments/s8/make_publication_figures.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044"
+  ]
+}

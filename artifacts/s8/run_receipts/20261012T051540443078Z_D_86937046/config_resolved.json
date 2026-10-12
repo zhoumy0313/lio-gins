@@ -1,0 +1,19 @@
+{
+  "stage": "D",
+  "purpose": "complete_result_driven_English_author_review_source",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/write_paper.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json",
+    "artifacts/s8/independent_check.json",
+    "docs/research_s8/STATE.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/write_paper.py",
+    "paper/versions/s8_r03",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044",
+    "outputs_s8/20261012T050944675248Z_C_c6bb7b4c"
+  ]
+}

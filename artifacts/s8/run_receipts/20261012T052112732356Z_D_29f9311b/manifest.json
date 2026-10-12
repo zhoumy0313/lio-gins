@@ -1,0 +1,25 @@
+{
+  "goal_id": "LIO-GINS-S8-BUILDING01",
+  "run_id": "20261012T052112732356Z_D_29f9311b",
+  "stage": "D",
+  "purpose": "typography_only_vector_labels_same_points_same_events",
+  "kind": "engineering",
+  "source_commit": "774dc1036e0d4f47e9a2cb848cf30ee678fcb01c",
+  "dirty_diff_SHA": "1e70e883b97d46e04ad874b17a3a603d2f784f0199a5299c0d57f5d3a7a6d0a7",
+  "input_SHA": {
+    "/home/aaron/lio_gins/experiments/s8/make_publication_figures.py": "fd32845fb1a493dee56de092a74cd2dcf81b067f62a880dc85ee550b6d4a7356",
+    "/home/aaron/lio_gins/outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json": "9e4c88d4e5802e4878de20644c32d2fe95355cd184113324285ec3d299d880e6"
+  },
+  "started_UTC": "2026-10-12T05:21:12.741145+00:00",
+  "status": "PASSED",
+  "environment_registry_SHA": "0f2049fb95089807d07ab8211b213e1dbf8f837035c1c8c4d05539b5f1963ffd",
+  "environment_python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "raw_data_role": "S8_role_must_be_declared_by_entry",
+  "backup": {
+    "local_preserved": true,
+    "full_remote_numeric": false,
+    "raw_backup": false
+  },
+  "exit_code": 0,
+  "ended_UTC": "2026-10-12T05:21:14.914163+00:00"
+}

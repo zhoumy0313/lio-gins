@@ -1,0 +1,16 @@
+{
+  "stage": "D",
+  "purpose": "all19_heldout_and_all19_cross_route_exact_table_bindings",
+  "kind": "engineering",
+  "input": [
+    "experiments/s8/paper_tables.py",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044/summary_table.json"
+  ],
+  "timeout": 120.0,
+  "command": [
+    "python3",
+    "experiments/s8/paper_tables.py",
+    "paper/versions/s8_r03",
+    "outputs_s8/20261012T050835414118Z_C_c55d6044"
+  ]
+}
