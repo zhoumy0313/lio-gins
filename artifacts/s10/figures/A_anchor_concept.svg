@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="481.130305pt" height="123.43875pt" viewBox="0 0 481.130305 123.43875" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="481.130305pt" height="141.43875pt" viewBox="0 0 481.130305 141.43875" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-10-12T21:27:11.506644</dc:date>
+    <dc:date>2026-10-12T21:37:26.111233</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,8 +21,8 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 123.43875 
-L 481.130305 123.43875 
+   <path d="M 0 141.43875 
+L 481.130305 141.43875 
 L 481.130305 0 
 L 0 0 
 z
@@ -31,7 +31,7 @@ z
   <g id="axes_1">
    <g id="text_1">
     <!-- $z_{k}=z^{0}_{k}+b,\quad z_{k-5}=z^{0}_{k-5}+b$ -->
-    <g transform="translate(13.424843 52.24515)scale(0.1 -0.1)">
+    <g transform="translate(13.424843 58.36515)scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSans-Oblique-7a" d="M 744 3500 
 L 3475 3500 
@@ -208,7 +208,7 @@ z
    </g>
    <g id="text_2">
     <!-- $(z_k-z_{k-5})-(a_k-a_{k-5})$ -->
-    <g transform="translate(13.424843 80.36355)scale(0.11 -0.11)">
+    <g transform="translate(13.424843 91.70355)scale(0.11 -0.11)">
      <defs>
       <path id="DejaVuSans-28" d="M 1984 4856 
 Q 1566 4138 1362 3434 
@@ -297,7 +297,7 @@ z
    </g>
    <g id="text_3">
     <!-- No added information about constant b -->
-    <g transform="translate(13.424843 97.5845)scale(0.08 -0.08)">
+    <g transform="translate(13.424843 113.7845)scale(0.08 -0.08)">
      <defs>
       <path id="DejaVuSans-4e" d="M 628 4666 
 L 1478 4666 
@@ -679,7 +679,7 @@ z
      <use xlink:href="#DejaVuSans-62" x="1908.552734"/>
     </g>
     <!-- when both rows share it; gap resets history. -->
-    <g transform="translate(13.424843 106.54275)scale(0.08 -0.08)">
+    <g transform="translate(13.424843 122.74275)scale(0.08 -0.08)">
      <defs>
       <path id="DejaVuSans-77" d="M 269 3500 
 L 844 3500 
@@ -967,7 +967,7 @@ z
   <g id="axes_2">
    <g id="text_5">
     <!-- $\hat z_k=z_a+(a_k-a_a),\quad e^A_k=z_k-\hat z_k$ -->
-    <g transform="translate(237.200252 49.33635)scale(0.1 -0.1)">
+    <g transform="translate(237.200252 54.91635)scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSans-302" d="M -1831 5119 
 L -1369 5119 
@@ -1060,7 +1060,7 @@ z
    </g>
    <g id="text_6">
     <!-- Past admitted raw GNSS / LIO -->
-    <g transform="translate(239.2752 67.75875)scale(0.08 -0.08)">
+    <g transform="translate(237.200252 77.90835)scale(0.08 -0.08)">
      <defs>
       <path id="DejaVuSans-50" d="M 1259 4147 
 L 1259 2394 
@@ -1184,17 +1184,17 @@ z
     </g>
    </g>
    <g id="patch_2">
-    <path d="M 322.050733 72.515052 
-Q 331.698246 78.801757 340.409054 84.478068 
+    <path d="M 302.372899 101.201761 
+Q 341.410291 102.736171 379.330512 104.226669 
 " style="fill: none; stroke: #000000; stroke-linecap: round"/>
-    <path d="M 338.601571 81.390511 
-L 340.409054 84.478068 
-L 336.854519 84.07152 
+    <path d="M 376.195822 102.502221 
+L 379.330512 104.226669 
+L 376.07014 105.699752 
 " style="fill: none; stroke: #000000; stroke-linecap: round"/>
    </g>
    <g id="text_7">
     <!-- Admission veto -->
-    <g transform="translate(280.774155 67.75875)scale(0.08 -0.08)">
+    <g transform="translate(237.200252 102.04995)scale(0.08 -0.08)">
      <defs>
       <path id="DejaVuSans-41" d="M 2188 4044 
 L 1331 1722 
@@ -1241,7 +1241,7 @@ z
    </g>
    <g id="text_8">
     <!-- Anchor is a decision memory, never another measurement. -->
-    <g transform="translate(235.125305 102.4325)scale(0.08 -0.08)">
+    <g transform="translate(235.125305 119.5325)scale(0.08 -0.08)">
      <use xlink:href="#DejaVuSans-41"/>
      <use xlink:href="#DejaVuSans-6e" x="68.408203"/>
      <use xlink:href="#DejaVuSans-63" x="131.787109"/>
@@ -1299,7 +1299,7 @@ z
      <use xlink:href="#DejaVuSans-2e" x="2953.316406"/>
     </g>
     <!-- Only current original GNSS updates the position KF once. -->
-    <g transform="translate(235.125305 111.39075)scale(0.08 -0.08)">
+    <g transform="translate(235.125305 128.49075)scale(0.08 -0.08)">
      <defs>
       <path id="DejaVuSans-4b" d="M 628 4666 
 L 1259 4666 

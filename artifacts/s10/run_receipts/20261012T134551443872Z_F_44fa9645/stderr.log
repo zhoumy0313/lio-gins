@@ -1,0 +1,121 @@
+test_anchor_requires_sustained_past_validation (test_anchored_recovery.AnchorChecks) ... ok
+test_future_bias_change_does_not_alter_trusted_past (test_anchored_recovery.AnchorChecks) ... ok
+test_legal_large_global_innovation_can_reintegrate (test_anchored_recovery.AnchorChecks) ... ok
+test_missing_local_health_uses_mature_policy_not_anchor_veto (test_anchored_recovery.AnchorChecks) ... ok
+test_no_anchor_ablation_equals_r02_decisions (test_anchored_recovery.AnchorChecks) ... ok
+test_observation_equivalent_drift_and_bias_cannot_be_identified (test_anchored_recovery.AnchorChecks) ... ok
+test_stable_recovery_bias_does_not_wash_the_anchor (test_anchored_recovery.AnchorChecks) ... ok
+test_actual_outage_still_requires_qualified_motion (test_availability_recovery.AvailabilityChecks) ... ok
+test_available_motion_violation_overrides_mature_acceptance (test_availability_recovery.AvailabilityChecks) ... ok
+test_future_bias_change_cannot_change_past (test_availability_recovery.AvailabilityChecks) ... ok
+test_unavailable_then_fresh_window_does_not_latch_GNSS_fault (test_availability_recovery.AvailabilityChecks) ... ok
+test_same_KF_geometry_once_only_and_future_causality (test_candidate_parity.CandidateFoundation) ... ERROR
+test_pure_rotation_is_not_false_position_or_motion_fault (test_candidate_rotation.RotatingLever) ... ERROR
+test_availability_cannot_precede_measurement (test_causal_lio.CausalLIOTests) ... ok
+test_future_beyond_interpolation_endpoint_does_not_change_output (test_causal_lio.CausalLIOTests) ... ok
+test_missing_LIO_span_is_unavailable (test_causal_lio.CausalLIOTests) ... ok
+test_next_endpoint_is_unavailable_before_arrival (test_causal_lio.CausalLIOTests) ... ok
+test_queries_cannot_retroactively_use_past (test_causal_lio.CausalLIOTests) ... ok
+test_bad_r_does_not_corrupt_filter (test_common_interfaces.FilterAndEvaluation) ... ok
+test_closed_form_and_once_only (test_common_interfaces.FilterAndEvaluation) ... ok
+test_future_inputs_cannot_change_past_outputs (test_common_interfaces.FilterAndEvaluation) ... ok
+test_joseph_psd_in_long_sequence (test_common_interfaces.FilterAndEvaluation) ... ok
+test_no_gnss_identical_propagation (test_common_interfaces.FilterAndEvaluation) ... ok
+test_online_modules_do_not_read_reference (test_common_interfaces.FilterAndEvaluation) ... ok
+test_reference_duplicate_times_rejected_without_explicit_policy (test_common_interfaces.FilterAndEvaluation) ... ok
+test_reference_gaps_and_rmse (test_common_interfaces.FilterAndEvaluation) ... ok
+test_robust_baselines_suppress_outlier (test_common_interfaces.FilterAndEvaluation) ... ok
+test_zero_noise_and_no_random_mean (test_common_interfaces.FilterAndEvaluation) ... ok
+test_explicit_week_and_boundary (test_common_interfaces.GeometryAndInput) ... ok
+test_incompatible_nav_schemas (test_common_interfaces.GeometryAndInput) ... ok
+test_increment_units_and_anomalies_preserved (test_common_interfaces.GeometryAndInput) ... ok
+test_known_wgs84_points_and_ned_signs (test_common_interfaces.GeometryAndInput) ... ok
+test_quaternion_convention_and_lever_under_turn (test_common_interfaces.GeometryAndInput) ... ok
+test_std_squared_once_and_invalid_rejected (test_common_interfaces.GeometryAndInput) ... ok
+test_exact_context_and_mutated_source (test_context_integrity.ContextIntegrity) ... ok
+test_manifest_path_traversal_rejected (test_context_integrity.ContextIntegrity) ... ok
+test_missing_extra_and_symlink_rejected (test_context_integrity.ContextIntegrity) ... ok
+ERROR
+test_fixed_protection_uses_the_same_nominal_Huber_score (test_fixed_recovery.MatchedRobustCovarianceTests) ... ok
+test_duplicate_time_is_rejected (test_fixed_recovery.RecoveryTests) ... ok
+test_later_anomaly_does_not_change_prior_decisions (test_fixed_recovery.RecoveryTests) ... ok
+test_missing_data_restarts_recovery_protection (test_fixed_recovery.RecoveryTests) ... ok
+test_wait_ends_and_recovery_finishes_without_truth (test_fixed_recovery.RecoveryTests) ... ok
+test_constant_bias_after_outage_is_an_explicit_r01_blind_spot (test_motion_recovery.MotionManagerChecks) ... ok
+test_duplicate_and_backward_observation_times_rejected (test_motion_recovery.MotionManagerChecks) ... ok
+test_future_change_cannot_change_past_decisions (test_motion_recovery.MotionManagerChecks) ... ok
+test_jump_isolation_and_failed_verification_reset (test_motion_recovery.MotionManagerChecks) ... ok
+test_legitimate_large_innovation_can_reintegrate (test_motion_recovery.MotionManagerChecks) ... ok
+test_missing_samples_do_not_create_a_window_difference (test_motion_recovery.MotionManagerChecks) ... ok
+test_unhealthy_local_evidence_never_adds_a_veto (test_motion_recovery.MotionManagerChecks) ... ok
+test_unqualified_wait_cannot_display_normal_indefinitely (test_motion_recovery.MotionManagerChecks) ... ok
+test_known_error_and_missing_grid_remain_visible (test_outer_evaluation.OfflineGrid) ... ERROR
+ERROR
+test_development_is_available_but_heldout_requires_actual_freeze (test_research_access.ResearchAccess) ... ok
+test_environment_does_not_bypass_guard (test_research_access.ResearchAccess) ... ok
+test_missing_input_is_recorded_before_child (test_run_recorder.PreflightEvidence) ... ERROR
+
+======================================================================
+ERROR: test_same_KF_geometry_once_only_and_future_causality (test_candidate_parity.CandidateFoundation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/tests/test_candidate_parity.py", line 9, in test_same_KF_geometry_once_only_and_future_causality
+    folder=Path(os.environ['LIO_GINS_RUN_DIR'])/'candidate_parity_fixtures';folder.mkdir()
+  File "/usr/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'LIO_GINS_RUN_DIR'
+
+======================================================================
+ERROR: test_pure_rotation_is_not_false_position_or_motion_fault (test_candidate_rotation.RotatingLever)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/tests/test_candidate_rotation.py", line 10, in test_pure_rotation_is_not_false_position_or_motion_fault
+    folder=Path(os.environ['LIO_GINS_RUN_DIR'])/'rotating_lever_fixture';folder.mkdir();cache=folder/'cache';cache.mkdir();t=np.arange(101)/10;rot=Rotation.from_euler('z',t*np.pi/10)
+  File "/usr/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'LIO_GINS_RUN_DIR'
+
+======================================================================
+ERROR: setUpClass (test_final_contracts.FinalContracts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/tests/test_final_contracts.py", line 20, in setUpClass
+    cls.root=Path(os.environ['LIO_GINS_RUN_DIR'])/'final_contract_fixtures';cls.root.mkdir();cls.counter=0
+  File "/usr/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'LIO_GINS_RUN_DIR'
+
+======================================================================
+ERROR: test_known_error_and_missing_grid_remain_visible (test_outer_evaluation.OfflineGrid)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/tests/test_outer_evaluation.py", line 10, in test_known_error_and_missing_grid_remain_visible
+    base=Path(os.environ['LIO_GINS_RUN_DIR'])/'offline_evaluation_fixtures';base.mkdir()
+  File "/usr/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'LIO_GINS_RUN_DIR'
+
+======================================================================
+ERROR: setUpClass (test_outer_replay.ReplayIntegration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/tests/test_outer_replay.py", line 11, in setUpClass
+    cls.folder=Path(os.environ['LIO_GINS_RUN_DIR'])/'synthetic_replay_fixtures';cls.folder.mkdir()
+  File "/usr/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'LIO_GINS_RUN_DIR'
+
+======================================================================
+ERROR: test_missing_input_is_recorded_before_child (test_run_recorder.PreflightEvidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/tests/test_run_recorder.py", line 8, in test_missing_input_is_recorded_before_child
+    marker=Path(os.environ['LIO_GINS_RUN_DIR'])/'must_not_exist'
+  File "/usr/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'LIO_GINS_RUN_DIR'
+
+----------------------------------------------------------------------
+Ran 54 tests in 0.173s
+
+FAILED (errors=6)

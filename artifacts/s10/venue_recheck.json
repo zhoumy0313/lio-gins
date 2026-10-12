@@ -1,0 +1,17 @@
+{
+  "checked_UTC": "2026-10-12T13:39:11.494353+00:00",
+  "official": "https://upinlbs2026.com/",
+  "submission": "https://upinlbs2026.com/submission",
+  "primary_indexed_date": "2026-10-15",
+  "homepage_open": "CMT notice only; primary indexed search shows date",
+  "submission_open": "inaccessible",
+  "max_pages": 6,
+  "six_page_primary_asset": "artifacts/s8/venue_requirements_interpretation.json",
+  "pending": [
+    "exact deadline timezone",
+    "template variant/anonymity",
+    "venue-specific AI disclosure",
+    "authors/affiliations/rights"
+  ],
+  "no_login_or_submission": true
+}

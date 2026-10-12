@@ -1,0 +1,33 @@
+{
+  "run_id": "20261012T135510127650Z_F_1c00e0fb",
+  "stage": "F",
+  "purpose": "complete_six_page_manuscript_r07_table_floats",
+  "argv": [
+    "python3",
+    "experiments/s10/build_paper.py",
+    "paper/versions/s10_r07"
+  ],
+  "started_UTC": "2026-10-12T13:55:10.130124+00:00",
+  "source_commit": "df10d0788c450db8b78c2eeb8ff8a12c2cb08ee1",
+  "source_SHA": {
+    "experiments/s10/mechanism_support.py": "8a95b4dbb00d340144b261880a84a1dae473655f180e771206160baf5cf64f5d",
+    "experiments/s10/prepare_paper_numbers.py": "dcc210736e888a94a4c4ed3befcc0620cf490f984a1d359d2fbcbe567aa508cf",
+    "experiments/s10/record_run.py": "110e25e41ded188e3a7c0cf990f8bef6056e411ff69ed935424867da4996f6db",
+    "experiments/s10/run_inherited_tests_isolated.py": "9f743ab846284697bf88dd420a09f849bad16f0499765efac73b50df745ffad8",
+    "experiments/s10/check_numbers.py": "088051d167436d2e0ed98ec8c7c0100b2c54f3af12b7ed10a54dd9ec2fe050cd",
+    "experiments/s10/checkpoint.py": "fa3c1cb8c7a6baf6a6a4ae7f1224a2f7189c55287b32b4592b46250182577702",
+    "experiments/s10/make_case_figures.py": "c2524ce3acd0e5e9bba7a912f198d86e0deed58b00d05f8d30f8645db85389d6",
+    "experiments/s10/build_paper.py": "f5988752276bbb75db9ef7271a2dc426b0aac13915c9be0414ea1aeba469bef8",
+    "experiments/s10/audit_bias3_injection.py": "c26aefcded07315304702eb8141c0d0a4793c54cb8c8ca45580a9084ea25f7c3",
+    "experiments/s10/build_evidence_matrix.py": "552b7117bce5ec1a1d7168545df8cf17e87fc9f056682108ea3977681a728ab3",
+    "experiments/s10/strong_baseline_check.py": "99bfa9f3b6454e9f2eff3a3c7e6908ccd041e458cbe6e6c4aa191c51f42ba592",
+    "experiments/s10/diagnose_admission.py": "a56cd10984de20b839cb25e8a3891d5c2fb6976e73400e165c263243dbaa6a8e",
+    "experiments/s10/common.py": "176abba1fad02fe6fef66f581f1e94c4112a78c26d7bd14d30bb5c09fc053748",
+    "experiments/s10/tests/test_metrics.py": "23395fbd3e1a3d042051aefa400f9be2a0730c0a32ca32cbd87fb7aa3488e56b"
+  },
+  "status": "COMPLETED",
+  "analysis_role": "post-hoc read-only, no independent confirmation",
+  "exit_code": 0,
+  "wall_seconds": 1.3181092430022545,
+  "finished_UTC": "2026-10-12T13:55:11.449964+00:00"
+}

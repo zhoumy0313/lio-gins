@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/aaron/lio_gins/experiments/s10/final_audit.py", line 16, in <module>
+    j=read_json(ROOT/name);fields=j.get('file_SHA',j.get('files'))
+  File "/home/aaron/lio_gins/experiments/s10/common.py", line 29, in read_json
+    p=resolve(p)
+  File "/home/aaron/lio_gins/experiments/s10/common.py", line 27, in resolve
+    raise FileNotFoundError(p)
+FileNotFoundError: /home/aaron/lio_gins/artifacts/r2/DELIVERY_MANIFEST.json

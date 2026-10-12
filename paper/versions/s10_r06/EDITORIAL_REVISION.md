@@ -1,0 +1,1 @@
+r06 clean fonts/references but7 pages (1.317673s,exit2); late event table floats alone on page7. r07 makes the compact3-row event table one-column with abbreviated headings and2pt padding; allows normal top floats alongside full-width figures. All rows/numbers retained and table font remains small(9pt), standard10pt body and margins unchanged.

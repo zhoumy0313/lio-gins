@@ -1,19 +1,19 @@
 {
   "figures": {
-    "A_anchor_concept.pdf": "a95989baaf17ed54335684a15db0bf52109a0bdc91d44eec334a1be84d9d266b",
-    "A_anchor_concept.svg": "a0b328ebd49273ba4cca2783bc044ef6be24387c1b0320358f7e7a53e191ed46",
-    "A_anchor_concept.png": "6abe446c2d72fc8ffe4fd67beeaa2b73ce1968bb01b0392430f642df378d24da",
-    "B_street_all_events.pdf": "9b4e60f296218359c57ee10930c851bd214f92b58e55faad38e7c5c115f1ec4b",
-    "B_street_all_events.svg": "efcd25c54c0fe72e55f2e9231f64dfb100901e10b060013a727c6a7d9194d8e4",
+    "A_anchor_concept.pdf": "322a75b07e01a45b34838f304ce5fe6928d600a8588755b3f0f68d58a0e1111f",
+    "A_anchor_concept.svg": "7bad36e7abae4af27d88eda30d27b5e3a754ebef7fcf29260b391a6870a33334",
+    "A_anchor_concept.png": "dc332eccfe39b887bf8c45f6f930adba4cb30fe23b1939cfd4eb8cd54f730a95",
+    "B_street_all_events.pdf": "e44db1c3cc28b4476394bc3dd74b15002613605a40f0e8061a0342f8b09af7d7",
+    "B_street_all_events.svg": "76cd744f2359c06f9b3a343f6878e5182add001cd02ece4842042820e75df253",
     "B_street_all_events.png": "f55d24f977d3aa79d95a09a3d5f15f6a7d15501100385511b877dab8efd839c2",
-    "S_building02_all_events.pdf": "a0733b9eeb7910345efad057cefbb39069b2cd9515887845a370c15dc0a2e49e",
-    "S_building02_all_events.svg": "c755b35011a5fce59c2863e154644305010e5716cddcf5709a61522bc6b85784",
+    "S_building02_all_events.pdf": "a789231bab4070981bcd3fea1be6e742090ae8b73978a1305edfa35e74032468",
+    "S_building02_all_events.svg": "8286afbc2844c806c354006e72a4e0b03bc2f085bf74be53e383a2d21c6b64d3",
     "S_building02_all_events.png": "8c50e4c028ac3a4fef4932a8e82c438d4e3d91dffed3cf9ce8c33ab6b9815747",
-    "C_fixed_mechanism_timelines.pdf": "af00f38a5456f40567cdc67e34cde077cd1a6fc130fa1e6ca3eb48318a961e63",
-    "C_fixed_mechanism_timelines.svg": "0a4a7620b8f3dddfb93a4b50f4a0a67aad38c1579be283d7dc888808e1eca365",
-    "C_fixed_mechanism_timelines.png": "ef47f37ef19fbf9be47bff1df0e334e4656b4eb5c80aade472d65af1d7314b11",
-    "D_all_six_route_contrasts.pdf": "a92e5f3536fe6becca14aad5d9fca3efc4fcbe41f9946debaa908dfba87a39ad",
-    "D_all_six_route_contrasts.svg": "95e9cdd1d222f284322cc90fb8691914fd61d6bbef7dc77350f630fc9bfd1a68",
+    "C_fixed_mechanism_timelines.pdf": "350310c951260cecb3c5f5a2c90dda68153d74bcb10a6c386b6ae7e316b4881d",
+    "C_fixed_mechanism_timelines.svg": "6f96bcf97d7659ac0e15dee2cec104b8dd34b43027e4545a398bba8e37cf1cb5",
+    "C_fixed_mechanism_timelines.png": "91c7dca564b177bd1078dfaf8d5de8e3cbaeaedae096518e02212e74507b047b",
+    "D_all_six_route_contrasts.pdf": "5bf763135ac78cac0adeb9871fd7970551a66da94cd3f984f3432a84c5af7d88",
+    "D_all_six_route_contrasts.svg": "d117d9d2e4aa2620483bc30fb09314c79aa7ad58630a2a67de047a6155a27abb",
     "D_all_six_route_contrasts.png": "adf2ec237ef4272711a469b9b12a1a8d3759f34c6edefe10e0a59dc726bcf4cf"
   },
   "sources": {
@@ -38,7 +38,7 @@
     "mechanism_score_points.csv": "1c6487fa4511ed0ed218333eb41be25d4d4f1782027b957d629936b1670fd518",
     "cross_route_points.csv": "3087ee0371677eb83e8b9dd5a463c39d271e1006b2fd9ebb264138a0f9a38a0d"
   },
-  "script_SHA": "7c61af06778f974928a90bc043f817bd03b279441b7d3a5974f64603f5e4b39c",
+  "script_SHA": "c2524ce3acd0e5e9bba7a912f198d86e0deed58b00d05f8d30f8645db85389d6",
   "no_fabricated_missing_score": true,
   "all_actual_position_points_full_grid": true,
   "offline_reference_curves_only": true

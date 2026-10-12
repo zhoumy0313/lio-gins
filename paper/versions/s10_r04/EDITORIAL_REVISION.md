@@ -1,0 +1,1 @@
+r04 compiler/font/layout references clean, but completePDF7 pages: last page only six-route table. Real build28.241687s, policy exit2. r05 moves that table declaration before Results so it can share earlier pages, increasing allowed top full-width float count to3. Data/content/figures and font/margins unchanged.

@@ -1,0 +1,281 @@
+warning: main.tex:25: Underfull \hbox (badness 3679) in paragraph at lines 24--25
+warning: main.tex:25: Underfull \hbox (badness 3323) in paragraph at lines 24--25
+warning: main.tex:81: Underfull \hbox (badness 10000) in paragraph at lines 80--81
+warning: main.tex:81: Underfull \hbox (badness 5756) in paragraph at lines 80--81
+warning: main.tex:81: Underfull \hbox (badness 10000) in paragraph at lines 80--81
+warning: main.tex:81: Underfull \hbox (badness 2142) in paragraph at lines 80--81
+warning: main.tex:81: Underfull \hbox (badness 1694) in paragraph at lines 80--81
+warning: main.tex:85: Underfull \hbox (badness 10000) in paragraph at lines 84--85
+warning: main.tex:85: Underfull \hbox (badness 10000) in paragraph at lines 84--85
+warning: main.tex:85: Underfull \hbox (badness 5939) in paragraph at lines 84--85
+warning: main.tex:90: Underfull \hbox (badness 2035) in paragraph at lines 89--90
+warning: main.tex:97: Underfull \hbox (badness 10000) in paragraph at lines 96--97
+error: main.tex:110: Misplaced \noalign
+error: something bad happened inside XeTeX; its output follows:
+
+===============================================================================
+(main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+
+LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 503.
+
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+-- This is a 10 point document.
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/n' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/it' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 1090.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 1090.
+
+) (amsmath.sty
+For additional information on amsmath, use the `?' option.
+(amstext.sty (amsgen.sty)) (amsbsy.sty) (amsopn.sty)) (amssymb.sty
+(amsfonts.sty)) (graphicx.sty (keyval.sty) (graphics.sty (trig.sty)
+(graphics.cfg) (xetex.def))) (booktabs.sty) (url.sty) (hyperref.sty
+(ltxcmds.sty) (iftex.sty) (pdftexcmds.sty (infwarerr.sty)) (kvsetkeys.sty)
+(kvdefinekeys.sty) (pdfescape.sty) (hycolor.sty) (letltxmacro.sty) (auxhook.sty
+) (kvoptions.sty) (pd1enc.def) (intcalc.sty) (etexcmds.sty) (puenc.def)
+(bitset.sty (bigintcalc.sty)) (atbegshi-ltx.sty)) (hxetex.def (stringenc.sty)
+(rerunfilecheck.sty (atveryend-ltx.sty) (uniquecounter.sty))) (numbers)
+(l3backend-xetex.def)
+No file main.aux.
+(ts1cmr.fd)
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 7.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/it' undefined
+(Font)              using `TU/ptm/bx/it' instead on input line 7.
+
+-- Lines per column: 56 (exact).
+(nameref.sty (refcount.sty) (gettitlestring.sty))
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 9.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 12.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/m/sc' undefined
+(Font)              using `TU/ptm/m/n' instead on input line 14.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 24.
+
+
+LaTeX Warning: Citation `fastlio2' on page 1 undefined on input line 24.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 24.
+
+
+LaTeX Warning: Citation `kfgins' on page 1 undefined on input line 24.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 24.
+
+
+LaTeX Warning: Citation `huber' on page 1 undefined on input line 24.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 24.
+
+
+LaTeX Warning: Citation `dong2020' on page 1 undefined on input line 24.
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 24--25
+[]\TU/ptm/m/sc/10 FAST-LIO2 performs direct LiDAR–inertial state
+
+Underfull \hbox (badness 3323) in paragraph at lines 24--25
+\TU/ptm/m/sc/10 estimation and incremental mapping [[]]. Its fixed
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 26.
+
+
+LaTeX Warning: Citation `winta' on page 1 undefined on input line 26.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 26.
+
+
+LaTeX Warning: Citation `dual' on page 1 undefined on input line 26.
+
+(umsa.fd) (umsb.fd) [1]
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 56.
+
+
+LaTeX Warning: Reference `eq:short' on page 2 undefined on input line 56.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 72.
+
+
+LaTeX Warning: Reference `eq:anchor' on page 2 undefined on input line 72.
+
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 80.
+
+
+LaTeX Warning: Citation `i2nav' on page 2 undefined on input line 80.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+[]\TU/ptm/m/sc/10 Six i2Nav-Robot routes [[]] are retained:
+
+Underfull \hbox (badness 5756) in paragraph at lines 80--81
+\TU/ptm/m/sc/10 building00 (development), parking00 (retrospective),
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+\TU/ptm/m/sc/10 building01 (earlier independent transfer), and
+
+Underfull \hbox (badness 2142) in paragraph at lines 80--81
+\TU/ptm/m/sc/10 street00/playground00/building02 (later frozen tests).
+
+Underfull \hbox (badness 1694) in paragraph at lines 80--81
+\TU/ptm/m/sc/10 building00 frontend cache is a same-bag sensitivity
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]\TU/ptm/m/sc/10 building00/street00/playground00/building02
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+\TU/ptm/m/sc/10 use navigation-grade GNSS/INS references;
+
+Underfull \hbox (badness 5939) in paragraph at lines 84--85
+\TU/ptm/m/sc/10 parking00/building01 use MM/INS references with
+[2]
+Underfull \hbox (badness 2035) in paragraph at lines 89--90
+\TU/ptm/m/sc/10 Huber2.5 B5, mature Fixed2 B6, strict NIS gates
+
+LaTeX Font Warning: Font shape `TU/pcr/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 91.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+[]\TU/ptm/m/sc/10 The audit traces original receiver IDs,
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 98.
+
+
+LaTeX Warning: Reference `eq:decomp' on page 3 undefined on input line 98.
+
+[3]
+
+LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
+(Font)              using `TU/ptm/bx/n' instead on input line 102.
+
+
+LaTeX Warning: Reference `tab:street' on page 4 undefined on input line 102.
+
+(street_table)
+! Misplaced \noalign.
+\bottomrule ->\noalign 
+                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
+l.110 \bottomrule
+                 \end{tabular}
+Output written on main.xdv (3 pages, 139456 bytes).
+Transcript written on main.log.
+===============================================================================
+error: the XeTeX engine had an unrecoverable error
+caused by: halted on potentially-recoverable error as specified

@@ -1,0 +1,10 @@
+{
+  "path": "/home/aaron/lio_gins/paper/submission_candidate/s10/main.tex",
+  "kind": "compile-failed",
+  "diagnostic": "File numbers.tex not found at input line10",
+  "cause": "standalone editor compiler does not support additional project files",
+  "full_project_compile": "cache/s10/runs/20261012T135637553266Z_F_d1ce441f; exit0;6pages; no unresolved references/overfull",
+  "source_unchanged": true,
+  "editor_tab_unchanged": true,
+  "no_builtin_success_claim": true
+}

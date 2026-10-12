@@ -21,7 +21,7 @@ def curve(ax,route,method,event,duration=90,case='loss30_bias3'):
  for x,y in zip(t,h):points.append({'figure_scope':route+'/'+case,'route':route,'case':case,'event':event,'method':method,'relative_s':float(x),'horizontal_error_m':float(y),'source_run':r['backend_run']})
  return r
 # A: an estimator-native conceptual structure; no synthetic plot pretending to be measured data.
-fig,axes=plt.subplots(1,2,figsize=(7.1,1.75))
+fig,axes=plt.subplots(1,2,figsize=(7.1,2.0))
 for ax in axes:ax.axis('off');ax.set_xlim(0,1);ax.set_ylim(0,1)
 axes[0].set_title('Short window: constant displacement cancels',loc='left')
 axes[0].text(.03,.66,r'$z_{k}=z^{0}_{k}+b,\quad z_{k-5}=z^{0}_{k-5}+b$',fontsize=10)
@@ -29,8 +29,8 @@ axes[0].text(.03,.37,r'$(z_k-z_{k-5})-(a_k-a_{k-5})$',fontsize=11)
 axes[0].text(.03,.1,'No added information about constant b\nwhen both rows share it; gap resets history.',fontsize=8)
 axes[1].set_title('Historical anchor: span the outage',loc='left')
 axes[1].text(.03,.69,r'$\hat z_k=z_a+(a_k-a_a),\quad e^A_k=z_k-\hat z_k$',fontsize=10)
-axes[1].annotate('Past admitted raw GNSS / LIO',(.04,.5),fontsize=8)
-axes[1].annotate('Admission veto',(.54,.31),(.24,.5),arrowprops={'arrowstyle':'->'},fontsize=8)
+axes[1].text(.03,.49,'Past admitted raw GNSS / LIO',fontsize=8)
+axes[1].annotate('Admission veto',(.73,.26),(.03,.28),arrowprops={'arrowstyle':'->'},fontsize=8)
 axes[1].text(.02,.05,'Anchor is a decision memory, never another measurement.\nOnly current original GNSS updates the position KF once.',fontsize=8)
 fig.tight_layout(w_pad=2);save(fig,'A_anchor_concept')
 # B: every fixed street event, with actual admission in the biased case stated explicitly.
@@ -65,7 +65,7 @@ for col,(route,event) in enumerate([('street00',0),('building02',1)]):
  axes[2,col].set_xlabel('Seconds after biased return')
  for x in p:scorepoints.append(x)
 axes[0,0].set_ylabel('Position error (m)');axes[1,0].set_ylabel('Anchor / short score');axes[2,0].set_ylabel('Logged NIS0 NIS')
-axes[0,0].legend(loc='upper left',fontsize=6,framealpha=.8,ncol=2);axes[1,0].legend(loc='lower left',fontsize=6,framealpha=.8,ncol=2);axes[2,0].legend(loc='lower left',fontsize=6,framealpha=.8,ncol=2);fig.tight_layout(h_pad=.25);save(fig,'C_fixed_mechanism_timelines')
+axes[0,0].legend(loc='upper left',fontsize=7,framealpha=.8,ncol=2);axes[1,0].legend(loc='lower left',fontsize=7,framealpha=.8,ncol=2);axes[2,0].legend(loc='lower left',fontsize=7,framealpha=.8,ncol=2);fig.tight_layout(h_pad=.25);save(fig,'C_fixed_mechanism_timelines')
 csv_write(OUT/'mechanism_score_points.csv',scorepoints)
 # D: all6 routes; same-bag repeat belongs to the evidence, not an extra scene.
 routes=[r for r in catalog() if r!='building00_repeat'];p=[next(x for x in matrix if x['route']==r and x['method']=='P' and x['case']=='loss30_bias3') for r in routes];n=[next(x for x in matrix if x['route']==r and x['method']=='P_without_anchor' and x['case']=='loss30_bias3') for r in routes]

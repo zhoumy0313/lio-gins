@@ -1,0 +1,1 @@
+r07 first fully passing standard-font complete6-page build,1.318109s exit0, SHA0bd58595206c1e3700efecd825a01d51d59eec50464f1ac0d6eca8efd474efd0. r08 clarifies units of natural-cost cap: percentage applies to best baseline RMSE, not a standalone dimensional term. Same data, gate and all counterexamples.

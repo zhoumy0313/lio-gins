@@ -1,0 +1,1 @@
+r03 complete6 pages (10.993895s) but strict font diagnostic rejected exit2: class-load TU/Times and missing Liberation smallcaps shapes. All source/PDF/log retained. r04 declares standard T1 encoding before IEEEtran class and uses the class Times family, without fontspec. Same figures/numerics/claims/margins.

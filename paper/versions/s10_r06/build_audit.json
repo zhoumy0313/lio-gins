@@ -1,0 +1,28 @@
+{
+  "pages": 7,
+  "within_six_pages": false,
+  "layout_or_reference_errors": [],
+  "PDF_SHA256": "61591e2ddf340c80cae0233136791c7d8bda5b5afe8287c2c196d8df0cc8cdee",
+  "compiler_SHA256": "a98aa59ad5c1df39a6c9e56cbfc5088f2b11d6c179c0130b97998e4bd46a46da",
+  "sources": {
+    "routes_table.tex": "887645ce2cf42a92bc04475829a343494da80d6b8018e665d428ce32ef143d2b",
+    "references.bib": "b6b9b04251b72cd69af3bb94f6ddf1d1aa5435534381f62aae15462696e86914",
+    "figure_sources.json": "c04501bb9c900f52c7f985e865bb7252814173f9bb64e18dbc0795b70e713e55",
+    "main.tex": "8f417a80af55d7ee18df760e853fb6b1a15bee319a5c2ac0120b6c20cd5f2725",
+    "event_table.tex": "bfcd39b5f81d1b445c4c4d50033c0aaa2e693866f6d7052be6121c05c5486f09",
+    "numeric_bindings.json": "7937c56ecef829d7d24606a5b566f9f3346c7de4871084b2db997a281c4cadbc",
+    "street_table.tex": "483dff45da6babc24d5b8d1c6f8984c0765bfa3398757389e1cd8e369944afc4",
+    "numbers.tex": "213499f310cc53e5f9c648c72712b8efff84feeed28cfea29ae1d62f474a025f",
+    "figures/B_street_all_events.pdf": "e44db1c3cc28b4476394bc3dd74b15002613605a40f0e8061a0342f8b09af7d7",
+    "figures/C_fixed_mechanism_timelines.svg": "6f96bcf97d7659ac0e15dee2cec104b8dd34b43027e4545a398bba8e37cf1cb5",
+    "figures/S_building02_all_events.svg": "8286afbc2844c806c354006e72a4e0b03bc2f085bf74be53e383a2d21c6b64d3",
+    "figures/A_anchor_concept.pdf": "322a75b07e01a45b34838f304ce5fe6928d600a8588755b3f0f68d58a0e1111f",
+    "figures/D_all_six_route_contrasts.svg": "d117d9d2e4aa2620483bc30fb09314c79aa7ad58630a2a67de047a6155a27abb",
+    "figures/C_fixed_mechanism_timelines.pdf": "350310c951260cecb3c5f5a2c90dda68153d74bcb10a6c386b6ae7e316b4881d",
+    "figures/S_building02_all_events.pdf": "a789231bab4070981bcd3fea1be6e742090ae8b73978a1305edfa35e74032468",
+    "figures/B_street_all_events.svg": "76cd744f2359c06f9b3a343f6878e5182add001cd02ece4842042820e75df253",
+    "figures/D_all_six_route_contrasts.pdf": "5bf763135ac78cac0adeb9871fd7970551a66da94cd3f984f3432a84c5af7d88",
+    "figures/A_anchor_concept.svg": "7bad36e7abae4af27d88eda30d27b5e3a754ebef7fcf29260b391a6870a33334"
+  },
+  "new_scientific_run": false
+}

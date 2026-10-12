@@ -1,0 +1,177 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,graphicx,booktabs,url}
+\usepackage[hidelinks]{hyperref}
+\input{numbers}
+\title{Historical-Anchor-Assisted GNSS Reacquisition under Moderate Persistent Position Bias: An Event-Level Case Study}
+\author{\IEEEauthorblockN{Tutor-review manuscript}\IEEEauthorblockA{Author metadata awaiting human confirmation}}
+\begin{document}
+\maketitle
+\begin{abstract}
+GNSS positions returning after an outage can carry a persistent displacement that passes instantaneous innovation gating. A short motion-consistency window can also lose this information when the displacement cancels in differences. We examine an existing historical GNSS/LiDAR--inertial motion-anchor admission policy in a common position filter, without modifying its frozen parameters. This is a post-hoc focused analysis of controlled 3-m displacements on six previously evaluated i2Nav-Robot routes, with nineteen fixed policies and all three predetermined events retained. On street00, the mean of three post-return 90-s horizontal RMSEs is \val{Pstreet90} m, \val{streetImprovement}\% below the no-anchor ablation and below all tested standard controls. Natural-route error and clean admission satisfy the inherited cost and 15-s constraints. Paired logs locate additional rejection of observations accepted by strict NIS in two improving events; the third is nearly neutral. A no-decay ablation is stronger than the full policy. Other routes show neutral or adverse effects, including 142-s and censored clean admission. The evidence supports a local admission-memory benefit, without independent confirmation or a validated online applicability condition. Artificial displacement, reference-error cancellation and cached admission clocks limit transfer to natural GNSS failures.
+\end{abstract}
+\begin{IEEEkeywords}GNSS reacquisition, persistent position bias, historical motion anchor, LiDAR--inertial odometry, event-level evaluation\end{IEEEkeywords}
+
+\section{Introduction}
+A mobile robot can bridge a GNSS outage using LiDAR--inertial odometry (LIO), but the first returning receiver position need not be safe to fuse. A persistent offset can remain compatible with a filter's predicted uncertainty. Waiting longer may avoid a finite contaminated interval, yet postpone useful clean observations. An admission strategy should therefore be assessed by positioning error, returning-observation exposure, clean re-entry delay and normal-operation cost together.
+
+This paper asks a narrower question: does retaining a historical raw GNSS/LIO correspondence help when GNSS returns with a controlled moderate displacement? Here \emph{moderate} means the existing 3-m injection, not a verified class of natural multipath or all small biases. When both endpoints of a short window share an additive displacement, the displacement cancels. An earlier GNSS position propagated across the outage by LIO preserves a different temporal reference, but inherits old receiver error and local-motion drift.
+
+We analyze the already implemented P-r03 manager around a FAST-LIO2-propagated position KF. No historical observation is fused twice, no reference information enters online decisions, and no new estimator or parameter search is introduced. The analysis follows completed experiments; its 3-m focus is exploratory and does not replace the earlier registered 10-m primary evaluation or its negative conclusions.
+
+The contributions are: (i) an explicit account of the existing historical-anchor admission memory and its ambiguity with motion error; (ii) a matched, event-level analysis connecting additional admission vetoes to local accuracy differences against strict NIS, Huber, fixed qualification durations and a single-switch ablation; and (iii) a complete account of service cost and counterexamples across six routes. The intended conclusion is a bounded case study, not a general robustness guarantee or proof of algorithmic novelty.
+
+\section{Related Work}
+FAST-LIO2 performs direct LiDAR--inertial state estimation and incremental mapping~\cite{fastlio2}. Its fixed AT128/ADIS adaptation provides local motion here. KF-GINS~\cite{kfgins} supplies a separate GNSS/INS error-state comparator; its posterior is never repeatedly injected into the position KF. Huber estimation~\cite{huber} and innovation tests are established robust-update tools. Dong et al.~\cite{dong2020} test and adapt individual GNSS channels in tightly coupled sequential filtering, whereas our input is a receiver position, with less access to satellite-level faults.
+
+WinTA-GIL~\cite{winta} uses windowed GNSS/LIO trajectory alignment for repeatable heading refinement under intermittent signals. We keep local-to-NED alignment fixed and change receiver-position admission. Dual-ACKF~\cite{dual} combines an explicit bias state, adaptive noise estimation and scenario-dependent updates, including gradual recovery protection. Recovery weighting and temporal consistency therefore have substantial precedent. Neither adjacent method is reproduced as a same-data accuracy comparator. The experimental question concerns the additional historical memory within one common backend, rather than superiority to unexecuted complete navigation systems.
+
+\section{Existing Filter and Admission Memory}
+\subsection{Common Backend}
+For local LIO displacement $\Delta\ell_k$, fixed alignment $A$ and NED position $p\in\mathbb{R}^{3}$, the common propagation is
+\begin{align}
+ p_k^- &= p_{k-1}^+ + A\Delta\ell_k,\label{eq:prop}\\
+ P_k^- &= P_{k-1}^+ + \operatorname{diag}(1,1,4)q_k,\\
+ q_k &= 0.001\Delta t + 0.001\|\Delta\ell_k\|.
+\end{align}
+The two coefficients have units $\mathrm{m^2/s}$ and $\mathrm{m^2/m}$. A GNSS antenna observation is $z_k=p_k+R_{NB,k}b+v_k$, with FRD lever arm $b=[0,-0.07,-0.365]^\top$ m. Receiver standard deviations are floored at $[1,1,2]^\top$ m before constructing $R_k$. For an admitted receiver ID,
+\begin{align}
+ r_k &= z_k-p_k^- -R_{NB,k}b,\\
+ K_k &=P_k^-(P_k^-+\bar R_k)^{-1},\\
+ p_k^+ &=p_k^-+K_kr_k,
+\end{align}
+with Joseph covariance update and policy-adjusted $\bar R_k$. Each ID is consumed once, including rejection. The nominal NIS is $r_k^\top(P_k^-+R_k)^{-1}r_k$, before protection/robust weighting. Different policies subsequently have different posteriors, so one policy's NIS is not a counterfactual score for another.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=.98\textwidth]{figures/A_anchor_concept.pdf}
+\caption{Admission memory. A constant displacement cancels when both endpoints of the five-second window carry it. A historical raw GNSS/LIO correspondence can span the outage. It provides a veto, never another independent position measurement. The right-hand relation also carries historical receiver error and relative-LIO drift.}\label{fig:concept}
+\end{figure*}
+
+\subsection{Short Window and Historical Anchor}
+Let $a_k$ be the antenna position derived from the independent local LIO cache and fixed alignment. The five-second short window forms
+\begin{align}
+ d_{ik} &=(z_k-z_i)-(a_k-a_i),\\
+ s_{ik} &= d_{ik,xy}^{\top}C_{ik}^{-1}d_{ik,xy},\label{eq:short}\\
+ C_{ik} &=R_{k,xy}+R_{i,xy}+(q_t\Delta t+q_d\Delta D)I,
+\end{align}
+where $q_t=q_d=0.001$ in the corresponding units and $\Delta D$ is accumulated local travel. A constant injected displacement cancels in~\eqref{eq:short} when both rows share it; onset and termination can still be visible. Gaps exceeding 1.5 s clear this window.
+
+The historical anchor stores raw position $z_a$, local antenna position $a_a$, covariance, time and ID. Promotion requires an admitted NORMAL observation, verified local health, short score at most four and acceptable nominal NIS, continuously qualified for five seconds. An actual GNSS gap exceeding two seconds activates the retained anchor. During recovery,
+\begin{align}
+ e_k^A &= z_k-\{z_a+(a_k-a_a)\},\label{eq:anchor}\\
+ s_k^A &= (e_{k,xy}^A)^\top C_{ak}^{-1}e_{k,xy}^A.
+\end{align}
+The fixed covariance-growth multiplier is one. An available healthy anchor with $s_k^A>4$ vetoes the current admission and resets qualification. Promotion is frozen while the anchor remains active or the motion manager overrides the mature recovery rule. These scores are engineering normalizations, not calibrated independent chi-square evidence.
+
+The manager isolates inconsistent motion or outage returns, applies a two-second minimum wait and requires two seconds of qualifying motion. Since the short window spans five seconds, clean actual admission is commonly seven seconds, not the nominal two-second duration. In RECOVERING, covariance protection begins at 15 and relaxes quadratically over 15 s; renewed inconsistency can isolate again. After 60 s unresolved isolation is reported without inventing a successful admission. The availability shadow retains mature fixed recovery when local evidence is unavailable. Cache endpoints must each have at least 100 effective points and mean absolute plane residual at most 0.2 m; failure triggers logged fallback, not proof of receiver correctness.
+
+\subsection{What an Anchor Can and Cannot Distinguish}
+Let $p^{\rm ref}_{\rm ant}$ denote the offline reference antenna position, $\epsilon^G_k=z_k-p^{\rm ref}_{\rm ant,k}$ and
+\begin{equation}
+ \epsilon^L_{ak}=(a_k-a_a)-(p^{\rm ref}_{\rm ant,k}-p^{\rm ref}_{\rm ant,a}).
+\end{equation}
+Then~\eqref{eq:anchor} decomposes exactly as
+\begin{equation}
+ e_k^A=\epsilon^G_k-\epsilon^G_a-\epsilon^L_{ak}.\label{eq:decomp}
+\end{equation}
+This identity supports offline interpretation only. Relative-LIO drift can either mask an injected offset or make a clean receiver inconsistent. The online manager sees scores, age and local diagnostics, not these reference-derived error terms. A high point count and low fitting residual do not certify an accurate accumulated displacement.
+
+\section{Experimental Protocol and Evidence Audit}
+\subsection{Data Roles and Shared Interfaces}
+Six i2Nav-Robot routes~\cite{i2nav} are retained: building00 (development), parking00 (retrospective), building01 (earlier independent transfer), and street00/playground00/building02 (later frozen tests). All are already seen for the present analysis. A second building00 frontend cache is a same-bag sensitivity check, not another route. The real inputs are AT128 LiDAR, ADIS16465 IMU increments and F9P single-point positions, with the same fixed frontend adaptation and backend interface. No full frontend replay or backend rerun is needed for this work.
+
+Each route's policies share cache, GNSS rows, initialization, Q/R, calibration and lever arm. P and no-anchor use the same manager with only the anchor switch disabled. Source dispatch and resolved identities are checked, not inferred from method names. Initial conditions use one predetermined reference state and fixed local-to-NED alignment; remaining reference states are used offline. Evaluation ends at common reference/IMU/cache support. GPS weeks and the 18-s GPS--UTC difference are resolved per route; IMU angle/velocity increments are not treated as rates. Stable first-row retention handles street00's duplicate initial reference timestamp without changing raw data.
+
+building00/street00/playground00/building02 use navigation-grade GNSS/INS references; parking00/building01 use MM/INS references with shared AT128 map matching. Reference independence from every sensing/error source is not established. Known initialization and alignment also condition receiver-error labels. These are comparative replay experiments, not absolute-origin recovery demonstrations.
+
+\subsection{Fixed Perturbations, Policies and Endpoints}
+All original natural runs and seven GNSS perturbation categories remain archived: single/clustered jumps, 30/60-s deletions with unchanged return, 30-s deletions followed by 3/10-m persistent offsets, and a ramp. We independently recompute the 3-m, 10-m and clean 30-s-return cases without changing event identities. The three fixed outage onsets are 150/450/750 s from initialization, with N/E/NE offset directions. Each persistent offset lasts 90 s after return; its norm is 3 or 10 m, with NE normalized. Ninety displaced IDs and thirty deleted IDs are checked per event; other raw IDs, times and receiver standard deviations are unchanged.
+
+Nineteen fixed strategies are retained, including LIO-only B2, direct position KF B3, wide NIS100 B4, Huber2.5 B5, mature Fixed2 B6, strict NIS gates 11.3448667301/16.266236/30, Clock2/5/10/15/30/60/90, P and its no-motion/no-anchor/no-decay ablations. Clock labels denote qualification durations; obtaining the five-second window can add delay. NIS100 is not the strict gate. Aliases may coincide on a case and are not independent algorithms. No-decay disables covariance relaxation/protection within the inherited manager; it is not promoted to a retuned winning method.
+
+For a complete 10-Hz post-return grid, horizontal RMSE is computed separately over 90 s and then averaged equally across the three events. It is not the RMSE of pooled event samples. The 180-s extension is secondary. All expected timestamps are retained; missing coverage cannot be repaired by selecting successful intersections. Actual admission is the first logged \texttt{accepted=true} update after the first physically present return, with 180-s right censoring (C180). Measurement-time admission and conservative cache-availability bounds remain separate; neither is live end-to-end latency. Biased-return delay is distinct from delay after a clean return.
+
+Joint qualification Q requires complete coverage, every clean measurement-time delay at most 15 s, and natural-route RMSE below the best B4/B5/B6 natural error plus $\max(2\%,0.05\,\mathrm{m})$. Unqualified long waits stay in raw comparisons. Accepted injected IDs measure controlled exposure, not field fault probability. Statistical significance from treating correlated epochs or sequential events as independent is not claimed.
+
+\subsection{Independent Audits and Injection Cancellation}
+The audit traces original receiver IDs, raw/cache/config/run hashes and complete trajectories. Independent full-grid recomputation matches the archived event metrics. Raw receiver errors are recomputed at antenna level, with the original lever arm and reference-attitude interpolation. Adding a displacement can reduce an existing receiver error; it need not produce a 3-m absolute error. Among 270 primary 3-m rows, cancellation counts are building00 38, parking00 55, building01 169, street00 0, playground00 42 and building02 37. The building00 repeat has 38 separately. Every strategy's accepted/rejected error distribution and the same 10-m audit are supplied, including empty-group status.
+
+No street00 3-m row becomes more accurate through cancellation, removing that specific explanation for its local gain. It does not remove shared-reference or initialization limits. Mechanism diagnostics pair IDs/times and separately record direct anchor vetoes, qualification delays, corrections and prior-state differences. Equation~\eqref{eq:decomp} is checked offline. A diagnostic query initially exceeded route-tail reference support; the failed run is retained and the query restricted to the already fixed event windows plus used anchor epochs. No metric window or estimator changed.
+
+\section{Results and Discussion}
+\subsection{Local Gain against Complete Strong Controls}
+Table~\ref{tab:street} retains every policy. On street00, P's 3-m post90 macro is \val{Pstreet90} m versus no-anchor \val{Pwithoutanchorstreet90} m, a \val{streetImprovement}\% reduction. Strict NIS gives \val{NIS0street90} m and Huber \val{B5street90} m. The best standard raw control is Clock60 at \val{Clock60street90} m, despite its \val{Clock60clean}-s clean delay. Clock90 waits beyond the finite injection, accepts none of its rows and has \val{Clock90street90}-m error at \val{Clock90clean}-s clean delay. Their exclusion from Q does not hide their raw results.
+
+\begin{table}[t]
+\caption{street00 controlled 3-m results, all 19 fixed policies. $R_{90}/R_{180}$: event-macro horizontal RMSE (m). $T_c$: maximum actual clean admission (s); C180 is censored. $n_b$: accepted injected rows out of 270. Q combines natural cost, clean service and coverage.}\label{tab:street}
+\centering\small\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrc}\toprule
+Policy & $R_{90}$ & $R_{180}$ & $T_c$ & $n_b$ & Q\\\midrule
+\input{street_table}
+\bottomrule\end{tabular}
+\end{table}
+
+P satisfies natural \val{streetPNatural} m against the \val{streetPCap}-m cap and seven-second clean admission in every event. Clock2 has similar nominal qualification and the same clean delay, but lacks the historical veto. The single-switch no-anchor contrast is the sharper attribution control because it retains the rest of P's machinery. Importantly, no-decay gives \val{Pwithoutdecaystreet90} m with the same controlled exposure and clean delay. P does not beat all nineteen variants; covariance decay is not necessary for this observed benefit.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=.98\textwidth]{figures/B_street_all_events.pdf}
+\caption{Every fixed street00 3-m event. Curves are actual horizontal errors on the full post90 grid. Labels show P's first actual biased-return admission and accepted injected IDs. Two events improve; NE has no additional anchor rejection and is nearly neutral. Delaying biased observations is not the clean-service endpoint.}\label{fig:street}
+\end{figure*}
+
+\subsection{Event-Level Admission Attribution}
+Table~\ref{tab:events} and Fig.~\ref{fig:street} prevent a route mean from hiding the third event. At Event0, P/no-anchor pre-fault positions agree exactly (\val{streetPrior0} m). P first admits at \val{event0delay} s and accepts \val{event0accept}/90 injected rows, versus seven-second no-anchor admission. It rejects \val{event0extra} additional IDs that no-anchor accepts; actual strict NIS accepts \val{event0nisextra} of these. Of \val{streetVeto0} direct anchor vetoes, \val{streetShort0} occur with an available short-window score at most four. P briefly admits biased observations, so this is not perfect discrimination. Nevertheless, the matched state, switch and per-ID decisions locate a concrete additional-memory effect: post90 RMSE is \val{event0P} rather than \val{event0N} m.
+
+\begin{table*}[t]
+\caption{All street00 3-m events. $R$: post90 horizontal RMSE (m); $T_b$: P's actual biased-return admission (s); $n_P$: P accepted injected IDs /90. Extra: IDs rejected by P but accepted by no-anchor. NIS-extra: those also accepted by the actual strict NIS policy.}\label{tab:events}
+\centering\small\setlength{\tabcolsep}{7pt}
+\begin{tabular}{lrrrrrrr}\toprule
+Event & $R_P$ & $R_{\rm no\ anchor}$ & $R_{\rm NIS0}$ & $T_b$ & $n_P$ & Extra & NIS-extra\\\midrule
+\input{event_table}
+\bottomrule\end{tabular}
+\end{table*}
+
+At Event1, P rejects \val{event1extra} additional IDs, all \val{event1nisextra} accepted by strict NIS; its \val{streetVeto1} direct vetoes follow an initially permissive anchor. The error decreases from \val{event1N} to \val{event1P} m. This is supporting evidence with sequential-history dependence: prior positions already differ by \val{streetPrior1} m, so it is not another independently initialized replicate.
+
+At Event2 there are \val{event2extra} additional rejected IDs. P accepts \val{event2accept}/90, and its error differs from no-anchor by only \val{streetNeutralDelta} m. This is residual history, not a third anchor-detection success. The error decomposition shows how local-motion error can reduce an anchor contradiction; it cannot define an online eligibility rule. Across all events, strict NIS accepts \val{NIS0accepted}/270 displaced IDs, versus P \val{Paccepted}/270; this exposure contrast alone is not an accuracy theorem.
+
+\subsection{Why the 10-m Control Matters}
+For street00's inherited 10-m case, strict NIS0 and P give \val{street10NIS} and \val{street10P} m, respectively, and both reject all 270 displaced rows. Their near equality is retained rather than converted into a general claim that NIS fails. The 3-m result shows that a displacement can remain below a policy's innovation threshold while crossing its historical-motion score. Short-window cancellation is verified on paired raw differences, but absolute drift and prior receiver error determine whether an anchor actually helps in a particular event.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=.98\textwidth]{figures/C_fixed_mechanism_timelines.pdf}
+\caption{Representative timelines declared before score reconstruction: street00 Event0 (N) and building02 Event1 (E). Top: actual position errors; middle: logged P anchor/short-window scores, engineering limit four and accepted-update rug; bottom: actual strict NIS posterior scores and decisions. Shading denotes the 90-s displaced interval. The negative event already has \val{building02Prior}-m P/no-anchor prior-state separation, so its later divergence is not a fresh isolated anchor effect. Missing scores remain missing.}\label{fig:timeline}
+\end{figure*}
+
+\subsection{Counterexamples and Service Failures}
+Figure~\ref{fig:routes} and Table~\ref{tab:routes} retain all six route signs. building00 improves against no-anchor, but Clock90 has lower raw error and 95-s clean admission. The second building00 cache yields P/no-anchor \val{repeatP}/\val{repeatPwithoutanchor} m and remains only sensitivity. parking00 improves against no-anchor but strict NIS is lower. building01 has equal P/no-anchor error and fails natural cost. Its large cancellation count also cautions against equating artificial amplitude with absolute receiver error.
+
+\begin{table*}[t]
+\caption{Six routes, all already seen in this post-hoc analysis. 3-m post90 event-macro errors (m); P natural RMSE / inherited cap (m); maximum actual clean delay $T_c$ (s). Lower raw controls remain visible even outside Q.}\label{tab:routes}
+\centering\small\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrrrrcc}\toprule
+Route & P & No anchor & Strict NIS0 & Clock90 & P natural / cap & $T_c$ & Q\\\midrule
+\input{routes_table}
+\bottomrule\end{tabular}
+\end{table*}
+
+playground00 and building02 both worsen against no-anchor and fail natural and clean-service constraints. Their clean delays include 142 s and an event still unadmitted at 180 s. Rejecting all biased rows does not protect against excessive LIO drift. The building02 timeline shows an anchor veto even as the short-window check becomes permissive, but prior-state carryover is already substantial. Offline relative-LIO error reaches \val{building02Motion} m over that biased event; the next event is also adverse.
+
+Clean controls provide less confounded failure evidence. In playground00 clean Event1 and building02 clean Event2, P/no-anchor prior positions agree exactly (\val{playCleanPrior}/\val{buildCleanPrior} m), yet the anchor vetoes all ninety return rows; 85 have a qualifying short score. Relative-LIO error reaches \val{playCleanMotion}/\val{buildCleanMotion} m offline, and P's post90 error penalty is \val{playCleanPenalty}/\val{buildCleanPenalty} m. All relevant point/residual health flags pass. Thus currently logged health and anchor availability do not certify an accurate historical extrapolation. A truth-free condition separating beneficial and harmful vetoes has not been validated.
+
+\begin{figure*}[t]
+\centering\includegraphics[width=.98\textwidth]{figures/D_all_six_route_contrasts.pdf}
+\caption{All six route contrasts and P's original Q status. Opposing signs, cost failures and delay failures are retained. The same-bag repeat is reported separately and does not inflate scene count. No adverse route or event is removed after inspecting accuracy.}\label{fig:routes}
+\end{figure*}
+
+\subsection{Scope of the Scientific Claim}
+The evidence supports a descriptive street00 3-m macro advantage over all tested standard controls with acceptable original natural/service costs, and a particularly direct single-switch mechanism in its first event. It does not establish a general sufficient operating condition, independent replication or new algorithmic novelty. Events share estimator history, time and direction are confounded, and the three directions are not a parameter sweep of a universal bias response. The stronger no-decay variant and two adverse routes remain central findings.
+
+Separate archived native KF-GINS natural errors on street00/playground00/building02 are approximately 1.007/1.115/1.669 m, lower than P. These are real independent GNSS/INS comparators, not same-injection results or P-gain denominators. Earlier 10-m joint failures and R1's no-additional-gain conclusion are unchanged. Reference/GNSS correlations, shared AT128 mapping on two routes, controlled single-reference initialization and the unresolved 3.6013-m RMS frontend repeat difference limit generalization. Cache replay and availability clocks do not demonstrate live realtime latency or natural multipath detection.
+
+\section{Conclusion}
+With the existing algorithm and parameters unchanged, historical admission memory improves two moderate-bias events on street00 and lowers its three-event macro error under the inherited clean-service and natural-cost constraints. Matched logs distinguish this local effect from strict NIS admission and short-window consistency; the third event is nearly neutral. Stronger no-decay results, adverse routes and clean-admission failures bound the claim. A future confirmatory study requires an independently registered hypothesis, unseen data and a validated online applicability condition; none is supplied by this post-hoc case study.
+
+\section*{Evidence Availability and Review Disclosure}
+The S10 branch preserves inherited source and outputs. Audited CSVs, all nineteen policy results, per-ID decisions, figure points, input/run/source hashes and failed diagnostic/build records accompany the manuscript. No new amplitude experiment or policy revision was performed. AI assistance (Codex, GPT-6) covered analysis tooling, checks, figure production and drafting throughout; human authors must verify claims, metadata, originality and venue disclosure before submission. This manuscript is delivered for tutor review, not formally submitted.
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

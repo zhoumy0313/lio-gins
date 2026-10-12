@@ -1,0 +1,1 @@
+r08 final complete6-page standard-font tutor-review source/PDF. Build1.317916s exit0; no undefined reference/font or overfull diagnostic. Cap statement clarifies unchanged percentage units. All numerical bindings and figure data match r07. Earlier failed/rejected versions retained.

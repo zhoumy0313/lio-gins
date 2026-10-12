@@ -1,0 +1,1 @@
+r05 clean compiler/log,7 pages because references spill to last page; build1.317886s exit2. r06 condenses duplicated motivation/protocol/audit prose, preserving every counterexample, all19 policies/all6routes/all3events, numerical values and method formulas. Fonts/margins/figure points unchanged.

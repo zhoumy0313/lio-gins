@@ -1,0 +1,334 @@
+{
+  "base_S9": "4f7a4b4c5b87040d7d7307f25a06cd785b1ff7b9",
+  "inherited_heads_unchanged": {
+    "research/lio-gins-r1": "c12a42a3484458e1737e63201792e1122fc99c0d",
+    "research/lio-gins-r2-submission": "8ef95ce597433a8b45c90ec1d13eb57ec4355555",
+    "research/lio-gins-s8-building01": "ca6bf095426a5c1e06387f156a15178921276358",
+    "research/lio-gins-s9-multiscenario": "4f7a4b4c5b87040d7d7307f25a06cd785b1ff7b9"
+  },
+  "inherited_tracked_worktree_and_history_unchanged": true,
+  "inherited_manifests": {
+    "artifacts/r2/S7/DELIVERY_MANIFEST.json": {
+      "SHA": "bba27a77023a5b24ebe83026431955ffbfe8c22babb8bf97e51bdb72251d9cfe",
+      "verified_file_count": 111
+    },
+    "artifacts/s8/DELIVERY_MANIFEST.json": {
+      "SHA": "61cc4344abd65489b19de8d47890ecdccaac52144af8e48fb7abfa1ae4d4f8e6",
+      "verified_file_count": 1030
+    },
+    "artifacts/s9/DELIVERY_MANIFEST.json": {
+      "SHA": "0f66bc639dc3d2f411836c08fc0e11ff0b89eca6c467d8b003a22ba12272f0f5",
+      "verified_file_count": 2693
+    }
+  },
+  "source_pairs_verified": 532,
+  "unique_file_SHA_verified": 9891,
+  "all_completed_S10_run_seals_valid": true,
+  "runs": [
+    {
+      "run_id": "20261012T131003340213Z_A_2c0974b0",
+      "stage": "A",
+      "purpose": "S10_statistics_unit_checks",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments/s10/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.1646360369923059,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T131039820840Z_A_6bc8bdfa",
+      "stage": "A",
+      "purpose": "all_six_routes_plus_same_bag_repeat_independent_evidence_reconciliation",
+      "argv": [
+        "python3",
+        "experiments/s10/build_evidence_matrix.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 101.81147072999738,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T131523685506Z_B_55e41bdd",
+      "stage": "B",
+      "purpose": "all3m10m_injected_original_ID_receiver_error_and_policy_acceptance_audit",
+      "argv": [
+        "python3",
+        "experiments/s10/audit_bias3_injection.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 48.31319120198896,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T131843456702Z_C_bbe2387b",
+      "stage": "C",
+      "purpose": "all_fixed_events_actual_decisions_and_offline_anchor_decomposition",
+      "argv": [
+        "python3",
+        "experiments/s10/diagnose_admission.py"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 2.221718015993247,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T132112964813Z_C_2c0974b0",
+      "stage": "C",
+      "purpose": "fixed_event_diagnostic_support_regression",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "experiments/s10/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.16436250699916855,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T132113188752Z_C_bbe2387b",
+      "stage": "C",
+      "purpose": "all_fixed_events_actual_decisions_and_offline_anchor_decomposition_supported",
+      "argv": [
+        "python3",
+        "experiments/s10/diagnose_admission.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 78.94137564099219,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T132709884560Z_C_455e0f5c",
+      "stage": "C",
+      "purpose": "all_street_events_fixed_opposite_mechanisms_and_all6_route_vector_figures",
+      "argv": [
+        "python3",
+        "experiments/s10/make_case_figures.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 14.50115377700422,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T132811367656Z_D_cad5bf93",
+      "stage": "D",
+      "purpose": "all19_controls_fixed_service_cost_and_posthoc_scope_verification",
+      "argv": [
+        "python3",
+        "experiments/s10/strong_baseline_check.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.3153760249988409,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T133725007107Z_F_455e0f5c",
+      "stage": "F",
+      "purpose": "publication_figure_legibility_repair",
+      "argv": [
+        "python3",
+        "experiments/s10/make_case_figures.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 14.070167459998629,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T134308626203Z_F_d2479e31",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r01_build",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r01"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 24.44486124899413,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T134453194862Z_F_7f636889",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r02_build",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r02"
+      ],
+      "exit_code": 2,
+      "wall_seconds": 6.905627239000751,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T134551443872Z_F_44fa9645",
+      "stage": "F",
+      "purpose": "inherited_regression_suite_unchanged_estimator",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 0.41618996000033803,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T134813898323Z_F_97d72b13",
+      "stage": "F",
+      "purpose": "inherited_regression_suite_isolated_shadow",
+      "argv": [
+        "python3",
+        "experiments/s10/run_inherited_tests_isolated.py"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 14.608537684005569,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T134815028444Z_F_e0091fd5",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r03_build",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r03"
+      ],
+      "exit_code": 2,
+      "wall_seconds": 10.993894875005935,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T135004166503Z_F_e6129d27",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r04_standard_fonts",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r04"
+      ],
+      "exit_code": 2,
+      "wall_seconds": 28.241687488000025,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T135005309480Z_F_97d72b13",
+      "stage": "F",
+      "purpose": "inherited_regression_isolated_with_retained_fixture",
+      "argv": [
+        "python3",
+        "experiments/s10/run_inherited_tests_isolated.py"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 14.607100487002754,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T135105723961Z_F_97d72b13",
+      "stage": "F",
+      "purpose": "inherited_regression_all_inputs_isolated",
+      "argv": [
+        "python3",
+        "experiments/s10/run_inherited_tests_isolated.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 20.32595388700429,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T135146863652Z_F_fdab3883",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r05_float_order",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r05"
+      ],
+      "exit_code": 2,
+      "wall_seconds": 1.3178859449981246,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T135333085916Z_F_a5804d39",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r06_condensed",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r06"
+      ],
+      "exit_code": 2,
+      "wall_seconds": 1.3176729769911617,
+      "status": "FAILED"
+    },
+    {
+      "run_id": "20261012T135510127650Z_F_1c00e0fb",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r07_table_floats",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r07"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.3181092430022545,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T135637553266Z_F_d1ce441f",
+      "stage": "F",
+      "purpose": "complete_six_page_manuscript_r08_cap_units",
+      "argv": [
+        "python3",
+        "experiments/s10/build_paper.py",
+        "paper/versions/s10_r08"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 1.3179158919956535,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T135747858343Z_F_1a23340d",
+      "stage": "F",
+      "purpose": "independent_manuscript_source_numeric_figure_PDF_audit",
+      "argv": [
+        "python3",
+        "experiments/s10/check_numbers.py",
+        "paper/submission_candidate/s10"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6168240010010777,
+      "status": "COMPLETED"
+    },
+    {
+      "run_id": "20261012T135942687375Z_FINAL_cfb5e857",
+      "stage": "FINAL",
+      "purpose": "inherited_manifests_all532_inputs_and_complete_run_seals",
+      "argv": [
+        "python3",
+        "experiments/s10/final_audit.py"
+      ],
+      "exit_code": 1,
+      "wall_seconds": 1.2173911790014245,
+      "status": "FAILED"
+    }
+  ],
+  "failed_runs_retained": 11,
+  "old_VPR_global_ROS_SSH_driver_modified": false,
+  "no_new_estimator_or_bias_amplitude_test": true,
+  "remote_push_performed": false,
+  "formal_submission_performed": false
+}

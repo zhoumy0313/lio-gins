@@ -1,0 +1,30 @@
+{"argv": ["/home/aaron/lio_gins/cache/r2/tools/tectonic", "-X", "compile", "main.tex", "--outdir", "/home/aaron/lio_gins/cache/s10/runs/20261012T134308626203Z_F_d2479e31", "--keep-logs", "--keep-intermediates", "--untrusted"], "source": "/home/aaron/lio_gins/paper/versions/s10_r01"}
+note: "version 2" Tectonic command-line interface activated
+note: Running TeX ...
+note: downloading hyperref.sty
+note: downloading ltxcmds.sty
+note: downloading iftex.sty
+note: downloading pdftexcmds.sty
+note: downloading infwarerr.sty
+note: downloading kvsetkeys.sty
+note: downloading kvdefinekeys.sty
+note: downloading pdfescape.sty
+note: downloading hycolor.sty
+note: downloading letltxmacro.sty
+note: downloading auxhook.sty
+note: downloading kvoptions.sty
+note: downloading pd1enc.def
+note: downloading intcalc.sty
+note: downloading etexcmds.sty
+note: downloading puenc.def
+note: downloading pzdr.tfm
+note: downloading bitset.sty
+note: downloading bigintcalc.sty
+note: downloading hxetex.def
+note: downloading stringenc.sty
+note: downloading rerunfilecheck.sty
+note: downloading uniquecounter.sty
+note: downloading nameref.sty
+note: downloading refcount.sty
+note: downloading gettitlestring.sty
+note: Writing `/home/aaron/lio_gins/cache/s10/runs/20261012T134308626203Z_F_d2479e31/main.log` (18.7373046875 KiB)
